@@ -74,6 +74,14 @@
         max_count    = 1,
         entity     = "data/entities/animals/hisii_rocketshotgun.xml"
     })
+    
+    table.insert(g_small_enemies,
+    {
+        prob           = 0.05,
+        min_count    = 1,
+        max_count    = 3,    
+        entity     = "data/entities/animals/wizard_transmutation.xml"
+    })
 
 
 

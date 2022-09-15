@@ -23,7 +23,7 @@
 		</AnimalAIComponent>
 		
 		<DamageModelComponent 
-            hp="1.5"
+            hp="1"
             ragdoll_material="wood_prop"
 			ragdoll_filenames_file="" 
 		    ragdoll_fx_forced="DISINTEGRATED"
