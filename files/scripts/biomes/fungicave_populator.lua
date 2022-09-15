@@ -38,14 +38,6 @@ table.insert(g_small_enemies,
     max_count    = 1,    
     entity     = "data/entities/animals/bubbles/acid/bubble_liquid.xml"
 })
-    
-table.insert(g_small_enemies,
-{
-    prob           = 0.08,
-    min_count    = 1,
-    max_count    = 1,    
-    entity     = "data/entities/animals/wizard_transmutation.xml"
-})
 
 
 
