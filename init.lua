@@ -47,7 +47,7 @@ xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
 ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 ModTextFileSetContent("data/biome/_pixel_scenes_newgame_plus.xml", tostring(xml))
 
---Hisii Beggar Hint
+--Statue Room, shows which bosses you've killed
 local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
 local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
 local xml = nxml.parse(content)
@@ -61,7 +61,7 @@ xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
 ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 ModTextFileSetContent("data/biome/_pixel_scenes_newgame_plus.xml", tostring(xml))
 
---Statue Room, shows which bosses you've killed
+--Hisii Beggar Hint
 local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
 local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
 local xml = nxml.parse(content)
@@ -136,6 +136,8 @@ ModLuaFileAppend( "data/scripts/gun/gun_actions.lua", "mods/mo_creeps/files/acti
 
 
 ModMaterialsFileAdd( "mods/mo_creeps/files/scripts/materials/custom_materials.xml" )
+
+
 
 
 
@@ -302,10 +304,10 @@ end
 if ModIsEnabled("VolcanoBiome") then
 
     --Normal Spawns
-	ModLuaFileAppend( "mods/volcanobiome/files/biome/inside.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/volcano_populator.lua" )
+	ModLuaFileAppend( "mods/VolcanoBiome/files/biome/inside.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/volcano_populator.lua" )
 
     --Global Spawns
-	ModLuaFileAppend( "mods/volcanobiome/files/biome/inside.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" )
+	ModLuaFileAppend( "mods/VolcanoBiome/files/biome/inside.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" )
 
 end
 
@@ -393,6 +395,16 @@ ModRegisterAudioEventMappings("mods/mo_creeps/files/audio/GUIDs.txt")
 
 
 
+-- Seasonal
+local year, month, day = GameGetDateAndTimeLocal()
+
+-- Halloween Event
+if ( month == 10 ) and (( day >= 3 ) and (day <= 31 )) then
+  ModLuaFileAppend( "data/scripts/biomes/coalmine.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/halloween.lua" ) --Coal Mine, first area, goodluck on your run
+  ModLuaFileAppend( "data/scripts/biomes/coalmine_alt.lua", "mods/mo_creeps/files/scripts/seasonal/halloween.lua" ) --Coalmine but to the west side near damp cave
+  ModLuaFileAppend( "data/scripts/biomes/excavationsite.lua", "mods/mo_creeps/files/scripts/seasonal/halloween.lua" ) --Coal Pits, area 2
+  ModLuaFileAppend( "data/scripts/biomes/pyramid.lua", "mods/mo_creeps/files/scripts/seasonal/halloween.lua" ) --Presumably everything below the entrance to the pyramid
+end
 
 
 

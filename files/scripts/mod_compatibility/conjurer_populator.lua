@@ -171,6 +171,11 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/animal_icons/lukki_fungus.png",
 	  },
 	  {
+		name="Explosive Box Mimic",
+		path="data/entities/animals/mimic_explosive_box.xml",
+		image="data/ui_gfx/animal_icons/mimic_explosive_box.png",
+	  },
+	  {
 		name="Unheard",
 		path="data/entities/animals/musical_being.xml",
 		image="data/ui_gfx/animal_icons/musical_being.png",
@@ -264,6 +269,11 @@ table.insert(ALL_ENTITIES, {
 		name="Suur Stendari",
 		path="data/entities/animals/wizard_firemage_greater.xml",
 		image="data/ui_gfx/animal_icons/wizard_firemage_greater.png",
+	  },
+	  {
+		name="Hämis Nest",
+		path="data/entities/buildings/hamis_nest.xml",
+		image="data/ui_gfx/building_icons/hamis_nest.png",
 	  },
 	  {
 		name="Polymorph Crystal",

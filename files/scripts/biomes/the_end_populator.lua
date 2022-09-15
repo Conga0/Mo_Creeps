@@ -61,7 +61,7 @@
         prob           = 0.07,
         min_count    = 1,
         max_count    = 1,    
-        entity     = "data/entities/animals/the_end/skygazer_greater.xml"
+        entity     = "data/entities/animals/the_end/gazer_greater_sky.xml"
     })
 
     table.insert(g_small_enemies_sky,

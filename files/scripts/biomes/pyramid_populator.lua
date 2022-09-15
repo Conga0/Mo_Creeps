@@ -74,20 +74,3 @@
         max_count    = 1,    
         entity     = "data/entities/animals/musical_being.xml"
     })
-
-    table.insert(g_lamp,
-    {
-        prob           = 1,
-        min_count    = 1,
-        max_count    = 1,    
-        entity     = "mods/mo_creeps/files/entities/props/seasonal_jackolantern.xml",
-		spawn_check = function() 
-			local year, month, day = GameGetDateAndTimeLocal()
-			
-			if ( month == 10 ) and (( day >= 3 ) and (day <= 31 )) then
-				return true
-			else
-				return false 
-			end
-		end,
-    })

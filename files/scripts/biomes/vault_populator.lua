@@ -120,6 +120,14 @@
         entity     = "data/entities/animals/hisii_hobo.xml"
     })
 
+    table.insert(g_props,
+    {
+        prob           = 0.05,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/vault/mimic_explosive_box.xml"
+    })
+
     table.insert(g_small_enemies,
     {
 		prob   		= 0.1,
