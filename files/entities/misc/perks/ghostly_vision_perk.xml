@@ -1,0 +1,15 @@
+<Entity tags="evil_eye,musical_stone">
+	<InheritTransformComponent>
+    </InheritTransformComponent>
+	
+	<LightComponent
+		_tags="magic_music_check,magic_eye_check"
+		radius="0"
+		r="255"
+		g="255"
+		b="255"
+		fade_out_time="0.0"
+		>
+	</LightComponent>
+  
+</Entity>

@@ -1,0 +1,94 @@
+<Entity 
+  name="$projectile_default" 
+   >
+
+	<Base file="data/entities/base_projectile.xml" >
+		<VelocityComponent
+    		gravity_y="0"
+			air_friction="-0.1"
+			mass="0.05"
+			>
+    	</VelocityComponent> 
+	</Base>
+
+  <ProjectileComponent 
+    _enabled="1" 
+	lob_min="0.8"
+  	lob_max="1.0"
+  	speed_min="0"
+  	speed_max="0"
+    die_on_low_velocity="0"
+    on_death_explode="0"
+    on_death_gfx_leave_sprite="0" 
+    on_lifetime_out_explode="0"
+    damage="6.0"
+    on_collision_die="0"
+    lifetime="120"
+	die_on_liquid_collision="0"
+    >
+  </ProjectileComponent>
+  
+  <SpriteComponent 
+    _enabled="1" 
+    alpha="1" 
+    image_file="mods/mo_creeps/files/projectiles_gfx/beam_holy_big.png" 
+    next_rect_animation="" 
+    offset_x="24" 
+    offset_y="256" 
+	  emissive="1"
+    additive="1"
+     
+	update_transform_rotation="0"
+	>
+  </SpriteComponent>
+  
+  <LightComponent 
+    _enabled="1" 
+    radius="150" 
+    r="220"
+    g="220"
+    b="220">
+  </LightComponent>
+  
+  <ParticleEmitterComponent 
+    emitted_material_name="spark_white"
+    count_min="49"
+    count_max="60"
+    offset.x="0"
+    offset.y="5"
+    x_pos_offset_min="-1"
+    y_pos_offset_min="-1"
+    x_pos_offset_max="1"
+    y_pos_offset_max="1"
+    x_vel_min="-170"
+    x_vel_max="170"
+    y_vel_min="-170"
+    y_vel_max="170"
+    count_min="50"
+    count_max="70"
+    lifetime_min="2"
+    lifetime_max="4"
+    create_real_particles="0"
+    emit_cosmetic_particles="1"
+    emission_interval_min_frames="5"
+    emission_interval_max_frames="8"
+    is_emitting="1" >
+  </ParticleEmitterComponent>
+
+	<AudioComponent
+		file="data/audio/Desktop/projectiles.bank"
+		event_root="projectiles/orb_poly" >
+	</AudioComponent>
+	
+	<AudioLoopComponent
+		file="data/audio/Desktop/projectiles.bank"
+		event_name="projectiles/magic_orb/loop"
+		auto_play="1">
+	</AudioLoopComponent>
+	
+	<VariableStorageComponent
+		name="projectile_file"
+		value_string="mods/mo_creeps/files/entities/projectiles/beam_holy_big.xml"
+		>
+	</VariableStorageComponent>
+</Entity>

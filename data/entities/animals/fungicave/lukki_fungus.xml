@@ -1,0 +1,31 @@
+<Entity >
+  <Base file="data/entities/animals/lukki_fungus.xml">
+    <DamageModelComponent 
+      hp="11.5"
+      max_hp="11.5"
+     ></DamageModelComponent >
+
+	<SpriteComponent 
+		image_file="mods/mo_creeps/files/enemies_gfx/lukki/lukki_fungus_dirty.xml"
+		offset_x="0"
+		offset_y="0"
+		>
+	</SpriteComponent>
+  </Base>
+
+
+
+
+	<Entity>  <Base file="mods/mo_creeps/files/enemies_gfx/lukki/lukki_limb_fungus_animated.xml" />  </Entity>
+	<Entity>  <Base file="mods/mo_creeps/files/enemies_gfx/lukki/lukki_limb_fungus_animated.xml" />  </Entity>
+	<Entity>  <Base file="mods/mo_creeps/files/enemies_gfx/lukki/lukki_limb_fungus_animated.xml" />  </Entity>
+	<Entity>  <Base file="mods/mo_creeps/files/enemies_gfx/lukki/lukki_limb_fungus_animated.xml" />  </Entity>
+	<Entity>  <Base file="mods/mo_creeps/files/enemies_gfx/lukki/lukki_limb_fungus_animated.xml" />  </Entity>
+	<Entity>  <Base file="mods/mo_creeps/files/enemies_gfx/lukki/lukki_limb_fungus_animated.xml" />  </Entity>
+	<Entity>  <Base file="mods/mo_creeps/files/enemies_gfx/lukki/lukki_limb_fungus_animated.xml" />  </Entity>
+	<Entity>  <Base file="mods/mo_creeps/files/enemies_gfx/lukki/lukki_limb_fungus_animated.xml" />  </Entity>
+	<Entity>  <Base file="mods/mo_creeps/files/enemies_gfx/lukki/lukki_limb_fungus_animated.xml" />  </Entity>
+
+	<Entity name="limb_attacker">  <Base file="mods/mo_creeps/files/enemies_gfx/lukki/lukki_limb_fungus_attacker.xml" />  </Entity>
+
+</Entity>

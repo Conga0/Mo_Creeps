@@ -1,0 +1,4 @@
+mods/mo_creeps/files/ragdolls/wizard_duck/torso.png
+mods/mo_creeps/files/ragdolls/wizard_duck/hand.png
+mods/mo_creeps/files/ragdolls/wizard_duck/feet.png
+mods/mo_creeps/files/ragdolls/wizard_duck/head.png

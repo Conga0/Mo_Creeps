@@ -1,0 +1,4 @@
+mods/mo_creeps/files/ragdolls/drone_mini/head.png
+mods/mo_creeps/files/ragdolls/drone_mini/legs.png
+mods/mo_creeps/files/ragdolls/drone_mini/rod.png
+mods/mo_creeps/files/ragdolls/drone_mini/propeller.png

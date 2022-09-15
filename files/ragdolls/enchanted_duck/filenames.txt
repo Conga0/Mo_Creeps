@@ -1,0 +1,3 @@
+mods/mo_creeps/files/ragdolls/enchanted_duck/torso.png
+mods/mo_creeps/files/ragdolls/enchanted_duck/head.png
+mods/mo_creeps/files/ragdolls/enchanted_duck/feet.png

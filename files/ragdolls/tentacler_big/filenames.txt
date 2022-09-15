@@ -1,0 +1,5 @@
+mods/mo_creeps/files/ragdolls/tentacler_big/head.png
+mods/mo_creeps/files/ragdolls/tentacler_big/tentacle_1.png
+mods/mo_creeps/files/ragdolls/tentacler_big/tentacle_2.png
+mods/mo_creeps/files/ragdolls/tentacler_big/tentacle_3.png
+

@@ -1,0 +1,4 @@
+mods/mo_creeps/files/ragdolls/wizard_transmutation/torso.png
+mods/mo_creeps/files/ragdolls/wizard_transmutation/hand.png
+mods/mo_creeps/files/ragdolls/wizard_transmutation/feet.png
+mods/mo_creeps/files/ragdolls/wizard_transmutation/head.png

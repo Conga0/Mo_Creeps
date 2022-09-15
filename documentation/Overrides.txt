@@ -1,0 +1,4 @@
+data/entities/items/pickup/musicstone.xml is overridden to add a tag for music ghost
+data/entities/projectiles/deck/ocarina is overridden to add a tag for music ghost
+data/entities/projectiles/deck/kantele is overridden to add a tag for music ghost
+data/entities/animals/boss_wizard/spawn_wizard.lua is overridden to insert custom mages, supports new enemies mod

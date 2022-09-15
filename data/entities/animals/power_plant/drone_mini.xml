@@ -1,0 +1,24 @@
+<Entity name="Pieni lentokone" tags="ui_use_raw_name" >
+  <Base file="data/entities/animals/drone_mini.xml">
+    <DamageModelComponent 
+      hp="4"
+      max_hp="4"
+     ></DamageModelComponent >
+		<AnimalAIComponent 
+			attack_ranged_entity_file="data/entities/projectiles/machinegun_bullet_roboguard_big.xml"
+			>
+		</AnimalAIComponent>
+  </Base>
+
+	<!-- protection from FREEZING -->
+	<Entity>
+		<InheritTransformComponent />
+		
+	    <GameEffectComponent 
+	        effect="PROTECTION_FREEZE"
+	        frames="-1"
+	    >
+		</GameEffectComponent >
+	</Entity>
+
+</Entity>

@@ -1,0 +1,5 @@
+mods/mo_creeps/files/ragdolls/sentry/torso.png
+mods/mo_creeps/files/ragdolls/sentry/hand.png
+mods/mo_creeps/files/ragdolls/sentry/feet.png
+mods/mo_creeps/files/ragdolls/sentry/head.png
+mods/mo_creeps/files/ragdolls/sentry/antenna.png

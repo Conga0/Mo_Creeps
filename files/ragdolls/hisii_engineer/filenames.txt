@@ -1,0 +1,4 @@
+mods/mo_creeps/files/ragdolls/hisii_engineer/torso.png
+mods/mo_creeps/files/ragdolls/hisii_engineer/hand.png
+mods/mo_creeps/files/ragdolls/hisii_engineer/feet.png
+mods/mo_creeps/files/ragdolls/hisii_engineer/head.png

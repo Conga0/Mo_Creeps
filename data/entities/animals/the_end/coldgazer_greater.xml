@@ -1,0 +1,19 @@
+<Entity name="Suur Jäänkatse" tags="touchmagic_immunity,ui_use_raw_name" >
+  <Base file="data/entities/animals/skygazer_greater.xml">
+    <DamageModelComponent 
+      hp="90"
+      max_hp="90"
+     ></DamageModelComponent >
+  </Base>
+
+	<Entity>
+		<InheritTransformComponent />
+		
+	    <GameEffectComponent 
+	        effect="STUN_PROTECTION_FREEZE"
+	        frames="-1"
+	    >
+		</GameEffectComponent >
+	</Entity>
+
+</Entity>

@@ -1,0 +1,26 @@
+<Entity >
+  <Base file="data/entities/animals/forsaken_eye.xml">
+    <DamageModelComponent 
+      hp="45"
+      max_hp="45"
+     ></DamageModelComponent >
+  </Base>
+	
+	<Entity>
+		<SpriteComponent
+			image_file="mods/mo_creeps/files/enemies_gfx/forsaken_eye_pupil.png"
+			offset_x="6"
+			offset_y="6"
+			has_special_scale="1"
+			special_scale_x="1"
+			>
+		</SpriteComponent>
+		
+		<LuaComponent
+			script_source_file="data/entities/animals/boss_ghost/eye.lua"
+			execute_every_n_frame="1"
+			>
+		</LuaComponent>
+	</Entity>
+
+</Entity>

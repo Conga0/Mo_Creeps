@@ -1,0 +1,11 @@
+If you want to use or be 'inspired' by any of the code in this mod, just go ahead and take it, I genuinely don't mind.
+
+What would bother me is if you nicked the enemy sprites and claimed them as your own.
+People don't recognise code when they see a mod, project, etc, but they do recognise sprites, story & gameplay.
+I don't mean to sound malicious, but do ask you talk to me before taking any raw sprites from my mod.
+If you want to take a sprite and use it as reference, modify into something completely new or whatever other tinkering then go ahead, my only gripe is ripping it raw.
+
+And if you want to port any of the enemies in this mod 1:1 into one of your own projects,
+I ask two things of you, the first is that you talk to me first to discuss implementation.
+I can easily be contacted at Conga Lyne#2452 but also at congamailexpress@gmail.com if discord would be unpreferable, however I would prefer the former over the latter.
+The second thing I ask for is credit for what I created.

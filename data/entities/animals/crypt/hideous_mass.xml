@@ -1,0 +1,22 @@
+<Entity
+	tags="mortal,hittable,teleportable_NOT,homing_target,enemy,lukki,glue_NOT,ui_use_raw_name" 
+	name="Kauhea pääkallo" >
+  <Base file="data/entities/animals/hideous_mass.xml">
+    <DamageModelComponent 
+      hp="30"
+      max_hp="30"
+     ></DamageModelComponent >
+  </Base>
+
+	<IKLimbsAnimatorComponent>
+	</IKLimbsAnimatorComponent>
+
+	<Entity>  <Base file="mods/mo_creeps/files/enemies_gfx/lukki/lukki_limb_bone_worm_animated.xml" />  </Entity>
+	<Entity>  <Base file="mods/mo_creeps/files/enemies_gfx/lukki/lukki_limb_bone_worm_animated.xml" />  </Entity>
+	<Entity>  <Base file="mods/mo_creeps/files/enemies_gfx/lukki/lukki_limb_bone_worm_animated.xml" />  </Entity>
+	<Entity>  <Base file="mods/mo_creeps/files/enemies_gfx/lukki/lukki_limb_bone_worm_animated_alt.xml" />  </Entity>
+	<Entity>  <Base file="mods/mo_creeps/files/enemies_gfx/lukki/lukki_limb_bone_worm_animated_alt.xml" />  </Entity>
+	<Entity>  <Base file="mods/mo_creeps/files/enemies_gfx/lukki/lukki_limb_bone_worm_animated_alt.xml" />  </Entity>
+	<Entity>  <Base file="mods/mo_creeps/files/enemies_gfx/lukki/lukki_limb_bone_worm_animated_attacker.xml" />  </Entity>
+  
+</Entity>

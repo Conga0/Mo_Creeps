@@ -1,0 +1,19 @@
+<Entity >
+  <Base file="data/entities/animals/musical_being.xml">
+    <DamageModelComponent 
+      hp="42"
+      max_hp="42"
+     ></DamageModelComponent >
+  </Base>
+	
+	<Entity>
+		<InheritTransformComponent />
+		
+	    <GameEffectComponent 
+	        effect="PROTECTION_FREEZE"
+	        frames="-1"
+	    >
+		</GameEffectComponent >
+	</Entity>
+
+</Entity>

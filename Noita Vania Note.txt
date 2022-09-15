@@ -1,0 +1,9 @@
+Damn it, they aren't adding to the pixel scenes they're just overriding them.
+
+Best way around this is making a seperate mod called "Noitavania mo creeps compatibility" and having it be the same
+pixelscene code but pointed towards noitavania's pixelscene file.
+
+Would make it easier to change the x y positions too at least I guess, but remember to disable boss spawns if noitavania is enabled
+And redo them in the fix mod.
+
+For some reason checking if noitavania is loaded and changing the input data if so causes nxml to stop functioning.

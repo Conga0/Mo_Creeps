@@ -1,0 +1,24 @@
+<Entity name="Vartiomies" tags="ui_use_raw_name" >
+  <Base file="data/entities/animals/sentry.xml">
+    <DamageModelComponent 
+      hp="45"
+      max_hp="45"
+     ></DamageModelComponent >
+		<AnimalAIComponent 
+			attack_ranged_entity_file="data/entities/projectiles/mocreeps_sentry_bullet_lethal.xml"
+			>
+		</AnimalAIComponent>
+  </Base>
+
+	<!-- protection from FREEZING -->
+	<Entity>
+		<InheritTransformComponent />
+		
+	    <GameEffectComponent 
+	        effect="PROTECTION_FREEZE"
+	        frames="-1"
+	    >
+		</GameEffectComponent >
+	</Entity>
+
+</Entity>

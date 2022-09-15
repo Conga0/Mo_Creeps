@@ -1,0 +1,5 @@
+mods/mo_creeps/files/ragdolls/hisii_rocketshotgun/torso.png
+mods/mo_creeps/files/ragdolls/hisii_rocketshotgun/hand.png
+mods/mo_creeps/files/ragdolls/hisii_rocketshotgun/feet.png
+mods/mo_creeps/files/ragdolls/hisii_rocketshotgun/feet_right.png
+mods/mo_creeps/files/ragdolls/hisii_rocketshotgun/head.png

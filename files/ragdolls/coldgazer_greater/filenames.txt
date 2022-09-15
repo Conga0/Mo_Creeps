@@ -1,0 +1,1 @@
+mods/mo_creeps/files/ragdolls/coldgazer_greater/body.png

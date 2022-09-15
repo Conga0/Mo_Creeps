@@ -1,0 +1,25 @@
+Adds various new Creeps & Weirdos to the world of Noita, including new characters such as:
+The Master of Mallards, the species of Porings, bigger scarier Elemental Wizards and much more to explore for yourself!
+(For a full list, view the document here, big spoilers)
+
+
+Implements 48 new enemies with 3 new bosses!
+Adds 19 new spells if you can conquer powerful foes.
+And an extra 2 more for free unlocked by default.
+With maybe a bit more for you to find too.
+
+Seasonal events include:
+September 22nd
+Halloween
+
+
+Compatiable with:
+New Biomes & Secrets
+New Enemies (Although, the amount of new enemies in this will likely overshadow More Creeps's spawns)
+Alternate Biomes
+Volcano Biome
+Flesh Biome
+Conjurer
+Copi's Things (Remove this listing if Copi's things is to-be release when this mod is out, comment out relevent beggar code too)
+
+Also fixes the missing Icemage spawn in the frozen vault.

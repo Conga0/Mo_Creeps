@@ -1,0 +1,23 @@
+Sentry entrenched sound effect
+
+Confirm if volcanoe biome populator works
+
+Centipede blood
+Invisiblity + worm vision
+
+Rocket Shotgunner looks weird, resprite at some point
+
+
+Look at monk hand code to make triangular gem minions
+
+Purgatory compatibility
+
+11 orb hardmode versions of bosses, rewards golden statue upon completion
+For reference, 11 orb Kolmi has 100x his normal health amount roughly
+
+
+
+
+Jack o lantern variation
+
+Optimise Master of None AI code, look at tower populator script for how

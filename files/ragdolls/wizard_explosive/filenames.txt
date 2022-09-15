@@ -1,0 +1,4 @@
+mods/mo_creeps/files/ragdolls/wizard_explosive/torso.png
+mods/mo_creeps/files/ragdolls/wizard_explosive/hand.png
+mods/mo_creeps/files/ragdolls/wizard_explosive/feet.png
+mods/mo_creeps/files/ragdolls/wizard_explosive/head.png
