@@ -117,13 +117,13 @@ table.insert(ALL_ENTITIES, {
 	  },
 	  {
 		name="Greater Sky Gazer",
-		path="data/entities/animals/skygazer_greater.xml",
-		image="data/ui_gfx/animal_icons/skygazer_greater.png",
+		path="data/entities/animals/gazer_greater_sky.xml",
+		image="data/ui_gfx/animal_icons/gazer_greater_sky.png",
 	  },
 	  {
 		name="Greater Cold Gazer",
-		path="data/entities/animals/coldgazer_greater.xml",
-		image="data/ui_gfx/animal_icons/coldgazer_greater.png",
+		path="data/entities/animals/gazer_greater_cold.xml",
+		image="data/ui_gfx/animal_icons/gazer_greater_cold.png",
 	  },
 	  {
 		name="Juvenile Centipede",
