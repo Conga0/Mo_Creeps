@@ -1,0 +1,5 @@
+mods/mo_creeps/files/ragdolls/hisii_hobo/head.png
+mods/mo_creeps/files/ragdolls/hisii_hobo/leg_l.png
+mods/mo_creeps/files/ragdolls/hisii_hobo/leg_r.png
+mods/mo_creeps/files/ragdolls/hisii_hobo/arm.png
+mods/mo_creeps/files/ragdolls/hisii_hobo/torso.png

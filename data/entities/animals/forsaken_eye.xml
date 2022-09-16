@@ -154,7 +154,6 @@
 	</LuaComponent>
 
 	<SpriteComponent 
-		_tags="character" 
 		alpha="0.4" 
 		image_file="mods/mo_creeps/files/enemies_gfx/forsaken_eye_symbol.xml"
 		emissive="1"

@@ -39,13 +39,21 @@
         entity     = "data/entities/animals/blindgazer.xml"
     })
 
+    table.insert(g_small_enemies,
+    {
+        prob           = 0.4,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/star_child.xml"
+    })
+
 
 
     ---Herobrine
 
     table.insert(g_small_enemies,
     {
-        prob           = 0.002,
+        prob           = 0.03,
         min_count    = 1,
         max_count    = 1,    
         entity     = "data/entities/buildings/herobrine.xml"

@@ -116,6 +116,14 @@
         entity     = "data/entities/animals/fairy_big_discord.xml"
     })
 
+    table.insert(g_small_enemies,
+    {
+        prob           = 0.065,
+        min_count    = 1,
+        max_count    = 2,    
+        entity     = "data/entities/animals/star_child.xml"
+    })
+
     
     --Crystals
   

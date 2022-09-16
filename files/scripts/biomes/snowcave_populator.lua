@@ -35,8 +35,8 @@
     {
         prob           = 0.05,
         min_count    = 1,
-        max_count    = 1,    
-        entity     = {
+        max_count    = 1,
+        entities     =  {
 			{
 				min_count	= 1,
 				max_count 	= 1,

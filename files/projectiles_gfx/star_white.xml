@@ -1,5 +1,5 @@
 <Sprite
- filename="mods/mo_creeps/files/projectiles_gfx/orb_light_red.png"
+ filename="mods/mo_creeps/files/projectiles_gfx/star_white.png"
  offset_x="5"
  offset_y="5"
  default_animation="fireball" >
@@ -10,8 +10,8 @@
   pos_x="0"
   pos_y="0"
   frame_count="4"
-  frame_width="10"
-  frame_height="10"
+  frame_width="11"
+  frame_height="11"
   frame_wait="0.09"
   frames_per_row="4"
   loop="1"   >

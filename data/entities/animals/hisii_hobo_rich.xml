@@ -31,7 +31,7 @@
 		<DamageModelComponent 
             hp="8.0"
             materials_create_messages="1"
-			ragdoll_filenames_file="data/ragdolls/miner_fire/filenames.txt" 
+			ragdoll_filenames_file="mods/mo_creeps/files/ragdolls/hisii_hobo_rich/filenames.txt" 
 			fire_probability_of_ignition="0"
 			blood_material="blood"
     		blood_spray_material="blood"

@@ -312,7 +312,7 @@ if ModIsEnabled("VolcanoBiome") then
 end
 
 
---Volcano Biome
+--Flesh Biome
 if ModIsEnabled("flesh_biome") then
 
     --Normal Spawns
@@ -320,6 +320,18 @@ if ModIsEnabled("flesh_biome") then
 
     --Global Spawns
 	ModLuaFileAppend( "mods/flesh_biome/files/scripts/flesh_biome.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" )
+
+end
+
+
+--Sewer Standalone Mod
+if ModIsEnabled("sewer_updated") then
+
+    --Normal Spawns
+	ModLuaFileAppend( "mods/flesh_biome/files/sewer_biome/sewer.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/SEWER_populator.lua" )
+
+    --Global Spawns
+	ModLuaFileAppend( "mods/flesh_biome/files/sewer_biome/sewer.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" )
 
 end
 

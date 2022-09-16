@@ -221,6 +221,11 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/animal_icons/sentry.png",
 	  },
 	  {
+		name="Star Child",
+		path="data/entities/animals/star_child.xml",
+		image="data/ui_gfx/animal_icons/star_child.png",
+	  },
+	  {
 		name="Big Tentacler",
 		path="data/entities/animals/tentacler_big.xml",
 		image="data/ui_gfx/animal_icons/tentacler_big.png",

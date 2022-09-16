@@ -9,10 +9,18 @@
 
     table.insert(g_big_enemies,
     {
-        prob           = 0.05,
+        prob           = 0.03,
         min_count    = 1,
         max_count    = 1,    
-        entity     =  {
+        entity     = "data/entities/animals/musical_being.xml"
+    })
+
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.05,
+        min_count    = 1,
+        max_count    = 1,
+        entities     =  {
 			{
 				min_count	= 1,
 				max_count 	= 1,
@@ -46,14 +54,6 @@
         entity     = "data/entities/animals/forsaken_eye.xml"
     })
 
-    table.insert(g_big_enemies,
-    {
-        prob           = 0.03,
-        min_count    = 1,
-        max_count    = 1,    
-        entity     = "data/entities/animals/musical_being.xml"
-    })
-
     table.insert(g_small_enemies,
     {
         prob           = 0.03,
@@ -69,6 +69,14 @@
         max_count    = 1,
         entity     = "data/entities/animals/coldgazer_greater.xml",
         ngpluslevel = 1
+    })
+
+    table.insert(g_props,
+    {
+        prob           = 0.04,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/mimic_explosive_box.xml"
     })
     
 

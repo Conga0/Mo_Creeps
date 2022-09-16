@@ -3,7 +3,7 @@ The Master of Mallards, the species of Porings, bigger scarier Elemental Wizards
 (For a full list, view the document here, big spoilers)
 
 
-Implements 50 new enemies with 3 new bosses!
+Implements 51 new enemies with 3 new bosses!
 Adds 19 new spells if you can conquer powerful foes.
 And an extra 2 more for free unlocked by default.
 With maybe a bit more for you to find too.
@@ -21,5 +21,6 @@ Volcano Biome
 Flesh Biome
 Conjurer
 Copi's Things (Remove this listing if Copi's things is to-be release when this mod is out, comment out relevent beggar code too)
+Sewer 1.0
 
 Also fixes the missing Icemage spawn in the frozen vault.

@@ -1,0 +1,9 @@
+mods/mo_creeps/files/ragdolls/star_child/body.png
+mods/mo_creeps/files/ragdolls/star_child/arm_1.png
+mods/mo_creeps/files/ragdolls/star_child/arm_2.png
+mods/mo_creeps/files/ragdolls/star_child/arm_3.png
+mods/mo_creeps/files/ragdolls/star_child/arm_4.png
+mods/mo_creeps/files/ragdolls/star_child/arm_5.png
+mods/mo_creeps/files/ragdolls/star_child/arm_6.png
+mods/mo_creeps/files/ragdolls/star_child/arm_7.png
+mods/mo_creeps/files/ragdolls/star_child/arm_8.png

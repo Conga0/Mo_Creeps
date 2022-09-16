@@ -157,4 +157,10 @@
 		event_root="animals/longleg" >
 	</AudioComponent>
 
+	<LuaComponent
+		_tags="death_reward"
+		script_death="data/entities/animals/secret/poring_death.lua"
+		>
+	</LuaComponent>
+
 </Entity>
