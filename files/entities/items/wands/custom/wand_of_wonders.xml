@@ -1,4 +1,4 @@
-<Entity tags="wand,wand_wonder">
+<Entity tags="wand">
     <AbilityComponent 
         amount_in_inventory="1" 
         cooldown_frames="0" 

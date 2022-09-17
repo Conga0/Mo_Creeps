@@ -247,6 +247,20 @@
     </Graphics>
   </CellDataChild>
 
+  <CellDataChild
+  	_parent="blood_worm"
+  	_inherit_reactions="1"
+  	name="mocreeps_blood_worm_centipede" 
+	ui_name="Centipede Blood"
+	wang_color="ffca3e9d"
+	show_in_creative_mode="1"
+	>
+    <Graphics 
+	texture_file="mods/mo_creeps/files/materials_gfx/yellowblood_dark.png" 
+	color="88B38733" >
+    </Graphics>
+  </CellDataChild>
+
 
 
 	<!-- Reactions -->

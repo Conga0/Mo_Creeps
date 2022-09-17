@@ -34,6 +34,14 @@
         entity     = "data/entities/animals/tesla_turret.xml"
     })
 
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.1,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/tank_flame_mocreep.xml"
+    })
+
 
 
 
@@ -71,12 +79,31 @@
         entity     = "data/entities/animals/hisii_hobo.xml"
     })
 
+    table.insert(g_small_enemies,
+    {
+        prob           = 0.05,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/tank_flame_mocreep.xml"
+    })
+
     table.insert(g_props,
     {
         prob           = 0.03,
         min_count    = 1,
         max_count    = 1,    
         entity     = "data/entities/animals/mimic_explosive_box.xml"
+    })
+
+
+
+    --Unique
+    table.insert(g_unique_enemy,
+    {
+        prob           = 1.0,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/tank_flame_mocreep.xml"
     })
 
 

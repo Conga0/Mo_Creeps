@@ -1,4 +1,4 @@
-<Entity name="$animal_tank" >
+<Entity name="Sytytystankki" tags="ui_use_raw_name">
   
 	<Base file="data/entities/base_enemy_robot.xml" >
 		<ItemChestComponent level="2" >
@@ -26,7 +26,7 @@
 		<DamageModelComponent 
             hp="4.5"
             ragdoll_material="steel"
-			ragdoll_filenames_file="data/ragdolls/tank/filenames.txt" 
+			ragdoll_filenames_file="mods/mo_creeps/files/ragdolls/tank_flame_mocreep/filenames.txt"
 			blood_material="oil"
 			fire_probability_of_ignition="0"
 			in_liquid_shooting_electrify_prob="30" >
@@ -39,7 +39,7 @@
 		</DamageModelComponent>
 
 		<SpriteComponent 
-			image_file="data/enemies_gfx/tank.xml" 
+			image_file="mods/mo_creeps/files/enemies_gfx/tank_flame.xml" 
 			offset_x="0"
 			offset_y="0"
 			z_index="-1"
@@ -124,7 +124,7 @@
   	<SpriteComponent 
         _tags="character" 
 		alpha="1" 
-		image_file="data/enemies_gfx/tank_emissive.xml"
+		image_file="mods/mo_creeps/files/enemies_gfx/tank_flame_emissive.xml"
 		emissive="1"
         additive="1"
 		next_rect_animation="" 
@@ -135,7 +135,7 @@
 	<SpriteComponent 
 		_tags="gun" 
 		alpha="1" 
-		image_file="data/enemies_gfx/tank_gun.xml"
+		image_file="mods/mo_creeps/files/enemies_gfx/tank_flame_gun.xml"
 		transform_offset.y="-5"
 		next_rect_animation="" 
 		rect_animation=""
@@ -147,38 +147,30 @@
 	</SpriteComponent>
 	
 	<AIAttackComponent
-		min_distance="30"
-		max_distance="200"
-		frames_between="3"
-		frames_between_global="3"
+		min_distance="0"
+		max_distance="180"
+		frames_between="10"
+		frames_between_global="10"
 		attack_ranged_aim_rotation_enabled="1"
-		attack_ranged_aim_rotation_speed="0.05"
+		attack_ranged_aim_rotation_speed="0.06"
 		attack_ranged_aim_rotation_shooting_ok_angle_deg="20"
 		attack_ranged_root_offset_y="-5"
 		attack_ranged_offset_y="-3"
 		attack_ranged_offset_x="10"
 		animation_name="attack_ranged"
+		attack_ranged_action_frame="0"
 		attack_ranged_entity_file="data/entities/projectiles/flamethrower.xml" 
 		angular_range_deg="90"
 		>
 	</AIAttackComponent>
 	
-	<AIAttackComponent
-		min_distance="8"
-		max_distance="40"
-		frames_between="40"
-		frames_between_global="40"
-		attack_ranged_aim_rotation_enabled="1"
-		attack_ranged_aim_rotation_speed="0.05"
-		attack_ranged_aim_rotation_shooting_ok_angle_deg="30"
-		attack_ranged_root_offset_y="-5"
-		attack_ranged_offset_y="-5"
-		attack_ranged_offset_x="3"
-		animation_name="attack_grenade"
-		attack_ranged_entity_file="data/entities/projectiles/grenade_scavenger.xml"
-		attack_ranged_action_frame="8"
-		>
-	</AIAttackComponent>
+	<LightComponent
+		_enabled="1" 
+		r="250"
+		g="230"
+		b="150"
+		radius="96" >
+	</LightComponent>
 
 
 

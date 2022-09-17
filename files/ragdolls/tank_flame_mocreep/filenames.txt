@@ -1,0 +1,5 @@
+mods/mo_creeps/files/ragdolls/tank_flame_mocreep/gun.png
+mods/mo_creeps/files/ragdolls/tank_flame_mocreep/strut.png
+mods/mo_creeps/files/ragdolls/tank_flame_mocreep/base.png
+mods/mo_creeps/files/ragdolls/tank_flame_mocreep/cord1.png
+mods/mo_creeps/files/ragdolls/tank_flame_mocreep/cord2.png

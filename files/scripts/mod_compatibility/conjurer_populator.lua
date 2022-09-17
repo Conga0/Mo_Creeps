@@ -226,6 +226,11 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/animal_icons/star_child.png",
 	  },
 	  {
+		name="Ignition Tank",
+		path="data/entities/animals/tank_flame_mocreep.xml",
+		image="data/ui_gfx/animal_icons/tank_flame_mocreep.png",
+	  },
+	  {
 		name="Big Tentacler",
 		path="data/entities/animals/tentacler_big.xml",
 		image="data/ui_gfx/animal_icons/tentacler_big.png",
