@@ -261,6 +261,35 @@
     </Graphics>
   </CellDataChild>
 
+  <CellData
+	name="mocreeps_insect_husk"
+	ui_name="Insect Husk"
+  	tags="[sand_other],[corrodible],[burnable],[alchemy]"
+	burnable="1"
+	density="6"
+	cell_type="liquid"
+	wang_color="ff505053"
+	generates_smoke="0"
+	liquid_gravity="2"
+	liquid_sand="1"
+	on_fire="0"
+	requires_oxygen="1"
+	temperature_of_fire="95"
+	autoignition_temperature="94"
+	hp="1000" 
+	durability="8"
+	fire_hp="1000"
+	audio_physics_material_event="sand"
+	audio_physics_material_wall="sand"
+	audio_physics_material_solid="sand"
+	show_in_creative_mode="1"
+	>
+    <Graphics
+	texture_file="data/materials_gfx/coal.png"
+	color="ff505050" >
+    </Graphics>
+  </CellData>
+
 
 
 	<!-- Reactions -->

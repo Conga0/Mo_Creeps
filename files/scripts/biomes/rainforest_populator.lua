@@ -75,6 +75,15 @@
         entity     = "data/entities/animals/hisii_rocketshotgun.xml"
     })
 
+    --[[
+    table.insert(g_small_enemies,
+    {
+        prob           = 0.05,
+        min_count    = 1,
+        max_count    = 2,    
+        entity     = "data/entities/animals/jungle/locust_swarm.xml"
+    })
+    ]]--
 
 
     --New Game +

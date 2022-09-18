@@ -75,6 +75,20 @@ xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
 ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 ModTextFileSetContent("data/biome/_pixel_scenes_newgame_plus.xml", tostring(xml))
 
+--Wand Cave Secret
+local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
+local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
+local xml = nxml.parse(content)
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+  <PixelScene DEBUG_RELOAD_ME="0" clean_area_before="0" pos_x="12063" pos_y="-4376" skip_biome_checks="1" skip_edge_textures="0"
+    material_filename="mods/mo_creeps/files/pixel_scenes/wand_cave/wand_cave.png"
+    background_filename="mods/mo_creeps/files/pixel_scenes/wand_cave/wand_cave_background.png"
+    colors_filename=""
+  ></PixelScene>
+]]))
+ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
+ModTextFileSetContent("data/biome/_pixel_scenes_newgame_plus.xml", tostring(xml))
+
 --End the chaos here please
 
 

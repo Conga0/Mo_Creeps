@@ -4,7 +4,7 @@
 
 	<LuaComponent
 	    execute_every_n_frame="-1"
-	    script_death="data/scripts/items/drop_money.lua"
+	    script_death="data/scripts/items/drop_money4x.lua"
 	    remove_after_executed="1" >
 	</LuaComponent>
 
@@ -105,7 +105,7 @@
 
 
 	<DamageModelComponent 
-		hp="3" 
+		hp="2" 
 		air_needed="0" 
 		falling_damages="0"
 		is_on_fire="0" 

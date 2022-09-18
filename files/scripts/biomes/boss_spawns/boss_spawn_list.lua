@@ -31,6 +31,10 @@ if (inilisationCheck ~= 2) then
     --Spawns a Hisii Beggar near the essence of earth, hopefully demonstrates or at least hints towards how to interact with them
     local entity = EntityLoad( "data/entities/buildings/hisii_beggar_populator.xml", 16226, -1600 )
 
+
+    --Spawns Wand of Wonders & Pouch inside the wand cave
+    local entity = EntityLoad( "data/entities/buildings/wand_cave_populator.xml", 12200, -4202 )
+
     inilisationCheck = 2
 
 end

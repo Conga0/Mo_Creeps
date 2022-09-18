@@ -60,9 +60,9 @@
 			can_jump="0"
 			can_fly="0" 
 			can_walk="1"
-			can_dive="1" 
+			can_dive="1"
 			can_swim_on_surface="0" 
-			jump_speed="120" //originally 90
+			jump_speed="120"
 			initial_jump_lob="1"
 			initial_jump_max_distance_x="90"
 			initial_jump_max_distance_y="90"
@@ -70,8 +70,8 @@
 		</PathFindingComponent>
         
         <CharacterPlatformingComponent 
-			jump_velocity_y="-15" // originally 12
-			jump_velocity_x="-10" //originally unaffected
+			jump_velocity_y="-15"
+			jump_velocity_x="-10"
 			run_velocity="12"
 			swim_idle_buoyancy_coeff="2.0"
 			swim_up_buoyancy_coeff="2.0"

@@ -156,6 +156,11 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/animal_icons/hisii_hobo_rich.png",
 	  },
 	  {
+		name="Minecart Rider Hisii",
+		path="data/entities/animals/hisii_minecart.xml",
+		image="data/ui_gfx/animal_icons/hisii_minecart.png",
+	  },
+	  {
 		name="Rocket Shotgun Hisii",
 		path="data/entities/animals/hisii_rocketshotgun.xml",
 		image="data/ui_gfx/animal_icons/hisii_rocketshotgun.png",
