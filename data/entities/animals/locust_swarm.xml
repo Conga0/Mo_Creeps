@@ -72,8 +72,8 @@
 
 	<PhysicsShapeComponent
 		is_circle="1"
-		radius_x="15"
-		radius_y="15"
+		radius_x="5"
+		radius_y="5"
 		friction="0.0"
 		restitution="0.3" >
 	</PhysicsShapeComponent>
@@ -185,6 +185,34 @@
 		airflow_scale="0.15"
 		emission_interval_min_frames="1"
 		emission_interval_max_frames="1"
+		emit_cosmetic_particles="1"
+		draw_as_long="1"
+		x_vel_min="-20"
+		x_vel_max="20"
+		y_vel_min="-20"
+		y_vel_max="20"
+		is_emitting="1" 
+		attractor_force="8"
+		>
+	</ParticleEmitterComponent>
+
+	<ParticleEmitterComponent 
+		emitted_material_name="bone"
+		gravity.y="0.0"
+		lifetime_min="0.4"
+		lifetime_max="1.2"
+		count_min="30"
+		count_max="30"
+		render_on_grid="1"
+		fade_based_on_lifetime="0"
+		area_circle_radius.min="6"
+		area_circle_radius.max="18"
+		cosmetic_force_create="0"
+		airflow_force="1.5"
+		airflow_time="1.9"
+		airflow_scale="0.15"
+		emission_interval_min_frames="4"
+		emission_interval_max_frames="7"
 		emit_cosmetic_particles="1"
 		draw_as_long="1"
 		x_vel_min="-20"

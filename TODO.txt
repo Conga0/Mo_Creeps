@@ -8,3 +8,7 @@ Optimise Master of None AI code, look at tower populator script for how
 
 
 Poring Chunks ragdoll
+
+Very small visual effect when wandcave spawns entities in. (incase player has all seeing eye or worm vision)
+
+Minecart Hisii drops actual minecart

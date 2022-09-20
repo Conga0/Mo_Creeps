@@ -34,3 +34,11 @@ table.insert(g_small_enemies,
     max_count    = 1,    
     entity     = "data/entities/animals/devourer_ghost.xml"
 })
+
+table.insert(g_small_enemies,
+{
+    prob           = 0.12,
+    min_count    = 1,
+    max_count    = 1,    
+    entity     = "data/entities/animals/ghost_bow.xml"
+})

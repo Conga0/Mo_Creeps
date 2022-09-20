@@ -20,6 +20,7 @@
 			sense_creatures="1"
 			attack_ranged_enabled="0"
 			can_fly="0"
+			defecates_and_pees="1"
 			>
 		</AnimalAIComponent>
 

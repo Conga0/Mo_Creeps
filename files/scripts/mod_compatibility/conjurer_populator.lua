@@ -126,6 +126,11 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/animal_icons/gazer_greater_cold.png",
 	  },
 	  {
+		name="Phantom Bow",
+		path="data/entities/animals/ghost_bow.xml",
+		image="data/ui_gfx/animal_icons/ghost_bow.png",
+	  },
+	  {
 		name="Juvenile Centipede",
 		path="data/entities/animals/giant_centipede.xml",
 		image="data/ui_gfx/animal_icons/giant_centipede.png",
@@ -164,6 +169,11 @@ table.insert(ALL_ENTITIES, {
 		name="Rocket Shotgun Hisii",
 		path="data/entities/animals/hisii_rocketshotgun.xml",
 		image="data/ui_gfx/animal_icons/hisii_rocketshotgun.png",
+	  },
+	  {
+		name="Locust Swarm",
+		path="data/entities/animals/locust_swarm.xml",
+		image="data/ui_gfx/animal_icons/locust_swarm.png",
 	  },
 	  {
 		name="Towering Pillar of Hämis",

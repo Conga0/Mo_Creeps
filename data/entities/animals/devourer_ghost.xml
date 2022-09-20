@@ -161,11 +161,10 @@
 	</AudioComponent>
 
 	<SpriteAnimatorComponent />
-	
+			
 	<AudioComponent
-      file="data/audio/Desktop/animals.bank"
-      event_root="animals/boss_limbs"
-      set_latest_event_position="1" >
+		file="data/audio/Desktop/animals.bank"
+		event_root="animals/ghost" >
 	</AudioComponent>
 
 	<AudioLoopComponent

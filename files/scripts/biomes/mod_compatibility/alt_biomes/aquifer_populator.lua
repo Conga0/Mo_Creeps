@@ -7,6 +7,41 @@
         entity     = "data/entities/animals/coal_mines/wizard_firemage_greater.xml"
     })
 
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.05,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/longleg_pillar.xml"
+    })
+
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.1,
+        min_count    = 1,
+        max_count    = 1,    
+		entities 	= {
+			{
+				min_count	= 1,
+				max_count 	= 1,
+				entity = "data/entities/buildings/hamis_nest.xml",
+			},
+			{
+				min_count	= 2,
+				max_count 	= 3,
+				entity = "data/entities/animals/longleg.xml",
+			},
+		}
+    })
+
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.115,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/hisii_minecart.xml"
+    })
+
     
 
     ---Small Enemies
@@ -52,9 +87,9 @@
 		end,
     })
 
-    table.insert(g_small_enemies,
+    table.insert(g_lamp,
     {
-        prob           = 0.1,
+        prob           = 0.2,
         min_count    = 6,
         max_count    = 12,    
         entity     = "data/entities/animals/fairy_cheap.xml"

@@ -33,4 +33,10 @@ function damage_received( damage, desc, entity_who_caused, is_fatal )
 	ComponentSetValue2( particleComp, "count_min", swarm_density )
 	ComponentSetValue2( particleComp, "count_max", swarm_density )
 
+
+	local particleComp2 = EntityGetComponentIncludingDisabled(entity_id, "ParticleEmitterComponent")[2]
+
+	ComponentSetValue2( particleComp2, "count_min", swarm_density )
+	ComponentSetValue2( particleComp2, "count_max", swarm_density )
+
 end

@@ -1,0 +1,4 @@
+mods/mo_creeps/files/ragdolls/wizard_manaeater/torso.png
+mods/mo_creeps/files/ragdolls/wizard_manaeater/hand.png
+mods/mo_creeps/files/ragdolls/wizard_manaeater/feet.png
+mods/mo_creeps/files/ragdolls/wizard_manaeater/head.png
