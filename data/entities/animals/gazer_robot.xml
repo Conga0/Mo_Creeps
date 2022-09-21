@@ -1,0 +1,129 @@
+<Entity name="Robotic Gazer">
+  
+	<Base file="data/entities/base_enemy_robot.xml" >
+		<ItemChestComponent level="1" > </ItemChestComponent>
+		
+		<AnimalAIComponent
+			preferred_job="JobDefault"
+			attack_ranged_entity_file="mods/mo_creeps/files/entities/projectiles/robot_gunner_projectile.xml"
+			attack_ranged_enabled="1"
+			attack_ranged_action_frame="1"
+			attack_ranged_frames_between="600"
+			attack_ranged_min_distance="0"
+			attack_ranged_max_distance="600"
+			attack_dash_enabled="0"
+			sense_creatures="1"
+			creature_detection_range_x="650"
+			creature_detection_range_y="350"
+			can_fly="1"
+			can_walk="0" >
+		</AnimalAIComponent>
+
+		<DamageModelComponent
+            hp="11.5"
+            ragdoll_filenames_file="data/ragdolls/gazer/filenames.txt"
+			>
+		</DamageModelComponent>
+
+		<PathFindingComponent
+			can_fly="1"
+			can_walk="0"
+			>
+		</PathFindingComponent>
+
+		<SpriteComponent 
+			image_file="mods/mo_creeps/files/enemies_gfx/gazer_robot.xml" 
+			offset_x="0"
+			offset_y="0">
+		</SpriteComponent>
+		
+		<HitboxComponent
+			_enabled="1"
+			aabb_min_x="-10.5"
+			aabb_max_x="10.5"
+			aabb_min_y="-18.0"
+			aabb_max_y="6"
+			is_enemy="1"
+			is_item="0"
+			is_player="0" >
+		</HitboxComponent>
+
+		<PathFindingGridMarkerComponent
+			marker_work_flag="16" >
+		</PathFindingGridMarkerComponent>
+		
+		<GenomeDataComponent 
+			herd_id="robot"
+			food_chain_rank="5"
+			is_predator="1" >
+		</GenomeDataComponent>
+		
+		<CharacterDataComponent
+			collision_aabb_min_x="-10.0" 
+			collision_aabb_max_x="10.0" 
+			collision_aabb_min_y="-19" 
+			collision_aabb_max_y="3" 
+			mass="2.3"
+			>
+		</CharacterDataComponent>
+	</Base>
+	
+	<AudioComponent
+		file="data/audio/Desktop/animals.bank"
+		event_root="animals/drone_lasership" >
+	</AudioComponent>
+
+	<AudioLoopComponent
+		file="data/audio/Desktop/animals.bank"
+		event_name="animals/drone_lasership/movement_loop"
+		set_speed_parameter="1"
+		auto_play="1">
+	</AudioLoopComponent>
+	
+	<Entity>
+		<InheritTransformComponent />
+		
+	    <GameEffectComponent 
+	        effect="PROTECTION_FREEZE"
+	        frames="-1"
+	    >
+		</GameEffectComponent >
+	</Entity>
+	
+	<AudioComponent
+		file="data/audio/Desktop/animals.bank"
+		event_root="animals/gazer" >
+	</AudioComponent>
+
+	<AudioLoopComponent
+		file="data/audio/Desktop/animals.bank"
+		event_name="animals/gazer/movement_loop"
+		set_speed_parameter="1"
+		auto_play="1">
+	</AudioLoopComponent>
+
+	<ParticleEmitterComponent 
+		emitted_material_name="spark"
+		x_pos_offset_min="-8"
+		x_pos_offset_max="8"
+		y_pos_offset_min="5"
+		y_pos_offset_max="7"
+		x_vel_min="0"
+		x_vel_max="0"
+		y_vel_min="40"
+		y_vel_max="120"
+		friction="1"
+		count_min="1"
+		count_max="1"
+		lifetime_min="0.2"
+		lifetime_max="0.7"
+		create_real_particles="0"
+		emit_cosmetic_particles="1"
+		emission_interval_min_frames="1"
+		emission_interval_max_frames="3"
+		fade_based_on_lifetime="1"
+		is_emitting="1" >
+	</ParticleEmitterComponent>
+
+</Entity>
+

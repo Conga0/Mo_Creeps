@@ -33,7 +33,7 @@
 		prob   		= 0.02,
 		min_count	= 1,
 		max_count	= 4,
-		entity 	= "mods/mo_creeps/entities/animals/rat_birthday.xml",
+		entity 	= "data/entities/animals/rat_birthday.xml.xml",
 		spawn_check = function() 
 			local year, month, day = GameGetDateAndTimeLocal()
 			

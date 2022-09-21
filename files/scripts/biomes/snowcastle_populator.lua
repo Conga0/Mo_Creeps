@@ -89,7 +89,7 @@
 
     table.insert(g_props,
     {
-        prob           = 0.03,
+        prob           = 0.025,
         min_count    = 1,
         max_count    = 1,    
         entity     = "data/entities/animals/mimic_explosive_box.xml"
@@ -126,7 +126,7 @@
 		prob   		= 0.4,
 		min_count	= 2,
 		max_count	= 6,    
-		entity 	= "mods/mo_creeps/entities/animals/rat_birthday.xml",
+		entity 	= "data/entities/animals/rat_birthday.xml.xml",
 		spawn_check = function() 
 			local year, month, day = GameGetDateAndTimeLocal()
 			
