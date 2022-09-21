@@ -7,37 +7,37 @@
 
   <RectAnimation 
     frame_count="6" 
-    frame_height="32" 
+    frame_height="33" 
     frame_wait="0.16" 
-    frame_width="32" 
+    frame_width="33" 
     frames_per_row="6" 
     name="stand" 
     pos_x="0" 
-    pos_y="1" >
+    pos_y="0" >
 
   </RectAnimation>
 
   <RectAnimation 
     frame_count="6" 
-    frame_height="32" 
+    frame_height="33" 
     frame_wait="0.16" 
-    frame_width="32" 
+    frame_width="33" 
     frames_per_row="6" 
     name="fly" 
     pos_x="0" 
-    pos_y="1" >
+    pos_y="0" >
 
   </RectAnimation>
 
   <RectAnimation 
     frame_count="6" 
-    frame_height="32" 
+    frame_height="33" 
     frame_wait="0.16" 
-    frame_width="32" 
+    frame_width="33" 
     frames_per_row="6" 
     name="fly_idle" 
     pos_x="0" 
-    pos_y="1" >
+    pos_y="0" >
 
   </RectAnimation>
 

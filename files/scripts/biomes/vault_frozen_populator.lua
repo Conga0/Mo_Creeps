@@ -90,7 +90,7 @@
 		prob   		= 0.2,
 		min_count	= 2,
 		max_count	= 6,    
-		entity 	= "data/entities/animals/rat_birthday.xml.xml",
+		entity 	= "data/entities/animals/rat_birthday.xml",
 		spawn_check = function() 
 			local year, month, day = GameGetDateAndTimeLocal()
 			
