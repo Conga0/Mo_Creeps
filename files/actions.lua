@@ -289,6 +289,7 @@ table.insert(actions,
     sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/mass_materia_conversion.png",
     sprite_unidentified = "data/ui_gfx/gun_actions/explosive_projectile_unidentified.png",
     related_extra_entities = { "data/entities/misc/mass_materia_conversion.xml" },
+    spawn_requires_flag = "mocreeps_card_unlocked_boss_toxic_worm",
     type 		= ACTION_TYPE_STATIC_PROJECTILE,
     spawn_level                       = "2,3,6,7,10", -- LAVA_TO_BLOOD
     spawn_probability                 = "0.1,0.1,0.3,0.5,1", -- LAVA_TO_BLOOD
@@ -318,6 +319,28 @@ table.insert(actions,
     max_uses = 3,
     action 		= function()
         add_projectile("data/entities/misc/forced_bungal_shift.xml")
+        c.fire_rate_wait = c.fire_rate_wait + 60
+        current_reload_time = current_reload_time + 30
+    end,
+})
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_BUNGAL_SHIFT_SPAM",
+    name 		= "Hyper Fungal Shift",
+    description = "Impatient....                      ", --Triggers a fungal shift, no cooldown.
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/bungal_shift_spam.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/explosive_projectile_unidentified.png",
+    related_extra_entities = { "data/entities/misc/forced_bungal_shift_spam.xml" },
+    spawn_requires_flag = "mocreeps_card_unlocked_boss_toxic_worm",
+    type 		= ACTION_TYPE_STATIC_PROJECTILE,
+    spawn_level                       = "10", -- Conversion Spell
+    spawn_probability                 = "0.01", -- Conversion Spell
+    price = 250,
+    mana = 200,
+    max_uses = 3,
+    action 		= function()
+        add_projectile("data/entities/misc/forced_bungal_shift_spam.xml")
         c.fire_rate_wait = c.fire_rate_wait + 60
         current_reload_time = current_reload_time + 30
     end,
@@ -439,9 +462,51 @@ table.insert(actions,
     price = 150,
     mana = 10,
     --max_uses = 1000,
-    sound_loop_tag = "sound_digger",
     action 		= function()
         add_projectile("mods/mo_creeps/files/entities/projectiles/deck/rat_bite.xml")
         c.damage_critical_chance = c.damage_critical_chance + 10
+    end,
+})
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_SUMMON_WORM_BIG",
+    name 		= "Summon Jättimato",
+    description = "Dangerous....                      ", --Triggers a fungal shift, no cooldown.
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/summon_worm_big.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/explosive_projectile_unidentified.png",
+    related_extra_entities = { "mods/mo_creeps/files/entities/projectiles/deck/summon_worm_big.xml" },
+    spawn_requires_flag = "mocreeps_card_unlocked_boss_toxic_worm",
+    type 		= ACTION_TYPE_STATIC_PROJECTILE,
+    spawn_level                       = "10", -- Conversion Spell
+    spawn_probability                 = "0.01", -- Conversion Spell
+    price = 250,
+    mana = 225,
+    max_uses = 3,
+    action 		= function()
+        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/summon_worm_big.xml")
+        c.fire_rate_wait = c.fire_rate_wait + 90
+        current_reload_time = current_reload_time + 60
+    end,
+})
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_RAT_BITE_CRIT",
+    name 		= "Bloody Bite",
+    description = "Magic...............................?       ", --Converted Rat Bite, Big Crit chance.
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/rat_bite_crit.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/chainsaw_unidentified.png",
+    related_projectiles	= {"mods/mo_creeps/files/entities/projectiles/deck/rat_bite_crit.xml"},
+    spawn_requires_flag = "mocreeps_card_unlocked_boss_toxic_worm",
+    type 		= ACTION_TYPE_PROJECTILE,
+    spawn_level                       = "10", -- Conversion Spell
+    spawn_probability                 = "0.01", -- Conversion Spell
+    price = 250,
+    mana = 100,
+    --max_uses = 1000,
+    action 		= function()
+        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/rat_bite_crit.xml")
+        c.damage_critical_chance = c.damage_critical_chance + 50
     end,
 })

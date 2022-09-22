@@ -35,6 +35,18 @@ if (inilisationCheck ~= 2) then
     --Spawns Wand of Wonders & Pouch inside the wand cave
     local entity = EntityLoad( "data/entities/buildings/wand_cave_populator.xml", 12200, -4202 )
 
+
+    --Spawns Kitty Cats at the start of the game, Cat, I'm a Kitty Cat! And I dance dance dance and I dance dance dance!! Nyaaa!!
+    local entity = EntityLoad( "data/entities/buildings/intro_kitty_populator.xml", 676, -106 )
+
+
+    --Spawns a book hinting towards Materia Converting Fungal Shift
+    local entity = EntityLoad( "data/entities/buildings/materia_conversion_book_spawner.xml", 2515, 7428 )
+
+
+    --Spawns a book hinting towards which spells to use Mass Materia Conversion on
+    local entity = EntityLoad( "data/entities/buildings/materia_conversion_spell_book_spawner.xml", -1111, -1234 )
+
     inilisationCheck = 2
 
 end

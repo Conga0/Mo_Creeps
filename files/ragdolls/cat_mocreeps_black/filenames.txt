@@ -1,0 +1,7 @@
+mods/mo_creeps/files/ragdolls/cat_mocreeps_black/head.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_black/body.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_black/legs_1.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_black/legs_2.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_black/legs_3.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_black/legs_4.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_black/tail.png

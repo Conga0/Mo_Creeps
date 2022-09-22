@@ -1,0 +1,7 @@
+mods/mo_creeps/files/ragdolls/cat_mocreeps_white/head.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_white/body.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_white/legs_1.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_white/legs_2.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_white/legs_3.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_white/legs_4.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_white/tail.png

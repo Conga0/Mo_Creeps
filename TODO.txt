@@ -12,3 +12,9 @@ Poring Chunks ragdoll
 Very small visual effect when wandcave spawns entities in. (incase player has all seeing eye or worm vision)
 
 Minecart Hisii drops actual minecart
+
+Birthday Rat appears in Trophy Room if you've completed all statues
+
+
+
+Hide specific materia conversion hint book better

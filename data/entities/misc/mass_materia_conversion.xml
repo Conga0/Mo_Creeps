@@ -15,7 +15,7 @@
       kill_when_finished="1"
       from_material="vomit"
       steps_per_frame="2"
-      to_material="urine"
+      to_material="magic_liquid_teleportation"
       clean_stains="0"
       is_circle="1"
       radius="150" 
@@ -310,4 +310,26 @@
 	  loop="0"
 	  >
     </MagicConvertMaterialComponent>
+	
+	<LuaComponent
+		script_source_file="mods/mo_creeps/files/scripts/magic/materia_spell_conversion.lua"
+		execute_every_n_frame="5"
+		execute_times="1"
+		>
+	</LuaComponent>
+	
+	<LuaComponent
+		script_source_file="mods/mo_creeps/files/scripts/magic/materia_spell_conversion_worm_rain.lua"
+		execute_every_n_frame="5"
+		execute_times="1"
+		>
+	</LuaComponent>
+	
+	<LuaComponent
+		script_source_file="mods/mo_creeps/files/scripts/magic/materia_spell_conversion_rat_bite.lua"
+		execute_every_n_frame="5"
+		execute_times="1"
+		>
+	</LuaComponent>
+
 </Entity>

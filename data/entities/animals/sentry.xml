@@ -158,6 +158,11 @@
 		event_root="animals/spearbot" >
 	</AudioComponent>
 
+	<AudioComponent
+		file="mods/Mo_Creeps/mocreeps_audio.bank"
+		event_root="mocreeps/sentry" >
+	</AudioComponent>
+
 	<!-- protection from FREEZING -->
 	<Entity>
 		<InheritTransformComponent />

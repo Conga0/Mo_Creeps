@@ -7,7 +7,7 @@ function collision_trigger()
 
 	local year, month, day = GameGetDateAndTimeLocal()
 	
-	if (day = 1) then
+	if (day == 1) then
 		EntityLoad( "mods/mo_creeps/files/entities/items/wands/custom/wand_of_wonders.xml", pos_x, pos_y )
 	else
 		EntityLoad( "data/entities/items/wand_unshuffle_03.xml", pos_x, pos_y )

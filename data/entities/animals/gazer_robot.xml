@@ -1,4 +1,4 @@
-<Entity name="Robotic Gazer">
+<Entity name="Aluebotti">
   
 	<Base file="data/entities/base_enemy_robot.xml" >
 		<ItemChestComponent level="1" > </ItemChestComponent>
@@ -20,9 +20,13 @@
 		</AnimalAIComponent>
 
 		<DamageModelComponent
-            hp="11.5"
-            ragdoll_filenames_file="data/ragdolls/gazer/filenames.txt"
+            hp="16"
+            ragdoll_filenames_file="mods/mo_creeps/files/ragdolls/gazer_robot/filenames.txt"
 			>
+			<damage_multipliers
+				projectile="0.0" 
+				>
+			</damage_multipliers>
 		</DamageModelComponent>
 
 		<PathFindingComponent
@@ -67,6 +71,15 @@
 			>
 		</CharacterDataComponent>
 	</Base>
+
+		<SpriteComponent 
+			_tags="character" 
+			alpha="1" 
+			image_file="mods/mo_creeps/files/enemies_gfx/gazer_robot_emissive.xml" 
+			offset_x="0"
+			offset_y="0"
+			emissive="1">
+		</SpriteComponent>
 	
 	<AudioComponent
 		file="data/audio/Desktop/animals.bank"
@@ -124,6 +137,26 @@
 		fade_based_on_lifetime="1"
 		is_emitting="1" >
 	</ParticleEmitterComponent>
+
+  <LightComponent
+    _enabled="1"
+    radius="140"
+    r="255"
+    g="80"
+    b="80"
+    fade_out_time="1.5"
+	offset_x="0"
+	offset_y="0"
+    >
+  </LightComponent>
+	
+	<!-- Reinforcement script disabled, not necessarily because I don't like the idea, more accurate because the Zoner feels really cheap with it. What good is a well tuned AI and code behaviour if the sprite sucks ass? It just makes the sprite look cheap... Which, I don't like. Spriting is hard... man. And I Don't want to just accept that, I want to be better, have more creative ideas for sprites and be able to execute them well. I just don't know the path forwards to reach that goal...
+	<LuaComponent 
+		_enabled="1" 
+		script_damage_received="mods/mo_creeps/files/scripts/animals/gazer_robot_reinforce.lua" 
+		>
+	</LuaComponent>
+	-->
 
 </Entity>
 

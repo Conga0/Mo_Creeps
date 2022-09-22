@@ -16,6 +16,7 @@
 {9e5f6674-ecca-4cb3-9e39-050604be24e9} bus:/music_reverb
 {8340afee-1bfb-481c-8b65-a1721703356c} bus:/reverb
 {40bdfd79-5dfd-4303-8a71-0792c637c380} bus:/ui
+{91b3261f-71bc-4e5c-844b-67074604bbb1} event:/mocreeps_audio/kittycat/voc_attack
 {f6b37c19-e125-4d10-96a6-848850e2086c} event:/mocreeps_audio/reverberation/create
 {78155aa7-7cd5-4d10-9930-3fff2c96979b} event:/mocreeps_audio/sentry/voc_attack
 {2f99f806-4b51-4b0a-a879-566644591f29} parameter:/Migration Name Conflict (3)/lowpass

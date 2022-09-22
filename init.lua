@@ -104,6 +104,10 @@ perk_mocreeps_rage_aura,Enraging Aura,,,,,,,,,,,,,
 perk_mocreeps_rage_aura_description,Creatures are sent into a blind rage by your presence.,,,,,,,,,,,,,
 book_mocreeps_divine_liquid,Tablet of Apotheosis,,,,,,,,,,,,,
 book_mocreeps_divine_liquid_description,"Long have been the days since the universe was in union. \nWhen Slime was no different from above and below was no different from slime. \nSome species have adapted to these changes however, excessively, and became attuned to the pinnacles and depths of this world. \nThey must distance themselves with truly divine reason.",,,,,,,,,,,,,
+book_mocreeps_materia_conversion,Materia Conversion,,,,,,,,,,,,,
+book_mocreeps_materia_conversion_description,"Transmutation.. Materia Conversion. \nFor years I've dedicated my life to this art, only to foolishly trick myself. \nFor years I thought Materia Conversion could only be used on solid matter, \nBut only now in my last few days I've come to learn it can be harnessed on magic as well. \nI can only hope the fruits of my labour will not forgotten.",,,,,,,,,,,,,
+book_mocreeps_materia_conversion_spell,Conversion,,,,,,,,,,,,,
+book_mocreeps_materia_conversion_spell_description,"Remember these words.... \nFungus \nWorm \nRat",,,,,,,,,,,,,
 ]])
 
 

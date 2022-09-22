@@ -126,6 +126,11 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/animal_icons/gazer_greater_cold.png",
 	  },
 	  {
+		name="Zoner",
+		path="data/entities/animals/gazer_robot.xml",
+		image="data/ui_gfx/animal_icons/gazer_robot.png",
+	  },
+	  {
 		name="Phantom Bow",
 		path="data/entities/animals/ghost_bow.xml",
 		image="data/ui_gfx/animal_icons/ghost_bow.png",

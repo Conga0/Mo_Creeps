@@ -96,6 +96,16 @@
 
     <Event 
       check_physics_material="0" 
+      frame="1" 
+      max_distance="600" 
+      name="voc_attack" 
+      on_finished="0" 
+      probability="1" >
+
+    </Event>
+
+    <Event 
+      check_physics_material="0" 
       frame="10" 
       max_distance="600" 
       name="shoot_sniper" 
