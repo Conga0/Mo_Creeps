@@ -230,12 +230,12 @@ ModLuaFileAppend( "data/scripts/biomes/mountain/mountain_hall.lua", "mods/mo_cre
 
 ]]--
 
+
 --Spawns all the above spawns in a single file with a check to prevent double spawning
-ModLuaFileAppend( "data/scripts/biomes/mountain/mountain_hall.lua", "mods/mo_creeps/files/scripts/biomes/boss_spawns/boss_spawn_list.lua" )
+dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/boss_spawn_list.lua" )
 
 --Spawns statues in the trophy room
 ModLuaFileAppend( "data/scripts/biomes/mountain/mountain_hall.lua", "mods/mo_creeps/files/scripts/biomes/boss_spawns/statue_room_populator.lua" ) 
-
 
 
 

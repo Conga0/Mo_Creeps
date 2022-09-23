@@ -17,4 +17,6 @@ Birthday Rat appears in Trophy Room if you've completed all statues
 
 
 
-Hide specific materia conversion hint book better
+Hide spell specific materia conversion hint book better
+
+Pet the cat, think pet the Hamis

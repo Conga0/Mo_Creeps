@@ -1,0 +1,7 @@
+mods/mo_creeps/files/ragdolls/cat_mocreeps_spoopy_tiger/head.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_spoopy_tiger/body.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_spoopy_tiger/legs_1.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_spoopy_tiger/legs_2.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_spoopy_tiger/legs_3.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_spoopy_tiger/legs_4.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_spoopy_tiger/tail.png

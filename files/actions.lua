@@ -477,6 +477,7 @@ table.insert(actions,
     sprite_unidentified = "data/ui_gfx/gun_actions/explosive_projectile_unidentified.png",
     related_extra_entities = { "mods/mo_creeps/files/entities/projectiles/deck/summon_worm_big.xml" },
     spawn_requires_flag = "mocreeps_card_unlocked_boss_toxic_worm",
+    never_unlimited		= true,
     type 		= ACTION_TYPE_STATIC_PROJECTILE,
     spawn_level                       = "10", -- Conversion Spell
     spawn_probability                 = "0.01", -- Conversion Spell

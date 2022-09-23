@@ -71,6 +71,11 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/bubbles/bubble_liquid_water.png",
 	  },
 	  {
+		name="Cat",
+		path="mods/mo_creeps/files/entities/special/conjurer_cat_spawner.xml",
+		image="data/ui_gfx/animal_icons/cat_mocreeps.png",
+	  },
+	  {
 		name="Devouring Phantom",
 		path="data/entities/animals/devourer_ghost.xml",
 		image="data/ui_gfx/animal_icons/devourer_ghost.png",

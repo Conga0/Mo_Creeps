@@ -1,0 +1,7 @@
+mods/mo_creeps/files/ragdolls/cat_mocreeps_spoopy_frisky/head.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_spoopy_frisky/body.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_spoopy_frisky/legs_1.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_spoopy_frisky/legs_2.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_spoopy_frisky/legs_3.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_spoopy_frisky/legs_4.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_spoopy_frisky/tail.png

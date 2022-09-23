@@ -1,7 +1,7 @@
 <Sprite
- filename="data/enemies_gfx/rational_frisky.png"
- offset_x="14"
- offset_y="9"
+ filename="mods/mo_creeps/files/enemies_gfx/cats/rational_frisky.png"
+ offset_x="8"
+ offset_y="11"
  default_animation="walk" 
  >
 

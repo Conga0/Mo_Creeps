@@ -1,4 +1,4 @@
-<Entity tags="mortal,prey,ui_use_raw_name" name="Cat">
+<Entity tags="mortal,prey,ui_use_raw_name" name="Kissa">
   
 	<Base file="data/entities/base_helpless_animal.xml" >
 
@@ -76,6 +76,12 @@
 			>
 		</CharacterDataComponent>
 	</Base>
+
+	<LuaComponent
+		script_source_file="mods/mo_creeps/files/scripts/animals/cat_meow.lua"
+		execute_every_n_frame="60"
+		>
+	</LuaComponent>
 
 </Entity>
 

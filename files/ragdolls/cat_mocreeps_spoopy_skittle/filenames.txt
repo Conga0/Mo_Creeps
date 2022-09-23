@@ -1,0 +1,7 @@
+mods/mo_creeps/files/ragdolls/cat_mocreeps_spoopy_skittle/head.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_spoopy_skittle/body.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_spoopy_skittle/legs_1.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_spoopy_skittle/legs_2.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_spoopy_skittle/legs_3.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_spoopy_skittle/legs_4.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_spoopy_skittle/tail.png

@@ -1,0 +1,14 @@
+<Entity name="unknown">
+		
+	<LifetimeComponent
+		lifetime="180" >
+	</LifetimeComponent>
+	
+	<AudioLoopComponent
+		file="mods/mo_creeps/mocreeps_audio.bank"
+		event_name="mocreeps_audio/kittycat/voc_attack_purr_01"
+		auto_play="1">
+	</AudioLoopComponent>
+
+</Entity>
+
