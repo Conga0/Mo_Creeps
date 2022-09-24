@@ -24,3 +24,7 @@ Musical beings are visible when near music machine
 
 ULTRA RARE: Esoteric Kitty
 Black with white lightning coming off of it
+
+Fix Conjurer cat spawner
+use single seed?
+Look at Master of None code

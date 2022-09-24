@@ -6,16 +6,29 @@ local pos_x, pos_y = EntityGetTransform( entity_id )
 cat_list = { "cat_mocreeps", "cat_mocreeps_black", "cat_mocreeps", "cat_mocreeps_black", "cat_mocreeps_white", "cat_mocreeps_spoopy", "cat_mocreeps_spoopy_skittle", "cat_mocreeps_spoopy_frisky", "cat_mocreeps_spoopy_tiger" }
 SetRandomSeed( GameGetFrameNum(), pos_x + entity_id )
 local goldenCatSeed = Random( 1, 50)
+local rainbowCatSeed = Random( 1, 100)
+local esotericCatSeed = Random( 1, 300)
 local valid = true
 pos_x, pos_y = EntityGetTransform( entity_id )
 
 local rnd = Random( 1, #cat_list )
 local target = cat_list[rnd]
 
-if goldenCatSeed == 1 then
+if esotericCatSeed == 300 then
+	EntityLoad( "data/entities/animals/cat_mocreeps_esoteric.xml", pos_x, pos_y )
+	valid = false
+end
+
+if ((rainbowCatSeed == 100) and (valid == true)) then
+	EntityLoad( "data/entities/animals/cat_mocreeps_sorako.xml", pos_x, pos_y )
+	valid = false
+end
+--OMG GUYS I'M A RAINBOW KITTY! - Sorako
+
+if ((goldenCatSeed == 1) and (valid == true)) then
 	EntityLoad( "data/entities/animals/cat_mocreeps_golden.xml", pos_x, pos_y )
 	valid = false
-elseif goldenCatSeed == 2 then
+elseif ((goldenCatSeed == 2) and (valid == true)) then
 	EntityLoad( "data/entities/animals/cat_mocreeps_spoopy_golden.xml", pos_x, pos_y )
 	valid = false
 end
