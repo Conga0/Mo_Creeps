@@ -6,6 +6,7 @@ function collision_trigger()
 	cat_list = { "cat_mocreeps", "cat_mocreeps_black", "cat_mocreeps", "cat_mocreeps_black", "cat_mocreeps_white", "cat_mocreeps_spoopy", "cat_mocreeps_spoopy_skittle", "cat_mocreeps_spoopy_frisky", "cat_mocreeps_spoopy_tiger" }
 	SetRandomSeed( GameGetFrameNum(), pos_x + entity_id )
 	local goldenCatSeed = Random( 1, 50)
+	local rainbowCatSeed = Random( 1, 100)
 
 	local catcount = 5
 
@@ -29,6 +30,11 @@ function collision_trigger()
 	elseif goldenCatSeed == 2 then
 		EntityLoad( "data/entities/animals/cat_mocreeps_spoopy_golden.xml", pos_x, pos_y )
 	end
+
+	if rainbowCatSeed == 200 then
+		EntityLoad( "data/entities/animals/cat_mocreeps_sorako.xml", pos_x, pos_y )
+	end
+	--OMG GUYS I'M A RAINBOW KITTY! - Sorako
 	
 	EntityKill( entity_id )
 end

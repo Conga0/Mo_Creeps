@@ -289,6 +289,26 @@
 	color="ff505050" >
     </Graphics>
   </CellData>
+  
+  <CellDataChild
+  	_parent="meat"
+	name="mocreeps_meat_centipede"
+	ui_name="Centipede Meat"
+	wang_color="ffebcda2"
+	solid_on_collision_material="mocreeps_blood_worm_centipede"
+	solid_break_to_type="mocreeps_blood_worm_centipede"
+	gfx_glow="50"
+	audio_physics_material_wall="meat"
+	audio_physics_material_solid="meat"
+	audio_is_soft="1"
+	show_in_creative_mode="1"
+	>
+    <Graphics
+	texture_file="data/materials_gfx/wormmeat.png"
+	color="ffebcd00"
+	>
+    </Graphics>
+  </CellDataChild>
 
 
 

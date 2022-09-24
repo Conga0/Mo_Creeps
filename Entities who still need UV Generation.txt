@@ -2,7 +2,7 @@ Porings (all)
 Angel
 Giant centipede
 Flame Tank
-Minecart Hisii
 Phantom Bow
-Zoner
-Cats
+
+
+Remember to remove beta build from the description when it's released

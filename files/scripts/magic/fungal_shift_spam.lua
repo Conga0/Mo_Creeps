@@ -31,6 +31,7 @@ materials_from =
 	{ probability = 0.2, materials = { "mocreeps_cloud_poison" } },
 	{ probability = 0.15, materials = { "rock_static_wet" } },
 	{ probability = 0.1, materials = { "cloud_radioactive" } },
+	{ probability = 0.1, materials = { "spark_white", "spark_white_bright" }, name_material = "spark_white" },
 	{ probability = 0.1, materials = { "wood_static", "wood", "wood_loose" }, name_material = "wood" },
 	{ probability = 0.1, materials = { "templebrick_static", "templebrick_static_ruined" }, name_material = "templebrick_static" },
 	{ probability = 0.1, materials = { "mocreeps_redstone" } },

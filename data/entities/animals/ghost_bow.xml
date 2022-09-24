@@ -11,7 +11,7 @@
 			
 			attack_ranged_action_frame="7"
 			attack_ranged_min_distance="0"
-			attack_ranged_max_distance="250"
+			attack_ranged_max_distance="200"
 			attack_ranged_frames_between="120"
 			attack_ranged_aim_rotation_enabled="1"
 			attack_ranged_aim_rotation_speed="0.27"

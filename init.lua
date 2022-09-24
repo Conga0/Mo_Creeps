@@ -108,6 +108,8 @@ book_mocreeps_materia_conversion,Materia Conversion,,,,,,,,,,,,,
 book_mocreeps_materia_conversion_description,"Transmutation.. Materia Conversion. \nFor years I've dedicated my life to this art, only to foolishly trick myself. \nFor years I thought Materia Conversion could only be used on solid matter, \nBut only now in my last few days I've come to learn it can be harnessed on magic as well. \nI can only hope the fruits of my labour will not forgotten.",,,,,,,,,,,,,
 book_mocreeps_materia_conversion_spell,Conversion,,,,,,,,,,,,,
 book_mocreeps_materia_conversion_spell_description,"Remember these words.... \nFungus \nWorm \nRat",,,,,,,,,,,,,
+book_mocreeps_trophy_room,"Alchemist's Notes",,,,,,,,,,,,,
+book_mocreeps_trophy_room_description,"I have come to learn this Tree was deemed unfitting of.. certain.. accomplishments by the gods. \nCross the lava, descend where you would not normal. \nThere they will humour you.",,,,,,,,,,,,,
 ]])
 
 
@@ -146,6 +148,7 @@ ModLuaFileAppend( "data/scripts/biomes/clouds.lua", "mods/mo_creeps/files/script
 ModLuaFileAppend( "data/scripts/biomes/robobase.lua", "mods/mo_creeps/files/scripts/biomes/robobase_populator.lua" ) --Power Plant
 ModLuaFileAppend( "data/scripts/biomes/lake_statue.lua", "mods/mo_creeps/files/scripts/biomes/lake_statue_populator.lua" ) --Lake Island
 ModLuaFileAppend( "data/scripts/biomes/hills.lua", "mods/mo_creeps/files/scripts/biomes/hills_populator.lua" ) --Hills and shallow caves
+ModLuaFileAppend( "data/scripts/biomes/robot_egg.lua", "mods/mo_creeps/files/scripts/biomes/robot_egg_populator.lua" ) --End of Everything Robotic Egg
 
 
 ModLuaFileAppend( "data/scripts/gun/gun_actions.lua", "mods/mo_creeps/files/actions.lua" )
@@ -231,7 +234,7 @@ ModLuaFileAppend( "data/scripts/biomes/mountain/mountain_hall.lua", "mods/mo_cre
 ]]--
 
 
---Spawns all the above spawns in a single file with a check to prevent double spawning
+--Spawns all the above spawns in a single file and appends to pixel scenes to prevent double spawning
 dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/boss_spawn_list.lua" )
 
 --Spawns statues in the trophy room

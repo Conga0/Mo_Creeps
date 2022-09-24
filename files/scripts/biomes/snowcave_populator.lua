@@ -90,6 +90,33 @@
 
 
 
+
+
+    --Unique Encounters
+
+    table.insert(g_scavenger_party,
+    {
+        prob           = 0.25,
+        min_count    = 1,
+        max_count    = 1,
+        entities     =  {
+			{
+				min_count	= 2,
+				max_count 	= 2,
+				entity = "data/entities/animals/hisii_engineer.xml",
+			},
+			{
+				min_count	= 2,
+				max_count 	= 2,
+				entity = "data/entities/animals/tank_flame_mocreep.xml",
+			},
+		}
+    })
+
+
+
+    
+
     --New Game +
 
 table.insert(g_small_enemies,

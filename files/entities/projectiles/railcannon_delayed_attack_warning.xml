@@ -41,7 +41,7 @@
 		<config_explosion
 			never_cache="1" 
 			camera_shake="0" 
-			explosion_radius="32" 
+			explosion_radius="8" 
 			explosion_sprite="data/particles/explosion_016_plasma.xml"
 			explosion_sprite_lifetime="0.0" 
 			create_cell_probability="0" 

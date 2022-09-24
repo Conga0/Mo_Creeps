@@ -26,7 +26,7 @@
     on_collision_die="0"
     lifetime="300"
 	die_on_liquid_collision="0"
-    spawn_entity="data/entities/projectiles/beam_holy_big.xml"
+    spawn_entity="mods/mo_creeps/files/entities/projectiles/beam_holy_big.xml"
     >
     <config_explosion
         never_cache="1" 
@@ -120,4 +120,12 @@
 		value_string="mods/mo_creeps/files/entities/projectiles/beam_holy_warning.xml"
 		>
 	</VariableStorageComponent>
+   
+  <LuaComponent 
+		_enabled="1" 
+		script_source_file="mods/mo_creeps/files/scripts/projectiles/beam_holy_warning_audio.lua" 
+        execute_every_n_frame="1"
+		remove_after_executed="1">
+   </LuaComponent>
+   
 </Entity>

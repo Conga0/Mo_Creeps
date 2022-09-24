@@ -84,7 +84,7 @@
 		<HitboxComponent 
             _enabled="1" 
             aabb_max_x="7" 
-            aabb_max_y="3" 
+            aabb_max_y="7" 
             aabb_min_x="-7" 
             aabb_min_y="-28" 
 			>

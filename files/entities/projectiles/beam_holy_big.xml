@@ -27,6 +27,12 @@
 	die_on_liquid_collision="0"
     >
   </ProjectileComponent>
+	
+	<LifetimeComponent
+		lifetime="120"
+		fade_sprites="1"
+		>
+	</LifetimeComponent>
   
   <SpriteComponent 
     _enabled="1" 
@@ -41,39 +47,32 @@
 	update_transform_rotation="0"
 	>
   </SpriteComponent>
+
+  <DamageNearbyEntitiesComponent
+    radius="24"
+    time_between_damaging="3"
+    damage_min="0.25"
+    damage_max="0.25"
+    target_tag="mortal"
+  damage_description="Divine Light"
+    damage_type="DAMAGE_CURSE"
+    ragdoll_fx="NONE">
+  </DamageNearbyEntitiesComponent>
+   
+  <LuaComponent 
+		_enabled="1" 
+		script_source_file="mods/mo_creeps/files/scripts/projectiles/beam_holy_big_damage.lua"
+    execute_every_n_frame="50"
+		remove_after_executed="1">
+   </LuaComponent>
   
   <LightComponent 
     _enabled="1" 
-    radius="150" 
+    radius="250" 
     r="220"
     g="220"
     b="220">
   </LightComponent>
-  
-  <ParticleEmitterComponent 
-    emitted_material_name="spark_white"
-    count_min="49"
-    count_max="60"
-    offset.x="0"
-    offset.y="5"
-    x_pos_offset_min="-1"
-    y_pos_offset_min="-1"
-    x_pos_offset_max="1"
-    y_pos_offset_max="1"
-    x_vel_min="-170"
-    x_vel_max="170"
-    y_vel_min="-170"
-    y_vel_max="170"
-    count_min="50"
-    count_max="70"
-    lifetime_min="2"
-    lifetime_max="4"
-    create_real_particles="0"
-    emit_cosmetic_particles="1"
-    emission_interval_min_frames="5"
-    emission_interval_max_frames="8"
-    is_emitting="1" >
-  </ParticleEmitterComponent>
 
 	<AudioComponent
 		file="data/audio/Desktop/projectiles.bank"
@@ -88,7 +87,7 @@
 	
 	<VariableStorageComponent
 		name="projectile_file"
-		value_string="mods/mo_creeps/files/entities/projectiles/beam_holy_big.xml"
+		value_string="mods/mo_creeps/files/entities/projectiles/beam_holy_warning.xml"
 		>
 	</VariableStorageComponent>
 </Entity>

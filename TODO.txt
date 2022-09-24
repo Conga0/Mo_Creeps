@@ -1,9 +1,4 @@
-Sentry entrenched sound effect
-
 Rocket Shotgunner looks weird, resprite
-
-
-Optimise Master of None AI code, look at tower populator script for how
 
 
 
@@ -11,12 +6,13 @@ Poring Chunks ragdoll
 
 Very small visual effect when wandcave spawns entities in. (incase player has all seeing eye or worm vision)
 
-Minecart Hisii drops actual minecart
-
-Birthday Rat appears in Trophy Room if you've completed all statues
+Banners turn golden if you 100% the trophy room
 
 
+Get Sora to voice "OMG GUYS IM A RAINBOW KITTY"
 
-Hide spell specific materia conversion hint book better
+Fix Fungal Shift spell not adding an icon to perk list
 
-Pet the cat, think pet the Hamis
+Finish 11 orb hardmode bosses
+Still todo: statue rewards for all
+spawning at 11 orbs

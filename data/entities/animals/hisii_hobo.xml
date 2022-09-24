@@ -38,6 +38,7 @@
 			blood_material="blood"
     		blood_spray_material="blood"
             blood_spray_create_some_cosmetic="1"
+			blood_multiplier="0.75"
 			>
 			<damage_multipliers
 				explosion="0.4"

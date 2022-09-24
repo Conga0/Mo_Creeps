@@ -310,6 +310,18 @@
 	  loop="0"
 	  >
     </MagicConvertMaterialComponent>
+
+	<MagicConvertMaterialComponent
+      kill_when_finished="1"
+      from_material="magic_liquid_mana_regeneration"
+      steps_per_frame="2"
+      to_material="water_ice"
+      clean_stains="0"
+      is_circle="1"
+      radius="150" 
+	  loop="0"
+	  >
+    </MagicConvertMaterialComponent>
 	
 	<LuaComponent
 		script_source_file="mods/mo_creeps/files/scripts/magic/materia_spell_conversion.lua"

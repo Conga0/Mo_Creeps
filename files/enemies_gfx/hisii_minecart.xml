@@ -1,8 +1,14 @@
 <Sprite
  filename="mods/mo_creeps/files/enemies_gfx/hisii_minecart.png"
+ hotspots_filename="mods/mo_creeps/files/enemies_gfx/hisii_minecart_hotspots.png"
  offset_x="10"
  offset_y="15"
  default_animation="stand" >
+ 
+ <Hotspot
+    color="00ff0000"
+    name="hand" >
+  </Hotspot>
 
  <!-- stand -->
  <RectAnimation

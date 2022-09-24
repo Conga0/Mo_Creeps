@@ -45,7 +45,7 @@
 		<SpriteComponent 
 			image_file="mods/mo_creeps/files/enemies_gfx/hisii_minecart.xml"
 			offset_x="0"
-			offset_y="0">
+			offset_y="6">
 		</SpriteComponent>
 
 		<PathFindingComponent
@@ -77,8 +77,8 @@
 		<CharacterDataComponent
 			collision_aabb_min_x="-7" 
 			collision_aabb_max_x="6" 
-			collision_aabb_min_y="-4"
-			collision_aabb_max_y="6" 
+			collision_aabb_min_y="2"
+			collision_aabb_max_y="12" 
 			mass="3.3"
 			>
 		</CharacterDataComponent>
@@ -92,8 +92,8 @@
             _enabled="1" 
 			aabb_min_x="-7" 
             aabb_max_x="6" 
-			aabb_min_y="-4"
-            aabb_max_y="6" 
+			aabb_min_y="2"
+            aabb_max_y="12" 
             >
         </HitboxComponent>
 	</Base>
@@ -106,6 +106,13 @@
 	<ItemPickUpperComponent
     	is_in_npc="1" >
     </ItemPickUpperComponent>
+	
+	<HotspotComponent
+		_tags="hand_hotspot,hand"
+		sprite_hotspot_name="hand"
+		offset.x="0" 
+		offset.y="0">
+	</HotspotComponent>
 
 	<AudioComponent
 		file="data/audio/Desktop/animals.bank"
@@ -116,8 +123,8 @@
 		_enabled="1" 
 		aabb_min_x="-5" 
 		aabb_max_x="2" 
-		aabb_min_y="-14"
-		aabb_max_y="-5"
+		aabb_min_y="-8"
+		aabb_max_y="1"
 		damage_multiplier="2.5"
 		>
 	</HitboxComponent>

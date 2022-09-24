@@ -1,0 +1,14 @@
+<Entity name="unknown">
+		
+	<LifetimeComponent
+		lifetime="500" >
+	</LifetimeComponent>
+	
+	<AudioLoopComponent
+		file="mods/mo_creeps/mocreeps_audio.bank"
+		event_name="mocreeps_audio/angel/warning"
+		auto_play="1">
+	</AudioLoopComponent>
+
+</Entity>
+

@@ -113,15 +113,26 @@ ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 ModTextFileSetContent("data/biome/_pixel_scenes_newgame_plus.xml", tostring(xml))
 
 
+--Spawns a book hinting towards the Trophy Room Location
+local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
+local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
+local xml = nxml.parse(content)
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="-1414" pos_y="-1312" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_trophy_room.xml" />
+]]))
+ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
+ModTextFileSetContent("data/biome/_pixel_scenes_newgame_plus.xml", tostring(xml))
+
+
 --Spawns a book hinting towards which spells to use Mass Materia Conversion on
 local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
 local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
 local xml = nxml.parse(content)
 xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-    <PixelScene pos_x="-1111" pos_y="-1234" just_load_an_entity="data/entities/buildings/materia_conversion_spell_book_spawner.xml" />
+    <PixelScene pos_x="-3810" pos_y="5426" just_load_an_entity="data/entities/buildings/materia_conversion_spell_book_spawner.xml" />
 ]]))
 ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
-ModTextFileSetContent("data/biome/_pixel_scenes_newgame_plus.xml", tostring(xml))
+ModTextFileSetContent("data/biome/_pixel_scenes_newgame_plus.xml", tostring(xml)) 
 
 
 
