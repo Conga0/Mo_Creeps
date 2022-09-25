@@ -45,7 +45,7 @@
 		<SpriteComponent 
 			image_file="mods/mo_creeps/files/enemies_gfx/hisii_minecart.xml"
 			offset_x="0"
-			offset_y="6">
+			offset_y="0">
 		</SpriteComponent>
 
 		<PathFindingComponent
@@ -77,8 +77,8 @@
 		<CharacterDataComponent
 			collision_aabb_min_x="-7" 
 			collision_aabb_max_x="6" 
-			collision_aabb_min_y="2"
-			collision_aabb_max_y="12" 
+			collision_aabb_min_y="-4"
+			collision_aabb_max_y="15" 
 			mass="3.3"
 			>
 		</CharacterDataComponent>
@@ -92,8 +92,8 @@
             _enabled="1" 
 			aabb_min_x="-7" 
             aabb_max_x="6" 
-			aabb_min_y="2"
-            aabb_max_y="12" 
+			aabb_min_y="-4"
+            aabb_max_y="15" 
             >
         </HitboxComponent>
 	</Base>

@@ -18,13 +18,3 @@ Fix Fungal Shift spell not adding an icon to perk list
 Finish 11 orb hardmode bosses
 Still todo: statue rewards for all
 spawning at 11 orbs
-
-Musical beings are visible when near music machine
-
-
-ULTRA RARE: Esoteric Kitty
-Black with white lightning coming off of it
-
-Fix Conjurer cat spawner
-use single seed?
-Look at Master of None code

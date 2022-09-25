@@ -10,36 +10,16 @@ materials_from =
 	{ probability = 1.0, materials = { "blood_fungi", "fungi", "fungisoil" }, name_material = "fungi" },
 	{ probability = 1.0, materials = { "blood_cold", "blood_worm" } },
 	{ probability = 1.0, materials = { "acid" } },
-	{ probability = 0.8, materials = { "meat" } },
-	{ probability = 0.6, materials = { "diamond" } },
-	{ probability = 0.6, materials = { "silver", "brass", "copper" } },
 	{ probability = 0.4, materials = { "acid_gas", "acid_gas_static", "poison_gas", "fungal_gas", "radioactive_gas", "radioactive_gas_static" }, name_material = "acid_gas" },
 	{ probability = 0.4, materials = { "magic_liquid_polymorph", "magic_liquid_unstable_polymorph" }, name_material = "magic_liquid_polymorph" },
 	{ probability = 0.4, materials = { "magic_liquid_berserk", "magic_liquid_charm", "magic_liquid_invisibility" } },
-	{ probability = 0.4, materials = { "magic_liquid_mana_regeneration" } },
-	{ probability = 0.4, materials = { "sand" } },
-	{ probability = 0.4, materials = { "soil" } },
-	{ probability = 0.4, materials = { "coal", "coal_static" }, name_material = "coal_static" },
-	{ probability = 0.4, materials = { "plasma_fading" } },
-	{ probability = 0.4, materials = { "steel_static", "steelmoss_static", "metal_rust" }, name_material = "steel_static" },
-	{ probability = 0.4, materials = { "templeslab_static", "templeslab_crumbling_static" } },
-	{ probability = 0.4, materials = { "snow_sticky" } },
-	{ probability = 0.4, materials = { "snow_static" } },
-	{ probability = 0.4, materials = { "ice_static" } },
-	{ probability = 0.2, materials = { "mocreeps_insect_husk" } },
+	{ probability = 0.6, materials = { "diamond" } },
+	{ probability = 0.6, materials = { "silver", "brass", "copper" } },
 	{ probability = 0.2, materials = { "steam", "smoke" } },
-	{ probability = 0.2, materials = { "mocreeps_cloud_poison" } },
-	{ probability = 0.15, materials = { "rock_static_wet" } },
-	{ probability = 0.15, materials = { "cloud_radioactive" } },
-	{ probability = 0.15, materials = { "spark_white", "spark_white_bright" }, name_material = "spark_white" },
-	{ probability = 0.15, materials = { "wood_static", "wood", "wood_loose" }, name_material = "wood" },
-	{ probability = 0.15, materials = { "templebrick_static", "templebrick_static_ruined" }, name_material = "templebrick_static" },
-	{ probability = 0.15, materials = { "mocreeps_redstone" } },
-	{ probability = 0.15, materials = { "rock_static" } },
-	{ probability = 0.15, materials = { "rock_hard" } },
-	{ probability = 0.15, materials = { "rock_hard_border" } },
-	{ probability = 0.15, materials = { "rock_static_cursed" } },
-	{ probability = 0.01, materials = { "mocreeps_magic_liquid_divine" } },
+	{ probability = 0.4, materials = { "sand" } },
+	{ probability = 0.4, materials = { "snow_sticky" } },
+	{ probability = 0.05, materials = { "rock_static" } },
+	{ probability = 0.0003, materials = { "gold", "gold_box2d" }, name_material = "gold" },
 }
 
 materials_to = 
@@ -55,7 +35,6 @@ materials_to =
 	{ probability = 1.00, material = "alcohol" },
 	{ probability = 1.00, material = "sima" },
 	{ probability = 1.00, material = "blood_worm" },
-	{ probability = 1.00, material = "mocreeps_blood_worm_centipede" },
 	{ probability = 1.00, material = "poison" },
 	{ probability = 1.00, material = "vomit" },
 	{ probability = 1.00, material = "pea_soup" },
@@ -68,25 +47,14 @@ materials_to =
 	{ probability = 0.50, material = "gunpowder" },
 	{ probability = 0.50, material = "material_darkness" },
 	{ probability = 0.50, material = "material_confusion" },
-	{ probability = 0.50, material = "cloud" },
-	{ probability = 0.50, material = "soil" },
 	{ probability = 0.20, material = "rock_static_radioactive" },
-	{ probability = 0.20, material = "mocreeps_insect_husk" },
-	{ probability = 0.20, material = "mocreeps_redstone" },
+	{ probability = 0.02, material = "magic_liquid_polymorph" },
+	{ probability = 0.02, material = "magic_liquid_random_polymorph" },
 	{ probability = 0.15, material = "magic_liquid_teleportation" },
-	{ probability = 0.15, material = "templebrick_static_ruined" },
-	{ probability = 0.10, material = "the_end" },
-	{ probability = 0.1, material = "magic_liquid_polymorph" },
-	{ probability = 0.1, material = "magic_liquid_random_polymorph" },
-	{ probability = 0.1, material = "plasma_fading" },
-	{ probability = 0.1, material = "urine" },
-	{ probability = 0.1, material = "poo" },
-	{ probability = 0.05, material = "void_liquid" },
-	{ probability = 0.05, material = "cheese_static" },
-	{ probability = 0.03, material = "gold" },
-	{ probability = 0.03, material = "magic_liquid_hp_regeneration" },
-	{ probability = 0.03, material = "midas" },
-	{ probability = 0.01, material = "mocreeps_magic_liquid_divine" },
+	{ probability = 0.01, material = "urine" },
+	{ probability = 0.01, material = "poo" },
+	{ probability = 0.01, material = "void_liquid" },
+	{ probability = 0.01, material = "cheese_static" },
 }
 
 log_messages = 
@@ -138,7 +106,7 @@ function fungal_shift( entity, x, y, debug_no_limits )
 
 	local frame = GameGetFrameNum()
 	local last_frame = tonumber( GlobalsGetValue( "fungal_shift_last_frame", "-1000000" ) )
-	if frame < last_frame + 30 and not debug_no_limits then
+	if frame < last_frame + 60*60*5 and not debug_no_limits then
 		return -- long cooldown
 	end
 
@@ -149,7 +117,7 @@ function fungal_shift( entity, x, y, debug_no_limits )
 
 	local iter = tonumber( GlobalsGetValue( "fungal_shift_iteration", "0" ) )
 	GlobalsSetValue( "fungal_shift_iteration", tostring(iter+1) )
-	if iter > 200 and not debug_no_limits then
+	if iter > 20 and not debug_no_limits then
 		return
 	end
 

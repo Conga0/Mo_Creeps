@@ -2,7 +2,7 @@
  filename="mods/mo_creeps/files/enemies_gfx/hisii_minecart.png"
  hotspots_filename="mods/mo_creeps/files/enemies_gfx/hisii_minecart_hotspots.png"
  offset_x="10"
- offset_y="15"
+ offset_y="6"
  default_animation="stand" >
  
  <Hotspot
