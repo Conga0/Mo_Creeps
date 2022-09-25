@@ -102,6 +102,17 @@ ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 ModTextFileSetContent("data/biome/_pixel_scenes_newgame_plus.xml", tostring(xml))
 
 
+--Spawns Kitty Cats at the end of the game.. It's been a long journey, best of luck, friend.
+local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
+local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
+local xml = nxml.parse(content)
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="3053" pos_y="13113" just_load_an_entity="data/entities/buildings/outro_kitty_populator.xml" />
+]]))
+ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
+ModTextFileSetContent("data/biome/_pixel_scenes_newgame_plus.xml", tostring(xml))
+
+
 --Spawns a book hinting towards Materia Converting Fungal Shift
 local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
 local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")

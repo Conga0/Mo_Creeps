@@ -110,6 +110,7 @@ book_mocreeps_materia_conversion_spell,"Alchemist's Notes",,,,,,,,,,,,,
 book_mocreeps_materia_conversion_spell_description,"Conversion.. \nRemember these words.... \nFungus \nWorm \nRat",,,,,,,,,,,,,
 book_mocreeps_trophy_room,"Alchemist's Notes",,,,,,,,,,,,,
 book_mocreeps_trophy_room_description,"I have come to learn this Tree was deemed unfitting of.. certain.. accomplishments by the gods. \nCross the lava, descend where you would not normal. \nThere they will humour you.",,,,,,,,,,,,,
+mat_cloth,Cloth,,,,,,,,,,,,,
 ]])
 
 
@@ -419,6 +420,9 @@ ModRegisterAudioEventMappings("mods/mo_creeps/files/audio/GUIDs.txt")
 
 
 -- Misc
+
+--Not quite working
+ModLuaFileAppend( "data/scripts/streaming_integration/event_list.lua", "mods/mo_creeps/files/scripts/streaming_integration/event_list_populator.lua" )
 
 --Master of Masters master spawner insertion, allows him to spawn Master of Mallards & Master of Immortality too.. He doesn't appreciate Master of Trolling too much to invite him in
 --Note, this has been moved to a file override

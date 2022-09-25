@@ -6,8 +6,8 @@ function collision_trigger()
 	cat_list = { "cat_mocreeps", "cat_mocreeps_black", "cat_mocreeps", "cat_mocreeps_black", "cat_mocreeps_white", "cat_mocreeps_spoopy", "cat_mocreeps_spoopy_skittle", "cat_mocreeps_spoopy_frisky", "cat_mocreeps_spoopy_tiger" }
 	SetRandomSeed( GameGetFrameNum(), pos_x + entity_id )
 	local goldenCatSeed = Random( 1, 50)
-	local rainbowCatSeed = Random( 1, 100)
-	local esotericCatSeed = Random( 1, 300)
+	local rainbowCatSeed = Random( 1, 50)
+	local esotericCatSeed = Random( 1, 100)
 
 	local catcount = 5
 
@@ -15,7 +15,7 @@ function collision_trigger()
 		
 		pos_x, pos_y = EntityGetTransform( entity_id )
 		pos_x = pos_x + Random(-80, 80)
-		pos_y = pos_y + Random(-20, 4)
+		pos_y = pos_y + Random(-50, -30)
 
         local rnd = Random( 1, #cat_list )
 		local target = cat_list[rnd]
@@ -32,12 +32,12 @@ function collision_trigger()
 		EntityLoad( "data/entities/animals/cat_mocreeps_spoopy_golden.xml", pos_x, pos_y )
 	end
 
-	if rainbowCatSeed == 100 then
+	if rainbowCatSeed == 50 then
 		EntityLoad( "data/entities/animals/cat_mocreeps_sorako.xml", pos_x, pos_y )
 	end
 	--OMG GUYS I'M A RAINBOW KITTY! - Sorako
 
-	if esotericCatSeed == 300 then
+	if esotericCatSeed == 100 then
 		EntityLoad( "data/entities/animals/cat_mocreeps_esoteric.xml", pos_x, pos_y )
 	end
 	

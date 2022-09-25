@@ -91,6 +91,11 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/animal_icons/drone_mini.png",
 	  },
 	  {
+		name="Esoteric Being",
+		path="data/entities/buildings/esoteric_being_asleep.xml",
+		image="data/ui_gfx/animal_icons/esoteric_being.png",
+	  },
+	  {
 		name="Enchanted Duck",
 		path="data/entities/animals/enchanted_duck.xml",
 		image="data/ui_gfx/animal_icons/enchanted_duck.png",
@@ -174,6 +179,11 @@ table.insert(ALL_ENTITIES, {
 		name="Minecart Rider Hisii",
 		path="data/entities/animals/hisii_minecart.xml",
 		image="data/ui_gfx/animal_icons/hisii_minecart.png",
+	  },
+	  {
+		name="TNT Minecart Rider Hisii",
+		path="data/entities/animals/hisii_minecart_tnt.xml",
+		image="data/ui_gfx/animal_icons/hisii_minecart_tnt.png",
 	  },
 	  {
 		name="Rocket Shotgun Hisii",

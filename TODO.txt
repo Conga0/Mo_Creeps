@@ -6,14 +6,14 @@ Worse enemies advanced missile tank may be of inspiration
 
 Poring Chunks ragdoll
 
-Very small visual effect when wandcave spawns entities in. (incase player has all seeing eye or worm vision)
+
 
 Banners turn golden if you 100% the trophy room
 
 
 Get Sora to voice "OMG GUYS IM A RAINBOW KITTY"
 
-Fix Fungal Shift spell not adding an icon to perk list
+
 
 Finish 11 orb hardmode bosses
 Still todo: statue rewards for all

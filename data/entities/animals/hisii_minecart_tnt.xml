@@ -1,4 +1,4 @@
-<Entity name="Miinakärry Haulikkohiisi" >
+<Entity name="Miinakärry Tappura Haulikkohiisi" >
   
 	<Base file="data/entities/base_enemy_robot.xml" >
 		<ItemChestComponent level="1" >
@@ -20,15 +20,13 @@
 			attack_ranged_enabled="1"
 			attack_melee_enabled="1"
 			can_fly="0" 
-			attack_melee_action_frame="3"
-			attack_ranged_action_frame="4"
 			attack_ranged_min_distance="0"
 			attack_ranged_max_distance="180"
-			attack_ranged_entity_file="data/entities/projectiles/buckshot.xml"
-			attack_ranged_entity_count_min="4"
-			attack_ranged_entity_count_max="5"
+			attack_melee_action_frame="4"
+			attack_ranged_action_frame="4"
+			attack_ranged_entity_file="data/entities/projectiles/tnt.xml"
 			attack_ranged_frames_between="100"
-			attack_ranged_offset_y="0"  >
+			attack_ranged_offset_y="0" >
 		</AnimalAIComponent>
 		
 		<DamageModelComponent 
@@ -43,7 +41,7 @@
 		</DamageModelComponent>
 
 		<SpriteComponent 
-			image_file="mods/mo_creeps/files/enemies_gfx/hisii_minecart.xml"
+			image_file="mods/mo_creeps/files/enemies_gfx/hisii_minecart_tnt.xml"
 			offset_x="0"
 			offset_y="0">
 		</SpriteComponent>
@@ -139,7 +137,7 @@
 
 	<LuaComponent
 		_tags="death_reward"
-		script_death="mods/mo_creeps/files/scripts/animals/hisii_minecart_death.lua"
+		script_death="mods/mo_creeps/files/scripts/animals/hisii_minecart_tnt_death.lua"
 		>
 	</LuaComponent>
   

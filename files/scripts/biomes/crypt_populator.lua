@@ -9,15 +9,6 @@
 
     table.insert(g_big_enemies,
     {
-        prob           = 0.1,
-        min_count    = 1,
-        max_count    = 1,    
-        entity     = "data/entities/animals/wizard_firemage_greater.xml",
-		ngpluslevel = 1
-    })
-
-    table.insert(g_big_enemies,
-    {
         prob           = 0.03,
         min_count    = 1,
         max_count    = 1,    
@@ -26,10 +17,18 @@
 
     table.insert(g_big_enemies,
     {
-        prob           = 0.07,
+        prob           = 0.08,
         min_count    = 1,
         max_count    = 1,    
         entity     = "data/entities/animals/bubbles/cursed_liquid/bubble_liquid.xml"
+    })
+
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.12,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/buildings/esoteric_being_asleep.xml"
     })
     
 
@@ -124,6 +123,14 @@
         entity     = "data/entities/animals/star_child.xml"
     })
 
+    table.insert(g_small_enemies,
+    {
+        prob           = 0.06,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/buildings/esoteric_being_asleep.xml"
+    })
+
     
     --Crystals
   
@@ -153,6 +160,15 @@ table.insert(g_small_enemies,
     min_count    = 1,
     max_count    = 1,    
     entity     = "data/entities/animals/bubbles/cursed_liquid/fat/bubble_liquid.xml",
+    ngpluslevel = 1
+})
+
+table.insert(g_big_enemies,
+{
+    prob           = 0.1,
+    min_count    = 1,
+    max_count    = 1,    
+    entity     = "data/entities/animals/wizard_firemage_greater.xml",
     ngpluslevel = 1
 })
 

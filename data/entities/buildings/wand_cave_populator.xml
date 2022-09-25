@@ -2,8 +2,8 @@
   name="unknown" tags="prop" >
   
   <CollisionTriggerComponent
-    width="160"
-    height="74" 
+    width="180"
+    height="94" 
     radius="256"
     required_tag="player_unit"
     destroy_this_entity_when_triggered="0" >

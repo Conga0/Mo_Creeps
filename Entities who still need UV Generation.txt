@@ -3,6 +3,7 @@ Angel
 Giant centipede
 Flame Tank
 Phantom Bow
+TNT Minecart
 
 
 Remember to remove beta build from the description when it's released
