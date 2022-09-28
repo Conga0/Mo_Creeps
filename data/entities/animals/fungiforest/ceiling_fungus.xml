@@ -1,0 +1,21 @@
+<Entity name="Katon sieni" tags="standard_gravity,ui_use_raw_name">
+  
+    <Base file="data/entities/animals/ceiling_fungus.xml" >
+		<ItemChestComponent level="5" enemy_drop="1" > </ItemChestComponent>
+
+        <DamageModelComponent
+            hp="6"
+			>
+        </DamageModelComponent>
+
+        <AIAttackComponent
+            min_distance="0"
+            max_distance="180"
+            frames_between="65"
+            frames_between_global="65"
+            >
+        </AIAttackComponent>
+
+	</Base>
+
+</Entity>

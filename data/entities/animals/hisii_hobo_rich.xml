@@ -4,13 +4,13 @@
 		<ItemChestComponent level="1" > </ItemChestComponent>
 		
 		<AnimalAIComponent 
-			_enabled="1" 
+			_enabled="1"
 			preferred_job="JobDefault"
 			escape_if_damaged_probability="95"
-			attack_melee_enabled="0"
+			attack_melee_enabled="1"
             attack_melee_max_distance="16"
 			attack_melee_action_frame="5"
-			attack_melee_damage_min="0.3" 
+			attack_melee_damage_min="0.3"
 			attack_melee_damage_max="0.4"
 			creature_detection_range_x="300"
 			creature_detection_range_y="300"
@@ -19,6 +19,7 @@
 			sense_creatures="1"
 			attack_ranged_enabled="0"
 			can_fly="0"
+			attack_only_if_attacked="1"
 			>
 		</AnimalAIComponent>
 

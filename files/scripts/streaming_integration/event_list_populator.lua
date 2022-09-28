@@ -6,7 +6,7 @@
 		ui_description = "Random Creeps & Weirdos will appear in 5 seconds.",
 		ui_icon = "data/ui_gfx/streaming_event_icons/health_plus.png",
 		ui_author = "Conga Lyne - Mo Creeps",
-		weight = 0.75,
+		weight = 1.0,
 		kind = STREAMING_EVENT_BAD,
 		delay_timer = 300,
 		action_delayed = function(event)
@@ -14,6 +14,7 @@
             local pool = {
                 "blindgazer",
                 "cat_mocreeps",
+                "ceiling_fungus",
                 "devourer_ghost",
                 "devourer_magic",
                 "drone_mini",
@@ -174,7 +175,7 @@
 		ui_description = "Wands a wonderful wand capable of anything.",
 		ui_icon = "data/ui_gfx/streaming_event_icons/health_plus.png",
 		ui_author = "Conga Lyne - Mo Creeps",
-		weight = 0.35,
+		weight = 0.75,
 		kind = STREAMING_EVENT_BAD,
 		action = function(event)
 			local players = get_players()
@@ -193,6 +194,7 @@
     {
         "data/entities/animals/blindgazer.xml",
         "data/entities/animals/cat_mocreeps.xml",
+        "data/entities/animals/ceiling_fungus.xml",
         "data/entities/animals/devourer_ghost.xml",
         "data/entities/animals/devourer_magic.xml",
         "data/entities/animals/drone_mini.xml",

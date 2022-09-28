@@ -46,6 +46,7 @@
     })
 
     -- Wand Editting Crystal
+    --Consider increasing this to 0.009 if more mobs are added and it feels too rare
 
     table.insert(g_small_enemies,
     {

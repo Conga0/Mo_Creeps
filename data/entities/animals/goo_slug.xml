@@ -22,7 +22,7 @@
 			attack_ranged_enabled="1"
 			attack_ranged_entity_file="mods/mo_creeps/files/entities/projectiles/slimeblob_gluey.xml"
 			attack_ranged_action_frame="3"
-			attack_ranged_frames_between="260" 
+			attack_ranged_frames_between="260"
 			attack_ranged_max_distance="250"
 			attack_ranged_offset_x="5"
 			attack_ranged_offset_y="0"

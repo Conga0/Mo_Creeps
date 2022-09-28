@@ -18,3 +18,5 @@ Get Sora to voice "OMG GUYS IM A RAINBOW KITTY"
 Finish 11 orb hardmode bosses
 Still todo: statue rewards for all
 spawning at 11 orbs
+
+immortal cats config

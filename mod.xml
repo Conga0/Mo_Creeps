@@ -1,7 +1,7 @@
 	<Mod
 		name="Mo Creeps"
 		description="Adds new creeps and weirdos to the world. BETA BUILD."
-		tags="creatures,perks,spells,gameplay"
+		tags="creatures,perks,spells,gameplay,audio,streaming integration,bosses,perks,graphics,items,funny"
 		dont_upload_folders="FOLDER_TO_IGNORE1|FOLDER_TO_IGNORE2"
 		dont_upload_files="FILE_TO_IGNORE1|FILE_TO_IGNORE2"
 	> 

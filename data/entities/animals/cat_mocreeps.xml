@@ -1,4 +1,4 @@
-<Entity tags="mortal,prey,ui_use_raw_name" name="Louis">
+<Entity tags="mortal,prey,ui_use_raw_name" name="Kissa">
   
 	<Base file="data/entities/base_helpless_animal.xml" >
 
@@ -26,13 +26,13 @@
 		</DamageModelComponent>
 
 		<SpriteComponent 
-			_enabled="1" 
-			alpha="1" 
-			image_file="mods/mo_creeps/files/enemies_gfx/cat.xml" 
-			next_rect_animation="" 
-			offset_x="15" 
-			offset_y="25" 
-			rect_animation="stand" 
+			_enabled="1"
+			alpha="1"
+			image_file="mods/mo_creeps/files/enemies_gfx/cat.xml"
+			next_rect_animation=""
+			offset_x="15"
+			offset_y="25"
+			rect_animation="stand"
 			 >
 		</SpriteComponent>
 

@@ -4,14 +4,14 @@
 		<ItemChestComponent level="1" > </ItemChestComponent>
 		
 		<AnimalAIComponent 
-			_enabled="1" 
+			_enabled="1"
 			preferred_job="JobDefault"
 			attack_if_damaged_probability="100"
 			escape_if_damaged_probability="0"
 			attack_melee_enabled="1"
             attack_melee_max_distance="16"
 			attack_melee_action_frame="5"
-			attack_melee_damage_min="0.4" 
+			attack_melee_damage_min="0.4"
 			attack_melee_damage_max="0.7"
 			creature_detection_range_x="300"
 			creature_detection_range_y="300"
@@ -79,20 +79,20 @@
 			distance="160000">
 		</CameraBoundComponent>
 		
-		<HitboxComponent 
-            _enabled="1" 
-			aabb_min_x="-3"  
+		<HitboxComponent
+            _enabled="1"
+			aabb_min_x="-3"
             aabb_max_x="3"
 			aabb_min_y="-6"
-            aabb_max_y="3" 
+            aabb_max_y="3"
 			>
         </HitboxComponent>
 		
 		<CharacterDataComponent
-			collision_aabb_min_x="-2.0" 
-			collision_aabb_max_x="2.0" 
-			collision_aabb_min_y="-7.5" 
-			collision_aabb_max_y="3" 
+			collision_aabb_min_x="-2.0"
+			collision_aabb_max_x="2.0"
+			collision_aabb_min_y="-7.5"
+			collision_aabb_max_y="3"
 			mass="1.3"
 			>
 		</CharacterDataComponent>

@@ -4,6 +4,7 @@ Giant centipede
 Flame Tank
 Phantom Bow
 TNT Minecart
+Ceiling Fungus
 
 
 Remember to remove beta build from the description when it's released

@@ -22,6 +22,7 @@
 			ragdoll_filenames_file="mods/mo_creeps/files/ragdolls/cat_mocreeps_spoopy/filenames.txt" 
 			ragdoll_fx_forced="DISINTEGRATED"
 			fire_probability_of_ignition="0.00"
+			physics_objects_damage="0"
 			hp="80"
 			blood_material="void_liquid"
 			blood_spray_material="void_liquid"
@@ -37,6 +38,7 @@
 				drill="0.01"
 				ice="0.01"
 				radioactive="0.01"
+				curse="0.5"
 				>
 			</damage_multipliers>
 		</DamageModelComponent>

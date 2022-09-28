@@ -118,6 +118,12 @@
 		file="data/audio/Desktop/animals.bank"
 		event_root="animals/shotgunner" >
 	</AudioComponent>
+
+	<AudioComponent
+		file="data/audio/Desktop/animals.bank"
+		event_root="animals"
+		set_latest_event_position="1" >
+	</AudioComponent>
 	
 	<HitboxComponent 
 		_enabled="1" 

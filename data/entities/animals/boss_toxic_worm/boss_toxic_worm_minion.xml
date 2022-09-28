@@ -217,6 +217,16 @@
     	fade_stains_towards_srite_top="0"
 		sprite_id="5">
 	</SpriteStainsComponent>
+	
+	<SpriteStainsComponent
+    	fade_stains_towards_srite_top="0"
+		sprite_id="6">
+	</SpriteStainsComponent>
+	
+	<SpriteStainsComponent
+    	fade_stains_towards_srite_top="0"
+		sprite_id="7">
+	</SpriteStainsComponent>
 
 
 	<StatusEffectDataComponent>

@@ -110,7 +110,7 @@
     <AIAttackComponent
     min_distance="30"
     max_distance="270"
-    frames_between="814"
+    frames_between="1214"
     frames_between_global="0"
     attack_ranged_action_frame="2"
     attack_ranged_entity_file="mods/mo_creeps/files/entities/projectiles/summon_tank.xml"
@@ -124,7 +124,7 @@
     <AIAttackComponent
     min_distance="30"
     max_distance="370"
-    frames_between="1220"
+    frames_between="1520"
     frames_between_global="0"
     attack_ranged_action_frame="2"
     attack_ranged_entity_file="mods/mo_creeps/files/entities/projectiles/summon_tank_rocket.xml"

@@ -76,6 +76,11 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/animal_icons/cat_mocreeps.png",
 	  },
 	  {
+		name="Ceiling Fungus",
+		path="data/entities/animals/ceiling_fungus.xml",
+		image="data/ui_gfx/animal_icons/ceiling_fungus.png",
+	  },
+	  {
 		name="Devouring Phantom",
 		path="data/entities/animals/devourer_ghost.xml",
 		image="data/ui_gfx/animal_icons/devourer_ghost.png",

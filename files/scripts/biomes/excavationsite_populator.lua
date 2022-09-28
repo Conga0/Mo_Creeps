@@ -19,7 +19,7 @@
     {
         prob           = 0.1,
         min_count    = 1,
-        max_count    = 1,    
+        max_count    = 1,
 		entities 	= {
 			{
 				min_count	= 1,
@@ -38,7 +38,7 @@
     {
         prob           = 0.07,
         min_count    = 1,
-        max_count    = 1,    
+        max_count    = 1,
         entity     = "data/entities/animals/hisii_minecart.xml"
     })
 
@@ -46,8 +46,16 @@
     {
         prob           = 0.04,
         min_count    = 1,
-        max_count    = 1,    
+        max_count    = 1,
         entity     = "data/entities/animals/hisii_minecart_tnt.xml"
+    })
+    
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.007,
+        min_count    = 1,
+        max_count    = 1,
+        entity     = "data/entities/animals/excavationsite/poring_lukki_fake.xml"
     })
 
 

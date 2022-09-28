@@ -1,0 +1,2 @@
+mods/mo_creeps/files/ragdolls/ceiling_fungus/head.png
+mods/mo_creeps/files/ragdolls/ceiling_fungus/body.png

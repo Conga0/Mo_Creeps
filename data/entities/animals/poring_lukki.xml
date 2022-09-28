@@ -29,7 +29,7 @@
         </SpriteComponent>
 
         <DamageModelComponent
-            hp="8"
+            hp="12"
             air_needed="0"
             ragdoll_filenames_file=""
 			ragdoll_fx_forced="DISINTEGRATED"

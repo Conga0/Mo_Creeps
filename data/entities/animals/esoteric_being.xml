@@ -32,6 +32,7 @@
 			falling_damages="0"
 			is_on_fire="0" 
 			fire_probability_of_ignition="0" 
+			physics_objects_damage="0"
 			ragdoll_fx_forced="DISINTEGRATED"
             ragdoll_material="plasma_fading"
 			ragdoll_filenames_file="mods/mo_creeps/files/ragdolls/drone_mini/filenames.txt"

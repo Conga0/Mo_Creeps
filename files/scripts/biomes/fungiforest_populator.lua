@@ -9,7 +9,7 @@ table.insert(g_big_enemies,
 
 table.insert(g_big_enemies,
 {
-    prob           = 0.2,
+    prob           = 0.35,
     min_count    = 1,
     max_count    = 1,    
     entity     = "data/entities/animals/lukki_fungus.xml"
@@ -17,7 +17,7 @@ table.insert(g_big_enemies,
 
 table.insert(g_big_enemies,
 {
-    prob           = 0.1,
+    prob           = 0.2,
     min_count    = 1,
     max_count    = 1,    
     entity     = "data/entities/animals/crypt/tentacler_big.xml"
@@ -25,7 +25,7 @@ table.insert(g_big_enemies,
     
 table.insert(g_big_enemies,
 {
-    prob           = 0.1,
+    prob           = 0.2,
     min_count    = 1,
     max_count    = 1,    
     entity     = "data/entities/animals/wizard_transmutation.xml"
@@ -43,7 +43,7 @@ table.insert(g_small_enemies,
 
 table.insert(g_small_enemies,
 {
-    prob           = 0.1,
+    prob           = 0.2,
     min_count    = 1,
     max_count    = 1,    
     entity     = "data/entities/animals/tentacler_big.xml"
@@ -51,7 +51,7 @@ table.insert(g_small_enemies,
 
 table.insert(g_small_enemies,
 {
-    prob           = 0.1,
+    prob           = 0.3,
     min_count    = 1,
     max_count    = 1,    
     entity     = "data/entities/animals/poisonmushroom.xml"
@@ -59,10 +59,18 @@ table.insert(g_small_enemies,
     
 table.insert(g_small_enemies,
 {
-    prob           = 0.1,
+    prob           = 0.3,
     min_count    = 1,
     max_count    = 1,    
     entity     = "data/entities/animals/wizard_transmutation.xml"
+})
+
+table.insert(g_small_enemies,
+{
+    prob           = 0.5,
+    min_count    = 1,
+    max_count    = 1,    
+    entity     = "data/entities/animals/fungiforest/ceiling_fungus.xml"
 })
 
 
@@ -90,4 +98,15 @@ table.insert(g_physics_fungi,
     min_count    = 1,
     max_count    = 1,    
     entity     = "mods/mo_creeps/files/entities/props/shoppingcart.xml"
+})
+
+
+--Item Pickups
+
+table.insert(g_items,
+{
+    prob   		= 0.05,
+    min_count	= 1,
+    max_count	= 1,    
+    entity 	= "mods/mo_creeps/files/entities/items/wands/custom/wand_of_wonders.xml"
 })

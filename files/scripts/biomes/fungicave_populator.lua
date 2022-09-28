@@ -5,7 +5,7 @@
 
 table.insert(g_big_enemies,
 {
-    prob           = 0.02,
+    prob           = 0.05,
     min_count    = 1,
     max_count    = 1,    
     entity     = "data/entities/animals/wizard_copeseethmald.xml"
@@ -13,7 +13,7 @@ table.insert(g_big_enemies,
 
 table.insert(g_big_enemies,
 {
-    prob           = 0.02,
+    prob           = 0.03,
     min_count    = 1,
     max_count    = 1,    
     entity     = "data/entities/animals/fungicave/lukki_fungus.xml"
@@ -33,10 +33,18 @@ table.insert(g_big_enemies,
 
 table.insert(g_small_enemies,
 {
-    prob           = 0.1,
+    prob           = 0.15,
     min_count    = 1,
     max_count    = 1,    
     entity     = "data/entities/animals/bubbles/acid/bubble_liquid.xml"
+})
+
+table.insert(g_small_enemies,
+{
+    prob           = 0.5,
+    min_count    = 1,
+    max_count    = 1,    
+    entity     = "data/entities/animals/ceiling_fungus.xml"
 })
 
 
@@ -45,7 +53,7 @@ table.insert(g_small_enemies,
 
 table.insert(g_big_enemies,
 {
-    prob           = 0.08,
+    prob           = 0.3,
     min_count    = 1,
     max_count    = 1,    
     entity     = "data/entities/animals/fungicave/lukki_fungus.xml",
@@ -54,9 +62,20 @@ table.insert(g_big_enemies,
 
 table.insert(g_small_enemies,
 {
-    prob           = 0.08,
+    prob           = 0.2,
     min_count    = 1,
     max_count    = 1,    
     entity     = "data/entities/animals/vault/tentacler_big.xml",
     ngpluslevel = 1
+})
+
+
+--Item Pickups
+
+table.insert(g_items,
+{
+    prob   		= 0.05,
+    min_count	= 1,
+    max_count	= 1,    
+    entity 	= "mods/mo_creeps/files/entities/items/wands/custom/wand_of_wonders.xml"
 })

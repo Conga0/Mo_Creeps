@@ -19,7 +19,9 @@ Extol#0629 - Helping getting translation keys working, needed for custom perks t
 
 Copi (Human#6606) - Helping think up some enemy ideas for unused sprites I had lying around
 
-Spoopy (The One The Only Spoopy Boi#7859) - Creating some Cat Sprites (in the /cats folder)
+Spoopy (The One The Only Spoopy Boi#7859) - Creating fluffy cat sprites
+
+KeithSammut: Providing base scripts needed for ceiling enemies
 
 
 
