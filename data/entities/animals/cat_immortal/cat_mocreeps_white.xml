@@ -1,4 +1,4 @@
-<Entity tags="mortal,prey,ui_use_raw_name" name="Herbert">
+<Entity tags="mortal,prey,ui_use_raw_name,acid" name="Herbert">
   
 	<Base file="data/entities/base_helpless_animal.xml" >
 
@@ -40,11 +40,11 @@
 		<PathFindingGridMarkerComponent
 			marker_work_flag="24" >
 		</PathFindingGridMarkerComponent>
-		
+
 		<GenomeDataComponent 
-			herd_id="helpless"
-			food_chain_rank="20"
-			is_predator="0" >
+			herd_id="healer"
+            food_chain_rank="1"
+            is_predator="0" >
 		</GenomeDataComponent>
 		
 		<CharacterPlatformingComponent 
@@ -54,7 +54,7 @@
 		</CharacterPlatformingComponent>
 		
 		<HitboxComponent 
-			_enabled="1" 
+			_enabled="0" 
 			aabb_min_x="-3.5" 
 			aabb_max_x="3.5" 
 			aabb_min_y="-3" 
@@ -76,6 +76,13 @@
 			mass="2.4"
 			>
 		</CharacterDataComponent>
+
+		<CameraBoundComponent
+			max_count="20"
+			distance="2000"
+		freeze_on_distance_kill="1"
+		freeze_on_max_count_kill="1" >
+		</CameraBoundComponent>
 	</Base>
 
 	<LuaComponent

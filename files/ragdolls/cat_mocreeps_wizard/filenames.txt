@@ -1,0 +1,7 @@
+mods/mo_creeps/files/ragdolls/cat_mocreeps_wizard/head.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_wizard/body.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_wizard/legs_1.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_wizard/legs_2.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_wizard/legs_3.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_wizard/legs_4.png
+mods/mo_creeps/files/ragdolls/cat_mocreeps_wizard/tail.png

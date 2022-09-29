@@ -511,3 +511,25 @@ table.insert(actions,
         c.damage_critical_chance = c.damage_critical_chance + 50
     end,
 })
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_SPELLS_TO_CATS",
+    name 		= "Spells to Cats",
+    description = "Transforms every projectile currently in the air into Cats; a cute idea.", --Converted Rat Bite, Big Crit chance.
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/spells_to_cats.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/chainsaw_unidentified.png",
+    related_projectiles	= {"mods/mo_creeps/files/entities/projectiles/deck/spells_to_cats.xml"},
+    spawn_requires_flag = "mocreeps_card_unlocked_cat_secret",
+    type 		= ACTION_TYPE_PROJECTILE,
+    spawn_level                       = "3,6,10", -- Spells to Cats
+    spawn_probability                 = "0.1,0.05,1", -- Spells to Cats
+    price = 600,
+    mana = 200,
+    --max_uses = 1000,
+    action 		= function()
+        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/spells_to_cats.xml")
+        c.fire_rate_wait = c.fire_rate_wait + 100
+        current_reload_time = current_reload_time + 100
+    end,
+})

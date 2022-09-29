@@ -20,8 +20,6 @@
 			attack_ranged_enabled="1"
 			attack_melee_enabled="0"
 			can_fly="0"  
-			attack_ranged_min_distance="0"
-			attack_ranged_max_distance="200"
 			attack_ranged_entity_count_min="1"
 			attack_ranged_entity_count_max="1"
 			attack_ranged_min_distance="0"
@@ -49,6 +47,7 @@
 			>
 			<damage_multipliers
 				fire="40.0" 
+				explosion="0.5"
 				>
 			</damage_multipliers>
 		</DamageModelComponent>

@@ -111,6 +111,8 @@ book_mocreeps_materia_conversion_spell_description,"Conversion.. \nRemember thes
 book_mocreeps_trophy_room,"Alchemist's Notes",,,,,,,,,,,,,
 book_mocreeps_trophy_room_description,"I have come to learn this Tree was deemed unfitting of.. certain.. accomplishments by the gods. \nCross the lava, descend where you would not normal. \nThere they will humour you.",,,,,,,,,,,,,
 mat_cloth,Cloth,,,,,,,,,,,,,
+book_mocreeps_cat_rat,"Cat Lover's Notes",,,,,,,,,,,,,
+book_mocreeps_cat_rat_description,"My Cats seem scared of normal rats.. \nBut have an irresistible hate towards magical rats for some reason. \nIt's kind of cute.. But I can't brush away the feeling they distance themselves with truly divine purpose...",,,,,,,,,,,,,
 ]])
 
 

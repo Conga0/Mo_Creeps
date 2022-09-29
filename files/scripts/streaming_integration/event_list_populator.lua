@@ -175,8 +175,8 @@
 		ui_description = "Wands a wonderful wand capable of anything.",
 		ui_icon = "data/ui_gfx/streaming_event_icons/health_plus.png",
 		ui_author = "Conga Lyne - Mo Creeps",
-		weight = 0.75,
-		kind = STREAMING_EVENT_BAD,
+		weight = 0.8,
+		kind = STREAMING_EVENT_NEUTRAL,
 		action = function(event)
 			local players = get_players()
 			
@@ -184,6 +184,8 @@
                 local x, y = EntityGetTransform( entity_id )
 
                 EntityLoad( "mods/mo_creeps/files/entities/items/wands/custom/wand_of_wonders.xml", x, y )
+                EntityLoad("data/entities/particles/image_emitters/magical_symbol_materia_blue.xml", x, y)
+                GamePlaySound( "data/audio/Desktop/projectiles.snd", "player_projectiles/crumbling_earth/create", x, y)
 			end
 		end,
 	})

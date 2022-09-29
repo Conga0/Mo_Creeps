@@ -40,6 +40,8 @@ function collision_trigger()
 	
 		if rainbowCatSeed == 50 then
 			EntityLoad( "data/entities/animals/cat_immortal/cat_mocreeps_sorako.xml", pos_x, pos_y )
+		elseif rainbowCatSeed >= 47 then
+			EntityLoad( "data/entities/animals/cat_immortal/cat_mocreeps_wizard.xml", pos_x, pos_y )
 		end
 		--OMG GUYS I'M A RAINBOW KITTY! - Sorako
 	
@@ -86,6 +88,8 @@ function collision_trigger()
 
 		if rainbowCatSeed == 50 then
 			EntityLoad( "data/entities/animals/cat_mocreeps_sorako.xml", pos_x, pos_y )
+		elseif rainbowCatSeed >= 47 then
+			EntityLoad( "data/entities/animals/cat_mocreeps_wizard.xml", pos_x, pos_y )
 		end
 		--OMG GUYS I'M A RAINBOW KITTY! - Sorako
 

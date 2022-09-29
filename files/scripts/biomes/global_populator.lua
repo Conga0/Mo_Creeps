@@ -46,11 +46,10 @@
     })
 
     -- Wand Editting Crystal
-    --Consider increasing this to 0.009 if more mobs are added and it feels too rare
 
     table.insert(g_small_enemies,
     {
-        prob           = 0.008,
+        prob           = 0.01,
         min_count    = 1,
         max_count    = 1,
         entity     = "data/entities/buildings/wandedit_crystal.xml"

@@ -1,4 +1,4 @@
-<Entity tags="mortal,prey,ui_use_raw_name" name="Golden Louis">
+<Entity tags="mortal,prey,ui_use_raw_name,acid" name="Golden Louis">
   
 	<Base file="data/entities/base_helpless_animal.xml" >
 
@@ -75,6 +75,13 @@
 			mass="2.4"
 			>
 		</CharacterDataComponent>
+
+		<CameraBoundComponent
+			max_count="20"
+			distance="2000"
+		freeze_on_distance_kill="1"
+		freeze_on_max_count_kill="1" >
+		</CameraBoundComponent>
 	</Base>
 
 	<LuaComponent

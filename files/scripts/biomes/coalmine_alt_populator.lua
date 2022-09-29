@@ -113,6 +113,26 @@
         entity     = "data/entities/animals/fairy_cheap.xml"
     })
 
+	local ambrosiaFairies = ModSettingGet( "mo_creeps.fairy_immortality" )
+
+    if ambrosiaFairies == true then
+        table.insert(g_lamp,
+        {
+            prob           = 0.2,
+            min_count    = 6,
+            max_count    = 12,    
+            entity     = "data/entities/animals/cat_immortal/fairy_cheap.xml"
+        })
+    else
+        table.insert(g_lamp,
+        {
+            prob           = 0.2,
+            min_count    = 6,
+            max_count    = 12,    
+            entity     = "data/entities/animals/fairy_cheap.xml"
+        })
+    end
+
     table.insert(g_small_enemies,
     {
 		prob   		= 0.5,

@@ -3,8 +3,8 @@ The Master of Mallards, the species of Porings, bigger scarier Elemental Wizards
 (For a full list, view the document here, big spoilers)
 
 
-Implements 61 new enemies with 3 new bosses!
-Adds 19 new spells if you can conquer powerful foes.
+Implements 61 new enemies, 3 new bosses and 6 attainable trophies to unlock.. but maybe there could be a few more hidden secrets too.
+Adds 20 new spells if you can conquer powerful foes.
 And an extra 2 more for free unlocked by default.
 With maybe a bit more for you to find too.
 

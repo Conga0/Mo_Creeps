@@ -75,6 +75,13 @@
 			mass="2.4"
 			>
 		</CharacterDataComponent>
+
+		<CameraBoundComponent
+			max_count="20"
+			distance="2000"
+		freeze_on_distance_kill="1"
+		freeze_on_max_count_kill="1" >
+		</CameraBoundComponent>
 	</Base>
 	
 	<AudioComponent

@@ -11,7 +11,14 @@ mod_settings =
   {
     id = "congacat_cat_immortal",
     ui_name = "Cat immortality",
-    ui_description = "Are cats immortal?    Requires starting a new game to come into effect.",
+    ui_description = "Are cats immortal?",
+    value_default = false,
+    scope = MOD_SETTING_SCOPE_NEW_GAME,
+  },
+  {
+    id = "fairy_immortality",
+    ui_name = "Fairy Immortality",
+    ui_description = "Are Keiju immortal?",
     value_default = false,
     scope = MOD_SETTING_SCOPE_NEW_GAME,
   },

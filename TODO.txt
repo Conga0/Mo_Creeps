@@ -19,4 +19,6 @@ Finish 11 orb hardmode bosses
 Still todo: statue rewards for all
 spawning at 11 orbs
 
-immortal cats config
+
+Let Congas Cats have priority over Mo Creeps
+Rename cat spawners in data scripts

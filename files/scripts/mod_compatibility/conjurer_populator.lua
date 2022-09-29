@@ -354,6 +354,11 @@ table.insert(ALL_ENTITIES, {
 		name="Rat",
 		path="mods/mo_creeps/files/entities/items/wands/custom/rat_wand.xml",
 		image="data/ui_gfx/bubbles/rat_wand.png",
+	  },
+	  {
+		name="Cat",
+		path="mods/mo_creeps/files/entities/items/wands/custom/cat_wand.xml",
+		image="data/ui_gfx/bubbles/cat_wand.png",
 	  }
   },
 })

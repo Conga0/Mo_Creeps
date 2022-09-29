@@ -146,6 +146,15 @@ ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 ModTextFileSetContent("data/biome/_pixel_scenes_newgame_plus.xml", tostring(xml)) 
 
 
+--Spawns a book hinting towards luring a cat to the Rat Wand
+local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
+local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
+local xml = nxml.parse(content)
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="4000" pos_y="3520" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_cat_rat.xml" />
+]]))
+ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
+ModTextFileSetContent("data/biome/_pixel_scenes_newgame_plus.xml", tostring(xml)) 
 
 
 
