@@ -7,7 +7,7 @@ dofile("data/scripts/lib/utilities.lua")
 
 
 -- If Conjurer is enabled, disabled this for a fix.
-if ModIsEnabled("raksa") then
+if ModIsEnabled("raksa") == false then
 
   --Toxic Worm Nest
   local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
