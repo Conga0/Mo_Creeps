@@ -244,7 +244,10 @@ ModLuaFileAppend( "data/scripts/biomes/mountain/mountain_hall.lua", "mods/mo_cre
 
 
 --Spawns all the above spawns in a single file and appends to pixel scenes to prevent double spawning
-dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/boss_spawn_list.lua" )
+-- If Conjurer is enabled, disabled this for a fix.
+if ModIsEnabled("raksa") == false then
+  dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/boss_spawn_list.lua" )
+end
 
 --Spawns statues in the trophy room
 ModLuaFileAppend( "data/scripts/biomes/mountain/mountain_hall.lua", "mods/mo_creeps/files/scripts/biomes/boss_spawns/statue_room_populator.lua" ) 
