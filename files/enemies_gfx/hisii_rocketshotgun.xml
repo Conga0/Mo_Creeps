@@ -1,7 +1,7 @@
 <Sprite
  filename="mods/mo_creeps/files/enemies_gfx/hisii_rocketshotgun.png"
  offset_x="13"
- offset_y="21"
+ offset_y="20"
   default_animation="stand" >
 
  <!-- stand -->
@@ -106,7 +106,7 @@
   name="attack_ranged"
   pos_x="0"
   pos_y="130"
-  frame_count="6" 
+  frame_count="4" 
   frame_width="26"
   frame_height="26"
   frame_wait="0.08"

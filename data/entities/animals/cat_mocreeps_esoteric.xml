@@ -38,7 +38,7 @@
 				drill="0.01"
 				ice="0.01"
 				radioactive="0.01"
-				curse="0.5"
+				curse="1.1"
 				>
 			</damage_multipliers>
 		</DamageModelComponent>

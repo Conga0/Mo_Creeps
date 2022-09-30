@@ -6,6 +6,7 @@ local mocreep_music_dead = HasFlagPersistent( "mocreeps_card_unlocked_musical_bo
 local mocreep_divine_created = HasFlagPersistent( "mocreeps_card_unlocked_divine_liquid" )
 local mocreep_donated_beggar = HasFlagPersistent( "mocreeps_card_unlocked_donated_beggar" )
 local mocreep_enrage_unlocked = HasFlagPersistent( "mocreeps_card_unlocked_rage_aura" )
+local mocreep_cat_secret_unlocked = HasFlagPersistent( "mocreeps_card_unlocked_cat_secret" )
 
 --For reference, the pixel scene spawns at    X 4032    Y 1988
 
@@ -42,6 +43,14 @@ if mocreep_divine_created then
     local entity = EntityLoad( "mods/mo_creeps/files/entities/props/statue_divine_liquid.xml", 4178, 2049 )
 else
     local entity = EntityLoad( "mods/mo_creeps/files/entities/props/statue_empty.xml", 4178, 2049 )
+end
+
+--Feeding the Rat Wand to a Cat
+--Not necessarily a 'harder challenge', especially compared to the Divine Liquid challenge, but it's a filler for now.
+if mocreep_cat_secret_unlocked then
+    local entity = EntityLoad( "mods/mo_creeps/files/entities/props/statue_cat_secret.xml", 4288, 2049 )
+else
+    local entity = EntityLoad( "mods/mo_creeps/files/entities/props/statue_empty.xml", 4288, 2049 )
 end
 
 

@@ -8,6 +8,12 @@
 			attack_ranged_entity_file="data/entities/projectiles/machinegun_bullet_roboguard_big.xml"
 			>
 		</AnimalAIComponent>
+		
+		<GenomeDataComponent 
+			herd_id="robot"
+			food_chain_rank="11"
+			is_predator="1" >
+		</GenomeDataComponent>
   </Base>
 
 	<!-- protection from FREEZING -->

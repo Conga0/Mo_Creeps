@@ -1,9 +1,3 @@
-Rocket Shotgunner looks weird, resprite
-Double thick barrel maybe?
-Worse enemies advanced missile tank may be of inspiration
-
-
-
 Poring Chunks ragdoll
 
 
@@ -20,5 +14,4 @@ Still todo: statue rewards for all
 spawning at 11 orbs
 
 
-Let Congas Cats have priority over Mo Creeps
-Rename cat spawners in data scripts
+Skateboard kitty & wizard kitty stainmaps

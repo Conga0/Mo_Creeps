@@ -42,10 +42,10 @@
 		<PathFindingGridMarkerComponent
 			marker_work_flag="16" >
 		</PathFindingGridMarkerComponent>
-		
+
 		<GenomeDataComponent 
-			herd_id="robot"
-			food_chain_rank="11"
+			herd_id="orcs"
+			food_chain_rank="5"
 			is_predator="1" >
 		</GenomeDataComponent>
 		

@@ -516,7 +516,7 @@ table.insert(actions,
 {
     id          = "MOCREEPS_SPELLS_TO_CATS",
     name 		= "Spells to Cats",
-    description = "Transforms every projectile currently in the air into Cats; a cute idea.", --Converted Rat Bite, Big Crit chance.
+    description = "Transforms every projectile currently in the air into Cats; a cute idea.",
     sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/spells_to_cats.png",
     sprite_unidentified = "data/ui_gfx/gun_actions/chainsaw_unidentified.png",
     related_projectiles	= {"mods/mo_creeps/files/entities/projectiles/deck/spells_to_cats.xml"},
