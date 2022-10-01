@@ -5,6 +5,7 @@ Flame Tank
 Phantom Bow
 TNT Minecart
 Ceiling Fungus
+Greater Shaman
 
 
 Remember to remove beta build from the description when it's released

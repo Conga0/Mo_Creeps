@@ -31,6 +31,14 @@ table.insert(g_big_enemies,
     entity     = "data/entities/animals/wizard_transmutation.xml"
 })
 
+table.insert(g_big_enemies,
+{
+    prob           = 0.15,
+    min_count    = 1,
+    max_count    = 1,    
+    entity     = "data/entities/animals/fungiforest/shaman_greater_mocreep.xml"
+})
+
 --Small enemies
 
 table.insert(g_small_enemies,
@@ -46,7 +54,7 @@ table.insert(g_small_enemies,
     prob           = 0.2,
     min_count    = 1,
     max_count    = 1,    
-    entity     = "data/entities/animals/tentacler_big.xml"
+    entity     = "data/entities/animals/crypt/tentacler_big.xml"
 })
 
 table.insert(g_small_enemies,
@@ -71,6 +79,14 @@ table.insert(g_small_enemies,
     min_count    = 1,
     max_count    = 1,    
     entity     = "data/entities/animals/fungiforest/ceiling_fungus.xml"
+})
+
+table.insert(g_small_enemies,
+{
+    prob           = 0.07,
+    min_count    = 1,
+    max_count    = 1,    
+    entity     = "data/entities/animals/fungiforest/shaman_greater_mocreep.xml"
 })
 
 
@@ -105,7 +121,7 @@ table.insert(g_physics_fungi,
 
 table.insert(g_items,
 {
-    prob   		= 0.05,
+    prob   		= 0.04,
     min_count	= 1,
     max_count	= 1,    
     entity 	= "mods/mo_creeps/files/entities/items/wands/custom/wand_of_wonders.xml"

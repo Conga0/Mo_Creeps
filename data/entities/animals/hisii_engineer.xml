@@ -17,6 +17,9 @@
 			attack_melee_damage_max="0.7"
 			attack_melee_max_distance="20"
 			attack_melee_action_frame="2"
+			hide_from_prey="1"
+			hide_from_prey_target_distance="200"
+			hide_from_prey_time="600"
 			>
 		</AnimalAIComponent>
 		

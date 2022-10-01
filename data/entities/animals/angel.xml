@@ -154,6 +154,7 @@
     attack_ranged_offset_x="0"
     attack_ranged_entity_count_min="13"
     attack_ranged_entity_count_max="16"
+	attack_ranged_predict="1"
     >
 	</AIAttackComponent>
 

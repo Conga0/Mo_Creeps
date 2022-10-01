@@ -61,7 +61,7 @@
 		
 		<GenomeDataComponent 
 			herd_id="robot"
-			food_chain_rank="5"
+			food_chain_rank="9"
 			is_predator="1" >
 		</GenomeDataComponent>
 		

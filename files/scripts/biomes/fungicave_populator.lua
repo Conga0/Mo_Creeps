@@ -5,7 +5,7 @@
 
 table.insert(g_big_enemies,
 {
-    prob           = 0.05,
+    prob           = 0.09,
     min_count    = 1,
     max_count    = 1,    
     entity     = "data/entities/animals/wizard_copeseethmald.xml"
@@ -13,7 +13,7 @@ table.insert(g_big_enemies,
 
 table.insert(g_big_enemies,
 {
-    prob           = 0.03,
+    prob           = 0.05,
     min_count    = 1,
     max_count    = 1,    
     entity     = "data/entities/animals/fungicave/lukki_fungus.xml"
@@ -21,10 +21,18 @@ table.insert(g_big_enemies,
 
 table.insert(g_big_enemies,
 {
-    prob           = 0.12,
+    prob           = 0.35,
     min_count    = 1,
     max_count    = 1,    
     entity     = "data/entities/animals/tentacler_big.xml"
+})
+
+table.insert(g_big_enemies,
+{
+    prob           = 0.35,
+    min_count    = 1,
+    max_count    = 1,    
+    entity     = "data/entities/animals/shaman_greater_mocreep.xml"
 })
 
 

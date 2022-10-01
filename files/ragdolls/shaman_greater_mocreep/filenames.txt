@@ -1,0 +1,6 @@
+mods/mo_creeps/files/ragdolls/shaman_greater_mocreep/head.png
+mods/mo_creeps/files/ragdolls/shaman_greater_mocreep/body.png
+mods/mo_creeps/files/ragdolls/shaman_greater_mocreep/arm.png
+mods/mo_creeps/files/ragdolls/shaman_greater_mocreep/leg_1.png
+mods/mo_creeps/files/ragdolls/shaman_greater_mocreep/leg_2.png
+mods/mo_creeps/files/ragdolls/shaman_greater_mocreep/lamp.png

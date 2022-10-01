@@ -6,6 +6,7 @@ local pos_x, pos_y = EntityGetTransform( entity_id )
 function collision_trigger()
 	
 	local eid = EntityLoad( "mods/mo_creeps/files/entities/items/wands/custom/rat_wand.xml", pos_x, pos_y )
+	  
 
 	EntityKill( entity_id )
 end

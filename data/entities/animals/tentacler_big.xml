@@ -25,7 +25,7 @@
 		</AnimalAIComponent>
 		
 		<DamageModelComponent 
-            hp="10"
+            hp="8"
             materials_create_messages="1"
 			ragdoll_filenames_file="mods/mo_creeps/files/ragdolls/tentacler_big/filenames.txt" 
 			fire_probability_of_ignition="5"

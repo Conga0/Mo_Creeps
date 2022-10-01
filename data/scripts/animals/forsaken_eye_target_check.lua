@@ -12,10 +12,12 @@ if ( comp ~= nil ) then
 		ComponentSetValue2( comp, "attack_ranged_frames_between", 12 )
 		ComponentSetValue2( comp, "attack_ranged_min_distance", 0 )
 		ComponentSetValue2( comp, "attack_ranged_max_distance", 90 )
+		ComponentSetValue2( comp, "attack_ranged_predict", false )
 	else
 		ComponentSetValue2( comp, "attack_ranged_entity_file", "data/entities/projectiles/forsaken_eye_targetter.xml" )
 		ComponentSetValue2( comp, "attack_ranged_frames_between", 90 )
 		ComponentSetValue2( comp, "attack_ranged_min_distance", 0 )
 		ComponentSetValue2( comp, "attack_ranged_max_distance", 200 )
+		ComponentSetValue2( comp, "attack_ranged_predict", true )
 	end
 end

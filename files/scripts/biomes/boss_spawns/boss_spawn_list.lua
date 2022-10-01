@@ -155,6 +155,3 @@ xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
 ]]))
 ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 ModTextFileSetContent("data/biome/_pixel_scenes_newgame_plus.xml", tostring(xml)) 
-
-
-

@@ -1,101 +1,23 @@
 dofile("data/scripts/lib/utilities.lua")
 
+local modCompatibilityConjurer = ModSettingGet( "mo_creeps.mod_compat_mode_conjurer" )
+local motdSetting = ModSettingGet( "mo_creeps.motd_setting" )
+
 --Spawn Bosses
 
 --This was a coding marathon and a half, huge shoutouts to Horscht for the help on this one.
 --And Zathers for making this seductive lua file
 
 
--- If Conjurer is enabled, disabled this for a fix.
-if ModIsEnabled("raksa") == false then
-
-  --Toxic Worm Nest
-  local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
-  local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
-  local xml = nxml.parse(content)
-  xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-    <PixelScene DEBUG_RELOAD_ME="0" clean_area_before="0" pos_x="2027" pos_y="2100" skip_biome_checks="1" skip_edge_textures="0"
-      material_filename="mods/mo_creeps/files/pixel_scenes/toxic_worm_nest/toxic_worm_nest.png"
-      background_filename="mods/mo_creeps/files/pixel_scenes/toxic_worm_nest/toxic_worm_nest_background.png"
-      colors_filename="mods/mo_creeps/files/pixel_scenes/toxic_worm_nest/toxic_worm_nest_visual.png"
-    ></PixelScene>
-  ]]))
-  ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
-  ModTextFileSetContent("data/biome/_pixel_scenes_newgame_plus.xml", tostring(xml))
-
-  --Wand Tinkering Crystal guaranteed spawn
-  local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
-  local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
-  local xml = nxml.parse(content)
-  xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-    <PixelScene DEBUG_RELOAD_ME="0" clean_area_before="0" pos_x="10868" pos_y="-150" skip_biome_checks="1" skip_edge_textures="0"
-      material_filename="mods/mo_creeps/files/pixel_scenes/pyramid_wand_crystal/pyramid_wand_crystal.png"
-      background_filename="mods/mo_creeps/files/pixel_scenes/pyramid_wand_crystal/pyramid_wand_crystal_background.png"
-      colors_filename="mods/mo_creeps/files/pixel_scenes/pyramid_wand_crystal/pyramid_wand_crystal_visual.png"
-    ></PixelScene>
-  ]]))
-  ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
-  ModTextFileSetContent("data/biome/_pixel_scenes_newgame_plus.xml", tostring(xml))
-
-  --Abandoned Orchestra spawn auditorium
-  local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
-  local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
-  local xml = nxml.parse(content)
-  xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-    <PixelScene DEBUG_RELOAD_ME="0" clean_area_before="0" pos_x="11550" pos_y="6748" skip_biome_checks="1" skip_edge_textures="0"
-      material_filename="mods/mo_creeps/files/pixel_scenes/sandy_assembly/sandy_assembly.png"
-      background_filename="mods/mo_creeps/files/pixel_scenes/sandy_assembly/sandy_assembly_background.png"
-      colors_filename="mods/mo_creeps/files/pixel_scenes/sandy_assembly/sandy_assembly_visual.png"
-    ></PixelScene>
-  ]]))
-  ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
-  ModTextFileSetContent("data/biome/_pixel_scenes_newgame_plus.xml", tostring(xml))
-
-  --Statue Room, shows which bosses you've killed
-  local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
-  local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
-  local xml = nxml.parse(content)
-  xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-    <PixelScene DEBUG_RELOAD_ME="0" clean_area_before="0" pos_x="4032" pos_y="1988" skip_biome_checks="1" skip_edge_textures="0"
-      material_filename="mods/mo_creeps/files/pixel_scenes/pride_statues/statue_room.png"
-      background_filename="mods/mo_creeps/files/pixel_scenes/pride_statues/statue_room_background.png"
-      colors_filename=""
-    ></PixelScene>
-  ]]))
-  ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
-  ModTextFileSetContent("data/biome/_pixel_scenes_newgame_plus.xml", tostring(xml))
-
-  --Hisii Beggar Hint
-  local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
-  local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
-  local xml = nxml.parse(content)
-  xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-    <PixelScene DEBUG_RELOAD_ME="0" clean_area_before="0" pos_x="16059" pos_y="-1637" skip_biome_checks="1" skip_edge_textures="0"
-      material_filename="mods/mo_creeps/files/pixel_scenes/hisii_beggar/hisii_beggar.png"
-      background_filename="mods/mo_creeps/files/pixel_scenes/hisii_beggar/hisii_beggar_background.png"
-      colors_filename=""
-    ></PixelScene>
-  ]]))
-  ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
-  ModTextFileSetContent("data/biome/_pixel_scenes_newgame_plus.xml", tostring(xml))
-
-  --Wand Cave Secret
-  local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
-  local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
-  local xml = nxml.parse(content)
-  xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-    <PixelScene DEBUG_RELOAD_ME="0" clean_area_before="0" pos_x="12063" pos_y="-4376" skip_biome_checks="1" skip_edge_textures="0"
-      material_filename="mods/mo_creeps/files/pixel_scenes/wand_cave/wand_cave.png"
-      background_filename="mods/mo_creeps/files/pixel_scenes/wand_cave/wand_cave_background.png"
-      colors_filename=""
-    ></PixelScene>
-  ]]))
-  ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
-  ModTextFileSetContent("data/biome/_pixel_scenes_newgame_plus.xml", tostring(xml))
-
-  --End the chaos here please
-
+-- If Conjurer is enabled, disable this for a fix.
+if modCompatibilityConjurer == true then
+  if ModIsEnabled("raksa") == false then
+    dofile_once( "mods/mo_creeps/files/scripts/pixelscenes/scene_list.lua" )
+  end
+else
+  dofile_once( "mods/mo_creeps/files/scripts/pixelscenes/scene_list.lua" )
 end
+
 
 
 
@@ -119,6 +41,39 @@ book_mocreeps_trophy_room_description,"I have come to learn this Tree was deemed
 mat_cloth,Cloth,,,,,,,,,,,,,
 book_mocreeps_cat_rat,"Cat Lover's Notes",,,,,,,,,,,,,
 book_mocreeps_cat_rat_description,"My Cats seem scared of normal rats.. \nBut have an irresistible hate towards magical rats for some reason. \nIt's kind of cute.. But I can't brush away the feeling they distance themselves with truly divine purpose...",,,,,,,,,,,,,
+book_mocreeps_motd,"Message of the Day",,,,,,,,,,,,,
+book_mocreeps_motd_description,"You shouldn't be reading this.",,,,,,,,,,,,,
+book_mocreeps_motd_description_001,"Also try Worse Enemies!",,,,,,,,,,,,,
+book_mocreeps_motd_description_002,"Hobos love Material Donations",,,,,,,,,,,,,
+book_mocreeps_motd_description_003,"Blood is Fuel.",,,,,,,,,,,,,
+book_mocreeps_motd_description_004,"Also try Copis Things!",,,,,,,,,,,,,
+book_mocreeps_motd_description_005,"Meow. Meow. Meow. Meow. Meow.",,,,,,,,,,,,,
+book_mocreeps_motd_description_006,"Also try Shellcore Command Remastered!",,,,,,,,,,,,,
+book_mocreeps_motd_description_007,"More Creeps & Weirdos successfully initialised.",,,,,,,,,,,,,
+book_mocreeps_motd_description_008,"Hey? Can you hear me?! Get out while you still can!! HURRY.",,,,,,,,,,,,,
+book_mocreeps_motd_description_009,"Also try Chemical Curiosities!",,,,,,,,,,,,,
+book_mocreeps_motd_description_010,"Tired of your cute Cats and bright Fairies dying? \nYou can make them immortal in the settings!.",,,,,,,,,,,,,
+book_mocreeps_motd_description_011,"Amazing.",,,,,,,,,,,,,
+book_mocreeps_motd_description_012,"I have 7 very important lore related questions.",,,,,,,,,,,,,
+book_mocreeps_motd_description_013,"All code is circular bread approved.",,,,,,,,,,,,,
+book_mocreeps_motd_description_014,"Esoteric Beings fear curses.",,,,,,,,,,,,,
+book_mocreeps_motd_description_015,"Can you hear ghosts? \nWithout assistance?",,,,,,,,,,,,,
+book_mocreeps_motd_description_016,"Masters of Trolling like red outlines. \nThey'll fit right in",,,,,,,,,,,,,
+book_mocreeps_motd_description_017,"Musical Beings fear more than just stones....",,,,,,,,,,,,,
+book_mocreeps_motd_description_018,"Knowledge is scattered around the world.. find it.",,,,,,,,,,,,,
+book_mocreeps_motd_description_019,"Lukki Lair porings may not be what they seem..",,,,,,,,,,,,,
+book_mocreeps_motd_description_020,"The coldest Magical temple may hold vital treasure. \nJust don't descend.",,,,,,,,,,,,,
+book_mocreeps_motd_description_021,"Angelings and Devilings distance themselves.",,,,,,,,,,,,,
+book_mocreeps_motd_description_022,"With truly divine purpose.",,,,,,,,,,,,,
+book_mocreeps_motd_description_023,"Perhaps not every creep is a hostile. \nPerhaps not every crystal is a threat.",,,,,,,,,,,,,
+book_mocreeps_motd_description_024,"Also try Congas Cats! \n...Just not with More Creeps enabled. \nMore Creeps cats override Congas Cats cats.",,,,,,,,,,,,,
+book_mocreeps_motd_description_025,"Attract worms and centipedes will soon follow.",,,,,,,,,,,,,
+book_mocreeps_motd_description_026,"Goodluck and have fun!. \nIf you're feeling frustrated or stressed, remember to take a break.",,,,,,,,,,,,,
+book_mocreeps_motd_description_027,"I believe in you.",,,,,,,,,,,,,
+book_mocreeps_motd_description_028,"The pyramid isn't quite so safe anymore. \nBut may hold divine knowledge.",,,,,,,,,,,,,
+book_mocreeps_motd_description_029,"Cross the sea of lava. \nGo where you would not normal. \nThere I will humour you.",,,,,,,,,,,,,
+book_mocreeps_motd_description_030,"Happy today! Good Now, be happy you're still here!",,,,,,,,,,,,,
+book_mocreeps_motd_description_031,"Don't visit the Toxic Worm Nest at 3 am.",,,,,,,,,,,,,
 ]])
 
 
@@ -244,10 +199,16 @@ ModLuaFileAppend( "data/scripts/biomes/mountain/mountain_hall.lua", "mods/mo_cre
 
 
 --Spawns all the above spawns in a single file and appends to pixel scenes to prevent double spawning
--- If Conjurer is enabled, disabled this for a fix.
-if ModIsEnabled("raksa") == false then
+-- If Conjurer is enabled, disable this for a fix.
+if modCompatibilityConjurer == true then
+  if ModIsEnabled("raksa") == false then
+    dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/boss_spawn_list.lua" )
+  end
+else
   dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/boss_spawn_list.lua" )
 end
+
+
 
 --Spawns statues in the trophy room
 ModLuaFileAppend( "data/scripts/biomes/mountain/mountain_hall.lua", "mods/mo_creeps/files/scripts/biomes/boss_spawns/statue_room_populator.lua" ) 
@@ -436,6 +397,20 @@ ModRegisterAudioEventMappings("mods/mo_creeps/files/audio/GUIDs.txt")
 ModLuaFileAppend( "data/scripts/streaming_integration/event_list.lua", "mods/mo_creeps/files/scripts/streaming_integration/event_list_populator.lua" )
 
 
+--Musicstone tag addition
+dofile_once( "mods/mo_creeps/files/scripts/magic/music_magic_tag_nxml.lua" )
+
+--MOTD
+if motdSetting == true then
+  dofile_once( "mods/mo_creeps/files/scripts/misc/motd_list.lua" )
+end
+
+
+
+
+
+
+
 
 --Master of Masters master spawner insertion, allows him to spawn Master of Mallards & Master of Immortality too.. He doesn't appreciate Master of Trolling too much to invite him in
 --Note, this has been moved to a file override
@@ -483,3 +458,8 @@ ModLuaFileAppend( "data/scripts/biomes/rainforest_dark.lua", "mods/mo_creeps/fil
 ModLuaFileAppend( "data/scripts/biomes/vault_frozen.lua", "mods/mo_creeps/files/scripts/biomes/suspicious.lua" ) --Like the vault, but way colder, worse, more hisii and with a really rude welcoming
 ModLuaFileAppend( "data/scripts/biomes/robobase.lua", "mods/mo_creeps/files/scripts/biomes/suspicious.lua" ) --Power Plant
 ModLuaFileAppend( "data/scripts/biomes/the_end.lua", "mods/mo_creeps/files/scripts/biomes/suspicious.lua" ) --Heaven & Hell, but for this specific lua file append I'm only adding to hell
+
+
+--ModLuaFileAppend( "data/scripts/biome_modifiers.lua", "mods/mo_creeps/files/scripts/weather/weather_wet_append.lua" ) --Attempt to insert shaman into biome wet modifier spawn additions. Started eating up too much time.
+--If you know how to do this, please let me know. -Conga Lyne
+

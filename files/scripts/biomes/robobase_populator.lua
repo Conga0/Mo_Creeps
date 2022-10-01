@@ -14,7 +14,7 @@
         prob           = 0.1,
         min_count    = 1,
         max_count    = 1,    
-        entity     = "data/entities/animals/tesla_turret.xml"
+        entity     = "data/entities/animals/power_plant/tesla_turret.xml"
     })
 
     table.insert(g_small_enemies,

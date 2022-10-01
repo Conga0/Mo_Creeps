@@ -1,0 +1,29 @@
+dofile_once("data/scripts/lib/utilities.lua")
+
+local entity_id = GetUpdatedEntityID()
+local x,y = EntityGetTransform( entity_id )
+local r = 32
+
+local targets = EntityGetInRadiusWithTag( x, y, r, "player_unit" )
+local summonCount = 5
+
+if #targets >= 1 then
+	EntityLoad( "data/entities/animals/robot_alerter_alerted.xml", x,y )
+
+	repeat
+		SetRandomSeed( GameGetFrameNum() + GetUpdatedComponentID(), x + y + entity_id )
+
+		local angle = math.rad(Random(0,359))
+		local length = 3000
+
+		local vel_x = math.cos( angle ) * length
+		local vel_y = 0 - math.sin( angle ) * length
+
+		shoot_projectile( entity_id, "mods/mo_creeps/files/entities/projectiles/alert_enemy_summoner.xml", x, y, vel_x, vel_y )
+
+		summonCount = (summonCount - 1)
+
+	until(summonCount <= 0)
+
+	EntityKill( entity_id )
+end

@@ -5,11 +5,13 @@ local x, y = EntityGetTransform( entity_id )
 local radius = 400
 
 local melody = EntityGetInRadiusWithTag( x, y, radius, "musical_stone" )
+--This commented out method is the ideal method, but unless I find a way to add tags to the entity directly, this will have to do
+--local melody = EntityGetInRadius( x, y, radius )
 local found = false
 
 if ( #melody > 0 ) then
 	for i,v in ipairs( melody ) do
-		local t = EntityGetFirstComponent( v, "LightComponent", "magic_music_check" )
+		local t = EntityGetFirstComponent( v, "LightComponent", "musical_stone" )
 		
 		if ( t ~= nil ) then
 			found = true

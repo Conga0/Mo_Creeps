@@ -12,6 +12,7 @@ Iceball thrower
 Cursed orb thrower
 Dynamite thrower
 Nuke thrower
++Personal Variants
 
 Mass materia conversion
 Fungal shift
@@ -24,6 +25,10 @@ Reverberation
 Need secret to unlock:
 
 Bite
+Hyper Fungal Shift
+Summon Jattimato
+Bloody Bite
+Spells to Cats
 
 
 ------------------------------------------------------------------------------------------
