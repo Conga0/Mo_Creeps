@@ -1,6 +1,6 @@
 <Entity name="Hyytelö">
   
-		<Base file="data/entities/animals/poring.xml">
+	<Base file="data/entities/animals/poring.xml">
         <AnimalAIComponent
 			_enabled="1" 
 			preferred_job="JobDefault"
@@ -18,7 +18,8 @@
 			attack_melee_enabled="1" >
         </AnimalAIComponent>
         
-        <SpriteComponent 
+        <SpriteComponent
+			alpha="1"
             image_file="mods/Mo_Creeps/files/enemies_gfx/poring_weak.xml"
             alpha="0.8" 
             offset_x="14" 
@@ -39,5 +40,5 @@
 			materials_how_much_damage="0.004,0.001,0.0008,0.0007,0.005,0.001"
 			>
         </DamageModelComponent>
-		</Base>
+	</Base>
 </Entity>

@@ -5,7 +5,7 @@
 
     table.insert(g_small_enemies,
     {
-        prob           = 0.01,
+        prob           = 0.011,
         min_count    = 1,
         max_count    = 1,    
         entity     = "data/entities/animals/bubbles/ambrosia/bubble_liquid.xml"
@@ -13,7 +13,7 @@
 
     table.insert(g_small_enemies,
     {
-        prob           = 0.001,
+        prob           = 0.0011,
         min_count    = 1,
         max_count    = 1,    
         entity     = "data/entities/animals/bubbles/alchemicprecursor/bubble_liquid.xml"
@@ -21,7 +21,7 @@
 
     table.insert(g_small_enemies,
     {
-        prob           = 0.001,
+        prob           = 0.0011,
         min_count    = 1,
         max_count    = 1,    
         entity     = "data/entities/animals/bubbles/healthium/bubble_liquid.xml"
@@ -33,7 +33,7 @@
 
     table.insert(g_small_enemies,
     {
-        prob           = 0.008,
+        prob           = 0.0088,
         min_count    = 1,
         max_count    = 1,
         entity     = "data/entities/buildings/polymorph_crystal_chaotic.xml"

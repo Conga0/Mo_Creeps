@@ -60,6 +60,14 @@
         entity     = "data/entities/animals/fairy_big_discord.xml"
     })
 
+    table.insert(g_small_enemies,
+    {
+        prob           = 0.08,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/wraith_weirdo_shield.xml"
+    })
+
 
 
     --New Game +

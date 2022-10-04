@@ -9,11 +9,14 @@ local summonCount = 5
 
 if #targets >= 1 then
 	EntityLoad( "data/entities/animals/robot_alerter_alerted.xml", x,y )
+	EntityLoad( "data/entities/animals/robot_alerter_alerted_fake.xml", x,y )
+	SetRandomSeed( GameGetFrameNum() + GetUpdatedComponentID(), x + y + entity_id )
+	angleCalculator = (Random(0,359))
 
 	repeat
-		SetRandomSeed( GameGetFrameNum() + GetUpdatedComponentID(), x + y + entity_id )
 
-		local angle = math.rad(Random(0,359))
+		angleCalculator = (angleCalculator + angleCalculator + 30)
+		local angle = math.rad(angleCalculator)
 		local length = 3000
 
 		local vel_x = math.cos( angle ) * length

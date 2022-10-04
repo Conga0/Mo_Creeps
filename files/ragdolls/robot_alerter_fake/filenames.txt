@@ -1,0 +1,2 @@
+mods/mo_creeps/files/ragdolls/robot_alerter_fake/face_plate_1.png
+mods/mo_creeps/files/ragdolls/robot_alerter_fake/face_plate_2.png

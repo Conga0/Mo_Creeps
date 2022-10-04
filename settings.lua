@@ -32,8 +32,15 @@ mod_settings =
   {
     id = "motd_setting",
     ui_name = "Message of the Day",
-    ui_description = "Will an MOTD be displayed at the start of each run? \nMay contain bonus hints for various secrets.",
+    ui_description = "Will an MOTD be displayed at the start of each run? \nMay contain bonus hints for various secrets. \nSpawns a tablet at the start of each run.",
     value_default = false,
+    scope = MOD_SETTING_SCOPE_NEW_GAME,
+  },
+  {
+    id = "seasonal_events",
+    ui_name = "Seasonal Events",
+    ui_description = "Are seasonal events enabled? \nFor example, Halloween, More Creep's Birthday, etc.",
+    value_default = true,
     scope = MOD_SETTING_SCOPE_NEW_GAME,
   },
 }

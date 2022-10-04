@@ -18,6 +18,6 @@ if ( comp ~= nil ) then
 		ComponentSetValue2( comp, "attack_ranged_frames_between", 90 )
 		ComponentSetValue2( comp, "attack_ranged_min_distance", 0 )
 		ComponentSetValue2( comp, "attack_ranged_max_distance", 200 )
-		ComponentSetValue2( comp, "attack_ranged_predict", true )
+		ComponentSetValue2( comp, "attack_ranged_predict", false )
 	end
 end

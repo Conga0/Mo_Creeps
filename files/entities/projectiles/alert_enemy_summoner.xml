@@ -18,7 +18,7 @@
 	>
 	</HomingComponent>
 
-	<ProjectileComponent 
+	<ProjectileComponent
 		_enabled="1" 
 		lob_min="0.8"
 		lob_max="1.0"
@@ -38,6 +38,7 @@
 		shoot_light_flash_g="70"
 		shoot_light_flash_b="70"
 		shoot_light_flash_radius="100" 
+		collide_with_entities="0"
     	spawn_entity="mods/mo_creeps/files/entities/projectiles/beam_holy_big.xml"
 		>
 		<config_explosion

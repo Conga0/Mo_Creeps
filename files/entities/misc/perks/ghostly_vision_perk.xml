@@ -3,7 +3,7 @@
     </InheritTransformComponent>
 	
 	<LightComponent
-		_tags="magic_music_check,magic_eye_check"
+		_tags="magic_music_check,musical_stone"
 		radius="0"
 		r="255"
 		g="255"

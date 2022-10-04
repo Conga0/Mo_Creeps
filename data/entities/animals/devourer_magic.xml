@@ -83,8 +83,8 @@
 
 	<PhysicsShapeComponent
 		is_circle="1"
-		radius_x="15"
-		radius_y="15"
+		radius_x="13"
+		radius_y="13"
 		friction="0.0"
 		restitution="0.3" >
 	</PhysicsShapeComponent>

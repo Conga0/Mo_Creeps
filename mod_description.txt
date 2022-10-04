@@ -3,14 +3,17 @@ The Master of Mallards, the species of Porings, bigger scarier Elemental Wizards
 (For a full list, view the document here, big spoilers)
 
 
-Implements 62 new enemies, 3 new bosses and 6 attainable trophies to unlock.. but maybe there could be a few more hidden secrets too.
+Implements 63 new enemies, 3 new bosses and 6 attainable trophies to unlock.. but maybe there could be a few more hidden secrets too.
 Adds 20 new spells if you can conquer powerful foes.
 And an extra 2 more for free unlocked by default.
 With maybe a bit more for you to find too.
 
 Seasonal events include:
 September 22nd
-Halloween
+Halloween October 3rd to 31st
+Smissmass December 22nd to 31st
+
+
 
 
 Compatiable with:
@@ -26,3 +29,5 @@ Sewer 1.0
 Twitch Integration
 
 Also fixes the missing Icemage spawn in the frozen vault.
+
+This mod doesn't override any existing files, it is safe to put at the bottom of your load order for maximum compatibility.

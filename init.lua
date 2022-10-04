@@ -2,6 +2,7 @@ dofile("data/scripts/lib/utilities.lua")
 
 local modCompatibilityConjurer = ModSettingGet( "mo_creeps.mod_compat_mode_conjurer" )
 local motdSetting = ModSettingGet( "mo_creeps.motd_setting" )
+local seasonalSetting = ModSettingGet( "mo_creeps.seasonal_events" )
 
 --Spawn Bosses
 
@@ -43,6 +44,8 @@ book_mocreeps_cat_rat,"Cat Lover's Notes",,,,,,,,,,,,,
 book_mocreeps_cat_rat_description,"My Cats seem scared of normal rats.. \nBut have an irresistible hate towards magical rats for some reason. \nIt's kind of cute.. But I can't brush away the feeling they distance themselves with truly divine purpose...",,,,,,,,,,,,,
 book_mocreeps_motd,"Message of the Day",,,,,,,,,,,,,
 book_mocreeps_motd_description,"You shouldn't be reading this.",,,,,,,,,,,,,
+book_mocreeps_motd_description_halloween,"Happy Halloween!",,,,,,,,,,,,,
+book_mocreeps_motd_description_smissmass,"Happy Halloween!",,,,,,,,,,,,,
 book_mocreeps_motd_description_001,"Also try Worse Enemies!",,,,,,,,,,,,,
 book_mocreeps_motd_description_002,"Hobos love Material Donations",,,,,,,,,,,,,
 book_mocreeps_motd_description_003,"Blood is Fuel.",,,,,,,,,,,,,
@@ -237,9 +240,15 @@ if ModIsEnabled("New Biomes + Secrets") then
 	ModLuaFileAppend( "data/scripts/biomes/tower_ascending_left5.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/forbidden_tower_heat_populator.lua" )
 	ModLuaFileAppend( "data/scripts/biomes/tower_ascending_middle5.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/forbidden_tower_heat_populator.lua" )
 	ModLuaFileAppend( "data/scripts/biomes/tower_ascending_right5.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/forbidden_tower_heat_populator.lua" )
-	ModLuaFileAppend( "data/scripts/biomes/tower_ascending_left3.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/forbidden_tower_heat_populator.lua" )
-	ModLuaFileAppend( "data/scripts/biomes/tower_ascending_middle3.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/forbidden_tower_heat_populator.lua" )
-	ModLuaFileAppend( "data/scripts/biomes/tower_ascending_right3.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/forbidden_tower_heat_populator.lua" )
+	ModLuaFileAppend( "data/scripts/biomes/tower_ascending_left3.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/forbidden_tower_heat_bug_populator.lua" )
+	ModLuaFileAppend( "data/scripts/biomes/tower_ascending_middle3.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/forbidden_tower_heat_bug_populator.lua" )
+	ModLuaFileAppend( "data/scripts/biomes/tower_ascending_right3.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/forbidden_tower_heat_bug_populator.lua" )
+	ModLuaFileAppend( "data/scripts/biomes/tower_ascending_left2.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/forbidden_tower_norm_populator.lua" )
+	ModLuaFileAppend( "data/scripts/biomes/tower_ascending_middle2.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/forbidden_tower_norm_populator.lua" )
+	ModLuaFileAppend( "data/scripts/biomes/tower_ascending_right2.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/forbidden_tower_norm_populator.lua" )
+	ModLuaFileAppend( "data/scripts/biomes/tower_ascending_left1.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/forbidden_tower_norm_populator.lua" )
+	ModLuaFileAppend( "data/scripts/biomes/tower_ascending_middle1.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/forbidden_tower_norm_populator.lua" )
+	ModLuaFileAppend( "data/scripts/biomes/tower_ascending_right1.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/forbidden_tower_norm_populator.lua" )
 
     --Global Spawns
 	ModLuaFileAppend( "data/scripts/biomes/SEWER.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" )
@@ -270,7 +279,7 @@ if ModIsEnabled("biome-plus") then
     ModLuaFileAppend( "data/scripts/biomes/mod/catacombs.lua", "mods/mo_creeps/files/scripts/biomes/wandcave_populator.lua" )
     ModLuaFileAppend( "data/scripts/biomes/mod/tomb.lua", "mods/mo_creeps/files/scripts/biomes/sandcave_populator.lua" )
     ModLuaFileAppend( "data/scripts/biomes/mod/robofactory.lua", "mods/mo_creeps/files/scripts/biomes/vault_populator.lua" )
-    ModLuaFileAppend( "data/scripts/biomes/mod/swamp.lua", "mods/mo_creeps/files/scripts/biomes/rainforest_populator.lua" ) --Jungle, could probably include bonus fungus here
+    ModLuaFileAppend( "data/scripts/biomes/mod/swamp.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/alt_biomes/swamp_populator.lua" ) --Jungle, could probably include bonus fungus here
     ModLuaFileAppend( "data/scripts/biomes/mod/rainforest_wormy.lua", "mods/mo_creeps/files/scripts/biomes/rainforest_dark_populator.lua" )
     ModLuaFileAppend( "data/scripts/biomes/mod/conduit.lua", "mods/mo_creeps/files/scripts/biomes/winter_populator.lua" )
     ModLuaFileAppend( "data/scripts/biomes/mod/sulfur_cave.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/alt_biomes/hiddengrove_populator.lua" ) --Hidden Grove, Overgrowth populator
@@ -423,12 +432,48 @@ end
 -- Seasonal
 local year, month, day = GameGetDateAndTimeLocal()
 
--- Halloween Event
-if ( month == 10 ) and (( day >= 3 ) and (day <= 31 )) then
-  ModLuaFileAppend( "data/scripts/biomes/coalmine.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/halloween.lua" ) --Coal Mine, first area, goodluck on your run
-  ModLuaFileAppend( "data/scripts/biomes/coalmine_alt.lua", "mods/mo_creeps/files/scripts/seasonal/halloween.lua" ) --Coalmine but to the west side near damp cave
-  ModLuaFileAppend( "data/scripts/biomes/excavationsite.lua", "mods/mo_creeps/files/scripts/seasonal/halloween.lua" ) --Coal Pits, area 2
-  ModLuaFileAppend( "data/scripts/biomes/pyramid.lua", "mods/mo_creeps/files/scripts/seasonal/halloween.lua" ) --Presumably everything below the entrance to the pyramid
+
+if seasonalSetting == true then
+
+  -- Halloween Event
+  if ( month == 10 ) and ( day >= 1 ) then
+    ModLuaFileAppend( "data/scripts/biomes/coalmine.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/halloween.lua" ) --Coal Mine, first area, goodluck on your run
+    ModLuaFileAppend( "data/scripts/biomes/coalmine_alt.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/halloween.lua" ) --Coalmine but to the west side near damp cave
+    ModLuaFileAppend( "data/scripts/biomes/excavationsite.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/halloween.lua" ) --Coal Pits, area 2
+    ModLuaFileAppend( "data/scripts/biomes/pyramid.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/halloween.lua" ) --Presumably everything below the entrance to the pyramid
+
+    local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
+    local content = ModTextFileGetContent("data/entities/animals/poring.xml")
+    local xml = nxml.parse(content)
+    xml:first_of("Base"):first_of("SpriteComponent").attr.image_file = "mods/Mo_Creeps/files/enemies_gfx/poring_halloween.xml"
+    ModTextFileSetContent("data/entities/animals/poring.xml", tostring(xml))
+
+    local content = ModTextFileGetContent("data/entities/animals/coal_mines/poring.xml")
+    local xml = nxml.parse(content)
+    xml:first_of("Base"):first_of("SpriteComponent").attr.image_file = "mods/Mo_Creeps/files/enemies_gfx/poring_halloween_weak.xml"
+    ModTextFileSetContent("data/entities/animals/coal_mines/poring.xml", tostring(xml))
+
+  end
+
+
+
+  -- Smissmass Event
+  if ( month == 12 ) and ( day >= 22 ) then
+
+    local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
+    local content = ModTextFileGetContent("data/entities/animals/hisii_minecart_tnt.xml")
+    local xml = nxml.parse(content)
+    xml:first_of("Base"):first_of("SpriteComponent").attr.image_file = "mods/Mo_Creeps/files/enemies_gfx/hisii_minecart_tnt_santa.xml"
+    xml:first_of("Base"):first_of("AnimalAIComponent").attr.attack_ranged_entity_file = "data/entities/projectiles/present.xml"
+    ModTextFileSetContent("data/entities/animals/hisii_minecart_tnt.xml", tostring(xml))
+
+    local content = ModTextFileGetContent("data/entities/animals/hisii_minecart.xml")
+    local xml = nxml.parse(content)
+    xml:first_of("Base"):first_of("SpriteComponent").attr.image_file = "mods/Mo_Creeps/files/enemies_gfx/hisii_minecart_smissmass.xml"
+    ModTextFileSetContent("data/entities/animals/hisii_minecart.xml", tostring(xml))
+
+  end
+
 end
 
 

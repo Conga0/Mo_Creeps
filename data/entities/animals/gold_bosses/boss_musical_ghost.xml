@@ -67,7 +67,7 @@
 	
 	<DamageModelComponent
 		_tags="magic_music"
-		hp="20000"
+		hp="10000"
 		physics_objects_damage="0"
 		ragdoll_filenames_file=""
 		fire_probability_of_ignition="0" 

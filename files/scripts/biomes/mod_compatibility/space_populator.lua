@@ -47,6 +47,14 @@
         entity     = "data/entities/animals/star_child.xml"
     })
 
+    table.insert(g_small_enemies,
+    {
+        prob           = 0.15,
+        min_count    = 1,
+        max_count    = 1,
+        entity     = "data/entities/animals/wraith_weirdo_shield.xml"
+    })
+
 
 
     ---Herobrine

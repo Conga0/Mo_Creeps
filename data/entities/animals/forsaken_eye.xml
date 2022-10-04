@@ -12,7 +12,7 @@
 			can_fly="1"  
 			can_walk="0"
 			attack_ranged_entity_file="data/entities/projectiles/forsaken_eye_targetter.xml"
-			attack_ranged_predict="1"
+			attack_ranged_predict="0"
 			attack_ranged_min_distance="0"
 			attack_ranged_max_distance="200"
 			attack_ranged_frames_between="60"

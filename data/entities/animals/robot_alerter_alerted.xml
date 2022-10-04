@@ -59,23 +59,17 @@
 			>
 	    </CharacterDataComponent>
 
-		<AudioComponent
-			file="data/audio/Desktop/animals.bank"
-			event_root="animals/wraith_storm" >
-		</AudioComponent>
-
 	</Base>
+	
+	<AudioComponent
+		file="data/audio/Desktop/animals.bank"
+		event_root="animals/drone_lasership" >
+	</AudioComponent>
 
 	<AudioLoopComponent
 		file="data/audio/Desktop/animals.bank"
-		event_name="animals/wraith_storm/movement_loop"
+		event_name="animals/drone_lasership/movement_loop"
 		set_speed_parameter="1"
-		auto_play="1">
-	</AudioLoopComponent>
-	
-	<AudioLoopComponent
-		file="data/audio/Desktop/animals.bank"
-		event_name="animals/wraith/electricity_loop"
 		auto_play="1">
 	</AudioLoopComponent>
 	

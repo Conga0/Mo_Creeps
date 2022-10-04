@@ -122,11 +122,5 @@
     set_speed_parameter="1"
     auto_play="1">
   </AudioLoopComponent>
-	
-	<LuaComponent
-		script_source_file="data/scripts/animals/ethereal_check.lua"
-		execute_every_n_frame="10"
-		>
-	</LuaComponent>
 
 </Entity>

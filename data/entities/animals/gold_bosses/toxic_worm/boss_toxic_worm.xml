@@ -11,8 +11,8 @@
 	</_Transform>
 												<!-- hunt speed originally 0.045  -->
 	<BossDragonComponent
-		speed="8"
-		speed_hunt="12"
+		speed="6"
+		speed_hunt="9"
 		acceleration="0.55"
 		direction_adjust_speed="0.006"
 		direction_adjust_speed_hunt="0.01"
@@ -44,7 +44,7 @@
 		fire_damage_amount="0" 
 		fire_how_much_fire_generates="0" 
 		fire_probability_of_ignition="0" 
-		hp="16000" 
+		hp="480" 
 		materials_damage="1" 
 		materials_how_much_damage="0.3,0.2,0.02,0.1,0.1" 
 		materials_that_damage="purifying_powder,cursed_liquid,blood_cold,lava,acid" 

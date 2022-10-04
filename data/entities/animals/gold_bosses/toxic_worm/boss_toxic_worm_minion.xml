@@ -11,8 +11,8 @@
 	</_Transform>
 
 	<BossDragonComponent
-		speed="8"
-		speed_hunt="12"
+		speed="4"
+		speed_hunt="6"
 		acceleration="0.50"
 		direction_adjust_speed="0.0055"
 		direction_adjust_speed_hunt="0.009"
@@ -30,7 +30,8 @@
 		ragdoll_filename=""
 		jump_cam_shake="20"
 		projectile_1=""
-		projectile_2="" >
+		projectile_2=""
+		bite_damage="0.06" >
 	</BossDragonComponent>
 
 	<CellEaterComponent
@@ -45,7 +46,7 @@
 		fire_probability_of_ignition="0.5" 
 		blood_material="radioactive_liquid"
 		blood_spray_material="radioactive_liquid"
-		hp="2000" 
+		hp="60" 
 		is_on_fire="0" 
 		mAirAreWeInWater="0" 
 		mFallCount="0" 

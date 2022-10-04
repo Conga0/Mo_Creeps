@@ -59,25 +59,25 @@
 			>
 	    </CharacterDataComponent>
 
-		<AudioComponent
-			file="data/audio/Desktop/animals.bank"
-			event_root="animals/wraith_storm" >
-		</AudioComponent>
-
 	</Base>
+	
+	<AudioComponent
+		file="data/audio/Desktop/animals.bank"
+		event_root="animals/drone_lasership" >
+	</AudioComponent>
 
 	<AudioLoopComponent
 		file="data/audio/Desktop/animals.bank"
-		event_name="animals/wraith_storm/movement_loop"
+		event_name="animals/drone_lasership/movement_loop"
 		set_speed_parameter="1"
 		auto_play="1">
 	</AudioLoopComponent>
-	
-	<AudioLoopComponent
-		file="data/audio/Desktop/animals.bank"
-		event_name="animals/wraith/electricity_loop"
-		auto_play="1">
-	</AudioLoopComponent>
+
+	<LuaComponent
+		script_source_file="mods/mo_creeps/files/scripts/animals/robot_alerter_search.lua"
+		execute_every_n_frame="15"
+		>
+	</LuaComponent>
 	
 	<SpriteComponent 
         alpha="0.55"
@@ -86,12 +86,6 @@
         fog_of_war_hole="1"
 		>
     </SpriteComponent>
-
-	<LuaComponent
-		script_source_file="mods/mo_creeps/files/scripts/animals/robot_alerter_search.lua"
-		execute_every_n_frame="15"
-		>
-	</LuaComponent>
 
 </Entity>
 

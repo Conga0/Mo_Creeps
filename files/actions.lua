@@ -346,25 +346,26 @@ table.insert(actions,
     end,
 })
 
---[[ table.insert(actions,
+--[[
+table.insert(actions,
 {
     id          = "MOCREEPS_TEST_HOLY_BEAM",
-    name 		= "TEST Holy Beam",
-    description = "Creates a holy beam after 5 seconds.",
-    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/orb_holy_shotgun.png",
+    name 		= "Divine Light",
+    description = "Creates a holy beam of divine light after 5 seconds, unbias to all it harms.",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/divine_light.png",
     sprite_unidentified = "data/ui_gfx/gun_actions/dynamite_unidentified.png",
-    related_projectiles	= {"mods/mo_creeps/files/entities/projectiles/beam_holy_warning.xml"},
+    related_projectiles	= {"mods/mo_creeps/files/entities/projectiles/deck/beam_holy_warning_player.xml"},
     type 		= ACTION_TYPE_PROJECTILE,
-    spawn_level                       = "0", -- BUCKSHOT  Originally this was 1-5 but was changed because the spell feels too good to get early on, might revert, unsure
-    spawn_probability                 = "0.001", -- BUCKSHOT
+    spawn_level                       = "4,5,6,10", -- Divine Light
+    spawn_probability                 = "0.5,0.5,0.5,1", -- Divine Light
     price = 220,
-    mana = 50,
+    mana = 100,
     action 		= function()
-        add_projectile("mods/mo_creeps/files/entities/projectiles/beam_holy_warning.xml")
-        c.fire_rate_wait = c.fire_rate_wait + 12
-        c.spread_degrees = c.spread_degrees + 30.0
+        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/beam_holy_warning_player.xml")
+        c.fire_rate_wait = c.fire_rate_wait + 120
     end,
-}) ]]--
+})
+]]--
 
 table.insert(actions,
 {

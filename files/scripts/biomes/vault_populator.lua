@@ -44,6 +44,16 @@
         }
     })
 
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.02,
+        min_count    = 6,
+        max_count    = 9,    
+        entity     = "data/entities/animals/wraith_weirdo_shield.xml"
+    })
+
+
+
 
     --Small enemies
 
@@ -134,6 +144,14 @@
         min_count    = 1,
         max_count    = 1,    
         entity     = "data/entities/animals/vault/mimic_explosive_box.xml"
+    })
+
+    table.insert(g_small_enemies,
+    {
+        prob           = 0.08,
+        min_count    = 1,
+        max_count    = 2,    
+        entity     = "data/entities/animals/wraith_weirdo_shield.xml"
     })
 
     table.insert(g_small_enemies,

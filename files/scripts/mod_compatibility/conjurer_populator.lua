@@ -241,7 +241,7 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/animal_icons/poring_devil.png",
 	  },
 	  {
-		name="Angelring",
+		name="Angeling",
 		path="data/entities/animals/poring_holy.xml",
 		image="data/ui_gfx/animal_icons/poring_holy.png",
 	  },
@@ -259,6 +259,11 @@ table.insert(ALL_ENTITIES, {
 		name="Sentry",
 		path="data/entities/animals/sentry.xml",
 		image="data/ui_gfx/animal_icons/sentry.png",
+	  },
+	  {
+		name="Greater Swampling",
+		path="data/entities/animals/shaman_greater_mocreep.xml",
+		image="data/ui_gfx/animal_icons/shaman_greater_mocreep.png",
 	  },
 	  {
 		name="Star Child",
@@ -319,6 +324,11 @@ table.insert(ALL_ENTITIES, {
 		name="Suur Stendari",
 		path="data/entities/animals/wizard_firemage_greater.xml",
 		image="data/ui_gfx/animal_icons/wizard_firemage_greater.png",
+	  },
+	  {
+		name="Weirdo",
+		path="data/entities/animals/wraith_weirdo_shield.xml",
+		image="data/ui_gfx/animal_icons/wraith_weirdo_shield.png",
 	  },
 	  {
 		name="Hämis Nest",

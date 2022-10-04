@@ -6,6 +6,7 @@ Phantom Bow
 TNT Minecart
 Ceiling Fungus
 Greater Shaman
+Weirdo
 
 
 Remember to remove beta build from the description when it's released

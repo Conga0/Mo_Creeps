@@ -14,6 +14,13 @@ Still todo: statue rewards for all
 spawning at 11 orbs
 
 
-Skateboard kitty & wizard kitty stainmaps
-
 Print "Checkout More Creeps and Weirdos!!! New mod released today! --This message will be removed after 1 week--"
+
+Seasonal events option
+
+
+Gold statue if achievement completed in nightmare/purgatory
+
+Change MotD tablet to be made of glass, shatter on impact
+
+Could include purg/noitvania spawns in dofileonce with mod check

@@ -21,6 +21,7 @@
         </AnimalAIComponent>
         
         <SpriteComponent 
+			alpha="1"
             image_file="mods/Mo_Creeps/files/enemies_gfx/poring.xml"
             alpha="0.8" 
             offset_x="14" 
