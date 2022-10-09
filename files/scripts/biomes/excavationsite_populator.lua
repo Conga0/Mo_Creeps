@@ -58,6 +58,25 @@
         entity     = "data/entities/animals/excavationsite/poring_lukki_fake.xml"
     })
 
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.1,
+        min_count    = 1,
+        max_count    = 1,
+		entities 	= {
+			{
+				min_count	= 2,
+				max_count 	= 2,
+				entity = "data/entities/animals/ccc_bat_psychic.xml",
+			},
+			{
+				min_count	= 3,
+				max_count 	= 4,
+				entity = "data/entities/animals/fairy_big.xml",
+			},
+		}
+    })
+
 
 
     --Small enemies
@@ -68,6 +87,14 @@
         min_count    = 1,
         max_count    = 2,    
         entity     = "data/entities/animals/poring.xml"
+    })
+
+    table.insert(g_small_enemies,
+    {
+        prob           = 0.2,
+        min_count    = 2,
+        max_count    = 4,    
+        entity     = "data/entities/animals/ccc_bat_psychic.xml"
     })
 
     table.insert(g_small_enemies,
@@ -166,7 +193,7 @@
     
     table.insert(g_small_enemies,
     {
-        prob           = 0.08,
+        prob           = 0.1,
         min_count    = 1,
         max_count    = 1,    
         entity     = "data/entities/animals/vault/tentacler_big.xml",

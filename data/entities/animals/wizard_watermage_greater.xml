@@ -50,21 +50,9 @@
 		</DamageModelComponent>
 
 		<SpriteComponent 
-			image_file="mods/mo_creeps/files/enemies_gfx/firemage_big.xml" 
+			image_file="mods/mo_creeps/files/enemies_gfx/zzz_sussy.xml" 
 			offset_x="0"
 			offset_y="0">
-		</SpriteComponent>
-
-		<SpriteComponent 
-			_tags="character" 
-			_enabled="1" 
-			alpha="1" 
-			image_file="mods/mo_creeps/files/enemies_gfx/firemage_big_emissive.xml"
-			offset_x="0" 
-			offset_y="0"
-			emissive="1"
-			additive="1"
-			>
 		</SpriteComponent>
 
 		<PathFindingComponent

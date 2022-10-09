@@ -34,6 +34,11 @@ function material_area_checker_success( pos_x, pos_y )
     EntityKill(entity_id)
 	
 	AddFlagPersistent( "mocreeps_card_unlocked_donated_beggar" )
+
+	if ModIsEnabled("nightmare") or ModIsEnabled("purgatory") then
+		AddFlagPersistent( "mocreeps_card_unlocked_donated_beggar_goldmode" )
+	end
+
 end
 
 --Donate super rare liquid to a beggar, special big heart statue and better rewards?

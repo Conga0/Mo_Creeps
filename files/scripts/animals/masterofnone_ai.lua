@@ -8,9 +8,9 @@ local x,y = EntityGetTransform( entity_id )
 SetRandomSeed(x, y * GameGetFrameNum())
 
 if ModIsEnabled("new_enemies") then
-    state = Random( 0, 20 ) --Time orb from new enemies is not included as it isn't enabled in theirs either, they couldn't get it working without a specific setup if I had to guess?
-    else
-    state = Random( 0, 17 )
+    state = Random( 0, 21 ) --Time orb from new enemies is not included as it isn't enabled in theirs either, they couldn't get it working without a specific setup if I had to guess?
+else
+    state = Random( 0, 18 )
 end
 
 if (state == 1) then
@@ -46,12 +46,14 @@ elseif (state == 15) then
 elseif (state == 16) then
     ComponentSetValue2( comp, "attack_ranged_entity_file", "mods/mo_creeps/files/entities/projectiles/orb_manadrain.xml" )
 elseif (state == 17) then
-    ComponentSetValue2( comp, "attack_ranged_entity_file", "mods/mo_creeps/files/entities/projectiles/orb_unstable_transmutation.xml" ) --End for vanilla & mo creeps orbs, everything fromhere one needs modded dependencies.
+    ComponentSetValue2( comp, "attack_ranged_entity_file", "mods/mo_creeps/files/entities/projectiles/orb_unstable_transmutation.xml" )
 elseif (state == 18) then
-    ComponentSetValue2( comp, "attack_ranged_entity_file", "data/entities/projectiles/orb_earthquake.xml" )
+    ComponentSetValue2( comp, "attack_ranged_entity_file", "mods/mo_creeps/files/entities/projectiles/orb_psychotic.xml" ) --End for vanilla & mo creeps orbs, everything fromhere one needs modded dependencies.
 elseif (state == 19) then
-    ComponentSetValue2( comp, "attack_ranged_entity_file", "data/entities/projectiles/orb_trip.xml" )
+    ComponentSetValue2( comp, "attack_ranged_entity_file", "data/entities/projectiles/orb_earthquake.xml" )
 elseif (state == 20) then
+    ComponentSetValue2( comp, "attack_ranged_entity_file", "data/entities/projectiles/orb_trip.xml" )
+elseif (state == 21) then
     ComponentSetValue2( comp, "attack_ranged_entity_file", "data/entities/projectiles/orb_toxic.xml" )
 else
     ComponentSetValue2( comp, "attack_ranged_entity_file", "data/entities/projectiles/iceball.xml" )

@@ -30,6 +30,14 @@
         max_count    = 1,    
         entity     = "data/entities/buildings/esoteric_being_asleep.xml"
     })
+
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.08,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/buildings/fairy_esoteric.xml"
+    })
     
 
 

@@ -101,8 +101,8 @@
 	<DamageNearbyEntitiesComponent
 		radius="13"
 		time_between_damaging="40"
-		damage_min="0.32"
-		damage_max="0.64"
+		damage_min="0.16"
+		damage_max="0.32"
 		target_tag="player_unit"
 		damage_description="$ethereal_damage"
 		damage_type="DAMAGE_CURSE"

@@ -32,7 +32,7 @@
 		</AnimalAIComponent>
 		
 		<DamageModelComponent 
-            hp="3"
+            hp="3.5"
             materials_create_messages="1"
 			ragdoll_filenames_file="mods/mo_creeps/files/ragdolls/hisii_minecart/filenames.txt" 
 			fire_probability_of_ignition="5" 
@@ -92,8 +92,8 @@
             _enabled="1" 
 			aabb_min_x="-7" 
             aabb_max_x="6" 
-			aabb_min_y="0"
-            aabb_max_y="15" 
+			aabb_min_y="8"
+            aabb_max_y="16" 
             >
         </HitboxComponent>
 	</Base>
@@ -129,9 +129,9 @@
 		_enabled="1" 
 		aabb_min_x="-5" 
 		aabb_max_x="2" 
-		aabb_min_y="-8"
-		aabb_max_y="1"
-		damage_multiplier="3.5"
+		aabb_min_y="-7"
+		aabb_max_y="8"
+		damage_multiplier="3.0"
 		>
 	</HitboxComponent>
 

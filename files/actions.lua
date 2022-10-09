@@ -261,6 +261,34 @@ table.insert(actions,
     end,
 })
 
+table.insert(actions,
+{
+    id          = "MOCREEPS_HOLYORB_SHOTGUN_CURSED",
+    name 		= "Cursed Orb Barrage",
+    description = "Casts a barrage of 7 cursed orbs. Has some noticably destructive properties.",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/orb_holy_shotgun_cursed.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/dynamite_unidentified.png",
+    related_projectiles	= {"mods/mo_creeps/files/entities/projectiles/deck/orb_holy_shotgun_cursed.xml", 7},
+    spawn_requires_flag = "mocreeps_card_unlocked_divinebeing",
+    type 		= ACTION_TYPE_PROJECTILE,
+    spawn_level                       = "10",
+    spawn_probability                 = "0.05",
+    price = 220,
+    mana = 80,
+    action 		= function()
+        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/orb_holy_shotgun_cursed.xml")
+        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/orb_holy_shotgun_cursed.xml")
+        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/orb_holy_shotgun_cursed.xml")
+        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/orb_holy_shotgun_cursed.xml")
+        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/orb_holy_shotgun_cursed.xml")
+        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/orb_holy_shotgun_cursed.xml")
+        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/orb_holy_shotgun_cursed.xml")
+        c.fire_rate_wait = c.fire_rate_wait + 12
+        c.spread_degrees = c.spread_degrees + 30.0
+        current_reload_time = current_reload_time + 15
+    end,
+})
+
 table.insert(actions,   --This spell is kinda weird
 {
     id          = "MOCREEPS_BOMB_GIGA",
@@ -319,28 +347,6 @@ table.insert(actions,
     max_uses = 3,
     action 		= function()
         add_projectile("data/entities/misc/forced_bungal_shift.xml")
-        c.fire_rate_wait = c.fire_rate_wait + 60
-        current_reload_time = current_reload_time + 30
-    end,
-})
-
-table.insert(actions,
-{
-    id          = "MOCREEPS_BUNGAL_SHIFT_SPAM",
-    name 		= "Hyper Fungal Shift",
-    description = "Impatient....                      ", --Triggers a fungal shift, no cooldown.
-    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/bungal_shift_spam.png",
-    sprite_unidentified = "data/ui_gfx/gun_actions/explosive_projectile_unidentified.png",
-    related_extra_entities = { "data/entities/misc/forced_bungal_shift_spam.xml" },
-    spawn_requires_flag = "mocreeps_card_unlocked_boss_toxic_worm",
-    type 		= ACTION_TYPE_STATIC_PROJECTILE,
-    spawn_level                       = "10", -- Conversion Spell
-    spawn_probability                 = "0.01", -- Conversion Spell
-    price = 250,
-    mana = 200,
-    max_uses = 3,
-    action 		= function()
-        add_projectile("data/entities/misc/forced_bungal_shift_spam.xml")
         c.fire_rate_wait = c.fire_rate_wait + 60
         current_reload_time = current_reload_time + 30
     end,
@@ -466,6 +472,28 @@ table.insert(actions,
     action 		= function()
         add_projectile("mods/mo_creeps/files/entities/projectiles/deck/rat_bite.xml")
         c.damage_critical_chance = c.damage_critical_chance + 10
+    end,
+})
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_BUNGAL_SHIFT_SPAM",
+    name 		= "Hyper Fungal Shift",
+    description = "Impatient....                      ", --Triggers a fungal shift, no cooldown.
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/bungal_shift_spam.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/explosive_projectile_unidentified.png",
+    related_extra_entities = { "data/entities/misc/forced_bungal_shift_spam.xml" },
+    spawn_requires_flag = "mocreeps_card_unlocked_boss_toxic_worm",
+    type 		= ACTION_TYPE_STATIC_PROJECTILE,
+    spawn_level                       = "10", -- Conversion Spell
+    spawn_probability                 = "0.01", -- Conversion Spell
+    price = 250,
+    mana = 200,
+    max_uses = 3,
+    action 		= function()
+        add_projectile("data/entities/misc/forced_bungal_shift_spam.xml")
+        c.fire_rate_wait = c.fire_rate_wait + 60
+        current_reload_time = current_reload_time + 30
     end,
 })
 

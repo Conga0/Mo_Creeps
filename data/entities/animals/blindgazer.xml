@@ -14,7 +14,7 @@
 			attack_melee_enabled="0"
 			attack_dash_enabled="0"
 			attack_ranged_frames_between="130" 
-			attack_ranged_predict="1"
+			attack_ranged_predict="0"
 			needs_food="0"
 			can_fly="1" >
 		</AnimalAIComponent>

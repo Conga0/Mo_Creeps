@@ -177,5 +177,11 @@
     ragdoll_fx="NONE">
 	</DamageNearbyEntitiesComponent>
 
+	<VariableStorageComponent
+		name="projectile_file"
+		value_string="mods/mo_creeps/files/entities/projectiles/deck/reverberation.xml"
+		>
+	</VariableStorageComponent>
+
 </Entity>
 

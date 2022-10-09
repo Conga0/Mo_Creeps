@@ -387,7 +387,7 @@
 
 	<LuaComponent
 		_tags="death_reward"
-		script_death="data/entities/animals/boss_musical_ghost/boss_musical_death.lua"
+		script_death="data/entities/animals/gold_bosses/boss_musical_death.lua"
 		>
 	</LuaComponent>
 

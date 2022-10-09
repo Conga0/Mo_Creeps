@@ -71,6 +71,11 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/bubbles/bubble_liquid_water.png",
 	  },
 	  {
+		name="Psychic Bat",
+		path="data/entities/animals/ccc_bat_psychic.xml",
+		image="data/ui_gfx/animal_icons/ccc_bat_psychic.png",
+	  },
+	  {
 		name="Cat",
 		path="mods/mo_creeps/files/entities/special/conjurer_cat_spawner.xml",
 		image="data/ui_gfx/animal_icons/cat_mocreeps.png",
@@ -119,6 +124,11 @@ table.insert(ALL_ENTITIES, {
 		name="Giant Discord Fairy",
 		path="data/entities/animals/fairy_big_discord.xml",
 		image="data/ui_gfx/animal_icons/fairy_big_discord.png",
+	  },
+	  {
+		name="Esoteric Fairy",
+		path="data/entities/animals/fairy_esoteric.xml",
+		image="data/ui_gfx/animal_icons/fairy_esoteric.png",
 	  },
 	  {
 		name="Forsaken Eye",
@@ -321,6 +331,16 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/animal_icons/wizard_jackofalltrades.png",
 	  },
 	  {
+		name="Master of Mana",
+		path="data/entities/animals/wizard_manaeater.xml",
+		image="data/ui_gfx/animal_icons/wizard_manaeater.png",
+	  },
+	  {
+		name="Master of Transmutation",
+		path="data/entities/animals/wizard_transmutation.xml",
+		image="data/ui_gfx/animal_icons/wizard_transmutation.png",
+	  },
+	  {
 		name="Suur Stendari",
 		path="data/entities/animals/wizard_firemage_greater.xml",
 		image="data/ui_gfx/animal_icons/wizard_firemage_greater.png",
@@ -349,6 +369,11 @@ table.insert(ALL_ENTITIES, {
 		name="Wand Tinkering Crystal",
 		path="data/entities/buildings/wandedit_crystal.xml",
 		image="data/ui_gfx/building_icons/wandedit_crystal.png",
+	  },
+	  {
+		name="Pandora's Chest",
+		path="mods/mo_creeps/files/entities/items/pickups/chest_random_cursed.xml",
+		image="data/ui_gfx/building_icons/chest_random_cursed.png",
 	  },
 	  {
 		name="???",

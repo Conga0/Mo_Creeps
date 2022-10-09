@@ -13,6 +13,10 @@ function collision_trigger()
 
 	AddFlagPersistent( "mocreeps_card_unlocked_cat_secret" )
 
+	if ModIsEnabled("nightmare") or ModIsEnabled("purgatory") then
+		AddFlagPersistent( "mocreeps_card_unlocked_cat_secret_goldmode" )
+	end
+
 	EntityKill( entity_id )
 end
 

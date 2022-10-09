@@ -285,7 +285,7 @@
 
 	<LuaComponent
 		_tags="death_reward"
-		script_death="data/entities/animals/angel/angel_death.lua"
+		script_death="data/entities/animals/gold_bosses/angel/angel_death.lua"
 		>
 	</LuaComponent>
 

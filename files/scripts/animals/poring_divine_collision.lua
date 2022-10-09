@@ -16,4 +16,9 @@ for i,v in ipairs( targets ) do
 	EntityKill( entity_id )
 	
 	AddFlagPersistent( "mocreeps_card_unlocked_divine_liquid" )
+
+	if ModIsEnabled("nightmare") or ModIsEnabled("purgatory") then
+		AddFlagPersistent( "mocreeps_card_unlocked_divine_liquid_goldmode" )
+	end
+
 end

@@ -1,46 +1,63 @@
-   ---Hell enemies 
-   
-   table.insert(g_big_enemies,
+
+local mocreep_HardmodeCheck = false
+
+if ModIsEnabled("nightmare") or ModIsEnabled("purgatory") then
+    mocreep_HardmodeCheck = true
+end
+
+---Hell enemies 
+
+if mocreep_HardmodeCheck then 
+    table.insert(g_big_enemies,
     {
-        prob           = 0.03,
+        prob           = 0.04,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/gold_bosses/angel/angel.xml"
+    })
+else
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.04,
         min_count    = 1,
         max_count    = 1,    
         entity     = "data/entities/animals/angel.xml"
     })
+end
 
 
-    table.insert(g_small_enemies,
-    {
-        prob           = 0.02,
-        min_count    = 1,
-        max_count    = 1,    
-        entity     = "data/entities/animals/the_end/sentry.xml"
-    })
+table.insert(g_small_enemies,
+{
+    prob           = 0.02,
+    min_count    = 1,
+    max_count    = 1,    
+    entity     = "data/entities/animals/the_end/sentry.xml"
+})
 
-  
-    table.insert(g_small_enemies,
-    {
-        prob           = 0.12,
-        min_count    = 1,
-        max_count    = 1,    
-        entity     = "data/entities/animals/the_end/wizard_firemage_greater.xml"
-    })
 
-    table.insert(g_small_enemies,
-    {
-        prob           = 0.1,
-        min_count    = 1,
-        max_count    = 1,    
-        entity     = "data/entities/animals/poring_devil.xml"
-    })
+table.insert(g_small_enemies,
+{
+    prob           = 0.12,
+    min_count    = 1,
+    max_count    = 1,    
+    entity     = "data/entities/animals/the_end/wizard_firemage_greater.xml"
+})
 
-    table.insert(g_small_enemies,
-    {
-        prob           = 0.07,
-        min_count    = 1,
-        max_count    = 1,    
-        entity     = "data/entities/animals/the_end/gazer_greater.xml"
-    })
+table.insert(g_small_enemies,
+{
+    prob           = 0.1,
+    min_count    = 1,
+    max_count    = 1,    
+    entity     = "data/entities/animals/poring_devil.xml"
+})
+
+table.insert(g_small_enemies,
+{
+    prob           = 0.07,
+    min_count    = 1,
+    max_count    = 1,    
+    entity     = "data/entities/animals/the_end/gazer_greater.xml"
+})
 
 
 
@@ -48,78 +65,110 @@
 
 
 
-    table.insert(g_small_enemies_sky,
-    {
-        prob           = 0.18,
-        min_count    = 1,
-        max_count    = 1,    
-        entity     = "data/entities/animals/poring_holy.xml"
-    })
+table.insert(g_small_enemies_sky,
+{
+    prob           = 0.18,
+    min_count    = 1,
+    max_count    = 1,    
+    entity     = "data/entities/animals/poring_holy.xml"
+})
 
-    table.insert(g_small_enemies_sky,
-    {
-        prob           = 0.07,
-        min_count    = 1,
-        max_count    = 1,    
-        entity     = "data/entities/animals/the_end/gazer_greater_sky.xml"
-    })
+table.insert(g_small_enemies_sky,
+{
+    prob           = 0.07,
+    min_count    = 1,
+    max_count    = 1,    
+    entity     = "data/entities/animals/the_end/gazer_greater_sky.xml"
+})
 
-    table.insert(g_small_enemies_sky,
-    {
-        prob           = 0.08,
-        min_count    = 4,
-        max_count    = 6,    
-        entity     = "data/entities/animals/the_end/fairy_big_discord.xml"
-    })
+table.insert(g_small_enemies_sky,
+{
+    prob           = 0.08,
+    min_count    = 4,
+    max_count    = 6,    
+    entity     = "data/entities/animals/the_end/fairy_big_discord.xml"
+})
 
-    table.insert(g_big_enemies_sky,
-    {
-        prob           = 0.03,
-        min_count    = 1,
-        max_count    = 1,    
-        entity     = "data/entities/animals/angel.xml"
-    })
-
-
-
-    table.insert(g_small_enemies_sky,
-    {
-        prob           = 0.012,
-        min_count    = 1,
-        max_count    = 1,
-        entity     = "data/entities/buildings/polymorph_crystal_chaotic.xml"
-    })
-
-    table.insert(g_small_enemies_sky,
-    {
-        prob           = 0.07,
-        min_count    = 1,
-        max_count    = 1,
-        entity     = "data/entities/buildings/polymorph_crystal.xml"
-    })
-
-
-
-    --New Game ++ (2)
-
-    table.insert(g_big_enemies,
-    {
-        prob           = 0.03,
-        min_count    = 1,
-        max_count    = 1,    
-        entity     = "data/entities/animals/angel/weak_loot/angel.xml",
-		ngpluslevel = 2
-    })
-
-
-
-    --New Game ++++ (4)
-
+if mocreep_HardmodeCheck then 
     table.insert(g_big_enemies_sky,
     {
         prob           = 0.04,
         min_count    = 1,
         max_count    = 1,    
-        entity     = "data/entities/animals/angel/weak_loot/angel.xml",
+        entity     = "data/entities/animals/gold_bosses/angel/angel.xml"
+    })
+else
+    table.insert(g_big_enemies_sky,
+    {
+        prob           = 0.04,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/angel.xml"
+    })
+end
+
+
+
+table.insert(g_small_enemies_sky,
+{
+    prob           = 0.012,
+    min_count    = 1,
+    max_count    = 1,
+    entity     = "data/entities/buildings/polymorph_crystal_chaotic.xml"
+})
+
+table.insert(g_small_enemies_sky,
+{
+    prob           = 0.07,
+    min_count    = 1,
+    max_count    = 1,
+    entity     = "data/entities/buildings/polymorph_crystal.xml"
+})
+
+
+
+--New Game ++ (2)
+
+if mocreep_HardmodeCheck then 
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.03,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/gold_bosses/angel/angel.xml",
+        ngpluslevel = 2
+    })
+else
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.03,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/angel.xml",
+        ngpluslevel = 2
+    })
+end
+
+
+
+--New Game ++++ (4)
+
+if mocreep_HardmodeCheck then 
+    table.insert(g_big_enemies_sky,
+    {
+        prob           = 0.04,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/gold_bosses/angel/angel.xml",
         ngpluslevel = 4
     })
+else
+    table.insert(g_big_enemies_sky,
+    {
+        prob           = 0.04,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/angel.xml",
+        ngpluslevel = 4
+    })
+end

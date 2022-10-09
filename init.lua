@@ -13,10 +13,18 @@ local seasonalSetting = ModSettingGet( "mo_creeps.seasonal_events" )
 -- If Conjurer is enabled, disable this for a fix.
 if modCompatibilityConjurer == true then
   if ModIsEnabled("raksa") == false then
-    dofile_once( "mods/mo_creeps/files/scripts/pixelscenes/scene_list.lua" )
+    if ModIsEnabled("purgatory") then
+      dofile_once( "mods/mo_creeps/files/scripts/pixelscenes/scene_list_purgatory.lua" )
+    else
+      dofile_once( "mods/mo_creeps/files/scripts/pixelscenes/scene_list.lua" )
+    end
   end
 else
-  dofile_once( "mods/mo_creeps/files/scripts/pixelscenes/scene_list.lua" )
+  if ModIsEnabled("purgatory") then
+    dofile_once( "mods/mo_creeps/files/scripts/pixelscenes/scene_list_purgatory.lua" )
+  else
+    dofile_once( "mods/mo_creeps/files/scripts/pixelscenes/scene_list.lua" )
+  end
 end
 
 
@@ -29,6 +37,8 @@ local content = ModTextFileGetContent("data/translations/common.csv")
 ModTextFileSetContent("data/translations/common.csv", content .. [[
 perk_mocreeps_ghostly_vision,Ghostly Vision,,,,,,,,,,,,,
 perk_mocreeps_ghostly_vision_description,You can see things which aren't there.. Without assistance.,,,,,,,,,,,,,
+perk_mocreeps_ghostly_vision,Ghostly Vision,,,,,,,,,,,,,
+perk_mocreeps_ghostly_vision_description,You can see things which aren't there.. Without assistance.,,,,,,,,,,,,,
 perk_mocreeps_rage_aura,Enraging Aura,,,,,,,,,,,,,
 perk_mocreeps_rage_aura_description,Creatures are sent into a blind rage by your presence.,,,,,,,,,,,,,
 book_mocreeps_divine_liquid,Tablet of Apotheosis,,,,,,,,,,,,,
@@ -39,13 +49,14 @@ book_mocreeps_materia_conversion_spell,"Alchemist's Notes",,,,,,,,,,,,,
 book_mocreeps_materia_conversion_spell_description,"Conversion.. \nRemember these words.... \nFungus \nWorm \nRat",,,,,,,,,,,,,
 book_mocreeps_trophy_room,"Alchemist's Notes",,,,,,,,,,,,,
 book_mocreeps_trophy_room_description,"I have come to learn this Tree was deemed unfitting of.. certain.. accomplishments by the gods. \nCross the lava, descend where you would not normal. \nThere they will humour you.",,,,,,,,,,,,,
+book_mocreeps_trophy_room_description_purgatory,"I have come to learn this Tree was deemed unfitting of.. certain.. accomplishments by the gods. \nSpelunk east before you visit their place of worship, cross the fungus, holding the ceiling dear. \nThere they will humour you.",,,,,,,,,,,,,
 mat_cloth,Cloth,,,,,,,,,,,,,
 book_mocreeps_cat_rat,"Cat Lover's Notes",,,,,,,,,,,,,
 book_mocreeps_cat_rat_description,"My Cats seem scared of normal rats.. \nBut have an irresistible hate towards magical rats for some reason. \nIt's kind of cute.. But I can't brush away the feeling they distance themselves with truly divine purpose...",,,,,,,,,,,,,
 book_mocreeps_motd,"Message of the Day",,,,,,,,,,,,,
 book_mocreeps_motd_description,"You shouldn't be reading this.",,,,,,,,,,,,,
 book_mocreeps_motd_description_halloween,"Happy Halloween!",,,,,,,,,,,,,
-book_mocreeps_motd_description_smissmass,"Happy Halloween!",,,,,,,,,,,,,
+book_mocreeps_motd_description_smissmass,"Happy Noitmass!",,,,,,,,,,,,,
 book_mocreeps_motd_description_001,"Also try Worse Enemies!",,,,,,,,,,,,,
 book_mocreeps_motd_description_002,"Hobos love Material Donations",,,,,,,,,,,,,
 book_mocreeps_motd_description_003,"Blood is Fuel.",,,,,,,,,,,,,
@@ -77,6 +88,7 @@ book_mocreeps_motd_description_028,"The pyramid isn't quite so safe anymore. \nB
 book_mocreeps_motd_description_029,"Cross the sea of lava. \nGo where you would not normal. \nThere I will humour you.",,,,,,,,,,,,,
 book_mocreeps_motd_description_030,"Happy today! Good Now, be happy you're still here!",,,,,,,,,,,,,
 book_mocreeps_motd_description_031,"Don't visit the Toxic Worm Nest at 3 am.",,,,,,,,,,,,,
+item_mocreeps_chest_cursed,"Pandora's Chest",,,,,,,,,,,,,
 ]])
 
 
@@ -205,17 +217,30 @@ ModLuaFileAppend( "data/scripts/biomes/mountain/mountain_hall.lua", "mods/mo_cre
 -- If Conjurer is enabled, disable this for a fix.
 if modCompatibilityConjurer == true then
   if ModIsEnabled("raksa") == false then
-    dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/boss_spawn_list.lua" )
+    if ModIsEnabled("purgatory") then
+      dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/purgatory/boss_spawn_list.lua" )
+    else
+      dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/boss_spawn_list.lua" )
+    end
   end
 else
-  dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/boss_spawn_list.lua" )
+  if ModIsEnabled("purgatory") then
+    dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/purgatory/boss_spawn_list.lua" )
+  else
+    dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/boss_spawn_list.lua" )
+  end
 end
 
 
 
 --Spawns statues in the trophy room
-ModLuaFileAppend( "data/scripts/biomes/mountain/mountain_hall.lua", "mods/mo_creeps/files/scripts/biomes/boss_spawns/statue_room_populator.lua" ) 
-
+if GameHasFlagRun( "mocreep_initialised_pride_room" ) == false then
+  if ModIsEnabled("purgatory") then
+    ModLuaFileAppend( "data/scripts/biomes/mountain/mountain_hall.lua", "mods/mo_creeps/files/scripts/biomes/boss_spawns/purgatory/statue_room_populator.lua" ) 
+  else
+    ModLuaFileAppend( "data/scripts/biomes/mountain/mountain_hall.lua", "mods/mo_creeps/files/scripts/biomes/boss_spawns/statue_room_populator.lua" ) 
+  end
+end
 
 
 
@@ -361,8 +386,10 @@ end
 
 
 --New Enemies, boosts ghost spawnrate in sandcave so they aren't flushed out by the quantity of other creatures.
+--Also boosts Divine Being & Divine Poring spawnrates in Heaven & Hell for unlocks
 if ModIsEnabled("new_enemies") then
 	ModLuaFileAppend( "data/scripts/biomes/sandcave.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/sandcave_ghostbooster_populator.lua" )
+	ModLuaFileAppend( "data/scripts/biomes/the_end.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/the_end_angelboost_populator.lua" )
 end
 
 --New Enemies, boosts ghost spawnrate in sandcave so they aren't flushed out by the quantity of other creatures, compatibility for alt biomes.
@@ -414,6 +441,43 @@ if motdSetting == true then
   dofile_once( "mods/mo_creeps/files/scripts/misc/motd_list.lua" )
 end
 
+--Allows hisii to jump into minecarts
+local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
+local content = ModTextFileGetContent("data/entities/props/physics_minecart.xml")
+local xml = nxml.parse(content)
+xml.attr.name = "minecart_hisii_hopin"
+ModTextFileSetContent("data/entities/props/physics_minecart.xml", tostring(xml))
+ModTextFileSetContent("data/entities/props/physics/minecart.xml", tostring(xml))
+
+--local content = ModTextFileGetContent("data/entities/props/physics/minecart.xml")
+--local xml = nxml.parse(content)
+--xml.attr.name = "minecart_hisii_hopin"
+--ModTextFileSetContent("data/entities/props/physics/minecart.xml", tostring(xml))
+
+
+--Same thing but for hisii
+local content = ModTextFileGetContent("data/entities/animals/shotgunner.xml")
+local xml = nxml.parse(content)
+xml:add_child(nxml.parse([[
+    <LuaComponent
+        script_source_file="mods/mo_creeps/files/scripts/buildings/hisii_minecart_hopin.lua"
+        execute_every_n_frame="60"
+        >
+    </LuaComponent>
+]]))
+ModTextFileSetContent("data/entities/animals/shotgunner.xml", tostring(xml))
+
+--Same thing but for hisii with TNT
+local content = ModTextFileGetContent("data/entities/animals/miner_weak.xml")
+local xml = nxml.parse(content)
+xml:add_child(nxml.parse([[
+    <LuaComponent
+        script_source_file="mods/mo_creeps/files/scripts/buildings/hisii_minecart_hopin_tnt.lua"
+        execute_every_n_frame="60"
+        >
+    </LuaComponent>
+]]))
+ModTextFileSetContent("data/entities/animals/miner_weak.xml", tostring(xml))
 
 
 
@@ -452,6 +516,11 @@ if seasonalSetting == true then
     local xml = nxml.parse(content)
     xml:first_of("Base"):first_of("SpriteComponent").attr.image_file = "mods/Mo_Creeps/files/enemies_gfx/poring_halloween_weak.xml"
     ModTextFileSetContent("data/entities/animals/coal_mines/poring.xml", tostring(xml))
+
+    local content = ModTextFileGetContent("data/entities/animals/psychotic/poring.xml")
+    local xml = nxml.parse(content)
+    xml:first_of("Base"):first_of("SpriteComponent").attr.image_file = "mods/Mo_Creeps/files/enemies_gfx/poring_halloween.xml"
+    ModTextFileSetContent("data/entities/animals/psychotic/poring.xml", tostring(xml))
 
   end
 

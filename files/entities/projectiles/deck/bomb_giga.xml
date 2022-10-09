@@ -16,7 +16,7 @@
 	  shoot_light_flash_g="240"
 	  shoot_light_flash_b="30"
       ><config_explosion
-        never_cache="0" 
+        never_cache="1" 
         damage="10"
         camera_shake="50" 
         explosion_radius="120" 
@@ -139,7 +139,7 @@
   
   <VariableStorageComponent
 		name="projectile_file"
-		value_string="data/entities/projectiles/bomb.xml"
+		value_string="data/entities/projectiles/deck/bomb_giga.xml"
 		>
 	</VariableStorageComponent>
 

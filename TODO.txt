@@ -1,26 +1,10 @@
 Poring Chunks ragdoll
 
-
-
-Banners turn golden if you 100% the trophy room
-
-
-Get Sora to voice "OMG GUYS IM A RAINBOW KITTY"
-
-
-
-Finish 11 orb hardmode bosses
-Still todo: statue rewards for all
-spawning at 11 orbs
-
-
 Print "Checkout More Creeps and Weirdos!!! New mod released today! --This message will be removed after 1 week--"
 
-Seasonal events option
-
-
-Gold statue if achievement completed in nightmare/purgatory
-
 Change MotD tablet to be made of glass, shatter on impact
+(or unpickuppable?)
 
 Could include purg/noitvania spawns in dofileonce with mod check
+
+Make immortal cats immune to getting stained (apply the same to cats mod)

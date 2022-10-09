@@ -7,6 +7,8 @@ TNT Minecart
 Ceiling Fungus
 Greater Shaman
 Weirdo
+Esoteric Fairy
+Psychic Bat
 
 
 Remember to remove beta build from the description when it's released

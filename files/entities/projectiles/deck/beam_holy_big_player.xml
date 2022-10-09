@@ -87,7 +87,7 @@
 	
 	<VariableStorageComponent
 		name="projectile_file"
-		value_string="mods/mo_creeps/files/entities/projectiles/beam_holy_big_player.xml"
+		value_string="mods/mo_creeps/files/entities/projectiles/deck/beam_holy_big_player.xml"
 		>
 	</VariableStorageComponent>
 </Entity>

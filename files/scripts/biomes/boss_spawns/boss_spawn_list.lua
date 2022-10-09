@@ -20,9 +20,15 @@ ModTextFileSetContent("data/biome/_pixel_scenes_newgame_plus.xml", tostring(xml)
 local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
 local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
 local xml = nxml.parse(content)
-xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-    <PixelScene pos_x="11796" pos_y="7028" just_load_an_entity="data/entities/buildings/boss_musical_ghost_sandcave_populator.xml" />
-]]))
+if ModIsEnabled("nightmare") then
+    xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+        <PixelScene pos_x="7681" pos_y="2076" just_load_an_entity="data/entities/buildings/boss_musical_ghost_sandcave_populator.xml" />
+    ]]))
+else
+    xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+        <PixelScene pos_x="11796" pos_y="7028" just_load_an_entity="data/entities/buildings/boss_musical_ghost_sandcave_populator.xml" />
+    ]]))
+end
 ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 ModTextFileSetContent("data/biome/_pixel_scenes_newgame_plus.xml", tostring(xml))
 

@@ -118,7 +118,7 @@
 	
 	<VariableStorageComponent
 		name="projectile_file"
-		value_string="mods/mo_creeps/files/entities/projectiles/beam_holy_warning.xml"
+		value_string="mods/mo_creeps/files/entities/projectiles/deck/beam_holy_warning_player.xml"
 		>
 	</VariableStorageComponent>
    

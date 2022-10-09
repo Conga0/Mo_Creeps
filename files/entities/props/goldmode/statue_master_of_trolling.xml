@@ -1,0 +1,14 @@
+<Entity tags="prop"  >
+
+	<VelocityComponent />
+
+    <SimplePhysicsComponent/>
+
+	<SpriteComponent 
+		z_index="1"
+		image_file="mods/mo_creeps/files/props_gfx/goldmode/statue_master_of_trolling.png" 
+		offset_x="0"
+		offset_y="47" >
+	</SpriteComponent>
+</Entity>
+
