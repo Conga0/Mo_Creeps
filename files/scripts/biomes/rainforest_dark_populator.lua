@@ -25,7 +25,7 @@
     
     table.insert(g_small_enemies,
     {
-        prob           = 0.08,
+        prob           = 0.05,
         min_count    = 1,
         max_count    = 1,    
         entity     = "data/entities/animals/poring_lukki_fake.xml"

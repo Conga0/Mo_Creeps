@@ -55,7 +55,7 @@ if g_props then
 
     table.insert(g_props,
     {
-        prob           = 0.01,
+        prob           = 0.002,
         min_count    = 1,
         max_count    = 1,    
         offset_y 	= -3,

@@ -13,4 +13,4 @@ local length = 3000
 local vel_x = math.cos( angle ) * length
 local vel_y = 0 - math.sin( angle ) * length
 
-shoot_projectile( entity_id, "mods/mo_creeps/files/entities/projectiles/nuke_thrower_proja .xml", pos_x, pos_y, vel_x, vel_y )
+shoot_projectile( entity_id, "mods/mo_creeps/files/entities/projectiles/nuke_thrower_proj.xml", pos_x, pos_y, vel_x, vel_y )

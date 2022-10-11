@@ -1,6 +1,41 @@
 
     table.insert(streaming_events,
 	{
+		id = "MOCREEP_RANDOM_CATS",
+		ui_name = "Kitty Cats!!",
+		ui_description = "Cat! I'm a kitty cat! And I dance dance dance! And I dance dance dance!!",
+		ui_icon = "data/ui_gfx/streaming_event_icons/health_plus.png",
+		ui_author = "Conga Lyne - Mo Creeps",
+		weight = 1.0,
+		kind = STREAMING_EVENT_GOOD,
+		action = function(event)
+			local players = get_players()
+			SetRandomSeed( GameGetFrameNum(), GameGetFrameNum() + 353 )
+
+            local catcount = 20
+			
+			for i,entity_id in ipairs( players ) do
+                repeat
+                    local x, y = EntityGetTransform( entity_id )
+                    
+                    local angle = Random( 0, 31415 ) * 0.0001
+                    local length = 35
+                    
+                    local ex = x + math.cos( angle ) * length
+                    local ey = y - math.sin( angle ) * length
+
+                    EntityLoad( "mods/mo_creeps/files/entities/special/conjurer_cat_spawner.xml", ex, ey )
+
+                    catcount = catcount - 1
+        
+                until (catcount < 1)
+			end
+		end,
+	})
+
+
+    table.insert(streaming_events,
+	{
 		id = "MOCREEP_RANDOM_CREEPS",
 		ui_name = "Random Creeps & Weirdos",
 		ui_description = "Random Creeps & Weirdos will appear in 5 seconds.",
@@ -104,37 +139,48 @@
 
     table.insert(streaming_events,
 	{
-		id = "MOCREEP_RANDOM_CATS",
-		ui_name = "Kitty Cats!!",
-		ui_description = "Cat! I'm a kitty cat! And I dance dance dance! And I dance dance dance!!",
+		id = "MOCREEP_WAND_WONDERS",
+		ui_name = "Spawn Wand of Wonders",
+		ui_description = "Wands a wonderful wand capable of anything.",
 		ui_icon = "data/ui_gfx/streaming_event_icons/health_plus.png",
 		ui_author = "Conga Lyne - Mo Creeps",
-		weight = 1.0,
-		kind = STREAMING_EVENT_GOOD,
+		weight = 0.8,
+		kind = STREAMING_EVENT_NEUTRAL,
 		action = function(event)
 			local players = get_players()
-			SetRandomSeed( GameGetFrameNum(), GameGetFrameNum() + 353 )
-
-            local catcount = 20
 			
 			for i,entity_id in ipairs( players ) do
-                repeat
-                    local x, y = EntityGetTransform( entity_id )
-                    
-                    local angle = Random( 0, 31415 ) * 0.0001
-                    local length = 35
-                    
-                    local ex = x + math.cos( angle ) * length
-                    local ey = y - math.sin( angle ) * length
+                local x, y = EntityGetTransform( entity_id )
 
-                    EntityLoad( "mods/mo_creeps/files/entities/special/conjurer_cat_spawner.xml", ex, ey )
-
-                    catcount = catcount - 1
-        
-                until (catcount < 1)
+                EntityLoad( "mods/mo_creeps/files/entities/items/wands/custom/wand_of_wonders.xml", x, y )
+                EntityLoad("data/entities/particles/image_emitters/magical_symbol_materia_blue.xml", x, y)
+                GamePlaySound( "data/audio/Desktop/projectiles.snd", "player_projectiles/crumbling_earth/create", x, y)
 			end
 		end,
 	})
+
+
+    table.insert(streaming_events,
+	{
+		id = "MOCREEP_WAND_WONDERS",
+		ui_name = "Pandora's Chest",
+		ui_description = "Wands a horrible, horrible chest.",
+		ui_icon = "data/ui_gfx/streaming_event_icons/health_plus.png",
+		ui_author = "Conga Lyne - Mo Creeps",
+		weight = 0.75,
+		kind = STREAMING_EVENT_BAD,
+		action = function(event)
+			local players = get_players()
+			
+			for i,entity_id in ipairs( players ) do
+                local x, y = EntityGetTransform( entity_id )
+
+                EntityLoad( "mods/mo_creeps/files/entities/items/pickups/chest_random_cursed.xml", x, y - 32 )
+                GamePlaySound( "data/audio/Desktop/projectiles.snd", "player_projectiles/crumbling_earth/create", x, y)
+			end
+		end,
+	})
+
 
     table.insert(streaming_events,
 	{
@@ -168,29 +214,6 @@
 
                 EntityLoad( "data/entities/"..pool[Random(1, #pool)]..".xml", ex, ey )
                 EntityLoad( "data/scripts/streaming_integration/entities/empty_circle.xml", ex, ey )
-			end
-		end,
-	})
-
-
-    table.insert(streaming_events,
-	{
-		id = "MOCREEP_WAND_WONDERS",
-		ui_name = "Spawn Wand of Wonders",
-		ui_description = "Wands a wonderful wand capable of anything.",
-		ui_icon = "data/ui_gfx/streaming_event_icons/health_plus.png",
-		ui_author = "Conga Lyne - Mo Creeps",
-		weight = 0.8,
-		kind = STREAMING_EVENT_NEUTRAL,
-		action = function(event)
-			local players = get_players()
-			
-			for i,entity_id in ipairs( players ) do
-                local x, y = EntityGetTransform( entity_id )
-
-                EntityLoad( "mods/mo_creeps/files/entities/items/wands/custom/wand_of_wonders.xml", x, y )
-                EntityLoad("data/entities/particles/image_emitters/magical_symbol_materia_blue.xml", x, y)
-                GamePlaySound( "data/audio/Desktop/projectiles.snd", "player_projectiles/crumbling_earth/create", x, y)
 			end
 		end,
 	})
@@ -264,3 +287,4 @@
         "data/entities/animals/boss_musical_ghost/boss_musical_ghost.xml",
     })
     end
+

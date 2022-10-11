@@ -29,7 +29,7 @@
 		<SpriteComponent 
 			_enabled="1" 
 			alpha="1" 
-			image_file="mods/mo_creeps/files/enemies_gfx/cats/spoopy_cat_golden.xml"
+			image_file="mods/mo_creeps/files/enemies_gfx/cats/cats_immortal/spoopy_cat_golden.xml"
 			next_rect_animation="" 
 			offset_x="0" 
 			offset_y="0" 

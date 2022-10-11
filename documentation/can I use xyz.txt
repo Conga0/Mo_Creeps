@@ -2,7 +2,7 @@ Please do not use any sprites or voiceline audio from this mod.
 I do not grant you permission to use any of the graphical work I have created for More Creeps & Weirdos in your own project by downloading this file, graphical work includes but is not limited to all ".png" and ".xml" file types within More Creeps as of download.
 If you are interested in using any graphical work in your own projects, please talk to me first, it would be easiest for me to reach you at Conga Lyne#2452.
 
-All files inside of Mo_Creeps/files/enemies_gfx/cats are not created by me and I can not give permission for you to use them.
+All files inside of Mo_Creeps/files/enemies_gfx/cats and any of it's sub-files are not created by me and I can not give permission for you to use them.
 
 
 

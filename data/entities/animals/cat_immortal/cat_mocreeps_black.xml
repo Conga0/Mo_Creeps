@@ -29,7 +29,7 @@
 		<SpriteComponent 
 			_enabled="1" 
 			alpha="1" 
-			image_file="mods/mo_creeps/files/enemies_gfx/cat_black.xml" 
+			image_file="mods/mo_creeps/files/enemies_gfx/cats_immortal/cat_black.xml" 
 			next_rect_animation="" 
 			offset_x="15" 
 			offset_y="25" 
