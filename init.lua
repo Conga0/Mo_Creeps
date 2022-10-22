@@ -659,6 +659,18 @@ if seasonalSetting == true then
       ModTextFileSetContent("data/entities/animals/hisii_minecart.xml", tostring(xml))
     end
 
+    local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
+    local content = ModTextFileGetContent("data/entities/animals/poring.xml")
+    local xml = nxml.parse(content)
+    xml:first_of("Base"):first_of("SpriteComponent").attr.image_file = "mods/Mo_Creeps/files/enemies_gfx/poring_santa.xml"
+    ModTextFileSetContent("data/entities/animals/poring.xml", tostring(xml))
+
+    local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
+    local content = ModTextFileGetContent("data/entities/animals/coal_mines/poring.xml")
+    local xml = nxml.parse(content)
+    xml:first_of("Base"):first_of("SpriteComponent").attr.image_file = "mods/Mo_Creeps/files/enemies_gfx/poring_santa_weak.xml"
+    ModTextFileSetContent("data/entities/animals/coal_mines/poring.xml", tostring(xml))
+
   end
 
   -- Birthday Event

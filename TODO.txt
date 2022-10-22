@@ -2,11 +2,6 @@ Poring Chunks ragdoll
 
 Print "Checkout More Creeps and Weirdos!!! New mod released today! --This message will be removed after 1 week--"
 
-Change MotD tablet to be made of glass, shatter on impact
-(or unpickuppable?)
-
-Improve Miniboss Master of Polymorphing's suction portal visual
-
-Add more decorations to blob cave, enemy variation, explosive mushrooms
-
-Magical wetness doesn't kill stendaris, (and likewise, hell enemies, etc)
+Mana battery wand?
+10,000 starting max mana
+0 mana regen

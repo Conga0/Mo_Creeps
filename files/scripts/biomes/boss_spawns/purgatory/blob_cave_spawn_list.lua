@@ -39,3 +39,14 @@ xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
     <PixelScene pos_x="4003" pos_y="9677" just_load_an_entity="data/entities/animals/gold_bosses/boss_blob/blob_titan.xml" />
 ]]))
 ModTextFileSetContent("mods/purgatory/files/biome/_pixel_scenes.xml", tostring(xml))
+
+--Spawns Physics Mushroom
+local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
+local xml = nxml.parse(content)
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="3370" pos_y="9841" just_load_an_entity="data/entities/props/physics_fungus_big.xml" />
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="3079" pos_y="9750" just_load_an_entity="data/entities/props/physics_fungus_hugeish.xml" />
+]]))
+ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))

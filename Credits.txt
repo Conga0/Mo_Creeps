@@ -1,29 +1,24 @@
 Conga Lyne - Mod Creator, anything not specifically listed here was made by me
 
-Horscht#6086 - Helping a ton with getting code working, including the toxic worm nest structure to spawn in the world,
-and all others as a result.
-He's my hero.
-
-Zathers - creator of nxml.lua, a file required for pixel scenes to work with mod compatability for me.
-
-Squirrelly#6472 - Created the mana drain effect lua script, your mana wouldn't be stolen without their help
-
-Rib#1963 - Help with stain UV map generation, I probably wouldn't be able to have UV maps for enemies without his help
-
-KeithSammut - Directing me to Ribs
-
-Cobi - Directing me to KeithSammut
-
-
-Extol#0629 - Helping getting translation keys working, needed for custom perks to show up correctly
-
-Copi (Human#6606) - Helping think up some enemy ideas for unused sprites I had lying around
+Sorako Hinoguchi - Voicing Cats
 
 Spoopy (The One The Only Spoopy Boi#7859) - Creating fluffy cat sprites
 Creating Size 3 Blob Sprites, Creating Size 4 Blob static Sprite, Creating Size 5 Blob Idle Animation
 
-KeithSammut: Providing base scripts needed for ceiling enemies
+Squirrelly#6472 - Created the mana drain effect lua script, your mana wouldn't be stolen without their help
 
+Extol#0629 - Helping getting translation keys working, needed for custom perks to show up correctly
+Also helped make split shot significantly less game breaking
 
+Zathers - creator of nxml.lua, a file required for pixel scenes to work with mod compatability for me.
 
-Sorako Hinoguchi - Voicing Cats
+Horscht#6086 - Helping a ton with getting code working, including the toxic worm nest structure to spawn in the world,
+and all others as a result.
+He's my hero.
+
+Rib#1963 - Help with stain UV map generation, I probably wouldn't be able to have UV maps for enemies without his help
+
+KeithSammut - Provided base scripts needed for ceiling enemies
+
+Copi (Human#6606) - Helping think up some enemy ideas for unused sprites I had lying around
+

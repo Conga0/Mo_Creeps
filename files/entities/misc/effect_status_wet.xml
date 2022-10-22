@@ -4,13 +4,13 @@
 
 	<ParticleEmitterComponent 
 		emitted_material_name="water_fading"
-		x_pos_offset_min="-3"
-		x_pos_offset_max="3"
+		x_pos_offset_min="-5"
+		x_pos_offset_max="5"
 		y_pos_offset_min="-8"
-		y_pos_offset_max="-2"
+		y_pos_offset_max="2"
 		x_vel_min="-5"
 		x_vel_max="5"
-		y_vel_min="-5"
+		y_vel_min="-30"
 		y_vel_max="-50"
 		count_min="1"
 		count_max="1"
@@ -19,7 +19,7 @@
 		create_real_particles="1"
 		emit_cosmetic_particles="0"
 		emission_interval_min_frames="1"
-		emission_interval_max_frames="6"
+		emission_interval_max_frames="3"
 		is_emitting="1" >
 	</ParticleEmitterComponent>
     
