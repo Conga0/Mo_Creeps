@@ -38,6 +38,15 @@
         max_count    = 1,    
         entity     = "data/entities/animals/fairy_esoteric.xml"
     })
+
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.1,
+        min_count    = 1,
+        max_count    = 1,
+        offset_y 	= -3,
+        entity     = "data/entities/animals/wizard_z_poly_miniboss.xml",
+    })
     
 
 

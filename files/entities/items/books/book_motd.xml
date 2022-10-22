@@ -8,6 +8,7 @@
 		<ItemComponent
 			item_name="$book_mocreeps_motd"
 			ui_description="$book_mocreeps_motd_description"
+			is_pickable="0"
 			>
 		</ItemComponent>
 		
@@ -16,4 +17,5 @@
 			>
 		</AbilityComponent>
 	</Base>
+
 </Entity>

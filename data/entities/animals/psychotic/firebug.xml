@@ -83,6 +83,10 @@
 			event_root="animals/firebug" >
 		</AudioComponent>
 
+		<StatusEffectDataComponent
+		_enabled="0">
+		</StatusEffectDataComponent>
+
 	</Base>
 	
 	<LifetimeComponent

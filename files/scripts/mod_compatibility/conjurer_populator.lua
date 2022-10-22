@@ -16,6 +16,21 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/animal_icons/blindgazer.png",
 	  },
 	  {
+		name="Big Blob",
+		path="data/entities/animals/blob_big.xml",
+		image="data/ui_gfx/animal_icons/blob_big.png",
+	  },
+	  {
+		name="Creepy Blob",
+		path="data/entities/animals/blob_huge.xml",
+		image="data/ui_gfx/animal_icons/blob_huge.png",
+	  },
+	  {
+		name="Colossal Blob",
+		path="data/entities/animals/boss_blob/blob_titan.xml",
+		image="data/ui_gfx/animal_icons/blob_titan.png",
+	  },
+	  {
 		name="Abandoned Orchestra",
 		path="data/entities/animals/boss_musical_ghost/boss_musical_ghost.xml",
 		image="data/ui_gfx/animal_icons/boss_musical_ghost.png",
@@ -346,6 +361,11 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/animal_icons/wizard_firemage_greater.png",
 	  },
 	  {
+		name="Overzealous Polymaster",
+		path="data/entities/animals/wizard_z_poly_miniboss.xml",
+		image="data/ui_gfx/animal_icons/wizard_z_poly_miniboss.png",
+	  },
+	  {
 		name="Weirdo",
 		path="data/entities/animals/wraith_weirdo_shield.xml",
 		image="data/ui_gfx/animal_icons/wraith_weirdo_shield.png",
@@ -394,6 +414,26 @@ table.insert(ALL_ENTITIES, {
 		name="Cat",
 		path="mods/mo_creeps/files/entities/items/wands/custom/cat_wand.xml",
 		image="data/ui_gfx/bubbles/cat_wand.png",
+	  },
+	  {
+		name="Nightmare Divine Being",
+		path="data/entities/animals/gold_bosses/angel/angel.xml",
+		image="data/ui_gfx/gold_boss/angel.png",
+	  },
+	  {
+		name="Nightmare Colossal Blob",
+		path="data/entities/animals/gold_bosses/boss_blob/blob_titan.xml",
+		image="data/ui_gfx/gold_boss/blob_titan.png",
+	  },
+	  {
+		name="Nightmare Abandoned Orchestra",
+		path="data/entities/animals/gold_bosses/boss_musical_ghost.xml",
+		image="data/ui_gfx/gold_boss/boss_musical_ghost.png",
+	  },
+	  {
+		name="Nightmare Giant Toxic Worm",
+		path="data/entities/animals/gold_bosses/toxic_worm/boss_toxic_worm.xml",
+		image="data/ui_gfx/gold_boss/boss_toxic_worm.png",
 	  }
   },
 })

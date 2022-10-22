@@ -92,6 +92,10 @@
 			is_item="0" 
 			is_player="0" >
 		</HitboxComponent>
+
+		<StatusEffectDataComponent
+		_enabled="0">
+		</StatusEffectDataComponent>
 	</Base>
 	
 	<LifetimeComponent

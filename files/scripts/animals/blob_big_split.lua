@@ -9,10 +9,6 @@ function damage_received( damage, desc, entity_who_caused, is_fatal )
 	if( entity_who_caused == entity_id ) then return end
 
 	local herd_id = component_get_value( entity_id, "GenomeDataComponent", "herd_id", 0 )
-
-	edit_component( entity_id, "ControlsComponent", function(comp,vars)
-		ComponentSetValueVector2( comp, "mJumpVelocity", Random(-70, 70), Random(-150, -300))
-	end)
 	
 	local health = 0
 	local max_health = 0
@@ -34,9 +30,13 @@ function damage_received( damage, desc, entity_who_caused, is_fatal )
 	while (nearest_interval > new_health) and (count < limit) and (nearest_interval >= 0) do
 		GameEntityPlaySound( entity_id, "duplicate" )
 		
-		pos_x = pos_x + Random(-4, 4)
-		pos_y = pos_y + Random(-4, 4)
+		pos_x = pos_x + Random(-8, 8)
+		pos_y = pos_y + Random(-12, 4)
 		local e = EntityLoad( "data/entities/animals/blob.xml", pos_x, pos_y )
+
+		edit_component( entity_id, "ControlsComponent", function(comp,vars)
+			ComponentSetValueVector2( comp, "mJumpVelocity", Random(-35, 35), Random(-75, -150))
+		end)
 		
 		nearest_interval = nearest_interval - minion_interval
 		

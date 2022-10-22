@@ -1,4 +1,4 @@
-<Entity >
+<Entity name="mocreep_perk_rage_aura" >
 	<InheritTransformComponent>
     </InheritTransformComponent>
 	

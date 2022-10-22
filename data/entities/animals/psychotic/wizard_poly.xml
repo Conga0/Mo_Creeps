@@ -78,6 +78,10 @@
 			collision_aabb_max_y="3" 
 			>
 	    </CharacterDataComponent>
+
+		<StatusEffectDataComponent
+		_enabled="0">
+		</StatusEffectDataComponent>
 	</Base>
 	
 	<LifetimeComponent

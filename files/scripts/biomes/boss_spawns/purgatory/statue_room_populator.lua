@@ -3,6 +3,7 @@
 local mocreep_angel_dead = HasFlagPersistent( "mocreeps_card_unlocked_divinebeing" )
 local mocreep_worm_dead = HasFlagPersistent( "mocreeps_card_unlocked_boss_toxic_worm" )
 local mocreep_music_dead = HasFlagPersistent( "mocreeps_card_unlocked_musical_boss" )
+local mocreep_blob_dead = HasFlagPersistent( "mocreeps_card_unlocked_blob_boss" )
 local mocreep_divine_created = HasFlagPersistent( "mocreeps_card_unlocked_divine_liquid" )
 local mocreep_donated_beggar = HasFlagPersistent( "mocreeps_card_unlocked_donated_beggar" )
 local mocreep_enrage_unlocked = HasFlagPersistent( "mocreeps_card_unlocked_rage_aura" )
@@ -12,6 +13,7 @@ local mocreep_cat_secret_unlocked = HasFlagPersistent( "mocreeps_card_unlocked_c
 local mocreep_angel_dead_goldmode = HasFlagPersistent( "mocreeps_card_unlocked_divinebeing_goldmode" )
 local mocreep_worm_dead_goldmode = HasFlagPersistent( "mocreeps_card_unlocked_boss_toxic_worm_goldmode" )
 local mocreep_music_dead_goldmode = HasFlagPersistent( "mocreeps_card_unlocked_musical_boss_goldmode" )
+local mocreep_blob_dead_goldmode = HasFlagPersistent( "mocreeps_card_unlocked_blob_boss_goldmode" )
 local mocreep_divine_created_goldmode = HasFlagPersistent( "mocreeps_card_unlocked_divine_liquid_goldmode" )
 local mocreep_donated_beggar_goldmode = HasFlagPersistent( "mocreeps_card_unlocked_donated_beggar_goldmode" )
 local mocreep_enrage_unlocked_goldmode = HasFlagPersistent( "mocreeps_card_unlocked_rage_aura_goldmode" )
@@ -51,6 +53,14 @@ else
 end
 
 --Killing the Overgrown Blob
+if mocreep_blob_dead_goldmode then
+    entity = EntityLoad( "mods/mo_creeps/files/entities/props/goldmode/statue_blob_titan.xml", 4835, 853 )
+elseif mocreep_blob_dead then
+    entity = EntityLoad( "mods/mo_creeps/files/entities/props/statue_blob_titan.xml", 4835, 853 )
+else
+    entity = EntityLoad( "mods/mo_creeps/files/entities/props/statue_empty.xml", 4835, 853 )
+end
+
 
 
 

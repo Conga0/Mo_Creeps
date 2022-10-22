@@ -310,6 +310,26 @@
     </Graphics>
   </CellDataChild>
 
+  <CellDataChild
+  	_parent="urine"
+  	_inherit_reactions="1"
+  	name="mocreeps_urine_fading" 
+	ui_name="Urine"
+  	tags="[liquid],[soluble],[evaporable]"
+	wang_color="33FFEE01"
+	show_in_creative_mode="1"
+	warmth_melts_to_material="steam"
+	warmth_melts_chance_rev="500"
+	>
+	<StatusEffects>
+		<Stains>
+		</Stains>
+		<Ingestion>
+			<StatusEffect type="FOOD_POISONING" amount="0.1" />
+		</Ingestion>
+	</StatusEffects>
+  </CellDataChild>
+
 
 
 	<!-- Reactions -->

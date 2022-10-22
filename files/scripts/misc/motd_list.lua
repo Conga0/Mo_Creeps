@@ -8,7 +8,7 @@ if ( month == 10 ) and ( day >= 1 ) and (day % 2 == 0) then                     
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_halloween.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_halloween.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( month == 12 ) and ( day >= 22 ) and (day % 2 == 0) then                  --Smissmass
@@ -16,7 +16,7 @@ elseif ( month == 12 ) and ( day >= 22 ) and (day % 2 == 0) then                
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_smissmass.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_smissmass.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 1 )  then                                                         --Normal Events
@@ -24,7 +24,7 @@ elseif ( day == 1 )  then                                                       
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_001.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_001.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 2 )  then
@@ -32,7 +32,7 @@ elseif ( day == 2 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_002.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_002.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 3 )  then
@@ -40,7 +40,7 @@ elseif ( day == 3 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_003.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_003.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 4 )  then
@@ -48,7 +48,7 @@ elseif ( day == 4 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_004.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_004.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 5 )  then
@@ -56,7 +56,7 @@ elseif ( day == 5 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_005.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_005.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 6 )  then
@@ -64,7 +64,7 @@ elseif ( day == 6 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_006.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_006.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 7 )  then
@@ -72,7 +72,7 @@ elseif ( day == 7 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_007.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_007.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 8 )  then
@@ -80,7 +80,7 @@ elseif ( day == 8 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_008.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_008.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 9 )  then
@@ -88,7 +88,7 @@ elseif ( day == 9 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_009.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_009.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 10 )  then
@@ -96,7 +96,7 @@ elseif ( day == 10 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_010.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_010.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 11 )  then
@@ -104,7 +104,7 @@ elseif ( day == 11 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_011.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_011.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 12 )  then
@@ -112,7 +112,7 @@ elseif ( day == 12 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_012.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_012.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 13 )  then
@@ -120,7 +120,7 @@ elseif ( day == 13 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_013.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_013.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 14 )  then
@@ -128,7 +128,7 @@ elseif ( day == 14 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_014.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_014.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 15 )  then
@@ -136,7 +136,7 @@ elseif ( day == 15 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_015.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_015.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 16 )  then
@@ -144,7 +144,7 @@ elseif ( day == 16 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_016.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_016.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 17 )  then
@@ -152,7 +152,7 @@ elseif ( day == 17 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_017.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_017.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 18 )  then
@@ -160,7 +160,7 @@ elseif ( day == 18 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_018.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_018.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 19 )  then
@@ -168,7 +168,7 @@ elseif ( day == 19 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_019.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_019.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 20 )  then
@@ -176,7 +176,7 @@ elseif ( day == 20 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_020.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_020.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 21 )  then
@@ -184,7 +184,7 @@ elseif ( day == 21 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_021.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_021.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 22 )  then
@@ -192,7 +192,7 @@ elseif ( day == 22 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_022.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_022.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 23 )  then
@@ -200,7 +200,7 @@ elseif ( day == 23 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_023.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_023.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 24 )  then
@@ -208,7 +208,7 @@ elseif ( day == 24 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_024.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_024.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 25 )  then
@@ -216,7 +216,7 @@ elseif ( day == 25 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_025.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_025.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 26 )  then
@@ -224,7 +224,7 @@ elseif ( day == 26 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_026.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_026.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 27 )  then
@@ -232,7 +232,7 @@ elseif ( day == 27 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_027.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_027.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 28 )  then
@@ -240,7 +240,7 @@ elseif ( day == 28 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_028.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_028.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 29 )  then
@@ -248,7 +248,7 @@ elseif ( day == 29 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_029.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_029.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 30 )  then
@@ -256,7 +256,7 @@ elseif ( day == 30 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_030.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_030.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 elseif ( day == 31 )  then
@@ -264,7 +264,7 @@ elseif ( day == 31 )  then
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd_031.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_031.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 else
@@ -272,7 +272,7 @@ else
     local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
     local xml = nxml.parse(content)
     xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-        <PixelScene pos_x="727" pos_y="-135" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_motd.xml" />
+        <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd.xml" />
     ]]))
     ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
 end

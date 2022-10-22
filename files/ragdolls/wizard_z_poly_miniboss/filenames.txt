@@ -1,0 +1,5 @@
+mods/mo_creeps/files/ragdolls/wizard_z_poly_miniboss/body.png
+mods/mo_creeps/files/ragdolls/wizard_z_poly_miniboss/head.png
+mods/mo_creeps/files/ragdolls/wizard_z_poly_miniboss/arm.png
+mods/mo_creeps/files/ragdolls/wizard_z_poly_miniboss/arm_2.png
+mods/mo_creeps/files/ragdolls/wizard_z_poly_miniboss/rag.png

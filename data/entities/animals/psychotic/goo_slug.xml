@@ -107,6 +107,10 @@
 			mass="1"
 			>
 		</CharacterDataComponent>
+
+		<StatusEffectDataComponent
+		_enabled="0">
+		</StatusEffectDataComponent>
     </Base>
 	
 	<LifetimeComponent

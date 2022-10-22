@@ -17,6 +17,14 @@ table.insert(perk_list,
         EntityAddTag( child_id, "perk_entity" )
         EntityAddChild( entity_who_picked, child_id )
     end,
+    _remove = function(entity_id)
+        local mocreep_targets = EntityGetAllChildren(entity_id)
+        for i,v in ipairs( mocreep_targets ) do
+            if ( v ~= entity_id ) and ( EntityGetName( v ) == "mocreep_perk_ghostly_vision" ) then
+                EntityKill ( v )
+            end
+        end
+    end,
 })
 
 
@@ -37,6 +45,14 @@ if mocreep_enrage_unlocked then
             EntityAddTag( child_id, "perk_entity" )
             EntityAddChild( entity_who_picked, child_id )
         end,
+        _remove = function(entity_id)
+            local mocreep_targets = EntityGetAllChildren(entity_id)
+            for i,v in ipairs( mocreep_targets ) do
+                if ( v ~= entity_id ) and ( EntityGetName( v ) == "mocreep_perk_rage_aura" ) then
+                    EntityKill ( v )
+                end
+            end
+        end,
     })
 else
     table.insert(perk_list,
@@ -54,6 +70,14 @@ else
             local child_id = EntityLoad( "mods/mo_creeps/files/entities/misc/perks/rage_aura_perk.xml", x, y )
             EntityAddTag( child_id, "perk_entity" )
             EntityAddChild( entity_who_picked, child_id )
+        end,
+        _remove = function(entity_id)
+            local mocreep_targets = EntityGetAllChildren(entity_id)
+            for i,v in ipairs( mocreep_targets ) do
+                if ( v ~= entity_id ) and ( EntityGetName( v ) == "mocreep_perk_rage_aura" ) then
+                    EntityKill ( v )
+                end
+            end
         end,
     })
 end

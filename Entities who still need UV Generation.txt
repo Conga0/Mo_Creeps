@@ -3,12 +3,14 @@ Angel
 Giant centipede
 Flame Tank
 Phantom Bow
-TNT Minecart
 Ceiling Fungus
 Greater Shaman
 Weirdo
 Esoteric Fairy
 Psychic Bat
-
+Overzealous Polymancer
+Blob Big
+Blob Huge
+Blob Titan
 
 Remember to remove beta build from the description when it's released

@@ -6,13 +6,13 @@
 		<VelocityComponent
 			gravity_y="0"
 			air_friction="2.8"
-			mass="0.35"
+			mass="0.85"
 			>
 		</VelocityComponent>
 	</Base>
 	
 	<HomingComponent
-		homing_targeting_coeff="5"
+		homing_targeting_coeff="7"
 		detect_distance="50"
 		homing_velocity_multiplier="1.0"
 		>

@@ -90,6 +90,13 @@
 		execute_every_n_frame="60"
 		>
 	</LuaComponent>
+	
+  	<LuaComponent
+		script_source_file="mods/mo_creeps/files/scripts/animals/cat_homing_remove.lua"
+		execute_times="1"
+		remove_after_executed="1"
+		>
+	</LuaComponent>
 
 </Entity>
 

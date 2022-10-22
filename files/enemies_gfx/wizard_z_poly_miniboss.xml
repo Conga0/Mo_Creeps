@@ -1,7 +1,7 @@
 <Sprite 
   default_animation="stand" 
   filename="mods/mo_creeps/files/enemies_gfx/wizard_z_poly_miniboss.png" 
-  hotspots_filename="data/enemies_gfx/wizard_hotspots.png" 
+  hotspots_filename="mods/mo_creeps/files/enemies_gfx/wizard_z_poly_miniboss_hotspots.png" 
   offset_x="12" 
   offset_y="19" >
 

@@ -133,7 +133,7 @@ table.insert(actions,
 {
     id          = "MOCREEPS_SAWBLADE_BIG_RAY_ENEMY",
     name 		= "Personal Giga Disc Projectile Thrower",
-    description = "Makes a projectile tun the creatures it hits into living Sawblade throwers",
+    description = "Makes a projectile turn the creatures it hits into living Sawblade throwers",
     sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/thrower_disc_big_ray_enemy.png",
     sprite_unidentified = "data/ui_gfx/gun_actions/electric_charge_unidentified.png",
     related_extra_entities = { "mods/mo_creeps/files/entities/misc/hitfx_disc_big_ray_enemy.xml" },
@@ -154,7 +154,7 @@ table.insert(actions,
 {
     id          = "MOCREEPS_CURSED_ORB_RAY_ENEMY",
     name 		= "Personal Cursed Orb Thrower",
-    description = "Makes a projectile tun the creatures it hits into living Cursed Orb throwers",
+    description = "Makes a projectile turn the creatures it hits into living Cursed Orb throwers",
     sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/thrower_cursed_orb_ray_enemy.png",
     sprite_unidentified = "data/ui_gfx/gun_actions/electric_charge_unidentified.png",
     related_extra_entities = { "mods/mo_creeps/files/entities/misc/hitfx_cursed_orb_ray_enemy.xml" },
@@ -175,7 +175,7 @@ table.insert(actions,
 {
     id          = "MOCREEPS_ICEBALL_RAY_ENEMY",
     name 		= "Personal Ice Ball Thrower",
-    description = "Makes a projectile tun the creatures it hits into living Ice Ball throwers",
+    description = "Makes a projectile turn the creatures it hits into living Ice Ball throwers",
     sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/thrower_ice_ball_ray_enemy.png",
     sprite_unidentified = "data/ui_gfx/gun_actions/electric_charge_unidentified.png",
     related_extra_entities = { "mods/mo_creeps/files/entities/misc/hitfx_ice_ball_ray_enemy.xml" },
@@ -196,7 +196,7 @@ table.insert(actions,
 {
     id          = "MOCREEPS_DYNAMITE_RAY_ENEMY",
     name 		= "Personal Dynamite Thrower",
-    description = "Makes a projectile tun the creatures it hits into living Dynamite throwers",
+    description = "Makes a projectile turn the creatures it hits into living Dynamite throwers",
     sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/thrower_dynamite_ray_enemy.png",
     sprite_unidentified = "data/ui_gfx/gun_actions/electric_charge_unidentified.png",
     related_extra_entities = { "mods/mo_creeps/files/entities/misc/hitfx_dynamite_ray_enemy.xml" },
@@ -217,7 +217,7 @@ table.insert(actions,
 {
     id          = "MOCREEPS_NUKE_RAY_ENEMY",
     name 		= "Personal Nuke Thrower",
-    description = "Makes a projectile tun the creatures it hits into living... Nuke throwers?!?!!",
+    description = "Makes a projectile turn the creatures it hits into living... Nuke throwers?!?!!",
     sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/thrower_nuke_ray_enemy.png",
     sprite_unidentified = "data/ui_gfx/gun_actions/electric_charge_unidentified.png",
     related_extra_entities = { "mods/mo_creeps/files/entities/misc/hitfx_nuke_ray_enemy.xml" },
@@ -558,6 +558,193 @@ table.insert(actions,
     --max_uses = 1000,
     action 		= function()
         add_projectile("mods/mo_creeps/files/entities/projectiles/deck/spells_to_cats.xml")
+        c.fire_rate_wait = c.fire_rate_wait + 100
+        current_reload_time = current_reload_time + 100
+    end,
+})
+
+--oh my god FUCK YOU
+table.insert(actions,
+{
+    id                = "MOCREEPS_SPLIT_SPELL",
+    name              = "Split Shot",
+    description       = "50% chance to duplicate the next cast.",
+    sprite            = "mods/mo_creeps/files/ui_gfx/gun_actions/split_spell.png",
+    spawn_requires_flag = "mocreeps_card_unlocked_blob_boss",
+    type              = ACTION_TYPE_MODIFIER,
+    spawn_level                       = "1,2,3,5,6,10", -- Omega
+    spawn_probability                 = "0.2,0.2,0.2,0.3,0.2,1", -- Omega
+    price             = 200,
+    mana              = 20,
+    action            = function()
+        draw_actions( 1, true )
+        local iter = 1
+        local iter = tonumber(GlobalsGetValue("Mocreeps_global_splitseed", "0"))
+        if iter == 0 then
+            SetRandomSeed( GameGetFrameNum(), GameGetFrameNum() - 523 )
+            GlobalsSetValue("Mocreeps_global_splitseed", "1")
+        end
+        local rnd_num = Random( 1, 2 )
+        if ( hand ~= nil ) and ( rnd_num == 1 ) then
+            for i,data in ipairs( hand ) do
+                if ( data.id ~= "MOCREEPS_SPLIT_SPELL" and data.type ~= ACTION_TYPE_OTHER ) then
+                    data.action()
+                end
+            end
+            c.spread_degrees = c.spread_degrees + 10.0  
+        end
+    end,
+})
+
+--Unfortunately these aren't as great spells as you'd think, even with perfect tracking.
+--[[
+table.insert(actions,
+{
+    id          = "MOCREEPS_CLOUD_ACID_PERSONAL",
+    name 		= "Personal Acid Cloud",
+    description = "Makes a projectile curse the creatures it hits with a cloud of Acid",
+    sprite 		= "data/ui_gfx/gun_actions/cloud_acid.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/electric_charge_unidentified.png",
+    related_extra_entities = { "mods/mo_creeps/files/entities/misc/hitfx_cloud_acid.xml" },
+    spawn_requires_flag = "mocreeps_card_unlocked_blob_boss",
+    type 		= ACTION_TYPE_MODIFIER,
+    spawn_level                       = "0,1,2,3,4,5", -- CLOUD_ACID
+    spawn_probability                 = "0.2,0.2,0.2,0.2,0.2,0.2", -- CLOUD_ACID
+    price = 180,
+    mana = 90,
+    max_uses = 8,
+    action 		= function()
+        c.extra_entities = c.extra_entities .. "mods/mo_creeps/files/entities/misc/hitfx_cloud_acid.xml,"
+        draw_actions( 1, true )
+    end,
+})
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_CLOUD_THUNDER_PERSONAL",
+    name 		= "Personal Thunder Cloud",
+    description = "Makes a projectile curse the creatures it hits with a cloud of Thunder",
+    sprite 		= "data/ui_gfx/gun_actions/cloud_thunder.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/electric_charge_unidentified.png",
+    related_extra_entities = { "mods/mo_creeps/files/entities/misc/hitfx_cloud_thunder.xml" },
+    spawn_requires_flag = "mocreeps_card_unlocked_blob_boss",
+    type 		= ACTION_TYPE_MODIFIER,
+    spawn_level                       = "0,1,2,3,4,5", -- CLOUD_THUNDER
+    spawn_probability                 = "0.3,0.3,0.3,0.3,0.3,0.3", -- CLOUD_THUNDER
+    price = 190,
+    mana = 90,
+    max_uses = 12,
+    action 		= function()
+        c.extra_entities = c.extra_entities .. "mods/mo_creeps/files/entities/misc/hitfx_cloud_thunder.xml,"
+        draw_actions( 1, true )
+    end,
+})]]--
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_MASS_STATUS_DRUNK",
+    name 		= "Mass Drunk",
+    description = "Affects every creature in a large radius with a drunken curse.",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/mass_status_alcohol.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/chainsaw_unidentified.png",
+    related_projectiles	= {"mods/mo_creeps/files/entities/projectiles/deck/mass_status_drunk.xml"},
+    spawn_requires_flag = "mocreeps_card_unlocked_blob_boss",
+    type 		= ACTION_TYPE_UTILITY,
+    spawn_level       = "0,1,2,3,4,5,6", -- X_RAY
+    spawn_probability = "0.8,1,1,0.8,0.6,0.4,0.2", -- X_RAY
+    price = 180,
+    max_uses    = 20,
+    mana = 100,
+    action 		= function()
+        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/mass_status_drunk.xml")
+        c.fire_rate_wait = c.fire_rate_wait + 100
+        current_reload_time = current_reload_time + 100
+    end,
+})
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_MASS_STATUS_WET",
+    name 		= "Mass Wet",
+    description = "Soaks every creature in a large radius with a magical wetness.",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/mass_status_wet.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/chainsaw_unidentified.png",
+    related_projectiles	= {"mods/mo_creeps/files/entities/projectiles/deck/mass_status_wet.xml"},
+    spawn_requires_flag = "mocreeps_card_unlocked_blob_boss",
+    type 		= ACTION_TYPE_UTILITY,
+    spawn_level       = "0,1,2,3,4,5,6", -- X_RAY
+    spawn_probability = "0.8,1,1,0.8,0.6,0.4,0.2", -- X_RAY
+    price = 180,
+    max_uses    = 20,
+    mana = 100,
+    action 		= function()
+        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/mass_status_wet.xml")
+        c.fire_rate_wait = c.fire_rate_wait + 100
+        current_reload_time = current_reload_time + 100
+    end,
+})
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_MASS_STATUS_FIRE",
+    name 		= "Mass Fire",
+    description = "Burns every creature in a large radius with a magical fire.",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/mass_status_fire.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/chainsaw_unidentified.png",
+    related_projectiles	= {"mods/mo_creeps/files/entities/projectiles/deck/mass_status_fire.xml"},
+    spawn_requires_flag = "mocreeps_card_unlocked_blob_boss",
+    type 		= ACTION_TYPE_UTILITY,
+    spawn_level       = "0,1,2,3,4,5,6", -- X_RAY
+    spawn_probability = "0.8,1,1,0.8,0.6,0.4,0.2", -- X_RAY
+    price = 180,
+    max_uses    = 20,
+    mana = 100,
+    action 		= function()
+        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/mass_status_fire.xml")
+        c.fire_rate_wait = c.fire_rate_wait + 100
+        current_reload_time = current_reload_time + 100
+    end,
+})
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_MASS_STATUS_URINE",
+    name 		= "Mass Jarate",
+    description = "Douses every creature in a large radius with a magical jarate.",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/mass_status_urine.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/chainsaw_unidentified.png",
+    related_projectiles	= {"mods/mo_creeps/files/entities/projectiles/deck/mass_status_urine.xml"},
+    spawn_requires_flag = "mocreeps_card_unlocked_blob_boss",
+    type 		= ACTION_TYPE_UTILITY,
+    spawn_level       = "0,1,2,3,4,5,6", -- X_RAY
+    spawn_probability = "0.8,0.8,0.8,0.8,0.6,0.4,0.2", -- X_RAY
+    price = 180,
+    max_uses    = 20,
+    mana = 100,
+    action 		= function()
+        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/mass_status_urine.xml")
+        c.fire_rate_wait = c.fire_rate_wait + 100
+        current_reload_time = current_reload_time + 100
+    end,
+})
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_MASS_STATUS_POLYMORPH",
+    name 		= "Mass Polymorph",
+    description = "Afflicts every creature in a large radius with a magical polymorphine.",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/mass_status_polymorph.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/chainsaw_unidentified.png",
+    related_projectiles	= {"mods/mo_creeps/files/entities/projectiles/deck/mass_status_polymorph.xml"},
+    spawn_requires_flag = "mocreeps_card_unlocked_blob_boss",
+    type 		= ACTION_TYPE_UTILITY,
+    spawn_level       = "2,3,4,5,6", -- X_RAY
+    spawn_probability = "0.6,0.6,0.5,0.4,0.2", -- X_RAY
+    price = 240,
+    max_uses    = 20,
+    mana = 120,
+    action 		= function()
+        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/mass_status_polymorph.xml")
         c.fire_rate_wait = c.fire_rate_wait + 100
         current_reload_time = current_reload_time + 100
     end,

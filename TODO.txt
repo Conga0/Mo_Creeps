@@ -5,6 +5,8 @@ Print "Checkout More Creeps and Weirdos!!! New mod released today! --This messag
 Change MotD tablet to be made of glass, shatter on impact
 (or unpickuppable?)
 
-Could include purg/noitvania spawns in dofileonce with mod check
+Improve Miniboss Master of Polymorphing's suction portal visual
 
-Make immortal cats immune to getting stained (apply the same to cats mod)
+Add more decorations to blob cave, enemy variation, explosive mushrooms
+
+Magical wetness doesn't kill stendaris, (and likewise, hell enemies, etc)

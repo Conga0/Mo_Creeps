@@ -95,6 +95,10 @@
             aabb_max_y="3" 
             >
         </HitboxComponent>
+
+		<StatusEffectDataComponent
+		_enabled="0">
+		</StatusEffectDataComponent>
 	</Base>
 	
 	<LifetimeComponent

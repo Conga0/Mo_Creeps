@@ -89,6 +89,10 @@
 		  max_count="20"
 		  distance="160000">
 		</CameraBoundComponent>
+
+		<StatusEffectDataComponent
+		_enabled="0">
+		</StatusEffectDataComponent>
 	</Base>
 	
 	<LifetimeComponent

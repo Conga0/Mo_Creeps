@@ -32,7 +32,7 @@ mod_settings =
   {
     id = "motd_setting",
     ui_name = "Message of the Day",
-    ui_description = "Will an MOTD be displayed at the start of each run? \nMay contain bonus hints for various secrets. \nSpawns a tablet at the start of each run.",
+    ui_description = "Will an MOTD be displayed at the start of each run? \nMay contain bonus hints for various secrets.",
     value_default = false,
     scope = MOD_SETTING_SCOPE_NEW_GAME,
   },
@@ -42,6 +42,17 @@ mod_settings =
     ui_description = "Are seasonal events enabled? \nFor example, Halloween, More Creep's Birthday, etc.",
     value_default = true,
     scope = MOD_SETTING_SCOPE_NEW_GAME,
+  },
+  {
+    id = "boss_health_multiplayer",
+    ui_name = "Boss Health Multiplier",
+    ui_description = "Multiply all Bosses health by this much. \nFor those who seek extra durable opponents. \nDoes not affect Kolmisilma \n \nFor Modders: \nIf your mod isn't listed in the compatibility section of the mod page, \nthis likely won't boost it, you'll need to add a lua component to your bosses. \nDo not hesitate to contact me for instructions or help if needed. \nIt would be easiest for me to respond to you on discord, Conga Lyne#2452",
+    value_default = 100,
+    value_min = 100,
+    value_max = 1000,
+    value_display_multiplier = 1,
+    value_display_formatting = " $0% HP",
+    scope = MOD_SETTING_SCOPE_RUNTIME_RESTART,
   },
 }
 

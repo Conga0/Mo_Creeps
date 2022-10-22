@@ -1,4 +1,4 @@
-<Entity tags="evil_eye,musical_stone">
+<Entity name="mocreep_perk_ghostly_vision" tags="evil_eye,musical_stone">
 	<InheritTransformComponent>
     </InheritTransformComponent>
 	

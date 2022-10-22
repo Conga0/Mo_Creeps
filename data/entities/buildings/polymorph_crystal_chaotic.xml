@@ -1,6 +1,6 @@
 <Entity 
-  name="unknown" 
-  tags="hittable,mortal,mocreeps_polymorphcrystal" >
+  name="Polymorph Crystal"
+  tags="hittable,mortal" >
 
   <DamageModelComponent 
     _enabled="1" 

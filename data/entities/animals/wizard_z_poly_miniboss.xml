@@ -1,4 +1,4 @@
-<Entity name="Overzealous Poly Master" tags="polymorphable_NOT,touchmagic_immunity,ui_use_raw_name,music_energy_100,necrobot_NOT,glue_NOT,teleportable_NOT" >
+<Entity name="Yliinnokaspolymorfoinninmestari" tags="polymorphable_NOT,touchmagic_immunity,ui_use_raw_name,music_energy_100,necrobot_NOT,glue_NOT,teleportable_NOT" >
   
 	<Base file="data/entities/base_enemy_basic.xml" >
 		<ItemChestComponent level="2" > </ItemChestComponent>
@@ -31,7 +31,7 @@
 			air_needed="0"
 			fire_probability_of_ignition="0"
             ragdoll_material="meat_polymorph_protection"
-			ragdoll_filenames_file="data/ragdolls/wizard_poly/filenames.txt" 
+			ragdoll_filenames_file="mods/mo_creeps/files/ragdolls/wizard_z_poly_miniboss/filenames.txt" 
 			>
 		</DamageModelComponent>
 
@@ -207,7 +207,7 @@
 	</HealthBarComponent>
 
 	<AIAttackComponent
-	min_distance="50"
+	min_distance="40"
 	max_distance="260"
 	frames_between="125"
 	frames_between_global="0"
@@ -222,7 +222,7 @@
 
 	<AIAttackComponent
 	min_distance="0"
-	max_distance="50"
+	max_distance="30"
 	frames_between="400"
 	frames_between_global="300"
 	attack_ranged_action_frame="5"
@@ -234,6 +234,12 @@
 	attack_ranged_predict="1"
 	>
 	</AIAttackComponent>
+
+	<LuaComponent
+		_tags="death_reward"
+		script_death="mods/mo_creeps/files/scripts/animals/polymage_miniboss_reward.lua"
+		>
+	</LuaComponent>
     
 </Entity>
 

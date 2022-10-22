@@ -1,0 +1,5 @@
+mods/mo_creeps/files/ragdolls/blob_titan/leg_1.png
+mods/mo_creeps/files/ragdolls/blob_titan/leg_2.png
+mods/mo_creeps/files/ragdolls/blob_titan/body.png
+mods/mo_creeps/files/ragdolls/blob_titan/leg_3.png
+mods/mo_creeps/files/ragdolls/blob_titan/leg_4.png

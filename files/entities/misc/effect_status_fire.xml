@@ -1,0 +1,22 @@
+<Entity>
+    <InheritTransformComponent>
+    </InheritTransformComponent>
+    
+    <GameEffectComponent 
+		_tags="effect_fire_magic"
+        effect="ON_FIRE"
+        frames="1200"
+    >
+	</GameEffectComponent >
+	
+	<UIIconComponent
+		name="$status_mocreep_magicfire_ui"
+		description="$statusdesc_mocreep_magicfire_ui"
+		icon_sprite_file="data/ui_gfx/status_indicators/on_fire.png"
+		is_perk="0"
+		display_above_head="1"
+		display_in_hud="1"
+		>
+	</UIIconComponent>
+
+</Entity>

@@ -48,7 +48,7 @@
       explosion_radius="7"
       explosion_sprite="data/particles/explosion_016.xml" 
       explosion_sprite_lifetime="0" 
-      create_cell_probability="50" 
+      create_cell_probability="0" 
       hole_destroy_liquid="0"
 	  explosion_sprite_emissive="1"
 	  explosion_sprite_additive="1"
@@ -61,9 +61,9 @@
       physics_explosion_power.max="0.1"
 	  physics_throw_enabled="1"
       shake_vegetation="1" 
-      sparks_count_min="4" 
-      sparks_count_max="10" 
-      sparks_enabled="1" 
+      sparks_count_min="0" 
+      sparks_count_max="00" 
+      sparks_enabled="0" 
       stains_enabled="1"
       stains_radius="12" >
     </config_explosion>
@@ -99,8 +99,8 @@
     count_max="1"
     lifetime_min="0.1"
     lifetime_max="0.3"
-    create_real_particles="1"
-    emit_cosmetic_particles="0"
+    create_real_particles="0"
+    emit_cosmetic_particles="1"
     emission_interval_min_frames="1"
     emission_interval_max_frames="2"
     is_emitting="1" >

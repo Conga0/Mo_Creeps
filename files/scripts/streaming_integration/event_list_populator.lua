@@ -48,6 +48,8 @@
 
             local pool = {
                 "blindgazer",
+                "blob_big",
+                "blob_huge",
                 "cat_mocreeps",
                 "ccc_bat_psychic",
                 "ceiling_fungus",
@@ -103,6 +105,7 @@
                 "wizard_manaeater",
                 "wizard_transmutation",
                 "wizard_watermage_greater",
+                "wizard_z_poly_miniboss",
                 "wraith_weirdo_shield",
                 "bubbles/acid/bubble_liquid",
                 "bubbles/water/bubble_liquid",
@@ -164,7 +167,7 @@
 	{
 		id = "MOCREEP_WAND_WONDERS",
 		ui_name = "Pandora's Chest",
-		ui_description = "Wands a horrible, horrible chest.",
+		ui_description = "Do you dare open?",
 		ui_icon = "data/ui_gfx/streaming_event_icons/health_plus.png",
 		ui_author = "Conga Lyne - Mo Creeps",
 		weight = 0.75,
@@ -196,8 +199,10 @@
 
             local pool = {
                 "animals/angel",
+                "animals/boss_blob/blob_titan",
                 "buildings/toxic_worm_nest_populator_big_detector",
                 "buildings/boss_musical_ghost_sandcave_populator_big_detector",
+                "animals/wizard_z_poly_miniboss",
             }
 
 			local players = get_players()

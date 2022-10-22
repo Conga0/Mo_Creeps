@@ -5,10 +5,12 @@ local x,y = EntityGetTransform( entity_id )
 local r = 256
 
 function collision_trigger()
-	local targets = EntityGetInRadiusWithTag( x, y, r, "mocreeps_polymorphcrystal" )
+	local targets = EntityGetInRadius( x, y, r )
 
 	for i,v in ipairs( targets ) do
-		EntityKill( v )
+		if ( v ~= entity_id ) and ( EntityGetName( v ) == "Polymorph Crystal" ) then
+			EntityKill ( v )
+		end
 	end
 
 	EntityKill( entity_id )

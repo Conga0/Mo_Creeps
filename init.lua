@@ -3,11 +3,13 @@ dofile("data/scripts/lib/utilities.lua")
 local modCompatibilityConjurer = ModSettingGet( "mo_creeps.mod_compat_mode_conjurer" )
 local motdSetting = ModSettingGet( "mo_creeps.motd_setting" )
 local seasonalSetting = ModSettingGet( "mo_creeps.seasonal_events" )
+Mocreeps_global_splitseed = 1
 
 --Spawn Bosses
 
 --This was a coding marathon and a half, huge shoutouts to Horscht for the help on this one.
 --And Zathers for making this seductive lua file
+--Note: This has been moved lower down for cleaner organisation & implementing mod compatibility
 
 
 -- If Conjurer is enabled, disable this for a fix.
@@ -15,15 +17,19 @@ if modCompatibilityConjurer == true then
   if ModIsEnabled("raksa") == false then
     if ModIsEnabled("purgatory") then
       dofile_once( "mods/mo_creeps/files/scripts/pixelscenes/scene_list_purgatory.lua" )
+      --dofile_once( "mods/mo_creeps/files/scripts/pixelscenes/scene_list_purgatory_NGPlus.lua" )
     else
       dofile_once( "mods/mo_creeps/files/scripts/pixelscenes/scene_list.lua" )
+      dofile_once( "mods/mo_creeps/files/scripts/pixelscenes/scene_list_NGPlus.lua" )
     end
   end
 else
   if ModIsEnabled("purgatory") then
     dofile_once( "mods/mo_creeps/files/scripts/pixelscenes/scene_list_purgatory.lua" )
+    --dofile_once( "mods/mo_creeps/files/scripts/pixelscenes/scene_list_purgatory_NGPlus.lua" )
   else
     dofile_once( "mods/mo_creeps/files/scripts/pixelscenes/scene_list.lua" )
+    dofile_once( "mods/mo_creeps/files/scripts/pixelscenes/scene_list_NGPlus.lua" )
   end
 end
 
@@ -32,6 +38,8 @@ end
 
 
 --Description fix for Ghostly Vision Perk
+--Wow, I've come a long way since then.
+--Thankyou for all the help, gamers!
 
 local content = ModTextFileGetContent("data/translations/common.csv")
 ModTextFileSetContent("data/translations/common.csv", content .. [[
@@ -42,7 +50,7 @@ perk_mocreeps_ghostly_vision_description,You can see things which aren't there..
 perk_mocreeps_rage_aura,Enraging Aura,,,,,,,,,,,,,
 perk_mocreeps_rage_aura_description,Creatures are sent into a blind rage by your presence.,,,,,,,,,,,,,
 book_mocreeps_divine_liquid,Tablet of Apotheosis,,,,,,,,,,,,,
-book_mocreeps_divine_liquid_description,"Long have been the days since the universe was in union. \nWhen Slime was no different from above and below was no different from slime. \nSome species have adapted to these changes however, excessively, and became attuned to the pinnacles and depths of this world. \nThey must distance themselves with truly divine reason.",,,,,,,,,,,,,
+book_mocreeps_divine_liquid_description,"Long have been the days since the universe was in union. \nWhen Slime was no different from above and below was no different from slime. \nSome species have adapted to these changes however, excessively, and became attuned to the pinnacles and depths of this world. \nThey must distance themselves with truly divine purpose.",,,,,,,,,,,,,
 book_mocreeps_materia_conversion,"Alchemist's Notes",,,,,,,,,,,,,
 book_mocreeps_materia_conversion_description,"Transmutation.. Materia Conversion. \nFor years I've dedicated my life to this art, only to foolishly trick myself. \nFor years I thought Materia Conversion could only be used on solid matter, \nBut only now in my last few days I've come to learn it can be harnessed on magic as well. \nI can only hope the fruits of my labour will not forgotten.",,,,,,,,,,,,,
 book_mocreeps_materia_conversion_spell,"Alchemist's Notes",,,,,,,,,,,,,
@@ -54,41 +62,49 @@ mat_cloth,Cloth,,,,,,,,,,,,,
 book_mocreeps_cat_rat,"Cat Lover's Notes",,,,,,,,,,,,,
 book_mocreeps_cat_rat_description,"My Cats seem scared of normal rats.. \nBut have an irresistible hate towards magical rats for some reason. \nIt's kind of cute.. But I can't brush away the feeling they distance themselves with truly divine purpose...",,,,,,,,,,,,,
 book_mocreeps_motd,"Message of the Day",,,,,,,,,,,,,
-book_mocreeps_motd_description,"You shouldn't be reading this.",,,,,,,,,,,,,
-book_mocreeps_motd_description_halloween,"Happy Halloween!",,,,,,,,,,,,,
-book_mocreeps_motd_description_smissmass,"Happy Noitmass!",,,,,,,,,,,,,
-book_mocreeps_motd_description_001,"Also try Worse Enemies!",,,,,,,,,,,,,
-book_mocreeps_motd_description_002,"Hobos love Material Donations",,,,,,,,,,,,,
-book_mocreeps_motd_description_003,"Blood is Fuel.",,,,,,,,,,,,,
-book_mocreeps_motd_description_004,"Also try Copis Things!",,,,,,,,,,,,,
-book_mocreeps_motd_description_005,"Meow. Meow. Meow. Meow. Meow.",,,,,,,,,,,,,
-book_mocreeps_motd_description_006,"Also try Shellcore Command Remastered!",,,,,,,,,,,,,
-book_mocreeps_motd_description_007,"More Creeps & Weirdos successfully initialised.",,,,,,,,,,,,,
-book_mocreeps_motd_description_008,"Hey? Can you hear me?! Get out while you still can!! HURRY.",,,,,,,,,,,,,
-book_mocreeps_motd_description_009,"Also try Chemical Curiosities!",,,,,,,,,,,,,
-book_mocreeps_motd_description_010,"Tired of your cute Cats and bright Fairies dying? \nYou can make them immortal in the settings!.",,,,,,,,,,,,,
-book_mocreeps_motd_description_011,"Amazing.",,,,,,,,,,,,,
-book_mocreeps_motd_description_012,"I have 7 very important lore related questions.",,,,,,,,,,,,,
-book_mocreeps_motd_description_013,"All code is circular bread approved.",,,,,,,,,,,,,
-book_mocreeps_motd_description_014,"Esoteric Beings fear curses.",,,,,,,,,,,,,
-book_mocreeps_motd_description_015,"Can you hear ghosts? \nWithout assistance?",,,,,,,,,,,,,
-book_mocreeps_motd_description_016,"Masters of Trolling like red outlines. \nThey'll fit right in",,,,,,,,,,,,,
-book_mocreeps_motd_description_017,"Musical Beings fear more than just stones....",,,,,,,,,,,,,
-book_mocreeps_motd_description_018,"Knowledge is scattered around the world.. find it.",,,,,,,,,,,,,
-book_mocreeps_motd_description_019,"Lukki Lair porings may not be what they seem..",,,,,,,,,,,,,
-book_mocreeps_motd_description_020,"The coldest Magical temple may hold vital treasure. \nJust don't descend.",,,,,,,,,,,,,
-book_mocreeps_motd_description_021,"Angelings and Devilings distance themselves.",,,,,,,,,,,,,
-book_mocreeps_motd_description_022,"With truly divine purpose.",,,,,,,,,,,,,
-book_mocreeps_motd_description_023,"Perhaps not every creep is a hostile. \nPerhaps not every crystal is a threat.",,,,,,,,,,,,,
-book_mocreeps_motd_description_024,"Also try Congas Cats! \n...Just not with More Creeps enabled. \nMore Creeps cats override Congas Cats cats.",,,,,,,,,,,,,
-book_mocreeps_motd_description_025,"Attract worms and centipedes will soon follow.",,,,,,,,,,,,,
-book_mocreeps_motd_description_026,"Goodluck and have fun!. \nIf you're feeling frustrated or stressed, remember to take a break.",,,,,,,,,,,,,
-book_mocreeps_motd_description_027,"I believe in you.",,,,,,,,,,,,,
-book_mocreeps_motd_description_028,"The pyramid isn't quite so safe anymore. \nBut may hold divine knowledge.",,,,,,,,,,,,,
-book_mocreeps_motd_description_029,"Cross the sea of lava. \nGo where you would not normal. \nThere I will humour you.",,,,,,,,,,,,,
-book_mocreeps_motd_description_030,"Happy today! Good Now, be happy you're still here!",,,,,,,,,,,,,
-book_mocreeps_motd_description_031,"Don't visit the Toxic Worm Nest at 3 am.",,,,,,,,,,,,,
+book_mocreeps_motd_description,"Message of the Day \nYou shouldn't be reading this.",,,,,,,,,,,,,
+book_mocreeps_motd_description_halloween,"Message of the Day \nHappy Halloween!",,,,,,,,,,,,,
+book_mocreeps_motd_description_smissmass,"Message of the Day \nHappy Noitmass!",,,,,,,,,,,,,
+book_mocreeps_motd_description_001,"Message of the Day \nAlso try Worse Enemies!",,,,,,,,,,,,,
+book_mocreeps_motd_description_002,"Message of the Day \nHobos love Material Donations",,,,,,,,,,,,,
+book_mocreeps_motd_description_003,"Message of the Day \nBlood is Fuel.",,,,,,,,,,,,,
+book_mocreeps_motd_description_004,"Message of the Day \nAlso try Copis Things!",,,,,,,,,,,,,
+book_mocreeps_motd_description_005,"Message of the Day \nMeow. Meow. Meow. Meow. Meow.",,,,,,,,,,,,,
+book_mocreeps_motd_description_006,"Message of the Day \nAlso try Shellcore Command Remastered!",,,,,,,,,,,,,
+book_mocreeps_motd_description_007,"Message of the Day \nMore Creeps & Weirdos successfully initialised.",,,,,,,,,,,,,
+book_mocreeps_motd_description_008,"Message of the Day \nHey? Can you hear me?! Get out while you still can!! HURRY.",,,,,,,,,,,,,
+book_mocreeps_motd_description_009,"Message of the Day \nAlso try Chemical Curiosities!",,,,,,,,,,,,,
+book_mocreeps_motd_description_010,"Message of the Day \nTired of your cute Cats and bright Fairies dying? \nYou can make them immortal in the settings!.",,,,,,,,,,,,,
+book_mocreeps_motd_description_011,"Message of the Day \nAmazing.",,,,,,,,,,,,,
+book_mocreeps_motd_description_012,"Message of the Day \nI have 7 very important lore related questions.",,,,,,,,,,,,,
+book_mocreeps_motd_description_013,"Message of the Day \nAll code is circular bread approved.",,,,,,,,,,,,,
+book_mocreeps_motd_description_014,"Message of the Day \nEsoteric Beings fear curses.",,,,,,,,,,,,,
+book_mocreeps_motd_description_015,"Message of the Day \nCan you hear ghosts? \nWithout assistance?",,,,,,,,,,,,,
+book_mocreeps_motd_description_016,"Message of the Day \nMasters of Trolling like red outlines. \nThey'll fit right in",,,,,,,,,,,,,
+book_mocreeps_motd_description_017,"Message of the Day \nMusical Beings fear more than just stones....",,,,,,,,,,,,,
+book_mocreeps_motd_description_018,"Message of the Day \nKnowledge is scattered around the world.. find it.",,,,,,,,,,,,,
+book_mocreeps_motd_description_019,"Message of the Day \nLukki Lair porings may not be what they seem..",,,,,,,,,,,,,
+book_mocreeps_motd_description_020,"Message of the Day \nThe coldest Magical temple may hold vital treasure. \nJust don't descend.",,,,,,,,,,,,,
+book_mocreeps_motd_description_021,"Message of the Day \nAngelings and Devilings distance themselves.",,,,,,,,,,,,,
+book_mocreeps_motd_description_022,"Message of the Day \nWith truly divine purpose.",,,,,,,,,,,,,
+book_mocreeps_motd_description_023,"Message of the Day \nPerhaps not every creep is a hostile. \nPerhaps not every crystal is a threat.",,,,,,,,,,,,,
+book_mocreeps_motd_description_024,"Message of the Day \nAlso try Congas Cats! \n...Just not with More Creeps enabled. \nMore Creeps cats override Congas Cats cats... Update your settings!!!",,,,,,,,,,,,,
+book_mocreeps_motd_description_025,"Message of the Day \nAttract worms and centipedes will soon follow.",,,,,,,,,,,,,
+book_mocreeps_motd_description_026,"Message of the Day \nGoodluck and have fun!. \nIf you're feeling frustrated or stressed, remember to take a break.",,,,,,,,,,,,,
+book_mocreeps_motd_description_027,"Message of the Day \nI believe in you.",,,,,,,,,,,,,
+book_mocreeps_motd_description_028,"Message of the Day \nThe pyramid isn't quite so safe anymore. \nBut may hold divine knowledge.",,,,,,,,,,,,,
+book_mocreeps_motd_description_029,"Message of the Day \nCross the sea of lava. \nGo where you would not normal. \nThere I will humour you.",,,,,,,,,,,,,
+book_mocreeps_motd_description_030,"Message of the Day \nHappy today! Good Now, be happy you're still here!",,,,,,,,,,,,,
+book_mocreeps_motd_description_031,"Message of the Day \nDon't visit the Toxic Worm Nest at 3 am.",,,,,,,,,,,,,
 item_mocreeps_chest_cursed,"Pandora's Chest",,,,,,,,,,,,,
+status_mocreep_magicwet_ui,"Magical Wetness",,,,,,,,,,,,,
+statusdesc_mocreep_magicwet_ui,"Wet clothes protect you from fire.",,,,,,,,,,,,,
+status_mocreep_magicfire_ui,"Magical Fire",,,,,,,,,,,,,
+statusdesc_mocreep_magicfire_ui,"You're on fire! Find water quickly!",,,,,,,,,,,,,
+status_mocreep_magicurine_ui,"Magical Jarate",,,,,,,,,,,,,
+statusdesc_mocreep_magicurine_ui,"Wet clothes protect you from fire. \nYou sense an increased chance of recieving critical strikes.",,,,,,,,,,,,,
+status_mocreep_magicpolymorph_ui,"Magical Polymorph",,,,,,,,,,,,,
+statusdesc_mocreep_magicpolymorph_ui,"You have been polymorphed into a vulnerable sheep!",,,,,,,,,,,,,
 ]])
 
 
@@ -219,15 +235,27 @@ if modCompatibilityConjurer == true then
   if ModIsEnabled("raksa") == false then
     if ModIsEnabled("purgatory") then
       dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/purgatory/boss_spawn_list.lua" )
+      --dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/purgatory/boss_spawn_list_NGPLUS.lua" )
+      dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/purgatory/blob_cave_spawn_list.lua" )
+      --dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/purgatory/blob_cave_spawn_list_NGPlus.lua" )
     else
       dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/boss_spawn_list.lua" )
+      dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/boss_spawn_list_NGPLUS.lua" )
+      dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/blob_cave_spawn_list.lua" )
+      dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/blob_cave_spawn_list_NGPlus.lua" )
     end
   end
 else
   if ModIsEnabled("purgatory") then
     dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/purgatory/boss_spawn_list.lua" )
+    --dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/purgatory/boss_spawn_list_NGPLUS.lua" )
+    dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/purgatory/blob_cave_spawn_list.lua" )
+    --dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/purgatory/blob_cave_spawn_list_NGPlus.lua" )
   else
     dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/boss_spawn_list.lua" )
+    dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/boss_spawn_list_NGPLUS.lua" )
+    dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/blob_cave_spawn_list.lua" )
+    dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/blob_cave_spawn_list_NGPlus.lua" )
   end
 end
 
@@ -409,6 +437,43 @@ end
 
 
 
+--Worse Enemies, Overrides Hisii Minecart visuals & attacks to match those from the mod
+if ModIsEnabled("worse_enemies") then
+
+  local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
+  local content = ModTextFileGetContent("data/entities/animals/hisii_minecart_tnt.xml")
+  local xml = nxml.parse(content)
+  xml:first_of("Base"):first_of("SpriteComponent").attr.image_file = "mods/Mo_Creeps/files/enemies_gfx/hisii_minecart_worse_tnt.xml"
+  xml:first_of("Base"):first_of("AnimalAIComponent").attr.attack_ranged_entity_file = "data/entities/projectiles/cocktail_gunpowder.xml"
+  ModTextFileSetContent("data/entities/animals/hisii_minecart_tnt.xml", tostring(xml))
+
+  local content = ModTextFileGetContent("data/entities/animals/hisii_minecart.xml")
+  local xml = nxml.parse(content)
+  xml:first_of("Base"):first_of("SpriteComponent").attr.image_file = "mods/Mo_Creeps/files/enemies_gfx/hisii_minecart_worse.xml"
+  xml:first_of("Base"):first_of("AnimalAIComponent").attr.attack_ranged_entity_file = "data/entities/projectiles/meteor_green.xml"
+  xml:add_child(nxml.parse([[
+    <SpriteComponent 
+      _tags="character" 
+      image_file="mods/mo_creeps/files/enemies_gfx/hisii_minecart_worse_emissive.xml"
+      offset_x="0"
+      offset_y="0"
+      alpha="1" 
+      emissive="1"
+      additive="1">
+	</SpriteComponent>
+]]))
+  ModTextFileSetContent("data/entities/animals/hisii_minecart.xml", tostring(xml))
+
+  --Bat Illusion Fix
+  local content = ModTextFileGetContent("data/entities/animals/psychotic/bat.xml")
+  local xml = nxml.parse(content)
+  xml:first_of("Base"):first_of("SpriteComponent").attr.image_file = "data/enemies_gfx/worse/bat.xml"
+  ModTextFileSetContent("data/entities/animals/psychotic/bat.xml", tostring(xml))
+
+end
+
+
+
 
 
 -- Custom Status support injection
@@ -481,6 +546,52 @@ ModTextFileSetContent("data/entities/animals/miner_weak.xml", tostring(xml))
 
 
 
+-- Stendari magic wetness fix
+local content = ModTextFileGetContent("data/entities/animals/firemage.xml")
+local xml = nxml.parse(content)
+local attrs = xml:first_of("Base"):first_of("DamageModelComponent").attr
+attrs.materials_that_damage = attrs.materials_that_damage .. ",water_fading"
+attrs.materials_how_much_damage = attrs.materials_how_much_damage .. ",0.0005"
+ModTextFileSetContent("data/entities/animals/firemage.xml", tostring(xml))
+
+-- Gazer magic wetness fix
+local content = ModTextFileGetContent("data/entities/animals/gazer.xml")
+local xml = nxml.parse(content)
+local attrs = xml:first_of("Base"):first_of("DamageModelComponent").attr
+attrs.materials_that_damage = attrs.materials_that_damage .. ",water,water_fading"
+attrs.materials_how_much_damage = attrs.materials_how_much_damage .. ",0.0005,0.0005"
+ModTextFileSetContent("data/entities/animals/gazer.xml", tostring(xml))
+
+-- Burning Skull magic wetness fix
+local content = ModTextFileGetContent("data/entities/animals/fireskull.xml")
+local xml = nxml.parse(content)
+local attrs = xml:first_of("Base"):first_of("DamageModelComponent").attr
+attrs.materials_that_damage = attrs.materials_that_damage .. ",water_fading"
+attrs.materials_how_much_damage = attrs.materials_how_much_damage .. ",0.0005"
+ModTextFileSetContent("data/entities/animals/fireskull.xml", tostring(xml))
+
+-- Spit Monster magic wetness fix
+local content = ModTextFileGetContent("data/entities/animals/spitmonster.xml")
+local xml = nxml.parse(content)
+local attrs = xml:first_of("Base"):first_of("DamageModelComponent").attr
+attrs.materials_that_damage = attrs.materials_that_damage .. ",water,water_fading"
+attrs.materials_how_much_damage = attrs.materials_how_much_damage .. ",0.0005,0.0005"
+ModTextFileSetContent("data/entities/animals/spitmonster.xml", tostring(xml))
+
+
+
+
+
+--Boss health multiplier insertion
+dofile_once( "mods/mo_creeps/files/scripts/mod_compatibility/boss_health_multiplier_plug.lua" )
+
+
+  
+
+
+
+
+
 
 
 
@@ -536,12 +647,33 @@ if seasonalSetting == true then
     xml:first_of("Base"):first_of("AnimalAIComponent").attr.attack_ranged_entity_file = "data/entities/projectiles/present.xml"
     ModTextFileSetContent("data/entities/animals/hisii_minecart_tnt.xml", tostring(xml))
 
-    local content = ModTextFileGetContent("data/entities/animals/hisii_minecart.xml")
-    local xml = nxml.parse(content)
-    xml:first_of("Base"):first_of("SpriteComponent").attr.image_file = "mods/Mo_Creeps/files/enemies_gfx/hisii_minecart_smissmass.xml"
-    ModTextFileSetContent("data/entities/animals/hisii_minecart.xml", tostring(xml))
+    if ModIsEnabled("worse_enemies") then
+      local content = ModTextFileGetContent("data/entities/animals/hisii_minecart.xml")
+      local xml = nxml.parse(content)
+      xml:first_of("Base"):first_of("SpriteComponent").attr.image_file = "mods/Mo_Creeps/files/enemies_gfx/hisii_minecart_worse_smissmass.xml"
+      ModTextFileSetContent("data/entities/animals/hisii_minecart.xml", tostring(xml))
+    else
+      local content = ModTextFileGetContent("data/entities/animals/hisii_minecart.xml")
+      local xml = nxml.parse(content)
+      xml:first_of("Base"):first_of("SpriteComponent").attr.image_file = "mods/Mo_Creeps/files/enemies_gfx/hisii_minecart_smissmass.xml"
+      ModTextFileSetContent("data/entities/animals/hisii_minecart.xml", tostring(xml))
+    end
 
   end
+
+  -- Birthday Event
+  if ( month == 10 ) and (( day >= 20 ) and ( day <= 22 )) then
+    ModLuaFileAppend( "data/scripts/biomes/coalmine.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday.lua" ) --Coal Mine, first area, goodluck on your run
+    ModLuaFileAppend( "data/scripts/biomes/coalmine_alt.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday.lua" ) --Coalmine but to the west side near damp cave
+    ModLuaFileAppend( "data/scripts/biomes/excavationsite.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday.lua" ) --Coal Pits, area 2
+    ModLuaFileAppend( "data/scripts/biomes/snowcave.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday.lua" ) --Presumably everything below the entrance to the pyramid
+    ModLuaFileAppend( "data/scripts/biomes/snowcastle.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday.lua" )
+    ModLuaFileAppend( "data/scripts/biomes/desert.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday.lua" )
+    ModLuaFileAppend( "data/scripts/biomes/rainforest.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday_rare.lua" )
+    ModLuaFileAppend( "data/scripts/biomes/vault.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday_rare.lua" )
+  end
+
+  --Update global_populator & global_populator_small too, wand tinkering crystal
 
 end
 
