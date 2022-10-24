@@ -63,6 +63,7 @@ book_mocreeps_cat_rat,"Cat Lover's Notes",,,,,,,,,,,,,
 book_mocreeps_cat_rat_description,"My Cats seem scared of normal rats.. \nBut have an irresistible hate towards magical rats for some reason. \nIt's kind of cute.. But I can't brush away the feeling they distance themselves with truly divine purpose...",,,,,,,,,,,,,
 book_mocreeps_motd,"Message of the Day",,,,,,,,,,,,,
 book_mocreeps_motd_description,"Message of the Day \nYou shouldn't be reading this.",,,,,,,,,,,,,
+book_mocreeps_motd_description_birthday,"Message of the Day \nHappy Birthday More Creeps & Weirdos!",,,,,,,,,,,,,
 book_mocreeps_motd_description_halloween,"Message of the Day \nHappy Halloween!",,,,,,,,,,,,,
 book_mocreeps_motd_description_smissmass,"Message of the Day \nHappy Noitmass!",,,,,,,,,,,,,
 book_mocreeps_motd_description_001,"Message of the Day \nAlso try Worse Enemies!",,,,,,,,,,,,,
@@ -89,7 +90,7 @@ book_mocreeps_motd_description_021,"Message of the Day \nAngelings and Devilings
 book_mocreeps_motd_description_022,"Message of the Day \nWith truly divine purpose.",,,,,,,,,,,,,
 book_mocreeps_motd_description_023,"Message of the Day \nPerhaps not every creep is a hostile. \nPerhaps not every crystal is a threat.",,,,,,,,,,,,,
 book_mocreeps_motd_description_024,"Message of the Day \nAlso try Congas Cats! \n...Just not with More Creeps enabled. \nMore Creeps cats override Congas Cats cats... Update your settings!!!",,,,,,,,,,,,,
-book_mocreeps_motd_description_025,"Message of the Day \nAttract worms and centipedes will soon follow.",,,,,,,,,,,,,
+book_mocreeps_motd_description_025,"Message of the Day \nFun Fact, Despite this mod releasing on 24/10/2022, \nthe birthday event occurs in November to avoid clashing with Halloween.",,,,,,,,,,,,,
 book_mocreeps_motd_description_026,"Message of the Day \nGoodluck and have fun!. \nIf you're feeling frustrated or stressed, remember to take a break.",,,,,,,,,,,,,
 book_mocreeps_motd_description_027,"Message of the Day \nI believe in you.",,,,,,,,,,,,,
 book_mocreeps_motd_description_028,"Message of the Day \nThe pyramid isn't quite so safe anymore. \nBut may hold divine knowledge.",,,,,,,,,,,,,
@@ -502,8 +503,14 @@ ModLuaFileAppend( "data/scripts/streaming_integration/event_list.lua", "mods/mo_
 dofile_once( "mods/mo_creeps/files/scripts/magic/music_magic_tag_nxml.lua" )
 
 --MOTD
-if motdSetting == true then
-  dofile_once( "mods/mo_creeps/files/scripts/misc/motd_list.lua" )
+if ModIsEnabled("raksa") == false then
+  if motdSetting == true then
+    if ModIsEnabled("purgatory") then
+      dofile_once( "mods/mo_creeps/files/scripts/misc/motd_list_purgatory.lua" )
+    else
+      dofile_once( "mods/mo_creeps/files/scripts/misc/motd_list.lua" )
+    end
+  end
 end
 
 --Allows hisii to jump into minecarts
@@ -611,7 +618,7 @@ local year, month, day = GameGetDateAndTimeLocal()
 if seasonalSetting == true then
 
   -- Halloween Event
-  if ( month == 10 ) and ( day >= 1 ) then
+  if ( month == 10 ) and ( day >= 11 ) then
     ModLuaFileAppend( "data/scripts/biomes/coalmine.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/halloween.lua" ) --Coal Mine, first area, goodluck on your run
     ModLuaFileAppend( "data/scripts/biomes/coalmine_alt.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/halloween.lua" ) --Coalmine but to the west side near damp cave
     ModLuaFileAppend( "data/scripts/biomes/excavationsite.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/halloween.lua" ) --Coal Pits, area 2
@@ -674,7 +681,7 @@ if seasonalSetting == true then
   end
 
   -- Birthday Event
-  if ( month == 10 ) and (( day >= 20 ) and ( day <= 22 )) then
+  if ( month == 11 ) and (( day >= 3 ) and ( day <= 5 )) then
     ModLuaFileAppend( "data/scripts/biomes/coalmine.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday.lua" ) --Coal Mine, first area, goodluck on your run
     ModLuaFileAppend( "data/scripts/biomes/coalmine_alt.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday.lua" ) --Coalmine but to the west side near damp cave
     ModLuaFileAppend( "data/scripts/biomes/excavationsite.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday.lua" ) --Coal Pits, area 2

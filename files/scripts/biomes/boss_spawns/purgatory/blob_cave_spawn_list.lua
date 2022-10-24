@@ -44,9 +44,9 @@ ModTextFileSetContent("mods/purgatory/files/biome/_pixel_scenes.xml", tostring(x
 local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
 local xml = nxml.parse(content)
 xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-    <PixelScene pos_x="3370" pos_y="9841" just_load_an_entity="data/entities/props/physics_fungus_big.xml" />
+    <PixelScene pos_x="3370" pos_y="9226" just_load_an_entity="data/entities/props/physics_fungus_big.xml" />
 ]]))
 xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-    <PixelScene pos_x="3079" pos_y="9750" just_load_an_entity="data/entities/props/physics_fungus_hugeish.xml" />
+    <PixelScene pos_x="3120" pos_y="9175" just_load_an_entity="data/entities/props/physics_fungus_hugeish.xml" />
 ]]))
 ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))

@@ -144,7 +144,7 @@
 	{
 		id = "MOCREEP_WAND_WONDERS",
 		ui_name = "Spawn Wand of Wonders",
-		ui_description = "Wands a wonderful wand capable of anything.",
+		ui_description = "A wonderful wand capable of anything. Cast It!",
 		ui_icon = "data/ui_gfx/streaming_event_icons/health_plus.png",
 		ui_author = "Conga Lyne - Mo Creeps",
 		weight = 0.8,
@@ -197,13 +197,23 @@
 		delay_timer = 600,
 		action_delayed = function(event)
 
-            local pool = {
-                "animals/angel",
-                "animals/boss_blob/blob_titan",
-                "buildings/toxic_worm_nest_populator_big_detector",
-                "buildings/boss_musical_ghost_sandcave_populator_big_detector",
-                "animals/wizard_z_poly_miniboss",
-            }
+            if ModIsEnabled("purgatory") or ModIsEnabled("nightmare") then
+                local pool = {
+                    "animals/gold_bosses/angel/angel",
+                    "animals/gold_bosses/boss_blob/blob_titan",
+                    "buildings/toxic_worm_nest_populator_big_detector",
+                    "buildings/boss_musical_ghost_sandcave_populator_big_detector",
+                    "animals/wizard_z_poly_miniboss",
+                }
+            else
+                local pool = {
+                    "animals/angel",
+                    "animals/boss_blob/blob_titan",
+                    "buildings/toxic_worm_nest_populator_big_detector",
+                    "buildings/boss_musical_ghost_sandcave_populator_big_detector",
+                    "animals/wizard_z_poly_miniboss",
+                }
+            end
 
 			local players = get_players()
 			SetRandomSeed( GameGetFrameNum(), GameGetFrameNum() + 353 )
@@ -228,6 +238,8 @@
     table.insert(enemies_list,
     {
         "data/entities/animals/blindgazer.xml",
+        "data/entities/animals/blob_big.xml",
+        "data/entities/animals/blob_huge.xml",
         "data/entities/animals/cat_mocreeps.xml",
         "data/entities/animals/ccc_bat_psychic.xml",
         "data/entities/animals/ceiling_fungus.xml",
@@ -290,6 +302,7 @@
         "data/entities/animals/angel.xml",
         "data/entities/animals/boss_toxic_worm/boss_toxic_worm.xml",
         "data/entities/animals/boss_musical_ghost/boss_musical_ghost.xml",
+        "data/entities/animals/boss_blob/blob_titan.xml",
     })
     end
 

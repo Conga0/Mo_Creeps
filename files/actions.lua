@@ -479,7 +479,7 @@ table.insert(actions,
 {
     id          = "MOCREEPS_BUNGAL_SHIFT_SPAM",
     name 		= "Hyper Fungal Shift",
-    description = "Impatient....                      ", --Triggers a fungal shift, no cooldown.
+    description = "Insane....                      ", --Triggers a fungal shift, no cooldown.
     sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/bungal_shift_spam.png",
     sprite_unidentified = "data/ui_gfx/gun_actions/explosive_projectile_unidentified.png",
     related_extra_entities = { "data/entities/misc/forced_bungal_shift_spam.xml" },

@@ -66,7 +66,7 @@
 		spawn_check = function() 
 			local year, month, day = GameGetDateAndTimeLocal()
 			
-			if ( month == 12 ) and ( day >= 22 ) then
+            if ( month == 11 ) and (( day >= 3 ) and ( day <= 5 )) then
 				return true
 			else
 				return false 

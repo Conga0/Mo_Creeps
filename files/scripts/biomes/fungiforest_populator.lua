@@ -89,13 +89,15 @@ table.insert(g_small_enemies,
     entity     = "data/entities/animals/fungiforest/shaman_greater_mocreep.xml"
 })
 
-table.insert(g_small_enemies,
-{
-    prob           = 0.2,
-    min_count    = 1,
-    max_count    = 1,    
-    entity     = "data/entities/animals/blob_big.xml"
-})
+if ModIsEnabled("worse_enemies") == false then
+    table.insert(g_small_enemies,
+    {
+        prob           = 0.2,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/blob_big.xml"
+    })
+end
 
 
 

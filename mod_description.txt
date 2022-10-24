@@ -1,7 +1,7 @@
+[img]https://i.imgur.com/Ko6YxFl.png[/img]
+
 Adds various new Creeps & Weirdos to the world of Noita, including new characters such as:
 The Master of Mallards, the species of Porings, bigger scarier Elemental Wizards and much more to explore for yourself!
-(For a full list, view the document here, big spoilers)
-
 
 Implements 69 new enemies, 4 new bosses and 7 attainable trophies to unlock.. but maybe there could be a few more hidden secrets too.
 Adds 26 new spells if you can conquer powerful foes.
@@ -9,12 +9,12 @@ And an extra 2 more for free unlocked by default.
 With maybe a bit more for you to find too.
 
 Seasonal events include:
-September 22nd
-Halloween October 3rd to 31st
+MoCreeps Birthday November 3rd to 5th
+Halloween October 11th to 31st
 Smissmass December 22nd to 31st
 
 
-
+[img]https://i.imgur.com/8JSYiR6.png[/img]
 
 Compatiable with:
 Worse Enemies
@@ -24,14 +24,21 @@ Alternate Biomes
 Volcano Biome
 Flesh Biome
 Conjurer
-Copi's Things [Must be higher in load order than MoCreeps, or some enemies may break] (Remove this listing if Copi's things is to-be release when this mod is out, comment out relevent beggar code too)
+Copi's Things [Must be higher in load order than MoCreeps, or some enemies may break]
 Chemical Curiosities
 Sewer 1.0
 Twitch Integration
 Nightmare
 Purgatory (recommended over nightmare for encountering bosses)
 Removable Perks
+& Should be compatiable with most, if not all other mods if More Creeps is put below them.
 
 Also fixes the missing Icemage spawn in the frozen vault.
+
+
+[img]https://i.imgur.com/32H75yO.png[/img]
+
+Full Enemy Documentation here: (Big Spoilers)
+https://docs.google.com/document/d/1-7GilR082unPHkreG5eIm8WFde2kGcc9tTXRp5YH0LQ/edit?usp=sharing
 
 This mod doesn't override any existing files, it is safe to put at the bottom of your load order for maximum compatibility.

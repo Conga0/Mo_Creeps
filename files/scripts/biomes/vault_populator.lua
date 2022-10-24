@@ -52,13 +52,15 @@
         entity     = "data/entities/animals/wraith_weirdo_shield.xml"
     })
 
-    table.insert(g_big_enemies,
-    {
-        prob           = 0.2,
-        min_count    = 1,
-        max_count    = 1,    
-        entity     = "data/entities/animals/blob_big.xml"
-    })
+    if ModIsEnabled("worse_enemies") == false then
+        table.insert(g_big_enemies,
+        {
+            prob           = 0.2,
+            min_count    = 1,
+            max_count    = 1,    
+            entity     = "data/entities/animals/blob_big.xml"
+        })
+    end
 
 
 

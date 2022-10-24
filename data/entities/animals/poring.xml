@@ -31,7 +31,7 @@
         <DamageModelComponent
             hp="1.5"
             air_needed="0"
-            ragdoll_filenames_file=""
+			ragdoll_filenames_file="" 
 			ragdoll_fx_forced="DISINTEGRATED"
 			blood_material="slime"
 			blood_spray_material="slime"
