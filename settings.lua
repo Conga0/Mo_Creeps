@@ -12,7 +12,7 @@ mod_settings =
     id = "congacat_cat_immortal",
     ui_name = "Cat immortality",
     ui_description = "Are cats immortal?",
-    value_default = false,
+    value_default = true,
     scope = MOD_SETTING_SCOPE_NEW_GAME,
   },
   {
@@ -32,7 +32,7 @@ mod_settings =
   {
     id = "motd_setting",
     ui_name = "Message of the Day",
-    ui_description = "Will an MOTD be displayed at the start of each run? \nMay contain bonus hints for various secrets.",
+    ui_description = "Will a MOTD be displayed at the start of each run? \nMay contain bonus hints for various secrets.",
     value_default = false,
     scope = MOD_SETTING_SCOPE_NEW_GAME,
   },

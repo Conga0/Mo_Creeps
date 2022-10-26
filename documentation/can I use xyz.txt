@@ -3,6 +3,9 @@ I do not grant you permission to use any of the graphical work I have created fo
 If you are interested in using any graphical work in your own projects, please talk to me first, it would be easiest for me to reach you at Conga Lyne#2452.
 
 All files inside of Mo_Creeps/files/enemies_gfx/cats and any of it's sub-files are not created by me and I can not give permission for you to use them.
+The files blob_big.xml and blob_big.png within Mo_Creeps/files/enemies_gfx are not created by me and I can not give permission for you to use them.
+The Cat meowing audio files within More Creeps & Weirdos is not voiced by me and I can not give permission for you to use it.
+
 
 
 

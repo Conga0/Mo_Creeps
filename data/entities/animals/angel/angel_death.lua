@@ -42,7 +42,9 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 		EntityLoad( "data/entities/items/pickup/heart_fullhp.xml",  pos_x, pos_y )
 	end
 	
-	AddFlagPersistent( "mocreeps_card_unlocked_divinebeing" )
+	if ModIsEnabled("raksa") == false then
+		AddFlagPersistent( "mocreeps_card_unlocked_divinebeing" )
+	end
 	
 	--StatsLogPlayerKill( entity_id )
 

@@ -5,7 +5,7 @@ local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
 local content = ModTextFileGetContent("data/biome/_pixel_scenes_newgame_plus.xml")
 local xml = nxml.parse(content)
 xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-  <PixelScene DEBUG_RELOAD_ME="0" clean_area_before="0" pos_x="2027" pos_y="2100" skip_biome_checks="1" skip_edge_textures="0"
+  <PixelScene DEBUG_RELOAD_ME="0" clean_area_before="0" pos_x="2097" pos_y="2100" skip_biome_checks="1" skip_edge_textures="0"
     material_filename="mods/mo_creeps/files/pixel_scenes/toxic_worm_nest/toxic_worm_nest.png"
     background_filename="mods/mo_creeps/files/pixel_scenes/toxic_worm_nest/toxic_worm_nest_background.png"
     colors_filename="mods/mo_creeps/files/pixel_scenes/toxic_worm_nest/toxic_worm_nest_visual.png"
@@ -80,14 +80,14 @@ local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
 local content = ModTextFileGetContent("data/biome/_pixel_scenes_newgame_plus.xml")
 local xml = nxml.parse(content)
 xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-  <PixelScene DEBUG_RELOAD_ME="0" clean_area_before="0" pos_x="2550" pos_y="8777" skip_biome_checks="1" skip_edge_textures="0"
+  <PixelScene DEBUG_RELOAD_ME="0" clean_area_before="0" pos_x="2520" pos_y="8777" skip_biome_checks="1" skip_edge_textures="0"
     material_filename="mods/mo_creeps/files/pixel_scenes/blob_cavern/blob_cavern_1.png"
     background_filename="mods/mo_creeps/files/pixel_scenes/blob_cavern/blob_cavern_1_bg.png"
     colors_filename=""
   ></PixelScene>
 ]]))
 xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-  <PixelScene DEBUG_RELOAD_ME="0" clean_area_before="0" pos_x="3388" pos_y="8777" skip_biome_checks="1" skip_edge_textures="0"
+  <PixelScene DEBUG_RELOAD_ME="0" clean_area_before="0" pos_x="3358" pos_y="8777" skip_biome_checks="1" skip_edge_textures="0"
     material_filename="mods/mo_creeps/files/pixel_scenes/blob_cavern/blob_cavern_2.png"
     background_filename="mods/mo_creeps/files/pixel_scenes/blob_cavern/blob_cavern_2_bg.png"
     colors_filename=""

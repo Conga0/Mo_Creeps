@@ -26,6 +26,14 @@ function material_area_checker_success( pos_x, pos_y )
         CreateItemActionEntity(opts[rnd], pos_x - 8 * count + (i - 0.5) * 16, pos_y)
         table.remove(opts, rnd)
     end
+    
+	local has_already_found_battery = GameHasFlagRun("mocreep_temp_battery_donated")
+
+    if (Random(1,10) == 10) and (has_already_found_battery == false) then
+		EntityLoad( "mods/mo_creeps/files/entities/items/wands/custom/mana_battery.xml", x, y - 12 )
+        GameAddFlagRun( "mocreep_temp_battery_donated" )
+    end
+    
 
     --GamePrint("Hobo Richified")
 
@@ -33,11 +41,13 @@ function material_area_checker_success( pos_x, pos_y )
 	EntityLoad("data/entities/animals/hisii_hobo_rich.xml", x, y)
     EntityKill(entity_id)
 	
-	AddFlagPersistent( "mocreeps_card_unlocked_donated_beggar" )
+    if ModIsEnabled("raksa") == false then
+	    AddFlagPersistent( "mocreeps_card_unlocked_donated_beggar" )
 
-	if ModIsEnabled("nightmare") or ModIsEnabled("purgatory") then
-		AddFlagPersistent( "mocreeps_card_unlocked_donated_beggar_goldmode" )
-	end
+        if ModIsEnabled("nightmare") or ModIsEnabled("purgatory") then
+            AddFlagPersistent( "mocreeps_card_unlocked_donated_beggar_goldmode" )
+        end
+    end
 
 end
 

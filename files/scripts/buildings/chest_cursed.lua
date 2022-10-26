@@ -162,8 +162,13 @@ function item_pickup( entity_item, entity_who_picked, name )
         table.remove(prizeSpells, rnd)
     end
 
-    if Random(0,1) == 1 then
-        CreateItemActionEntity("MOCREEPS_HOLYORB_SHOTGUN_CURSED", x , y - 8)
+    
+	local flag_status = HasFlagPersistent( "mocreeps_card_unlocked_divinebeing" )
+
+    if flag_status then
+        if Random(0,1) == 1 then
+            CreateItemActionEntity("MOCREEPS_HOLYORB_SHOTGUN_CURSED", x , y - 8)
+        end
     end
 
 

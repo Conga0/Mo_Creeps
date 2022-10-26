@@ -23,9 +23,11 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
             EntityLoad( "data/entities/items/pickup/heart_fullhp.xml",  pos_x + 8, pos_y )
         end
 	
-	GameAddFlagRun( "mocreeps_miniboss_boss_toxic_worm" )
-	AddFlagPersistent( "mocreeps_card_unlocked_boss_toxic_worm" )
-	AddFlagPersistent( "mocreeps_card_unlocked_boss_toxic_worm_goldmode" )
+	if ModIsEnabled("raksa") == false then
+		GameAddFlagRun( "mocreeps_miniboss_boss_toxic_worm" )
+		AddFlagPersistent( "mocreeps_card_unlocked_boss_toxic_worm" )
+		AddFlagPersistent( "mocreeps_card_unlocked_boss_toxic_worm_goldmode" )
+	end
 	
 	--StatsLogPlayerKill( entity_id )
 

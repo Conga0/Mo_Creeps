@@ -17,8 +17,10 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 		EntityLoad( "mods/mo_creeps/files/entities/items/wands/custom/wand_of_wonders.xml", pos_x, pos_y )
 	end
 	
-	GameAddFlagRun( "mocreeps_miniboss_divinebeing" )
-	AddFlagPersistent( "mocreeps_card_unlocked_divinebeing" )
+	if ModIsEnabled("raksa") == false then
+		GameAddFlagRun( "mocreeps_miniboss_divinebeing" )
+		AddFlagPersistent( "mocreeps_card_unlocked_divinebeing" )
+	end
 	
 	--StatsLogPlayerKill( entity_id )
 

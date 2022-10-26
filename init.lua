@@ -477,7 +477,7 @@ end
 
 
 
--- Custom Status support injection
+-- Custom Perk support injection
 
 ModLuaFileAppend( "data/scripts/perks/perk_list.lua", "mods/mo_creeps/files/scripts/perks/custom_perks.lua" )
 
@@ -628,16 +628,19 @@ if seasonalSetting == true then
     local content = ModTextFileGetContent("data/entities/animals/poring.xml")
     local xml = nxml.parse(content)
     xml:first_of("Base"):first_of("SpriteComponent").attr.image_file = "mods/Mo_Creeps/files/enemies_gfx/poring_halloween.xml"
+    xml:first_of("Base"):first_of("DamageModelComponent").attr.ragdoll_filenames_file = "mods/Mo_Creeps/files/ragdolls/poring_halloween/filenames.txt"
     ModTextFileSetContent("data/entities/animals/poring.xml", tostring(xml))
 
     local content = ModTextFileGetContent("data/entities/animals/coal_mines/poring.xml")
     local xml = nxml.parse(content)
     xml:first_of("Base"):first_of("SpriteComponent").attr.image_file = "mods/Mo_Creeps/files/enemies_gfx/poring_halloween_weak.xml"
+    xml:first_of("Base"):first_of("DamageModelComponent").attr.ragdoll_filenames_file = "mods/Mo_Creeps/files/ragdolls/poring_halloween_weak/filenames.txt"
     ModTextFileSetContent("data/entities/animals/coal_mines/poring.xml", tostring(xml))
 
     local content = ModTextFileGetContent("data/entities/animals/psychotic/poring.xml")
     local xml = nxml.parse(content)
     xml:first_of("Base"):first_of("SpriteComponent").attr.image_file = "mods/Mo_Creeps/files/enemies_gfx/poring_halloween.xml"
+    xml:first_of("Base"):first_of("DamageModelComponent").attr.ragdoll_filenames_file = "mods/Mo_Creeps/files/ragdolls/poring_halloween/filenames.txt"
     ModTextFileSetContent("data/entities/animals/psychotic/poring.xml", tostring(xml))
 
   end

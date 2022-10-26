@@ -44,7 +44,9 @@ function death(damage_type_bit_field, damage_message, entity_thats_responsible, 
             end
         end
 
-        AddFlagPersistent( "mocreeps_card_unlocked_blob_boss" )
+        if ModIsEnabled("raksa") == false then
+            AddFlagPersistent( "mocreeps_card_unlocked_blob_boss" )
+        end
     end
 end
 

@@ -3,7 +3,7 @@
 Adds various new Creeps & Weirdos to the world of Noita, including new characters such as:
 The Master of Mallards, the species of Porings, bigger scarier Elemental Wizards and much more to explore for yourself!
 
-Implements 69 new enemies, 4 new bosses and 7 attainable trophies to unlock.. but maybe there could be a few more hidden secrets too.
+Implements 69 new enemies, 4 new bosses and 8 attainable trophies to unlock.. but maybe there could be a few more hidden secrets too.
 Adds 26 new spells if you can conquer powerful foes.
 And an extra 2 more for free unlocked by default.
 With maybe a bit more for you to find too.
@@ -38,7 +38,9 @@ Also fixes the missing Icemage spawn in the frozen vault.
 
 [img]https://i.imgur.com/32H75yO.png[/img]
 
-Full Enemy Documentation here: (Big Spoilers)
+Full Enemy, Spell & Perk Documentation here: (Big Spoilers)
 https://docs.google.com/document/d/1-7GilR082unPHkreG5eIm8WFde2kGcc9tTXRp5YH0LQ/edit?usp=sharing
 
 This mod doesn't override any existing files, it is safe to put at the bottom of your load order for maximum compatibility.
+
+If you like this mod and want others to see it, one quick thing you can do is leave a like to bring more eyes towards this project

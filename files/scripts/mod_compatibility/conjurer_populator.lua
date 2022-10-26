@@ -416,6 +416,11 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/bubbles/cat_wand.png",
 	  },
 	  {
+		name="Mana Battery",
+		path="mods/mo_creeps/files/entities/items/wands/custom/mana_battery.xml",
+		image="data/ui_gfx/bubbles/mana_battery.png",
+	  },
+	  {
 		name="Nightmare Divine Being",
 		path="data/entities/animals/gold_bosses/angel/angel.xml",
 		image="data/ui_gfx/gold_boss/angel.png",

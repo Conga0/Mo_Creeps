@@ -19,8 +19,10 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 		EntityLoad( "data/entities/items/pickup/heart_fullhp.xml",  pos_x - 8, pos_y )
 	end
 	
-	GameAddFlagRun( "mocreeps_miniboss_musical_boss" )
-	AddFlagPersistent( "mocreeps_card_unlocked_musical_boss" )
+	if ModIsEnabled("raksa") == false then
+		GameAddFlagRun( "mocreeps_miniboss_musical_boss" )
+		AddFlagPersistent( "mocreeps_card_unlocked_musical_boss" )
+	end
 	
 	--StatsLogPlayerKill( entity_id )
 

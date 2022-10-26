@@ -1,0 +1,5 @@
+mods/mo_creeps/files/ragdolls/poring_weak/chunk_01.png
+mods/mo_creeps/files/ragdolls/poring_weak/chunk_02.png
+mods/mo_creeps/files/ragdolls/poring_weak/chunk_03.png
+mods/mo_creeps/files/ragdolls/poring_weak/chunk_04.png
+mods/mo_creeps/files/ragdolls/poring_weak/chunk_05.png

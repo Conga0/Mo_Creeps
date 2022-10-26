@@ -6,14 +6,16 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 	local pos_x, pos_y = EntityGetTransform( entity_id )
 	local seasonalSetting = ModSettingGet( "mo_creeps.seasonal_events" )
 
+	local eid
+
 	if seasonalSetting == true then
 		if ( month == 12 ) and ( day >= 22 ) then
-			local eid = EntityLoad( "data/entities/animals/miner_santa.xml", pos_x, pos_y )
+			eid = EntityLoad( "data/entities/animals/miner_santa.xml", pos_x, pos_y )
 		else
-			local eid = EntityLoad( "data/entities/animals/miner_weak.xml", pos_x, pos_y )
+			eid = EntityLoad( "data/entities/animals/miner_weak.xml", pos_x, pos_y )
 		end
 	else
-		local eid = EntityLoad( "data/entities/animals/miner_weak.xml", pos_x, pos_y )
+		eid = EntityLoad( "data/entities/animals/miner_weak.xml", pos_x, pos_y )
 	end
 	
 	EntityAddComponent( eid, "LuaComponent", 

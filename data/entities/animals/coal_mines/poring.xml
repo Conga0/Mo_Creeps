@@ -29,13 +29,14 @@
         <DamageModelComponent
             hp="1.2"
             air_needed="0"
-            ragdoll_filenames_file=""
-			ragdoll_fx_forced="DISINTEGRATED"
+			ragdoll_filenames_file="mods/Mo_Creeps/files/ragdolls/poring_weak/filenames.txt"
+			ragdoll_material="meat_slime"
 			blood_material="slime"
 			blood_spray_material="slime"
 			blood_multiplier="0.35"
 			blood_sprite_directional=""
 			blood_sprite_large=""
+			ragdoll_blood_amount_absolute="30"
 			materials_that_damage="lava,poison,blood_cold,blood_cold_vapour,acid,poison" 
 			materials_how_much_damage="0.004,0.001,0.0008,0.0007,0.005,0.001"
 			>

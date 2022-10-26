@@ -7,8 +7,8 @@
             sense_creatures="1"
             attack_melee_max_distance="12" 
     		attack_dash_enabled="1"
-			attack_melee_damage_min="1.6" 
-			attack_melee_damage_max="1.4"
+			attack_melee_damage_min="0.9" 
+			attack_melee_damage_max="1.2"
 			attack_dash_distance="80"
 			creature_detection_range_x="200"
 			creature_detection_range_y="200"  >

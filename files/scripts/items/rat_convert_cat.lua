@@ -11,10 +11,12 @@ function collision_trigger()
 	GamePlaySound( "data/audio/Desktop/event_cues.snd", "event_cues/treble_eye/create", pos_x, pos_y)
 	GamePlaySound( "data/audio/Desktop/animals.snd", "animals/rat/death", pos_x, pos_y)
 
-	AddFlagPersistent( "mocreeps_card_unlocked_cat_secret" )
+	if ModIsEnabled("raksa") == false then
+		AddFlagPersistent( "mocreeps_card_unlocked_cat_secret" )
 
-	if ModIsEnabled("nightmare") or ModIsEnabled("purgatory") then
-		AddFlagPersistent( "mocreeps_card_unlocked_cat_secret_goldmode" )
+		if ModIsEnabled("nightmare") or ModIsEnabled("purgatory") then
+			AddFlagPersistent( "mocreeps_card_unlocked_cat_secret_goldmode" )
+		end
 	end
 
 	EntityKill( entity_id )

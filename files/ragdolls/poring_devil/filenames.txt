@@ -1,0 +1,6 @@
+mods/mo_creeps/files/ragdolls/poring_devil/chunk_01.png
+mods/mo_creeps/files/ragdolls/poring_devil/chunk_02.png
+mods/mo_creeps/files/ragdolls/poring_devil/chunk_03.png
+mods/mo_creeps/files/ragdolls/poring_devil/chunk_04.png
+mods/mo_creeps/files/ragdolls/poring_devil/chunk_05.png
+mods/mo_creeps/files/ragdolls/poring_devil/core.png
