@@ -3,7 +3,7 @@
   <CellDataChild
   	_parent="meat"
 	name="mocreeps_meat_rage"
-	ui_name="Irritating Meat"
+	ui_name="$material_mocreep_meat_irritating"
 	wang_color="ffbbf112"
 	solid_on_collision_material="blood"
 	solid_break_to_type="blood"
@@ -22,7 +22,7 @@
   <CellDataChild
   	_parent="meat_slime"
 	name="mocreeps_meat_toxic_worm_cure"
-	ui_name="Decaying Meat"
+	ui_name="$material_mocreep_meat_decaying"
 	solid_break_to_type="radioactive_liquid"
 	solid_restitution="0.4"
 	wang_color="ffed4d4d"
@@ -42,7 +42,7 @@
   <CellDataChild
   	_parent="meat"
 	name="mocreeps_meat_duck"
-	ui_name="Feathery Meat"
+	ui_name="$material_mocreep_meat_feathery"
 	solid_break_to_type="blood"
 	solid_restitution="0.4"
 	wang_color="ffed4d4e"
@@ -63,7 +63,7 @@
   	_parent="sand"
   	_inherit_reactions="1"
   	name="mocreeps_sand_pink" 
-	ui_name="Pink Sand"
+	ui_name="$material_mocreep_sand_pink"
 	wang_color="ffca3e9c"
 	show_in_creative_mode="1"
 	>
@@ -77,7 +77,7 @@
   	_parent="magic_liquid_protection_all"
   	_inherit_reactions="1"
   	name="mocreeps_magic_liquid_protection_all_fading" 
-	ui_name="Ambrosia"
+	ui_name="$mat_magic_liquid_protection_all"
   	tags="[liquid],[water],[magic_liquid],[soluble],[evaporable_fast],[impure]"
 	wang_color="80df9829"
 	show_in_creative_mode="1"
@@ -87,7 +87,7 @@
   <CellDataChild
   	_parent="water"
 	name="mocreeps_water_fading_fast"
-	ui_name="Water"
+	ui_name="$mat_water"
   	tags="[evaporable]"
 	wang_color="902F354D"
 	warmth_melts_to_material="steam"
@@ -102,7 +102,7 @@
 
   <CellData
 	name="mocreeps_cloud_poison"
-	ui_name="Poisonous Mist"
+	ui_name="$material_mocreep_mist_poison"
   	tags="[liquid],[impure],[slime],[liquid_common]"
 	burnable="0"
 	density="1"
@@ -133,7 +133,7 @@
 
   <CellData
 	name="mocreeps_redstone"
-	ui_name="Red Sand"
+	ui_name="$material_mocreep_sand_red"
   	tags="[sand_ground],[corrodible],[meltable_to_lava_fast],[alchemy]"
 	burnable="0"
 	density="6"
@@ -177,7 +177,7 @@
   
   <CellDataChild
   	name="mocreeps_crystal_green" 
-	ui_name="Green Gem"
+	ui_name="$material_mocreep_gem_green"
   	_parent="crystal"
   	_inherit_reactions="1"
 	wang_color="ffb3df4b" 
@@ -192,7 +192,7 @@
 
   <CellData
 	name="mocreeps_magic_liquid_divine"
-	ui_name="Divine Liquid"
+	ui_name="$material_mocreep_magic_divine_liquid"
   	tags="[liquid],[water],[magic_liquid],[impure]"
 	burnable="0"
 	density="5.12"
@@ -237,7 +237,7 @@
   	_parent="spark"
   	_inherit_reactions="1"
   	name="mocreeps_spark_orange" 
-	ui_name="Orange Spark"
+	ui_name="$material_mocreep_spark_orange"
 	wang_color="7fff9313"
 	gfx_glow="90"
 	>
@@ -251,7 +251,7 @@
   	_parent="blood_worm"
   	_inherit_reactions="1"
   	name="mocreeps_blood_worm_centipede" 
-	ui_name="Centipede Blood"
+	ui_name="$material_mocreep_blood_centipede"
 	wang_color="ffca3e9d"
 	show_in_creative_mode="1"
 	>
@@ -263,7 +263,7 @@
 
   <CellData
 	name="mocreeps_insect_husk"
-	ui_name="Insect Husk"
+	ui_name="$material_mocreep_sand_insect_husk"
   	tags="[sand_other],[corrodible],[burnable],[alchemy]"
 	burnable="1"
 	density="6"
@@ -293,7 +293,7 @@
   <CellDataChild
   	_parent="meat"
 	name="mocreeps_meat_centipede"
-	ui_name="Centipede Meat"
+	ui_name="$material_mocreep_meat_centipede"
 	wang_color="ffebcda2"
 	solid_on_collision_material="mocreeps_blood_worm_centipede"
 	solid_break_to_type="mocreeps_blood_worm_centipede"
@@ -314,7 +314,7 @@
   	_parent="urine"
   	_inherit_reactions="1"
   	name="mocreeps_urine_fading" 
-	ui_name="Urine"
+	ui_name="$mat_urine"
   	tags="[liquid],[soluble],[evaporable]"
 	wang_color="33FFEE01"
 	show_in_creative_mode="1"
@@ -349,6 +349,12 @@
 	blob_radius1="6"						blob_radius2="3"
 	blob_restrict_to_input_material1="1" 	blob_restrict_to_input_material2="1"
 	audio_fx_volume_1="100.0" >
+  </Reaction>
+
+  <Reaction probability="20"
+	input_cell1="water_fading" 	input_cell2="radioactive_liquid"
+	output_cell1="water_fading" 	output_cell2="water"
+	>
   </Reaction>
 
 </Materials>

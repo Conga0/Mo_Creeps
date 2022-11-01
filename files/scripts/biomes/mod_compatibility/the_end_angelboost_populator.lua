@@ -1,3 +1,9 @@
+local mocreep_HardmodeCheck = false
+
+if ModIsEnabled("nightmare") or ModIsEnabled("purgatory") then
+    mocreep_HardmodeCheck = true
+end
+
 ---Hell enemies 
 
 if mocreep_HardmodeCheck then 
@@ -48,12 +54,12 @@ else
     })
 end
 
-table.insert(g_big_enemies_sky,
+table.insert(g_small_enemies_sky,
 {
-    prob           = 0.08,
+    prob           = 0.12,
     min_count    = 1,
     max_count    = 1,    
-    entity     = "data/entities/animals/angel.xml"
+    entity     = "data/entities/animals/poring_holy.xml"
 })
 
 

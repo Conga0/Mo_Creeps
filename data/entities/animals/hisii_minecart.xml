@@ -39,7 +39,8 @@
     		blood_material="mocreeps_spark_orange" 
     		blood_spray_material="mocreeps_spark_orange"
 			blood_multiplier="0.2"
-            blood_spray_create_some_cosmetic="1" >
+            blood_spray_create_some_cosmetic="1"
+			ragdoll_fx_forced="NONE" >
 		</DamageModelComponent>
 
 		<SpriteComponent 

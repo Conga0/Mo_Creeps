@@ -161,3 +161,15 @@ xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
 ]]))
 ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
  
+
+ 
+
+
+----Sets up the Trophy Room for spawning
+--local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
+--local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
+--local xml = nxml.parse(content)
+--xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+--    <PixelScene pos_x="227" pos_y="-93" just_load_an_entity="data/entities/buildings/pride_statue_room_injector.xml" />
+--]]))
+--ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))

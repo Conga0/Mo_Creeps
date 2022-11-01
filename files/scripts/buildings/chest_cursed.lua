@@ -3,7 +3,6 @@ dofile_once("data/scripts/lib/utilities.lua")
 
 local pool = {
     "blindgazer",
-    "blob",
     "blob_big",
     "blob_huge",
     "cat_mocreeps",
@@ -12,8 +11,6 @@ local pool = {
     "devourer_ghost",
     "devourer_magic",
     "drone_mini",
-    "enchanted_duck",
-    "fairy_cheap",
     "fairy_big",
     "fairy_big_discord",
     "fairy_esoteric",
@@ -202,6 +199,8 @@ function item_pickup( entity_item, entity_who_picked, name )
     EntityLoad( "data/entities/items/pickup/heart.xml", x, y )
     EntityLoad( "data/entities/items/pickup/heart_fullhp.xml",  x, y )
     EntityLoad( "data/entities/animals/worm_big.xml",  x + 100, y + 250 )
+
+    EntityKill( entity_item )
 
 end
 

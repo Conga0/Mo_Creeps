@@ -28,4 +28,10 @@
 
 	</Base>
 
+    <LuaComponent
+        execute_every_n_frame="-1"
+        script_death="data/scripts/items/drop_money.lua"
+        remove_after_executed="1" >
+    </LuaComponent>
+
 </Entity>

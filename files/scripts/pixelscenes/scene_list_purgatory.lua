@@ -33,7 +33,7 @@ local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
 local content = ModTextFileGetContent("mods/purgatory/files/biome/_pixel_scenes.xml")
 local xml = nxml.parse(content)
 xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-  <PixelScene DEBUG_RELOAD_ME="0" clean_area_before="0" pos_x="15110" pos_y="10614" skip_biome_checks="1" skip_edge_textures="0"
+  <PixelScene DEBUG_RELOAD_ME="0" clean_area_before="0" pos_x="12610" pos_y="10614" skip_biome_checks="1" skip_edge_textures="0"
     material_filename="mods/mo_creeps/files/pixel_scenes/sandy_assembly/sandy_assembly.png"
     background_filename="mods/mo_creeps/files/pixel_scenes/sandy_assembly/sandy_assembly_background.png"
     colors_filename="mods/mo_creeps/files/pixel_scenes/sandy_assembly/sandy_assembly_visual.png"

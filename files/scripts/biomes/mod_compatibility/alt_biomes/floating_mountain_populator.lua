@@ -1,3 +1,8 @@
+local mocreep_HardmodeCheck = false
+
+if ModIsEnabled("nightmare") or ModIsEnabled("purgatory") then
+    mocreep_HardmodeCheck = true
+end
 
 ---Heaven enemies
 
@@ -27,13 +32,24 @@
         entity     = "data/entities/animals/the_end/gazer_greater_cold.xml"
     })
 
-    table.insert(g_big_enemies_sky,
-    {
-        prob           = 0.04,
-        min_count    = 1,
-        max_count    = 1,    
-        entity     = "data/entities/animals/angel.xml"
-    })
+    if mocreep_HardmodeCheck then 
+        table.insert(g_big_enemies_sky,
+        {
+            prob           = 0.04,
+            min_count    = 1,
+            max_count    = 1,    
+            entity     = "data/entities/animals/gold_bosses/angel/angel.xml"
+        })
+    else
+        table.insert(g_big_enemies_sky,
+        {
+            prob           = 0.04,
+            min_count    = 1,
+            max_count    = 1,    
+            entity     = "data/entities/animals/angel.xml"
+        })
+    end
+    
 
 
 

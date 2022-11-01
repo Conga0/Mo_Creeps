@@ -27,7 +27,7 @@
         </SpriteComponent>
 
         <DamageModelComponent
-            hp="1.2"
+            hp="1.0"
             air_needed="0"
 			ragdoll_filenames_file="mods/Mo_Creeps/files/ragdolls/poring_weak/filenames.txt"
 			ragdoll_material="meat_slime"

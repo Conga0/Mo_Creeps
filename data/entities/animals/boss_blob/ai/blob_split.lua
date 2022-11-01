@@ -28,7 +28,7 @@ function damage_received( damage, desc, entity_who_caused, is_fatal )
 	local new_health = health - damage
 	local nearest_interval = math.floor( health / minion_interval ) * minion_interval
 	
-	local limit = 7
+	local limit = 4
 	local count = 0
 	
 	while (nearest_interval > new_health) and (count < limit) and (nearest_interval >= 0) do

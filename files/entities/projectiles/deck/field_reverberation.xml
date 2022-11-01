@@ -1,4 +1,4 @@
-<Entity name="$projectile_default" tags="projectile_player">
+<Entity name="$projectile_default" tags="projectile_player,musical_stone">
 	<GameAreaEffectComponent
   		radius="28" >
 	</GameAreaEffectComponent>
@@ -176,6 +176,15 @@
     damage_type="DAMAGE_SLICE"
     ragdoll_fx="NONE">
 	</DamageNearbyEntitiesComponent>
+
+	<LightComponent 
+		_tags="musical_stone"
+	_enabled="1" 
+	radius="0" 
+	r="30"
+	g="30"
+	b="60">
+	</LightComponent>
 
 	<VariableStorageComponent
 		name="projectile_file"

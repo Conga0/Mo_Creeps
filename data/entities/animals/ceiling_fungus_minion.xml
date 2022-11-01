@@ -1,4 +1,4 @@
-<Entity name="$animal_fungus_tiny" tags="fungus_tiny_bad" >
+<Entity name="Pieni räjähtävä sieni" tags="fungus_tiny_bad" >
   
 	<Base file="data/entities/base_enemy_basic.xml" >
 		<ItemChestComponent level="2" enemy_drop="1" > </ItemChestComponent>
@@ -18,7 +18,7 @@
 		</AnimalAIComponent>
 		
 		<DamageModelComponent 
-            hp="0.4"
+            hp="0.3"
 			air_needed="0"
 			ragdoll_filenames_file="" 
 			fire_probability_of_ignition="100" 
@@ -158,8 +158,8 @@
     lifetime_max="1.8"
     create_real_particles="1"
     emit_cosmetic_particles="0"
-    emission_interval_min_frames="10"
-    emission_interval_max_frames="35"
+    emission_interval_min_frames="60"
+    emission_interval_max_frames="115"
     is_emitting="1" >
   </ParticleEmitterComponent>
 	

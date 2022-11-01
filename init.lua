@@ -1,9 +1,9 @@
 dofile("data/scripts/lib/utilities.lua")
 
 local modCompatibilityConjurer = ModSettingGet( "mo_creeps.mod_compat_mode_conjurer" )
+local modCompatibilitySpellEvolutions = ModSettingGet( "mo_creeps.mod_compat_mode_spell_evolution" )
 local motdSetting = ModSettingGet( "mo_creeps.motd_setting" )
 local seasonalSetting = ModSettingGet( "mo_creeps.seasonal_events" )
-Mocreeps_global_splitseed = 1
 
 --Spawn Bosses
 
@@ -18,6 +18,8 @@ if modCompatibilityConjurer == true then
     if ModIsEnabled("purgatory") then
       dofile_once( "mods/mo_creeps/files/scripts/pixelscenes/scene_list_purgatory.lua" )
       --dofile_once( "mods/mo_creeps/files/scripts/pixelscenes/scene_list_purgatory_NGPlus.lua" )
+    elseif ModIsEnabled("noitavania") then
+      dofile_once( "mods/mo_creeps/files/scripts/pixelscenes/scene_list_noitavania.lua" )
     else
       dofile_once( "mods/mo_creeps/files/scripts/pixelscenes/scene_list.lua" )
       dofile_once( "mods/mo_creeps/files/scripts/pixelscenes/scene_list_NGPlus.lua" )
@@ -27,6 +29,8 @@ else
   if ModIsEnabled("purgatory") then
     dofile_once( "mods/mo_creeps/files/scripts/pixelscenes/scene_list_purgatory.lua" )
     --dofile_once( "mods/mo_creeps/files/scripts/pixelscenes/scene_list_purgatory_NGPlus.lua" )
+  elseif ModIsEnabled("noitavania") then
+    dofile_once( "mods/mo_creeps/files/scripts/pixelscenes/scene_list_noitavania.lua" )
   else
     dofile_once( "mods/mo_creeps/files/scripts/pixelscenes/scene_list.lua" )
     dofile_once( "mods/mo_creeps/files/scripts/pixelscenes/scene_list_NGPlus.lua" )
@@ -89,12 +93,12 @@ book_mocreeps_motd_description_020,"Message of the Day \nThe coldest Magical tem
 book_mocreeps_motd_description_021,"Message of the Day \nAngelings and Devilings distance themselves.",,,,,,,,,,,,,
 book_mocreeps_motd_description_022,"Message of the Day \nWith truly divine purpose.",,,,,,,,,,,,,
 book_mocreeps_motd_description_023,"Message of the Day \nPerhaps not every creep is a hostile. \nPerhaps not every crystal is a threat.",,,,,,,,,,,,,
-book_mocreeps_motd_description_024,"Message of the Day \nAlso try Congas Cats! \n...Just not with More Creeps enabled. \nMore Creeps cats override Congas Cats cats... Update your settings!!!",,,,,,,,,,,,,
+book_mocreeps_motd_description_024,"Message of the Day \nAlso try Congas Cats! ...Just not with More Creeps enabled. \nMore Creeps cats override Congas Cats cats... Update your settings!!!",,,,,,,,,,,,,
 book_mocreeps_motd_description_025,"Message of the Day \nFun Fact, Despite this mod releasing on 24/10/2022, \nthe birthday event occurs in November to avoid clashing with Halloween.",,,,,,,,,,,,,
 book_mocreeps_motd_description_026,"Message of the Day \nGoodluck and have fun!. \nIf you're feeling frustrated or stressed, remember to take a break.",,,,,,,,,,,,,
 book_mocreeps_motd_description_027,"Message of the Day \nI believe in you.",,,,,,,,,,,,,
 book_mocreeps_motd_description_028,"Message of the Day \nThe pyramid isn't quite so safe anymore. \nBut may hold divine knowledge.",,,,,,,,,,,,,
-book_mocreeps_motd_description_029,"Message of the Day \nCross the sea of lava. \nGo where you would not normal. \nThere I will humour you.",,,,,,,,,,,,,
+book_mocreeps_motd_description_029,"Message of the Day \nCross the sea of lava, Go where you would not normal. \nThere I will humour you.",,,,,,,,,,,,,
 book_mocreeps_motd_description_030,"Message of the Day \nHappy today! Good Now, be happy you're still here!",,,,,,,,,,,,,
 book_mocreeps_motd_description_031,"Message of the Day \nDon't visit the Toxic Worm Nest at 3 am.",,,,,,,,,,,,,
 item_mocreeps_chest_cursed,"Pandora's Chest",,,,,,,,,,,,,
@@ -106,6 +110,104 @@ status_mocreep_magicurine_ui,"Magical Jarate",,,,,,,,,,,,,
 statusdesc_mocreep_magicurine_ui,"Wet clothes protect you from fire. \nYou sense an increased chance of recieving critical strikes.",,,,,,,,,,,,,
 status_mocreep_magicpolymorph_ui,"Magical Polymorph",,,,,,,,,,,,,
 statusdesc_mocreep_magicpolymorph_ui,"You have been polymorphed into a vulnerable sheep!",,,,,,,,,,,,,
+log_mocreep_reality_mutation_00,"YOU SENSE THE REALITY HAS SHIFTED",,,,,,,,,,,,,
+log_mocreep_reality_mutation_01,"YOU FEEL THE WORLD'S CREATURES HAVE CHANGED",,,,,,,,,,,,,
+log_mocreep_reality_mutation_02,"THE WORLD'S LIFE HAS BEEN SHAKEN",,,,,,,,,,,,,
+log_mocreep_reality_mutation_03,"YOU SENSE THE PATH OF EVOLUTION HAS CHANGED",,,,,,,,,,,,,
+log_mocreep_reality_mutation_04,"YOU FEEL REALITY HAS BEEN ALTERED",,,,,,,,,,,,,
+log_mocreep_reality_mutation_05,"YOU FEEL LIFE IN THE COSMOS HAS SHIFTED",,,,,,,,,,,,,
+material_mocreep_meat_irritating,"Irritating Meat",,,,,,,,,,,,,
+material_mocreep_meat_decaying,"Decaying Meat",,,,,,,,,,,,,
+material_mocreep_meat_feathery,"Feathery Meat",,,,,,,,,,,,,
+material_mocreep_meat_centipede,"Centipede Meat",,,,,,,,,,,,,
+material_mocreep_sand_pink,"Pink Sand",,,,,,,,,,,,,
+material_mocreep_sand_red,"Red Sand",,,,,,,,,,,,,
+material_mocreep_sand_insect_husk,"Insect Husk",,,,,,,,,,,,,
+material_mocreep_mist_poison,"Poisonous Mist",,,,,,,,,,,,,
+material_mocreep_gem_green,"Green Gem",,,,,,,,,,,,,
+material_mocreep_magic_divine_liquid,"Divine Liquid",,,,,,,,,,,,,
+material_mocreep_spark_orange,"Orange Spark",,,,,,,,,,,,,
+material_mocreep_blood_centipede,"Centipede Blood",,,,,,,,,,,,,
+spell_mocreep_thrower_disc_name,"Giga Disc Projectile Thrower",,,,,,,,,,,,,
+spell_mocreep_thrower_disc_desc,"Makes a projectile cast Giga Disc Projectiles in random directions",,,,,,,,,,,,,
+spell_mocreep_thrower_cursed_orb_name,"Cursed Orb Thrower",,,,,,,,,,,,,
+spell_mocreep_thrower_cursed_orb_desc,"Makes a projectile cast Cursed Orbs in random directions",,,,,,,,,,,,,
+spell_mocreep_thrower_tnt_name,"Dynamite Thrower",,,,,,,,,,,,,
+spell_mocreep_thrower_tnt_desc,"Makes a projectile cast Dynamite in random directions",,,,,,,,,,,,,
+spell_mocreep_thrower_ice_ball_name,"Ice Ball Thrower",,,,,,,,,,,,,
+spell_mocreep_thrower_ice_ball_desc,"Makes a projectile cast Ice Balls in random directions",,,,,,,,,,,,,
+spell_mocreep_thrower_nuke_name,"Nuke Thrower",,,,,,,,,,,,,
+spell_mocreep_thrower_nuke_desc,"Are you sure?                               ",,,,,,,,,,,,,
+spell_mocreep_thrower_disc_enemy_name,"Personal Giga Disc Projectile Thrower",,,,,,,,,,,,,
+spell_mocreep_thrower_disc_enemy_desc,"Makes a projectile turn the creatures it hits into living Sawblade throwers",,,,,,,,,,,,,
+spell_mocreep_thrower_cursed_orb_enemy_name,"Personal Cursed Orb Thrower",,,,,,,,,,,,,
+spell_mocreep_thrower_cursed_orb_enemy_desc,"Makes a projectile turn the creatures it hits into living Cursed Orb throwers",,,,,,,,,,,,,
+spell_mocreep_thrower_tnt_enemy_name,"Personal Dynamite Thrower",,,,,,,,,,,,,
+spell_mocreep_thrower_tnt_enemy_desc,"Makes a projectile turn the creatures it hits into living Dynamite throwers",,,,,,,,,,,,,
+spell_mocreep_thrower_ice_ball_enemy_name,"Personal Ice Ball Thrower",,,,,,,,,,,,,
+spell_mocreep_thrower_ice_ball_enemy_desc,"Makes a projectile turn the creatures it hits into living Ice Ball throwers",,,,,,,,,,,,,
+spell_mocreep_thrower_nuke_enemy_name,"Personal Nuke Thrower",,,,,,,,,,,,,
+spell_mocreep_thrower_nuke_enemy_desc,"Makes a projectile turn the creatures it hits into living... Nuke throwers?!?!!",,,,,,,,,,,,,
+spell_mocreep_holy_orb_barrage_name,"Holy Orb Barrage",,,,,,,,,,,,,
+spell_mocreep_holy_orb_barrage_desc,"Casts a barrage of 7 holy orbs. Also has some magical properties...",,,,,,,,,,,,,
+spell_mocreep_cursed_orb_barrage_name,"Cursed Orb Barrage",,,,,,,,,,,,,
+spell_mocreep_cursed_orb_barrage_desc,"Casts a barrage of 7 cursed orbs. Has some noticeably destructive properties.",,,,,,,,,,,,,
+spell_mocreep_giga_bomb_name,"Giga Bomb",,,,,,,,,,,,,
+spell_mocreep_giga_bomb_desc,"Explosion!!",,,,,,,,,,,,,
+spell_mocreep_aqua_mine_name,"Aqua Mine",,,,,,,,,,,,,
+spell_mocreep_aqua_mine_desc,"Creates an explosive Aquamine with subtle homing properties.",,,,,,,,,,,,,
+spell_mocreep_mass_materia_conversion_name,"Mass Materia Conversion",,,,,,,,,,,,,
+spell_mocreep_mass_materia_conversion_desc,"Cave quid volunt",,,,,,,,,,,,,
+spell_mocreep_bungal_shift_name,"Fungal Shift",,,,,,,,,,,,,
+spell_mocreep_bungal_shift_desc,"Cave quid volunt                 ",,,,,,,,,,,,,
+spell_mocreep_musical_proj_name,"Musical Strike",,,,,,,,,,,,,
+spell_mocreep_musical_proj_desc,"Fires a powerful musical attack, careful not to loose your creativity",,,,,,,,,,,,,
+spell_mocreep_musical_proj_trig_name,"Musical Strike with trigger",,,,,,,,,,,,,
+spell_mocreep_musical_proj_trig_desc,"Fires a powerful musical attack, casts another spell upon collision",,,,,,,,,,,,,
+spell_mocreep_reverberation_name,"Reverberation",,,,,,,,,,,,,
+spell_mocreep_reverberation_desc,"Creates a reverberation of sound in the air, slicing anything nearby to pieces.",,,,,,,,,,,,,
+spell_mocreep_bite_name,"Bite",,,,,,,,,,,,,
+spell_mocreep_bite_desc,"...Magic?",,,,,,,,,,,,,
+spell_mocreep_bungal_shift_hyper_name,"Hyper Fungal Shift",,,,,,,,,,,,,
+spell_mocreep_bungal_shift_hyper_desc,"Insane....                      ",,,,,,,,,,,,,
+spell_mocreep_summon_worm_name,"Summon Jättimato",,,,,,,,,,,,,
+spell_mocreep_summon_worm_desc,"Dangerous....                      ",,,,,,,,,,,,,
+spell_mocreep_bite_crit_name,"Bloody Bite",,,,,,,,,,,,,
+spell_mocreep_bite_crit_desc,"Magic...............................?       ",,,,,,,,,,,,,
+spell_mocreep_spells_to_sorako_name,"Spells to Cats",,,,,,,,,,,,,
+spell_mocreep_spells_to_sorako_desc,"Transforms every projectile currently in the air into Cats; a cute idea.",,,,,,,,,,,,,
+spell_mocreep_split_shot_name,"Split Shot",,,,,,,,,,,,,
+spell_mocreep_split_shot_desc,"50% chance to duplicate the next cast.",,,,,,,,,,,,,
+spell_mocreep_status_drunk_name,"Mass Drunk",,,,,,,,,,,,,
+spell_mocreep_status_drunk_desc,"Affects every creature in a large radius with a drunken curse.",,,,,,,,,,,,,
+spell_mocreep_status_wet_name,"Mass Wet",,,,,,,,,,,,,
+spell_mocreep_status_wet_desc,"Soaks every creature in a large radius with a magical wetness.",,,,,,,,,,,,,
+spell_mocreep_status_fire_name,"Mass Fire",,,,,,,,,,,,,
+spell_mocreep_status_fire_desc,"Burns every creature in a large radius with a magical fire.",,,,,,,,,,,,,
+spell_mocreep_status_urine_name,"Mass Jarate",,,,,,,,,,,,,
+spell_mocreep_status_urine_desc,"Douses every creature in a large radius with a magical jarate.",,,,,,,,,,,,,
+spell_mocreep_status_polymorph_name,"Mass Polymorph",,,,,,,,,,,,,
+spell_mocreep_status_polymorph_desc,"Afflicts every creature in a large radius with a magical polymorphine.",,,,,,,,,,,,,
+setting_mocreep_catimmortality_name,"Cat immortality.",,,,,,,,,,,,,
+setting_mocreep_catimmortality_desc,"Are cats immortal?",,,,,,,,,,,,,
+setting_mocreep_fairyimmortality_name,"Fairy immortality",,,,,,,,,,,,,
+setting_mocreep_fairyimmortality_desc,"Are Keiju immortal?",,,,,,,,,,,,,
+setting_mocreep_compatmode_conjurer_name,"Conjurer extra Compatibility mode",,,,,,,,,,,,,
+setting_mocreep_compatmode_conjurer_desc,"Some people may have issues with this mod not loading into Conjurer properly. \nIf this happens, try enabling this option and loading conjurer again. \n \nThis option is on by default but can be turned off if you wish to \nhave the pixel scenes & bosses appear in conjurer worlds. \n \nIf Conjurer still fails to load despite having this turned on, although unlikely, \nit may be a mod compatibility issue with something else, \nperhaps try disabling mods to find the troublesome one. \n \nIf nothing else works please let me know to by filing a bug report to me. \nIt would be easiest for me to reach & investigate your report at the discord link below: \nhttps://discord.gg/gtyGnv8Pxk",,,,,,,,,,,,,
+setting_mocreep_motd_name,"Message of the Day",,,,,,,,,,,,,
+setting_mocreep_motd_desc,"Will a MOTD be displayed at the start of each run? \nMay contain bonus hints for various secrets.",,,,,,,,,,,,,
+setting_mocreep_seasonal_name,"Seasonal Events",,,,,,,,,,,,,
+setting_mocreep_seasonal_desc,"Are seasonal events enabled? \nFor example, Halloween, More Creep's Birthday, etc.",,,,,,,,,,,,,
+setting_mocreep_bosshealthmultiplier_name,"Boss Health Multiplier",,,,,,,,,,,,,
+setting_mocreep_bosshealthmultiplier_desc,"Multiply all Bosses health by this much. \nFor those who seek extra durable opponents. \nDoes not affect Kolmisilma \nMinibosses will also have their health boosted by a partial amount. \nThis can be changed mid-run but may not update for all bosses, remember to restart after updating the multiplier.\n \nFor Modders: \nIf your mod isn't listed in the compatibility section of the mod page, \nthis likely won't boost it, you'll need to add a lua component to your bosses. \nDo not hesitate to contact me for instructions or help if needed. \nIt would be easiest for me to respond to you on discord, Conga Lyne#2452",,,,,,,,,,,,,
+setting_mocreep_compatmode_spell_evolution_name,"Spell Evolution Compatibility Mode",,,,,,,,,,,,,
+setting_mocreep_compatmode_spell_evolution_desc,"Turn this setting on if you're playing with the Spell Evolution mod to fix it.\n \nAs far as I can tell, a bug in Spell Evolutions causes it to break if a modded spell \n Uses translation keys for their name and/or description. \n \nUnfortunately there's nothing I can do about this as it's not my mod, \nand I have no intention to remove the translation keys \nas I hope to use them one day in the event \nI'm offered a translation for the mod to another language. \nHowever, I can put a setting in to optionally let you use the spells without \ntranslation keys to get around the issue.",,,,,,,,,,,,,
+status_mocreep_duckcurse_name,"Duck Curse",,,,,,,,,,,,,
+status_mocreep_duckcurse_desc,"Their Quacky visions haunt you",,,,,,,,,,,,,
+status_mocreep_manadrain_name,"Mana Degradation",,,,,,,,,,,,,
+status_mocreep_manadrain_desc,"You are loosing Mana Rapidly!!",,,,,,,,,,,,,
+status_mocreep_transmute_name,"Unstable Transmutation",,,,,,,,,,,,,
+status_mocreep_transmute_desc,"Your being is transmuting nearby matter uncontrollably!",,,,,,,,,,,,,
 ]])
 
 
@@ -147,8 +249,11 @@ ModLuaFileAppend( "data/scripts/biomes/hills.lua", "mods/mo_creeps/files/scripts
 ModLuaFileAppend( "data/scripts/biomes/robot_egg.lua", "mods/mo_creeps/files/scripts/biomes/robot_egg_populator.lua" ) --End of Everything Robotic Egg
 
 
-ModLuaFileAppend( "data/scripts/gun/gun_actions.lua", "mods/mo_creeps/files/actions.lua" )
-
+if modCompatibilitySpellEvolutions == true then
+  ModLuaFileAppend( "data/scripts/gun/gun_actions.lua", "mods/mo_creeps/files/actions_UNTRANSLATED.lua" )
+else
+  ModLuaFileAppend( "data/scripts/gun/gun_actions.lua", "mods/mo_creeps/files/actions.lua" )
+end
 
 
 
@@ -239,6 +344,9 @@ if modCompatibilityConjurer == true then
       --dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/purgatory/boss_spawn_list_NGPLUS.lua" )
       dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/purgatory/blob_cave_spawn_list.lua" )
       --dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/purgatory/blob_cave_spawn_list_NGPlus.lua" )
+    elseif ModIsEnabled("noitavania") then
+      dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/boss_spawn_list_noitavania.lua" )
+      dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/blob_cave_spawn_list_noitavania.lua" )
     else
       dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/boss_spawn_list.lua" )
       dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/boss_spawn_list_NGPLUS.lua" )
@@ -252,6 +360,9 @@ else
     --dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/purgatory/boss_spawn_list_NGPLUS.lua" )
     dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/purgatory/blob_cave_spawn_list.lua" )
     --dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/purgatory/blob_cave_spawn_list_NGPlus.lua" )
+  elseif ModIsEnabled("noitavania") then
+    dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/boss_spawn_list_noitavania.lua" )
+    dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/blob_cave_spawn_list_noitavania.lua" )
   else
     dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/boss_spawn_list.lua" )
     dofile_once( "mods/mo_creeps/files/scripts/biomes/boss_spawns/boss_spawn_list_NGPLUS.lua" )
@@ -263,12 +374,13 @@ end
 
 
 --Spawns statues in the trophy room
-if GameHasFlagRun( "mocreep_initialised_pride_room" ) == false then
-  if ModIsEnabled("purgatory") then
-    ModLuaFileAppend( "data/scripts/biomes/mountain/mountain_hall.lua", "mods/mo_creeps/files/scripts/biomes/boss_spawns/purgatory/statue_room_populator.lua" ) 
-  else
-    ModLuaFileAppend( "data/scripts/biomes/mountain/mountain_hall.lua", "mods/mo_creeps/files/scripts/biomes/boss_spawns/statue_room_populator.lua" ) 
-  end
+
+--This is a infinite rat duplication exploit, and I know why, but it takes time to fix it the proper way..
+--Too tired right now
+if ModIsEnabled("purgatory") then
+  ModLuaFileAppend( "data/scripts/biomes/mountain/mountain_hall.lua", "mods/mo_creeps/files/scripts/biomes/boss_spawns/purgatory/statue_room_populator.lua" ) 
+else
+  ModLuaFileAppend( "data/scripts/biomes/mountain/mountain_hall.lua", "mods/mo_creeps/files/scripts/biomes/boss_spawns/statue_room_populator.lua" ) 
 end
 
 
@@ -282,7 +394,9 @@ if ModIsEnabled("New Biomes + Secrets") then
     --Normal Spawns
 	ModLuaFileAppend( "data/scripts/biomes/SEWER.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/SEWER_populator.lua" )
 	ModLuaFileAppend( "data/scripts/biomes/radioactive_pits.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/radioactive_pits_populator.lua" )
+	ModLuaFileAppend( "data/scripts/biomes/gascave_left.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/gascave_middle_populator.lua" )
 	ModLuaFileAppend( "data/scripts/biomes/gascave_middle.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/gascave_middle_populator.lua" )
+	ModLuaFileAppend( "data/scripts/biomes/gascave_right.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/gascave_middle_populator.lua" )
 	ModLuaFileAppend( "data/scripts/biomes/LANDING.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/LANDING_populator.lua" )
 	ModLuaFileAppend( "data/scripts/biomes/space.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/space_populator.lua" )
 	ModLuaFileAppend( "data/scripts/biomes/tower_ascending_left7.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/forbidden_tower_toxic_populator.lua" )
@@ -385,10 +499,10 @@ end
 if ModIsEnabled("sewer_updated") then
 
     --Normal Spawns
-	ModLuaFileAppend( "mods/flesh_biome/files/sewer_biome/sewer.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/SEWER_populator.lua" )
+	ModLuaFileAppend( "mods/sewer_updated/files/sewer_biome/sewer.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/SEWER_populator.lua" )
 
     --Global Spawns
-	ModLuaFileAppend( "mods/flesh_biome/files/sewer_biome/sewer.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" )
+	ModLuaFileAppend( "mods/sewer_updated/files/sewer_biome/sewer.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" )
 
 end
 
@@ -426,6 +540,45 @@ if ModIsEnabled("new_enemies") then
   if ModIsEnabled("biome-plus") then
     ModLuaFileAppend( "data/scripts/biomes/mod/tomb.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/sandcave_ghostbooster_populator.lua" )
   end
+end
+
+
+--Noitavania, inserts enemies into various biome pools
+if ModIsEnabled("noitavania") then
+
+    --Normal Spawns
+	ModLuaFileAppend( "data/scripts/biomes/nv_hills.lua", "mods/mo_creeps/files/scripts/biomes/hills_populator.lua" )
+  ModLuaFileAppend( "data/scripts/biomes/nv_volcano/inside.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/volcano_populator.lua" )
+	ModLuaFileAppend( "data/scripts/biomes/sewer.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/SEWER_populator.lua" )
+	--ModLuaFileAppend( "data/scripts/biomes/nv_cursed.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/cursed_populator.lua" ) -- I don't have any enemies which would fit this area as of now
+  ModLuaFileAppend( "data/scripts/biomes/nv_space.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/space_populator.lua" )
+  ModLuaFileAppend( "data/scripts/biomes/landing.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/LANDING_populator.lua" )
+  ModLuaFileAppend( "data/scripts/biomes/outpost.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/outpost_populator.lua" )
+  ModLuaFileAppend( "data/scripts/biomes/nv_castle/maze.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/castle_maze_populator.lua" )
+  ModLuaFileAppend( "data/scripts/biomes/nv_castle/main.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/castle_main_populator.lua" )
+  ModLuaFileAppend( "data/scripts/biomes/nv_radioactive.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/nv_radioactive_populator.lua" )
+  ModLuaFileAppend( "data/scripts/biomes/snowcastle_cavern.lua", "mods/mo_creeps/files/scripts/biomes/nv_snowcastle_cavern_populator.lua" )
+  ModLuaFileAppend( "data/scripts/biomes/nv_gascave/left.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/gascave_middle_populator.lua" )
+  ModLuaFileAppend( "data/scripts/biomes/nv_gascave/middle.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/gascave_middle_populator.lua" )
+  ModLuaFileAppend( "data/scripts/biomes/nv_gascave/right.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/gascave_middle_populator.lua" )
+
+    --Global Spawns
+	ModLuaFileAppend( "data/scripts/biomes/nv_hills.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" )
+	ModLuaFileAppend( "data/scripts/biomes/nv_volcano/inside.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" )
+	ModLuaFileAppend( "data/scripts/biomes/sewer.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" )
+	ModLuaFileAppend( "data/scripts/biomes/nv_cursed.lua", "mods/mo_creeps/files/scripts/biomes/global_populator_smallonly.lua" )
+  ModLuaFileAppend( "data/scripts/biomes/nv_space.lua", "mods/mo_creeps/files/scripts/biomes/global_populator_smallonly.lua" )
+  ModLuaFileAppend( "data/scripts/biomes/landing.lua", "mods/mo_creeps/files/scripts/biomes/global_populator_smallonly.lua" )
+	ModLuaFileAppend( "data/scripts/biomes/outpost.lua", "mods/mo_creeps/files/scripts/biomes/global_populator_smallonly.lua" )
+  ModLuaFileAppend( "data/scripts/biomes/nv_castle/maze.lua", "mods/mo_creeps/files/scripts/biomes/global_populator_smallonly.lua" )
+  ModLuaFileAppend( "data/scripts/biomes/nv_castle/main.lua", "mods/mo_creeps/files/scripts/biomes/global_populator_smallonly.lua" )
+  ModLuaFileAppend( "data/scripts/biomes/nv_radioactive.lua", "mods/mo_creeps/files/scripts/biomes/global_populator_smallonly.lua" )
+  -- ModLuaFileAppend( "data/scripts/biomes/snowcastle_cavern.lua", "mods/mo_creeps/files/scripts/biomes/nv_snowcastle_cavern_populator.lua" ) -- no creature spawns to append to
+  ModLuaFileAppend( "data/scripts/biomes/nv_gascave/left.lua", "mods/mo_creeps/files/scripts/biomes/global_populator_smallonly.lua" )
+  ModLuaFileAppend( "data/scripts/biomes/nv_gascave/middle.lua", "mods/mo_creeps/files/scripts/biomes/global_populator_smallonly.lua" )
+  ModLuaFileAppend( "data/scripts/biomes/nv_gascave/right.lua", "mods/mo_creeps/files/scripts/biomes/global_populator_smallonly.lua" )
+
+
 end
 
 
@@ -539,6 +692,18 @@ xml:add_child(nxml.parse([[
 ]]))
 ModTextFileSetContent("data/entities/animals/shotgunner.xml", tostring(xml))
 
+--Same thing but for weak hisii
+local content = ModTextFileGetContent("data/entities/animals/shotgunner.xml")
+local xml = nxml.parse(content)
+xml:add_child(nxml.parse([[
+    <LuaComponent
+        script_source_file="mods/mo_creeps/files/scripts/buildings/hisii_minecart_hopin_weak.lua"
+        execute_every_n_frame="60"
+        >
+    </LuaComponent>
+]]))
+ModTextFileSetContent("data/entities/animals/shotgunner.xml", tostring(xml))
+
 --Same thing but for hisii with TNT
 local content = ModTextFileGetContent("data/entities/animals/miner_weak.xml")
 local xml = nxml.parse(content)
@@ -618,7 +783,7 @@ local year, month, day = GameGetDateAndTimeLocal()
 if seasonalSetting == true then
 
   -- Halloween Event
-  if ( month == 10 ) and ( day >= 11 ) then
+  if ( month == 10 ) and ( day >= 22 ) then
     ModLuaFileAppend( "data/scripts/biomes/coalmine.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/halloween.lua" ) --Coal Mine, first area, goodluck on your run
     ModLuaFileAppend( "data/scripts/biomes/coalmine_alt.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/halloween.lua" ) --Coalmine but to the west side near damp cave
     ModLuaFileAppend( "data/scripts/biomes/excavationsite.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/halloween.lua" ) --Coal Pits, area 2
@@ -668,6 +833,11 @@ if seasonalSetting == true then
       xml:first_of("Base"):first_of("SpriteComponent").attr.image_file = "mods/Mo_Creeps/files/enemies_gfx/hisii_minecart_smissmass.xml"
       ModTextFileSetContent("data/entities/animals/hisii_minecart.xml", tostring(xml))
     end
+
+    local content = ModTextFileGetContent("data/entities/animals/hisii_minecart_weak.xml")
+    local xml = nxml.parse(content)
+    xml:first_of("Base"):first_of("SpriteComponent").attr.image_file = "mods/Mo_Creeps/files/enemies_gfx/hisii_minecart_weak_smissmass.xml"
+    ModTextFileSetContent("data/entities/animals/hisii_minecart_weak.xml", tostring(xml))
 
     local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
     local content = ModTextFileGetContent("data/entities/animals/poring.xml")
@@ -730,4 +900,3 @@ ModLuaFileAppend( "data/scripts/biomes/the_end.lua", "mods/mo_creeps/files/scrip
 
 --ModLuaFileAppend( "data/scripts/biome_modifiers.lua", "mods/mo_creeps/files/scripts/weather/weather_wet_append.lua" ) --Attempt to insert shaman into biome wet modifier spawn additions. Started eating up too much time.
 --If you know how to do this, please let me know. -Conga Lyne
-

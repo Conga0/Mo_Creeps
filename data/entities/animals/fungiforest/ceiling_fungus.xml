@@ -8,13 +8,17 @@
 			>
         </DamageModelComponent>
 
-        <AIAttackComponent
-            min_distance="0"
-            max_distance="180"
-            frames_between="65"
-            frames_between_global="65"
+		<AnimalAIComponent 
+			attack_ranged_max_distance="180"
+			attack_ranged_frames_between="65" 
+			>
+		</AnimalAIComponent>
+
+        <LuaComponent
+            script_source_file="mods/mo_creeps/files/scripts/animals/ceiling_fungus_limiter.lua"
+            execute_every_n_frame="62"
             >
-        </AIAttackComponent>
+        </LuaComponent>
 
 	</Base>
 

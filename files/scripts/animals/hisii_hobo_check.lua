@@ -30,7 +30,7 @@ function material_area_checker_success( pos_x, pos_y )
 	local has_already_found_battery = GameHasFlagRun("mocreep_temp_battery_donated")
 
     if (Random(1,10) == 10) and (has_already_found_battery == false) then
-		EntityLoad( "mods/mo_creeps/files/entities/items/wands/custom/mana_battery.xml", x, y - 12 )
+		EntityLoad( "mods/mo_creeps/files/entities/items/wands/custom/mana_battery.xml", x, y - 16 )
         GameAddFlagRun( "mocreep_temp_battery_donated" )
     end
     

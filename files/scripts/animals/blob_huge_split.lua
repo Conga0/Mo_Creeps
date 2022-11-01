@@ -24,7 +24,7 @@ function damage_received( damage, desc, entity_who_caused, is_fatal )
 	local new_health = health - damage
 	local nearest_interval = math.floor( health / minion_interval ) * minion_interval
 	
-	local limit = 7
+	local limit = 5
 	local count = 0
 	
 	while (nearest_interval > new_health) and (count < limit) and (nearest_interval >= 0) do
@@ -32,7 +32,7 @@ function damage_received( damage, desc, entity_who_caused, is_fatal )
 		
 		pos_x = pos_x + Random(-8, 8)
 		pos_y = pos_y + Random(-12, 4)
-		local e = EntityLoad( "data/entities/animals/blob_big.xml", pos_x, pos_y )
+		local e = EntityLoad( "data/entities/animals/boss_blob/extra/blob_big.xml", pos_x, pos_y )
 		
 		nearest_interval = nearest_interval - minion_interval
 		

@@ -169,7 +169,7 @@
   
     table.insert(g_props,
     {
-        prob           = 0.2,
+        prob           = 0.16, --Originally 0.2
         min_count    = 1,
         max_count    = 1,
         entity     = "data/entities/buildings/polymorph_crystal.xml"

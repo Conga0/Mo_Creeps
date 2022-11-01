@@ -39,7 +39,7 @@
 
     table.insert(g_big_enemies,
     {
-        prob           = 0.011,
+        prob           = 0.006,
         min_count    = 1,
         max_count    = 1,
         entity     = "data/entities/buildings/polymorph_crystal_chaotic.xml"
@@ -77,7 +77,7 @@
     
     table.insert(g_big_enemies,
     {
-        prob           = 0.015,
+        prob           = 0.010,
         min_count    = 1,
         max_count    = 1,
         entity     = "data/entities/buildings/polymorph_crystal_chaotic.xml",
@@ -89,7 +89,7 @@
         prob           = 0.03,
         min_count    = 1,
         max_count    = 1,
-        entity     = "data/entities/buildings/polymorph_crystal.xml",
+        entity     = "data/entities/buildings/manadrain_crystal.xml",
         ngpluslevel = 1
     })
 
@@ -135,4 +135,53 @@ if g_props then
         entity     = "mods/mo_creeps/files/entities/items/pickups/chest_random_cursed.xml"
     })
 
+end
+
+
+
+
+-- Mod Compatibility
+
+--Chemical Curiosities
+
+if ModIsEnabled("Hydroxide") then
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.04,
+        min_count    = 1,
+        max_count    = 1,
+        entity     = "data/entities/animals/bubbles/sliceLiquid/bubble_liquid.xml"
+    })
+
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.06,
+        min_count    = 1,
+        max_count    = 1,
+        entity     = "data/entities/animals/bubbles/deceleratium/bubble_liquid.xml"
+    })
+
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.018,
+        min_count    = 1,
+        max_count    = 1,
+        entity     = "data/entities/animals/bubbles/pandorium/bubble_liquid.xml"
+    })
+
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.0012,
+        min_count    = 1,
+        max_count    = 1,
+        entity     = "data/entities/animals/bubbles/unstablePandorium/bubble_liquid.xml"
+    })
+
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.03,
+        min_count    = 1,
+        max_count    = 1,
+        entity     = "data/entities/animals/bubbles/stophittingyourself/bubble_liquid.xml"
+    })
 end

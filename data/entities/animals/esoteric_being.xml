@@ -27,12 +27,13 @@
 		</AnimalAIComponent>
 		
 		<DamageModelComponent 
-            hp="4"
+            hp="8"
 			air_needed="0" 
 			falling_damages="0"
 			is_on_fire="0" 
 			fire_probability_of_ignition="0" 
 			physics_objects_damage="0"
+			critical_damage_resistance="1"
 			ragdoll_fx_forced="DISINTEGRATED"
             ragdoll_material="plasma_fading"
 			ragdoll_filenames_file="mods/mo_creeps/files/ragdolls/drone_mini/filenames.txt"
@@ -43,15 +44,15 @@
 			>
 			<damage_multipliers
 				melee="0.01"
-				projectile="0.01"
+				projectile="0.00"
 				explosion="0.01"
 				electricity="0.01"
 				fire="0.01"
-				slice="0.01"
+				slice="0.00"
 				drill="0.01"
 				ice="0.01"
 				radioactive="0.01"
-				curse="1.1"
+				curse="2.2"
 				>
 			</damage_multipliers>
 		</DamageModelComponent>

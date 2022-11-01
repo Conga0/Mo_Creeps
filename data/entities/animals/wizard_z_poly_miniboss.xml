@@ -240,6 +240,13 @@
 		script_death="mods/mo_creeps/files/scripts/animals/polymage_miniboss_reward.lua"
 		>
 	</LuaComponent>
+	
+  	<LuaComponent
+		script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier_half.lua"
+		execute_times="1"
+		remove_after_executed="1"
+		>
+	</LuaComponent>
     
 </Entity>
 

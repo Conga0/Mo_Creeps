@@ -10,7 +10,7 @@ With maybe a bit more for you to find too.
 
 Seasonal events include:
 MoCreeps Birthday November 3rd to 5th
-Halloween October 11th to 31st
+Halloween October 22nd to 31st
 Smissmass December 22nd to 31st
 
 
@@ -43,4 +43,7 @@ https://docs.google.com/document/d/1-7GilR082unPHkreG5eIm8WFde2kGcc9tTXRp5YH0LQ/
 
 This mod doesn't override any existing files, it is safe to put at the bottom of your load order for maximum compatibility.
 
-If you like this mod and want others to see it, one quick thing you can do is leave a like to bring more eyes towards this project
+
+If you wish to support my work in a tangiable manner, you can donate here:
+https://ko-fi.com/congalyne
+I don't expect you to under any circumstances and appreciate you playing donated or not, thankyou for playing everyone

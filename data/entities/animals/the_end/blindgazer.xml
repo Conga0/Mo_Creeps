@@ -1,0 +1,8 @@
+<Entity >
+  <Base file="data/entities/animals/blindgazer.xml">
+    <DamageModelComponent 
+      hp="45"
+      max_hp="45"
+     ></DamageModelComponent >
+  </Base>
+</Entity>

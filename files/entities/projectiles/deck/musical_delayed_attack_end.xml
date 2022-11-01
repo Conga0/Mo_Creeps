@@ -1,5 +1,5 @@
 <Entity 
-  name="$projectile_default" tags="projectile_player"
+  name="$projectile_default" tags="projectile_player,musical_stone"
    >
 
 	<Base file="data/entities/base_projectile.xml" >
@@ -86,6 +86,7 @@
   </SpriteComponent>
 
   <LightComponent 
+		_tags="musical_stone"
     _enabled="1" 
     radius="150" 
     r="30"

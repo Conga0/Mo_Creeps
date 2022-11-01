@@ -8,4 +8,27 @@ Tag optimise mass status spells to check for a childname rather than tag name
 
 Optional english names for monsters
 
-Musical Strike & Reverberation should reveal musical ghosts
+Yearly birthday sign?
+
+Center poring's position on the middle of the sprite so it behaves better to physics damage
+
+Deck of cards
+25 storage
+AC wand refresh
+
+Spawn statue after completing statue unlock requirements
+
+Secret text with a youtube link to rick ashley's never gonna give you up
+
+On toxic immunity buff expiration, re-add material  vulnerability to toxic rock, gas & ice
+But also check if they already have toxic immunity perk and don't
+
+Improve manadrain crystal's visuals
+
+Minecart rider HP boosted in purgatory/nightmare
+
+
+NXML
+to make enemy shifts
+Eat enough red sand and an enemy shift will occur
+Add poof effect if any visual enemies are in the area, as if they're being poly morphed

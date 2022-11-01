@@ -20,8 +20,8 @@
 		target_kill_radius="17"
 		target_kill_ragdoll_force="8"
 		ragdoll_filename=""
-		eat_anim_wait_mult="0.05 "
-		jump_cam_shake="8" 
+		eat_anim_wait_mult="0.05"
+		jump_cam_shake="12" 
 		bite_damage="3"
 		>
 	</WormComponent>
@@ -671,5 +671,12 @@
 		set_speed_parameter="1"
 		auto_play="1">
 	</AudioLoopComponent>
+	
+  	<LuaComponent
+		script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier_half.lua"
+		execute_times="1"
+		remove_after_executed="1"
+		>
+	</LuaComponent>
 
 </Entity>

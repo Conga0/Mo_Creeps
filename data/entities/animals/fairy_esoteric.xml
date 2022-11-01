@@ -33,15 +33,15 @@
 			>
 			<damage_multipliers
 				melee="0.01"
-				projectile="0.01"
+				projectile="0.00"
 				explosion="0.01"
 				electricity="0.01"
 				fire="0.01"
-				slice="0.01"
+				slice="0.00"
 				drill="0.01"
 				ice="0.01"
 				radioactive="0.01"
-				curse="1.1"
+				curse="2.2"
 				>
 			</damage_multipliers>
 		</DamageModelComponent>

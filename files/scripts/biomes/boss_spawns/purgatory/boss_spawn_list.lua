@@ -20,7 +20,7 @@ local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
 local content = ModTextFileGetContent("mods/purgatory/files/biome/_pixel_scenes.xml")
 local xml = nxml.parse(content)
 xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-    <PixelScene pos_x="12857" pos_y="10334" just_load_an_entity="data/entities/buildings/boss_musical_ghost_sandcave_populator.xml" />
+    <PixelScene pos_x="12828" pos_y="10883" just_load_an_entity="data/entities/buildings/boss_musical_ghost_sandcave_populator.xml" />
 ]]))
 ModTextFileSetContent("mods/purgatory/files/biome/_pixel_scenes.xml", tostring(xml))
 

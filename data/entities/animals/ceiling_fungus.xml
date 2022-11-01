@@ -23,12 +23,12 @@
 			attack_ranged_entity_count_min="1"
 			attack_ranged_entity_count_max="1"
 			attack_ranged_min_distance="0"
-			attack_ranged_max_distance="250"
-			attack_ranged_entity_file="data/entities/projectiles/tongue.xml"
-			attack_ranged_frames_between="100" 
+			attack_ranged_max_distance="170"
+			attack_ranged_entity_file="data/entities/animals/ceiling_fungus_minion.xml"
+			attack_ranged_frames_between="90" 
 			attack_ranged_action_frame="4"
-			attack_ranged_offset_y="3"
-			attack_ranged_offset_x="3"
+			attack_ranged_offset_y="7"
+			attack_ranged_offset_x="0"
 			>
 		</AnimalAIComponent>
 
@@ -123,18 +123,12 @@
 		file="data/audio/Desktop/animals.bank"
 		event_root="animals/fungus" >
 	</AudioComponent>
-	
-	<AIAttackComponent
-		min_distance="0"
-		max_distance="170"
-		frames_between="90"
-		frames_between_global="90"
-		animation_name="attack_ranged"
-		attack_ranged_action_frame="4"
-		attack_ranged_entity_file="data/entities/animals/ceiling_fungus_minion.xml"
-		attack_ranged_offset_y="7"
-		attack_ranged_offset_x="0"
-		>
-	</AIAttackComponent>
+
+	<LuaComponent
+        script_source_file="mods/mo_creeps/files/scripts/animals/ceiling_fungus_limiter.lua"
+        execute_every_n_frame="86"
+        >
+    </LuaComponent>
+
 </Entity>
 

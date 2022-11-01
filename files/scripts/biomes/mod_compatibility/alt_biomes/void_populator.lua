@@ -1,3 +1,9 @@
+local mocreep_HardmodeCheck = false
+
+if ModIsEnabled("nightmare") or ModIsEnabled("purgatory") then
+    mocreep_HardmodeCheck = true
+end
+
 
 table.insert(g_big_enemies,
 {
@@ -6,6 +12,24 @@ table.insert(g_big_enemies,
     max_count    = 1,    
     entity     = "data/entities/animals/wizard_copeseethmald.xml"
 })
+
+if mocreep_HardmodeCheck then 
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.025,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/gold_bosses/angel/angel.xml"
+    })
+else
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.025,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/angel.xml"
+    })
+end
 
 
 

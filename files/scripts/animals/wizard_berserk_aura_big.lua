@@ -23,7 +23,7 @@ for i,v in ipairs( targets ) do
 		end
 		
 		if valid then
-			local eid = EntityLoad( "mods/mo_creeps/files/entities/misc/effect_berserk_short_evil.xml", x, y )
+			local eid = EntityLoad( "mods/mo_creeps/files/entities/misc/effect_berserk_short_evil_perk.xml", x, y )
 			EntityAddChild( v, eid )
 		end
 	end

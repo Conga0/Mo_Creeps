@@ -376,6 +376,11 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/building_icons/hamis_nest.png",
 	  },
 	  {
+		name="Manadrain Crystal",
+		path="data/entities/buildings/manadrain_crystal.xml",
+		image="data/ui_gfx/building_icons/manadrain_crystal.png",
+	  },
+	  {
 		name="Polymorph Crystal",
 		path="data/entities/buildings/polymorph_crystal.xml",
 		image="data/ui_gfx/building_icons/polymorph_crystal.png",

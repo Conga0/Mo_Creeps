@@ -35,6 +35,7 @@
       hole_enabled="1" 
       hole_image="data/temp/explosion_hole.png" 
       particle_effect="1" 
+      damage="1.25"
 	  physics_explosion_power.min="0.6" 
       physics_explosion_power.max="1.0" 
       physics_throw_enabled="1" 

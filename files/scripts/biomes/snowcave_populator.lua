@@ -38,14 +38,14 @@
         max_count    = 1,
         entities     =  {
 			{
-				min_count	= 1,
-				max_count 	= 1,
-				entity = "data/entities/animals/secret/gazer_greater_cold.xml",
+				min_count	= 2,
+				max_count 	= 2,
+				entity = "data/entities/animals/hisii_engineer.xml",
 			},
 			{
-				min_count	= 1,
-				max_count 	= 1,
-				entity = "mods/mo_creeps/files/entities/misc/remove_ground_small.xml",
+				min_count	= 2,
+				max_count 	= 2,
+				entity = "data/entities/animals/tank_flame_mocreep.xml",
 			},
 		}
     })
@@ -79,19 +79,14 @@
 
     table.insert(g_scavenger_party,
     {
-        prob           = 0.25,
+        prob           = 0.45,
         min_count    = 1,
         max_count    = 1,
         entities     =  {
 			{
-				min_count	= 2,
-				max_count 	= 2,
-				entity = "data/entities/animals/hisii_engineer.xml",
-			},
-			{
-				min_count	= 2,
-				max_count 	= 2,
-				entity = "data/entities/animals/tank_flame_mocreep.xml",
+				min_count	= 1,
+				max_count 	= 1,
+				entity = "data/entities/animals/secret/gazer_greater_cold.xml",
 			},
 		}
     })

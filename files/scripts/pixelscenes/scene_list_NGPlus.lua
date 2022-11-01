@@ -62,6 +62,19 @@ xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
 ]]))
 ModTextFileSetContent("data/biome/_pixel_scenes_newgame_plus.xml", tostring(xml))
 
+--2nd Hisii Beggar Hint inside the south-west gold room
+local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
+local content = ModTextFileGetContent("data/biome/_pixel_scenes_newgame_plus.xml")
+local xml = nxml.parse(content)
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+  <PixelScene DEBUG_RELOAD_ME="0" clean_area_before="0" pos_x="-14140" pos_y="16819" skip_biome_checks="1" skip_edge_textures="0"
+    material_filename="mods/mo_creeps/files/pixel_scenes/hisii_beggar/hisii_beggar.png"
+    background_filename="mods/mo_creeps/files/pixel_scenes/hisii_beggar/hisii_beggar_background.png"
+    colors_filename=""
+  ></PixelScene>
+]]))
+ModTextFileSetContent("data/biome/_pixel_scenes_newgame_plus.xml", tostring(xml))
+
 --Wand Cave Secret
 local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
 local content = ModTextFileGetContent("data/biome/_pixel_scenes_newgame_plus.xml")

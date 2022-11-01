@@ -4,7 +4,7 @@
         prob           = 0.3,
         min_count    = 1,
         max_count    = 1,
-        entity     = "data/entities/buildings/polymorph_crystal.xml"
+        entity     = "data/entities/buildings/manadrain_crystal.xml"
     })
 
     table.insert(g_big_enemies,

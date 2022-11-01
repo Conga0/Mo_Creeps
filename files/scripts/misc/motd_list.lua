@@ -1,7 +1,7 @@
 dofile_once("data/scripts/lib/utilities.lua")
 
 --Spawns the Message of the day if enabled
-local year, month, day = GameGetDateAndTimeLocal()
+local year, month, day, hour = GameGetDateAndTimeLocal()
 
 if ModIsEnabled("raksa") == false then
 
@@ -13,7 +13,7 @@ if ModIsEnabled("raksa") == false then
             <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_birthday.xml" />
         ]]))
         ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
-    elseif ( month == 10 ) and ( day >= 1 ) and (day % 2 == 0) then                       --Halloween
+    elseif ( month == 10 ) and ( day >= 1 ) and (hour % 2 == 0) then                       --Halloween
         local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
         local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
         local xml = nxml.parse(content)
@@ -21,7 +21,7 @@ if ModIsEnabled("raksa") == false then
             <PixelScene pos_x="505" pos_y="-105" just_load_an_entity="mods/mo_creeps/files/entities/props/sign_motd/sign_motd_halloween.xml" />
         ]]))
         ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
-    elseif ( month == 12 ) and ( day >= 22 ) and (day % 2 == 0) then                  --Smissmass
+    elseif ( month == 12 ) and ( day >= 22 ) and (hour % 2 == 0) then                  --Smissmass
         local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
         local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
         local xml = nxml.parse(content)

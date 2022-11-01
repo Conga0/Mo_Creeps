@@ -1,9 +1,10 @@
 <Entity 
-  name="Polymorph Crystal"
+  name="Chaotic Polymorph Crystal"
   tags="hittable,mortal" >
 
   <DamageModelComponent 
     _enabled="1" 
+	create_ragdoll="0"
     air_needed="0"  
     falling_damages="0" 
     fire_damage_amount="0.2" 
@@ -77,9 +78,11 @@
 	</LightComponent>
 
 	
+	<!-- originally every 31 frames -->
+
 	<LuaComponent
 		script_source_file="mods/mo_creeps/files/scripts/animals/polymorph_crystal_chaotic_aura.lua"
-		execute_every_n_frame="31"
+		execute_every_n_frame="126"
 		>
 	</LuaComponent>
 

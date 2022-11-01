@@ -8,7 +8,7 @@ function collision_trigger()
 	local targets = EntityGetInRadius( x, y, r )
 
 	for i,v in ipairs( targets ) do
-		if ( v ~= entity_id ) and ( EntityGetName( v ) == "Polymorph Crystal" ) then
+		if ( EntityGetName( v ) == "Polymorph Crystal" ) or ( EntityGetName( v ) == "Chaotic Polymorph Crystal" ) then
 			EntityKill ( v )
 		end
 	end
