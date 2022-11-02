@@ -19,13 +19,16 @@ AC wand refresh
 Spawn statue after completing statue unlock requirements
 
 Secret text with a youtube link to rick ashley's never gonna give you up
+(Put it in the corner of the world or under deep EDR or something stupidly hidden, fittingly stupid for a stupid easteregg
 
 On toxic immunity buff expiration, re-add material  vulnerability to toxic rock, gas & ice
 But also check if they already have toxic immunity perk and don't
 
-Improve manadrain crystal's visuals
-
 Minecart rider HP boosted in purgatory/nightmare
+Double check this actually works please
+
+If using evolution compatibility mode, perhaps try to check for current language setting and apply text as needed?
+
 
 
 NXML

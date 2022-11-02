@@ -22,11 +22,25 @@ local mod_compat_mode_spell_evolution_name = "Spell Evolution Compatibility Mode
 local mod_compat_mode_spell_evolution_desc = "Turn this setting on if youre playing with the Spell Evolution mod to fix it.\n \nAs far as I can tell, a bug in Spell Evolutions causes it to break if a modded spell \nUses translation keys for their name and/or description. \n \nUnfortunately there's nothing I can do about this as it's not my mod, \nand I have no intention to remove the translation keys \nas I hope to use them one day in the event \nIm offered a translation for the mod to another language. \nHowever, I can put a setting in to optionally let you use the spells without \ntranslation keys to get around the issue."
 
 
---[[if currentLang == "русский" then
+  --Russian Translations
+if currentLang == "русский" then
 
-  congacat_cat_immortal_name = "RUSSIA"
+  congacat_cat_immortal_name = "Бессмертие кошек"
+  congacat_cat_immortal_desc = "Являются ли кошки бессмертными?"
+  fairy_immortality_name = "Бессмертие фей"
+  fairy_immortality_desc = "Являются ли Кейдзю бессмертными?"
+  motd_setting_name = "Сообщение дня"
+  motd_setting_desc = "Будет ли сообщение дня отображаться в начале каждого забега? \nМожет содержать бонусные подсказки с различными секретами."
+  seasonal_events_name = "Сезонные события"
+  seasonal_events_desc = "Включены ли сезонные события? \nНапример, Хэллоуин, день рождения мода More Creep и т.д."
+  boss_health_multiplayer_name = "Множитель здоровья босса"
+  boss_health_multiplayer_desc = "Умножает здоровье всех боссов на это количество. \nДля тех, кто ищет особо стойких противников. \nНе влияет на Колмисильмяна \nМини-боссы также будут иметь частичное увеличение здоровья. \nЭто можно изменить в середине игры, но не для всех боссов, \nне забудьте перезапустить игру после обновления множителя.\n \nДля создателей модов: \nЕсли ваш мод не указан в разделе совместимости на странице модов, \nэто скорее всего не поможет, вам придётся добавить lua компонент к вашим боссам. \nНе стесняйтесь обращаться ко мне за инструкциями или помощью, если это необходимо. \nМне будет проще всего ответить вам в discord, Conga Lyne#2452. [ENG ONLY]"
+  mod_compat_mode_conjurer_name = "Режим совместимости: Conjurer"
+  mod_compat_mode_conjurer_desc = "У некоторых людей могут возникнуть проблемы с тем, что этот мод не загружается вместе с модом Conjurer должным образом. \nЕсли это произошло, попробуйте включить этот параметр и загрузить \nConjurer снова. \n \nЭта опция включена по умолчанию, но может быть выключена, если вы хотите, чтобы пиксельные сцены и боссы появлялись в мирах Conjurer. \n \nЕсли Conjurer всё ещё не загружается, несмотря на включение этого параметра, хотя это маловероятно, \nможет быть проблема совместимости мода с чем-то другим, \nвозможно, попробуйте отключить все моды поочерёдно, чтобы найти проблемный. \nЕсли ничего не помогает, пожалуйста, сообщите мне об этом, написав сообщение об ошибке. \nМне будет проще всего связаться и изучить ваше сообщение по ссылке на discord: \nhttps://discord.gg/gtyGnv8Pxk \n[ENG ONLY]"
+  mod_compat_mode_spell_evolution_name = "Режим совместимости: Spell Evolution"
+  mod_compat_mode_spell_evolution_desc = "Включите этот параметр, если вы играете с модом Spell Evolution, чтобы исправить ошибки.\n \nНасколько я могу судить, ошибка в Spell Evolutions приводит к тому, что он ломается, если модифицированное заклинание \n использует ключи перевода для своего имени и/или описания. \n \nК сожалению, я ничего не могу с этим поделать, поскольку это не мой мод, \n и у меня нет намерения удалять ключи перевода, \n поскольку я надеюсь использовать их однажды в случае, если мне предложат перевести мод на другие языки. \nОднако, я могу сделать настройку, которая позволит вам использовать заклинания без ключей перевода, чтобы обойти эту проблему."
 
-end]]-- Russia Lang translations go here
+end
 
 local mod_id = "mo_creeps"
 mod_settings_version = 1

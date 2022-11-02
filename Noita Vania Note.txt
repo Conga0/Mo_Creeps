@@ -7,3 +7,7 @@ Would make it easier to change the x y positions too at least I guess, but remem
 And redo them in the fix mod.
 
 For some reason checking if noitavania is loaded and changing the input data if so causes nxml to stop functioning.
+
+
+Scratch all this, Noitavania compatibility is official!!!!
+Though, the map is hell to navigate for me

@@ -7,6 +7,8 @@ Creating Size 3 Blob Sprites, Creating Size 4 Blob static Sprite, Creating Size 
 
 Squirrelly#6472 - Created the mana drain effect lua script, your mana wouldn't be stolen without their help
 
+Blueberry#1414 - Translating the mod to Russian
+
 Extol#0629 - Helping getting translation keys working, needed for custom perks to show up correctly
 Also helped make split shot significantly less game breaking
 

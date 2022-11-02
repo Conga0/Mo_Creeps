@@ -7,8 +7,21 @@ local r = 128
 local targets = EntityGetInRadiusWithTag( x, y, r, "player_unit" )
 
 for i,v in ipairs( targets ) do
-	if ( v ~= entity_id ) then
-		local target_x,target_y = EntityGetTransform( v )
-		local eid = EntityLoad( "mods/mo_creeps/files/entities/projectiles/orb_poly_crystal.xml", target_x, target_y )
+	local c = EntityGetAllChildren( v )
+	local valid = true
+	
+	if ( c ~= nil ) then
+		for a,b in ipairs( c ) do
+			if ( EntityGetName( b ) == "creep_debuff_polycrystal" ) then
+				valid = false
+				break
+			end
+		end
+	end
+	
+	if valid then
+		local eid = EntityLoad( "mods/mo_creeps/files/scripts/animals/poly_crystal_attack/debuff.xml", target_x, target_y )
+		EntityAddChild( v, eid )
 	end
 end
+

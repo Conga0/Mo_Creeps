@@ -1,7 +1,7 @@
 <Sprite 
   filename="mods/Mo_Creeps/files/enemies_gfx/goo_slug.png" 
   offset_x="18" 
-  offset_y="18"
+  offset_y="17"
   default_animation="stand" >
 
   <RectAnimation 
