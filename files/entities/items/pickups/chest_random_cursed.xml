@@ -7,7 +7,6 @@
   <PositionSeedComponent />
 	
 	<PhysicsBodyComponent 
-    _tags="$item_mocreeps_chest_cursed"
     uid="1" 
     allow_sleep="1" 
     angular_damping="0" 

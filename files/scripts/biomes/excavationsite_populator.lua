@@ -168,6 +168,16 @@
         entity     = "data/entities/animals/whisp.xml"
     })
 
+    if ModIsEnabled("purgatory") then
+        table.insert(g_big_enemies,
+        {
+            prob           = 0.05,
+            min_count    = 1,
+            max_count    = 1,    
+            entity     = "data/entities/animals/hisii_giga_bomb.xml"
+        })
+    end
+
 
 
 

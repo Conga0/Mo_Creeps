@@ -1,4 +1,4 @@
-<Entity name="Psykopaatti Hisii" >
+<Entity name="Iso Pommi Hisii" >
   
 	<Base file="data/entities/base_enemy_basic.xml" >
 		<ItemChestComponent level="1" > </ItemChestComponent>
@@ -27,7 +27,7 @@
 		</AnimalAIComponent>
 		
 		<DamageModelComponent 
-            hp="4.0"
+            hp="3"
             materials_create_messages="1"
 			ragdoll_filenames_file="mods/mo_creeps/files/ragdolls/hisii_giga_bomb/filenames.txt" 
 			fire_probability_of_ignition="5"
@@ -35,7 +35,7 @@
             blood_spray_create_some_cosmetic="1"
 			>
 			<damage_multipliers
-				explosion="0.08"
+				explosion="0.25"
 				>
 			</damage_multipliers>
 		</DamageModelComponent>

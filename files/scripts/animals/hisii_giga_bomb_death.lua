@@ -5,7 +5,7 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 	local entity_id    = GetUpdatedEntityID()
 	local pos_x, pos_y = EntityGetTransform( entity_id )
 
-	EntityLoad( "mods/Mo_Creeps/files/entities/projectiles/bomb_giga_npc.xml", pos_x, pos_y )
+	shoot_projectile( entity_id, "mods/Mo_Creeps/files/entities/projectiles/bomb_giga_npc.xml", pos_x, pos_y, 0, 0 )
 
 	--EntityKill( entity_id )
 end

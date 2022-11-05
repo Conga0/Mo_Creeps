@@ -5,7 +5,7 @@ local year, month, day, hour = GameGetDateAndTimeLocal()
 
 if ModIsEnabled("raksa") == false then
 
-    if ( month == 11 ) and ( day >= 3 ) and (day <= 5) then                       --Birthday
+    if ( month == 7 ) and (( day >= 20 ) and ( day <= 22 )) then                      --Birthday
         local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
         local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
         local xml = nxml.parse(content)

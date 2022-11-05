@@ -216,7 +216,7 @@ table.insert(g_pixel_scene_02,
 
 table.insert(g_pixel_scene_02,
 {
-        prob   			= 1,
+        prob   			= 0.8,
         material_file 	= "mods/mo_creeps/files/biome_impl/coalmines/gigabomb_01.png",
         visual_file		= "mods/mo_creeps/files/biome_impl/coalmines/gigabomb_01_visual.png",
         background_file	= "mods/mo_creeps/files/biome_impl/coalmines/gigabomb_01_background.png",
@@ -231,4 +231,5 @@ end
 
 function spawn_mocreeps_giga_bomber( x, y )
     EntityLoad( "data/entities/animals/hisii_giga_bomb.xml", x, y )
+    CreateItemActionEntity( "MOCREEPS_BOMB_GIGA", x, y - 8 )
 end

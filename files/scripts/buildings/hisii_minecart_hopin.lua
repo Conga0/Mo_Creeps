@@ -10,6 +10,7 @@ for i,v in ipairs( targets ) do
 	if ( v ~= entity_id ) and ( EntityGetName( v ) == "minecart_hisii_hopin" ) then
 		--GamePrint("HISII MINECART LUA CHECK")
 		local target_x,target_y = EntityGetTransform( v )
+		GameDropAllItems( "entity_id" )
 		local eid = EntityLoad( "data/entities/animals/hisii_minecart.xml", target_x, target_y - 2 )
 		EntityKill ( v )
 		EntityKill ( entity_id )

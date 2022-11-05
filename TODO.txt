@@ -28,6 +28,9 @@ Add message, where MOTD spawns, telling new players to check the settings page b
 to check for mod compatibility
 
 
+Translation keys for twitch events
+
+
 
 
 

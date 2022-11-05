@@ -196,6 +196,11 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/animal_icons/hisii_engineer.png",
 	  },
 	  {
+		name="Psychopath Hisii",
+		path="data/entities/animals/hisii_giga_bomb.xml",
+		image="data/ui_gfx/animal_icons/hisii_giga_bomb.png",
+	  },
+	  {
 		name="Homeless Hisii",
 		path="data/entities/animals/hisii_hobo.xml",
 		image="data/ui_gfx/animal_icons/hisii_hobo.png",

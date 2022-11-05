@@ -666,8 +666,14 @@ if ModIsEnabled("worse_enemies") then
       emissive="1"
       additive="1">
 	</SpriteComponent>
-]]))
+  ]]))
   ModTextFileSetContent("data/entities/animals/hisii_minecart.xml", tostring(xml))
+
+  local content = ModTextFileGetContent("data/entities/animals/hisii_minecart_weak.xml")
+  local xml = nxml.parse(content)
+  xml:first_of("Base"):first_of("SpriteComponent").attr.image_file = "mods/Mo_Creeps/files/enemies_gfx/hisii_minecart_worse_weak.xml"
+  xml:first_of("Base"):first_of("AnimalAIComponent").attr.attack_ranged_entity_file = "data/entities/projectiles/fireball_buckshot.xml"
+  ModTextFileSetContent("data/entities/animals/hisii_minecart_weak.xml", tostring(xml))
 
   --Bat Illusion Fix
   local content = ModTextFileGetContent("data/entities/animals/psychotic/bat.xml")
@@ -892,10 +898,17 @@ if seasonalSetting == true then
       ModTextFileSetContent("data/entities/animals/hisii_minecart.xml", tostring(xml))
     end
 
-    local content = ModTextFileGetContent("data/entities/animals/hisii_minecart_weak.xml")
-    local xml = nxml.parse(content)
-    xml:first_of("Base"):first_of("SpriteComponent").attr.image_file = "mods/Mo_Creeps/files/enemies_gfx/hisii_minecart_weak_smissmass.xml"
-    ModTextFileSetContent("data/entities/animals/hisii_minecart_weak.xml", tostring(xml))
+    if ModIsEnabled("worse_enemies") then
+      local content = ModTextFileGetContent("data/entities/animals/hisii_minecart_weak.xml")
+      local xml = nxml.parse(content)
+      xml:first_of("Base"):first_of("SpriteComponent").attr.image_file = "mods/Mo_Creeps/files/enemies_gfx/hisii_minecart_worse_weak_smissmass.xml"
+      ModTextFileSetContent("data/entities/animals/hisii_minecart_weak.xml", tostring(xml))
+    else
+      local content = ModTextFileGetContent("data/entities/animals/hisii_minecart_weak.xml")
+      local xml = nxml.parse(content)
+      xml:first_of("Base"):first_of("SpriteComponent").attr.image_file = "mods/Mo_Creeps/files/enemies_gfx/hisii_minecart_weak_smissmass.xml"
+      ModTextFileSetContent("data/entities/animals/hisii_minecart_weak.xml", tostring(xml))
+    end
 
     local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
     local content = ModTextFileGetContent("data/entities/animals/poring.xml")

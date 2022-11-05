@@ -21,6 +21,9 @@ Added 1 new creep
 Added new biome variation to the world, explore the same biomes in wildly different ways!
 Birthday event now occurs during July, this is when the mod first started being worked on.
 Pandora's Chest now has more permanent effects
+Added a new welcoming message for new users to Mo Creeps
 
 Master of None can not longer shoot poly orbs, It's all fun and games until you get Polymorphed
 Fixed Tnt Minecart Riders being a bit too jittery in their cart
+Fixed Worse Enemies Weak Shotgunners not working with minecarts properly
+Fixed Minecart Hisii Snapping their wands in half upon entering a minecart
