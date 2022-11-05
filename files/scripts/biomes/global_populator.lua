@@ -64,7 +64,7 @@
 		spawn_check = function() 
 			local year, month, day = GameGetDateAndTimeLocal()
 			
-            if ( month == 11 ) and (( day >= 2 ) and ( day <= 4 )) then
+            if ( month == 7 ) and (( day >= 20 ) and ( day <= 22 )) then
 				return true
 			else
 				return false 
@@ -98,26 +98,7 @@
 
 
 
-    
 
-    -- Seasonal Events
-
-    local year, month, day = GameGetDateAndTimeLocal()
-    local seasonalSetting = ModSettingGet( "mo_creeps.seasonal_events" )
-
-    if seasonalSetting == true then
-
-        if ( month == 9 ) and (( day >= 21 ) and (day <= 23 )) then
-            -- More Creeps & Weirdos Birthday
-            table.insert(g_small_enemies,
-            {
-                prob           = 0.3,
-                min_count    = 4,
-                max_count    = 7,
-                entity     = "mods/mo_creeps/files/entities/special/rgb_fairy_spawner.xml"
-            })
-        end
-    end
 
 
 

@@ -109,6 +109,24 @@ end
 
 
 
+table.insert(g_small_enemies_sky,
+{
+    prob           = 0.01,
+    min_count    = 1,
+    max_count    = 1,
+    entity     = "data/entities/buildings/polymorph_crystal_chaotic.xml"
+})
+
+table.insert(g_small_enemies_sky,
+{
+    prob           = 0.05,
+    min_count    = 1,
+    max_count    = 1,
+    entity     = "data/entities/buildings/the_end/polymorph_crystal.xml"
+})
+
+
+
 
 
 

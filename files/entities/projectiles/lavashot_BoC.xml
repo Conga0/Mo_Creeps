@@ -27,7 +27,7 @@
     on_collision_die="1"
     die_on_low_velocity="0"
 	damage="1.5"
-    lifetime="630" 
+    lifetime="330" 
 	knockback_force="2.0"
   direction_random_rad="6.00"
 	>

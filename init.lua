@@ -12,6 +12,48 @@ local seasonalSetting = ModSettingGet( "mo_creeps.seasonal_events" )
 --Note: This has been moved lower down for cleaner organisation & implementing mod compatibility
 
 
+
+
+-- Spell Unlock Fixes
+-- If someone attains a spell through another mod, twitch integration, etc, this is just to make sure they aren't getting unlocks they shouldn't.
+-- They'll still get the spell, it just won't be added to their permanent record
+-- Rat bite isn't "verified" because it's a funny spell
+
+if HasFlagPersistent( "mocreeps_card_unlocked_divinebeing" ) then
+  AddFlagPersistent( "mocreeps_card_unlocked_divinebeing_spell" )
+else
+  RemoveFlagPersistent( "mocreeps_card_unlocked_divinebeing_spell" )
+end
+
+if HasFlagPersistent( "mocreeps_card_unlocked_boss_toxic_worm" ) then
+  AddFlagPersistent( "mocreeps_card_unlocked_boss_toxic_worm_spell" )
+else
+  RemoveFlagPersistent( "mocreeps_card_unlocked_boss_toxic_worm_spell" )
+end
+
+if HasFlagPersistent( "mocreeps_card_unlocked_musical_boss" ) then
+  AddFlagPersistent( "mocreeps_card_unlocked_musical_boss_spell" )
+else
+  RemoveFlagPersistent( "mocreeps_card_unlocked_musical_boss_spell" )
+end
+
+if HasFlagPersistent( "mocreeps_card_unlocked_blob_boss" ) then
+  AddFlagPersistent( "mocreeps_card_unlocked_blob_boss_spell" )
+else
+  RemoveFlagPersistent( "mocreeps_card_unlocked_blob_boss_spell" )
+end
+
+if HasFlagPersistent( "mocreeps_card_unlocked_cat_secret" ) then
+  AddFlagPersistent( "mocreeps_card_unlocked_cat_secret_spell" )
+else
+  RemoveFlagPersistent( "mocreeps_card_unlocked_cat_secret_spell" )
+end
+
+
+
+
+
+
 -- If Conjurer is enabled, disable this for a fix.
 if modCompatibilityConjurer == true then
   if ModIsEnabled("raksa") == false then
@@ -211,6 +253,7 @@ status_mocreep_transmute_desc,Your being is transmuting nearby matter uncontroll
 DEVTESTDEVTESTDEVTEST,"=====================================================================================================================================================================================================================================================",,,,,,,,,,,,,
 item_mocreep_essence_fungus_name,"Essence of Fungus",,,,,,,,,,,,,
 item_mocreep_essence_fungus_desc,"Your very being is infecting the environment around it!",,,,,,,,,,,,,
+sign_mocreep_welcome_hint,"Hello and Welcome to More Creeps & Weirdos! \nAlthough this may seem inconvinent, please take a moment to view the mod settings page in Options > Mod Settings. \nSome mods need compatibility modes enabled, I did I best but some things are outside my control sadly. Other than that, go nuts and have fun <3",,,,,,,,,,,,,
 ]])
 
 
@@ -665,11 +708,18 @@ dofile_once( "mods/mo_creeps/files/scripts/magic/music_magic_tag_nxml.lua" )
 
 --MOTD
 if ModIsEnabled("raksa") == false then
+  local flag_status = HasFlagPersistent( "mocreeps_card_unlocked_welcome_hint" )
   if motdSetting == true then
     if ModIsEnabled("purgatory") then
       dofile_once( "mods/mo_creeps/files/scripts/misc/motd_list_purgatory.lua" )
     else
       dofile_once( "mods/mo_creeps/files/scripts/misc/motd_list.lua" )
+    end
+  elseif flag_status == false then
+    if ModIsEnabled("purgatory") then
+      dofile_once( "mods/mo_creeps/files/scripts/misc/welcome_hint_purgatory.lua" )
+    else
+      dofile_once( "mods/mo_creeps/files/scripts/misc/welcome_hint.lua" )
     end
   end
 end
@@ -862,12 +912,13 @@ if seasonalSetting == true then
   end
 
   -- Birthday Event
-  if ( month == 11 ) and (( day >= 3 ) and ( day <= 5 )) then
+  -- Update to be centered on 21/07/2022, this is when the first enemy was created and development officially began. Should be a fair trade off between not being the official release date but also not clashing with Halloween
+  if ( month == 7 ) and (( day >= 20 ) and ( day <= 22 )) then
     ModLuaFileAppend( "data/scripts/biomes/coalmine.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday.lua" ) --Coal Mine, first area, goodluck on your run
     ModLuaFileAppend( "data/scripts/biomes/coalmine_alt.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday.lua" ) --Coalmine but to the west side near damp cave
     ModLuaFileAppend( "data/scripts/biomes/excavationsite.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday.lua" ) --Coal Pits, area 2
-    ModLuaFileAppend( "data/scripts/biomes/snowcave.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday.lua" ) --Presumably everything below the entrance to the pyramid
-    ModLuaFileAppend( "data/scripts/biomes/snowcastle.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday.lua" )
+    ModLuaFileAppend( "data/scripts/biomes/snowcave.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday_rare.lua" ) --Presumably everything below the entrance to the pyramid
+    ModLuaFileAppend( "data/scripts/biomes/snowcastle.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday_rare.lua" )
     ModLuaFileAppend( "data/scripts/biomes/desert.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday.lua" )
     ModLuaFileAppend( "data/scripts/biomes/rainforest.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday_rare.lua" )
     ModLuaFileAppend( "data/scripts/biomes/vault.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday_rare.lua" )
@@ -876,6 +927,8 @@ if seasonalSetting == true then
   --Update global_populator & global_populator_small too, wand tinkering crystal
 
 end
+
+
 
 
 

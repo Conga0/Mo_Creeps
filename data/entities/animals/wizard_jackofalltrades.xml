@@ -14,6 +14,7 @@
 			sense_creatures="1"
 			attack_ranged_enabled="1"
 			can_fly="1" 
+			tries_to_ranged_attack_friends="0"
 			attack_ranged_entity_file="mods/mo_creeps/files/entities/projectiles/orb_duck.xml"
 			attack_ranged_action_frame="5"
 			attack_ranged_frames_between="180"

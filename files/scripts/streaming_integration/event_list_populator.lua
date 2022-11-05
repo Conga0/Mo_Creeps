@@ -165,7 +165,7 @@
 
     table.insert(streaming_events,
 	{
-		id = "MOCREEP_WAND_WONDERS",
+		id = "MOCREEP_PANDORA_CHEST",
 		ui_name = "Pandora's Chest",
 		ui_description = "Do you dare open?",
 		ui_icon = "data/ui_gfx/streaming_event_icons/health_plus.png",

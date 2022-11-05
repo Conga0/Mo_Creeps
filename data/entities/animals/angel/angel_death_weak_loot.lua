@@ -18,8 +18,8 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 	end
 	
 	if ModIsEnabled("raksa") == false then
-		GameAddFlagRun( "mocreeps_miniboss_divinebeing" )
 		AddFlagPersistent( "mocreeps_card_unlocked_divinebeing" )
+		AddFlagPersistent( "mocreeps_card_unlocked_divinebeing_spell" )
 	end
 	
 	--StatsLogPlayerKill( entity_id )

@@ -200,6 +200,8 @@ function item_pickup( entity_item, entity_who_picked, name )
     EntityLoad( "data/entities/items/pickup/heart_fullhp.xml",  x, y )
     EntityLoad( "data/entities/animals/worm_big.xml",  x + 100, y + 250 )
 
+    GameAddFlagRun( "mocreeps_pandora_unleashed" )
+
     EntityKill( entity_item )
 
 end

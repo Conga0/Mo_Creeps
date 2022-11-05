@@ -24,7 +24,7 @@
     body_id="1"
     centered="1"
     image_file="mods/mo_creeps/files/buildings_gfx/chest_random_cursed.png"
-    material="steel"
+    material="rock_box2d_nohit_hard"
   ></PhysicsImageShapeComponent>
 
   <ItemComponent

@@ -32,7 +32,7 @@
 			camera_shake="35.0" 
 			explosion_radius="38" 
 			explosion_sprite="mods/mo_creeps/files/particles/explosion_032_plasma_red.xml" 
-			load_this_entity="data/entities/particles/particle_explosion/main_swirly_red.xml"
+			load_this_entity="mods/mo_creeps/files/entities/particles/particle_explosion/main_swirly_red_real.xml"
 			explosion_sprite_lifetime="0.0" 
 			create_cell_probability="0" 
 			create_cell_material="spark" 

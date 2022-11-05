@@ -32,7 +32,7 @@ function item_pickup( entity_item, entity_who_picked, item_name )
 	EntityAddChild( entity_who_picked, entity_ui )
 
 	if ( id == "fungus" ) then
-		local cid = EntityLoad( "data/entities/misc/essences/laser.xml", pos_x, pos_y )
+		local cid = EntityLoad( "mods/mo_creeps/files/entities/misc/essence/essence_fungus.xml", pos_x, pos_y )
 		EntityAddChild( entity_who_picked, cid )
 	end
 	

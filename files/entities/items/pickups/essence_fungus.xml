@@ -23,7 +23,7 @@
 	</VariableStorageComponent>
 
 	<LuaComponent 
-		script_item_picked_up="data/scripts/essences/essence_pickup.lua"
+		script_item_picked_up="mods/mo_creeps/files/scripts/items/essence_fungus_pickup.lua"
 		>
 	</LuaComponent>
 </Entity>

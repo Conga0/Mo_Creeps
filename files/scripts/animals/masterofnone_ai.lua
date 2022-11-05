@@ -17,8 +17,10 @@ if (state == 1) then
     ComponentSetValue2( comp, "attack_ranged_entity_file", "mods/mo_creeps/files/entities/projectiles/orb_duck.xml" )
 elseif (state == 2) then
     ComponentSetValue2( comp, "attack_ranged_entity_file", "mods/mo_creeps/files/entities/projectiles/orb_berserk.xml" )
+    --ComponentSetValue2( comp, "tries_to_ranged_attack_friends", false )
 elseif (state == 3) then
     ComponentSetValue2( comp, "attack_ranged_entity_file", "mods/mo_creeps/files/entities/projectiles/orb_ambrosia.xml" )
+    --ComponentSetValue2( comp, "tries_to_ranged_attack_friends", true )
 elseif (state == 4) then
     ComponentSetValue2( comp, "attack_ranged_entity_file", "data/entities/projectiles/orb_cursed.xml" )
 elseif (state == 5) then
@@ -30,7 +32,7 @@ elseif (state == 7) then
 elseif (state == 8) then
     ComponentSetValue2( comp, "attack_ranged_entity_file", "data/entities/projectiles/orb_neutral.xml" )
 elseif (state == 9) then
-    ComponentSetValue2( comp, "attack_ranged_entity_file", "data/entities/projectiles/orb_poly.xml" )
+    ComponentSetValue2( comp, "attack_ranged_entity_file", "mods/mo_creeps/files/entities/projectiles/orb_unstable_transmutation.xml" ) -- If you think of anything new then feel free to replace this with whatever
 elseif (state == 10) then
     ComponentSetValue2( comp, "attack_ranged_entity_file", "data/entities/projectiles/orb_swapper.xml" )
 elseif (state == 11) then

@@ -100,6 +100,44 @@
 
 
 
+
+
+    --Pandora Spawns
+
+    table.insert(g_small_enemies,
+    {
+        prob           = 0.03,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/items/pickup/heart.xml",
+		spawn_check = function() 
+			if GameHasFlagRun( "mocreeps_pandora_unleashed" ) then
+				return true
+			else
+				return false 
+			end
+		end,
+    })
+
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.05,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/hisii_giga_bomb.xml",
+		spawn_check = function() 
+			if GameHasFlagRun( "mocreeps_pandora_unleashed" ) then
+				return true
+			else
+				return false 
+			end
+		end,
+    })
+
+
+
+
+
     --New Game +
 
 table.insert(g_small_enemies,
@@ -132,3 +170,65 @@ table.insert(g_small_enemies,
     entity     = "data/entities/animals/fungicave/lukki_fungus.xml",
     ngpluslevel = 2
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- Pixel Scenes/Areas
+
+--[[
+]]--
+RegisterSpawnFunction( 0xffd964d5, "spawn_mocreeps_portaltrap" )
+RegisterSpawnFunction( 0xffdb6666, "spawn_mocreeps_giga_bomber" )
+
+
+
+table.insert(g_pixel_scene_01,
+{
+        prob   			= 0.6,
+        material_file 	= "mods/mo_creeps/files/biome_impl/coalmines/coalpit_c_01.png",
+        visual_file		= "mods/mo_creeps/files/biome_impl/coalmines/coalpit_c_01_visual.png",
+        background_file	= "",
+        is_unique		= 0
+})
+
+
+
+table.insert(g_pixel_scene_02,
+{
+        prob   			= 0.85,
+        material_file 	= "mods/mo_creeps/files/biome_impl/coalmines/wandtrap_portal.png",
+        visual_file		= "mods/mo_creeps/files/biome_impl/coalmines/wandtrap_portal_visual.png",
+        background_file	= "",
+        is_unique		= 0
+})
+
+
+
+table.insert(g_pixel_scene_02,
+{
+        prob   			= 1,
+        material_file 	= "mods/mo_creeps/files/biome_impl/coalmines/gigabomb_01.png",
+        visual_file		= "mods/mo_creeps/files/biome_impl/coalmines/gigabomb_01_visual.png",
+        background_file	= "mods/mo_creeps/files/biome_impl/coalmines/gigabomb_01_background.png",
+        is_unique		= 0
+})
+
+
+
+function spawn_mocreeps_portaltrap( x, y )
+    EntityLoad( "mods/mo_creeps/files/entities/props/traps/trap_portal.xml", x, y )
+end
+
+function spawn_mocreeps_giga_bomber( x, y )
+    EntityLoad( "data/entities/animals/hisii_giga_bomb.xml", x, y )
+end

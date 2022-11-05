@@ -7,7 +7,7 @@ local r = 128
 local targets = EntityGetInRadiusWithTag( x, y, r, "mortal" )
 
 for i,v in ipairs( targets ) do
-	if ( v ~= entity_id ) then
+	if ( v ~= entity_id ) and EntityHasTag( v, "hittable") and (EntityHasTag( v, "polymorph_NOT") == false) then
 		local c = EntityGetAllChildren( v )
 		local valid = true
 		
@@ -21,7 +21,7 @@ for i,v in ipairs( targets ) do
 			end
 		end
 
-		if ( EntityGetName( v ) == "Chaotic Polymorph Crystal" ) or ( EntityGetName( v ) == "Polymorph Crystal" ) then
+		if ( EntityGetName( v ) == "Chaotic Polymorph Crystal" ) or ( EntityGetName( v ) == "Polymorph Crystal" ) or ( EntityGetName( v ) == "unknown" ) then
 			valid = false
 		end
 		

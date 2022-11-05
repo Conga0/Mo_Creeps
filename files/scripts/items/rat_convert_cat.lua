@@ -13,6 +13,7 @@ function collision_trigger()
 
 	if ModIsEnabled("raksa") == false then
 		AddFlagPersistent( "mocreeps_card_unlocked_cat_secret" )
+		AddFlagPersistent( "mocreeps_card_unlocked_cat_secret_spell" )
 
 		if ModIsEnabled("nightmare") or ModIsEnabled("purgatory") then
 			AddFlagPersistent( "mocreeps_card_unlocked_cat_secret_goldmode" )

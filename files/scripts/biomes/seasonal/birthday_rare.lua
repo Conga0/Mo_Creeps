@@ -3,7 +3,7 @@
 
 table.insert(g_small_enemies,
 {
-    prob   		= 0.07,
+    prob   		= 0.05,
     min_count	= 5,
     max_count	= 7,    
     entity 	= "data/entities/animals/rat_birthday.xml",

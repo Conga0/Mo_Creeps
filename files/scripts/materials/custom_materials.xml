@@ -156,22 +156,6 @@
     <Graphics
 		texture_file="mods/mo_creeps/files/materials_gfx/redstone_dust.png"
 		color="720000" >
-		<Edge>
-			 <EdgeGraphics 
-				overwrite="0" 
-				percent="0.6" 
-				require_same_material="1" 
-				require_same_material_type="1" 
-				type="EVERYWHERE" 
-				z="1" >
-				<Images>
-					<Image 
-						allow_random_rotation="1"
-						filename="data/materials_gfx/edge_files/edge_sand.png" 
-					/>
-				</Images>
-			  </EdgeGraphics>
-		</Edge>
     </Graphics>
   </CellData>
   

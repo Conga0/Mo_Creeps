@@ -24,10 +24,11 @@ Secret text with a youtube link to rick ashley's never gonna give you up
 On toxic immunity buff expiration, re-add material  vulnerability to toxic rock, gas & ice
 But also check if they already have toxic immunity perk and don't
 
-Minecart rider HP boosted in purgatory/nightmare
-Double check this actually works please
+Add message, where MOTD spawns, telling new players to check the settings page before playing
+to check for mod compatibility
 
-If using evolution compatibility mode, perhaps try to check for current language setting and apply text as needed?
+
+
 
 
 

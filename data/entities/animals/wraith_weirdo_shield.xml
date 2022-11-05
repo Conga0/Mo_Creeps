@@ -37,12 +37,12 @@
 			minimum_knockback_force="100000"
 			>
 			<damage_multipliers
-				projectile="0.5"
-				explosion="0.5"
-				electricity="0.5"
-				fire="0.5" 
-				slice="0.5"
-				ice="0.5"
+				projectile="0.3"
+				explosion="0.4"
+				electricity="0.4"
+				fire="0.4" 
+				slice="0.4"
+				ice="0.4"
 				>
 			</damage_multipliers>
 		</DamageModelComponent>
@@ -148,6 +148,7 @@
 		
 		<Base file="data/entities/misc/animal_energy_shield.xml">
 			<EnergyShieldComponent 
+				damage_multiplier="0.8"
 				recharge_speed="2.0" 
 				radius="64.0" >
 			</EnergyShieldComponent>

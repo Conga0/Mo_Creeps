@@ -1,1 +1,26 @@
+This content is intended to be saved for later, to be added all in one big content update.
+I may still add small things over time as I think of them, but keep them in a list here so I can keep track
+of what I have & haven't finished implementing into the mod when I get around to putting them all in
+
+Remember the checklist!!
+
+
+
 Suspended Lava Tank - mods/mo_creeps/files/entities/props/suspended_tank_lava.xml
+Essence of Fungus - mods/mo_creeps/files/entities/items/pickups/essence_fungus.xml (functional but can't redeem it anywhere)
+
+Portal Trap pixelscene - mods/mo_creeps/files/scripts/biomes/coalmines_populator.lua
+
+
+
+
+
+1.1.0 Changelog:
+Added 2 new environmental hazards
+Added 1 new creep
+Added new biome variation to the world, explore the same biomes in wildly different ways!
+Birthday event now occurs during July, this is when the mod first started being worked on.
+Pandora's Chest now has more permanent effects
+
+Master of None can not longer shoot poly orbs, It's all fun and games until you get Polymorphed
+Fixed Tnt Minecart Riders being a bit too jittery in their cart

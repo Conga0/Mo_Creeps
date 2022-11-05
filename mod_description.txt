@@ -4,12 +4,12 @@ Adds various new Creeps & Weirdos to the world of Noita, including new character
 The Master of Mallards, the species of Porings, bigger scarier Elemental Wizards and much more to explore for yourself!
 
 Implements 69 new enemies, 4 new bosses and 8 attainable trophies to unlock.. but maybe there could be a few more hidden secrets too.
-Adds 26 new spells if you can conquer powerful foes.
+Adds 28 new spells if you can conquer powerful foes.
 And an extra 2 more for free unlocked by default.
 With maybe a bit more for you to find too.
 
 Seasonal events include:
-MoCreeps Birthday November 3rd to 5th
+MoCreeps Birthday July 20th to 22nd
 Halloween October 22nd to 31st
 Smissmass December 22nd to 31st
 
@@ -18,18 +18,19 @@ Smissmass December 22nd to 31st
 
 Compatiable with:
 Worse Enemies
-New Biomes & Secrets
 New Enemies [Must be higher in load order than MoCreeps for tower compatibility]
+New Biomes & Secrets
 Alternate Biomes
 Volcano Biome
 Flesh Biome
-Conjurer
 Copi's Things [Must be higher in load order than MoCreeps, or some enemies may break]
-Chemical Curiosities
-Sewer 1.0
-Twitch Integration
+Conjurer
+Noitavania
 Nightmare
 Purgatory (recommended over nightmare for encountering bosses)
+Twitch Integration
+Chemical Curiosities
+Spell Evolutions [Must enable Spell Evolutions compatibility mode in the mod settings]
 Removable Perks
 & Should be compatiable with most, if not all other mods if More Creeps is put below them.
 
@@ -42,6 +43,8 @@ Full Enemy, Spell & Perk Documentation here: (Big Spoilers)
 https://docs.google.com/document/d/1-7GilR082unPHkreG5eIm8WFde2kGcc9tTXRp5YH0LQ/edit?usp=sharing
 
 This mod doesn't override any existing files, it is safe to put at the bottom of your load order for maximum compatibility.
+
+Supported languages: English, русский
 
 
 If you wish to support my work in a tangiable manner, you can donate here:

@@ -169,7 +169,7 @@
   
     table.insert(g_props,
     {
-        prob           = 0.16, --Originally 0.2
+        prob           = 0.2, --Originally 0.2
         min_count    = 1,
         max_count    = 1,
         entity     = "data/entities/buildings/polymorph_crystal.xml"
@@ -197,6 +197,87 @@ table.insert(g_big_enemies,
     ngpluslevel = 1
 })
 
+    
+
+--Pandora Spawns
+
+table.insert(g_small_enemies,
+{
+    prob           = 0.05,
+    min_count    = 1,
+    max_count    = 1,    
+    entity     = "data/entities/items/pickup/heart.xml",
+    spawn_check = function() 
+        if GameHasFlagRun( "mocreeps_pandora_unleashed" ) then
+            return true
+        else
+            return false 
+        end
+    end,
+})
+
+table.insert(g_big_enemies,
+{
+    prob           = 0.01,
+    min_count    = 1,
+    max_count    = 1,    
+    entity     = "data/entities/animals/wizard_watermage_greater.xml",
+    spawn_check = function() 
+        if GameHasFlagRun( "mocreeps_pandora_unleashed" ) then
+            return true
+        else
+            return false 
+        end
+    end,
+})
+
+table.insert(g_big_enemies,
+{
+    prob           = 0.03,
+    min_count    = 1,
+    max_count    = 1,
+    offset_y 	= -3, 
+    entity     = "data/entities/animals/wizard_z_poly_miniboss.xml",
+    spawn_check = function() 
+        if GameHasFlagRun( "mocreeps_pandora_unleashed" ) then
+            return true
+        else
+            return false 
+        end
+    end,
+})
+
+table.insert(g_small_enemies,
+{
+    prob           = 0.02,
+    min_count    = 4,
+    max_count    = 6,    
+    entity     = "data/entities/animals/bubbles/cursed_liquid/bubble_liquid.xml",
+    spawn_check = function() 
+        if GameHasFlagRun( "mocreeps_pandora_unleashed" ) then
+            return true
+        else
+            return false 
+        end
+    end,
+})
+
+table.insert(g_small_enemies,
+{
+    prob           = 0.1,
+    min_count    = 1,
+    max_count    = 2,    
+    entity     = "data/entities/animals/wizard_ambrosia.xml",
+    spawn_check = function() 
+        if GameHasFlagRun( "mocreeps_pandora_unleashed" ) then
+            return true
+        else
+            return false 
+        end
+    end,
+})
+
+
 
 
     --New Game ++
@@ -217,4 +298,30 @@ table.insert(g_small_enemies,
     max_count    = 4,    
     entity     = "data/entities/animals/poring_magic.xml",
     ngpluslevel = 2
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- Pixel Scenes/Areas
+
+--[[
+]]--
+
+table.insert(g_pixel_scene_01,
+{
+        prob   			= 1.1,
+        material_file 	= "mods/mo_creeps/files/biome_impl/crypt/overbearing.png",
+        visual_file		= "mods/mo_creeps/files/biome_impl/crypt/overbearing_visual.png",
+        background_file	= "mods/mo_creeps/files/biome_impl/crypt/overbearing_background.png",
+        is_unique		= 0
 })

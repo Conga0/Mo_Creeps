@@ -1,4 +1,4 @@
-<Entity name="$animal_miner" >
+<Entity name="Psykopaatti Hisii" >
   
 	<Base file="data/entities/base_enemy_basic.xml" >
 		<ItemChestComponent level="1" > </ItemChestComponent>
@@ -15,30 +15,33 @@
 			needs_food="1"
 			sense_creatures="1"
 			attack_ranged_enabled="1"
-			attack_melee_enabled="1"
+			attack_melee_enabled="0"
 			can_fly="0"  
+			attack_ranged_offset_y="0"
+			attack_ranged_offset_x="0"
+			attack_ranged_state_duration_frames="93"
 			attack_melee_action_frame="4"
 			attack_ranged_action_frame="4"
-			attack_ranged_entity_file="data/entities/projectiles/bomb_holy.xml.xml"
-			attack_ranged_frames_between="100" >
+			attack_ranged_entity_file="mods/Mo_Creeps/files/entities/projectiles/bomb_giga_npc.xml"
+			attack_ranged_frames_between="300" >
 		</AnimalAIComponent>
 		
 		<DamageModelComponent 
-            hp="1.0"
+            hp="4.0"
             materials_create_messages="1"
-			ragdoll_filenames_file="data/ragdolls/miner/filenames.txt" 
+			ragdoll_filenames_file="mods/mo_creeps/files/ragdolls/hisii_giga_bomb/filenames.txt" 
 			fire_probability_of_ignition="5"
     		blood_spray_material="blood"
             blood_spray_create_some_cosmetic="1"
 			>
 			<damage_multipliers
-				explosion="0.2"
+				explosion="0.08"
 				>
 			</damage_multipliers>
 		</DamageModelComponent>
 
 		<SpriteComponent 
-			image_file="data/enemies_gfx/miner.xml" 
+			image_file="mods/mo_creeps/files/enemies_gfx/hisii_giga_bomb.xml" 
 			offset_x="0"
 			offset_y="0">
 		</SpriteComponent>
@@ -77,18 +80,18 @@
 		
 		<HitboxComponent 
             _enabled="1" 
-			aabb_min_x="-3"  
+			aabb_min_x="-6"  
             aabb_max_x="3"
-			aabb_min_y="-6"
-            aabb_max_y="3" 
+			aabb_min_y="-4"
+            aabb_max_y="10" 
 			>
         </HitboxComponent>
 		
 		<CharacterDataComponent
-			collision_aabb_min_x="-2.0" 
-			collision_aabb_max_x="2.0" 
-			collision_aabb_min_y="-7.5" 
-			collision_aabb_max_y="3" 
+			collision_aabb_min_x="-5.0" 
+			collision_aabb_max_x="4.0" 
+			collision_aabb_min_y="-3" 
+			collision_aabb_max_y="10" 
 			mass="1.3"
 			>
 		</CharacterDataComponent>
@@ -132,4 +135,18 @@
 		offset.x="0" 
 		offset.y="0">
 	</HotspotComponent>
+
+	<LuaComponent
+		execute_every_n_frame = "-1",
+		script_death = "data/scripts/items/drop_money4x.lua",
+		remove_after_executed = "1",
+		>
+	</LuaComponent>
+
+	<LuaComponent
+		_tags="death_reward"
+		script_death="mods/mo_creeps/files/scripts/animals/hisii_giga_bomb_death.lua"
+		>
+	</LuaComponent>
+
 </Entity>

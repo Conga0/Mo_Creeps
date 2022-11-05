@@ -166,6 +166,71 @@
 
 
 
+    --Pandora Spawns
+
+    table.insert(g_small_enemies,
+    {
+        prob           = 0.05,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/items/pickup/heart.xml",
+		spawn_check = function() 
+			if GameHasFlagRun( "mocreeps_pandora_unleashed" ) then
+				return true
+			else
+				return false 
+			end
+		end,
+    })
+
+    table.insert(g_small_enemies,
+    {
+        prob           = 0.02,
+        min_count    = 6,
+        max_count    = 8,    
+        entity     = "data/entities/animals/blindgazer.xml",
+		spawn_check = function() 
+			if GameHasFlagRun( "mocreeps_pandora_unleashed" ) then
+				return true
+			else
+				return false 
+			end
+		end,
+    })
+
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.005,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/wizard_watermage_greater.xml",
+        spawn_check = function() 
+            if GameHasFlagRun( "mocreeps_pandora_unleashed" ) then
+                return true
+            else
+                return false 
+            end
+        end,
+    })
+
+    table.insert(g_small_enemies,
+    {
+        prob           = 0.02,
+        min_count    = 4,
+        max_count    = 4,    
+        entity     = "data/entities/animals/poring_lukki.xml",
+		spawn_check = function() 
+			if GameHasFlagRun( "mocreeps_pandora_unleashed" ) then
+				return true
+			else
+				return false 
+			end
+		end,
+    })
+
+
+
+
     --New Game +
     
     table.insert(g_small_enemies,

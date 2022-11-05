@@ -1,4 +1,4 @@
-<Entity>
+<Entity name="creep_debuff_polycrystal" >
 	<InheritTransformComponent>
     </InheritTransformComponent>	
     

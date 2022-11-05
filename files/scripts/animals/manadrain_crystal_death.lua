@@ -6,5 +6,5 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 	local pos_x, pos_y = EntityGetTransform( entity_id )
 	
 	-- do some kind of an effect? throw some particles into the air?
-	EntityLoad( "mods/mo_creeps/files/entities/projectiles/orb_red_big_explosive_nolla.xml", pos_x, pos_y )
+	EntityLoad( "mods/mo_creeps/files/entities/projectiles/orb_red_big_explosive_nolla.xml", pos_x, pos_y - 17 )
 end

@@ -24,6 +24,7 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 	if ModIsEnabled("raksa") == false then
 		GameAddFlagRun( "mocreeps_miniboss_musical_boss" )
 		AddFlagPersistent( "mocreeps_card_unlocked_musical_boss" )
+		AddFlagPersistent( "mocreeps_card_unlocked_musical_boss_spell" )
 		AddFlagPersistent( "mocreeps_card_unlocked_musical_boss_goldmode" )
 	end
 	

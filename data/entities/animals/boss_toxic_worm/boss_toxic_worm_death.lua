@@ -25,6 +25,7 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 	if ModIsEnabled("raksa") == false then
 		GameAddFlagRun( "mocreeps_miniboss_boss_toxic_worm" )
 		AddFlagPersistent( "mocreeps_card_unlocked_boss_toxic_worm" )
+		AddFlagPersistent( "mocreeps_card_unlocked_boss_toxic_worm_spell" )
 	end
 	
 	--StatsLogPlayerKill( entity_id )
