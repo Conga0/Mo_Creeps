@@ -144,3 +144,18 @@ table.insert(g_items,
     max_count	= 1,    
     entity 	= "mods/mo_creeps/files/entities/items/wands/custom/wand_of_wonders.xml"
 })
+
+table.insert(g_items,
+{
+    prob   		= 0.05,
+    min_count	= 1,
+    max_count	= 1,    
+    entity 	= "mods/mo_creeps/files/entities/items/wands/custom/wand_of_wonders.xml",
+    spawn_check = function() 
+        if GameHasFlagRun( "mocreeps_pandora_unleashed" ) then
+            return true
+        else
+            return false 
+        end
+    end,
+})

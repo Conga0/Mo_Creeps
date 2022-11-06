@@ -426,8 +426,6 @@ end
 
 --Spawns statues in the trophy room
 
---This is a infinite rat duplication exploit, and I know why, but it takes time to fix it the proper way..
---Too tired right now
 if ModIsEnabled("purgatory") then
   ModLuaFileAppend( "data/scripts/biomes/mountain/mountain_hall.lua", "mods/mo_creeps/files/scripts/biomes/boss_spawns/purgatory/statue_room_populator.lua" ) 
 else
@@ -718,12 +716,16 @@ if ModIsEnabled("raksa") == false then
   if motdSetting == true then
     if ModIsEnabled("purgatory") then
       dofile_once( "mods/mo_creeps/files/scripts/misc/motd_list_purgatory.lua" )
+    elseif ModIsEnabled("noitavania") then
+      dofile_once( "mods/mo_creeps/files/scripts/misc/motd_list_noitavania.lua" )
     else
       dofile_once( "mods/mo_creeps/files/scripts/misc/motd_list.lua" )
     end
   elseif flag_status == false then
     if ModIsEnabled("purgatory") then
       dofile_once( "mods/mo_creeps/files/scripts/misc/welcome_hint_purgatory.lua" )
+    elseif ModIsEnabled("noitavania") then
+      dofile_once( "mods/mo_creeps/files/scripts/misc/motd_list_noitavania.lua" )
     else
       dofile_once( "mods/mo_creeps/files/scripts/misc/welcome_hint.lua" )
     end

@@ -43,7 +43,7 @@
 			ragdoll_fx_forced="DISINTEGRATED"
 			blood_material="magic_liquid_random_polymorph"
 			blood_spray_material="magic_liquid_random_polymorph"
-			blood_multiplier="0.35"
+			blood_multiplier="0.3"
 			blood_sprite_directional=""
 			blood_sprite_large=""
 			materials_that_damage="lava,poison,blood_cold,blood_cold_vapour,acid,poison"

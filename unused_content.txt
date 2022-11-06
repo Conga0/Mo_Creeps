@@ -26,4 +26,9 @@ Added a new welcoming message for new users to Mo Creeps
 Master of None can not longer shoot poly orbs, It's all fun and games until you get Polymorphed
 Fixed Tnt Minecart Riders being a bit too jittery in their cart
 Fixed Worse Enemies Weak Shotgunners not working with minecarts properly
+
+Fixed Whisps not taking damage from Mass Wet
+Very slightly reduced blood produced by Angeling & Devilings
+Fixed MOTDs not spawning in Noitavania
 Fixed Minecart Hisii Snapping their wands in half upon entering a minecart
+Fixed Blob cave not spawning properly in Noitavania (from previous push)
