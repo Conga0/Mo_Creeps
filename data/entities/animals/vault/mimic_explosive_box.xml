@@ -1,5 +1,5 @@
 <Entity name="$animal_chest_mimic" >
-  <Base file="data/entities/animals/mimic_explosive_box.xml">
+  <Base file="data/entities/animals/mimic_explosive_box.xml" include_children="1" >
     <DamageModelComponent 
       hp="8"
       max_hp="8"

@@ -46,6 +46,11 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/animal_icons/boss_toxic_worm_minion.png",
 	  },
 	  {
+		name="Acid Bubble",
+		path="data/entities/animals/bubbles/acid/bubble_liquid.xml",
+		image="data/ui_gfx/bubbles/bubble_liquid_acid.png",
+	  },
+	  {
 		name="Alchemic Precursor Bubble",
 		path="data/entities/animals/bubbles/alchemicprecursor/bubble_liquid.xml",
 		image="data/ui_gfx/bubbles/bubble_liquid_alchemic_precursor.png",
@@ -279,6 +284,11 @@ table.insert(ALL_ENTITIES, {
 		name="Magic Poring",
 		path="data/entities/animals/poring_magic.xml",
 		image="data/ui_gfx/animal_icons/poring_magic.png",
+	  },
+	  {
+		name="Lukki Poring",
+		path="data/entities/animals/poring_lukki.xml",
+		image="data/ui_gfx/animal_icons/poring.png",
 	  },
 	  {
 		name="Birthday Rat",

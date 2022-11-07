@@ -26,9 +26,18 @@ Added a new welcoming message for new users to Mo Creeps
 Master of None can not longer shoot poly orbs, It's all fun and games until you get Polymorphed
 Fixed Tnt Minecart Riders being a bit too jittery in their cart
 Fixed Worse Enemies Weak Shotgunners not working with minecarts properly
-
 Fixed Whisps not taking damage from Mass Wet
 Very slightly reduced blood produced by Angeling & Devilings
 Fixed MOTDs not spawning in Noitavania
 Fixed Minecart Hisii Snapping their wands in half upon entering a minecart
-Fixed Blob cave not spawning properly in Noitavania (from previous push)
+Fixed Blob cave not spawning properly in Noitavania
+
+Fixed MOTDs not spawning in Noitavania (actual)
+Fixed Acid Bubble not appearing in Conjurer
+Fixed Devouring Ghosts eating magic liquid in the Void (modded biome)
+Fixed Suur Stendari not having flame particles in Temple of the Art
+Fixed Russian Translation not working on some status effects
+Added Entity Shifting
+
+
+REEMEMBER TO do add child with base entities before RELEASING CREATURE SHIFTT!

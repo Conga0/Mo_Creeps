@@ -1,5 +1,5 @@
 <Entity name="Vartiomies" tags="ui_use_raw_name" >
-  <Base file="data/entities/animals/sentry.xml">
+  <Base file="data/entities/animals/sentry.xml" include_children="1" >
     <DamageModelComponent 
       hp="45"
       max_hp="45"
@@ -9,16 +9,4 @@
 			>
 		</AnimalAIComponent>
   </Base>
-
-	<!-- protection from FREEZING -->
-	<Entity>
-		<InheritTransformComponent />
-		
-	    <GameEffectComponent 
-	        effect="PROTECTION_FREEZE"
-	        frames="-1"
-	    >
-		</GameEffectComponent >
-	</Entity>
-
 </Entity>

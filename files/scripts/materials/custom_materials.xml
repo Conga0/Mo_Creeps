@@ -157,6 +157,11 @@
 		texture_file="mods/mo_creeps/files/materials_gfx/redstone_dust.png"
 		color="720000" >
     </Graphics>
+	<StatusEffects>
+		<Ingestion>
+			<StatusEffect type="MOCREEPS_TRIP_RED" amount="0.8" />
+		</Ingestion>
+	</StatusEffects>
   </CellData>
   
   <CellDataChild

@@ -20,5 +20,5 @@ if ( rand(0,1) > 0.5 ) then
 	spawn( x - 40 - rad, y + 30 + rad )
 end
 
--- shift materials
-creature_shift( entity_id, pos_x, pos_y, false )
+-- shift creatures
+creature_shift( entity, x, y, false )

@@ -250,10 +250,18 @@ status_mocreep_manadrain_name,Mana Degradation,Разложение маны,,,,
 status_mocreep_manadrain_desc,You are loosing Mana Rapidly!!,Вы стремительно теряете ману!!!,,,,,,,,,,,,
 status_mocreep_transmute_name,Unstable Transmutation,Нестабильная трансмутация,,,,,,,,,,,,
 status_mocreep_transmute_desc,Your being is transmuting nearby matter uncontrollably!,Ваша сущность бесконтрольно превращается близлежащую материю!,,,,,,,,,,,,
-DEVTESTDEVTESTDEVTEST,"=====================================================================================================================================================================================================================================================",,,,,,,,,,,,,
+DEVTESTDEVTESTDEVTEST,"=====================================================================================================================================================================================================================================================Below here are 1.1.0 translation keys",,,,,,,,,,,,,
 item_mocreep_essence_fungus_name,"Essence of Fungus",,,,,,,,,,,,,
 item_mocreep_essence_fungus_desc,"Your very being is infecting the environment around it!",,,,,,,,,,,,,
 sign_mocreep_welcome_hint,"Hello and Welcome to More Creeps & Weirdos! \nAlthough this may seem inconvinent, please take a moment to view the mod settings page in Options > Mod Settings. \nSome mods need compatibility modes enabled, I did I best but some things are outside my control sadly. Other than that, go nuts and have fun <3",,,,,,,,,,,,,
+status_mocreep_trip_red_00_name,"Blazed",,,,,,,,,,,,,
+status_mocreep_trip_red_00_desc,"You feel dizzy",,,,,,,,,,,,,
+status_mocreep_trip_red_01_name,"Somewhat Blazed",,,,,,,,,,,,,
+status_mocreep_trip_red_01_desc,"You feel interlinked with Yggdrasil.",,,,,,,,,,,,,
+status_mocreep_trip_red_02_name,"Really Blazed",,,,,,,,,,,,,
+status_mocreep_trip_red_02_desc,"You feel a pleasant burning sensation build up inside you.",,,,,,,,,,,,,
+status_mocreep_trip_red_03_name,"Blazed as Hell",,,,,,,,,,,,,
+status_mocreep_trip_red_03_desc,"Usual concepts don't apply.",,,,,,,,,,,,,
 ]])
 
 
@@ -703,7 +711,7 @@ ModRegisterAudioEventMappings("mods/mo_creeps/files/audio/GUIDs.txt")
 
 -- Misc
 
---Kiiinda working??
+--Twitch Integration
 ModLuaFileAppend( "data/scripts/streaming_integration/event_list.lua", "mods/mo_creeps/files/scripts/streaming_integration/event_list_populator.lua" )
 
 
@@ -815,6 +823,14 @@ local attrs = xml:first_of("Base"):first_of("DamageModelComponent").attr
 attrs.materials_that_damage = attrs.materials_that_damage .. ",water,water_fading"
 attrs.materials_how_much_damage = attrs.materials_how_much_damage .. ",0.0005,0.0005"
 ModTextFileSetContent("data/entities/animals/spitmonster.xml", tostring(xml))
+
+
+
+-- Creature shift fix upon reloading world
+function OnPlayerSpawned( player_entity )
+	local x, y = EntityGetTransform(player)
+	local child = EntityLoad("mods/mo_creeps/files/entities/special/entity_shift_refresh_fixer.xml", x, y)
+end
 
 
 

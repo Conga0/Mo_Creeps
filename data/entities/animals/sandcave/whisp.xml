@@ -1,5 +1,5 @@
 <Entity name="Palavakeiju" >
-  <Base file="data/entities/animals/whisp.xml">
+  <Base file="data/entities/animals/whisp.xml" include_children="1" >
 
     <DamageModelComponent 
     hp="0.5"

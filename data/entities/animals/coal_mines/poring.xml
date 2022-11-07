@@ -1,6 +1,6 @@
 <Entity name="Hyytelö">
   
-	<Base file="data/entities/animals/poring.xml">
+	<Base file="data/entities/animals/poring.xml" include_children="1" >
         <AnimalAIComponent
 			_enabled="1" 
 			preferred_job="JobDefault"

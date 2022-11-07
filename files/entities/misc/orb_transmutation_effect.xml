@@ -105,8 +105,8 @@
 	</ParticleEmitterComponent>
 
 	<UIIconComponent
-		name="Unstable Being"
-		description="Your being is transmuting nearby matter uncontrollably!"
+		name="$status_mocreep_transmute_name"
+		description="$status_mocreep_transmute_desc"
 		icon_sprite_file="mods/mo_creeps/files/ui_gfx/status_indicators/transmutation_unstable.png"
 		is_perk="0"
 		display_above_head="0"

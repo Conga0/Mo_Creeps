@@ -1,82 +1,8 @@
 <Entity >
-  <Base file="data/entities/animals/wizard_firemage_greater.xml">
+  <Base file="data/entities/animals/wizard_firemage_greater.xml" include_children="1" >
     <DamageModelComponent 
       hp="10"
       max_hp="10"
      ></DamageModelComponent >
   </Base>
-
-	<Entity>
-		<InheritTransformComponent>
-			<Transform 
-				position.x="0"
-				position.y="-22" 
-				>
-			</Transform>
-		</InheritTransformComponent>
-		
-		<Base file="data/entities/base_torch_particle.xml" >
-
-			<ParticleEmitterComponent 
-				x_pos_offset_min="-3"
-				x_pos_offset_max="3" >
-			</ParticleEmitterComponent>
-	  
-			<ParticleEmitterComponent 
-				x_pos_offset_min="-3"
-				x_pos_offset_max="3" >
-			</ParticleEmitterComponent>
-			
-			<ParticleEmitterComponent 
-				x_pos_offset_min="-3"
-				x_pos_offset_max="3" >
-			</ParticleEmitterComponent>
-
-		</Base>
-	</Entity>
-	
-	<HotspotComponent
-		_tags="hand_l"
-		sprite_hotspot_name="hand"
-		transform_with_scale="1" >
-	</HotspotComponent>
-
-	<Entity name="hand_l">	
-		<Base file="data/entities/base_torch_particle.xml" >
-
-			<ParticleEmitterComponent 
-				count_min="2"
-				count_max="3"
-				x_pos_offset_min="-3"
-				x_pos_offset_max="3" 
-				y_pos_offset_min="-3"
-				y_pos_offset_max="3"
-				>
-			</ParticleEmitterComponent>
-	  
-			<ParticleEmitterComponent 
-				count_min="2"
-				count_max="3"
-				x_pos_offset_min="-3"
-				x_pos_offset_max="3" 
-				y_pos_offset_min="-3"
-				y_pos_offset_max="3">
-			</ParticleEmitterComponent>
-			
-			<ParticleEmitterComponent 
-				x_pos_offset_min="-3"
-				x_pos_offset_max="3" 
-				y_pos_offset_min="-3"
-				y_pos_offset_max="3">
-			</ParticleEmitterComponent>
-
-		</Base>
-		
-		<InheritTransformComponent
-			parent_hotspot_tag="hand_l"
-			only_position="1" >
-		</InheritTransformComponent>
-
-	</Entity>
-
 </Entity>

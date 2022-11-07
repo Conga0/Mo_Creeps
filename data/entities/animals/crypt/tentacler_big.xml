@@ -1,18 +1,8 @@
 <Entity >
-  <Base file="data/entities/animals/tentacler_big.xml">
+  <Base file="data/entities/animals/tentacler_big.xml" include_children="1" >
     <DamageModelComponent 
       hp="34"
       max_hp="34"
      ></DamageModelComponent >
   </Base>
-
-	<Entity>  <Base file="data/entities/verlet_chains/bigtentacle/tentacler_big_tentacle_01.xml"> <InheritTransformComponent><Transform position.x="-4"  position.y="-3" ></Transform></InheritTransformComponent> </Base>  </Entity>
-	<Entity>  <Base file="data/entities/verlet_chains/bigtentacle/tentacler_big_tentacle_01.xml"> <InheritTransformComponent><Transform position.x="4"  position.y="0" ></Transform></InheritTransformComponent> </Base>  </Entity>
-	<Entity>  <Base file="data/entities/verlet_chains/bigtentacle/tentacler_big_tentacle_01.xml"> <InheritTransformComponent><Transform position.x="8"  position.y="4" ></Transform></InheritTransformComponent> </Base>  </Entity>
-	<Entity>  <Base file="data/entities/verlet_chains/bigtentacle/tentacler_big_tentacle_02.xml"> <InheritTransformComponent><Transform position.x="0"  position.y="-2" ></Transform></InheritTransformComponent> </Base>  </Entity>
-	<Entity>  <Base file="data/entities/verlet_chains/bigtentacle/tentacler_big_tentacle_02.xml"> <InheritTransformComponent><Transform position.x="-8"  position.y="4" ></Transform></InheritTransformComponent> </Base>  </Entity>
-	
-	<Entity>  <Base file="data/entities/verlet_chains/bigtentacle/tentacler_big_tentacle_01.xml"> <InheritTransformComponent><Transform position.x="-6"  position.y="-7" ></Transform></InheritTransformComponent> </Base>  </Entity>
-	<Entity>  <Base file="data/entities/verlet_chains/bigtentacle/tentacler_big_tentacle_02.xml"> <InheritTransformComponent><Transform position.x="6"  position.y="-7" ></Transform></InheritTransformComponent> </Base>  </Entity>
-
 </Entity>

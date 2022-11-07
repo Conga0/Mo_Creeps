@@ -1,5 +1,5 @@
 <Entity name="Pieni lentokone" tags="ui_use_raw_name" >
-  <Base file="data/entities/animals/drone_mini.xml">
+  <Base file="data/entities/animals/drone_mini.xml" include_children="1" >
     <DamageModelComponent 
       hp="16"
       max_hp="16"
@@ -11,16 +11,4 @@
 			is_predator="1" >
 		</GenomeDataComponent>
   </Base>
-
-	<!-- protection from FREEZING -->
-	<Entity>
-		<InheritTransformComponent />
-		
-	    <GameEffectComponent 
-	        effect="PROTECTION_FREEZE"
-	        frames="-1"
-	    >
-		</GameEffectComponent >
-	</Entity>
-
 </Entity>

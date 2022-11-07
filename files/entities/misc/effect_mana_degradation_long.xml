@@ -42,8 +42,8 @@
 	</GameEffectComponent >
 
 	<UIIconComponent
-		name="Mana Degradation"
-		description="You feel the magic drain from your tools."
+		name="$status_mocreep_manadrain_name"
+		description="$status_mocreep_manadrain_desc"
 		icon_sprite_file="data/ui_gfx/status_indicators/mana_degradation.png"
 		is_perk="0"
 		display_above_head="1"

@@ -185,18 +185,6 @@
 	<Entity><Base file="data/entities/verlet_chains/devourer_ghost/tentacle.xml"> <InheritTransformComponent><Transform position.x="-4"  position.y="2" ></Transform></InheritTransformComponent> </Base></Entity>
 	<Entity><Base file="data/entities/verlet_chains/devourer_ghost/tentacle.xml"> <InheritTransformComponent><Transform position.x="0"  position.y="4" ></Transform></InheritTransformComponent> </Base></Entity>
 
-	<MagicConvertMaterialComponent
-      kill_when_finished="0"
-      from_material_tag="[magic_liquid]"
-      steps_per_frame="6"
-      to_material="water"
-      clean_stains="0"
-      is_circle="1"
-      radius="100" 
-	  loop="1"
-	  >
-    </MagicConvertMaterialComponent>
-
 	<LuaComponent 
 		_enabled="1" 
 		execute_on_added="1"

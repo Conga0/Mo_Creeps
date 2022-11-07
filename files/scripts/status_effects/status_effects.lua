@@ -33,4 +33,38 @@ table.insert(status_effects,
     ui_icon="mods/mo_creeps/files/ui_gfx/status_indicators/transmutation_unstable.png",
     effect_entity="mods/mo_creeps/files/entities/misc/orb_transmutation_effect.xml",
 })
-
+table.insert(status_effects,
+{
+    id="MOCREEPS_TRIP_RED",
+    ui_name="$status_mocreep_trip_red_00_name",
+    ui_description="$status_mocreep_trip_red_00_desc",
+    ui_icon="mods/mo_creeps/files/ui_gfx/status_indicators/creature_shift.png",
+    effect_entity="mods/mo_creeps/files/entities/misc/effect_trip_red_00.xml",
+})
+table.insert(status_effects,
+{
+    id="MOCREEPS_TRIP_RED",
+    ui_name="$status_mocreep_trip_red_01_name",
+    ui_description="$status_mocreep_trip_red_01_desc",
+    ui_icon="mods/mo_creeps/files/ui_gfx/status_indicators/creature_shift.png",
+    effect_entity="mods/mo_creeps/files/entities/misc/effect_trip_red_01.xml",
+    min_threshold_normalized="0.5",
+})
+table.insert(status_effects,
+{
+    id="MOCREEPS_TRIP_RED",
+    ui_name="$status_mocreep_trip_red_02_name",
+    ui_description="$status_mocreep_trip_red_02_desc",
+    ui_icon="mods/mo_creeps/files/ui_gfx/status_indicators/creature_shift.png",
+    effect_entity="mods/mo_creeps/files/entities/misc/effect_trip_red_02.xml",
+    min_threshold_normalized="1.5",
+})
+table.insert(status_effects,
+{
+    id="MOCREEPS_TRIP_RED",
+    ui_name="$status_mocreep_trip_red_03_name",
+    ui_description="$status_mocreep_trip_red_03_desc",
+    ui_icon="mods/mo_creeps/files/ui_gfx/status_indicators/creature_shift.png",
+    effect_entity="mods/mo_creeps/files/entities/misc/effect_trip_red_03.xml",
+    min_threshold_normalized="3.0",
+})
