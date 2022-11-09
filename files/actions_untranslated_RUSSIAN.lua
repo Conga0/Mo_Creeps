@@ -543,7 +543,7 @@ table.insert(actions,
 
 table.insert(actions,
 {
-    id          = "MOCREEPS_spellS_TO_CATS",
+    id          = "MOCREEPS_SPELL_TO_CATS",
     name 		= "Превращение в кошек",
     description = "Превращает каждый снаряд, находящийся в воздухе, в кошку. Милая идея.",
     sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/spells_to_cats.png",
@@ -566,7 +566,7 @@ table.insert(actions,
 --oh my god FUCK YOU
 table.insert(actions,
 {
-    id                = "MOCREEPS_SPLIT_spell",
+    id                = "MOCREEPS_SPLIT_SPELL",
     name              = "Разделяющийся выстрел",
     description       = "50% шанс на удвоение при следующем заклинании.",
     sprite            = "mods/mo_creeps/files/ui_gfx/gun_actions/split_spell.png",

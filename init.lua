@@ -262,6 +262,8 @@ status_mocreep_trip_red_02_name,"Really Blazed",,,,,,,,,,,,,
 status_mocreep_trip_red_02_desc,"You feel a pleasant burning sensation build up inside you.",,,,,,,,,,,,,
 status_mocreep_trip_red_03_name,"Blazed as Hell",,,,,,,,,,,,,
 status_mocreep_trip_red_03_desc,"Usual concepts don't apply.",,,,,,,,,,,,,
+item_mocreep_fungus_stone_name,"Sienenkivi",,,,,,,,,,,,,
+item_mocreep_fungus_stone_desc,"You feel the world transforming in the palm of your hand.",,,,,,,,,,,,,
 ]])
 
 
@@ -830,6 +832,98 @@ ModTextFileSetContent("data/entities/animals/spitmonster.xml", tostring(xml))
 function OnPlayerSpawned( player_entity )
 	local x, y = EntityGetTransform(player)
 	EntityLoad("mods/mo_creeps/files/entities/special/entity_shift_refresh_fixer.xml", x, y)
+end
+
+--Allows for essence of fungus to be turned into a stone
+local content = ModTextFileGetContent("data/entities/buildings/essence_eater.xml")
+local xml = nxml.parse(content)
+xml:add_child(nxml.parse([[
+	<LuaComponent
+		execute_every_n_frame="-1"
+		script_death="mods/mo_creeps/files/scripts/essence/away_modded.lua"
+		remove_after_executed="0"
+		>
+	</LuaComponent>
+]]))
+ModTextFileSetContent("data/entities/buildings/essence_eater.xml", tostring(xml))
+
+--Allows for Pandora Chest rain to occur if you bring a Pandora's Chest to the mountain altar
+ModLuaFileAppend( "data/scripts/magic/altar_tablet_magic.lua", "mods/mo_creeps/files/scripts/magic/mountain_altar_appends.lua" )
+
+
+
+--Nightmare & Purgatory fixes for bubbles so they don't spew out infinite liquid everywhere
+if ModIsEnabled("purgatory") or ModIsEnabled("nightmare") then
+
+  local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
+  local content = ModTextFileGetContent("data/entities/animals/bubble_liquid.xml")
+  local xml = nxml.parse(content)
+  local attrs = xml:first_of("Base"):first_of("DamageModelComponent").attr
+  attrs.blood_multiplier = "10"
+  ModTextFileSetContent("data/entities/animals/bubble_liquid.xml", tostring(xml))
+
+  local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
+  local content = ModTextFileGetContent("data/entities/animals/bubbles/acid/bubble_liquid.xml")
+  local xml = nxml.parse(content)
+  local attrs = xml:first_of("Base"):first_of("DamageModelComponent").attr
+  attrs.blood_multiplier = "10"
+  ModTextFileSetContent("data/entities/animals/bubbles/acid/bubble_liquid.xml", tostring(xml))
+
+  local content = ModTextFileGetContent("data/entities/animals/bubbles/freezing_liquid/bubble_liquid.xml")
+  local xml = nxml.parse(content)
+  local attrs = xml:first_of("Base"):first_of("DamageModelComponent").attr
+  attrs.blood_multiplier = "18"
+  ModTextFileSetContent("data/entities/animals/bubbles/freezing_liquid/bubble_liquid.xml", tostring(xml))
+
+  local content = ModTextFileGetContent("data/entities/animals/bubbles/cursed_liquid/bubble_liquid.xml")
+  local xml = nxml.parse(content)
+  local attrs = xml:first_of("Base"):first_of("DamageModelComponent").attr
+  attrs.blood_multiplier = "2.75"
+  ModTextFileSetContent("data/entities/animals/bubbles/cursed_liquid/bubble_liquid.xml", tostring(xml))
+
+  local content = ModTextFileGetContent("data/entities/animals/bubbles/ambrosia/bubble_liquid.xml")
+  local xml = nxml.parse(content)
+  local attrs = xml:first_of("Base"):first_of("DamageModelComponent").attr
+  attrs.blood_multiplier = "20"
+  ModTextFileSetContent("data/entities/animals/bubbles/ambrosia/bubble_liquid.xml", tostring(xml))
+
+  local content = ModTextFileGetContent("data/entities/animals/bubbles/alchemicprecursor/bubble_liquid.xml")
+  local xml = nxml.parse(content)
+  local attrs = xml:first_of("Base"):first_of("DamageModelComponent").attr
+  attrs.blood_multiplier = "15"
+  ModTextFileSetContent("data/entities/animals/bubbles/alchemicprecursor/bubble_liquid.xml", tostring(xml))
+
+  local content = ModTextFileGetContent("data/entities/animals/bubbles/healthium/bubble_liquid.xml")
+  local xml = nxml.parse(content)
+  local attrs = xml:first_of("Base"):first_of("DamageModelComponent").attr
+  attrs.blood_multiplier = "15"
+  ModTextFileSetContent("data/entities/animals/bubbles/healthium/bubble_liquid.xml", tostring(xml))
+
+  local content = ModTextFileGetContent("data/entities/animals/bubbles/unstablePandorium/bubble_liquid.xml")
+  local xml = nxml.parse(content)
+  local attrs = xml:first_of("Base"):first_of("DamageModelComponent").attr
+  attrs.blood_multiplier = "10"
+  ModTextFileSetContent("data/entities/animals/bubbles/unstablePandorium/bubble_liquid.xml", tostring(xml))
+
+  local content = ModTextFileGetContent("data/entities/animals/bubbles/pandorium/bubble_liquid.xml")
+  local xml = nxml.parse(content)
+  local attrs = xml:first_of("Base"):first_of("DamageModelComponent").attr
+  attrs.blood_multiplier = "10"
+  ModTextFileSetContent("data/entities/animals/bubbles/pandorium/bubble_liquid.xml", tostring(xml))
+
+  local content = ModTextFileGetContent("data/entities/animals/bubbles/stophittingyourself/bubble_liquid.xml")
+  local xml = nxml.parse(content)
+  local attrs = xml:first_of("Base"):first_of("DamageModelComponent").attr
+  attrs.blood_multiplier = "10"
+  ModTextFileSetContent("data/entities/animals/bubbles/stophittingyourself/bubble_liquid.xml", tostring(xml))
+
+  local content = ModTextFileGetContent("data/entities/animals/bubbles/sliceLiquid/bubble_liquid.xml")
+  local xml = nxml.parse(content)
+  local attrs = xml:first_of("Base"):first_of("DamageModelComponent").attr
+  attrs.blood_multiplier = "10"
+  ModTextFileSetContent("data/entities/animals/bubbles/sliceLiquid/bubble_liquid.xml", tostring(xml))
+  
+
 end
 
 

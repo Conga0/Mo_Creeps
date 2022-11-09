@@ -1,4 +1,4 @@
-<Entity tags="teleportable_NOT,item_physics,chest,item_pickup,effectable_prop,music_energy_100_near">
+<Entity tags="teleportable_NOT,item_physics,chest_pandora,item_pickup,effectable_prop,music_energy_100_near">
 	<UIInfoComponent
 		name="$item_mocreeps_chest_cursed"
 		>

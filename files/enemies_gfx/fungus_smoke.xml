@@ -7,7 +7,7 @@
   <RectAnimation 
     frame_count="8" 
     frame_height="29" 
-    frame_wait="0.18" 
+    frame_wait="0.14" 
     frame_width="29" 
     frames_per_row="8" 
     name="stand" 
@@ -19,7 +19,7 @@
   <RectAnimation 
     frame_count="6" 
     frame_height="29" 
-    frame_wait="0.16" 
+    frame_wait="0.12" 
     frame_width="29" 
     frames_per_row="6" 
     name="walk" 
@@ -52,7 +52,7 @@
   <RectAnimation 
     frame_count="6" 
     frame_height="29" 
-    frame_wait="0.14" 
+    frame_wait="0.10" 
     frame_width="29" 
     frames_per_row="6" 
     name="run" 
@@ -85,7 +85,7 @@
   <RectAnimation 
     frame_count="6" 
     frame_height="29" 
-    frame_wait="0.14" 
+    frame_wait="0.10" 
     frame_width="29" 
     frames_per_row="6" 
     name="burn" 

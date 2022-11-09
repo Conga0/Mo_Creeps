@@ -3,7 +3,7 @@
 Adds various new Creeps & Weirdos to the world of Noita, including new characters such as:
 The Master of Mallards, the species of Porings, bigger scarier Elemental Wizards and much more to explore for yourself!
 
-Implements 71 new enemies, 4 new bosses and 8 attainable trophies to unlock.. but maybe there could be a few more hidden secrets too.
+Implements 72 new enemies, 4 new bosses and 8 attainable trophies to unlock.. but maybe there could be a few more hidden secrets too.
 Adds 28 new spells if you can conquer powerful foes.
 And an extra 2 more for free unlocked by default.
 With maybe a bit more for you to find too.

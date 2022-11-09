@@ -37,11 +37,20 @@ Poly Crystals spawn in pre-decided locations in pixelscenes to guarantee waysaro
 
 Setting to disable custom pixelscenes for compatibility with mods like noitavania
 
-Consider weakening toxic worm wand drop
-
 Check if angel has correct amount of hp in nightmare/purgatory.. is it getting 1x50x50 or just 1x50?
+
+Disable custom pixelscenes if playing on Noitavania (32 bit limit will be reached otherwise)
+
+Add hint pointing towards Essence of Fungus
+Add reward for bringing Essence of Fungus to moon/Sun
+
+Fix chaotic poly crystal trying to poly propane tanks
 
 
 
 
 Translation keys for twitch events
+
+Remember to make 1.1.0 pixelscenes available for Purgatory, nightmare & Noitavania
+
+Remove 1.1.0 Pre-Release from the mod title
