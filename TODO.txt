@@ -24,18 +24,24 @@ Secret text with a youtube link to rick ashley's never gonna give you up
 On toxic immunity buff expiration, re-add material  vulnerability to toxic rock, gas & ice
 But also check if they already have toxic immunity perk and don't
 
-Add message, where MOTD spawns, telling new players to check the settings page before playing
-to check for mod compatibility
+Improve Creature Shifting ui icon to look prettier, the one which shows you what creature was changed
+Investigate into making Blazed screen effects more like a red hue than fractal fungal shifting
+
+Starting cat amount multiplier
+
+Pixel scene to demonstrate feeding blood to red sand to grow it
+
+If fungal shift timer mod is enabled, add a status to show the cooldown for Red Shifting
+
+Poly Crystals spawn in pre-decided locations in pixelscenes to guarantee waysaround
+
+Setting to disable custom pixelscenes for compatibility with mods like noitavania
+
+Consider weakening toxic worm wand drop
+
+Check if angel has correct amount of hp in nightmare/purgatory.. is it getting 1x50x50 or just 1x50?
+
+
 
 
 Translation keys for twitch events
-
-
-
-
-
-
-NXML
-to make enemy shifts
-Eat enough red sand and an enemy shift will occur
-Add poof effect if any visual enemies are in the area, as if they're being poly morphed

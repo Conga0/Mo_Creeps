@@ -20,7 +20,7 @@ dofile("data/scripts/lib/utilities.lua")
             local target2 = (GlobalsGetValue("Mocreep_global_Cshift_" .. targ_count .. "_targ2", "failed") )
 
             --Debug helpers
-            GamePrint(target2 .. " has turned into " .. target)
+            --GamePrint(target2 .. " has turned into " .. target)
 
             local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
             local content = ModTextFileGetContent("data/entities/animals/" .. target .. ".xml")

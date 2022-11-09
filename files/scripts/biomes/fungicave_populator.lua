@@ -45,6 +45,14 @@ if ModIsEnabled("worse_enemies") == false then
     })
 end
 
+table.insert(g_big_enemies,
+{
+    prob           = 0.35,
+    min_count    = 1,
+    max_count    = 1,    
+    entity     = "data/entities/animals/fungus_smoking_creep.xml"
+})
+
 
 
 --Small Enemies

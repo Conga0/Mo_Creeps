@@ -767,7 +767,7 @@ xml:add_child(nxml.parse([[
 ModTextFileSetContent("data/entities/animals/shotgunner.xml", tostring(xml))
 
 --Same thing but for weak hisii
-local content = ModTextFileGetContent("data/entities/animals/shotgunner.xml")
+local content = ModTextFileGetContent("data/entities/animals/shotgunner_weak.xml")
 local xml = nxml.parse(content)
 xml:add_child(nxml.parse([[
     <LuaComponent
@@ -776,7 +776,7 @@ xml:add_child(nxml.parse([[
         >
     </LuaComponent>
 ]]))
-ModTextFileSetContent("data/entities/animals/shotgunner.xml", tostring(xml))
+ModTextFileSetContent("data/entities/animals/shotgunner_weak.xml", tostring(xml))
 
 --Same thing but for hisii with TNT
 local content = ModTextFileGetContent("data/entities/animals/miner_weak.xml")
@@ -829,7 +829,7 @@ ModTextFileSetContent("data/entities/animals/spitmonster.xml", tostring(xml))
 -- Creature shift fix upon reloading world
 function OnPlayerSpawned( player_entity )
 	local x, y = EntityGetTransform(player)
-	local child = EntityLoad("mods/mo_creeps/files/entities/special/entity_shift_refresh_fixer.xml", x, y)
+	EntityLoad("mods/mo_creeps/files/entities/special/entity_shift_refresh_fixer.xml", x, y)
 end
 
 

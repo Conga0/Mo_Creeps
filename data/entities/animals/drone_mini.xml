@@ -26,6 +26,16 @@
             hp="0.8"
             ragdoll_material="steel"
 			ragdoll_filenames_file="mods/mo_creeps/files/ragdolls/drone_mini/filenames.txt"  >
+			<damage_multipliers
+				fire="0.0" 
+				drill="0.1"
+				slice="0.1"
+				melee="0.3"
+				projectile="0.6"
+				radioactive="0.0"
+				explosion="1.0"
+				electricity="2.0" >
+			</damage_multipliers>
 		</DamageModelComponent>
 
 		<SpriteComponent 

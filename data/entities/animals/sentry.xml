@@ -9,8 +9,8 @@
 			escape_if_damaged_probability="70"
 			attack_melee_damage_min="0.9" 
 			attack_melee_damage_max="1.1"
-			creature_detection_range_x="700"
-			creature_detection_range_y="700"
+			creature_detection_range_x="300"
+			creature_detection_range_y="300"
 			attack_melee_max_distance="10"
 			food_material="blood"
 			needs_food="0"
@@ -44,7 +44,7 @@
 			in_liquid_shooting_electrify_prob="30" >
 			<damage_multipliers
 				projectile="0.5"
-				explosion="1.1"
+				explosion="1.2"
 				electricity="2"
 				fire="0.1"
 				slice="0.2"

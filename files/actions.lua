@@ -543,7 +543,7 @@ table.insert(actions,
 
 table.insert(actions,
 {
-    id          = "MOCREEPS_spellS_TO_CATS",
+    id          = "MOCREEPS_SPELLS_TO_CATS",
     name 		= "$spell_mocreep_spells_to_sorako_name",
     description = "$spell_mocreep_spells_to_sorako_desc",
     sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/spells_to_cats.png",
@@ -566,7 +566,7 @@ table.insert(actions,
 --oh my god FUCK YOU
 table.insert(actions,
 {
-    id                = "MOCREEPS_SPLIT_spell",
+    id                = "MOCREEPS_SPLIT_SPELL",
     name              = "$spell_mocreep_split_shot_name",
     description       = "$spell_mocreep_split_shot_desc",
     sprite            = "mods/mo_creeps/files/ui_gfx/gun_actions/split_spell.png",

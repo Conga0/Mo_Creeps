@@ -17,11 +17,12 @@ Portal Trap pixelscene - mods/mo_creeps/files/scripts/biomes/coalmines_populator
 
 1.1.0 Changelog:
 Added 2 new environmental hazards
-Added 1 new creep
+Added 2 new creeps
 Added new biome variation to the world, explore the same biomes in wildly different ways!
 Birthday event now occurs during July, this is when the mod first started being worked on.
 Pandora's Chest now has more permanent effects
 Added a new welcoming message for new users to Mo Creeps
+Red sand is now considerably more palatable...
 
 Master of None can not longer shoot poly orbs, It's all fun and games until you get Polymorphed
 Fixed Tnt Minecart Riders being a bit too jittery in their cart
@@ -31,13 +32,19 @@ Very slightly reduced blood produced by Angeling & Devilings
 Fixed MOTDs not spawning in Noitavania
 Fixed Minecart Hisii Snapping their wands in half upon entering a minecart
 Fixed Blob cave not spawning properly in Noitavania
-
-Fixed MOTDs not spawning in Noitavania (actual)
 Fixed Acid Bubble not appearing in Conjurer
-Fixed Devouring Ghosts eating magic liquid in the Void (modded biome)
+Fixed Devouring Ghosts eating magical liquids in the Void (modded biome)
 Fixed Suur Stendari not having flame particles in Temple of the Art
 Fixed Russian Translation not working on some status effects
-Added Entity Shifting
 
-
-REEMEMBER TO do add child with base entities before RELEASING CREATURE SHIFTT!
+Fixed Weak Hisii Shotgunners not jumping into minecarts
+Fixed Hisii Shotgunners occasionally turning into their weaker versions in minecarts
+Fixed Ceiling Fungus needing air to survive
+Red Sand now absorbs blood to grow
+Reduced Sentry Damage in earlier parts of the game
+Sigificantly reduced Sentry's range, he should now play a slightly different role than sniper by requiring a closer encounter but having better stats to cut through
+Nerfed wand dropped by Pandora's Chest on normal difficulty
+Mini Drones in earlier parts of the game are now more vulnerable to projectile damage
+Magic Devourer's are now more vulnerable to projectile & explosive damage
+Added 1 new pixelscene for Coal Pits, demonstrating Red Sand growing when fed Blood
+New creep: Smoking Fungus

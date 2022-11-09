@@ -227,3 +227,31 @@
         entity     = "data/entities/animals/vault/tentacler_big.xml",
         ngpluslevel = 1
     })
+
+
+
+
+
+
+
+
+
+
+
+
+
+    -- Pixel Scenes/Areas
+    
+    --[[
+    ]]--
+    
+    
+    
+    table.insert(g_pixel_scene_04,
+    {
+            prob   			= 1.0,
+            material_file 	= "mods/mo_creeps/files/biome_impl/excavationsite/redstone_01.png",
+            visual_file		= "",
+            background_file	= "",
+            is_unique		= 0
+    })

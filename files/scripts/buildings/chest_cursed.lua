@@ -194,11 +194,16 @@ function item_pickup( entity_item, entity_who_picked, name )
 	EntityLoad("data/entities/particles/image_emitters/magical_symbol_fast.xml", x, y)
 	GamePlaySound( "data/audio/Desktop/projectiles.snd", "player_projectiles/crumbling_earth/create", x, y)
 	GamePlaySound( "data/audio/Desktop/event_cues.snd", "event_cues/greed_curse/create", x, y)
-    EntityLoad( "data/entities/items/wand_unshuffle_06.xml", x, y - 16 )
     EntityLoad( "data/entities/items/pickup/heart.xml", x, y )
     EntityLoad( "data/entities/items/pickup/heart.xml", x, y )
     EntityLoad( "data/entities/items/pickup/heart_fullhp.xml",  x, y )
     EntityLoad( "data/entities/animals/worm_big.xml",  x + 100, y + 250 )
+
+    if ModIsEnabled("purgatory") or ModIsEnabled("nightmare") then
+        EntityLoad( "data/entities/items/wand_unshuffle_06.xml", x, y - 16 )
+    else
+        EntityLoad( "data/entities/items/wand_unshuffle_04.xml", x, y - 16 )
+    end
 
     GameAddFlagRun( "mocreeps_pandora_unleashed" )
 

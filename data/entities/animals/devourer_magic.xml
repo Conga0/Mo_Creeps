@@ -121,8 +121,8 @@
 		>
 		<damage_multipliers
 			melee="0.5"
-			projectile="0.5"
-			explosion="0.5"
+			projectile="0.6"
+			explosion="0.6"
 			electricity="0.5"
 			fire="0.5"
 			ice="0.5"

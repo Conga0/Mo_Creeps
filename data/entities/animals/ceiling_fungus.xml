@@ -34,6 +34,7 @@
 
 		<DamageModelComponent 
             hp="3.0"
+			air_needed="0"
 			minimum_knockback_force="1000000000"
             materials_create_messages="1"
 			ragdoll_blood_amount_absolute="1.0"

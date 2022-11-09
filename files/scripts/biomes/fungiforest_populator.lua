@@ -47,6 +47,15 @@ table.insert(g_big_enemies,
     entity     = "data/entities/animals/blob_huge.xml"
 })
 
+table.insert(g_big_enemies,
+{
+    prob           = 0.35,
+    min_count    = 1,
+    max_count    = 1,    
+    entity     = "data/entities/animals/fungus_smoking_creep.xml"
+})
+
+
 --Small enemies
 
 table.insert(g_small_enemies,

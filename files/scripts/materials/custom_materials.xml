@@ -346,4 +346,12 @@
 	>
   </Reaction>
 
+  <Reaction probability="10"
+	input_cell1="mocreeps_redstone" 	input_cell2="blood"
+	output_cell1="mocreeps_redstone" 	output_cell2="mocreeps_redstone"
+	blob_radius1="6"						blob_radius2="3"
+	audio_fx_volume_1="100.0" >
+	>
+  </Reaction>
+
 </Materials>
