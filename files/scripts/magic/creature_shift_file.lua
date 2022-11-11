@@ -66,8 +66,8 @@ function creature_shift( entity, x, y, debug_no_limits )
 
     local iter = tonumber( GlobalsGetValue( "mocreep_creature_shift_iteration", "0" ) )
     GlobalsSetValue( "mocreep_creature_shift_iteration", tostring(iter+1) )
-    if iter > 20 and not debug_no_limits then
-        shift_check_2 = false --max shifts hit
+    if iter > 30 and not debug_no_limits then
+        shift_check_2 = false --max shifts hit (30)
     else
         shift_check_2 = true
     end

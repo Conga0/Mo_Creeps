@@ -49,6 +49,15 @@ Fix chaotic poly crystal trying to poly propane tanks
 
 
 
+
+Trophys:
+Pandora Chest Rain
+Killing all minibosses
+
+
+
+
+
 Translation keys for twitch events
 
 Remember to make 1.1.0 pixelscenes available for Purgatory, nightmare & Noitavania

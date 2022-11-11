@@ -95,6 +95,14 @@
         entity     = "data/entities/animals/mimic_explosive_box.xml"
     })
 
+    table.insert(g_small_enemies,
+    {
+        prob           = 0.005,
+        min_count    = 4,
+        max_count    = 6,    
+        entity     = "data/entities/animals/scavenger_heal.xml"
+    })
+
 
 
     --Unique

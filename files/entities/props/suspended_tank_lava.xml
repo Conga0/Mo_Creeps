@@ -65,7 +65,7 @@
 			explosion_sprite_lifetime="10" 
 			create_cell_probability="50" 
 			hole_destroy_liquid="0" 
-			load_this_entity="data/entities/particles/particle_explosion/main_swirly_orange_giga.xml"
+			load_this_entity="mods/mo_creeps/files/entities/particles/particle_explosion/main_swirly_orange.xml"
 			hole_enabled="1" 
 			ray_energy="2500000"
 			particle_effect="1" 

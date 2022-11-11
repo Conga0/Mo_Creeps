@@ -79,7 +79,7 @@
 
     table.insert(g_scavenger_party,
     {
-        prob           = 0.85,
+        prob           = 0.65,
         min_count    = 1,
         max_count    = 1,
         entities     =  {

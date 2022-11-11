@@ -19,9 +19,9 @@
 		</AnimalAIComponent>
 		
 		<DamageModelComponent 
-            hp="7.6"
+            hp="3"
 			air_needed="0"
-			ragdoll_filenames_file="data/ragdolls/fungus_big/filenames.txt" 
+			ragdoll_filenames_file="mods/mo_creeps/files/ragdolls/fungus_smoking_mocreep/filenames.txt" 
 			fire_probability_of_ignition="20" 
 			ragdoll_material="fungus_loose_trippy"
 			blood_material="blood_fungi"

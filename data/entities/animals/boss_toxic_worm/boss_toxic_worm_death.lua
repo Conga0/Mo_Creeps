@@ -11,7 +11,7 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 	-- do some kind of an effect? throw some particles into the air?
 
 		EntityLoad( "data/entities/items/pickup/heart.xml", pos_x, pos_y )
-		EntityLoad( "data/entities/items/wand_unshuffle_06.xml", pos_x + 16, pos_y )
+		EntityLoad( "data/entities/items/wand_unshuffle_05.xml", pos_x + 16, pos_y )
 
         if flag_status then
             CreateItemActionEntity( "MOCREEPS_BUNGAL_SHIFT", pos_x - 16, pos_y )

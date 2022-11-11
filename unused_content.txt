@@ -9,8 +9,6 @@ Remember the checklist!!
 Suspended Lava Tank - mods/mo_creeps/files/entities/props/suspended_tank_lava.xml
 Essence of Fungus - mods/mo_creeps/files/entities/items/pickups/essence_fungus.xml (functional but can't redeem it anywhere)
 
-Portal Trap pixelscene - mods/mo_creeps/files/scripts/biomes/coalmines_populator.lua
-
 
 
 
@@ -22,6 +20,7 @@ Added new biome variation to the world, explore the same biomes in wildly differ
 Birthday event now occurs during July, this is when the mod first started being worked on.
 Pandora's Chest now has more permanent effects
 Added a new welcoming message for new users to Mo Creeps
+Added a new essence to the world...
 Red sand is now considerably more palatable...
 
 Master of None can not longer shoot poly orbs, It's all fun and games until you get Polymorphed
@@ -41,14 +40,24 @@ Fixed Ceiling Fungus needing air to survive
 Very slightly reduced blood produced by Angeling & Devilings
 Red Sand now absorbs blood to grow
 Reduced Sentry Damage in earlier parts of the game
-Sigificantly reduced Sentry's range, he should now play a slightly different role than sniper by requiring a closer encounter but having better stats to cut through
+Significantly reduced Sentry's range, he should now play a slightly different role than sniper by requiring a closer encounter but having better stats to cut through
 Nerfed wand dropped by Pandora's Chest on normal difficulty
 Mini Drones in earlier parts of the game are now more vulnerable to projectile damage
-Magic Devourer's are now more vulnerable to projectile & explosive damage
-
 Increased Smoking Fungi's animation speed
-Added Essence of Fungus (currently cannot be used in quests.. unless turning into a Fungi-Stone counts)
-Changed mod title to include "(1.1.0 Pre-Release)"
+Added Essence of Fungus
 Slightly reduced Poring melee range
 Fixed some spells breaking in Spell Evolution compatibility mode. I don't know how much longer I'll keep proper translated support for the mod, especially since it's evolution's bug and not mine, but as long as it remains not too big a burden I'll maintain support.
 Significantly Reduced liquid produced by liquid bubbles in Purgatory & Nightmare. Previously they occasionally produced so much liquid it would forcefully clip through the floor and hurt you without warning
+
+Added Smoking Fungus to Conjurer menu
+Added Essence of Fungus to Conjurer menu
+Added Sienenkivi to Conjurer menu
+Significantly reduced Smoking Fungi's smoke explosion on death compared to detonation
+Significantly reduced Smoking Fungi's health in Fungicaverns
+Increased Smoking Fungi's spawnrate in Fungicaverns
+Smoking Fungi now has Ragdolls
+Reduced Poring damage in Coal Pits
+Slightly nerfed wand dropped by Toxic Worm Boss
+Reduced Greater Cold Gazer's spawnrate in snowy depths
+FIXED MAGIC DEVOURERS HAVING 90% DAMAGE REDUCTION FROM ALL SOURCES
+Colossal Blob can now curse players with melee weakening, you can no longer "cheese" the boss with melee immunity

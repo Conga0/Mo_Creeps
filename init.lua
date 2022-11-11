@@ -211,7 +211,7 @@ spell_mocreep_reverberation_desc,"Creates a reverberation of sound in the air, s
 spell_mocreep_bite_name,Bite,Укус,,,,,,,,,,,,
 spell_mocreep_bite_desc,...Magic?,...Волшебство?,,,,,,,,,,,,
 spell_mocreep_bungal_shift_hyper_name,Hyper Fungal Shift,Супергрибковое смещение,,,,,,,,,,,,
-spell_mocreep_bungal_shift_hyper_desc,Insane....                      ,Безумие....                      ,,,,,,,,,,,,
+spell_mocreep_bungal_shift_hyper_desc,Insane....                          ,Безумие....                          ,,,,,,,,,,,,
 spell_mocreep_summon_worm_name,Summon Jättimato,Призыв яттимато,,,,,,,,,,,,
 spell_mocreep_summon_worm_desc,Dangerous....                      ,Опасно....                      ,,,,,,,,,,,,
 spell_mocreep_bite_crit_name,Bloody Bite,Кровавый укус,,,,,,,,,,,,
@@ -264,6 +264,8 @@ status_mocreep_trip_red_03_name,"Blazed as Hell",,,,,,,,,,,,,
 status_mocreep_trip_red_03_desc,"Usual concepts don't apply.",,,,,,,,,,,,,
 item_mocreep_fungus_stone_name,"Sienenkivi",,,,,,,,,,,,,
 item_mocreep_fungus_stone_desc,"You feel the world transforming in the palm of your hand.",,,,,,,,,,,,,
+status_mocreep_melee_curse_name,"Melee Vulnerability",,,,,,,,,,,,,
+status_mocreep_melee_curse_desc,"You feel any protections against melee attacks weakened...",,,,,,,,,,,,,
 ]])
 
 

@@ -11,10 +11,10 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 	
 
 
-	local how_many = 20
+	local how_many = 10
 	local angle_inc = ( 2 * 3.14159 ) / how_many
 	local theta = 0
-	local length = 350 --Originally 200.. but needs to be artifically made faster to compensate for moist modifier decreasing projectile speed
+	local length = 150 --Originally 200.. but needs to be artifically made faster to compensate for moist modifier decreasing projectile speed
 	
 	for i=1,how_many do
 		local vel_x = math.cos( theta ) * length

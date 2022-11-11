@@ -106,6 +106,11 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/animal_icons/ceiling_fungus.png",
 	  },
 	  {
+		name="Smoking Fungus",
+		path="data/entities/animals/fungus_smoking_creep.xml",
+		image="data/ui_gfx/animal_icons/fungus_smoking_creep.png",
+	  },
+	  {
 		name="Devouring Phantom",
 		path="data/entities/animals/devourer_ghost.xml",
 		image="data/ui_gfx/animal_icons/devourer_ghost.png",
@@ -421,6 +426,11 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/building_icons/herobrine.png",
 	  },
 	  {
+		name="Sienenkivi",
+		path="mods/mo_creeps/files/entities/items/pickups/stone_fungus.xml",
+		image="mods/mo_creeps/files/ui_gfx/items/stone_fungus.png",
+	  },
+	  {
 		name="Wand of Wonders",
 		path="mods/mo_creeps/files/entities/items/wands/custom/wand_of_wonders.xml",
 		image="data/ui_gfx/bubbles/wand_random.png",
@@ -439,6 +449,11 @@ table.insert(ALL_ENTITIES, {
 		name="Mana Battery",
 		path="mods/mo_creeps/files/entities/items/wands/custom/mana_battery.xml",
 		image="data/ui_gfx/bubbles/mana_battery.png",
+	  },
+	  {
+		name="Essence of Fungus",
+		path="mods/mo_creeps/files/entities/items/pickups/essence_fungus.xml",
+		image="mods/mo_creeps/files/ui_gfx/essences/fungus.png",
 	  },
 	  {
 		name="Nightmare Divine Being",

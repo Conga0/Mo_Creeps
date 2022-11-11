@@ -8,10 +8,7 @@ SetRandomSeed( GameGetFrameNum(), pos_x + pos_y + entity_id )
 local count = Random(1,3)
 
 for i=1,count do
-	
-	if ( entity ~= nil ) then
-		entity_id = EntityLoad( "mods/mo_creeps/files/entities/items/pickups/chest_random_cursed.xml", pos_x + Random( -360, 360 ), pos_y - 300 )
-	end
+	entity_id = EntityLoad( "mods/mo_creeps/files/entities/items/pickups/chest_random_cursed.xml", pos_x + Random( -360, 360 ), pos_y - 300 )
 end
 
 GameScreenshake( 30 )
