@@ -530,6 +530,12 @@ if ModIsEnabled("biome-plus") then
     ModLuaFileAppend( "data/scripts/biomes/mod/rainforest_wormy.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" )
     ModLuaFileAppend( "data/scripts/biomes/mod/conduit.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" )
     ModLuaFileAppend( "data/scripts/biomes/mod/sulfur_cave.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" )
+    
+    --Dark Areas
+    ModLuaFileAppend( "data/scripts/biomes/mod/irradiated_mines.lua", "mods/mo_creeps/files/scripts/biomes/suspicious.lua" )
+    ModLuaFileAppend( "data/scripts/biomes/mod/tomb.lua", "mods/mo_creeps/files/scripts/biomes/suspicious.lua" )
+    ModLuaFileAppend( "data/scripts/biomes/mod/conduit.lua", "mods/mo_creeps/files/scripts/biomes/suspicious.lua" )
+    ModLuaFileAppend( "data/scripts/biomes/mod/the_void.lua", "mods/mo_creeps/files/scripts/biomes/suspicious.lua" )
 
 end
 
@@ -927,7 +933,6 @@ if ModIsEnabled("purgatory") or ModIsEnabled("nightmare") then
   attrs.blood_multiplier = "10"
   ModTextFileSetContent("data/entities/animals/bubbles/sliceLiquid/bubble_liquid.xml", tostring(xml))
   
-
 end
 
 --Resets Blob Boss kill reward to prevent cheesing multiple "reward events" per kill

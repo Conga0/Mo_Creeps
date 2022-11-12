@@ -38,6 +38,10 @@ Fixed Weak Hisii Shotgunners not jumping into minecarts
 Fixed Hisii Shotgunners occasionally turning into their weaker versions in minecarts
 Fixed Ceiling Fungus needing air to survive
 Fixed some spells breaking in Spell Evolution compatibility mode. I don't know how much longer I'll keep proper translated support for the mod, especially since it's evolution's bug and not mine, but as long as it remains not too big a burden I'll maintain support.
+Fixed a certain cat not eating the rat properly
+Fixed Divine Being having much more health than intended in nightmare/purgatory
+Fixed the Colossal Blob occasionally creating duplicate loot if baited offscreen
+Fixed birthday rats spawning in the Powerplant at the wrong time
 FIXED MAGIC DEVOURERS HAVING 90% DAMAGE REDUCTION FROM ALL SOURCES
 Very slightly reduced blood produced by Angeling & Devilings
 Red Sand now absorbs blood to grow
@@ -45,20 +49,11 @@ Reduced Sentry Damage in earlier parts of the game
 Significantly reduced Sentry's range, he should now play a slightly different role than sniper by requiring a closer encounter but having better stats to cut through
 Nerfed wand dropped by Pandora's Chest on normal difficulty
 Mini Drones in earlier parts of the game are now more vulnerable to projectile damage
-Increased Smoking Fungi's animation speed
-Added Essence of Fungus
 Slightly reduced Poring melee range
 Significantly Reduced liquid produced by liquid bubbles in Purgatory & Nightmare. Previously they occasionally produced so much liquid it would forcefully clip through the floor and hurt you without warning
 Reduced Poring damage in Coal Pits
-Slightly nerfed wand dropped by Toxic Worm Boss
 Reduced Greater Cold Gazer's spawnrate in snowy depths
-
-Added Fire Canisters to the Coal Pits
-Added Lava Canisters to the vault
-Added Fungus Stone to the Blob Cave loot pool
-Fixed a certain cat not eating the rat properly
-Fixed Divine Being having much more health than intended in nightmare/purgatory
-Fixed the Colossal Blob occasionally creating duplicate loot if baited offscreen
-Fixed birthday rats spawning in the Powerplant at the wrong time
+Slightly nerfed wand dropped by Toxic Worm Boss
 Slightly Nerfed loot from Overzealous Polymage miniboss
-New Creep: Manager
+
+Reworked how Managers apply their haste buff

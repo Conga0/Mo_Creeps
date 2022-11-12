@@ -2,3 +2,15 @@ Angel
 Giant centipede
 Giga Bomb Thrower
 Smoking Fungus
+Basebot Speedy
+
+
+
+
+
+
+
+
+
+
+Remember to port pixelscenes to different files before release

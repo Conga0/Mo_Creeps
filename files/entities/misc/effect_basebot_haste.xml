@@ -4,13 +4,13 @@
     
     <GameEffectComponent 
     	effect="MOVEMENT_FASTER_2X"
-    	frames="120"
+    	frames="660"
     >
 	</GameEffectComponent >
     
     <GameEffectComponent 
     	effect="FASTER_LEVITATION"
-    	frames="120"
+    	frames="660"
     >
 	</GameEffectComponent >
 
