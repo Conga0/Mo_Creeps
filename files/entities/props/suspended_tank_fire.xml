@@ -15,13 +15,13 @@
 		leak_on_damage_percent="0.999" 
 		>
 		<count_per_material_type>
-			<Material material="lava" count="1250"  />
+			<Material material="liquid_fire" count="1250"  />
 		</count_per_material_type>
 	</MaterialInventoryComponent>
 
 	<DamageModelComponent 
 		air_needed="0" 
-		blood_material="lava" 
+		blood_material="liquid_fire" 
 		drop_items_on_death="0" 
 		falling_damage_damage_max="2.0" 
 		falling_damage_damage_min="0.2" 
@@ -90,7 +90,7 @@
 		body_id="100"
 		is_root="1"
 		centered="1"
-		image_file="mods/mo_creeps/files/props_gfx/suspended_tank_lava.png"
+		image_file="mods/mo_creeps/files/props_gfx/suspended_tank_fire.png"
 		material="metal_prop" >
 	</PhysicsImageShapeComponent>
 

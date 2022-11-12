@@ -17,12 +17,20 @@
         entity     = "data/entities/animals/power_plant/tesla_turret.xml"
     })
 
-    table.insert(g_small_enemies,
+    table.insert(g_big_enemies,
     {
         prob           = 0.1,
         min_count    = 1,
         max_count    = 1,    
         entity     = "data/entities/animals/gazer_robot.xml"
+    })
+
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.05,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/c_basebot_speeder_mocreep.xml"
     })
 
 
@@ -46,19 +54,10 @@
 
     table.insert(g_small_enemies,
     {
-		prob   		= 0.02,
-		min_count	= 1,
-		max_count	= 4,
-		entity 	= "data/entities/animals/rat_birthday.xml",
-		spawn_check = function() 
-			local year, month, day = GameGetDateAndTimeLocal()
-			
-			if ( month == 9 ) and (( day >= 21 ) and (day <= 23 )) then
-				return true
-			else
-				return false 
-			end
-		end,
+        prob           = 0.06,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/c_basebot_speeder_mocreep.xml"
     })
 
 

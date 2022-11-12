@@ -14,8 +14,8 @@ Essence of Fungus - mods/mo_creeps/files/entities/items/pickups/essence_fungus.x
 
 
 1.1.0 Changelog:
-Added 2 new environmental hazards
-Added 2 new creeps
+Added 3 new environmental hazards
+Added 3 new creeps
 Added new biome variation to the world, explore the same biomes in wildly different ways!
 Birthday event now occurs during July, this is when the mod first started being worked on.
 Pandora's Chest now has more permanent effects
@@ -37,6 +37,8 @@ Fixed Russian Translation not working on some status effects
 Fixed Weak Hisii Shotgunners not jumping into minecarts
 Fixed Hisii Shotgunners occasionally turning into their weaker versions in minecarts
 Fixed Ceiling Fungus needing air to survive
+Fixed some spells breaking in Spell Evolution compatibility mode. I don't know how much longer I'll keep proper translated support for the mod, especially since it's evolution's bug and not mine, but as long as it remains not too big a burden I'll maintain support.
+FIXED MAGIC DEVOURERS HAVING 90% DAMAGE REDUCTION FROM ALL SOURCES
 Very slightly reduced blood produced by Angeling & Devilings
 Red Sand now absorbs blood to grow
 Reduced Sentry Damage in earlier parts of the game
@@ -46,18 +48,17 @@ Mini Drones in earlier parts of the game are now more vulnerable to projectile d
 Increased Smoking Fungi's animation speed
 Added Essence of Fungus
 Slightly reduced Poring melee range
-Fixed some spells breaking in Spell Evolution compatibility mode. I don't know how much longer I'll keep proper translated support for the mod, especially since it's evolution's bug and not mine, but as long as it remains not too big a burden I'll maintain support.
 Significantly Reduced liquid produced by liquid bubbles in Purgatory & Nightmare. Previously they occasionally produced so much liquid it would forcefully clip through the floor and hurt you without warning
-
-Added Smoking Fungus to Conjurer menu
-Added Essence of Fungus to Conjurer menu
-Added Sienenkivi to Conjurer menu
-Significantly reduced Smoking Fungi's smoke explosion on death compared to detonation
-Significantly reduced Smoking Fungi's health in Fungicaverns
-Increased Smoking Fungi's spawnrate in Fungicaverns
-Smoking Fungi now has Ragdolls
 Reduced Poring damage in Coal Pits
 Slightly nerfed wand dropped by Toxic Worm Boss
 Reduced Greater Cold Gazer's spawnrate in snowy depths
-FIXED MAGIC DEVOURERS HAVING 90% DAMAGE REDUCTION FROM ALL SOURCES
-Colossal Blob can now curse players with melee weakening, you can no longer "cheese" the boss with melee immunity
+
+Added Fire Canisters to the Coal Pits
+Added Lava Canisters to the vault
+Added Fungus Stone to the Blob Cave loot pool
+Fixed a certain cat not eating the rat properly
+Fixed Divine Being having much more health than intended in nightmare/purgatory
+Fixed the Colossal Blob occasionally creating duplicate loot if baited offscreen
+Fixed birthday rats spawning in the Powerplant at the wrong time
+Slightly Nerfed loot from Overzealous Polymage miniboss
+New Creep: Manager

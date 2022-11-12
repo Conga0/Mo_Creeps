@@ -264,12 +264,14 @@ status_mocreep_trip_red_03_name,"Blazed as Hell",,,,,,,,,,,,,
 status_mocreep_trip_red_03_desc,"Usual concepts don't apply.",,,,,,,,,,,,,
 item_mocreep_fungus_stone_name,"Sienenkivi",,,,,,,,,,,,,
 item_mocreep_fungus_stone_desc,"You feel the world transforming in the palm of your hand.",,,,,,,,,,,,,
-status_mocreep_melee_curse_name,"Melee Vulnerability",,,,,,,,,,,,,
-status_mocreep_melee_curse_desc,"You feel any protections against melee attacks weakened...",,,,,,,,,,,,,
+status_mocreep_haste_name,"Haste",,,,,,,,,,,,,
+status_mocreep_haste_desc,"You feel Faster",,,,,,,,,,,,,
 ]])
 
 
 
+--status_mocreep_melee_curse_name,"Melee Vulnerability",,,,,,,,,,,,,
+--status_mocreep_melee_curse_desc,"You feel any protections against melee attacks weakened...",,,,,,,,,,,,,
 
 
 --Regular Spawns
@@ -927,6 +929,9 @@ if ModIsEnabled("purgatory") or ModIsEnabled("nightmare") then
   
 
 end
+
+--Resets Blob Boss kill reward to prevent cheesing multiple "reward events" per kill
+ModLuaFileAppend( "data/scripts/newgame_plus.lua", "mods/mo_creeps/files/scripts/newgame_plus_appends.lua" )
 
 
 

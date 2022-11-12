@@ -1,4 +1,4 @@
-<Entity tags="mortal,prey,ui_use_raw_name" name="Kissa">
+<Entity tags="mortal,prey,ui_use_raw_name,acid" name="Kissa">
   
 	<Base file="data/entities/base_helpless_animal.xml" >
 

@@ -9,7 +9,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -23,7 +23,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -37,7 +37,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -51,7 +51,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -64,7 +64,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -77,7 +77,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -90,7 +90,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -104,7 +104,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -118,7 +118,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -132,7 +132,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -146,7 +146,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -160,7 +160,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -174,7 +174,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -188,7 +188,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -202,7 +202,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -216,7 +216,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -230,7 +230,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -264,7 +264,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -278,7 +278,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -292,7 +292,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -306,7 +306,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -319,7 +319,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -332,7 +332,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -345,7 +345,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -358,7 +358,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -392,7 +392,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -406,7 +406,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -420,7 +420,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -433,7 +433,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -446,7 +446,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -460,7 +460,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -473,7 +473,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -487,7 +487,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -501,7 +501,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -515,7 +515,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -529,7 +529,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -543,7 +543,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -557,7 +557,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -571,7 +571,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -585,7 +585,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -599,7 +599,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -613,7 +613,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -627,7 +627,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -640,7 +640,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -653,7 +653,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -667,7 +667,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -680,7 +680,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -693,7 +693,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -707,7 +707,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -721,7 +721,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -735,7 +735,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -749,7 +749,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -763,7 +763,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -777,7 +777,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -791,7 +791,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -805,7 +805,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -819,7 +819,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -832,7 +832,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>
@@ -846,7 +846,7 @@ xml:add_child(nxml.parse([[
   <LuaComponent
     script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
     execute_times="1"
-		execute_every_n_frame="2"
+		execute_every_n_frame="3"
     remove_after_executed="1"
     >
   </LuaComponent>

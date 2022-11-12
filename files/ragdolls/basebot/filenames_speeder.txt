@@ -1,0 +1,1 @@
+mods/mo_creeps/files/ragdolls/basebot/basebot_speeder.png

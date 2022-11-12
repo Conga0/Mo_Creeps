@@ -29,8 +29,6 @@ Investigate into making Blazed screen effects more like a red hue than fractal f
 
 Starting cat amount multiplier
 
-Pixel scene to demonstrate feeding blood to red sand to grow it
-
 If fungal shift timer mod is enabled, add a status to show the cooldown for Red Shifting
 
 Poly Crystals spawn in pre-decided locations in pixelscenes to guarantee waysaround
@@ -45,6 +43,9 @@ Add hint pointing towards Essence of Fungus
 Add reward for bringing Essence of Fungus to moon/Sun
 
 Fix chaotic poly crystal trying to poly propane tanks
+
+
+Add translation keys for every enemy's name so they show up in the kill cause
 
 
 

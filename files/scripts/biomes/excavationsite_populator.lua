@@ -216,10 +216,10 @@
 
     table.insert(g_hanging_props,
     {
-		prob   		= 0.2,
+		prob   		= 0.3,
 		min_count	= 1,
 		max_count	= 1,    
-		entity 	= "mods/mo_creeps/files/entities/props/suspended_tank_lava.xml"
+		entity 	= "mods/mo_creeps/files/entities/props/suspended_tank_fire.xml"
     })
 
 

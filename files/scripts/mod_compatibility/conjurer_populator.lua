@@ -46,6 +46,11 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/animal_icons/boss_toxic_worm_minion.png",
 	  },
 	  {
+		name="Manager",
+		path="data/entities/animals/c_basebot_speeder_mocreep.xml",
+		image="data/ui_gfx/animal_icons/c_basebot_speeder_mocreep.png",
+	  },
+	  {
 		name="Acid Bubble",
 		path="data/entities/animals/bubbles/acid/bubble_liquid.xml",
 		image="data/ui_gfx/bubbles/bubble_liquid_acid.png",
