@@ -24,9 +24,9 @@
 
   <HitboxComponent 
     _enabled="1" 
-    aabb_max_x="6" 
+    aabb_max_x="7" 
+    aabb_min_x="-6" 
     aabb_max_y="0" 
-    aabb_min_x="-5" 
     aabb_min_y="-26" 
     is_enemy="0" 
     is_item="0" 

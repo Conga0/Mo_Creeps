@@ -40,6 +40,7 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 			table.remove( opts, rnd )
 		end
 		EntityLoad( "data/entities/items/pickup/heart_fullhp.xml",  pos_x, pos_y )
+		EntityLoad( "mods/mo_creeps/files/entities/props/statue_divine_being.xml", 4152, 2115 )
 	end
 	
 	if ModIsEnabled("raksa") == false then

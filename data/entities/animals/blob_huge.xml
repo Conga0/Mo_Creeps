@@ -127,6 +127,16 @@
 		file="data/audio/Desktop/animals.bank"
 		event_root="animals/gazer" >
 	</AudioComponent>
+	
+	<Entity>
+		<InheritTransformComponent />
+		
+	    <GameEffectComponent 
+	        effect="PROTECTION_FREEZE"
+	        frames="-1"
+	    >
+		</GameEffectComponent >
+	</Entity>
 
 </Entity>
 

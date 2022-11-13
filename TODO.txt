@@ -16,8 +16,6 @@ Deck of cards
 25 storage
 AC wand refresh
 
-Spawn statue after completing statue unlock requirements
-
 Secret text with a youtube link to rick ashley's never gonna give you up
 (Put it in the corner of the world or under deep EDR or something stupidly hidden, fittingly stupid for a stupid easteregg
 
@@ -35,8 +33,6 @@ Poly Crystals spawn in pre-decided locations in pixelscenes to guarantee waysaro
 
 Setting to disable custom pixelscenes for compatibility with mods like noitavania
 
-Check if angel has correct amount of hp in nightmare/purgatory.. is it getting 1x50x50 or just 1x50?
-
 Disable custom pixelscenes if playing on Noitavania (32 bit limit will be reached otherwise)
 
 Add hint pointing towards Essence of Fungus
@@ -45,7 +41,7 @@ Add reward for bringing Essence of Fungus to moon/Sun
 Fix chaotic poly crystal trying to poly propane tanks
 
 
-Add translation keys for every enemy's name so they show up in the kill cause
+Consider removing healer high alchemist.. why do you exist?
 
 
 

@@ -26,9 +26,10 @@
 		<DamageModelComponent 
             hp="8"
 			ragdoll_filenames_file="mods/mo_creeps/files/ragdolls/wizard_manaeater/filenames.txt"
+            ragdoll_material="mocreeps_meat_mana"
 			blood_material="magic_liquid_mana_regeneration"
 			blood_spray_material="magic_liquid_mana_regeneration"
-			blood_multiplier="0.4"
+			blood_multiplier="0.1"
 			>
 			</DamageModelComponent>
 

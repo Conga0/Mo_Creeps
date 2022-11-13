@@ -159,7 +159,8 @@ function item_pickup( entity_item, entity_who_picked, name )
         table.remove(prizeSpells, rnd)
     end
 
-    
+    --[[
+    --This spawns Cursed Orb Barrage is the divine being is defeated at a 50% chance, removed since it didn't feel.. right
 	local flag_status = HasFlagPersistent( "mocreeps_card_unlocked_divinebeing" )
 
     if flag_status then
@@ -167,7 +168,7 @@ function item_pickup( entity_item, entity_who_picked, name )
             CreateItemActionEntity("MOCREEPS_HOLYORB_SHOTGUN_CURSED", x , y - 8)
         end
     end
-
+    --]]
 
     local rewardCount = 18
     local calcVar = 77

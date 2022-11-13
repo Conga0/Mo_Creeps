@@ -67,7 +67,7 @@ table.insert(g_small_enemies,
 
 table.insert(g_small_enemies,
 {
-    prob           = 0.25,
+    prob           = 0.15,
     min_count    = 1,
     max_count    = 1,    
     entity     = "data/entities/animals/fungus_smoking_creep.xml"

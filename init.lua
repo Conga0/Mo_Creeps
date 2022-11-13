@@ -266,6 +266,10 @@ item_mocreep_fungus_stone_name,"Sienenkivi",,,,,,,,,,,,,
 item_mocreep_fungus_stone_desc,"You feel the world transforming in the palm of your hand.",,,,,,,,,,,,,
 status_mocreep_haste_name,"Haste",,,,,,,,,,,,,
 status_mocreep_haste_desc,"You feel Faster",,,,,,,,,,,,,
+item_mocreeps_chest_g,"G Chest",,,,,,,,,,,,,
+material_mocreep_meat_mana,"Enchanting Meat",,,,,,,,,,,,,
+spell_mocreep_targetter_name,"Targetter",,,,,,,,,,,,,
+spell_mocreep_targetter_desc,"Fire a projectile which causes irresistable hatred towards anything it hits.",,,,,,,,,,,,,
 ]])
 
 
@@ -937,6 +941,11 @@ end
 
 --Resets Blob Boss kill reward to prevent cheesing multiple "reward events" per kill
 ModLuaFileAppend( "data/scripts/newgame_plus.lua", "mods/mo_creeps/files/scripts/newgame_plus_appends.lua" )
+
+--Adds custom enlightened alchemist types
+local content = ModTextFileGetContent("mods/mo_creeps/files/scripts/mod_compatibility/vanilla_enlightened_alchemist_init_append.lua")
+ModTextFileSetContent( "data/scripts/animals/enlightened_alchemist_init.lua", tostring(content) )
+--ModLuaFileAppend( "data/scripts/animals/enlightened_alchemist_init.lua", "mods/mo_creeps/files/scripts/mod_compatibility/vanilla_enlightened_alchemist_init_append.lua" )
 
 
 

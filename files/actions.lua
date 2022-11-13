@@ -261,6 +261,7 @@ table.insert(actions,
     end,
 })
 
+--[[
 table.insert(actions,
 {
     id          = "MOCREEPS_HOLYORB_SHOTGUN_CURSED",
@@ -288,6 +289,7 @@ table.insert(actions,
         current_reload_time = current_reload_time + 15
     end,
 })
+]]--
 
 table.insert(actions,   --This spell is kinda weird
 {
@@ -747,5 +749,26 @@ table.insert(actions,
         add_projectile("mods/mo_creeps/files/entities/projectiles/deck/mass_status_polymorph.xml")
         c.fire_rate_wait = c.fire_rate_wait + 100
         current_reload_time = current_reload_time + 100
+    end,
+})
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_TARGETTER",
+    name 		= "$spell_mocreep_targetter_name",
+    description = "$spell_mocreep_targetter_desc",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/targetter.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/heavy_bullet_unidentified.png",
+    related_projectiles	= {"mods/mo_creeps/files/entities/projectiles/deck/targetter.xml"},
+    type 		= ACTION_TYPE_PROJECTILE,
+    spawn_level                       = "1,2,3,4,5,6", -- HEAVY_BULLET
+    spawn_probability                 = "0.5,1,1,1,1,1", -- HEAVY_BULLET
+    price = 200,
+    mana = 40,
+    max_uses = 8,
+    action 		= function()
+        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/targetter.xml")
+        c.fire_rate_wait = c.fire_rate_wait + 30
+        --current_reload_time = current_reload_time + 15
     end,
 })

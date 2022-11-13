@@ -21,6 +21,12 @@ for i,v in ipairs( targets ) do
 		if ModIsEnabled("nightmare") or ModIsEnabled("purgatory") then
 			AddFlagPersistent( "mocreeps_card_unlocked_divine_liquid_goldmode" )
 		end
+
+		if (ModIsEnabled("nightmare") or ModIsEnabled("purgatory")) and HasFlagPersistent( "mocreeps_card_unlocked_divine_liquid_goldmode") == false then
+			EntityLoad( "mods/mo_creeps/files/entities/props/goldmode/statue_divine_liquid.xml", 4178, 2049 )
+		elseif HasFlagPersistent( "mocreeps_card_unlocked_divine_liquid" ) == false then
+			EntityLoad( "mods/mo_creeps/files/entities/props/statue_divine_liquid.xml", 4178, 2049 )
+		end
 	end
 
 end

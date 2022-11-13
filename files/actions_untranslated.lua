@@ -261,6 +261,7 @@ table.insert(actions,
     end,
 })
 
+--[[
 table.insert(actions,
 {
     id          = "MOCREEPS_HOLYORB_SHOTGUN_CURSED",
@@ -288,6 +289,7 @@ table.insert(actions,
         current_reload_time = current_reload_time + 15
     end,
 })
+]]--
 
 table.insert(actions,   --This spell is kinda weird
 {

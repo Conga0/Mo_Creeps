@@ -20,6 +20,25 @@
   </CellDataChild>
 
   <CellDataChild
+  	_parent="meat"
+	name="mocreeps_meat_mana"
+	ui_name="$material_mocreep_meat_mana"
+	wang_color="ffbbf113"
+	solid_on_collision_material="magic_liquid_mana_regeneration"
+	solid_break_to_type="magic_liquid_mana_regeneration"
+	audio_physics_material_wall="meat"
+	audio_physics_material_solid="meat"
+	audio_is_soft="1"
+	show_in_creative_mode="1"
+	>
+	<StatusEffects>
+		<Ingestion>
+			<StatusEffect type="MANA_REGENERATION" amount="0.5" />
+		</Ingestion>
+	</StatusEffects>
+  </CellDataChild>
+
+  <CellDataChild
   	_parent="meat_slime"
 	name="mocreeps_meat_toxic_worm_cure"
 	ui_name="$material_mocreep_meat_decaying"

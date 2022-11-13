@@ -17,7 +17,7 @@ if #targets >= 1 then
 
 		angleCalculator = (angleCalculator + angleCalculator + 30)
 		local angle = math.rad(angleCalculator)
-		local length = 3000
+		local length = 300
 
 		local vel_x = math.cos( angle ) * length
 		local vel_y = 0 - math.sin( angle ) * length

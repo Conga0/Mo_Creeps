@@ -49,6 +49,12 @@ function material_area_checker_success( pos_x, pos_y )
         end
     end
 
+    if (ModIsEnabled("nightmare") or ModIsEnabled("purgatory")) and HasFlagPersistent( "mocreeps_card_unlocked_donated_beggar_goldmode") == false then
+        EntityLoad( "mods/mo_creeps/files/entities/props/goldmode/statue_generous.xml", 4178, 2150 )
+    elseif HasFlagPersistent( "mocreeps_card_unlocked_donated_beggar" ) == false then
+        EntityLoad( "mods/mo_creeps/files/entities/props/statue_generous.xml", 4178, 2150 )
+    end
+
 end
 
 --Donate super rare liquid to a beggar, special big heart statue and better rewards?

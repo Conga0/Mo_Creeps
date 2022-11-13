@@ -20,6 +20,7 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
             CreateItemActionEntity( "MOCREEPS_BUNGAL_SHIFT", pos_x - 16, pos_y )
             CreateItemActionEntity( "MOCREEPS_MASS_MATERIA_CONVERSION", pos_x + 16, pos_y )
             EntityLoad( "data/entities/items/pickup/heart_fullhp.xml",  pos_x + 8, pos_y )
+			EntityLoad( "mods/mo_creeps/files/entities/props/statue_toxic_worm.xml", 4202, 2115 )
         end
 	
 	if ModIsEnabled("raksa") == false then
