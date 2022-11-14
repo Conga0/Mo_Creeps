@@ -545,7 +545,7 @@ table.insert(actions,
 
 table.insert(actions,
 {
-    id          = "MOCREEPS_SPELL_TO_CATS",
+    id          = "MOCREEPS_SPELLS_TO_CATS",
     name 		= "Превращение в кошек",
     description = "Превращает каждый снаряд, находящийся в воздухе, в кошку. Милая идея.",
     sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/spells_to_cats.png",
@@ -589,7 +589,7 @@ table.insert(actions,
         local rnd_num = Random( 1, 2 )
         if ( hand ~= nil ) and ( rnd_num == 1 ) then
             for i,data in ipairs( hand ) do
-                if ( data.id ~= "MOCREEPS_SPLIT_spell" and data.type ~= ACTION_TYPE_OTHER ) then
+                if ( data.id ~= "MOCREEPS_SPLIT_SPELL" and data.type ~= ACTION_TYPE_OTHER ) then
                     data.action()
                 end
             end

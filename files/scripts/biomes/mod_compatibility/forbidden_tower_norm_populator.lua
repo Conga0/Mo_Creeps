@@ -34,6 +34,14 @@ table.insert(g_small_enemies,
 
 table.insert(g_small_enemies,
 {
+	prob           = 0.5,
+	min_count    = 2,
+	max_count    = 2,    
+	entity     = "data/entities/animals/hisii_giga_bomb.xml"
+})
+
+table.insert(g_small_enemies,
+{
 	prob           = 1,
 	min_count    = 2,
 	max_count    = 2,    

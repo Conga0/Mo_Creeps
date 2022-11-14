@@ -589,7 +589,7 @@ table.insert(actions,
         local rnd_num = Random( 1, 2 )
         if ( hand ~= nil ) and ( rnd_num == 1 ) then
             for i,data in ipairs( hand ) do
-                if ( data.id ~= "MOCREEPS_SPLIT_spell" and data.type ~= ACTION_TYPE_OTHER ) then
+                if ( data.id ~= "MOCREEPS_SPLIT_SPELL" and data.type ~= ACTION_TYPE_OTHER ) then
                     data.action()
                 end
             end

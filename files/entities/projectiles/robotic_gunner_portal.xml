@@ -1,25 +1,9 @@
 <Entity name="Eldritch Portal"  >
-
-	<!-- teleport logic -->
-
-	<TeleportComponent
-		_enabled="0"
-		target_x_is_absolute_position="1"
-		target.x="1911" 
-		target.y="250" 
-	></TeleportComponent>
-
-	<HitboxComponent 
-		aabb_min_x="-15" 
-		aabb_min_y="-15"
-		aabb_max_x="15" 
-		aabb_max_y="15" 
-	></HitboxComponent>
   
 	<!-- gfx -->
 	
 	<UIInfoComponent
-		name="$action_tentacle_portal"
+		name="$misc_mocreep_energy_nova"
 		>
 	</UIInfoComponent>
 
@@ -27,30 +11,39 @@
 		_enabled="1" 
 		radius="255"
 		fade_out_time="1.5" 
-		r="64"
-		g="100"
-		b="255"
-		offset_y="-16"
+		r="255"
+		g="25"
+		b="25"
 	></LightComponent>
 	
 	<LightComponent 
 		_enabled="1" 
 		radius="64"
 		fade_out_time="1.5" 
-		r="64"
-		g="100"
-		b="255"
-		offset_y="-16"
+		r="255"
+		g="25"
+		b="25"
 	></LightComponent>
 
 	<DamageNearbyEntitiesComponent
-    radius="20"
+    radius="19"
     time_between_damaging="3"
-    damage_min="0.05"
-    damage_max="0.05"
+    damage_min="0.04"
+    damage_max="0.04"
     target_tag="mortal"
 	damage_description="Energy Nova"
     damage_type="DAMAGE_PROJECTILE"
+    ragdoll_fx="NONE">
+	</DamageNearbyEntitiesComponent>
+
+	<DamageNearbyEntitiesComponent
+    radius="19"
+    time_between_damaging="3"
+    damage_min="0.04"
+    damage_max="0.04"
+    target_tag="mortal"
+	damage_description="Energy Nova"
+    damage_type="DAMAGE_FIRE"
     ragdoll_fx="NONE">
 	</DamageNearbyEntitiesComponent>
 	
@@ -109,6 +102,17 @@
 			>
     	</VelocityComponent> 
 	</Base>
+
+	<AudioComponent
+		file="data/audio/Desktop/projectiles.bank"
+		event_root="projectiles/electric">
+	</AudioComponent>
+   
+	<AudioLoopComponent
+		file="data/audio/Desktop/projectiles.bank"
+		event_name="projectiles/magic_orb/loop"
+		auto_play="1">
+	</AudioLoopComponent>
 	
 	<AudioComponent
       file="data/audio/Desktop/projectiles.bank"

@@ -131,14 +131,6 @@ if ModIsEnabled("Hydroxide") then
 
     table.insert(g_small_enemies,
     {
-        prob           = 0.06,
-        min_count    = 1,
-        max_count    = 1,
-        entity     = "data/entities/animals/bubbles/deceleratium/bubble_liquid.xml"
-    })
-
-    table.insert(g_small_enemies,
-    {
         prob           = 0.018,
         min_count    = 1,
         max_count    = 1,

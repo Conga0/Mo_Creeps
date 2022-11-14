@@ -10,6 +10,8 @@ Optional english names for monsters
 
 Yearly birthday sign?
 
+Translation key for twitch events
+
 Center poring's position on the middle of the sprite so it behaves better to physics damage
 
 Deck of cards
@@ -41,15 +43,13 @@ Add reward for bringing Essence of Fungus to moon/Sun
 Fix chaotic poly crystal trying to poly propane tanks
 
 
-Consider removing healer high alchemist.. why do you exist?
-
-
 
 
 
 Trophys:
 Pandora Chest Rain
 Killing all minibosses
+Essence of Fungus
 
 
 

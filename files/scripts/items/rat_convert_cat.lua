@@ -15,14 +15,14 @@ function collision_trigger()
 		AddFlagPersistent( "mocreeps_card_unlocked_cat_secret" )
 		AddFlagPersistent( "mocreeps_card_unlocked_cat_secret_spell" )
 
-		if ModIsEnabled("nightmare") or ModIsEnabled("purgatory") then
-			AddFlagPersistent( "mocreeps_card_unlocked_cat_secret_goldmode" )
-		end
-
 		if (ModIsEnabled("nightmare") or ModIsEnabled("purgatory")) and HasFlagPersistent( "mocreeps_card_unlocked_cat_secret_goldmode") == false then
 			EntityLoad( "mods/mo_creeps/files/entities/props/goldmode/statue_cat_secret.xml", 4288, 2049 )
 		elseif HasFlagPersistent( "mocreeps_card_unlocked_cat_secret" ) == false then
 			EntityLoad( "mods/mo_creeps/files/entities/props/statue_cat_secret.xml", 4288, 2049 )
+		end
+
+		if ModIsEnabled("nightmare") or ModIsEnabled("purgatory") then
+			AddFlagPersistent( "mocreeps_card_unlocked_cat_secret_goldmode" )
 		end
 	end
 

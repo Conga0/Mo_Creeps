@@ -201,22 +201,21 @@
 		kind = STREAMING_EVENT_AWFUL,
 		delay_timer = 600,
 		action_delayed = function(event)
+            local pool
 
             if ModIsEnabled("purgatory") or ModIsEnabled("nightmare") then
-                local pool = {
+                pool = {
                     "animals/gold_bosses/angel/angel",
                     "animals/gold_bosses/boss_blob/blob_titan",
                     "buildings/toxic_worm_nest_populator_big_detector",
                     "buildings/boss_musical_ghost_sandcave_populator_big_detector",
-                    "animals/wizard_z_poly_miniboss",
                 }
             else
-                local pool = {
+                pool = {
                     "animals/angel",
                     "animals/boss_blob/blob_titan",
                     "buildings/toxic_worm_nest_populator_big_detector",
                     "buildings/boss_musical_ghost_sandcave_populator_big_detector",
-                    "animals/wizard_z_poly_miniboss",
                 }
             end
 
@@ -276,6 +275,30 @@
 			for i,entity_id in pairs( get_players() ) do
 				local x, y = EntityGetTransform( entity_id )
 				creature_shift( entity, x, y, true )
+			end
+		end,
+	})
+
+
+    table.insert(streaming_events,
+	{
+		id = "MOCREEP_TRANSFORM_WORMS",
+		ui_name = "Spells to Worms",
+		ui_description = "All projectiles currently in the air turn into worms!",
+		ui_icon = "data/ui_gfx/streaming_event_icons/protect_enemies.png",
+		ui_author = "Conga Lyne - Mo Creeps",
+		weight = 0.5,
+		kind = STREAMING_EVENT_BAD,
+		delay_timer = 180,
+		action_delayed = function(event)
+			for i,entity_id in pairs( get_players() ) do
+				local x, y = EntityGetTransform( entity_id )
+				
+				local effect_id = EntityLoad( "mods/mo_creeps/files/scripts/streaming_integration/entities/effect_spells_to_worms.xml", x, y )
+				set_lifetime( effect_id )
+				EntityAddChild( entity_id, effect_id )
+				
+				add_icon_in_hud( effect_id, "mods/mo_creeps/files/ui_gfx/status_indicators/worm.png", event )
 			end
 		end,
 	})

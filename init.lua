@@ -270,6 +270,7 @@ item_mocreeps_chest_g,"G Chest",,,,,,,,,,,,,
 material_mocreep_meat_mana,"Enchanting Meat",,,,,,,,,,,,,
 spell_mocreep_targetter_name,"Targetter",,,,,,,,,,,,,
 spell_mocreep_targetter_desc,"Fire a projectile which causes irresistable hatred towards anything it hits.",,,,,,,,,,,,,
+misc_mocreep_energy_nova,"Energy Nova",,,,,,,,,,,,,
 ]])
 
 
@@ -946,6 +947,12 @@ ModLuaFileAppend( "data/scripts/newgame_plus.lua", "mods/mo_creeps/files/scripts
 local content = ModTextFileGetContent("mods/mo_creeps/files/scripts/mod_compatibility/vanilla_enlightened_alchemist_init_append.lua")
 ModTextFileSetContent( "data/scripts/animals/enlightened_alchemist_init.lua", tostring(content) )
 --ModLuaFileAppend( "data/scripts/animals/enlightened_alchemist_init.lua", "mods/mo_creeps/files/scripts/mod_compatibility/vanilla_enlightened_alchemist_init_append.lua" )
+
+-- Adds musical_stone tag to the worm projectile, not to make musical ghosts appear but rather to make it double for a "spells to worms" effect
+local content = ModTextFileGetContent("data/entities/projectiles/deck/worm_shot.xml")
+local xml = nxml.parse(content)
+xml.attr.tags = xml.attr.tags .. ",musical_stone"
+ModTextFileSetContent("data/entities/projectiles/deck/worm_shot.xml", tostring(xml))
 
 
 

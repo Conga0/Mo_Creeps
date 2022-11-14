@@ -55,15 +55,23 @@ Reduced Poring damage in Coal Pits
 Reduced Greater Cold Gazer's spawnrate in snowy depths
 Slightly nerfed wand dropped by Toxic Worm Boss
 Slightly Nerfed loot from Overzealous Polymage miniboss
-
 Master of Mana are now considerably more tasty...
-Master of Mana are now made out of Enchanted Meat
 Significantly reduced blood bled by Master of Mana
 Colossal & Creepy Blob are now immune to freezing, if you freeze melee them, it's possible for them to die before they spawn their babies, defeating the entire point behind the encounter, you're no longer challenged on your crowd-control ability
 Added new Enlightened Alchemist variants 
 Removed Cursed Orb Barrage. The spell felt unnecessary, it didn't introduce anything new and the method for unlocking it felt.. dumb, as if once you beat a Divine Being you had a 50% chance of getting a run winner from a Cursed Chest.. Perhaps it could make a combat later but for now it's removed until further notice.
 Reduced Smoking Fungi's spawnrate in Fungal Caverns
 Statues now spawn in the trophy room on the same run you achieve them
-New Experimental Spell: Targetter, this spell will have the same effect Forsaken eyes & Observers have, it's experimental since I really like the concept of a "friendly fire this guy" spell but I'm not sure how under/over powered it'll be, will likely require a lot of tinkering over time.
 Slightly increased Wand Tinkering Crystal's hitbox
 Buffed Weirdo's Shield
+
+Removed Deceleratium bubbles, they looked too visually similar to acid and going slow isn't fun, having more options is fun, having less is not.
+Reduced frequency of Chaotic Polymorphine Crystal polymorphing, players likely won't notice the small increase of delay for FPS improvements
+Removed Overzealous Polymage from the twitch vote spawn boss pool
+Fixed Random Weirdo Boss twitch voting event not working properly
+Fixed Split Spell duplicating itself
+Nerfed Coldgazer's loot pool
+New Weirdo: Nova Stand
+
+
+REMEMBER TO DO UP OR DISABLE LUKKI SWARMLING BEFORE RELEASE

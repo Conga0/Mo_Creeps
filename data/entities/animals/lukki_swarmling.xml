@@ -21,7 +21,16 @@
 	</LightComponent>
 
 	<SpriteComponent 
-		image_file="data/entities/animals/lukki/lukki_feet/lukki_sprite_tiny.xml"
+		image_file="mods/mo_creeps/files/enemies_gfx/lukki/lukki_swarmling.xml"
+		offset_x="0"
+		offset_y="0"
+		>
+	</SpriteComponent>
+
+	<SpriteComponent 
+		image_file="mods/mo_creeps/files/enemies_gfx/lukki/lukki_swarmling_emissive.xml"
+		emissive="1"
+		additive="1"
 		offset_x="0"
 		offset_y="0"
 		>
@@ -105,27 +114,27 @@
 	<!-- damage  -->
 
 	<DamageModelComponent 
-		hp="3.5" 
+		hp="2.5" 
 		air_needed="0" 
 		falling_damages="0" 
 		fire_damage_amount="0.2" 
 		fire_probability_of_ignition="0.5" 
-		blood_material="slime_green"
-		blood_spray_material="slime_green"
+		blood_material="slime"
+		blood_spray_material="slime"
 		is_on_fire="0" 
-		materials_damage="1" 
+		materials_damage="0"
 		materials_how_much_damage="0.1" 
 		materials_that_damage="acid" 
 		ragdoll_filenames_file=""
-        ragdoll_material="meat_slime_green"
+        ragdoll_material="meat_slime"
 		ragdoll_offset_y="-6"
 		ragdollify_child_entity_sprites="1"
-		blood_sprite_directional="data/particles/bloodsplatters/bloodsplatter_directional_green_$[1-3].xml"
-		blood_sprite_large="data/particles/bloodsplatters/bloodsplatter_green_$[1-3].xml"
+		blood_sprite_directional="data/particles/bloodsplatters/bloodsplatter_directional_purple_$[1-3].xml"
+		blood_sprite_large="data/particles/bloodsplatters/bloodsplatter_purple_$[1-3].xml"
 		>
 		<damage_multipliers
 			melee="2.0"
-			projectile="0.2"
+			projectile="0.3"
 			explosion="0.8"
 			electricity="0.6"
 			fire="1.2" 
@@ -166,44 +175,18 @@
 		rotate_to_surface_normal="0" 
 		target_sprite_comp_name="character" >
 	</SpriteAnimatorComponent>
-	
-	<ParticleEmitterComponent 
-		emitted_material_name="radioactive_liquid"
-		offset.x="-1"
-		offset.y="0"
-		x_pos_offset_min="-8"
-		y_pos_offset_min="-8"
-		x_pos_offset_max="8"
-		y_pos_offset_max="8"
-		x_vel_min="-4"
-		x_vel_max="4"
-		y_vel_min="-10"
-		y_vel_max="5"
-		count_min="1"
-		count_max="5"
-		lifetime_min="0.3"
-		lifetime_max="1.6"
-		render_on_grid="1"
-		create_real_particles="0"
-		emit_cosmetic_particles="1"
-		emission_interval_min_frames="7"
-		emission_interval_max_frames="20"
-		is_emitting="1" >
-	</ParticleEmitterComponent>
 
 	<!-- limbs  -->
 
-	<Entity>  <Base file="data/entities/animals/lukki/lukki_feet/lukki_limb_tiny.xml" />  </Entity>
-	<Entity>  <Base file="data/entities/animals/lukki/lukki_feet/lukki_limb.xml" />  </Entity>
-	<Entity>  <Base file="data/entities/animals/lukki/lukki_feet/lukki_limb_tiny.xml" />  </Entity>
-	<Entity>  <Base file="data/entities/animals/lukki/lukki_feet/lukki_limb.xml" />  </Entity>
-	<Entity>  <Base file="data/entities/animals/lukki/lukki_feet/lukki_limb_tiny.xml" />  </Entity>
-	<Entity>  <Base file="data/entities/animals/lukki/lukki_feet/lukki_limb.xml" />  </Entity>
-	<Entity>  <Base file="data/entities/animals/lukki/lukki_feet/lukki_limb_tiny.xml" />  </Entity>
-	<Entity>  <Base file="data/entities/animals/lukki/lukki_feet/lukki_limb.xml" />  </Entity>
-	<Entity>  <Base file="data/entities/animals/lukki/lukki_feet/lukki_limb_tiny.xml" />  </Entity>
-
-	<Entity name="limb_attacker">  <Base file="data/entities/animals/lukki/lukki_feet/lukki_limb_attacker_tiny.xml" />  </Entity>
+	<Entity>  <Base file="mods/mo_creeps/files/enemies_gfx/lukki/lukki_limb_tiny_dark.xml" />  </Entity>
+	<Entity>  <Base file="mods/mo_creeps/files/enemies_gfx/lukki/lukki_limb_dark.xml" />  </Entity>
+	<Entity>  <Base file="mods/mo_creeps/files/enemies_gfx/lukki/lukki_limb_tiny_dark.xml" />  </Entity>
+	<Entity>  <Base file="mods/mo_creeps/files/enemies_gfx/lukki/lukki_limb_dark.xml" />  </Entity>
+	<Entity>  <Base file="mods/mo_creeps/files/enemies_gfx/lukki/lukki_limb_tiny_dark.xml" />  </Entity>
+	<Entity>  <Base file="mods/mo_creeps/files/enemies_gfx/lukki/lukki_limb_dark.xml" />  </Entity>
+	<Entity>  <Base file="mods/mo_creeps/files/enemies_gfx/lukki/lukki_limb_tiny_dark.xml" />  </Entity>
+	<Entity>  <Base file="mods/mo_creeps/files/enemies_gfx/lukki/lukki_limb_dark.xml" />  </Entity>
+	<Entity>  <Base file="mods/mo_creeps/files/enemies_gfx/lukki/lukki_limb_tiny_dark.xml" />  </Entity>
 	
 	<AreaDamageComponent
 		aabb_min.x="-8" 

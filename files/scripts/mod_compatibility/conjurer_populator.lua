@@ -421,6 +421,11 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/building_icons/wandedit_crystal.png",
 	  },
 	  {
+		name="Nova Stand",
+		path="data/entities/buildings/portal_stand.xml",
+		image="data/ui_gfx/building_icons/portal_stand.png",
+	  },
+	  {
 		name="Pandora's Chest",
 		path="mods/mo_creeps/files/entities/items/pickups/chest_random_cursed.xml",
 		image="data/ui_gfx/building_icons/chest_random_cursed.png",
