@@ -160,7 +160,7 @@
 
     <AIAttackComponent
     min_distance="90"
-    max_distance="400"
+    max_distance="300"
     frames_between="500"
     frames_between_global="0"
     attack_ranged_action_frame="5"
@@ -286,6 +286,18 @@
 		script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
 		execute_times="1"
 		remove_after_executed="1"
+		>
+	</LuaComponent>
+	
+	<VariableStorageComponent
+		name="damage_received"
+		value_float="0.0"
+		>
+	</VariableStorageComponent>
+	
+	<LuaComponent
+		script_damage_received="data/entities/animals/angel/divine_shield_logic.lua"
+		execute_every_n_frame="-1"
 		>
 	</LuaComponent>
 

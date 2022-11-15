@@ -73,7 +73,7 @@
 	>
 	<StatusEffects>
 		<Ingestion>
-			<StatusEffect type="MOCREEPS_DUCK_CURSE" amount="4" />
+			<StatusEffect type="MOCREEPS_DUCK_CURSE" amount="2" />
 		</Ingestion>
 	</StatusEffects>
   </CellDataChild>
@@ -235,8 +235,8 @@
 			<StatusEffect type="PROTECTION_ALL" />
 		</Stains>
 		<Ingestion>
-			<StatusEffect type="HP_REGENERATION" amount="0.1" />
-			<StatusEffect type="PROTECTION_ALL" amount="0.1" />
+			<StatusEffect type="HP_REGENERATION" amount="0.07" />
+			<StatusEffect type="PROTECTION_ALL" amount="0.07" />
 		</Ingestion>
 	</StatusEffects>
   </CellData>

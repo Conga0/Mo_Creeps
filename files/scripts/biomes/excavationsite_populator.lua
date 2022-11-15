@@ -263,3 +263,12 @@
             background_file	= "",
             is_unique		= 0
     })
+
+    table.insert(g_pixel_scene_04,
+    {
+            prob   			= 1.0,
+            material_file 	= "mods/mo_creeps/files/biome_impl/excavationsite/redstone_02.png",
+            visual_file		= "",
+            background_file	= "mods/mo_creeps/files/biome_impl/excavationsite/redstone_02_background.png",
+            is_unique		= 0
+    })

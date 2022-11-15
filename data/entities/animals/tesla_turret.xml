@@ -209,7 +209,7 @@
 		<EnergyShieldComponent 
 			_tags="enabled_in_hand"
 			recharge_speed="0.05" 
-			radius="28.0"
+			radius="22.0"
 			energy="0.25"
 			max_energy="0.5"
 			>

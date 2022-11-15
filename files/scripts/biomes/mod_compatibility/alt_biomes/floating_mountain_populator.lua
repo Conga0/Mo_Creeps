@@ -24,7 +24,7 @@ end
         entity     = "data/entities/animals/the_end/forsaken_eye.xml"
     })
 
-    table.insert(g_small_enemies,
+    table.insert(g_small_enemies_sky,
     {
         prob           = 0.08,
         min_count    = 1,

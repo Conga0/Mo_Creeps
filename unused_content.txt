@@ -15,7 +15,7 @@ Essence of Fungus - mods/mo_creeps/files/entities/items/pickups/essence_fungus.x
 
 1.1.0 Changelog:
 Added 3 new environmental hazards
-Added 3 new creeps
+Added 4 new creeps
 Added new biome variation to the world, explore the same biomes in wildly different ways!
 Birthday event now occurs during July, this is when the mod first started being worked on.
 Pandora's Chest now has more permanent effects
@@ -42,6 +42,8 @@ Fixed a certain cat not eating the rat properly
 Fixed Divine Being having much more health than intended in nightmare/purgatory
 Fixed the Colossal Blob occasionally creating duplicate loot if baited offscreen
 Fixed birthday rats spawning in the Powerplant at the wrong time
+Fixed Random Weirdo Boss twitch voting event not working properly
+Fixed Split Spell duplicating itself
 FIXED MAGIC DEVOURERS HAVING 90% DAMAGE REDUCTION FROM ALL SOURCES
 Very slightly reduced blood produced by Angeling & Devilings
 Red Sand now absorbs blood to grow
@@ -59,19 +61,24 @@ Master of Mana are now considerably more tasty...
 Significantly reduced blood bled by Master of Mana
 Colossal & Creepy Blob are now immune to freezing, if you freeze melee them, it's possible for them to die before they spawn their babies, defeating the entire point behind the encounter, you're no longer challenged on your crowd-control ability
 Added new Enlightened Alchemist variants 
-Removed Cursed Orb Barrage. The spell felt unnecessary, it didn't introduce anything new and the method for unlocking it felt.. dumb, as if once you beat a Divine Being you had a 50% chance of getting a run winner from a Cursed Chest.. Perhaps it could make a combat later but for now it's removed until further notice.
+Removed Cursed Orb Barrage. The spell felt unnecessary, it didn't introduce anything new and the method for unlocking it felt.. dumb, as if once you beat a Divine Being you had a 50% chance of getting a free run winner from a Cursed Chest.. Perhaps it could make a comeback later but for now it's removed until further notice.
 Reduced Smoking Fungi's spawnrate in Fungal Caverns
 Statues now spawn in the trophy room on the same run you achieve them
 Slightly increased Wand Tinkering Crystal's hitbox
 Buffed Weirdo's Shield
-
-Removed Deceleratium bubbles, they looked too visually similar to acid and going slow isn't fun, having more options is fun, having less is not.
-Reduced frequency of Chaotic Polymorphine Crystal polymorphing, players likely won't notice the small increase of delay for FPS improvements
 Removed Overzealous Polymage from the twitch vote spawn boss pool
-Fixed Random Weirdo Boss twitch voting event not working properly
-Fixed Split Spell duplicating itself
 Nerfed Coldgazer's loot pool
-New Weirdo: Nova Stand
+
+Fixed Tesla Turret's shield not lining up with the visual effect
+Pandora's Chest now scales based on the current biome, earlier areas shouldn't provide instantly god wands anymore and later areas should provide apt loot
+Decreased range of Divine Being's Polymorph attack
+Gave the Divine Being a retalitory shield when it takes damage
+Optimised Duck Curse status effect
+Halved amount of duck curse gained from eating duck mages
+Minecart Hisii now conduct electricity
+Fixed Devouring Ghost Minion's attracting projectiles
+Optimised chaotic polymorph crystals & fixed it polymorphing weird things
+Added 1 new pixel scene
 
 
 REMEMBER TO DO UP OR DISABLE LUKKI SWARMLING BEFORE RELEASE

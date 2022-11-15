@@ -7,7 +7,8 @@ local pool = {
     "blob_huge",
     "cat_mocreeps",
     "ccc_bat_psychic",
-    "ceiling_fungus",
+    "c_basebot_speeder_mocreep",
+    "hisii_giga_bomb",
     "devourer_ghost",
     "devourer_magic",
     "drone_mini",
@@ -113,6 +114,26 @@ local prizePool = {
 function item_pickup( entity_item, entity_who_picked, name )
 	local entity_id = GetUpdatedEntityID()
 	local x,y = EntityGetTransform(entity_id)
+    local loot_level = 4
+    local currbiome = BiomeMapGetName( x, y )
+    currbiome = tostring(currbiome)
+    local prefix = "$biome_"
+
+    --[[
+    elseif (currbiome == "rainforest") or (currbiome == "rainforest_open") or (currbiome == "rainforest_dark") or (currbiome == "fungicave") or (currbiome == "fungiforest") or (currbiome == "vault") then
+        loot_level = 4
+    ]]--
+
+    if (currbiome == prefix .. "coalmine") or (currbiome == prefix .. "coalmine_alt") or (currbiome == prefix .. "forest") or (currbiome == prefix .. "excavationsite") then
+        loot_level = 2
+    elseif (currbiome == prefix .. "snowcave") or (currbiome == prefix .. "snowcastle") or (currbiome == prefix .. "desert") then
+        loot_level = 3
+    elseif (currbiome == prefix .. "crypt") or (currbiome == prefix .. "robobase") or (currbiome == prefix .. "wizardcave") or (currbiome == prefix .. "clouds") then
+        loot_level = 5
+    elseif (currbiome == prefix .. "boss_victoryroom") then --Pandoras can't spawn in Heaven or Hell naturally, you'd have to drag them over, enjoy the prize of your hard work
+        loot_level = 10
+    end
+
     SetRandomSeed( GameGetFrameNum(), x, calcVar )
     local rnd = Random(1, #pool)
 
@@ -201,12 +222,27 @@ function item_pickup( entity_item, entity_who_picked, name )
     EntityLoad( "data/entities/animals/worm_big.xml",  x + 100, y + 250 )
 
     if ModIsEnabled("purgatory") or ModIsEnabled("nightmare") then
-        EntityLoad( "data/entities/items/wand_unshuffle_06.xml", x, y - 16 )
+        loot_level = loot_level + 2
+        if loot_level >= 10 then
+            EntityLoad( "data/entities/items/wand_unshuffle_10.xml", x, y - 16 )
+        else
+            EntityLoad( "data/entities/items/wand_unshuffle_0" .. loot_level .. ".xml", x, y - 16 )
+        end
     else
-        EntityLoad( "data/entities/items/wand_unshuffle_04.xml", x, y - 16 )
+        if loot_level >= 10 then
+            EntityLoad( "data/entities/items/wand_unshuffle_10.xml", x, y - 16 )
+        else
+            EntityLoad( "data/entities/items/wand_unshuffle_0" .. loot_level .. ".xml", x, y - 16 )
+        end
     end
 
+
     GameAddFlagRun( "mocreeps_pandora_unleashed" )
+    --[[
+    --Debugging Data
+    GamePrint("Loot Level is " .. loot_level)
+    GamePrint("Current biome name is `" .. currbiome .. "`")
+    ]]--
 
     EntityKill( entity_item )
 
