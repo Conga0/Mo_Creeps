@@ -16,7 +16,7 @@
 			attack_ranged_min_distance="0"
 			attack_ranged_max_distance="120"
 			attack_ranged_frames_between="60"
-			attack_ranged_action_frame="3"
+			attack_ranged_action_frame="4"
 			attack_ranged_offset_y="0"
 			attack_ranged_offset_x="0"
 			>
@@ -93,6 +93,12 @@
 			>
 		</CharacterDataComponent>
 	</Base>
+
+		<SpriteComponent 
+			offset_x="0"
+			offset_y="0"
+			image_file="mods/mo_creeps/files/enemies_gfx/drone_mini_propeller.xml" >
+		</SpriteComponent>
 
 	<ParticleEmitterComponent 
 		emitted_material_name="spark_white"

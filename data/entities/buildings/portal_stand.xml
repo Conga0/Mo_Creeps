@@ -103,6 +103,7 @@
 		angular_velocity="7.5"
 		render_back="0"
     emissive="1"
+    additive="1"
 		use_velocity_as_rotation="0"
 		scale.x="1" scale.y="1"
 		scale_velocity.x="1.0075" scale_velocity.y="1.0075"

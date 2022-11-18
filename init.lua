@@ -278,6 +278,8 @@ spell_mocreep_targetter_desc,"Fire a projectile which causes irresistable hatred
 misc_mocreep_energy_nova,"Energy Nova",,,,,,,,,,,,,
 log_mocreep_moon_altar_fungus,"AN IRREVERSIBLE CORRUPTION HAS OCCURRED",,,,,,,,,,,,,
 logdesc_mocreep_moon_altar_fungus,"WHAT HAVE YOU DONE!?",,,,,,,,,,,,,
+item_mocreep_orb_mattereater_name,"Hungry Orb",,,,,,,,,,,,,
+item_mocreep_orb_mattereater_desc,"You feel like kicking it...",,,,,,,,,,,,,
 ]])
 
 

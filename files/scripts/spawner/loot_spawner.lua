@@ -15,6 +15,8 @@ elseif (lootSeed >= 60) then
 	EntityLoad( "data/entities/items/pickup/heart_better.xml", pos_x, pos_y )
 elseif (lootSeed >= 55) then
 	EntityLoad( "mods/mo_creeps/files/entities/items/pickups/stone_fungus.xml", pos_x, pos_y )
+elseif (lootSeed >= 50) then
+	EntityLoad( "mods/mo_creeps/files/entities/items/pickups/orb_mattereater.xml", pos_x, pos_y )
 else
 	EntityLoad( "data/entities/items/pickup/heart.xml", pos_x, pos_y )
 end
