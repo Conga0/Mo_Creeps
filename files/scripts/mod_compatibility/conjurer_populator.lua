@@ -256,6 +256,11 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/animal_icons/lukki_fungus.png",
 	  },
 	  {
+		name="Swarmling",
+		path="data/entities/animals/lukki_swarmling.xml",
+		image="data/ui_gfx/animal_icons/lukki_swarmling.png",
+	  },
+	  {
 		name="Explosive Box Mimic",
 		path="data/entities/animals/mimic_explosive_box.xml",
 		image="data/ui_gfx/animal_icons/mimic_explosive_box.png",
@@ -389,6 +394,11 @@ table.insert(ALL_ENTITIES, {
 		name="Overzealous Polymaster",
 		path="data/entities/animals/wizard_z_poly_miniboss.xml",
 		image="data/ui_gfx/animal_icons/wizard_z_poly_miniboss.png",
+	  },
+	  {
+		name="Reflective Weirdo",
+		path="data/entities/animals/wraith_returner_mocreep.xml",
+		image="data/ui_gfx/animal_icons/wraith_returner_mocreep.png",
 	  },
 	  {
 		name="Weirdo",

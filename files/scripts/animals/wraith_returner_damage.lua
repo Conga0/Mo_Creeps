@@ -36,11 +36,6 @@ function damage_received( damage, desc, entity_who_caused, is_fatal )
 
 		local proj = ""
 
-		local variablecomp = EntityGetComponent( entity_id, "VariableStorageComponent" )
-		proj = ComponentGetValue2( variablecomp, "value_string" )
-		proj = tostring(proj)
-
-
 		local s = EntityGetComponent( entity_id, "VariableStorageComponent" )
 		if ( s ~= nil ) then
 			for i,v in ipairs( s ) do

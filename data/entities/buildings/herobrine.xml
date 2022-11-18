@@ -16,9 +16,9 @@
   </SpriteComponent>
   
   <CollisionTriggerComponent
-    width="300"
-    height="200" 
-    radius="256"
+    width="250"
+    height="150" 
+    radius="200"
     required_tag="player_unit"
     destroy_this_entity_when_triggered="0" >
   </CollisionTriggerComponent>

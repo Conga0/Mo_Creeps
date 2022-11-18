@@ -47,6 +47,14 @@
         offset_y 	= -3,
         entity     = "data/entities/animals/wizard_z_poly_miniboss.xml",
     })
+
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.007,
+        min_count    = 4,
+        max_count    = 12,    
+        entity     = "data/entities/animals/wraith_returner_mocreep.xml"
+    })
     
 
 

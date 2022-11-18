@@ -15,9 +15,9 @@
             fire_probability_of_ignition="0" 
 			ragdoll_fx_forced="DISINTEGRATED"
 			ragdoll_material="rock_static_glow"
-			blood_material="mocreeps_spark_orange"
-			blood_spray_material="mocreeps_spark_orange"
-			ragdoll_material="mocreeps_spark_orange"
+			blood_material="mocreep_plasma_fading_orange"
+			blood_spray_material="mocreep_plasma_fading_orange"
+			ragdoll_material="mocreep_plasma_fading_orange"
 			blood_sprite_directional=""
 			blood_sprite_large=""
 			minimum_knockback_force="100000"
@@ -40,7 +40,7 @@
 		</PathFindingComponent>
 
 		<SpriteComponent 
-			image_file="mods/mo_creeps/files/enemies_gfx/wraith_returner.xml" 
+			image_file="mods/mo_creeps/files/enemies_gfx/wraith_returner.xml"
 			offset_x="0"
 			offset_y="0">
 		</SpriteComponent>   
@@ -62,13 +62,13 @@
 			is_player="0" >
 		</HitboxComponent>
 
-		<CharacterDataComponent 
-			_enabled="1" 
-			climb_over_y="4" 
-			collision_aabb_min_x="-2.0" 
-			collision_aabb_max_x="2.0" 
-			collision_aabb_min_y="-6" 
-			collision_aabb_max_y="4" 
+		<CharacterDataComponent
+			_enabled="1"
+			climb_over_y="4"
+			collision_aabb_min_x="-2.0"
+			collision_aabb_max_x="2.0"
+			collision_aabb_min_y="-6"
+			collision_aabb_max_y="4"
 			mass="0.9"
 			>
 	    </CharacterDataComponent>

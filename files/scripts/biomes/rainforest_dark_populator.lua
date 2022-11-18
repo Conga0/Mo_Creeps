@@ -30,7 +30,7 @@
         max_count    = 1,    
         entity     = "data/entities/animals/poring_lukki_fake.xml"
     })
-    --[[
+    
     table.insert(g_small_enemies,
     {
         prob           = 0.09,
@@ -38,7 +38,6 @@
         max_count    = 9,    
         entity     = "data/entities/animals/lukki_swarmling.xml"
     })
-    ]]--
 
 
     --New Game +

@@ -1,4 +1,4 @@
-<Entity tags="enemy,mortal,hittable,homing_target,teleportable_NOT,music_energy_100,lukki,glue_NOT" name="$animal_lukki_tiny">	
+<Entity tags="enemy,mortal,hittable,homing_target,teleportable_NOT,music_energy_100,lukki,glue_NOT" name="Nopea Lukki">	
 	<ItemChestComponent level="4" enemy_drop="1" > </ItemChestComponent>
 	
 	<LuaComponent
@@ -8,7 +8,6 @@
 	</LuaComponent>
 
 	<!-- art - main body -->
-	<!-- If you're reading this Spoopy, I wanted to experiment with how a tiny-lukki that's actually dangerous would be, forgive me for my science -->
 
 	<LightComponent 
 		_enabled="1" 
@@ -76,10 +75,10 @@
 	<!-- physics  -->
 
 	<PhysicsAIComponent
-		target_vec_max_len="430.0"
-		force_coeff="65.0"
+		target_vec_max_len="300.0"
+		force_coeff="75.0"
 		force_balancing_coeff="0.4"
-		force_max="650"
+		force_max="550"
 		torque_coeff="10"
 		torque_balancing_coeff="2"
 		torque_max="130.0"

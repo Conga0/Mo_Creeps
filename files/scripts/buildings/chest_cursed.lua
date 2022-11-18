@@ -23,6 +23,7 @@ local pool = {
     "giant_centipede",
     "goo_slug",
     "hideous_mass",
+    "hideous_mass_red",
     "hisii_engineer",
     "hisii_hobo",
     "hisii_minecart",
