@@ -33,30 +33,33 @@
     <GameEffectComponent 
 		_tags="effect_protection_all"
         effect="PROTECTION_ALL"
-        frames="1200"
+        frames="90"
     >
 	</GameEffectComponent >
-	
-	<GameEffectComponent
-		_tags="protection_all_short,effect_protection_all"
-        effect="PROTECTION_FREEZE"
-        frames="1200"
-    >
-	</GameEffectComponent >
-	
-	<GameEffectComponent
-		_tags="protection_all_short,effect_protection_all"
-        effect="PROTECTION_FIRE"
-        frames="1200"
-    >
-	</GameEffectComponent >
+
+	<ParticleEmitterComponent 
+		emitted_material_name="mocreeps_magic_liquid_protection_all_fading"
+		x_pos_offset_min="-3"
+		x_pos_offset_max="3"
+		y_pos_offset_min="-18"
+		y_pos_offset_max="2"
+		count_min="20"
+		count_max="30"
+		lifetime_min="1"
+		lifetime_max="1"
+		create_real_particles="1"
+		emit_cosmetic_particles="0"
+		emission_interval_min_frames="1"
+		emission_interval_max_frames="1"
+		is_emitting="1" >
+	</ParticleEmitterComponent>
 
 	<UIIconComponent
 		name="Protection from all"
 		description="You feel strength in your body."
 		icon_sprite_file="mods/mo_creeps/files/ui_gfx/status_indicators/protection_all_temporary.png"
 		is_perk="0"
-		display_above_head="1"
+		display_above_head="0"
 		display_in_hud="1"
 		>
 	</UIIconComponent>

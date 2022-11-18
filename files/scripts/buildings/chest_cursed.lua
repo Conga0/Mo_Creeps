@@ -58,6 +58,7 @@ local pool = {
     "wizard_manaeater",
     "wizard_transmutation",
     "wizard_watermage_greater",
+    "wraith_returner_mocreep",
     "wraith_weirdo_shield",
     "bubbles/acid/bubble_liquid",
     "bubbles/water/bubble_liquid",

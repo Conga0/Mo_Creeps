@@ -3,6 +3,16 @@ dofile_once("data/scripts/lib/utilities.lua")
 dofile( "data/scripts/perks/perk_list.lua" )
 
 function item_pickup( entity_item, entity_who_picked, item_name )
+
+	-- Spawn Statue ------------------------------------------------------
+
+	if (ModIsEnabled("nightmare") or ModIsEnabled("purgatory")) and HasFlagPersistent( "mocreeps_essence_fungus_goldmode" ) == false then
+		EntityLoad( "mods/mo_creeps/files/entities/props/goldmode/statue_essence_fungus.xml", 4351, 2049 )
+		AddFlagPersistent( "mocreeps_essence_fungus_goldmode" )
+	elseif HasFlagPersistent( "mocreeps_essence_fungus" ) == false then
+		EntityLoad( "mods/mo_creeps/files/entities/props/statue_essence_fungus.xml", 4351, 2049 )
+	end
+
 	-- fetch perk info ---------------------------------------------------
 
 	local pos_x, pos_y = EntityGetTransform( entity_item )
@@ -48,6 +58,7 @@ function item_pickup( entity_item, entity_who_picked, item_name )
 
 	EntityLoad( "data/entities/particles/image_emitters/perk_effect.xml", pos_x, pos_y )
 	GamePrintImportant( GameTextGet( "$log_pickedup_perk", GameTextGetTranslatedOrNot( essence_name ) ), essence_desc )
+
 	
 	EntityKill( entity_item )
 end

@@ -125,7 +125,12 @@ local mocreep_donated_beggar = HasFlagPersistent( "mocreeps_card_unlocked_donate
 local mocreep_enrage_unlocked = HasFlagPersistent( "mocreeps_card_unlocked_rage_aura" )
 local mocreep_cat_secret_unlocked = HasFlagPersistent( "mocreeps_card_unlocked_cat_secret" )
 
-if mocreep_angel_dead and mocreep_worm_dead and mocreep_music_dead and mocreep_blob_dead and mocreep_divine_created and mocreep_donated_beggar and mocreep_enrage_unlocked and mocreep_cat_secret_unlocked then
+--1.1.0 unlocks
+local mocreep_essence_fungus = HasFlagPersistent( "mocreeps_essence_fungus" )
+local mocreep_essence_fungus_moon = HasFlagPersistent( "mocreep_moon_fungus_unlock" )
+local mocreep_pandora_rain = HasFlagPersistent( "mocreep_misc_pandora_chest_rain" )
+
+if mocreep_angel_dead and mocreep_worm_dead and mocreep_music_dead and mocreep_blob_dead and mocreep_divine_created and mocreep_donated_beggar and mocreep_enrage_unlocked and mocreep_cat_secret_unlocked and mocreep_essence_fungus and mocreep_essence_fungus_moon and mocreep_pandora_rain then
 
   local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
   local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")

@@ -44,6 +44,8 @@ Fixed the Colossal Blob occasionally creating duplicate loot if baited offscreen
 Fixed birthday rats spawning in the Powerplant at the wrong time
 Fixed Random Weirdo Boss twitch voting event not working properly
 Fixed Split Spell duplicating itself
+Fixed Tesla Turret's shield not lining up with the visual effect
+Fixed Devouring Ghost Minion's attracting projectiles
 FIXED MAGIC DEVOURERS HAVING 90% DAMAGE REDUCTION FROM ALL SOURCES
 Very slightly reduced blood produced by Angeling & Devilings
 Red Sand now absorbs blood to grow
@@ -68,17 +70,25 @@ Slightly increased Wand Tinkering Crystal's hitbox
 Buffed Weirdo's Shield
 Removed Overzealous Polymage from the twitch vote spawn boss pool
 Nerfed Coldgazer's loot pool
-
-Fixed Tesla Turret's shield not lining up with the visual effect
 Pandora's Chest now scales based on the current biome, earlier areas shouldn't provide instantly god wands anymore and later areas should provide apt loot
 Decreased range of Divine Being's Polymorph attack
 Gave the Divine Being a retalitory shield when it takes damage
 Optimised Duck Curse status effect
 Halved amount of duck curse gained from eating duck mages
 Minecart Hisii now conduct electricity
-Fixed Devouring Ghost Minion's attracting projectiles
 Optimised chaotic polymorph crystals & fixed it polymorphing weird things
-Added 1 new pixel scene
+
+You can now deliver the Essence of Fungus to lunar bodies
+Expanded the statue room to include trophys for new achievements
+Greatly increased time between Psychic Bat's delusion attempts, it should now take 5 seconds between each attempt instead of 2, this should hopefully make them less frustrating enemies to fight against and make trying to avoid the attack feel more worth it instead of giving the feeling that you'll just be hit again anyways
+Drastically reduced lifetime of Mass Status spells, this is not the actual effect duration but the projectile lifetime, previously if you gave a mass status spell a modifier like water trail for example, it would linger a very long time and create a lot of water
+Fixed Colossal Blob boss not dropping loot
+Added modded powders to Dissolve Powder's list
+Reworked Masters of Immortality, they now no longer provide an unconcditional 20 seconds of Ambrosia, but rather cover their target with an Ambrosia stain, this should introduce the option of counterplay by using stain inflicting spells, such as Mass Wet, Water Trail or other means.
+Modified Hideous Mass ragdolls to now include their limbs
+Decreased spawnrate of Holy Orb Barrage, it should now be slightly rare overall, previously I felt like I could consistently find it every run down the main path and it felt excessively present for how good it is
+Reduced Delusion's duration to 45 seconds, previously it felt too long but putting it down to 30 seconds felt like the effect would expire before it had a chance to trick you, hopefully 45 seconds will strike a balance between lasting long enough to trick you and being short enough to go away once the effect has done it's business.
+New Creep: Reflective Weirdo
 
 
 REMEMBER TO DO UP OR DISABLE LUKKI SWARMLING BEFORE RELEASE

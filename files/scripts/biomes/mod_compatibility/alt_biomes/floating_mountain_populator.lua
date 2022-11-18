@@ -18,6 +18,14 @@ end
 
     table.insert(g_small_enemies_sky,
     {
+        prob           = 0.12,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/the_end/wraith_returner_mocreep.xml"
+    })
+
+    table.insert(g_small_enemies_sky,
+    {
         prob           = 0.10,
         min_count    = 1,
         max_count    = 1,    

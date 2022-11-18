@@ -156,6 +156,14 @@
         entity     = "data/entities/animals/wraith_weirdo_shield.xml"
     })
 
+    table.insert(g_small_enemies,
+    {
+        prob           = 0.1,
+        min_count    = 2,
+        max_count    = 2,    
+        entity     = "data/entities/animals/wraith_returner_mocreep.xml"
+    })
+
     
     --Crystals
   

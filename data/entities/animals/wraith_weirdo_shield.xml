@@ -1,4 +1,4 @@
-<Entity name="Outo">
+<Entity name="Heijastava Outo">
   
 	<Base file="data/entities/base_enemy_flying.xml" >
 		<ItemChestComponent level="1" > </ItemChestComponent>
@@ -29,9 +29,9 @@
             fire_probability_of_ignition="0" 
 			ragdoll_fx_forced="DISINTEGRATED"
 			ragdoll_material="rock_static_glow"
-			blood_material="plasma_fading_green"
-			blood_spray_material="plasma_fading_green"
-			ragdoll_material="plasma_fading_green"
+			blood_material="mocreep_plasma_fading_orange"
+			blood_spray_material="mocreep_plasma_fading_orange"
+			ragdoll_material="mocreep_plasma_fading_orange"
 			blood_sprite_directional=""
 			blood_sprite_large=""
 			minimum_knockback_force="100000"

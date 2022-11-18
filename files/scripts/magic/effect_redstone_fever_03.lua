@@ -21,4 +21,4 @@ if ( rand(0,1) > 0.5 ) then
 end
 
 -- shift creatures
-creature_shift( entity, x, y, false )
+creature_shift( entity_id, x, y, false )

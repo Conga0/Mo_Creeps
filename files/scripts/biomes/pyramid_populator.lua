@@ -31,6 +31,14 @@
         entity     = "data/entities/animals/wizard_manaeater.xml"
     })
 
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.1,
+        min_count    = 1,
+        max_count    = 2,    
+        entity     = "data/entities/animals/wraith_returner_mocreep.xml"
+    })
+
 
 
     ---SmallEnemies

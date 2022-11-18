@@ -20,7 +20,7 @@
 			can_fly="0"  
 			attack_ranged_action_frame="10"
 			attack_ranged_min_distance="10"
-			attack_ranged_max_distance="800"
+			attack_ranged_max_distance="300"
 			attack_ranged_entity_file="data/entities/projectiles/mocreeps_sentry_bullet.xml"
 			attack_ranged_entity_count_min="1"
 			attack_ranged_entity_count_max="1"

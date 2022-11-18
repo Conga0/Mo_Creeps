@@ -105,7 +105,89 @@ mod_settings =
     value_default = false,
     scope = MOD_SETTING_SCOPE_NEW_GAME,
   },
+
 }
+
+--statue settings unlocks
+local statue_count = 0
+
+--1.0.0
+if HasFlagPersistent( "mocreeps_card_unlocked_divinebeing" ) then
+  statue_count = statue_count + 1
+end
+if HasFlagPersistent( "mocreeps_card_unlocked_boss_toxic_worm" ) then
+  statue_count = statue_count + 1
+end
+if HasFlagPersistent( "mocreeps_card_unlocked_musical_boss" ) then
+  statue_count = statue_count + 1
+end
+if HasFlagPersistent( "mocreeps_card_unlocked_blob_boss" ) then
+  statue_count = statue_count + 1
+end
+if HasFlagPersistent( "mocreeps_card_unlocked_divine_liquid" ) then
+  statue_count = statue_count + 1
+end
+if HasFlagPersistent( "mocreeps_card_unlocked_donated_beggar" ) then
+  statue_count = statue_count + 1
+end
+if HasFlagPersistent( "mocreeps_card_unlocked_rage_aura" ) then
+  statue_count = statue_count + 1
+end
+if HasFlagPersistent( "mocreeps_card_unlocked_cat_secret" ) then
+  statue_count = statue_count + 1
+end
+
+--1.1.0
+if HasFlagPersistent( "mocreeps_essence_fungus" ) then
+  statue_count = statue_count + 1
+end
+if HasFlagPersistent( "mocreep_moon_fungus_unlock" ) then
+  statue_count = statue_count + 1
+end
+if HasFlagPersistent( "mocreep_misc_pandora_chest_rain" ) then
+  statue_count = statue_count + 1
+end
+
+--Todo: add translation keys for these, these aren't finished yet though, not even attainable as of writing, so I'll decide if I want to keep it or not later
+
+if statue_count >= 12 then
+  table.insert(mod_settings,
+  {
+    category_id = "seasonal_events_forced",
+    ui_name = "Forced Seasonal Events",
+    ui_description = "A list of Seasonal Events which can be forced",
+    settings = {
+      {
+        id = "seasonal_events_forced_april_fools",
+        ui_name = "Forced April Fools",
+        ui_description = "Is the April Fools holiday forcefully enabled?",
+        value_default = false,
+        scope = MOD_SETTING_SCOPE_NEW_GAME,
+      },
+      {
+        id = "seasonal_events_forced_birthday",
+        ui_name = "Forced Birthday",
+        ui_description = "Is the More Creeps Birthday holiday forcefully enabled?",
+        value_default = false,
+        scope = MOD_SETTING_SCOPE_NEW_GAME,
+      },
+      {
+        id = "seasonal_events_forced_halloween",
+        ui_name = "Forced Halloween",
+        ui_description = "Is Halloween forcefully enabled?",
+        value_default = false,
+        scope = MOD_SETTING_SCOPE_NEW_GAME,
+      },
+      {
+        id = "seasonal_events_forced_smissmass",
+        ui_name = "Forced Smissmass",
+        ui_description = "Is the Smissmass holiday forcefully enabled?",
+        value_default = false,
+        scope = MOD_SETTING_SCOPE_NEW_GAME,
+      }
+    }
+  })
+end
 
 function ModSettingsUpdate( init_scope )
 	local old_version = mod_settings_get_version( mod_id )

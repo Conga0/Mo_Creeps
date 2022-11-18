@@ -5,6 +5,11 @@ local modCompatibilitySpellEvolutions = ModSettingGet( "mo_creeps.mod_compat_mod
 local motdSetting = ModSettingGet( "mo_creeps.motd_setting" )
 local seasonalSetting = ModSettingGet( "mo_creeps.seasonal_events" )
 
+local seasonalForced_AprilFools = ModSettingGet( "mo_creeps.seasonal_events_forced_april_fools" )
+local seasonalForced_Birthday = ModSettingGet( "mo_creeps.seasonal_events_forced_birthday" )
+local seasonalForced_Halloween = ModSettingGet( "mo_creeps.seasonal_events_forced_halloween" )
+local seasonalForced_Smissmass = ModSettingGet( "mo_creeps.seasonal_events_forced_smissmass" )
+
 --Spawn Bosses
 
 --This was a coding marathon and a half, huge shoutouts to Horscht for the help on this one.
@@ -271,6 +276,8 @@ material_mocreep_meat_mana,"Enchanting Meat",,,,,,,,,,,,,
 spell_mocreep_targetter_name,"Targetter",,,,,,,,,,,,,
 spell_mocreep_targetter_desc,"Fire a projectile which causes irresistable hatred towards anything it hits.",,,,,,,,,,,,,
 misc_mocreep_energy_nova,"Energy Nova",,,,,,,,,,,,,
+log_mocreep_moon_altar_fungus,"AN IRREVERSIBLE CORRUPTION HAS OCCURRED",,,,,,,,,,,,,
+logdesc_mocreep_moon_altar_fungus,"WHAT HAVE YOU DONE!?",,,,,,,,,,,,,
 ]])
 
 
@@ -862,6 +869,32 @@ xml:add_child(nxml.parse([[
 ]]))
 ModTextFileSetContent("data/entities/buildings/essence_eater.xml", tostring(xml))
 
+--Allows for moon shenanigans involving essences at the Sky Moon
+local content = ModTextFileGetContent("data/entities/buildings/moon_altar.xml")
+local xml = nxml.parse(content)
+xml:add_child(nxml.parse([[
+	<LuaComponent 
+    _enabled="1" 
+    execute_every_n_frame="70"
+    script_source_file="mods/mo_creeps/files/scripts/magic/moon_altar_modded.lua" 
+    >
+  </LuaComponent>
+]]))
+ModTextFileSetContent("data/entities/buildings/moon_altar.xml", tostring(xml))
+
+--Allows for moon shenanigans involving essences at the Dark Moon
+local content = ModTextFileGetContent("data/entities/buildings/dark_moon_altar.xml")
+local xml = nxml.parse(content)
+xml:add_child(nxml.parse([[
+	<LuaComponent 
+    _enabled="1" 
+    execute_every_n_frame="70"
+    script_source_file="mods/mo_creeps/files/scripts/magic/dark_moon_altar_modded.lua" 
+    >
+  </LuaComponent>
+]]))
+ModTextFileSetContent("data/entities/buildings/dark_moon_altar.xml", tostring(xml))
+
 --Allows for Pandora Chest rain to occur if you bring a Pandora's Chest to the mountain altar
 ModLuaFileAppend( "data/scripts/magic/altar_tablet_magic.lua", "mods/mo_creeps/files/scripts/magic/mountain_altar_appends.lua" )
 
@@ -942,6 +975,7 @@ end
 
 --Resets Blob Boss kill reward to prevent cheesing multiple "reward events" per kill
 ModLuaFileAppend( "data/scripts/newgame_plus.lua", "mods/mo_creeps/files/scripts/newgame_plus_appends.lua" )
+GameRemoveFlagRun( "mocreeps_blob_boss_slain" )
 
 --Adds custom enlightened alchemist types
 local content = ModTextFileGetContent("mods/mo_creeps/files/scripts/mod_compatibility/vanilla_enlightened_alchemist_init_append.lua")
@@ -953,6 +987,13 @@ local content = ModTextFileGetContent("data/entities/projectiles/deck/worm_shot.
 local xml = nxml.parse(content)
 xml.attr.tags = xml.attr.tags .. ",musical_stone"
 ModTextFileSetContent("data/entities/projectiles/deck/worm_shot.xml", tostring(xml))
+
+-- Adds various powders to dissolve powders perk
+local content = ModTextFileGetContent("data/entities/misc/perks/dissolve_powders.xml")
+local xml = nxml.parse(content)
+local attrs = xml:first_of("CellEaterComponent").attr
+attrs.materials = attrs.materials .. ",mocreeps_insect_husk,mocreeps_sand_pink,templebrick_static_broken_mocreepsoft"
+ModTextFileSetContent("data/entities/misc/perks/dissolve_powders.xml", tostring(xml))
 
 
 
@@ -987,7 +1028,7 @@ local year, month, day = GameGetDateAndTimeLocal()
 if seasonalSetting == true then
 
   -- Halloween Event
-  if ( month == 10 ) and ( day >= 22 ) then
+  if (( month == 10 ) and ( day >= 22 )) or seasonalForced_Halloween then
     ModLuaFileAppend( "data/scripts/biomes/coalmine.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/halloween.lua" ) --Coal Mine, first area, goodluck on your run
     ModLuaFileAppend( "data/scripts/biomes/coalmine_alt.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/halloween.lua" ) --Coalmine but to the west side near damp cave
     ModLuaFileAppend( "data/scripts/biomes/excavationsite.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/halloween.lua" ) --Coal Pits, area 2
@@ -1017,7 +1058,7 @@ if seasonalSetting == true then
 
 
   -- Smissmass Event
-  if ( month == 12 ) and ( day >= 22 ) then
+  if (( month == 12 ) and ( day >= 22 )) or seasonalForced_Smissmass then
 
     local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
     local content = ModTextFileGetContent("data/entities/animals/hisii_minecart_tnt.xml")
@@ -1064,9 +1105,10 @@ if seasonalSetting == true then
 
   end
 
+
   -- Birthday Event
   -- Update to be centered on 21/07/2022, this is when the first enemy was created and development officially began. Should be a fair trade off between not being the official release date but also not clashing with Halloween
-  if ( month == 7 ) and (( day >= 20 ) and ( day <= 22 )) then
+  if (( month == 7 ) and (( day >= 20 ) and ( day <= 22 ))) or seasonalForced_Birthday then
     ModLuaFileAppend( "data/scripts/biomes/coalmine.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday.lua" ) --Coal Mine, first area, goodluck on your run
     ModLuaFileAppend( "data/scripts/biomes/coalmine_alt.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday.lua" ) --Coalmine but to the west side near damp cave
     ModLuaFileAppend( "data/scripts/biomes/excavationsite.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday.lua" ) --Coal Pits, area 2

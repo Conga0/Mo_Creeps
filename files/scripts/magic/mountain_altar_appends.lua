@@ -30,10 +30,18 @@ if( GlobalsGetValue("MISC_PANDORA_CHEST_RAIN") ~= "1" ) then
 		end
 		
 		if collected then
-			GlobalsSetValue("MISC_PANDORA_CHEST_RAIN", "1" )			
+			GlobalsSetValue("MISC_PANDORA_CHEST_RAIN", "1" )
 			GamePrintImportant( "$log_altar_magic", "" )
-			
-			AddFlagPersistent( "mocreep_misc_pandora_chest_rain" )
+
+			-- Spawn Statue ------------------------------------------------------
+	
+			if (ModIsEnabled("nightmare") or ModIsEnabled("purgatory")) and HasFlagPersistent( "mocreep_misc_pandora_chest_rain_goldmode" ) == false then
+				EntityLoad( "mods/mo_creeps/files/entities/props/goldmode/statue_pandora_rain.xml", 4351, 2150 )
+				AddFlagPersistent( "mocreep_misc_pandora_chest_rain_goldmode" )
+			elseif HasFlagPersistent( "mocreep_misc_pandora_chest_rain" ) == false then
+				EntityLoad( "mods/mo_creeps/files/entities/props/statue_pandora_rain.xml", 4351, 2150 )
+				AddFlagPersistent( "mocreep_misc_pandora_chest_rain" )
+			end
 		end
 	end
 end

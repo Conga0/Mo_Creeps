@@ -245,7 +245,8 @@ table.insert(actions,
     spawn_requires_flag = "mocreeps_card_unlocked_divinebeing_spell",
     type 		= ACTION_TYPE_PROJECTILE,
     spawn_level                       = "2,3,4,5,6", -- BUCKSHOT  Originally this was 1-5 but was changed because the spell feels too good to get early on, might revert, unsure
-    spawn_probability                 = "0.7,0.9,1,0.8,0.6", -- BUCKSHOT
+    --spawn_probability                 = "0.7,0.9,1,0.8,0.6", -- Original Rates
+    spawn_probability                 = "0.7,0.7,0.8,0.8,0.6", -- BUCKSHOT
     price = 220,
     mana = 50,
     action 		= function()

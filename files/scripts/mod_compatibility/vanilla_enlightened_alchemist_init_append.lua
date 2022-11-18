@@ -129,6 +129,8 @@ local styles =
 				for i,v in ipairs( animalais ) do
 					ComponentSetValue2( v, "attack_ranged_entity_file", "mods/mo_creeps/files/entities/projectiles/enlightened_heal_test_wand.xml" )
 					ComponentSetValue2( v, "tries_to_ranged_attack_friends", true )
+					ComponentSetValue2( v, "attack_if_damaged_probability", 0 )
+					ComponentSetValue2( v, "escape_if_damaged_probability", 100 )
 				end
 			end
 			

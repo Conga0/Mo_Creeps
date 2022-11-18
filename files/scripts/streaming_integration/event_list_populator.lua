@@ -111,6 +111,7 @@
                 "wizard_transmutation",
                 "wizard_watermage_greater",
                 "wizard_z_poly_miniboss",
+                "wraith_returner_mocreep",
                 "wraith_weirdo_shield",
                 "bubbles/acid/bubble_liquid",
                 "bubbles/water/bubble_liquid",
@@ -274,7 +275,7 @@
 			dofile("mods/mo_creeps/files/scripts/magic/creature_shift_file.lua")
 			for i,entity_id in pairs( get_players() ) do
 				local x, y = EntityGetTransform( entity_id )
-				creature_shift( entity, x, y, true )
+				creature_shift( entity_id, x, y, true )
 			end
 		end,
 	})
@@ -365,6 +366,7 @@ if ModIsEnabled("twitch_extended") then
         "data/entities/animals/wizard_manaeater.xml",
         "data/entities/animals/wizard_transmutation.xml",
         "data/entities/animals/wizard_watermage_greater.xml",
+        "data/entities/animals/wraith_returner_mocreep",
         "data/entities/animals/wraith_weirdo_shield.xml",
         "data/entities/animals/bubbles/acid/bubble_liquid.xml",
         "data/entities/animals/bubbles/water/bubble_liquid.xml",

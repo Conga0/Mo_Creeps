@@ -4,9 +4,9 @@
 
 	<ParticleEmitterComponent 
 		emitted_material_name="water_fading"
-		x_pos_offset_min="-5"
-		x_pos_offset_max="5"
-		y_pos_offset_min="-8"
+		x_pos_offset_min="-3"
+		x_pos_offset_max="3"
+		y_pos_offset_min="-12"
 		y_pos_offset_max="2"
 		x_vel_min="-5"
 		x_vel_max="5"
