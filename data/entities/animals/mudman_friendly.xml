@@ -1,4 +1,4 @@
-<Entity name="Asunnoton hisii" >
+<Entity name="Mudman" >
   
 	<Base file="data/entities/base_enemy_basic.xml" >
 		<ItemChestComponent level="1" > </ItemChestComponent>
@@ -11,8 +11,8 @@
 			attack_melee_enabled="1"
             attack_melee_max_distance="16"
 			attack_melee_action_frame="5"
-			attack_melee_damage_min="0.4"
-			attack_melee_damage_max="0.7"
+			attack_melee_damage_min="1.2"
+			attack_melee_damage_max="1.8"
 			creature_detection_range_x="300"
 			creature_detection_range_y="300"
 			food_material="meat"
@@ -20,27 +20,27 @@
 			sense_creatures="1"
 			attack_ranged_enabled="0"
 			can_fly="0"
-			defecates_and_pees="1"
 			>
 		</AnimalAIComponent>
 
 		<SpriteComponent
 			alpha="1"
 			_enabled="1"
-			image_file="mods/mo_creeps/files/enemies_gfx/hisii_hobo.xml"
+			image_file="mods/mo_creeps/files/enemies_gfx/mudman_friendly.xml"
 			offset_x="0"
 			offset_y="0" >
 		</SpriteComponent>
 		
 		<DamageModelComponent 
-            hp="8.0"
+            hp="6.0"
             materials_create_messages="1"
-			ragdoll_filenames_file="mods/mo_creeps/files/ragdolls/hisii_hobo/filenames.txt" 
+			ragdoll_filenames_file="mods/mo_creeps/files/ragdolls/mudman_friendly/filenames.txt" 
 			fire_probability_of_ignition="0"
-			blood_material="blood"
-    		blood_spray_material="blood"
+			blood_material="soil"
+    		blood_spray_material="mud"
             blood_spray_create_some_cosmetic="1"
-			blood_multiplier="0.75"
+			blood_multiplier="0.05"
+			ragdoll_material="soil"
 			>
 			<damage_multipliers
 				explosion="0.4"
@@ -64,11 +64,11 @@
 		<PathFindingGridMarkerComponent
 			marker_work_flag="16" >
 		</PathFindingGridMarkerComponent>
-		
+	
 		<GenomeDataComponent 
-			herd_id="orcs"
-			food_chain_rank="20"
-			is_predator="0" >
+			herd_id="flower"
+			food_chain_rank="15"
+			is_predator="1" >
 		</GenomeDataComponent>
 		
 		<CharacterPlatformingComponent 
@@ -99,10 +99,10 @@
 			>
 		</CharacterDataComponent>
 	</Base>
-
+		
 	<AudioComponent
 		file="data/audio/Desktop/animals.bank"
-		event_root="animals/miner_fire" >
+		event_root="animals/shooterflower" >
 	</AudioComponent>
 	
 	<HitboxComponent 
@@ -128,49 +128,85 @@
 		offset.x="0" 
 		offset.y="0">
 	</HotspotComponent>
-	
-	<MaterialAreaCheckerComponent
-		area_aabb.min_x="0"
-		area_aabb.max_x="1"
-		area_aabb.min_y="5"
-		area_aabb.max_y="5"
-		update_every_x_frame="9"
-		material="diamond"
-		material2="gold"
-		look_for_failure="0"
-		kill_after_message="0" >
-	</MaterialAreaCheckerComponent>
-
-	<MaterialAreaCheckerComponent
-		area_aabb.min_x="0"
-		area_aabb.max_x="1"
-		area_aabb.min_y="5"
-		area_aabb.max_y="5"
-		update_every_x_frame="9"
-		material="gold_radioactive"
-		material2="silver"
-		look_for_failure="0"
-		kill_after_message="0" >
-	</MaterialAreaCheckerComponent>
-
-	<MaterialAreaCheckerComponent
-		area_aabb.min_x="0"
-		area_aabb.max_x="1"
-		area_aabb.min_y="5"
-		area_aabb.max_y="5"
-		update_every_x_frame="9"
-		material="gold_molten"
-		material2="silver_molten"
-		look_for_failure="0"
-		kill_after_message="0" >
-	</MaterialAreaCheckerComponent>
-
-	<LuaComponent
-		script_material_area_checker_success="mods/mo_creeps/files/scripts/animals/hisii_hobo_check.lua" >
-	</LuaComponent>
   
  	<VariableStorageComponent
 		_tags="no_gold_drop">
 	</VariableStorageComponent>
+
+	<ParticleEmitterComponent 
+		emitted_material_name="soil"
+		offset.x="0"
+		offset.y="3"
+		fade_based_on_lifetime="1"
+		render_on_grid="1"
+		x_pos_offset_min="-4"
+		x_pos_offset_max="4"
+		y_pos_offset_min="-8"
+		y_pos_offset_max="2"
+		airflow_force="0.1"
+		airflow_time="0.2"
+		airflow_scale="0.05"
+		gravity.y="0"
+		count_min="1"
+		count_max="1"
+		is_trail="1"
+		trail_gap="4"
+		lifetime_min="0.3"
+		lifetime_max="8.9"
+	create_real_particles="1"
+	emit_cosmetic_particles="0"
+		emission_interval_min_frames="30"
+		emission_interval_max_frames="60"
+		is_emitting="1" >
+	</ParticleEmitterComponent>
+
+	<ParticleEmitterComponent 
+		emitted_material_name="mud"
+		offset.x="0"
+		offset.y="3"
+		fade_based_on_lifetime="1"
+		render_on_grid="1"
+		x_pos_offset_min="-5"
+		x_pos_offset_max="5"
+		y_pos_offset_min="-9"
+		y_pos_offset_max="3"
+		airflow_force="0.1"
+		airflow_time="0.2"
+		airflow_scale="0.05"
+		gravity.y="0"
+		count_min="3"
+		count_max="5"
+		is_trail="1"
+		trail_gap="4"
+		lifetime_min="0.3"
+		lifetime_max="8.9"
+	create_real_particles="0"
+	emit_cosmetic_particles="1"
+		emission_interval_min_frames="1"
+		emission_interval_max_frames="3"
+		is_emitting="1" >
+	</ParticleEmitterComponent>
+
+	<!-- FX -->
+	<ParticleEmitterComponent 
+		emitted_material_name="water_fading"
+		x_pos_offset_min="-4"
+		x_pos_offset_max="4"
+		y_pos_offset_min="-8"
+		y_pos_offset_max="2"
+		x_vel_min="-5"
+		x_vel_max="5"
+		y_vel_min="-5"
+		y_vel_max="-50"
+		count_min="1"
+		count_max="1"
+		lifetime_min="0.1"
+		lifetime_max="0.3"
+		create_real_particles="1"
+		emit_cosmetic_particles="0"
+		emission_interval_min_frames="1"
+		emission_interval_max_frames="20"
+		is_emitting="1" >
+	</ParticleEmitterComponent>
 
 </Entity>

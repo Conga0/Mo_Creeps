@@ -6,8 +6,6 @@ Remember the checklist!!
 
 
 
-Suspended Lava Tank - mods/mo_creeps/files/entities/props/suspended_tank_lava.xml
-Essence of Fungus - mods/mo_creeps/files/entities/items/pickups/essence_fungus.xml (functional but can't redeem it anywhere)
 
 
 
@@ -87,7 +85,17 @@ Modified Hideous Mass ragdolls to now include their limbs
 Decreased spawnrate of Holy Orb Barrage, it should now be slightly rare overall, previously I felt like I could consistently find it every run down the main path and it felt excessively present for how good it is
 Reduced Delusion's duration to 45 seconds, previously it felt too long but putting it down to 30 seconds felt like the effect would expire before it had a chance to trick you, hopefully 45 seconds will strike a balance between lasting long enough to trick you and being short enough to go away once the effect has done it's business.
 
-Mini Drones now have a short delay before firing at you, this should help make their attack feel more avoidable upon making line of sight with them
-Altered Portal Stand's particle effect to have more glow
-Reduced duration of Spells to Worms twitch event to 30 seconds (down from 40)
-Fixed Blob Cave not spawning anything in Noitavania
+Improved Divine Being's shield visuals
+Fixed noitavania initialisation error
+Increased maximum number of fairies visible at once, they used to have 20 available at any given time but this was broken at some point to only allow 5 at once, this has been fixed
+Fixed Hisii Hobo having their sprite offset
+Enraging Aura now affects your halo level
+
+New Experimental Creep: Mudman
+I'm not certain on these creatures yet, they are made from pouring water on soil to make mud, then pouring pheromone on mud to make magical mud, then you will gain some friends.
+
+
+
+NOTE:
+Mud men are still functional in current build, decide what to do with them before releasing to public
+Mud men have not been added to creep count, remember to add to count if they end up being greenlit

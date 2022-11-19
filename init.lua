@@ -280,6 +280,7 @@ log_mocreep_moon_altar_fungus,"AN IRREVERSIBLE CORRUPTION HAS OCCURRED",,,,,,,,,
 logdesc_mocreep_moon_altar_fungus,"WHAT HAVE YOU DONE!?",,,,,,,,,,,,,
 item_mocreep_orb_mattereater_name,"Hungry Orb",,,,,,,,,,,,,
 item_mocreep_orb_mattereater_desc,"You feel like kicking it...",,,,,,,,,,,,,
+mat_mocreeps_mudman_mud,"Magical Mud",,,,,,,,,,,,,
 ]])
 
 

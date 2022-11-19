@@ -1,0 +1,12 @@
+<Entity >
+	<MagicConvertMaterialComponent
+      from_any_material="1"
+      steps_per_frame="5"
+      to_material="air"
+      clean_stains="1"
+      is_circle="1"
+      radius="12" 
+	  loop="0"
+	  >
+    </MagicConvertMaterialComponent>
+</Entity>

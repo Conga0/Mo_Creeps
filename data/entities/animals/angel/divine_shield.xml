@@ -33,6 +33,14 @@
         </ParticleEmitterComponent>
     </Base>
 
+    <SpriteComponent 
+        image_file="mods/mo_creeps/files/particles/area_indicator_160_divine.png"
+        z_index="1.2"
+        offset_x="90"
+        offset_y="90"
+        >
+    </SpriteComponent>
+
     <LifetimeComponent
     lifetime="480"
     >

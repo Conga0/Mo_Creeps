@@ -1,0 +1,1 @@
+mods/mo_creeps/files/ragdolls/mudman_friendly/mudman.png

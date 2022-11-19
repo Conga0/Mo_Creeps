@@ -5,7 +5,7 @@ local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
 
 
 --Spawns heart pickup OR chest in hidden area
-local content = ModTextFileGetContent("mods/noitavania/mods/noitavania/data/biome/_pixel_scenes.xml")
+local content = ModTextFileGetContent("mods/noitavania/data/biome/_pixel_scenes.xml")
 local xml = nxml.parse(content)
 xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
     <PixelScene pos_x="2769" pos_y="9113" just_load_an_entity="mods/mo_creeps/files/entities/spawners/loot_spawner.xml" />

@@ -462,6 +462,63 @@
 	requires_oxygen="1"
 	temperature_of_fire="10"  >
   </CellData>
+  
+  <CellData
+	name="mocreeps_mudman_mud"
+	ui_name="$mat_mocreeps_mudman_mud"
+  	tags="[sand_other],[corrodible],[burnable],[alchemy]"
+	burnable="1"
+	density="7"
+	cell_type="liquid"
+	wang_color="ff200074"
+	generates_smoke="0"
+	liquid_gravity="2"
+	liquid_sand="1"
+	on_fire="1"
+	requires_oxygen="0"
+	temperature_of_fire="50"
+	autoignition_temperature="1"
+	hp="1000" 
+	fire_hp="300"
+	audio_physics_material_event="sand"
+	audio_physics_material_wall="sand"
+	audio_physics_material_solid="sand"
+	show_in_creative_mode="0"
+	audio_event_name="explosions/gunpowder"
+	>
+	<ParticleEffect
+		vel.y="17.14"
+		vel_random.min_y="-100"
+		vel_random.max_y="25.71"
+		lifetime.min="0"
+		gravity.y="-8.57"
+		render_on_grid="1"
+		draw_as_long="1"
+		friction="-3.429"
+		probability="0.0518"
+	>
+	</ParticleEffect>
+	<ExplosionConfig 
+		damage="0"
+		cell_explosion_power="20"
+		cell_explosion_damage_required="10"
+		cell_explosion_radius_min="2"
+		explosion_sprite="data/particles/explosion_012.xml"
+		load_this_entity="mods/mo_creeps/files/scripts/materials/mudman_spawner.xml"
+		ray_energy="10"
+		>
+	</ExplosionConfig>
+    <Graphics 
+		texture_file="mods/Mo_Creeps/files/materials_gfx/mud_magic.png" 
+		color="A0363e21" >
+    </Graphics>
+	<StatusEffects>
+		<Ingestion>
+			<StatusEffect type="POISONED" amount="0.15" />
+			<StatusEffect type="FOOD_POISONING" amount="0.05" />
+		</Ingestion>
+	</StatusEffects>
+  </CellData>
 
 
 
@@ -494,6 +551,29 @@
 	input_cell1="mocreeps_redstone" 	input_cell2="blood"
 	output_cell1="mocreeps_redstone" 	output_cell2="mocreeps_redstone"
 	blob_radius1="6"						blob_radius2="3"
+	audio_fx_volume_1="100.0" >
+	>
+  </Reaction>
+
+  <Reaction probability="10"
+	input_cell1="mud" 	input_cell2="magic_liquid_charm"
+	output_cell1="mocreeps_mudman_mud" 	output_cell2="mocreeps_mudman_mud"
+	blob_radius1="2"						blob_radius2="1"
+	audio_fx_volume_1="100.0" >
+	>
+  </Reaction>
+
+  <Reaction probability="10"
+	input_cell1="[water]" 	input_cell2="soil"
+	output_cell1="mud" 	output_cell2="mud"
+	blob_radius1="3"						blob_radius2="2"
+	audio_fx_volume_1="100.0" >
+	>
+  </Reaction>
+
+  <Reaction probability="1"
+	input_cell1="mocreeps_mudman_mud" 	input_cell2="mocreeps_mudman_mud"
+	output_cell1="mocreeps_mudman_mud" 	output_cell2="fire"
 	audio_fx_volume_1="100.0" >
 	>
   </Reaction>

@@ -31,8 +31,6 @@ Starting cat amount multiplier
 
 If fungal shift timer mod is enabled, add a status to show the cooldown for Red Shifting
 
-Poly Crystals spawn in pre-decided locations in pixelscenes to guarantee waysaround
-
 Setting to disable custom pixelscenes for compatibility with mods like noitavania
 
 Disable custom pixelscenes if playing on Noitavania (32 bit limit will be reached otherwise)
@@ -40,6 +38,8 @@ Disable custom pixelscenes if playing on Noitavania (32 bit limit will be reache
 Add hint pointing towards Essence of Fungus
 
 Improve divine Being's shield visual
+
+Relook over swarmling lukki to consider if they're fair or not, or if they should be changed to be something else
 
 
 

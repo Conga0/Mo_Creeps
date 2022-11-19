@@ -40,6 +40,7 @@ if mocreep_enrage_unlocked then
         stackable = STACKABLE_NO,
         usable_by_enemies = true,
         func = function( entity_perk_item, entity_who_picked, item_name )
+            add_halo_level(entity_who_picked, -1)
             local x,y = EntityGetTransform( entity_who_picked )
             local child_id = EntityLoad( "mods/mo_creeps/files/entities/misc/perks/rage_aura_perk.xml", x, y )
             EntityAddTag( child_id, "perk_entity" )
@@ -50,6 +51,7 @@ if mocreep_enrage_unlocked then
             for i,v in ipairs( mocreep_targets ) do
                 if ( v ~= entity_id ) and ( EntityGetName( v ) == "mocreep_perk_rage_aura" ) then
                     EntityKill ( v )
+                    add_halo_level(entity_id, 1)
                 end
             end
         end,

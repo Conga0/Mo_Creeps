@@ -451,6 +451,11 @@ table.insert(ALL_ENTITIES, {
 		image="mods/mo_creeps/files/ui_gfx/items/stone_fungus.png",
 	  },
 	  {
+		name="Hungry Orb",
+		path="mods/mo_creeps/files/entities/items/pickups/orb_mattereater.xml",
+		image="mods/mo_creeps/files/ui_gfx/items/orb_mattereater.png",
+	  },
+	  {
 		name="Wand of Wonders",
 		path="mods/mo_creeps/files/entities/items/wands/custom/wand_of_wonders.xml",
 		image="data/ui_gfx/bubbles/wand_random.png",

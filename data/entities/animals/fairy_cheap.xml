@@ -190,7 +190,7 @@
 	</StatusEffectDataComponent>
 
 	<CameraBoundComponent
-	  max_count="5"
+	  max_count="15"
 	  distance="2000">
 	</CameraBoundComponent>
 
