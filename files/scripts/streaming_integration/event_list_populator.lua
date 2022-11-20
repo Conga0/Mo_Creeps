@@ -306,6 +306,40 @@
 		end,
 	})
 
+    table.insert(streaming_events,
+	{
+		id = "MOCREEP_MUD_MEN",
+		ui_name = "Summon Mud Men",
+		ui_description = "Subjectively competent allies",
+		ui_icon = "data/ui_gfx/streaming_event_icons/health_plus.png",
+		ui_author = "Conga Lyne - Mo Creeps",
+		weight = 0.75,
+		kind = STREAMING_EVENT_GOOD,
+		action = function(event)
+			local players = get_players()
+			SetRandomSeed( GameGetFrameNum(), GameGetFrameNum() + 353 )
+
+            local catcount = 10
+			
+			for i,entity_id in ipairs( players ) do
+                repeat
+                    local x, y = EntityGetTransform( entity_id )
+                    
+                    local angle = Random( 0, 31415 ) * 0.0001
+                    local length = 45
+                    
+                    local ex = x + math.cos( angle ) * length
+                    local ey = y - math.sin( angle ) * length
+
+                    EntityLoad( "mods/mo_creeps/files/scripts/materials/mudman_spawner.xml", ex, ey )
+
+                    catcount = catcount - 1
+        
+                until (catcount < 1)
+			end
+		end,
+	})
+
 
 if ModIsEnabled("twitch_extended") then
     enemies_list = {

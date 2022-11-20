@@ -1,7 +1,7 @@
 <Entity >
 	<MagicConvertMaterialComponent
       kill_when_finished="1"
-      from_any_material="1"
+      from_material_tag="[solid]"
       steps_per_frame="5"
       to_material="air"
       clean_stains="1"
@@ -10,4 +10,12 @@
 	  loop="0"
 	  >
     </MagicConvertMaterialComponent>
+
+    <CellEaterComponent
+		eat_probability="100"
+    radius="20" 
+		limited_materials="1"
+		materials="mud,mocreeps_mudman_mud,soil,magic_liquid_charm"
+		>
+    </CellEaterComponent>
 </Entity>

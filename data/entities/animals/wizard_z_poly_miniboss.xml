@@ -33,6 +33,14 @@
             ragdoll_material="meat_polymorph_protection"
 			ragdoll_filenames_file="mods/mo_creeps/files/ragdolls/wizard_z_poly_miniboss/filenames.txt" 
 			>
+			<damage_multipliers
+				melee="1.0"
+				projectile="0.7"
+				explosion="0.8"
+				electricity="0.8"
+				ice="0.8"
+				fire="0.8" >
+			</damage_multipliers>
 		</DamageModelComponent>
 
 		<SpriteComponent 

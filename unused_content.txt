@@ -13,7 +13,7 @@ Remember the checklist!!
 
 1.1.0 Changelog:
 Added 3 new environmental hazards
-Added 6 new creeps
+Added 7 new creeps
 Added new biome variation to the world, explore the same biomes in wildly different ways!
 Birthday event now occurs during July, this is when the mod first started being worked on.
 Pandora's Chest now has more permanent effects
@@ -84,18 +84,27 @@ Reworked Masters of Immortality, they now no longer provide an unconcditional 20
 Modified Hideous Mass ragdolls to now include their limbs
 Decreased spawnrate of Holy Orb Barrage, it should now be slightly rare overall, previously I felt like I could consistently find it every run down the main path and it felt excessively present for how good it is
 Reduced Delusion's duration to 45 seconds, previously it felt too long but putting it down to 30 seconds felt like the effect would expire before it had a chance to trick you, hopefully 45 seconds will strike a balance between lasting long enough to trick you and being short enough to go away once the effect has done it's business.
-
 Improved Divine Being's shield visuals
-Fixed noitavania initialisation error
 Increased maximum number of fairies visible at once, they used to have 20 available at any given time but this was broken at some point to only allow 5 at once, this has been fixed
 Fixed Hisii Hobo having their sprite offset
 Enraging Aura now affects your halo level
 
-New Experimental Creep: Mudman
-I'm not certain on these creatures yet, they are made from pouring water on soil to make mud, then pouring pheromone on mud to make magical mud, then you will gain some friends.
+Fixed chaotic polymorph crystal not polymorphing innocent creatures
+Fixed mudman's ragdoll using the wrong sprite sheet
+Mudmen now have a slowing ranged attack
+Improved Mudmen spawning
+Removed audio components from magic mud
+Fixed Glu Slug's projectile not being copyable by returners
+Magic Mud no longer ignites itself
+Magic Mud spawns in the magical potion pool very rarely now
+Water and Soil no longer creates mud
+Cold Gazer now has increased resistance against projectile damage, this should hopefully make his feel more durable than he currently is
+Overzealous Polymage miniboss now has increased resistance against projectile damage for the same reasons as Cold Gazer
+Minecart Riders can now very rarely have cool shades
+Added a punishment for disobeying the 31st's MOTD
+Reflective Weirdos now remember any damage boosts applied to the projectile they're hit by
+Giga Bomb Hisii can now spawn very rarely outside of their pixelscene
+Fixed Bubbles not spawning proper amounts of liquid in Nightmare/purgatory
+Reduced Twitch Event Spells to Worms duration to 20 seconds
+Added Mudmen Twitch Event
 
-
-
-NOTE:
-Mud men are still functional in current build, decide what to do with them before releasing to public
-Mud men have not been added to creep count, remember to add to count if they end up being greenlit

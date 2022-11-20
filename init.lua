@@ -281,12 +281,11 @@ logdesc_mocreep_moon_altar_fungus,"WHAT HAVE YOU DONE!?",,,,,,,,,,,,,
 item_mocreep_orb_mattereater_name,"Hungry Orb",,,,,,,,,,,,,
 item_mocreep_orb_mattereater_desc,"You feel like kicking it...",,,,,,,,,,,,,
 mat_mocreeps_mudman_mud,"Magical Mud",,,,,,,,,,,,,
+log_mocreep_toxicnest_secret_name,"I TOLD YOU NOT TO VISIT THE WORM NEST AT 3AM",,,,,,,,,,,,,
 ]])
 
 
 
---status_mocreep_melee_curse_name,"Melee Vulnerability",,,,,,,,,,,,,
---status_mocreep_melee_curse_desc,"You feel any protections against melee attacks weakened...",,,,,,,,,,,,,
 
 
 --Regular Spawns
@@ -337,9 +336,16 @@ end
 
 
 
+--Custom Materials
 ModMaterialsFileAdd( "mods/mo_creeps/files/scripts/materials/custom_materials.xml" )
 
 
+--Custom Potion Spawns
+--[[
+]]--
+function OnMagicNumbersAndWorldSeedInitialized()
+		ModLuaFileAppend( "data/scripts/items/potion.lua", "mods/mo_creeps/files/scripts/potions/potion_appends.lua" )
+end
 
 
 
@@ -904,32 +910,34 @@ ModLuaFileAppend( "data/scripts/magic/altar_tablet_magic.lua", "mods/mo_creeps/f
 
 
 --Nightmare & Purgatory fixes for bubbles so they don't spew out infinite liquid everywhere
+--I forgot nightmare/purgatory naturally reduces blood multipliers by default anyways.. oops
+--[[
 if ModIsEnabled("purgatory") or ModIsEnabled("nightmare") then
 
   local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
   local content = ModTextFileGetContent("data/entities/animals/bubble_liquid.xml")
   local xml = nxml.parse(content)
   local attrs = xml:first_of("Base"):first_of("DamageModelComponent").attr
-  attrs.blood_multiplier = "10"
+  attrs.blood_multiplier = "20"
   ModTextFileSetContent("data/entities/animals/bubble_liquid.xml", tostring(xml))
 
   local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
   local content = ModTextFileGetContent("data/entities/animals/bubbles/acid/bubble_liquid.xml")
   local xml = nxml.parse(content)
   local attrs = xml:first_of("Base"):first_of("DamageModelComponent").attr
-  attrs.blood_multiplier = "10"
+  attrs.blood_multiplier = "20"
   ModTextFileSetContent("data/entities/animals/bubbles/acid/bubble_liquid.xml", tostring(xml))
 
   local content = ModTextFileGetContent("data/entities/animals/bubbles/freezing_liquid/bubble_liquid.xml")
   local xml = nxml.parse(content)
   local attrs = xml:first_of("Base"):first_of("DamageModelComponent").attr
-  attrs.blood_multiplier = "18"
+  attrs.blood_multiplier = "30"
   ModTextFileSetContent("data/entities/animals/bubbles/freezing_liquid/bubble_liquid.xml", tostring(xml))
 
   local content = ModTextFileGetContent("data/entities/animals/bubbles/cursed_liquid/bubble_liquid.xml")
   local xml = nxml.parse(content)
   local attrs = xml:first_of("Base"):first_of("DamageModelComponent").attr
-  attrs.blood_multiplier = "2.75"
+  attrs.blood_multiplier = "10"
   ModTextFileSetContent("data/entities/animals/bubbles/cursed_liquid/bubble_liquid.xml", tostring(xml))
 
   local content = ModTextFileGetContent("data/entities/animals/bubbles/ambrosia/bubble_liquid.xml")
@@ -975,6 +983,7 @@ if ModIsEnabled("purgatory") or ModIsEnabled("nightmare") then
   ModTextFileSetContent("data/entities/animals/bubbles/sliceLiquid/bubble_liquid.xml", tostring(xml))
   
 end
+]]--
 
 --Resets Blob Boss kill reward to prevent cheesing multiple "reward events" per kill
 ModLuaFileAppend( "data/scripts/newgame_plus.lua", "mods/mo_creeps/files/scripts/newgame_plus_appends.lua" )
@@ -1007,6 +1016,11 @@ dofile_once( "mods/mo_creeps/files/scripts/mod_compatibility/boss_health_multipl
 
 
   
+
+
+
+
+
 
 
 

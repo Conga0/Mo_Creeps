@@ -152,6 +152,7 @@
 	<VariableStorageComponent
 		name="proj_file"
 		value_string="data/entities/projectiles/wraith_glowing_laser.xml"
+		value_float="0.5"
 		>
 	</VariableStorageComponent>
 </Entity>

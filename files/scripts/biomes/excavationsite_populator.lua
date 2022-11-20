@@ -49,6 +49,14 @@
         max_count    = 1,
         entity     = "data/entities/animals/hisii_minecart_tnt.xml"
     })
+
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.005,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/secret/hisii_minecart.xml"
+    })
     
     table.insert(g_big_enemies,
     {

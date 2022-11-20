@@ -9,6 +9,6 @@ local charm_component = GetGameEffectLoadTo( eid, "CHARM", true )
 if( charm_component ~= nil ) then
 	ComponentSetValue( charm_component, "frames", -1 )
 end
-EntityLoad( "mods/mo_creeps/files/entities/misc/remove_ground_microscopic.xml", x, y )
+EntityLoad( "mods/mo_creeps/files/entities/misc/remove_ground_mud.xml", x, y )
 
 EntityKill( entity_id )

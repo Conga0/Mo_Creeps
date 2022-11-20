@@ -50,6 +50,22 @@
         entity     = "data/entities/animals/hisii_minecart_tnt.xml"
     })
 
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.005,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/secret/hisii_minecart.xml"
+    })
+
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.01,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/hisii_giga_bomb.xml"
+    })
+
 
 
     ---Small Enemies
@@ -216,7 +232,7 @@ table.insert(g_pixel_scene_02,
 
 table.insert(g_pixel_scene_02,
 {
-        prob   			= 0.8,
+        prob   			= 1.4,
         material_file 	= "mods/mo_creeps/files/biome_impl/coalmines/gigabomb_01.png",
         visual_file		= "mods/mo_creeps/files/biome_impl/coalmines/gigabomb_01_visual.png",
         background_file	= "mods/mo_creeps/files/biome_impl/coalmines/gigabomb_01_background.png",

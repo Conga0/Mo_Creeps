@@ -43,11 +43,15 @@ function damage_received( damage, desc, entity_who_caused, is_fatal )
 				
 				if ( name == "proj_file" ) then
 					proj = ComponentGetValue2( v, "value_string" )
+					projDMG = ComponentGetValue2( v, "value_float" )
 				end
 			end
 		end
 
-		shoot_projectile( entity_id, proj, x, y, vel_x, vel_y )
+		local projectile = shoot_projectile( entity_id, proj, x, y, vel_x, vel_y )
+		local projComp = EntityGetFirstComponent( projectile, "ProjectileComponent" )
+		ComponentSetValue2( projComp, "damage", projDMG )
+
 	end
 	
 	GameEntityPlaySound( entity_id, "shoot" )
