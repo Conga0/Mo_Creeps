@@ -282,6 +282,10 @@ item_mocreep_orb_mattereater_name,"Hungry Orb",,,,,,,,,,,,,
 item_mocreep_orb_mattereater_desc,"You feel like kicking it...",,,,,,,,,,,,,
 mat_mocreeps_mudman_mud,"Magical Mud",,,,,,,,,,,,,
 log_mocreep_toxicnest_secret_name,"I TOLD YOU NOT TO VISIT THE WORM NEST AT 3AM",,,,,,,,,,,,,
+material_mocreep_meat_fire_lukki,Infernal Meat,,,,,,,,,,,,,
+status_mocreep_protection_lava_name,Lava Immunity,,,,,,,,,,,,,
+status_mocreep_protection_lava_desc,"You take no direct damage from lava or fire.",,,,,,,,,,,,,
+creep_mocreep_boss_fire_lukki_name,"Lämmön Esteetikko",,,,,,,,,,,,,
 ]])
 
 
@@ -1013,6 +1017,9 @@ ModTextFileSetContent("data/entities/misc/perks/dissolve_powders.xml", tostring(
 
 --Boss health multiplier insertion
 dofile_once( "mods/mo_creeps/files/scripts/mod_compatibility/boss_health_multiplier_plug.lua" )
+
+--Boss vulnerability immunity insertion
+dofile_once( "mods/mo_creeps/files/scripts/mod_compatibility/boss_vulnerability_immune_plug.lua" )
 
 
   

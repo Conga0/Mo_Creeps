@@ -4,9 +4,18 @@ table.insert(status_effects,
     id="MOCREEPS_PROTECTION_RADIOACTIVITY_TEMPORARY",
     ui_name="$perk_protection_radioactivity",
     ui_description="$perkdesc_protection_radioactivity",
-    ui_icon="data/ui_gfx/status_indicators/toxic_immunity_status.png",
+    ui_icon="mods/mo_creeps/files/ui_gfx/status_indicators/toxic_immunity_status.png",
+    protects_from_fire=false,
+    effect_entity="mods/mo_creeps/files/entities/misc/effect_protection_toxic_temporary.xml",
+})
+table.insert(status_effects,
+{
+    id="MOCREEPS_PROTECTION_LAVA",
+    ui_name="$status_mocreep_protection_lava_name",
+    ui_description="$status_mocreep_protection_lava_desc",
+    ui_icon="mods/mo_creeps/files/ui_gfx/status_indicators/lava_immunity_status.png",
     protects_from_fire=true,
-    effect_entity="data/entities/misc/effect_protection_radioactivity.xml",
+    effect_entity="mods/mo_creeps/files/entities/misc/effect_protection_lava_temporary.xml",
 })
 table.insert(status_effects,
 {

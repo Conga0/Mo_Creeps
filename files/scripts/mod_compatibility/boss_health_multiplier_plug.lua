@@ -153,20 +153,6 @@ xml:add_child(nxml.parse([[
 ]]))
 ModTextFileSetContent("data/entities/animals/boss_robot/boss_robot.xml", tostring(xml))
 
---Mecha Kolmi
-local content = ModTextFileGetContent("data/entities/animals/boss_robot/boss_robot.xml")
-local xml = nxml.parse(content)
-xml:add_child(nxml.parse([[
-  <LuaComponent
-    script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
-    execute_times="1"
-		execute_every_n_frame="3"
-    remove_after_executed="1"
-    >
-  </LuaComponent>
-]]))
-ModTextFileSetContent("data/entities/animals/boss_robot/boss_robot.xml", tostring(xml))
-
 --Master of Masters
 local content = ModTextFileGetContent("data/entities/animals/boss_wizard/boss_wizard.xml")
 local xml = nxml.parse(content)
@@ -180,20 +166,6 @@ xml:add_child(nxml.parse([[
   </LuaComponent>
 ]]))
 ModTextFileSetContent("data/entities/animals/boss_wizard/boss_wizard.xml", tostring(xml))
-
---"Tiny"
-local content = ModTextFileGetContent("data/entities/animals/maggot_tiny/maggot_tiny.xml")
-local xml = nxml.parse(content)
-xml:add_child(nxml.parse([[
-  <LuaComponent
-    script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
-    execute_times="1"
-		execute_every_n_frame="3"
-    remove_after_executed="1"
-    >
-  </LuaComponent>
-]]))
-ModTextFileSetContent("data/entities/animals/maggot_tiny/maggot_tiny.xml", tostring(xml))
 
 --"Tiny"
 local content = ModTextFileGetContent("data/entities/animals/maggot_tiny/maggot_tiny.xml")
@@ -569,7 +541,7 @@ local content = ModTextFileGetContent("data/entities/animals/terminator.xml")
 local xml = nxml.parse(content)
 xml:add_child(nxml.parse([[
   <LuaComponent
-    script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
+    script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier_half.lua"
     execute_times="1"
 		execute_every_n_frame="3"
     remove_after_executed="1"
@@ -747,7 +719,7 @@ local content = ModTextFileGetContent("data/entities/animals/sochaos.xml")
 local xml = nxml.parse(content)
 xml:add_child(nxml.parse([[
   <LuaComponent
-    script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
+    script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier_half.lua"
     execute_times="1"
 		execute_every_n_frame="3"
     remove_after_executed="1"
@@ -817,7 +789,7 @@ local content = ModTextFileGetContent("data/entities/animals/slimeshooter_mega.x
 local xml = nxml.parse(content)
 xml:add_child(nxml.parse([[
   <LuaComponent
-    script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
+    script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier_half.lua"
     execute_times="1"
 		execute_every_n_frame="3"
     remove_after_executed="1"
@@ -830,7 +802,7 @@ local content = ModTextFileGetContent("data/entities/animals/slimeshooter_mega_s
 local xml = nxml.parse(content)
 xml:add_child(nxml.parse([[
   <LuaComponent
-    script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
+    script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier_half.lua"
     execute_times="1"
 		execute_every_n_frame="3"
     remove_after_executed="1"

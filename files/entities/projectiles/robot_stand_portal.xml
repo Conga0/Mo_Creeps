@@ -28,8 +28,8 @@
 	<DamageNearbyEntitiesComponent
     radius="19"
     time_between_damaging="3"
-    damage_min="0.06"
-    damage_max="0.06"
+    damage_min="0.04"
+    damage_max="0.04"
     target_tag="player_unit"
 	damage_description="Energy Nova"
     damage_type="DAMAGE_PROJECTILE"
@@ -39,8 +39,8 @@
 	<DamageNearbyEntitiesComponent
     radius="19"
     time_between_damaging="3"
-    damage_min="0.06"
-    damage_max="0.06"
+    damage_min="0.08"
+    damage_max="0.08"
     target_tag="player_unit"
 	damage_description="Energy Nova"
     damage_type="DAMAGE_FIRE"

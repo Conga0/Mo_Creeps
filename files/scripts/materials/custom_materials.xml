@@ -59,6 +59,26 @@
   </CellDataChild>
 
   <CellDataChild
+  	_parent="meat_slime"
+	name="mocreeps_meat_fire_lukki"
+	ui_name="$material_mocreep_meat_fire_lukki"
+	solid_break_to_type="lava"
+	solid_restitution="0.4"
+	wang_color="ffed4d4f"
+	audio_physics_material_wall="meat"
+	audio_physics_material_solid="meat"
+	audio_is_soft="1"
+	solid_on_collision_material="lava" 
+	show_in_creative_mode="1"
+	>
+	<StatusEffects>
+		<Ingestion>
+			<StatusEffect type="MOCREEPS_PROTECTION_LAVA" amount="2" />
+		</Ingestion>
+	</StatusEffects>
+  </CellDataChild>
+
+  <CellDataChild
   	_parent="meat"
 	name="mocreeps_meat_duck"
 	ui_name="$material_mocreep_meat_feathery"

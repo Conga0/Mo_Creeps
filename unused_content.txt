@@ -45,6 +45,8 @@ Fixed Split Spell duplicating itself
 Fixed Tesla Turret's shield not lining up with the visual effect
 Fixed Devouring Ghost Minion's attracting projectiles
 Fixed Colossal Blob boss not dropping loot
+Fixed chaotic polymorph crystal not polymorphing innocent creatures
+Fixed Glu Slug's projectile not being copyable by returners
 FIXED MAGIC DEVOURERS HAVING 90% DAMAGE REDUCTION FROM ALL SOURCES
 Very slightly reduced blood produced by Angeling & Devilings
 Red Sand now absorbs blood to grow
@@ -88,23 +90,20 @@ Improved Divine Being's shield visuals
 Increased maximum number of fairies visible at once, they used to have 20 available at any given time but this was broken at some point to only allow 5 at once, this has been fixed
 Fixed Hisii Hobo having their sprite offset
 Enraging Aura now affects your halo level
-
-Fixed chaotic polymorph crystal not polymorphing innocent creatures
-Fixed mudman's ragdoll using the wrong sprite sheet
-Mudmen now have a slowing ranged attack
-Improved Mudmen spawning
-Removed audio components from magic mud
-Fixed Glu Slug's projectile not being copyable by returners
-Magic Mud no longer ignites itself
-Magic Mud spawns in the magical potion pool very rarely now
-Water and Soil no longer creates mud
 Cold Gazer now has increased resistance against projectile damage, this should hopefully make his feel more durable than he currently is
 Overzealous Polymage miniboss now has increased resistance against projectile damage for the same reasons as Cold Gazer
 Minecart Riders can now very rarely have cool shades
 Added a punishment for disobeying the 31st's MOTD
-Reflective Weirdos now remember any damage boosts applied to the projectile they're hit by
-Giga Bomb Hisii can now spawn very rarely outside of their pixelscene
 Fixed Bubbles not spawning proper amounts of liquid in Nightmare/purgatory
 Reduced Twitch Event Spells to Worms duration to 20 seconds
 Added Mudmen Twitch Event
 
+Fixed Divine Being creating infinite shields under certain circumstances
+Fixed Decaying Meat protecting you from fire
+Fixed Decaying Meat not properly wearing off after the status effect ends
+Fixed "Tiny" gaining unholy amounts of health from the boss health multiplier setting
+Fixed Mecha Kolmi gaining unholy amounts of health from the boss health multiplier setting
+Various Modded & Vanilla bosses are now immune to Vulnerability, this is a direct nerf to Holy Orb Barrage but a much needed one, especially when it broke some bosses and made them immortal
+
+Setup significant amount of AI for a new Boss Creature, "Aesthete of Heat" (Developement name)
+It's not ready yet, but so far is the most complicated Creep yet.
