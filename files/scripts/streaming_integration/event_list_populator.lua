@@ -290,7 +290,7 @@
 		ui_description = "All projectiles currently in the air turn into worms!",
 		ui_icon = "data/ui_gfx/streaming_event_icons/protect_enemies.png",
 		ui_author = "Conga Lyne - Mo Creeps",
-		weight = 0.5,
+		weight = 0.6,
 		kind = STREAMING_EVENT_BAD,
 		delay_timer = 180,
 		action_delayed = function(event)
@@ -310,7 +310,7 @@
 	{
 		id = "MOCREEP_MUD_MEN",
 		ui_name = "Summon Mud Men",
-		ui_description = "Subjectively competent allies",
+		ui_description = "MUD MEN are here to save the day!!",
 		ui_icon = "data/ui_gfx/streaming_event_icons/health_plus.png",
 		ui_author = "Conga Lyne - Mo Creeps",
 		weight = 0.75,
@@ -319,7 +319,7 @@
 			local players = get_players()
 			SetRandomSeed( GameGetFrameNum(), GameGetFrameNum() + 353 )
 
-            local catcount = 10
+            local count = 10
 			
 			for i,entity_id in ipairs( players ) do
                 repeat
@@ -333,9 +333,9 @@
 
                     EntityLoad( "mods/mo_creeps/files/scripts/materials/mudman_spawner.xml", ex, ey )
 
-                    catcount = catcount - 1
+                    count = count - 1
         
-                until (catcount < 1)
+                until (count < 1)
 			end
 		end,
 	})

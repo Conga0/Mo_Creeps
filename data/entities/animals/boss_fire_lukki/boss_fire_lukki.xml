@@ -119,7 +119,7 @@
 			explosion="0.3"
 			electricity="0.3"
 			fire="-1.0" 
-			slice="0.5"
+			slice="0.2"
 			ice="0.8"
 			curse="0.7"
 			drill="0.3"
@@ -339,6 +339,14 @@
 	<LuaComponent
 		script_source_file="data/entities/animals/boss_fire_lukki/boss_fire_lukki_meteor_barrage_setup.lua"
 		execute_every_n_frame="560"
+		execute_times="-1"
+		>
+	</LuaComponent>
+	
+	<!-- Summons a delayed explosion on top of the player every 16.3 seconds if they're too far away -->
+	<LuaComponent
+		script_source_file="data/entities/animals/boss_fire_lukki/boss_fire_lukki_circle_explosion.lua"
+		execute_every_n_frame="980"
 		execute_times="-1"
 		>
 	</LuaComponent>

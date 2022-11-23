@@ -30,6 +30,12 @@
 		execute_on_removed="1"
 		>
 	</LuaComponent>
+
+	<LuaComponent
+		script_source_file="mods/mo_creeps/files/scripts/status_effects/weaken_immunity_check.lua"
+		execute_every_n_frame="2"
+		>
+	</LuaComponent>
 	
 	<LifetimeComponent
 		lifetime="900"

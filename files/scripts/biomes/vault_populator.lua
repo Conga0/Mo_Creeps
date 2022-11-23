@@ -258,3 +258,47 @@
         entity     = "data/entities/animals/power_plant/drone_mini.xml",
         ngpluslevel = 1
     })
+
+
+
+
+
+
+
+
+
+
+
+
+
+    -- Pixel Scenes/Areas
+    
+    --[[
+    ]]--
+    
+    table.insert(g_pixel_scene_wide,
+    {
+            prob   			= 0.5,
+            material_file 	= "mods/mo_creeps/files/biome_impl/vault/lava_pit.png",
+            visual_file		= "mods/mo_creeps/files/biome_impl/vault/lava_pit_visual.png",
+            background_file	= "mods/mo_creeps/files/biome_impl/vault/lava_pit_background.png",
+            is_unique		= 0
+    })
+    --Adding shop into the pool a 2nd time to not dilute it's spawn chance
+    table.insert(g_pixel_scene_wide,
+    {
+            prob   			= 0.5,
+            material_file 	= "data/biome_impl/vault/shop.png",
+            visual_file		= "data/biome_impl/vault/shop_visual.png",
+            background_file	= "",
+            is_unique		= 0,
+    })
+    
+    table.insert(g_pixel_scene_tall,
+    {
+            prob   			= 0.5,
+            material_file 	= "mods/mo_creeps/files/biome_impl/vault/redstone_trap_room.png",
+            visual_file		= "",
+            background_file	= "mods/mo_creeps/files/biome_impl/vault/redstone_trap_room_background.png",
+            is_unique		= 0
+    })

@@ -4,7 +4,7 @@ Need to push release first.
 Move Blob Cave to bottom right of radiation pits if New Biomes & Secrets is enabled
 too tired right now
 
-Tag optimise mass status spells to check for a childname rather than tag name
+Tag Optimise mass status spells to check for a childname rather than tag name
 
 Optional english names for monsters
 
@@ -37,8 +37,6 @@ Disable custom pixelscenes if playing on Noitavania (32 bit limit will be reache
 
 Add hint pointing towards Essence of Fungus
 
-Improve divine Being's shield visual
-
 Twitch event, summon Skoude
 
 
@@ -46,6 +44,7 @@ Twitch event, summon Skoude
 
 Trophys:
 Killing all minibosses
+Killing Aesthete of Heat
 
 
 

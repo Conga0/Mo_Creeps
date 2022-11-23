@@ -275,6 +275,8 @@ item_mocreeps_chest_g,"G Chest",,,,,,,,,,,,,
 material_mocreep_meat_mana,"Enchanting Meat",,,,,,,,,,,,,
 spell_mocreep_targetter_name,"Targetter",,,,,,,,,,,,,
 spell_mocreep_targetter_desc,"Fire a projectile which causes irresistable hatred towards anything it hits.",,,,,,,,,,,,,
+spell_mocreep_firecharge_name,"Fire Charge",,,,,,,,,,,,,
+spell_mocreep_firecharge_desc,"Imbues a projectile with a fiery charge, that it will release on impact.",,,,,,,,,,,,,
 misc_mocreep_energy_nova,"Energy Nova",,,,,,,,,,,,,
 log_mocreep_moon_altar_fungus,"AN IRREVERSIBLE CORRUPTION HAS OCCURRED",,,,,,,,,,,,,
 logdesc_mocreep_moon_altar_fungus,"WHAT HAVE YOU DONE!?",,,,,,,,,,,,,
@@ -1010,6 +1012,18 @@ local xml = nxml.parse(content)
 local attrs = xml:first_of("CellEaterComponent").attr
 attrs.materials = attrs.materials .. ",mocreeps_insect_husk,mocreeps_sand_pink,templebrick_static_broken_mocreepsoft"
 ModTextFileSetContent("data/entities/misc/perks/dissolve_powders.xml", tostring(xml))
+
+--Adds Vulnerability immunity check to Master of Vulnerability's attack
+local content = ModTextFileGetContent("data/entities/misc/effect_weaken.xml")
+local xml = nxml.parse(content)
+xml:add_child(nxml.parse([[
+	<LuaComponent
+		script_source_file="mods/mo_creeps/files/scripts/status_effects/weaken_immunity_check.lua"
+		execute_every_n_frame="2"
+		>
+	</LuaComponent>
+]]))
+ModTextFileSetContent("data/entities/misc/effect_weaken.xml", tostring(xml))
 
 
 

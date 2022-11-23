@@ -3,6 +3,10 @@ dofile_once("data/scripts/lib/utilities.lua")
 local entity_id    = GetUpdatedEntityID()
 local pos_x, pos_y = EntityGetTransform( entity_id )
 local r = 512
+local particlePath = "mods/mo_creeps/files/entities/misc/effect_status_fire.xml"
+if ModSettingGet( "mo_creeps.particle_reduction" ) then
+	particlePath = "mods/mo_creeps/files/entities/misc/effect_status_fire_lowparticles.xml"
+end
 
 -- check that we're only shooting every 10 frames
 if script_wait_frames( entity_id, 10 ) then  return  end
@@ -22,6 +26,7 @@ end
 
 local targets = EntityGetInRadiusWithTag( pos_x, pos_y, r, "mortal" )
 
+
 for i,v in ipairs( targets ) do
 	if ( v ~= entity_id ) then
 		local c = EntityGetAllChildren( v )
@@ -39,8 +44,9 @@ for i,v in ipairs( targets ) do
 		end
 		
 		if valid and EntityHasTag(v, "hittable") then
-			local eid = EntityLoad( "mods/mo_creeps/files/entities/misc/effect_status_fire.xml", pos_x, pos_y )
+			local eid = EntityLoad( particlePath, pos_x, pos_y )
 			EntityAddChild( v, eid )
+			end
 		end
 	end
 end

@@ -17,6 +17,8 @@ local seasonal_events_desc = "Are seasonal events enabled? \nFor example, Hallow
 local boss_health_multiplayer_name = "Boss Health Multiplier"
 local boss_health_multiplayer_formatting = " $0% HP"
 local boss_health_multiplayer_desc = "Multiply all Bosses health by this much. \nFor those who seek extra durable opponents. \nDoes not affect Kolmisilma \nMinibosses will also have their health boosted by a partial amount. \nThis can be changed mid-run but may not update for all bosses, \nremember to restart after updating the multiplier.\n \nFor Modders: \nIf your mod isn't listed in the compatibility section of the mod page, \nthis likely won't boost it, you'll need to add a lua component to your bosses. \nDo not hesitate to contact me for instructions or help if needed. \nIt would be easiest for me to respond to you on discord, Conga Lyne#2452"
+local particle_reduction_name = "Minimal Particles"
+local particle_reduction_desc = "Reduce the number of particles spawned by certain spells. \nThis should help reduce lag if your computer's reaching it's limit."
 local mod_compat_mode_conjurer_name = "Conjurer extra Compatibility Mode"
 local mod_compat_mode_conjurer_desc = "Some people may have issues with this mod not loading into Conjurer properly. \nIf this happens, try enabling this option and loading conjurer again. \n \nThis option is on by default but can be turned off if you wish to \nhave the pixel scenes & bosses appear in conjurer worlds. \n \nIf Conjurer still fails to load despite having this turned on, although unlikely, \nit may be a mod compatibility issue with something else, \nperhaps try disabling mods to find the troublesome one. \n \nIf nothing else works please let me know to by filing a bug report to me. \nIt would be easiest for me to reach & investigate your report at the discord link below: \nhttps://discord.gg/gtyGnv8Pxk"
 local mod_compat_mode_spell_evolution_name = "Spell Evolution Compatibility Mode"
@@ -90,6 +92,13 @@ mod_settings =
     value_display_multiplier = 1,
     value_display_formatting = boss_health_multiplayer_formatting,
     scope = MOD_SETTING_SCOPE_RUNTIME_RESTART,
+  },
+  {
+    id = "particle_reduction",
+    ui_name = mod_compat_mode_conjurer_name,
+    ui_description = mod_compat_mode_conjurer_desc,
+    value_default = false,
+    scope = MOD_SETTING_SCOPE_NEW_GAME,
   },
   {
     id = "mod_compat_mode_conjurer",

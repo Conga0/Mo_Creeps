@@ -773,3 +773,27 @@ table.insert(actions,
         --current_reload_time = current_reload_time + 15
     end,
 })
+
+--Wait.. is burning trail literally just fire charge but not called fire charge..? Keep your naming consistency together Noita please
+table.insert(actions,
+{
+    id          = "MOCREEPS_FIRE_CHARGE",
+    name 		= "$spell_mocreep_firecharge_name",
+    description = "$spell_mocreep_firecharge_desc",
+    sprite 		= "data/ui_gfx/gun_actions/burn_trail.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/heavy_bullet_unidentified.png",
+    related_projectiles	= {"mods/mo_creeps/files/entities/projectiles/deck/targetter.xml"},
+    type 		= ACTION_TYPE_MODIFIER,
+    spawn_level                       = "1,2,4,5", -- ELECTRIC_CHARGE
+    spawn_probability                 = "1,1,1,1", -- ELECTRIC_CHARGE
+    price = 150,
+    mana = 8,
+    --max_uses = 8,
+    custom_xml_file = "data/entities/misc/custom_cards/torch.xml",
+    action 		= function()
+        c.game_effect_entities = c.game_effect_entities .. "data/entities/misc/effect_apply_on_fire.xml,"
+        c.damage_fire_add = c.damage_fire_add + 0.1
+        c.extra_entities = c.extra_entities .. "data/entities/misc/burn.xml,"
+        draw_actions( 1, true )
+    end,
+})

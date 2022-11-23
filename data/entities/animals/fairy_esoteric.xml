@@ -81,6 +81,14 @@
 			mass="0.3"
 			>
 		</CharacterDataComponent>
+
+		<!-- This exists purely to slow the Fairy down, remove if proven unnecessary to prevent unnecessary changes being made and to maintain consistency between other fairy type creatures -->
+		<CharacterPlatformingComponent
+			fly_speed_max_up="70"
+			fly_speed_max_down="70"
+			fly_speed_mult="20"
+			fly_velocity_x="70">
+		</CharacterPlatformingComponent>
 	</Base>
   
 	<SpriteParticleEmitterComponent

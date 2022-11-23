@@ -341,3 +341,22 @@ table.insert(g_pixel_scene_01,
         background_file	= "mods/mo_creeps/files/biome_impl/crypt/overbearing_background.png",
         is_unique		= 0
 })
+
+
+table.insert(g_pixel_scene_05,
+{
+        prob   			= 1.1,
+        material_file 	= "mods/mo_creeps/files/biome_impl/crypt/room_magic_mud.png",
+        visual_file		= "mods/mo_creeps/files/biome_impl/crypt/room_magic_mud_visual.png",
+        background_file	= "",
+        is_unique		= 0
+})
+
+table.insert(g_pixel_scene_05b,
+{
+        prob   			= 1.1,
+        material_file 	= "mods/mo_creeps/files/biome_impl/crypt/room_magic_mud_b.png",
+        visual_file		= "mods/mo_creeps/files/biome_impl/crypt/room_magic_mud_visual.png",
+        background_file	= "",
+        is_unique		= 0
+})
