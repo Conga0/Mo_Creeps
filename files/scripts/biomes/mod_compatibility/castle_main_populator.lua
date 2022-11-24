@@ -39,6 +39,14 @@
         max_count    = 3,
         entity     = "data/entities/animals/wizard_den/forsaken_eye.xml"
     })
+
+    table.insert(g_small_enemies_sky,
+    {
+        prob           = 0.05,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/wraith_returner_mocreep.xml"
+    })
     
     table.insert(g_small_enemies,
     {

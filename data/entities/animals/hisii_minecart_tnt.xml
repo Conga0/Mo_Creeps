@@ -87,15 +87,16 @@
 			max_count="30"
 			distance="160000" >
 		</CameraBoundComponent>
-		
+	
 		<HitboxComponent 
-            _enabled="1" 
-			aabb_min_x="-7" 
-            aabb_max_x="6" 
-			aabb_min_y="8"
-            aabb_max_y="16" 
-            >
-        </HitboxComponent>
+			_enabled="1" 
+			aabb_min_x="-5" 
+			aabb_max_x="2" 
+			aabb_min_y="-7"
+			aabb_max_y="8"
+			damage_multiplier="3.0"
+			>
+		</HitboxComponent>
 	</Base>
 
 	<LightComponent 
@@ -118,14 +119,19 @@
 		file="data/audio/Desktop/animals.bank"
 		event_root="animals/shotgunner" >
 	</AudioComponent>
-	
+
+	<AudioComponent
+		file="data/audio/Desktop/animals.bank"
+		event_root="animals"
+		set_latest_event_position="1" >
+	</AudioComponent>
+		
 	<HitboxComponent 
 		_enabled="1" 
-		aabb_min_x="-5" 
-		aabb_max_x="2" 
-		aabb_min_y="-7"
-		aabb_max_y="8"
-		damage_multiplier="3.0"
+		aabb_min_x="-7" 
+		aabb_max_x="6" 
+		aabb_min_y="8"
+		aabb_max_y="16" 
 		>
 	</HitboxComponent>
 

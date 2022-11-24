@@ -33,7 +33,7 @@
     
     table.insert(g_small_enemies,
     {
-        prob           = 0.09,
+        prob           = 0.1,
         min_count    = 6,
         max_count    = 9,    
         entity     = "data/entities/animals/lukki_swarmling.xml"

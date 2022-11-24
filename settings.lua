@@ -95,8 +95,8 @@ mod_settings =
   },
   {
     id = "particle_reduction",
-    ui_name = mod_compat_mode_conjurer_name,
-    ui_description = mod_compat_mode_conjurer_desc,
+    ui_name = particle_reduction_name,
+    ui_description = particle_reduction_desc,
     value_default = false,
     scope = MOD_SETTING_SCOPE_NEW_GAME,
   },

@@ -16,7 +16,7 @@ if ( s ~= nil ) then
     end
 end
 
-if valid = true then
+if valid == true then
     EntitySetDamageFromMaterial( target, "radioactive_gas", 0.001)
     EntitySetDamageFromMaterial( target, "radioactive_gas_static", 0.001)
     EntitySetDamageFromMaterial( target, "rock_static_radioactive", 0.001)

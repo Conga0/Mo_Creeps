@@ -13,7 +13,7 @@ Remember the checklist!!
 
 1.1.0 Changelog:
 Added 3 new environmental hazards
-Added 7 new creeps
+Added 8 new creeps
 Added new biome variation to the world, explore the same biomes in wildly different ways!
 Birthday event now occurs during July, this is when the mod first started being worked on.
 Pandora's Chest now has more permanent effects
@@ -52,6 +52,8 @@ Fixed Decaying Meat protecting you from fire
 Fixed Decaying Meat not properly wearing off after the status effect ends
 Fixed "Tiny" gaining unholy amounts of health from the boss health multiplier setting
 Fixed Mecha Kolmi gaining unholy amounts of health from the boss health multiplier setting
+Fixed some sources of Vulnerability not checking if a creature is Vulnerability immune or not
+Fixed Worse Enemies bosses not being given Vulnerability Immunity & Health Multiplier boosts
 FIXED MAGIC DEVOURERS HAVING 90% DAMAGE REDUCTION FROM ALL SOURCES
 Very slightly reduced blood produced by Angeling & Devilings
 Red Sand now absorbs blood to grow
@@ -103,12 +105,21 @@ Fixed Bubbles not spawning proper amounts of liquid in Nightmare/purgatory
 Reduced Twitch Event Spells to Worms duration to 20 seconds
 Added Mudmen Twitch Event
 Various Modded & Vanilla bosses are now immune to Vulnerability, this is a direct nerf to Holy Orb Barrage but a much needed one, especially when it broke some bosses and made them immortal
-
-Fixed some sources of Vulnerability not checking if a creature is Vulnerability immune or not
-Fixed Worse Enemies bosses not being given Vulnerability Immunity & Health Multiplier boosts
-Smoking Fungus now have more variable smoke clouds
 Slightly decreased speed of Esoteric Fairies, they should now be easier to outrun if you're caught in a situation where you can't kill them but they've already spotted you
 Improved visuals of Magical Fire Debuff
 Added option to reduce particles spawned by some effects to help with performance
-Added three pixelscenes, one in the crypt & two in the vault
+
+Fixed Reflective Weirdo having the wrong name ingame
+Fixed rare Cool Minecart Hisii looking weird if Worse Enemies was enabled
+Fixed Minecart Hisii not having status effect icons show up correctly
+Fixed Particle Reduction setting not showing up in Mod Settings correctly
+Fixed Delusional Shotgunner shooting the wrong projectile if playing with worse enemies
+Fixed Toxic Immunity not properly removing toxic material immunity
+Giant Toxic Worms are no longer health buffed in the tower, I enjoyed the feeling of having giant super buffed worms chasing after you in the tower, it made my heart pump with excitement; but at the same time, at the risk of sounding egotistical, I know not everyone may have the same level of experience in Noita that I do to create god wands from junk and a trigger. I think this will ultimately be for the best balance wise for less experienced players. Worry not though diehards, this update should introduce a new boss to test your mettle.
+Abandoned Orchestra's Meteor attack is now more consistent, it will always fire two meteors but they'll be 90 degrees of you, homing towards you simultaneously
+Added Skoude Twitch Event by request
+Added Hungry Orb to the Fungal Caverns spawn pool
+Removed something ominous from the Conjurer menu
+Lowered chance to encounter secret potions in Pandora's Chest
+New Creep: Ailment Drone
 

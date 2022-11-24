@@ -57,6 +57,7 @@
                 "devourer_ghost",
                 "devourer_magic",
                 "drone_mini",
+                "drone_status_ailment",
                 "enchanted_duck",
                 "fairy_cheap",
                 "fairy_big",
@@ -340,6 +341,47 @@
 		end,
 	})
 
+    table.insert(streaming_events,
+	{
+		id = "MOCREEP_SUMMON_SKOUDE",
+		ui_name = "Summon Skoude",
+		ui_description = "Skoude will arrive shortly.",
+		ui_icon = "data/ui_gfx/streaming_event_icons/health_plus.png",
+		ui_author = "Conga Lyne - Mo Creeps",
+		weight = 0.4,
+		kind = STREAMING_EVENT_AWFUL,
+		action = function(event)
+			local players = get_players()
+			
+			for i,entity_id in ipairs( players ) do
+                local x, y = EntityGetTransform( entity_id )
+                EntityLoad( "mods/mo_creeps/files/scripts/streaming_integration/entities/necromancer_super.xml", x, y - 16 )
+			end
+		end,
+	})
+
+
+    table.insert(streaming_events,
+	{
+		id = "MOCREEP_HUNGRY_ORB",
+		ui_name = "Hungry Orb",
+		ui_description = "???",
+		ui_icon = "data/ui_gfx/streaming_event_icons/health_plus.png",
+		ui_author = "Conga Lyne - Mo Creeps",
+		weight = 0.05,
+		kind = STREAMING_EVENT_NEUTRAL,
+		action = function(event)
+			local players = get_players()
+			
+			for i,entity_id in ipairs( players ) do
+                local x, y = EntityGetTransform( entity_id )
+
+                EntityLoad( "mods/mo_creeps/files/entities/items/pickups/orb_mattereater.xml", x, y - 32 )
+                GamePlaySound( "data/audio/Desktop/projectiles.snd", "player_projectiles/crumbling_earth/create", x, y)
+			end
+		end,
+	})
+
 
 if ModIsEnabled("twitch_extended") then
     enemies_list = {
@@ -353,6 +395,7 @@ if ModIsEnabled("twitch_extended") then
         "data/entities/animals/devourer_ghost.xml",
         "data/entities/animals/devourer_magic.xml",
         "data/entities/animals/drone_mini.xml",
+        "data/entities/animals/drone_status_ailment.xml",
         "data/entities/animals/enchanted_duck.xml",
         "data/entities/animals/fairy_cheap.xml",
         "data/entities/animals/fairy_big.xml",

@@ -1,4 +1,4 @@
-<Entity name="Suur Stendari" tags="firemage,touchmagic_immunity,ui_use_raw_name" >
+<Entity name="Heijastava Outo" tags="firemage,touchmagic_immunity,ui_use_raw_name" >
   <Base file="data/entities/animals/wraith_returner_mocreep.xml" include_children="1" >
     <DamageModelComponent 
       hp="67"

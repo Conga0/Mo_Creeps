@@ -1,4 +1,4 @@
-<Entity name="$animal_wraith_glowing">
+<Entity name="Heijastava Outo">
   
 	<Base file="data/entities/base_enemy_flying.xml" >
 		<ItemChestComponent level="1" > </ItemChestComponent>

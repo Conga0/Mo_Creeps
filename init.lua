@@ -271,7 +271,6 @@ item_mocreep_fungus_stone_name,"Sienenkivi",,,,,,,,,,,,,
 item_mocreep_fungus_stone_desc,"You feel the world transforming in the palm of your hand.",,,,,,,,,,,,,
 status_mocreep_haste_name,"Haste",,,,,,,,,,,,,
 status_mocreep_haste_desc,"You feel Faster",,,,,,,,,,,,,
-item_mocreeps_chest_g,"G Chest",,,,,,,,,,,,,
 material_mocreep_meat_mana,"Enchanting Meat",,,,,,,,,,,,,
 spell_mocreep_targetter_name,"Targetter",,,,,,,,,,,,,
 spell_mocreep_targetter_desc,"Fire a projectile which causes irresistable hatred towards anything it hits.",,,,,,,,,,,,,
@@ -288,6 +287,7 @@ material_mocreep_meat_fire_lukki,Infernal Meat,,,,,,,,,,,,,
 status_mocreep_protection_lava_name,Lava Immunity,,,,,,,,,,,,,
 status_mocreep_protection_lava_desc,"You take no direct damage from lava or fire.",,,,,,,,,,,,,
 creep_mocreep_boss_fire_lukki_name,"Lämmön Esteetikko",,,,,,,,,,,,,
+secretmessage_mocreep_herobrine_01,"I see you.",,,,,,,,,,,,,
 ]])
 
 
@@ -725,6 +725,12 @@ if ModIsEnabled("worse_enemies") then
   local xml = nxml.parse(content)
   xml:first_of("Base"):first_of("SpriteComponent").attr.image_file = "data/enemies_gfx/worse/bat.xml"
   ModTextFileSetContent("data/entities/animals/psychotic/bat.xml", tostring(xml))
+
+  --Shotgunner Hisii Fix
+  local content = ModTextFileGetContent("data/entities/animals/psychotic/shotgunner.xml")
+  local xml = nxml.parse(content)
+  xml:first_of("Base"):first_of("AnimalAIComponent").attr.attack_ranged_entity_file = "mods/mo_creeps/files/entities/projectiles/psychotic/meteor_green.xml"
+  ModTextFileSetContent("data/entities/animals/psychotic/shotgunner.xml", tostring(xml))
 
 end
 

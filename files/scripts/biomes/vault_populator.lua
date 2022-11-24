@@ -33,6 +33,14 @@
 
     table.insert(g_big_enemies,
     {
+        prob           = 0.1,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/vault/drone_status_ailment.xml"
+    })
+
+    table.insert(g_big_enemies,
+    {
         prob           = 0.08,
         min_count    = 1,
         max_count    = 1,    
@@ -164,6 +172,14 @@
         entity     = "data/entities/animals/wraith_weirdo_shield.xml"
     })
 
+    table.insert(g_small_enemies,
+    {
+        prob           = 0.08,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/vault/drone_status_ailment.xml"
+    })
+
 
 
     --Pandora Spawns
@@ -228,6 +244,10 @@
 		end,
     })
 
+
+
+    --Ceiling Props
+
     table.insert(g_hanging_props,
     {
 		prob   		= 0.5,
@@ -256,6 +276,15 @@
         min_count    = 5,
         max_count    = 7,    
         entity     = "data/entities/animals/power_plant/drone_mini.xml",
+        ngpluslevel = 1
+    })
+
+    table.insert(g_small_enemies,
+    {
+        prob           = 0.1,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/vault/drone_status_ailment.xml",
         ngpluslevel = 1
     })
 

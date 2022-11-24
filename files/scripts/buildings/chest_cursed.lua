@@ -96,12 +96,18 @@ local pool = {
     "basebot_soldier",
 }
 
+-- A weighted table would be great here but when I tried to find a tutorial I found some retard making his tutorial using black characters on a black background.. fuck you tutorial maker I can't see any of that.
+-- If you know how or know a decent tutorial, please let me know.
 local prizePool = {
-    "data/entities/items/pickup/potion_secret.xml",
+    "data/entities/items/pickup/potion_secret.xml", --1
     "data/entities/items/pickup/potion_random_material.xml",
     "data/entities/items/pickup/potion_random_material.xml",
     "data/entities/items/pickup/potion_random_material.xml",
     "data/entities/items/pickup/potion_random_material.xml",
+    "data/entities/items/pickup/potion_random_material.xml",
+    "data/entities/items/pickup/potion_random_material.xml",
+    "data/entities/items/pickup/potion_random_material.xml",
+    "data/entities/items/pickup/potion_random_material.xml", -- 8
     "data/entities/items/pickup/potion.xml",
     "data/entities/items/pickup/potion.xml",
     "data/entities/items/pickup/potion.xml",
@@ -110,7 +116,16 @@ local prizePool = {
     "data/entities/items/pickup/potion.xml",
     "data/entities/items/pickup/potion.xml",
     "data/entities/items/pickup/potion.xml",
+    "data/entities/items/pickup/potion.xml",
+    "data/entities/items/pickup/potion.xml",
+    "data/entities/items/pickup/potion.xml",
+    "data/entities/items/pickup/potion.xml",
+    "data/entities/items/pickup/potion.xml",
+    "data/entities/items/pickup/potion.xml",
+    "data/entities/items/pickup/potion.xml",
+    "data/entities/items/pickup/potion.xml", -- 15
     "data/entities/projectiles/rain_gold.xml",
+    "data/entities/projectiles/rain_gold.xml", -- 2
 }
 
 function item_pickup( entity_item, entity_who_picked, name )

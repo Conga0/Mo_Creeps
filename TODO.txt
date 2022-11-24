@@ -8,8 +8,6 @@ Tag Optimise mass status spells to check for a childname rather than tag name
 
 Optional english names for monsters
 
-Yearly birthday sign?
-
 Translation key for twitch events
 
 Center poring's position on the middle of the sprite so it behaves better to physics damage
@@ -36,8 +34,6 @@ Setting to disable custom pixelscenes for compatibility with mods like noitavani
 Disable custom pixelscenes if playing on Noitavania (32 bit limit will be reached otherwise)
 
 Add hint pointing towards Essence of Fungus
-
-Twitch event, summon Skoude
 
 
 

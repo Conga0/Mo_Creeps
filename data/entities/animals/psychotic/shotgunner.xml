@@ -4,7 +4,7 @@
 		<ItemChestComponent level="1" >
 		</ItemChestComponent>
 		
-		<AnimalAIComponent 
+		<AnimalAIComponent
 			_enabled="1" 
 			preferred_job="JobDefault"
 			escape_if_damaged_probability="40"

@@ -131,6 +131,11 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/animal_icons/drone_mini.png",
 	  },
 	  {
+		name="Ailment Drone",
+		path="data/entities/animals/drone_status_ailment.xml",
+		image="data/ui_gfx/animal_icons/drone_status_ailment.png",
+	  },
+	  {
 		name="Esoteric Being",
 		path="data/entities/buildings/esoteric_being_asleep.xml",
 		image="data/ui_gfx/animal_icons/esoteric_being.png",
@@ -439,11 +444,6 @@ table.insert(ALL_ENTITIES, {
 		name="Pandora's Chest",
 		path="mods/mo_creeps/files/entities/items/pickups/chest_random_cursed.xml",
 		image="data/ui_gfx/building_icons/chest_random_cursed.png",
-	  },
-	  {
-		name="???",
-		path="data/entities/buildings/herobrine.xml",
-		image="data/ui_gfx/building_icons/herobrine.png",
 	  },
 	  {
 		name="Sienenkivi",
