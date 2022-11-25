@@ -35,6 +35,15 @@ Disable custom pixelscenes if playing on Noitavania (32 bit limit will be reache
 
 Add hint pointing towards Essence of Fungus
 
+Statues in Statue room disappear if you mod restart before visiting them. Serialise then unserialise?
+Only spawn statues when you get near to guarantee it's loaded first? Unsure
+
+Improve Creature Shifting, currently only works if you haven't met/serialised the creature before shifting it away.
+If I'm building a table anyways, may just be better to delete/respawn if the shift victim gets close? But how to detect if someone is a victim or not? hmm...
+
+Improve Opal Crystal's sprite
+
+
 
 
 

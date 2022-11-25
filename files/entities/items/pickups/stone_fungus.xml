@@ -32,18 +32,6 @@
   <VelocityComponent
     _tags="enabled_in_world"
   ></VelocityComponent>
-  
-  <GameEffectComponent 
-    _tags="enabled_in_hand"
-    effect="PROTECTION_FIRE"
-    frames="-1"
-  ></GameEffectComponent>
-
-  <GameEffectComponent 
-    _tags="enabled_in_hand"
-    effect="FRIEND_FIREMAGE"
-    frames="-1"
-  ></GameEffectComponent>
 
   <!-- steaming -->
 

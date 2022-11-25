@@ -33,7 +33,7 @@ if isFrozen then
 			if comp ~= 0 then
 				ComponentSetValue2( comp, "frames", 1)
 			end
-			GamePrint(tostring(comp))
+			--GamePrint(tostring(comp))
 		end
 	end
 end

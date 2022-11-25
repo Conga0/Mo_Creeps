@@ -119,10 +119,10 @@
 		is_emitting="1" >
 	</ParticleEmitterComponent>
 
-  <AudioComponent
-      file="data/audio/Desktop/projectiles.bank"
-      event_root="projectiles/slimeblob">
-  </AudioComponent>
+	<AudioComponent
+		file="data/audio/Desktop/projectiles.bank"
+		event_root="projectiles/slimeblob">
+	</AudioComponent>
   
 	<VariableStorageComponent
 		name="projectile_file"

@@ -1,6 +1,8 @@
 --spell is non-functional, intention is after every bounce, the projectile will redirect itself towards an enemy but I am failing to create this behaviour.
 --I think it would be interesting, but is not proving worth the development time demanded so far.
 --I may return to this at some point if I have a confident theory on how to get it working.
+--
+--Brooo "Trickshot" would like, totally be a killer name for this
 --[[table.insert(actions,
 {
     id          = "MOCREEPS_BOUNCE_HOMING",
@@ -566,7 +568,7 @@ table.insert(actions,
     end,
 })
 
---oh my god FUCK YOU
+--I want this to have x2 mana cost for the cast if you use it but need to wait for copi lib to make it happen
 table.insert(actions,
 {
     id                = "MOCREEPS_SPLIT_SPELL",

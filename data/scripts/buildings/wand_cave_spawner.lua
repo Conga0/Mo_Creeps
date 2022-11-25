@@ -16,6 +16,7 @@ function collision_trigger()
 	end
 
 	EntityLoad( "data/entities/items/pickup/powder_stash.xml", pos_x + 16, pos_y )
+	EntityLoad( "mods/mo_creeps/files/entities/items/pickups/orb_mattereater.xml", pos_x + 24, pos_y - 4 )
 	EntityLoad( "data/entities/particles/poof_green.xml", pos_x + 16, pos_y )
 
 	EntityLoad( "data/entities/animals/sandcave/poring.xml", pos_x + 8, pos_y )

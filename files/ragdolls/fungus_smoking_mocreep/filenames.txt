@@ -1,0 +1,5 @@
+mods/mo_creeps/files/ragdolls/fungus_smoking_mocreep/head.png
+mods/mo_creeps/files/ragdolls/fungus_smoking_mocreep/body.png
+mods/mo_creeps/files/ragdolls/fungus_smoking_mocreep/foot_01.png
+mods/mo_creeps/files/ragdolls/fungus_smoking_mocreep/foot_02.png
+mods/mo_creeps/files/ragdolls/fungus_smoking_mocreep/foot_03.png

@@ -12,8 +12,9 @@ Remember the checklist!!
 
 
 1.1.0 Changelog:
-Added 3 new environmental hazards
-Added 8 new creeps
+Added 4 new environmental hazards
+Added 9 new creeps
+Added 6 new twitch events
 Added new biome variation to the world, explore the same biomes in wildly different ways!
 Birthday event now occurs during July, this is when the mod first started being worked on.
 Pandora's Chest now has more permanent effects
@@ -54,6 +55,9 @@ Fixed "Tiny" gaining unholy amounts of health from the boss health multiplier se
 Fixed Mecha Kolmi gaining unholy amounts of health from the boss health multiplier setting
 Fixed some sources of Vulnerability not checking if a creature is Vulnerability immune or not
 Fixed Worse Enemies bosses not being given Vulnerability Immunity & Health Multiplier boosts
+Fixed Minecart Hisii not having status effect icons show up correctly
+Fixed Delusional Shotgunner shooting the wrong projectile if playing with worse enemies
+Fixed Toxic Immunity not properly removing toxic material immunity
 FIXED MAGIC DEVOURERS HAVING 90% DAMAGE REDUCTION FROM ALL SOURCES
 Very slightly reduced blood produced by Angeling & Devilings
 Red Sand now absorbs blood to grow
@@ -108,18 +112,28 @@ Various Modded & Vanilla bosses are now immune to Vulnerability, this is a direc
 Slightly decreased speed of Esoteric Fairies, they should now be easier to outrun if you're caught in a situation where you can't kill them but they've already spotted you
 Improved visuals of Magical Fire Debuff
 Added option to reduce particles spawned by some effects to help with performance
-
-Fixed Reflective Weirdo having the wrong name ingame
-Fixed rare Cool Minecart Hisii looking weird if Worse Enemies was enabled
-Fixed Minecart Hisii not having status effect icons show up correctly
-Fixed Particle Reduction setting not showing up in Mod Settings correctly
-Fixed Delusional Shotgunner shooting the wrong projectile if playing with worse enemies
-Fixed Toxic Immunity not properly removing toxic material immunity
 Giant Toxic Worms are no longer health buffed in the tower, I enjoyed the feeling of having giant super buffed worms chasing after you in the tower, it made my heart pump with excitement; but at the same time, at the risk of sounding egotistical, I know not everyone may have the same level of experience in Noita that I do to create god wands from junk and a trigger. I think this will ultimately be for the best balance wise for less experienced players. Worry not though diehards, this update should introduce a new boss to test your mettle.
 Abandoned Orchestra's Meteor attack is now more consistent, it will always fire two meteors but they'll be 90 degrees of you, homing towards you simultaneously
 Added Skoude Twitch Event by request
-Added Hungry Orb to the Fungal Caverns spawn pool
 Removed something ominous from the Conjurer menu
 Lowered chance to encounter secret potions in Pandora's Chest
-New Creep: Ailment Drone
+
+
+Fixed Smoking Fungi missing ragdoll
+Fixed the dragon cave tablet not spawning properly in purgatory
+Fixed enemies spawning in the Trophy room inside purgatory
+Fixed Chaotic Polymorph Crystal trying to polymorph poly-immune enemies
+Fixed Fungus Stone providing the effects of brimstone
+Fixed Lime Crystal not appearing in the Conjurer Menu
+Fixed Weirdo having the wrong name
+Fixed all 1.1.0 creatures not having a UV map (stain map)
+Reduced frequency of Polymorph Crystal checks, they should now take 33% longer between each check to see if you're inside their radius. This should hopefully help with performance somewhat.
+Smoking Fungi's Smoke now burns.. slowly.
+Improved Hungry Orb's visual in-inventory
+Magic Devourer no longer sucks in your mana while frozen
+Hungry Orb now always spawns inside the Hidden Wand Cave
+Added translation keys for Twitch Integration
+Added slightly modified spawn list for alternate biomes Hisii Village
+Added slightly modified spawn list for alternate biomes Worm Tunnels
+Added new Weirdo: Opal Crystal
 

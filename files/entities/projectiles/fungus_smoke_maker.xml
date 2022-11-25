@@ -47,7 +47,7 @@
     </VelocityComponent>
 
 	<ParticleEmitterComponent 
-		emitted_material_name="smoke_static"
+		emitted_material_name="mocreep_smoke_static_slowburn"
 		offset.x="0"
 		offset.y="0"
 		x_pos_offset_min="0"

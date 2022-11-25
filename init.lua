@@ -141,7 +141,7 @@ book_mocreeps_motd_description_021,Message of the Day \nAngelings and Devilings 
 book_mocreeps_motd_description_022,Message of the Day \nWith truly divine purpose.,Сообщение дня \nС поистине божественной целью.,,,,,,,,,,,,
 book_mocreeps_motd_description_023,Message of the Day \nPerhaps not every creep is a hostile. \nPerhaps not every crystal is a threat.,"Сообщение дня \nПожалуй, не каждый гад - враг. \Возможно, не каждый кристалл является угрозой.",,,,,,,,,,,,
 book_mocreeps_motd_description_024,Message of the Day \nAlso try Congas Cats! ...Just not with More Creeps enabled. \nMore Creeps cats override Congas Cats cats... Update your settings!!!,Сообщение дня \nТакже попробуйте мод Congas Cats! ...только не с включенным модом More Creeps. \nКошки из мода More Creeps будут конфликтовать с кошками мода Congas Cats... Обновите настройки!!!,,,,,,,,,,,,
-book_mocreeps_motd_description_025,"Message of the Day \nFun Fact, Despite this mod releasing on 24/10/2022, \nthe birthday event occurs in November to avoid clashing with Halloween.","Сообщение дня \nПрикольный факт, несмотря на то, что этот мод вышел 24.10.2022, \n событие дня рождения происходит в ноябре, чтобы избежать столкновения с Хэллоуином.",,,,,,,,,,,,
+book_mocreeps_motd_description_025,"Message of the Day \nFun Fact, Despite this mod releasing on 24/10/2022, \nthe birthday event occurs in July to avoid clashing with Halloween.","Сообщение дня \nПрикольный факт, несмотря на то, что этот мод вышел 24.10.2022, \n событие дня рождения происходит в ноябре, чтобы избежать столкновения с Хэллоуином.",,,,,,,,,,,,
 book_mocreeps_motd_description_026,"Message of the Day \nGoodluck and have fun!. \nIf you're feeling frustrated or stressed, remember to take a break.","Сообщение дня \nУдачи и веселья! \nЕсли вы чувствуете разочарование или стресс, не забудьте сделать перерыв.",,,,,,,,,,,,
 book_mocreeps_motd_description_027,Message of the Day \nI believe in you.,Сообщение дня \nЯ верю в вас.,,,,,,,,,,,,
 book_mocreeps_motd_description_028,Message of the Day \nThe pyramid isn't quite so safe anymore. \nBut may hold divine knowledge.,Сообщение дня \nПирамида уже не так безопасна. \nНо может хранить божественные знания.,,,,,,,,,,,,
@@ -272,6 +272,9 @@ item_mocreep_fungus_stone_desc,"You feel the world transforming in the palm of y
 status_mocreep_haste_name,"Haste",,,,,,,,,,,,,
 status_mocreep_haste_desc,"You feel Faster",,,,,,,,,,,,,
 material_mocreep_meat_mana,"Enchanting Meat",,,,,,,,,,,,,
+material_mocreep_smoke_static_slowburn_name,"Dense Smoke",,,,,,,,,,,,,
+material_mocreep_meat_fire_lukki,"Infernal Meat",,,,,,,,,,,,,
+material_mocreeps_mudman_mud,"Magical Mud",,,,,,,,,,,,,
 spell_mocreep_targetter_name,"Targetter",,,,,,,,,,,,,
 spell_mocreep_targetter_desc,"Fire a projectile which causes irresistable hatred towards anything it hits.",,,,,,,,,,,,,
 spell_mocreep_firecharge_name,"Fire Charge",,,,,,,,,,,,,
@@ -281,13 +284,33 @@ log_mocreep_moon_altar_fungus,"AN IRREVERSIBLE CORRUPTION HAS OCCURRED",,,,,,,,,
 logdesc_mocreep_moon_altar_fungus,"WHAT HAVE YOU DONE!?",,,,,,,,,,,,,
 item_mocreep_orb_mattereater_name,"Hungry Orb",,,,,,,,,,,,,
 item_mocreep_orb_mattereater_desc,"You feel like kicking it...",,,,,,,,,,,,,
-mat_mocreeps_mudman_mud,"Magical Mud",,,,,,,,,,,,,
 log_mocreep_toxicnest_secret_name,"I TOLD YOU NOT TO VISIT THE WORM NEST AT 3AM",,,,,,,,,,,,,
-material_mocreep_meat_fire_lukki,Infernal Meat,,,,,,,,,,,,,
 status_mocreep_protection_lava_name,Lava Immunity,,,,,,,,,,,,,
 status_mocreep_protection_lava_desc,"You take no direct damage from lava or fire.",,,,,,,,,,,,,
 creep_mocreep_boss_fire_lukki_name,"Lämmön Esteetikko",,,,,,,,,,,,,
 secretmessage_mocreep_herobrine_01,"I see you.",,,,,,,,,,,,,
+integration_mocreep_RANDOM_CATS_name,"Kitty Cats!!",,,,,,,,,,,,,
+integration_mocreep_RANDOM_CATS_desc,"Cat! I'm a kitty cat! And I dance dance dance! And I dance dance dance!!",,,,,,,,,,,,,
+integration_mocreep_RANDOM_CREEPS_name,"Random Creeps & Weirdos",,,,,,,,,,,,,
+integration_mocreep_RANDOM_CREEPS_desc,"Random Creeps & Weirdos will appear in 5 seconds.",,,,,,,,,,,,,
+integration_mocreep_WAND_WONDERS_name,"Spawn Wand of Wonders",,,,,,,,,,,,,
+integration_mocreep_WAND_WONDERS_desc,"A wonderful wand capable of anything. Cast It!",,,,,,,,,,,,,
+integration_mocreep_PANDORA_CHEST_name,"Pandora's Chest",,,,,,,,,,,,,
+integration_mocreep_PANDORA_CHEST_desc,"Do you dare open?",,,,,,,,,,,,,
+integration_mocreep_RANDOM_CREEPS_BOSS_name,"Random Weirdo Boss",,,,,,,,,,,,,
+integration_mocreep_RANDOM_CREEPS_BOSS_desc,"A random More Creeps boss will appear after 10 seconds.",,,,,,,,,,,,,
+integration_mocreep_STONE_FUNGUS_name,"Sienenkivi",,,,,,,,,,,,,
+integration_mocreep_STONE_FUNGUS_desc,"Fungus Stone",,,,,,,,,,,,,
+integration_mocreep_CREATURE_SHIFT_name,"Creature Shift",,,,,,,,,,,,,
+integration_mocreep_CREATURE_SHIFT_desc,"Causes a creature to randomly be shifted with another.",,,,,,,,,,,,,
+integration_mocreep_TRANSFORM_WORMS_name,"Spells to Worms",,,,,,,,,,,,,
+integration_mocreep_TRANSFORM_WORMS_desc,"All projectiles currently in the air turn into worms!",,,,,,,,,,,,,
+integration_mocreep_MUD_MEN_name,"Summon Mud Men",,,,,,,,,,,,,
+integration_mocreep_MUD_MEN_desc,"MUD MEN are here to save the day!!",,,,,,,,,,,,,
+integration_mocreep_SUMMON_SKOUDE_name,"Summon Skoude",,,,,,,,,,,,,
+integration_mocreep_SUMMON_SKOUDE_desc,"Skoude will arrive shortly.",,,,,,,,,,,,,
+integration_mocreep_HUNGRY_ORB_name,"Hungry Orb",,,,,,,,,,,,,
+integration_mocreep_HUNGRY_ORB_desc,"???",,,,,,,,,,,,,
 ]])
 
 
@@ -532,13 +555,13 @@ if ModIsEnabled("biome-plus") then
     ModLuaFileAppend( "data/scripts/biomes/mod/irradiated_mines.lua", "mods/mo_creeps/files/scripts/biomes/coalmine_alt_populator.lua" )
     
     ModLuaFileAppend( "data/scripts/biomes/mod/blast_pit.lua", "mods/mo_creeps/files/scripts/biomes/excavationsite_populator.lua" )
-    ModLuaFileAppend( "data/scripts/biomes/mod/snowvillage.lua", "mods/mo_creeps/files/scripts/biomes/snowcastle_populator.lua" )
+    ModLuaFileAppend( "data/scripts/biomes/mod/snowvillage.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/alt_biomes/hisiivillage_populator.lua" )
     ModLuaFileAppend( "data/scripts/biomes/mod/frozen_passages.lua", "mods/mo_creeps/files/scripts/biomes/snowcave_populator.lua" )
     ModLuaFileAppend( "data/scripts/biomes/mod/catacombs.lua", "mods/mo_creeps/files/scripts/biomes/wandcave_populator.lua" )
     ModLuaFileAppend( "data/scripts/biomes/mod/tomb.lua", "mods/mo_creeps/files/scripts/biomes/sandcave_populator.lua" )
     ModLuaFileAppend( "data/scripts/biomes/mod/robofactory.lua", "mods/mo_creeps/files/scripts/biomes/vault_populator.lua" )
     ModLuaFileAppend( "data/scripts/biomes/mod/swamp.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/alt_biomes/swamp_populator.lua" ) --Jungle, could probably include bonus fungus here
-    ModLuaFileAppend( "data/scripts/biomes/mod/rainforest_wormy.lua", "mods/mo_creeps/files/scripts/biomes/rainforest_dark_populator.lua" )
+    ModLuaFileAppend( "data/scripts/biomes/mod/rainforest_wormy.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/alt_biomes/wormtunnels_populator.lua" )
     ModLuaFileAppend( "data/scripts/biomes/mod/conduit.lua", "mods/mo_creeps/files/scripts/biomes/winter_populator.lua" )
     ModLuaFileAppend( "data/scripts/biomes/mod/sulfur_cave.lua", "mods/mo_creeps/files/scripts/biomes/mod_compatibility/alt_biomes/hiddengrove_populator.lua" ) --Hidden Grove, Overgrowth populator
 
@@ -726,7 +749,7 @@ if ModIsEnabled("worse_enemies") then
   xml:first_of("Base"):first_of("SpriteComponent").attr.image_file = "data/enemies_gfx/worse/bat.xml"
   ModTextFileSetContent("data/entities/animals/psychotic/bat.xml", tostring(xml))
 
-  --Shotgunner Hisii Fix
+  --Illusion Shotgunner Hisii Fix
   local content = ModTextFileGetContent("data/entities/animals/psychotic/shotgunner.xml")
   local xml = nxml.parse(content)
   xml:first_of("Base"):first_of("AnimalAIComponent").attr.attack_ranged_entity_file = "mods/mo_creeps/files/entities/projectiles/psychotic/meteor_green.xml"
@@ -734,6 +757,10 @@ if ModIsEnabled("worse_enemies") then
 
 end
 
+-- Noita Toether compatibility, allows items like the new tablets, Fungus Stone & Hungry Orb to be added to the item bank
+if ModIsEnabled("noita-together") then
+  ModLuaFileAppend( "mods/noita-together/files/scripts/item_list.lua", "mods/mo_creeps/files/scripts/mod_compatibility/nt_itemlist_populator.lua" )
+end
 
 
 
@@ -763,7 +790,7 @@ ModLuaFileAppend( "data/scripts/streaming_integration/event_list.lua", "mods/mo_
 --Musicstone tag addition
 dofile_once( "mods/mo_creeps/files/scripts/magic/music_magic_tag_nxml.lua" )
 
---MOTD
+--MOTD & Welcome Hint
 if ModIsEnabled("raksa") == false then
   local flag_status = HasFlagPersistent( "mocreeps_card_unlocked_welcome_hint" )
   if motdSetting == true then
@@ -778,7 +805,7 @@ if ModIsEnabled("raksa") == false then
     if ModIsEnabled("purgatory") then
       dofile_once( "mods/mo_creeps/files/scripts/misc/welcome_hint_purgatory.lua" )
     elseif ModIsEnabled("noitavania") then
-      dofile_once( "mods/mo_creeps/files/scripts/misc/motd_list_noitavania.lua" )
+      dofile_once( "mods/mo_creeps/files/scripts/misc/welcome_hint_noitavania.lua" )
     else
       dofile_once( "mods/mo_creeps/files/scripts/misc/welcome_hint.lua" )
     end
@@ -873,7 +900,7 @@ ModTextFileSetContent("data/entities/animals/spitmonster.xml", tostring(xml))
 
 -- Creature shift fix upon reloading world
 function OnPlayerSpawned( player_entity )
-	local x, y = EntityGetTransform(player)
+	local x, y = EntityGetTransform( player_entity ) --This was just "player" by default but I feel like something broke.. I hope not
 	EntityLoad("mods/mo_creeps/files/entities/special/entity_shift_refresh_fixer.xml", x, y)
 end
 
@@ -1152,6 +1179,7 @@ if seasonalSetting == true then
 
   -- Birthday Event
   -- Update to be centered on 21/07/2022, this is when the first enemy was created and development officially began. Should be a fair trade off between not being the official release date but also not clashing with Halloween
+  --Remember Update global_populator & global_populator_small too, wand tinkering crystal spawns are inside.
   if (( month == 7 ) and (( day >= 20 ) and ( day <= 22 ))) or seasonalForced_Birthday then
     ModLuaFileAppend( "data/scripts/biomes/coalmine.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday.lua" ) --Coal Mine, first area, goodluck on your run
     ModLuaFileAppend( "data/scripts/biomes/coalmine_alt.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday.lua" ) --Coalmine but to the west side near damp cave
@@ -1163,7 +1191,37 @@ if seasonalSetting == true then
     ModLuaFileAppend( "data/scripts/biomes/vault.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday_rare.lua" )
   end
 
-  --Update global_populator & global_populator_small too, wand tinkering crystal
+
+  -- April Fools Event
+  if (( month == 4 ) and (( day >= 1 ) and ( day <= 3 ))) or seasonalForced_AprilFools then
+
+    --Replace all hisii hobos with clowns.
+    local content = ModTextFileGetContent("data/entities/animals/secret/hisii_hobo.xml")
+    ModTextFileSetContent("data/entities/animals/hisii_hobo.xml", content)
+
+    --Replace small fairies with lethal versions.
+    local content = ModTextFileGetContent("data/entities/animals/secret/fairy_cheap.xml")
+    ModTextFileSetContent("data/entities/animals/fairy_cheap.xml", content)
+
+    --Replace big fairies with non-lethal versions.
+    local content = ModTextFileGetContent("data/entities/animals/secret/fairy_big.xml")
+    ModTextFileSetContent("data/entities/animals/fairy_big.xml", content)
+
+    --Randomly cause a fungal shift/creature shift at any time, at random.
+    function OnPlayerSpawned( player_entity )
+      local x, y = EntityGetTransform( player_entity )
+      cid = EntityLoad("mods/mo_creeps/files/entities/misc/essence/moon_fungus_curse_slow.xml", x, y)
+      EntityAddChild( player_entity, cid )
+      cid = EntityLoad("mods/mo_creeps/files/entities/misc/essence/moon_creature_curse_slow.xml", x, y)
+      EntityAddChild( player_entity, cid )
+    end
+
+    --Happy april fools <3
+    GamePrint("Happy April Fools <3")
+
+    --Remember to check global spawn files, pandora's chest spawnrate boost is managed there
+
+  end
 
 end
 

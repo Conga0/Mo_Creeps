@@ -217,5 +217,6 @@ function spawn_music_trigger( x, y )
 
     if ModIsEnabled("noitavania") then
         EntityLoad( "data/entities/buildings/statue_room_noitavania_deleter.xml", 4256, 2095 )
+        EntityLoad( "data/entities/buildings/statue_room_noitavania_deleter.xml", 4256, 2255 )
     end
 end

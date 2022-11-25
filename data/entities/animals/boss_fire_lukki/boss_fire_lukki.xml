@@ -366,6 +366,8 @@
 	</LuaComponent>
 	
 	<!-- One-off extra healing phase when the boss falls below 10% hp, the aim is to prevent instant kill wands like omega sawblade spam from 100-0ing the boss before it can do anything -->
+	<!-- Note: Plan is to give the healing phase a "charge" and have the rocks fall off when it happens, maybe up this to proc at 20% hp then... I'll do the charge phase when the spritework is ready though -->
+	<!-- My brain has trouble keeping track of it otherwise. -->
 	<LuaComponent
 		script_damage_received="data/entities/animals/boss_fire_lukki/boss_fire_lukki_healing_phase_logic_lowhp.lua"
 		execute_every_n_frame="-1"

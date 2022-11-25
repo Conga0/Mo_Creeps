@@ -126,11 +126,15 @@ function spawn_music_trigger( x, y )
 
 
 
-    entity = EntityLoad( "data/entities/buildings/statue_room_fairy_populator.xml", 4779, 839 )
+    EntityLoad( "data/entities/buildings/statue_room_fairy_populator.xml", 4779, 839 )
 
-    entity = EntityLoad( "data/entities/buildings/rat_unlock.xml", 4518, 540 )
-    entity = EntityLoad( "data/entities/buildings/rat_create.xml", 4518, 540 )
-    entity = EntityLoad( "mods/mo_creeps/files/entities/misc/remove_ground_tiny.xml", 4518, 540 )
+    EntityLoad( "data/entities/buildings/rat_unlock.xml", 4518, 540 )
+    EntityLoad( "data/entities/buildings/rat_create.xml", 4518, 540 )
+    EntityLoad( "mods/mo_creeps/files/entities/misc/remove_ground_tiny.xml", 4518, 540 )
 
-    entity = EntityLoad( "data/entities/buildings/trophy_room_trolling_spawner.xml", 3735, 560 )
+    EntityLoad( "data/entities/buildings/trophy_room_trolling_spawner.xml", 3735, 560 )
+
+
+    EntityLoad( "data/entities/buildings/statue_room_noitavania_deleter.xml", 4779, 839 )
+    EntityLoad( "data/entities/buildings/statue_room_noitavania_deleter.xml", 4256, 999 )
 end

@@ -111,6 +111,23 @@ if g_props then
         entity     = "mods/mo_creeps/files/entities/items/pickups/chest_random_cursed.xml"
     })
 
+    table.insert(g_props,
+    {
+        prob           = 0.008,
+        min_count    = 1,
+        max_count    = 1,
+        entity     = "mods/mo_creeps/files/entities/items/pickups/chest_random_cursed.xml",
+        spawn_check = function() 
+            local year, month, day = GameGetDateAndTimeLocal()
+            
+            if ( month == 4 ) and (( day >= 1 ) and ( day <= 3 )) then
+                return true
+            else
+                return false 
+            end
+        end,
+    })
+
 end
 
 

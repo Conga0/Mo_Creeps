@@ -82,7 +82,7 @@
 	
 	<LuaComponent
 		script_source_file="mods/mo_creeps/files/scripts/animals/polymorph_crystal_aura.lua"
-		execute_every_n_frame="30"
+		execute_every_n_frame="40"
 		>
 	</LuaComponent>
 

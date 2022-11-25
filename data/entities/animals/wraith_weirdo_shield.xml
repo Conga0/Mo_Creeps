@@ -1,4 +1,4 @@
-<Entity name="Heijastava Outo">
+<Entity name="Outo">
   
 	<Base file="data/entities/base_enemy_flying.xml" >
 		<ItemChestComponent level="1" > </ItemChestComponent>

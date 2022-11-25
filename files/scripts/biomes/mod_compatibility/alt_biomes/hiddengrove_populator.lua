@@ -98,7 +98,7 @@ table.insert(g_small_enemies,
 
 table.insert(g_physics_fungi,
 {
-    prob           = 0.4,
+    prob           = 0.25,
     min_count    = 1,
     max_count    = 1,    
     entity     = "mods/mo_creeps/files/entities/props/shoppingcart.xml"

@@ -185,7 +185,15 @@
   
     table.insert(g_props,
     {
-        prob           = 0.2, --Originally 0.2
+        prob           = 0.2,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/props/crystal_opal.xml"
+    })
+  
+    table.insert(g_props,
+    {
+        prob           = 0.25, --Originally 0.2, increased to compensate for opal crystals being added
         min_count    = 1,
         max_count    = 1,
         entity     = "data/entities/buildings/polymorph_crystal.xml"

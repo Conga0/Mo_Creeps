@@ -485,7 +485,7 @@
   
   <CellData
 	name="mocreeps_mudman_mud"
-	ui_name="$mat_mocreeps_mudman_mud"
+	ui_name="$material_mocreeps_mudman_mud"
   	tags="[sand_other],[corrodible],[burnable],[alchemy]"
 	burnable="1"
 	density="7"
@@ -538,6 +538,56 @@
 			<StatusEffect type="FOOD_POISONING" amount="0.05" />
 		</Ingestion>
 	</StatusEffects>
+  </CellData>
+
+  
+  
+  <CellData
+	name="mocreep_smoke_static_slowburn"
+	ui_name="$material_mocreep_smoke_static_slowburn_name"
+  	tags="[gas],[burnable]"
+	burnable="1"
+	density="1"
+	lifetime="1600"
+	generates_flames="20"
+	cell_type="gas"
+	wang_color="7f848488"
+	generates_smoke="0"
+	liquid_gravity="0.5"
+	liquid_sand="0"
+	liquid_static="1"
+	on_fire="0"
+	fire_hp="500"
+	temperature_of_fire="80"
+	autoignition_temperature="20" 
+	requires_oxygen="0"  >
+    <Graphics 
+		color="7f606063" >
+    </Graphics>
+  </CellData>
+  
+  <CellData
+	name="mocreep_smoke_static_slowburn_gas"
+	ui_name="$material_mocreep_smoke_static_slowburn_name"
+  	tags="[gas],[burnable]"
+	burnable="1"
+	density="1"
+	lifetime="800"
+	generates_flames="20"
+	cell_type="gas"
+	wang_color="7f848489"
+	generates_smoke="0"
+	liquid_gravity="0.5"
+	liquid_sand="0"
+	liquid_static="0"
+	on_fire="0"
+	fire_hp="200"
+	temperature_of_fire="80"
+	autoignition_temperature="20" 
+	requires_oxygen="0"  >
+    <Graphics 
+		color="7f606063" >
+    </Graphics>
   </CellData>
 
 
@@ -598,5 +648,15 @@
 	>
   </Reaction>
   -->
+
+
+
+  <!-- Makes slow burning smoke burn slow -->
+
+  <Reaction probability="100"
+	input_cell1="[fire]" 		input_cell2="mocreep_smoke_static_slowburn"
+	output_cell1="mocreep_smoke_static_slowburn_gas"	output_cell2="mocreep_smoke_static_slowburn_gas"
+	>
+  </Reaction>
 
 </Materials>
