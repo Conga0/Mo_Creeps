@@ -158,8 +158,9 @@ if HasFlagPersistent( "mocreep_misc_pandora_chest_rain" ) then
 end
 
 --Todo: add translation keys for these, these aren't finished yet though, not even attainable as of writing, so I'll decide if I want to keep it or not later
+--Likely unlock if you have 8 statues, for now it's kept at an unreachable 12 until it's fully functional.
 
-if statue_count >= 8 then
+if statue_count >= 12 then
   table.insert(mod_settings,
   {
     category_id = "seasonal_events_forced",
