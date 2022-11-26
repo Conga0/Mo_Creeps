@@ -15,10 +15,23 @@ function damage_received( damage, desc, entity_who_caused, is_fatal )
 		max_health = tonumber(ComponentGetValue( comp, "max_hp"))
 	end)
 
+	local storages = EntityGetComponent( entity_id, "VariableStorageComponent" )
+
+	--Gets the current Boss phase
+	if ( storages ~= nil ) then
+		for i,comp in ipairs( storages ) do
+			local name = ComponentGetValue2( comp, "name" )
+			if ( name == "phase_brain" ) then
+				phase = ComponentGetValue2( comp, "value_int" )
+				break
+			end
+		end
+	end
+
 	--If the boss has performed a healing phase in the last 15 seconds, then it can not do another one until 15 seconds have passed
 	--The timer starts when the healing phase starts
 	--Note the healing phase itself lasts for 7 seconds in total, so 15 - 7 is 8 seconds of vulnerability
-	if( entity_who_caused == entity_id ) or (frame <= last_frame + 60*15) or ((max_health * 0.1) > health) then return end
+	if( entity_who_caused == entity_id ) or (frame <= last_frame + 60*15) or ((max_health * 0.1) > health) or (phase >= 3) then return end
 	
 	local minion_count = 5
 	local minion_interval = max_health / minion_count

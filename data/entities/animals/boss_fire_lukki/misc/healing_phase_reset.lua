@@ -15,3 +15,22 @@ if ( comp ~= nil ) then
 	ComponentObjectSetValue2( comp, "damage_multipliers", "curse", 0.7 )
 	ComponentObjectSetValue2( comp, "damage_multipliers", "drill", 0.3 )
 end
+
+
+--Gets the current Boss phase
+local storages = EntityGetComponent( root_id, "VariableStorageComponent" )
+if ( storages ~= nil ) then
+	for i,comp in ipairs( storages ) do
+		local name = ComponentGetValue2( comp, "name" )
+		if ( name == "phase_brain" ) then
+			phase = ComponentGetValue2( comp, "value_int" )
+			break
+		end
+	end
+end
+
+--If phase is 3, then set boss to phase 4, the final phase of the fight
+if phase == 3 then
+	local storages = EntityGetComponentIncludingDisabled( root_id, "VariableStorageComponent" )[1]
+	ComponentSetValue2( storages, "value_int", 4)
+end

@@ -1,6 +1,5 @@
 dofile_once("data/scripts/lib/utilities.lua")
 
-
 local pool = {
     "blindgazer",
     "blob_big",

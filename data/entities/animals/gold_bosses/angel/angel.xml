@@ -15,7 +15,7 @@
 		</AnimalAIComponent>
 
 		<DamageModelComponent
-            hp="32000"
+            hp="16000"
 	  		minimum_knockback_force="100000"
             ragdoll_filenames_file=""
             ragdoll_material="meat_cursed_dry"
@@ -78,6 +78,7 @@
 
 		<HitboxComponent 
 			_enabled="1" 
+			damage_multiplier="0.5"
 			aabb_min_x="-38.0" 
 			aabb_max_x="38.0" 
 			aabb_min_y="-38" 

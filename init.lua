@@ -758,9 +758,12 @@ if ModIsEnabled("worse_enemies") then
 end
 
 -- Noita Toether compatibility, allows items like the new tablets, Fungus Stone & Hungry Orb to be added to the item bank
+--This is done... weirdly
+--[[
 if ModIsEnabled("noita-together") then
   ModLuaFileAppend( "mods/noita-together/files/scripts/item_list.lua", "mods/mo_creeps/files/scripts/mod_compatibility/nt_itemlist_populator.lua" )
 end
+]]--
 
 
 

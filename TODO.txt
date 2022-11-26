@@ -8,22 +8,12 @@ Tag Optimise mass status spells to check for a childname rather than tag name
 
 Optional english names for monsters
 
-Translation key for twitch events
-
-Center poring's position on the middle of the sprite so it behaves better to physics damage
-
 Deck of cards
 25 storage
 AC wand refresh
 
 Secret text with a youtube link to rick ashley's never gonna give you up
 (Put it in the corner of the world or under deep EDR or something stupidly hidden, fittingly stupid for a stupid easteregg
-
-On toxic immunity buff expiration, re-add material  vulnerability to toxic rock, gas & ice
-But also check if they already have toxic immunity perk and don't
-
-Improve Creature Shifting ui icon to look prettier, the one which shows you what creature was changed
-Investigate into making Blazed screen effects more like a red hue than fractal fungal shifting
 
 Starting cat amount multiplier
 
@@ -37,11 +27,11 @@ Add hint pointing towards Essence of Fungus
 
 Statues in Statue room disappear if you mod restart before visiting them. Serialise then unserialise?
 Only spawn statues when you get near to guarantee it's loaded first? Unsure
+Put statue room loaders on a spawner attached to a collision trigger, spawn the collision trigger with a pixelscene.
+Should guarantee it appears when needed
 
 Improve Creature Shifting, currently only works if you haven't met/serialised the creature before shifting it away.
 If I'm building a table anyways, may just be better to delete/respawn if the shift victim gets close? But how to detect if someone is a victim or not? hmm...
-
-Improve Opal Crystal's sprite
 
 
 

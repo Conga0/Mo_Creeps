@@ -78,6 +78,7 @@
 
 		<HitboxComponent 
 			_enabled="1" 
+			damage_multiplier="0.5"
 			aabb_min_x="-38.0" 
 			aabb_max_x="38.0" 
 			aabb_min_y="-38" 

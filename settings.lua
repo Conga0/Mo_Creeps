@@ -159,7 +159,7 @@ end
 
 --Todo: add translation keys for these, these aren't finished yet though, not even attainable as of writing, so I'll decide if I want to keep it or not later
 
-if statue_count >= 12 then
+if statue_count >= 8 then
   table.insert(mod_settings,
   {
     category_id = "seasonal_events_forced",

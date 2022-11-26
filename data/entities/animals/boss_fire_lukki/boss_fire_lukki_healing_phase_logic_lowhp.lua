@@ -29,6 +29,19 @@ function damage_received( damage, desc, entity_who_caused, is_fatal )
 	local eid = EntityLoad( "data/entities/animals/boss_fire_lukki/misc/healing_phase_helper.xml", pos_x, pos_y )
 	EntityAddChild( entity_id, eid )
 	
+	--Causes the boss to spit out a lot of fire bolts in it's final phase 3 panic
+	EntityAddComponent2(
+		entity_id,
+		"LuaComponent",
+		{
+			execute_on_added = false,
+			script_source_file = "data/entities/animals/boss_fire_lukki/boss_fire_lukki_healing_phase_logic_lowhp_burst.lua",
+			execute_every_n_frame = 11,
+			remove_after_executed = false,
+			execute_times=33
+		}
+	)
+
 	finale_immortality_check = true
 	--finale_limit = finale_limit - 1
 end

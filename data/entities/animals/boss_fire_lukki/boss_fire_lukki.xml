@@ -134,13 +134,16 @@
 	</GenomeDataComponent>
 
 	<!-- center hitbox (weak spot) -->
+	<!-- Pitboss has 90% damage reduction on it's hitbox component, so it actually has 8000 effective hp instead of 800 -->
+	<!-- Likewise, Aesthete of Heat has 70% damage reduction and 40,000 effective hp instead of 12,000 -->
 	<HitboxComponent 
 		_tags="hitbox_weak_spot"
 		aabb_min_x="-20" 
 		aabb_max_x="20" 
 		aabb_min_y="-20" 
 		aabb_max_y="20"
-		damage_multiplier="1.0" >
+		damage_multiplier="0.3"
+		>
 	</HitboxComponent>
 
 
@@ -300,6 +303,15 @@
 	</Entity>
 
 
+	<!-- Phase Brain -->
+	
+	<VariableStorageComponent
+		name="phase_brain"
+		value_int="1"
+		>
+	</VariableStorageComponent>
+
+
 	<!-- limbs  -->
 
 	<Entity>  <Base file="mods/mo_creeps/files/enemies_gfx/fire_lukki/lukki_limb_animated.xml" />  </Entity>
@@ -326,6 +338,8 @@
 
 
 	<!-- Boss AI -->
+
+	<!-- Attack AI -->
 	
 	<!-- Mass Fire all entities in a large radius -->
 	<LuaComponent
@@ -344,6 +358,7 @@
 	</LuaComponent>
 	
 	<!-- Summons a delayed explosion on top of the player every 16.3 seconds if they're too far away -->
+	<!-- It'd be really cool if in phase 2, while he's doing in suction attack he'd shoot out a bunch of firebolts and spit them all out when the phase ends -->
 	<LuaComponent
 		script_source_file="data/entities/animals/boss_fire_lukki/boss_fire_lukki_circle_explosion.lua"
 		execute_every_n_frame="980"
@@ -351,7 +366,10 @@
 		>
 	</LuaComponent>
 
-	<!-- Revenge Damage, 10% chance to retaliate with 1-2 firebolts -->
+
+	<!-- Retaliation AI Below -->
+
+	<!-- Revenge Damage, 20% chance to retaliate with 1-2 firebolts -->
 	<LuaComponent
 		execute_every_n_frame="-1"
 		script_damage_received="data/entities/animals/boss_fire_lukki/boss_fire_lukki_retaliation_attack_script.lua"
@@ -368,9 +386,22 @@
 	<!-- One-off extra healing phase when the boss falls below 10% hp, the aim is to prevent instant kill wands like omega sawblade spam from 100-0ing the boss before it can do anything -->
 	<!-- Note: Plan is to give the healing phase a "charge" and have the rocks fall off when it happens, maybe up this to proc at 20% hp then... I'll do the charge phase when the spritework is ready though -->
 	<!-- My brain has trouble keeping track of it otherwise. -->
+	<!-- This script is made irrelevent by the brain.lua script -->
+	<!--
 	<LuaComponent
 		script_damage_received="data/entities/animals/boss_fire_lukki/boss_fire_lukki_healing_phase_logic_lowhp.lua"
 		execute_every_n_frame="-1"
+		>
+	</LuaComponent>
+	-->
+
+
+	<!-- Brain AI -->
+
+	<!-- Triggers Phase Changes -->
+	<LuaComponent
+		execute_every_n_frame="-1"
+		script_damage_received="data/entities/animals/boss_fire_lukki/boss_fire_lukki_brain.lua"
 		>
 	</LuaComponent>
 </Entity>

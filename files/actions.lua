@@ -538,7 +538,7 @@ table.insert(actions,
     spawn_level                       = "10", -- Conversion spell
     spawn_probability                 = "0.01", -- Conversion spell
     price = 250,
-    mana = 100,
+    mana = 50,
     --max_uses = 1000,
     action 		= function()
         add_projectile("mods/mo_creeps/files/entities/projectiles/deck/rat_bite_crit.xml")

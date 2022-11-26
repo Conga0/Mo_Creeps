@@ -3,10 +3,9 @@ dofile_once("data/scripts/lib/utilities.lua")
 local entity_id    = GetUpdatedEntityID()
 local pos_x, pos_y = EntityGetTransform( entity_id )
 local r = 600
+local trishot = true
 
 -- check that we're only shooting every 10 frames
-if script_wait_frames( entity_id, 10 ) then  return  end
-
 local targets = EntityGetInRadiusWithTag( pos_x, pos_y, r, "player_unit" )
 
 for i,v in ipairs( targets ) do

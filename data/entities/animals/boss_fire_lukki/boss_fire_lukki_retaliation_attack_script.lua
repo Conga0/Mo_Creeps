@@ -4,7 +4,7 @@ function damage_received( damage, desc, entity_who_caused, is_fatal )
 	local entity_id    = GetUpdatedEntityID()
 	local x, y = EntityGetTransform( entity_id )
 	SetRandomSeed( GameGetFrameNum(), x + y + entity_id )
-	if Random( 1 , 7 ) == 1 then
+	if Random( 1 , 5 ) == 1 then
 
 		if( entity_who_caused == entity_id ) then return end
 		if script_wait_frames( entity_id, 2 ) then  return  end
