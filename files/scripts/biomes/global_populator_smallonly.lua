@@ -113,7 +113,7 @@ if g_props then
 
     table.insert(g_props,
     {
-        prob           = 0.008,
+        prob           = 0.012,
         min_count    = 1,
         max_count    = 1,
         entity     = "mods/mo_creeps/files/entities/items/pickups/chest_random_cursed.xml",

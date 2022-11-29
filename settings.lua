@@ -19,10 +19,25 @@ local boss_health_multiplayer_formatting = " $0% HP"
 local boss_health_multiplayer_desc = "Multiply all Bosses health by this much. \nFor those who seek extra durable opponents. \nDoes not affect Kolmisilma \nMinibosses will also have their health boosted by a partial amount. \nThis can be changed mid-run but may not update for all bosses, \nremember to restart after updating the multiplier.\n \nFor Modders: \nIf your mod isn't listed in the compatibility section of the mod page, \nthis likely won't boost it, you'll need to add a lua component to your bosses. \nDo not hesitate to contact me for instructions or help if needed. \nIt would be easiest for me to respond to you on discord, Conga Lyne#2452"
 local particle_reduction_name = "Minimal Particles"
 local particle_reduction_desc = "Reduce the number of particles spawned by certain spells. \nThis should help reduce lag if your computer's reaching it's limit."
+local spoopy_graphics_name = "Alternate Graphics"
+local spoopy_graphics_desc = "This setting toggles the alternate graphics of some creeps made by Spoopy. \nThis setting is turned off by default but can be enabled here."
 local mod_compat_mode_conjurer_name = "Conjurer extra Compatibility Mode"
 local mod_compat_mode_conjurer_desc = "Some people may have issues with this mod not loading into Conjurer properly. \nIf this happens, try enabling this option and loading conjurer again. \n \nThis option is on by default but can be turned off if you wish to \nhave the pixel scenes & bosses appear in conjurer worlds. \n \nIf Conjurer still fails to load despite having this turned on, although unlikely, \nit may be a mod compatibility issue with something else, \nperhaps try disabling mods to find the troublesome one. \n \nIf nothing else works please let me know to by filing a bug report to me. \nIt would be easiest for me to reach & investigate your report at the discord link below: \nhttps://discord.gg/gtyGnv8Pxk"
 local mod_compat_mode_spell_evolution_name = "Spell Evolution Compatibility Mode"
 local mod_compat_mode_spell_evolution_desc = "Turn this setting on if youre playing with the Spell Evolution mod to fix it.\n \nAs far as I can tell, a bug in Spell Evolutions causes it to break if a modded spell \nUses translation keys for their name and/or description. \n \nUnfortunately there's nothing I can do about this as it's not my mod, \nand I have no intention to remove the translation keys \nas I hope to use them one day in the event \nIm offered a translation for the mod to another language. \nHowever, I can put a setting in to optionally let you use the spells without \ntranslation keys to get around the issue."
+
+local seasonal_forced_name = "Forced Seasonal Events"
+local seasonal_forced_desc = "A list of Seasonal Events which can be forced"
+local seasonal_forced_april_fools_name = "Forced April Fools"
+local seasonal_forced_april_fools_desc = "Is the April Fools holiday forcefully enabled?"
+local seasonal_forced_birthday_name = "Forced Birthday"
+local seasonal_forced_birthday_desc = "Is the More Creeps Birthday holiday forcefully enabled?"
+local seasonal_forced_halloween_name = "Forced Halloween"
+local seasonal_forced_halloween_desc = "Is Halloween forcefully enabled?"
+local seasonal_forced_smissmass_name = "Forced Smissmass"
+local seasonal_forced_smissmass_desc = "Is the Smissmass holiday forcefully enabled?"
+local secret_golden_cape_name = "Golden Cape"
+local secret_golden_cape_desc = "Is the Golden Cape cosmetic enabled? \nSome people may want to disable this if using custom character mods."
 
 
   --Russian Translations
@@ -98,7 +113,14 @@ mod_settings =
     ui_name = particle_reduction_name,
     ui_description = particle_reduction_desc,
     value_default = false,
-    scope = MOD_SETTING_SCOPE_NEW_GAME,
+    scope = MOD_SETTING_SCOPE_RUNTIME_RESTART,
+  },
+  {
+    id = "spoopy_graphics",
+    ui_name = spoopy_graphics_name,
+    ui_description = spoopy_graphics_desc,
+    value_default = false,
+    scope = MOD_SETTING_SCOPE_RUNTIME_RESTART,
   },
   {
     id = "mod_compat_mode_conjurer",
@@ -158,44 +180,55 @@ if HasFlagPersistent( "mocreep_misc_pandora_chest_rain" ) then
 end
 
 --Todo: add translation keys for these, these aren't finished yet though, not even attainable as of writing, so I'll decide if I want to keep it or not later
---Likely unlock if you have 8 statues, for now it's kept at an unreachable 12 until it's fully functional.
+--Likely unlock if you have 8 statues, for now it's kept at an unreachable 13 until it's fully functional.
 
-if statue_count >= 12 then
+if statue_count >= 8 then
   table.insert(mod_settings,
   {
     category_id = "seasonal_events_forced",
-    ui_name = "Forced Seasonal Events",
-    ui_description = "A list of Seasonal Events which can be forced",
+    ui_name = seasonal_forced_name,
+    ui_description = seasonal_forced_desc,
     settings = {
       {
         id = "seasonal_events_forced_april_fools",
-        ui_name = "Forced April Fools",
-        ui_description = "Is the April Fools holiday forcefully enabled?",
+        ui_name = seasonal_forced_april_fools_name,
+        ui_description = seasonal_forced_april_fools_desc,
         value_default = false,
         scope = MOD_SETTING_SCOPE_NEW_GAME,
       },
       {
         id = "seasonal_events_forced_birthday",
-        ui_name = "Forced Birthday",
-        ui_description = "Is the More Creeps Birthday holiday forcefully enabled?",
+        ui_name = seasonal_forced_birthday_name,
+        ui_description = seasonal_forced_birthday_desc,
         value_default = false,
         scope = MOD_SETTING_SCOPE_NEW_GAME,
       },
       {
         id = "seasonal_events_forced_halloween",
-        ui_name = "Forced Halloween",
-        ui_description = "Is Halloween forcefully enabled?",
+        ui_name = seasonal_forced_halloween_name,
+        ui_description = seasonal_forced_halloween_desc,
         value_default = false,
         scope = MOD_SETTING_SCOPE_NEW_GAME,
       },
       {
         id = "seasonal_events_forced_smissmass",
-        ui_name = "Forced Smissmass",
-        ui_description = "Is the Smissmass holiday forcefully enabled?",
+        ui_name = seasonal_forced_smissmass_name,
+        ui_description = seasonal_forced_smissmass_desc,
         value_default = false,
         scope = MOD_SETTING_SCOPE_NEW_GAME,
       }
     }
+  })
+end
+
+if HasFlagPersistent( "mocreeps_card_unlocked_secret_knowledge_of_kings" ) then
+  table.insert(mod_settings,
+  {
+    id = "secret_golden_cape",
+    ui_name = secret_golden_cape_name,
+    ui_description = secret_golden_cape_desc,
+    value_default = true,
+    scope = MOD_SETTING_SCOPE_NEW_GAME,
   })
 end
 

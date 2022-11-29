@@ -4,11 +4,18 @@ local modCompatibilityConjurer = ModSettingGet( "mo_creeps.mod_compat_mode_conju
 local modCompatibilitySpellEvolutions = ModSettingGet( "mo_creeps.mod_compat_mode_spell_evolution" )
 local motdSetting = ModSettingGet( "mo_creeps.motd_setting" )
 local seasonalSetting = ModSettingGet( "mo_creeps.seasonal_events" )
+local spoopyGFXSetting = ModSettingGet( "mo_creeps.spoopy_graphics" )
 
 local seasonalForced_AprilFools = ModSettingGet( "mo_creeps.seasonal_events_forced_april_fools" )
 local seasonalForced_Birthday = ModSettingGet( "mo_creeps.seasonal_events_forced_birthday" )
 local seasonalForced_Halloween = ModSettingGet( "mo_creeps.seasonal_events_forced_halloween" )
 local seasonalForced_Smissmass = ModSettingGet( "mo_creeps.seasonal_events_forced_smissmass" )
+
+local capeSetting = ModSettingGet( "mo_creeps.secret_golden_cape" )
+
+--Debug flag removals, be sure to remove before release!!!
+--RemoveFlagPersistent( "mocreeps_card_unlocked_secret_knowledge_of_kings" )
+--RemoveFlagPersistent( "mocreeps_card_unlocked_secret_knowledge_of_kings_spell" )
 
 --Spawn Bosses
 
@@ -275,10 +282,13 @@ material_mocreep_meat_mana,"Enchanting Meat",,,,,,,,,,,,,
 material_mocreep_smoke_static_slowburn_name,"Dense Smoke",,,,,,,,,,,,,
 material_mocreep_meat_fire_lukki,"Infernal Meat",,,,,,,,,,,,,
 material_mocreeps_mudman_mud,"Magical Mud",,,,,,,,,,,,,
+material_mocreep_knowledge_of_kings,"Yggdrasil's Knowledge",,,,,,,,,,,,,
 spell_mocreep_targetter_name,"Targetter",,,,,,,,,,,,,
 spell_mocreep_targetter_desc,"Fire a projectile which causes irresistable hatred towards anything it hits.",,,,,,,,,,,,,
 spell_mocreep_firecharge_name,"Fire Charge",,,,,,,,,,,,,
 spell_mocreep_firecharge_desc,"Imbues a projectile with a fiery charge, that it will release on impact.",,,,,,,,,,,,,
+spell_mocreep_knowledge_of_kings_name,"The Knowledge of Kings",,,,,,,,,,,,,
+spell_mocreep_knowledge_of_kings_desc,"Casting this spell causes something irreversibly permanent to occur",,,,,,,,,,,,,
 misc_mocreep_energy_nova,"Energy Nova",,,,,,,,,,,,,
 log_mocreep_moon_altar_fungus,"AN IRREVERSIBLE CORRUPTION HAS OCCURRED",,,,,,,,,,,,,
 logdesc_mocreep_moon_altar_fungus,"WHAT HAVE YOU DONE!?",,,,,,,,,,,,,
@@ -287,8 +297,9 @@ item_mocreep_orb_mattereater_desc,"You feel like kicking it...",,,,,,,,,,,,,
 log_mocreep_toxicnest_secret_name,"I TOLD YOU NOT TO VISIT THE WORM NEST AT 3AM",,,,,,,,,,,,,
 status_mocreep_protection_lava_name,Lava Immunity,,,,,,,,,,,,,
 status_mocreep_protection_lava_desc,"You take no direct damage from lava or fire.",,,,,,,,,,,,,
+status_mocreep_explosive_orb_name,"Explosive",,,,,,,,,,,,,
+status_mocreep_explosive_orb_desc,"You're transmuting magic into explosives!",,,,,,,,,,,,,
 creep_mocreep_boss_fire_lukki_name,"Lämmön Esteetikko",,,,,,,,,,,,,
-secretmessage_mocreep_herobrine_01,"I see you.",,,,,,,,,,,,,
 integration_mocreep_RANDOM_CATS_name,"Kitty Cats!!",,,,,,,,,,,,,
 integration_mocreep_RANDOM_CATS_desc,"Cat! I'm a kitty cat! And I dance dance dance! And I dance dance dance!!",,,,,,,,,,,,,
 integration_mocreep_RANDOM_CREEPS_name,"Random Creeps & Weirdos",,,,,,,,,,,,,
@@ -311,8 +322,31 @@ integration_mocreep_SUMMON_SKOUDE_name,"Summon Skoude",,,,,,,,,,,,,
 integration_mocreep_SUMMON_SKOUDE_desc,"Skoude will arrive shortly.",,,,,,,,,,,,,
 integration_mocreep_HUNGRY_ORB_name,"Hungry Orb",,,,,,,,,,,,,
 integration_mocreep_HUNGRY_ORB_desc,"???",,,,,,,,,,,,,
+integration_mocreep_DELUSIONAL_name,"Delusional Streamer",,,,,,,,,,,,,
+integration_mocreep_DELUSIONAL_desc,"Your senses decieve you.",,,,,,,,,,,,,
+secretmessage_mocreep_herobrine_01,"I see you.",,,,,,,,,,,,,
+secretmessage_mocreep_divineorb_name,"You discovered an orb of divine knowledge",,,,,,,,,,,,,
+secretmessage_mocreep_divineorb_desc,"Secrets of otherworldy royalty have been unlocked to you.",,,,,,,,,,,,,
+secretmessage_mocreep_kingly_alreadydone,"You feel the secrets of otherwordly royalty have already been unleashed...",,,,,,,,,,,,,
+secretmessage_mocreep_kingly_cheater,"You feel the magic is incomplete...",,,,,,,,,,,,,
+secretmessage_mocreep_capeget_name,"You feel more.. pretty..?",,,,,,,,,,,,,
+secretmessage_mocreep_capeget_desc,"Truly befitting.",,,,,,,,,,,,,
+secretmessage_mocreep_divineorb_heart_name,"You found a familiar orb of divine knowledge",,,,,,,,,,,,,
+book_mocreeps_symbol_centipede_blood,"Tuhatjalkainen Veri",,,,,,,,,,,,,
+book_mocreeps_symbol_centipede_blood_description,"Half a circle, and a spine connected to it. \nThree legs on each side, and the centipede's inner liquid is born.",,,,,,,,,,,,,
+book_mocreeps_symbol_redsand,"Punainen Hiekka",,,,,,,,,,,,,
+book_mocreeps_symbol_redsand_description,"Three lines. One Horizonal, two more starting at the edges of the first line which converge upwards to touch each other at their ends. \nWithin this new shape, circles lay. \none. two. and three. \nThese three circles represent the specks of dust, and thus a blazing red powder is born.",,,,,,,,,,,,,
+book_mocreeps_symbol_insecthusk,"Hyönteisten Kuori",,,,,,,,,,,,,
+book_mocreeps_symbol_insecthusk_description,"One triangle, and another below facing the other way. \nDraw a line to connect these two formations. \nStart from the center of the first, and draw down until it pierces through the second triangle. \nFrom this new symbol, the husk of insects is born.",,,,,,,,,,,,,
+book_mocreeps_symbol_divineliquid,"Jumalallinen Neste",,,,,,,,,,,,,
+book_mocreeps_symbol_divineliquid_description,"Place down your brush, and draw nothing less than a perfect circle. \n \nWithin this circle, draw the four elements. \nOne line for fire \nOne for Water \nOne for Earth \nand One for Air. \n \nWhere the elements converge, make another perfect circle, fill it in with purpose. \nWith this, a divine drink is born.",,,,,,,,,,,,,
+book_mocreeps_symbol_pinksand,"Vaaleanpunainen Hiekka",,,,,,,,,,,,,
+book_mocreeps_symbol_pinksand_description,"A triangle. Within this, create a line piercing through it's purpose. \nInside this triangle near it's peak, a circle sits. \nThe circle is pierced by the line, and is ready to change shape. \nWith this symbol, the pinkest sand will be born.",,,,,,,,,,,,,
+book_mocreeps_symbol_fungus,"Sieni",,,,,,,,,,,,,
+book_mocreeps_symbol_fungus_description,"Two circles, these are specks of dust. \nBetween these specks, draw a line moving upwards. \nWhere the line stops draw two more moving towards the circles. \nConnect the ends of those lines together with one final line, and a fungal infection is born.",,,,,,,,,,,,,
 ]])
 
+--Yggdrasil's Knowledge (The knowledge of life)
 
 
 
@@ -1029,7 +1063,7 @@ end
 
 --Resets Blob Boss kill reward to prevent cheesing multiple "reward events" per kill
 ModLuaFileAppend( "data/scripts/newgame_plus.lua", "mods/mo_creeps/files/scripts/newgame_plus_appends.lua" )
-GameRemoveFlagRun( "mocreeps_blob_boss_slain" )
+--GameRemoveFlagRun( "mocreeps_blob_boss_slain" )
 
 --Adds custom enlightened alchemist types
 local content = ModTextFileGetContent("mods/mo_creeps/files/scripts/mod_compatibility/vanilla_enlightened_alchemist_init_append.lua")
@@ -1071,6 +1105,28 @@ dofile_once( "mods/mo_creeps/files/scripts/mod_compatibility/boss_health_multipl
 --Boss vulnerability immunity insertion
 dofile_once( "mods/mo_creeps/files/scripts/mod_compatibility/boss_vulnerability_immune_plug.lua" )
 
+--Overrides some creep's settings for spoopy's alternate graphics
+if spoopyGFXSetting == true then
+
+  --Esoteric Being
+  local content = ModTextFileGetContent("data/entities/animals/esoteric_being.xml")
+  local xml = nxml.parse(content)
+  xml:first_of("Base"):first_of("AnimalAIComponent").attr.attack_ranged_action_frame = "2"
+  xml:first_of("Base"):first_of("SpriteComponent").attr.image_file = "mods/Mo_Creeps/files/enemies_gfx/esoteric_being_alt.xml"
+  xml:first_of("SpriteComponent").attr.offset_x = "18.5"
+  xml:first_of("SpriteComponent").attr.offset_y = "17.5"
+  ModTextFileSetContent("data/entities/animals/esoteric_being.xml", tostring(xml))
+
+  local content = ModTextFileGetContent("data/entities/buildings/esoteric_being_asleep.xml")
+  local xml = nxml.parse(content)
+  xml:first_of("SpriteComponent").attr.image_file = "mods/mo_creeps/files/enemies_gfx/esoteric_being_alt_asleep.xml"
+  ModTextFileSetContent("data/entities/buildings/esoteric_being_asleep.xml", tostring(xml))
+
+  local content = ModTextFileGetContent("mods/mo_creeps/files/scripts/animals/angel_holy_beam_calldown_alt.lua")
+  ModTextFileSetContent("mods/mo_creeps/files/scripts/animals/angel_holy_beam_calldown.lua", content)
+
+end
+
 
   
 
@@ -1096,7 +1152,7 @@ dofile_once( "mods/mo_creeps/files/scripts/mod_compatibility/boss_vulnerability_
 
 
 -- Seasonal
-local year, month, day = GameGetDateAndTimeLocal()
+local year, month, day, hour, minute = GameGetDateAndTimeLocal()
 
 
 if seasonalSetting == true then
@@ -1184,6 +1240,7 @@ if seasonalSetting == true then
   -- Update to be centered on 21/07/2022, this is when the first enemy was created and development officially began. Should be a fair trade off between not being the official release date but also not clashing with Halloween
   --Remember Update global_populator & global_populator_small too, wand tinkering crystal spawns are inside.
   if (( month == 7 ) and (( day >= 20 ) and ( day <= 22 ))) or seasonalForced_Birthday then
+    ModLuaFileAppend( "data/scripts/biomes/hills.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday.lua" ) --Coal Mine, first area, goodluck on your run
     ModLuaFileAppend( "data/scripts/biomes/coalmine.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday.lua" ) --Coal Mine, first area, goodluck on your run
     ModLuaFileAppend( "data/scripts/biomes/coalmine_alt.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday.lua" ) --Coalmine but to the west side near damp cave
     ModLuaFileAppend( "data/scripts/biomes/excavationsite.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/birthday.lua" ) --Coal Pits, area 2
@@ -1199,15 +1256,15 @@ if seasonalSetting == true then
   if (( month == 4 ) and (( day >= 1 ) and ( day <= 3 ))) or seasonalForced_AprilFools then
 
     --Replace all hisii hobos with clowns.
-    local content = ModTextFileGetContent("data/entities/animals/secret/hisii_hobo.xml")
+    local content = ModTextFileGetContent("data/entities/animals/seasonal/hisii_hobo.xml")
     ModTextFileSetContent("data/entities/animals/hisii_hobo.xml", content)
 
     --Replace small fairies with lethal versions.
-    local content = ModTextFileGetContent("data/entities/animals/secret/fairy_cheap.xml")
+    local content = ModTextFileGetContent("data/entities/animals/seasonal/fairy_cheap.xml")
     ModTextFileSetContent("data/entities/animals/fairy_cheap.xml", content)
 
     --Replace big fairies with non-lethal versions.
-    local content = ModTextFileGetContent("data/entities/animals/secret/fairy_big.xml")
+    local content = ModTextFileGetContent("data/entities/animals/seasonal/fairy_big.xml")
     ModTextFileSetContent("data/entities/animals/fairy_big.xml", content)
 
     --Randomly cause a fungal shift/creature shift at any time, at random.
@@ -1218,9 +1275,51 @@ if seasonalSetting == true then
       cid = EntityLoad("mods/mo_creeps/files/entities/misc/essence/moon_creature_curse_slow.xml", x, y)
       EntityAddChild( player_entity, cid )
     end
+    local randomCap = 10
+
+    SetRandomSeed( hour + minute, hour + day )
+    --10% chance for any main path biome to become weird in April Fools
+    if Random(1,randomCap) == 1 then
+      ModLuaFileAppend( "data/scripts/biomes/vault.lua", "mods/mo_creeps/files/scripts/biomes/global_everything_populator.lua" )
+      randomCap = randomCap + 1
+    end
+    if Random(1,randomCap) == 1 then
+      ModLuaFileAppend( "data/scripts/biomes/fungicave.lua", "mods/mo_creeps/files/scripts/biomes/global_everything_populator.lua" )
+      randomCap = randomCap + 1
+    end
+    if Random(1,randomCap) == 1 then
+      ModLuaFileAppend( "data/scripts/biomes/rainforest.lua", "mods/mo_creeps/files/scripts/biomes/global_everything_populator.lua" )
+      randomCap = randomCap + 1
+    end
+    if Random(1,randomCap) == 1 then
+      ModLuaFileAppend( "data/scripts/biomes/snowcastle.lua", "mods/mo_creeps/files/scripts/biomes/global_everything_populator.lua" )
+      randomCap = randomCap + 1
+    end
+    if Random(1,randomCap) == 1 then
+      ModLuaFileAppend( "data/scripts/biomes/snowcave.lua", "mods/mo_creeps/files/scripts/biomes/global_everything_populator.lua" )
+      randomCap = randomCap + 1
+    end
+    if Random(1,randomCap) == 1 then
+      ModLuaFileAppend( "data/scripts/biomes/excavationsite.lua", "mods/mo_creeps/files/scripts/biomes/global_everything_populator.lua" )
+      randomCap = randomCap + 1
+    end
+    if Random(1,randomCap) == 1 then
+      ModLuaFileAppend( "data/scripts/biomes/coalmine_alt.lua", "mods/mo_creeps/files/scripts/biomes/global_everything_populator.lua" )
+      randomCap = randomCap + 1
+    end
+    if Random(1,randomCap) == 1 then
+      ModLuaFileAppend( "data/scripts/biomes/coalmine.lua", "mods/mo_creeps/files/scripts/biomes/global_everything_populator.lua" )
+      randomCap = randomCap + 1
+    end
+
+    --100% chance for the Temple of the Art to be spawn everything
+    ModLuaFileAppend( "data/scripts/biomes/crypt.lua", "mods/mo_creeps/files/scripts/biomes/global_everything_populator.lua" )
+
 
     --Happy april fools <3
-    GamePrint("Happy April Fools <3")
+    function OnPlayerSpawned()
+      GamePrint("Happy April Fools <3")
+    end
 
     --Remember to check global spawn files, pandora's chest spawnrate boost is managed there
 
@@ -1261,3 +1360,25 @@ ModLuaFileAppend( "data/scripts/biomes/the_end.lua", "mods/mo_creeps/files/scrip
 
 --ModLuaFileAppend( "data/scripts/biome_modifiers.lua", "mods/mo_creeps/files/scripts/weather/weather_wet_append.lua" ) --Attempt to insert shaman into biome wet modifier spawn additions. Started eating up too much time.
 --If you know how to do this, please let me know. -Conga Lyne
+
+
+--Secret
+
+--Adds Golden Cape if check is successful
+
+if HasFlagPersistent( "mocreeps_card_unlocked_secret_knowledge_of_kings" ) and capeSetting then
+
+  local content = ModTextFileGetContent("data/entities/player_base.xml")
+  local xml = nxml.parse(content)
+  xml:add_child(nxml.parse([[
+    <LuaComponent
+      script_source_file="data/mocreeps_gfx/player_cape_colour_append.lua"
+      execute_every_n_frame="1"
+      execute_times="1"
+      remove_after_executed="1"
+      >
+    </LuaComponent>
+  ]]))
+  ModTextFileSetContent("data/entities/player_base.xml", tostring(xml))
+
+end

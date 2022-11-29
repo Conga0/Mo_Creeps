@@ -69,7 +69,7 @@
   </ProjectileComponent>
 	
 	<HitEffectComponent 
-        effect_hit="LOAD_CHILD_ENTITY"
+        effect_hit="LOAD_UNIQUE_CHILD_ENTITY"
         value_string="mods/mo_creeps/files/entities/misc/orb_explosive_effect.xml" >
 	</HitEffectComponent >
   

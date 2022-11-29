@@ -11,16 +11,20 @@ Remember the checklist!!
 
 
 
-1.1.0 Changelog:
+1.1.0 Changelog: [The Secret Update]
 Added 4 new environmental hazards
-Added 9 new creeps
-Added 6 new twitch events
+Added 10 new creeps
+Added 7 new twitch events
+Added 3 new spells
+Added a new seasonal event: April Fools!
 Added new biome variation to the world, explore the same biomes in wildly different ways!
 Birthday event now occurs during July, this is when the mod first started being worked on.
 Pandora's Chest now has more permanent effects
 Added a new welcoming message for new users to Mo Creeps
 Added a new essence to the world...
 Red sand is now considerably more palatable...
+The gods have added something divine to the world...
+
 
 Master of None can not longer shoot poly orbs, It's all fun and games until you get Polymorphed
 Fixed Tnt Minecart Riders being a bit too jittery in their cart
@@ -61,7 +65,7 @@ Fixed the dragon cave tablet not spawning properly in purgatory
 Fixed enemies spawning in the Trophy room inside purgatory
 Fixed Chaotic Polymorph Crystal trying to polymorph poly-immune enemies
 Fixed Lime Crystal not appearing in the Conjurer Menu
-Fixed Weirdo having the wrong name
+Fixed all mentions of "Hisii" to be "Hiisi"
 FIXED MAGIC DEVOURERS HAVING 90% DAMAGE REDUCTION FROM ALL SOURCES
 Very slightly reduced blood produced by Angeling & Devilings
 Red Sand now absorbs blood to grow
@@ -110,7 +114,7 @@ Overzealous Polymage miniboss now has increased resistance against projectile da
 Minecart Riders can now very rarely have cool shades
 Added a punishment for disobeying the 31st's MOTD
 Fixed Bubbles not spawning proper amounts of liquid in Nightmare/purgatory
-Reduced Twitch Event Spells to Worms duration to 20 seconds
+Reduced Twitch Event Spells to Worms duration to 30 seconds
 Added Mudmen Twitch Event
 Various Modded & Vanilla bosses are now immune to Vulnerability, this is a direct nerf to Holy Orb Barrage but a much needed one, especially when it broke some bosses and made them immortal
 Slightly decreased speed of Esoteric Fairies, they should now be easier to outrun if you're caught in a situation where you can't kill them but they've already spotted you
@@ -126,14 +130,25 @@ Magic Devourer no longer sucks in your mana while frozen
 Added translation keys for Twitch Integration
 Added slightly modified spawn list for alternate biomes Hisii Village
 Added slightly modified spawn list for alternate biomes Worm Tunnels
-
-Fixed all mentions of "Hisii" to be "Hiisi"
-Fixed Lava Immunity not working on mod restarts, it may only take up to a minute to kick in though to prevent it being heavy on performance
-Significantly Reduced likelyhood of Hungry Orb appearing in Wand Cave. It now spawns on the 1st of every month, the concept is I don't want the hungry orb to be a common item, I want it to be something you only find every few runs, something rare. Not something you can reliably get your hands on.
 Reduced mana cost of Bloody Bite from 100 to 50
 Increased Divine Being's durability
-Reworked some of Fire Lukki's internal script to be more compact in a single file, this is mostly in preperation to handle phase changes
+
+Fixed Creepy Blob having a broken stainmap
+Added a new portal room between Essence of Water & Hell Gold biome, it is planned to be accessed by defeating the Aesthete of Heat
+Added something to the boss arenas
+Mass Materia Conversion now converts Blood to Red Sand
+Added translation keys for some previously missing effects
+Masters of Explosives can only apply one status effect per entity at a time now to save performance
+Implemented Spoopy's Blob Ball attack to the Colossal Blob
+Colossal Blob now has 50% damage resistance to all sources (applies to largest blob only)
+Optimised Esoteric Being's audio
+Added setting to enable Alternate Esoteric Being Sprite
+April fools now has a small chance to have shuffled spawns for main path biomes, with a 100% chance to occur in Temple of the Art
+Improved Hungry Orb's ui sprite
+
 
 
 NOTE: Before releasing make sure to remove worse enemies boss health multipliers & such if they aren't on the workshop yet
+Do a if ~= nil check
 
+Make sure to remove debug flag removals at the top of init.lua!!

@@ -8,8 +8,8 @@ local r = 350
 
 	local pos_x, pos_y = EntityGetTransform( entity_id )
 	SetRandomSeed( GameGetFrameNum(), pos_x + pos_y + entity_id )
-	pos_x = pos_x + Random( -90, 90 )
-	pos_y = pos_y + Random( -90, 90 )
+	pos_x = pos_x + Random( -150, 150 )
+	pos_y = pos_y + Random( -150, 150 ) --originally only up to a 90 off set
 
 
 	local targets = EntityGetInRadiusWithTag( pos_x, pos_y, r, "player_unit" )

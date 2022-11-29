@@ -799,3 +799,32 @@ table.insert(actions,
         draw_actions( 1, true )
     end,
 })
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_KNOWLEDGE_OF_KINGS",
+    name 		= "$spell_mocreep_knowledge_of_kings_name",
+    description = "$spell_mocreep_knowledge_of_kings_desc",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/knowledge_of_kings.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/spread_reduce_unidentified.png",
+    spawn_requires_flag = "mocreeps_card_unlocked_secret_knowledge_of_kings_spell",
+    spawn_manual_unlock = true,
+    never_unlimited		= true,
+    type 		= ACTION_TYPE_OTHER,
+    recursive	= true,
+    ai_never_uses = true,
+    spawn_level                       = "10", -- MANA_REDUCE
+    spawn_probability                 = "0.0001", -- MANA_REDUCE
+    price = 2000,
+    mana = 600,
+    max_uses    = 1,
+    action 		= function()
+        local players = EntityGetWithTag( "player_unit" )
+        for i,v in ipairs( players ) do
+            local x,y = EntityGetTransform( v )
+            local eid = EntityLoad("mods/mo_creeps/files/entities/projectiles/deck/knowledge_of_kings_proj_check.xml", x, y)
+        end
+        c.fire_rate_wait = c.fire_rate_wait + 100
+        current_reload_time = current_reload_time + 100
+    end,
+})

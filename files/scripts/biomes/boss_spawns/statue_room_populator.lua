@@ -38,11 +38,13 @@ function spawn_music_trigger( x, y )
     local mocreep_essence_fungus = HasFlagPersistent( "mocreeps_essence_fungus" )
     local mocreep_essence_fungus_moon = HasFlagPersistent( "mocreep_moon_fungus_unlock" )
     local mocreep_pandora_rain = HasFlagPersistent( "mocreep_misc_pandora_chest_rain" )
+    local mocreep_fire_lukki = HasFlagPersistent( "mocreeps_card_unlocked_boss_fire_lukki" )
 
     --Nightmare/Purgatory Unlocks
     local mocreep_essence_fungus_goldmode = HasFlagPersistent( "mocreeps_essence_fungus_goldmode" )
     local mocreep_essence_fungus_moon_goldmode = HasFlagPersistent( "mocreep_moon_fungus_unlock_goldmode" )
     local mocreep_pandora_rain_goldmode = HasFlagPersistent( "mocreep_misc_pandora_chest_rain_goldmode" )
+    local mocreep_fire_lukki_goldmode = HasFlagPersistent( "mocreeps_card_unlocked_boss_fire_lukki_goldmode" )
 
 
 
@@ -192,16 +194,14 @@ function spawn_music_trigger( x, y )
         EntityLoad( "mods/mo_creeps/files/entities/props/statue_empty.xml", 4178, 2331 )
     end
 
-    --Unset
-    --[[
-    if mocreep_donated_beggar_goldmode then
+    --Killing the Aesthete of Heat
+    if mocreep_fire_lukki_goldmode then
         EntityLoad( "mods/mo_creeps/files/entities/props/goldmode/statue_generous.xml", 4288, 2331 )
-    elseif mocreep_donated_beggar then
+    elseif mocreep_fire_lukki then
         EntityLoad( "mods/mo_creeps/files/entities/props/statue_generous.xml", 4288, 2331 )
     else
         EntityLoad( "mods/mo_creeps/files/entities/props/statue_empty.xml", 4288, 2331 )
     end
-    ]]--
 
 
 

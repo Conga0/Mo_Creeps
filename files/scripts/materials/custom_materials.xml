@@ -590,6 +590,39 @@
     </Graphics>
   </CellData>
 
+  <CellData
+	name="mocreeps_liquid_knowledge_of_kings"
+	ui_name="$material_mocreep_knowledge_of_kings"
+  	tags="[liquid]"
+	burnable="0"
+	density="7.70"
+	cell_type="liquid"
+	wang_color="80fffb92"
+	generates_smoke="0"
+	liquid_gravity="0.8"
+	liquid_sand="0"
+	gfx_glow="250"
+	on_fire="0"
+	requires_oxygen="0"
+	liquid_stains="1"
+	liquid_sprite_stain_shaken_drop_chance="2.5"
+	audio_materialaudio_type="MAGICAL" 
+	show_in_creative_mode="1"
+	>
+	<ParticleEffect
+		vel.y="17.14"
+		vel_random.min_y="-100"
+		vel_random.max_y="25.71"
+		lifetime.min="0"
+		gravity.y="-8.57"
+		render_on_grid="1"
+		draw_as_long="1"
+		friction="-3.429"
+		probability="0.1518"
+	>
+	</ParticleEffect>
+  </CellData>
+
 
 
 	<!-- Reactions -->
@@ -653,10 +686,81 @@
 
   <!-- Makes slow burning smoke burn slow -->
 
-  <Reaction probability="100"
-	input_cell1="[fire]" 		input_cell2="mocreep_smoke_static_slowburn"
-	output_cell1="mocreep_smoke_static_slowburn_gas"	output_cell2="mocreep_smoke_static_slowburn_gas"
-	>
-  </Reaction>
+	<Reaction probability="100"
+		input_cell1="[fire]" 		input_cell2="mocreep_smoke_static_slowburn"
+		output_cell1="mocreep_smoke_static_slowburn_gas"	output_cell2="mocreep_smoke_static_slowburn_gas"
+		>
+	</Reaction>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Warning, extreme spoilers below. If you have not attained the Knowledge of Kings, proceed at your own risk -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<Reaction probability="100"
+		input_cell1="alcohol" input_cell2="mocreeps_redstone" input_cell3="mocreeps_blood_worm_centipede"
+		output_cell1="mocreeps_liquid_knowledge_of_kings" output_cell2="mocreeps_liquid_knowledge_of_kings" output_cell3="mocreeps_liquid_knowledge_of_kings"
+		>
+	</Reaction>
 
 </Materials>

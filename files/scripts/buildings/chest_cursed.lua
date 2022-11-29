@@ -147,8 +147,8 @@ function item_pickup( entity_item, entity_who_picked, name )
         loot_level = 3
     elseif (currbiome == prefix .. "crypt") or (currbiome == prefix .. "robobase") or (currbiome == prefix .. "wizardcave") or (currbiome == prefix .. "clouds") then
         loot_level = 5
-    elseif (currbiome == prefix .. "boss_victoryroom") then --Pandoras can't spawn in Heaven or Hell naturally, you'd have to drag them over, enjoy the prize of your hard work
-        loot_level = 10
+    elseif (currbiome == prefix .. "boss_victoryroom") then
+        loot_level = 8
     end
 
     SetRandomSeed( GameGetFrameNum(), x, calcVar )

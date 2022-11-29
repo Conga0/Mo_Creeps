@@ -10,6 +10,18 @@
 	  loop="0"
 	  >
     </MagicConvertMaterialComponent>
+    
+	<MagicConvertMaterialComponent
+      kill_when_finished="1"
+      from_material="blood"
+      steps_per_frame="2"
+      to_material="mocreeps_redstone"
+      clean_stains="0"
+      is_circle="1"
+      radius="150" 
+	  loop="0"
+	  >
+    </MagicConvertMaterialComponent>
 
 	<MagicConvertMaterialComponent
       kill_when_finished="1"
@@ -256,18 +268,6 @@
       from_material="smoke"
       steps_per_frame="2"
       to_material="rainbow_gas"
-      clean_stains="0"
-      is_circle="1"
-      radius="150" 
-	  loop="0"
-	  >
-    </MagicConvertMaterialComponent>
-
-	<MagicConvertMaterialComponent
-      kill_when_finished="1"
-      from_material="rotten_meat"
-      steps_per_frame="2"
-      to_material="slime"
       clean_stains="0"
       is_circle="1"
       radius="150" 

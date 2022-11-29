@@ -47,6 +47,7 @@ materials_to =
 	{ probability = 0.50, material = "gunpowder" },
 	{ probability = 0.50, material = "material_darkness" },
 	{ probability = 0.50, material = "material_confusion" },
+	{ probability = 0.50, material = "mocreeps_redstone" },
 	{ probability = 0.20, material = "rock_static_radioactive" },
 	{ probability = 0.02, material = "magic_liquid_polymorph" },
 	{ probability = 0.02, material = "magic_liquid_random_polymorph" },

@@ -33,8 +33,8 @@
 	</ParticleEmitterComponent>
 
 	<UIIconComponent
-		name="Explosive"
-		description="You're transmuting magic into explosives!."
+		name="$status_mocreep_explosive_orb_name"
+		description="$status_mocreep_explosive_orb_desc"
 		icon_sprite_file="mods/mo_creeps/files/ui_gfx/status_indicators/explosive_curse.png"
 		is_perk="0"
 		display_above_head="1"
@@ -44,7 +44,7 @@
 
 	<LuaComponent
 		script_source_file="mods/mo_creeps/files/scripts/projectiles/runestone_explosive_box.lua"
-		execute_every_n_frame="5"
+		execute_every_n_frame="7"
 		_enabled="1"
 		>
 	</LuaComponent>

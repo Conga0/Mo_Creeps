@@ -34,10 +34,6 @@
 	  distance="160000">
 	</CameraBoundComponent>
 
-	<OrbComponent
-		orb_id="0" >
-	</OrbComponent>
-
 	<!-- cosmetic 
 		tag meanings:
 		orb_undiscovered 	- enabled when orb has never been found
@@ -56,38 +52,13 @@
 	</LightComponent>
 
 	<SpriteComponent 
-		_enabled="0"
+		_enabled="1"
 		_tags="enabled_in_world,orb_undiscovered" 
 		alpha="1" 
-		image_file="data/items_gfx/orbs/orb.xml" 
+		image_file="mods/mo_creeps/files/items_gfx/orbs/orb_divine_cape_unlock.xml"
 		next_rect_animation="" 
 		rect_animation="" 
 		emissive="0"
-		offset_x="0"
-		offset_y="0"
-		z_index="20" >
-	</SpriteComponent>
-
-	<SpriteComponent 
-		_enabled="0"
-		_tags="enabled_in_world,orb_discovered" 
-		alpha="1" 
-		image_file="data/items_gfx/orbs/orb_discovered.xml" 
-		next_rect_animation="" 
-		rect_animation="" 
-		emissive="0"
-		offset_x="0"
-		offset_y="0"
-		z_index="20" >
-	</SpriteComponent>
-
-	<SpriteComponent 
-		_enabled="0"
-		_tags="enabled_in_world,orb_picked" 
-		alpha="1" 
-		image_file="data/items_gfx/orbs/orb_picked.xml" 
-		next_rect_animation="" 
-		rect_animation="" 
 		offset_x="0"
 		offset_y="0"
 		z_index="20" >
@@ -101,24 +72,24 @@
 		file="data/audio/Desktop/event_cues.bank" 
 		event_name="event_cues/orb/loop" >
 	</AudioLoopComponent>
-	
-	<VariableStorageComponent
-		name="card_name"
-		value_string="LIGHT_BULLET"
-	/>
 
+	<!-- Unnecessary for what I'm doing -->
+	<!--
 	<LuaComponent 
         _enabled="1" 
         execute_on_added="1"
         remove_after_executed="1"
-        script_source_file="data/scripts/items/orb_init.lua" 
+        script_source_file="mods/mo_creeps/files/scripts/items/orbs/orb_king_knowledge_init.lua" 
 	>
     </LuaComponent>
+	-->
 
 	<LuaComponent 
-		script_item_picked_up="data/scripts/items/orb_pickup.lua" >
+		script_item_picked_up="mods/mo_creeps/files/scripts/items/orbs/orb_king_knowledge_pickup.lua" >
 	</LuaComponent>
-	
+
+
+	<!-- Particle fx -->
 	<Entity>
 		<InheritTransformComponent>
 			<Transform 
@@ -128,7 +99,7 @@
 			</Transform>
 		</InheritTransformComponent>
 		
-		<Base file="data/entities/items/orbs/orb_particles_base.xml" />
+		<Base file="mods/mo_creeps/files/entities/items/orbs/orb_particles_base.xml" />
 	</Entity>
 
 </Entity>

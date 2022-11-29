@@ -8,7 +8,7 @@
 	</LuaComponent>
 	
 	<LifetimeComponent
-		lifetime="1200"
+		lifetime="1800"
 		>
 	</LifetimeComponent>
   

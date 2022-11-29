@@ -1,7 +1,7 @@
 <Entity 
   name="unknown" tags="mortal,destruction_target" >
 
-  <SpriteComponent 
+  <SpriteComponent
     _enabled="1" 
     alpha="1" 
     has_special_scale="0" 

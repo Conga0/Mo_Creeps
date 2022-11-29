@@ -383,6 +383,28 @@
 	})
 
 
+    table.insert(streaming_events,
+	{
+		id = "MOCREEP_DELUSIONAL",
+		ui_name = "$integration_mocreep_DELUSIONAL_name",
+		ui_description = "$integration_mocreep_DELUSIONAL_desc",
+		ui_icon = "data/ui_gfx/streaming_event_icons/health_plus.png",
+		ui_author = "Conga Lyne - Mo Creeps",
+		weight = 0.9,
+		kind = STREAMING_EVENT_BAD,
+		action = function(event)
+			local players = get_players()
+			
+			for i,entity_id in ipairs( players ) do
+                local x, y = EntityGetTransform( entity_id )
+
+                EntityLoad( "mods/mo_creeps/files/entities/projectiles/orb_psychotic_nodmg.xml", x, y )
+                GamePlaySound( "data/audio/Desktop/projectiles.bank", "player_projectiles/megalaser/launch", x, y )
+			end
+		end,
+	})
+
+
 if ModIsEnabled("twitch_extended") then
     enemies_list = {
         "data/entities/animals/blindgazer.xml",

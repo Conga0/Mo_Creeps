@@ -35,6 +35,19 @@ table.insert(g_big_enemies,
     entity     = "data/entities/animals/shaman_greater_mocreep.xml"
 })
 
+if ModIsEnabled("worse_enemies") == false then
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.35,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/blob_big.xml"
+    })
+end
+
+
+-- Robots
+
 table.insert(g_robots,
 {
     prob           = 0.25,
@@ -50,16 +63,6 @@ table.insert(g_robots,
     max_count    = 1,    
     entity     = "mods/mo_creeps/files/entities/items/pickups/orb_mattereater.xml"
 })
-
-if ModIsEnabled("worse_enemies") == false then
-    table.insert(g_big_enemies,
-    {
-        prob           = 0.35,
-        min_count    = 1,
-        max_count    = 1,    
-        entity     = "data/entities/animals/blob_big.xml"
-    })
-end
 
 
 
