@@ -11,7 +11,8 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 	-- do some kind of an effect? throw some particles into the air?
 
 		EntityLoad( "data/entities/items/pickup/heart_better.xml", pos_x, pos_y )
-		EntityLoad( "data/entities/items/wand_unshuffle_08.xml", pos_x, pos_y + 12 )
+		EntityLoad( "data/entities/items/wand_unshuffle_08.xml", pos_x - 8, pos_y + 12 )
+		EntityLoad( "data/entities/items/wand_unshuffle_10.xml", pos_x + 8, pos_y + 12 )
 		--ConvertMaterialEverywhere( CellFactory_GetType( "fire" ), CellFactory_GetType( "smoke" ) ) --Shifts all fire out of the world permanently.
 		--ConvertMaterialEverywhere( CellFactory_GetType( "liquid_fire" ), CellFactory_GetType( "smoke" ) ) --Shifts all "fire" out of the world permanently.
 
@@ -23,7 +24,7 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
             --CreateItemActionEntity( "MOCREEPS_BUNGAL_SHIFT", pos_x - 16, pos_y )
             --CreateItemActionEntity( "MOCREEPS_MASS_MATERIA_CONVERSION", pos_x + 16, pos_y )
             EntityLoad( "data/entities/items/pickup/heart_fullhp.xml",  pos_x + 8, pos_y )
-			EntityLoad( "mods/mo_creeps/files/entities/props/statue_generous.xml", 4288, 2331 )
+			EntityLoad( "mods/mo_creeps/files/entities/props/statue_fire_lukki.xml", 4288, 2331 )
         end
 
 		

@@ -33,6 +33,8 @@ Should guarantee it appears when needed
 Improve Creature Shifting, currently only works if you haven't met/serialised the creature before shifting it away.
 If I'm building a table anyways, may just be better to delete/respawn if the shift victim gets close? But how to detect if someone is a victim or not? hmm...
 
+Some positive effects in April Fools event would be useful, currently it's all negative/neutral
+
 
 
 

@@ -45,83 +45,299 @@
 		kind = STREAMING_EVENT_BAD,
 		delay_timer = 300,
 		action_delayed = function(event)
-
-            local pool = {
-                "blindgazer",
-                "blob_big",
-                "blob_huge",
-                "c_basebot_speeder_mocreep",
-                "cat_mocreeps",
-                "ccc_bat_psychic",
-                "ceiling_fungus",
-                "devourer_ghost",
-                "devourer_magic",
-                "drone_mini",
-                "drone_status_ailment",
-                "enchanted_duck",
-                "fairy_cheap",
-                "fairy_big",
-                "fairy_big_discord",
-                "fairy_esoteric",
-                "forsaken_eye",
-                "fungus_smoking_creep",
-                "gazer_greater",
-                "secret/gazer_greater_cold",
-                "gazer_greater_sky",
-                "gazer_robot",
-                "ghost_bow",
-                "giant_centipede",
-                "goo_slug",
-                "hideous_mass",
-                "hideous_mass_red",
-                "hisii_engineer",
-                "hisii_giga_bomb",
-                "hisii_hobo",
-                "hisii_minecart",
-                "hisii_minecart_tnt",
-                "hisii_minecart_weak",
-                "hisii_rocketshotgun",
-                "locust_swarm",
-                "longleg_pillar",
-                "lukki_fungus",
-                "lukki_swarmling",
-                "mimic_explosive_box",
-                "musical_being",
-                "musical_being_weak",
-                "musical_being_weak_healer",
-                "poisonmushroom",
-                "poring",
-                "poring_devil",
-                "poring_holy",
-                "poring_lukki",
-                "poring_magic",
-                "rat_birthday",
-                "sentry",
-                "shaman_greater_mocreep",
-                "star_child",
-                "tank_flame_mocreep",
-                "tentacler_big",
-                "tesla_turret",
-                "triangle_gem",
-                "whisp",
-                "wizard_ambrosia",
-                "wizard_copeseethmald",
-                "wizard_duck",
-                "wizard_explosive",
-                "wizard_firemage_greater",
-                "wizard_jackofalltrades",
-                "wizard_manaeater",
-                "wizard_transmutation",
-                "wizard_watermage_greater",
-                "wizard_z_poly_miniboss",
-                "wraith_returner_mocreep",
-                "wraith_weirdo_shield",
-                "bubbles/acid/bubble_liquid",
-                "bubbles/water/bubble_liquid",
-                "bubbles/ambrosia/bubble_liquid",
-                "bubbles/freezing_liquid/bubble_liquid",
-                "boss_toxic_worm/boss_toxic_worm_minion",
-            }
+                
+            local currentLevel = tonumber( GlobalsGetValue( "mocreep_biome_level", "1" ) )
+            local pool = {}
+                            
+            if currentLevel == 1 then --Mines
+            
+                pool = {
+                    "cat_mocreeps",
+                    "ceiling_fungus",
+                    "drone_mini",
+                    "drone_status_ailment",
+                    "enchanted_duck",
+                    "fairy_cheap",
+                    "fairy_big",
+                    "fairy_big_discord",
+                    "fungus_smoking_creep",
+                    "goo_slug",
+                    "hisii_giga_bomb",
+                    "hisii_hobo",
+                    "hisii_minecart",
+                    "hisii_minecart_tnt",
+                    "hisii_minecart_weak",
+                    "longleg_pillar",
+                    "mimic_explosive_box",
+                    "poring",
+                    "excavationsite/poring_lukki_fake",
+                    "rat_birthday",
+                    "wizard_explosive",
+                    "wraith_returner_mocreep",
+                    "bubbles/acid/bubble_liquid",
+                    "bubbles/water/bubble_liquid",
+                    "bubbles/ambrosia/bubble_liquid",
+                    "boss_toxic_worm/boss_toxic_worm_minion",
+                }
+            
+            elseif currentLevel == 2 then --Coal Pits
+            
+                pool = {
+                    "cat_mocreeps",
+                    "ccc_bat_psychic",
+                    "ceiling_fungus",
+                    "drone_mini",
+                    "drone_status_ailment",
+                    "enchanted_duck",
+                    "fairy_cheap",
+                    "fairy_big",
+                    "fairy_big_discord",
+                    "fungus_smoking_creep",
+                    "goo_slug",
+                    "hideous_mass_red",
+                    "hisii_giga_bomb",
+                    "hisii_hobo",
+                    "hisii_minecart",
+                    "hisii_minecart_tnt",
+                    "hisii_minecart_weak",
+                    "lukki_swarmling",
+                    "longleg_pillar",
+                    "mimic_explosive_box",
+                    "poring",
+                    "excavationsite/poring_lukki_fake",
+                    "rat_birthday",
+                    "wraith_returner_mocreep",
+                    "whisp",
+                    "wizard_ambrosia",
+                    "wizard_manaeater",
+                    "bubbles/acid/bubble_liquid",
+                    "bubbles/water/bubble_liquid",
+                    "bubbles/ambrosia/bubble_liquid",
+                    "bubbles/freezing_liquid/bubble_liquid",
+                    "boss_toxic_worm/boss_toxic_worm_minion",
+                }
+            
+            elseif currentLevel == 3 then --Snowy Depths/Hiisi Base
+            
+                pool = {
+                    "blob_big",
+                    "cat_mocreeps_golden",
+                    "ccc_bat_psychic",
+                    "devourer_ghost",
+                    "drone_mini",
+                    "drone_status_ailment",
+                    "enchanted_duck",
+                    "fairy_cheap",
+                    "fairy_big",
+                    "fairy_big_discord",
+                    "forsaken_eye",
+                    "fungus_smoking_creep",
+                    "secret/gazer_greater_cold",
+                    "ghost_bow",
+                    "hideous_mass_red",
+                    "hisii_engineer",
+                    "hisii_giga_bomb",
+                    "hisii_hobo",
+                    "hisii_minecart",
+                    "hisii_minecart_tnt",
+                    "hisii_rocketshotgun",
+                    "mimic_explosive_box",
+                    "poring_magic",
+                    "excavationsite/poring_lukki_fake",
+                    "rat_birthday",
+                    "sentry",
+                    "shaman_greater_mocreep",
+                    "tank_flame_mocreep",
+                    "tentacler_big",
+                    "tesla_turret",
+                    "whisp",
+                    "wizard_ambrosia",
+                    "wizard_copeseethmald",
+                    "wizard_duck",
+                    "wizard_manaeater",
+                    "bubbles/acid/bubble_liquid",
+                    "bubbles/ambrosia/bubble_liquid",
+                    "bubbles/freezing_liquid/bubble_liquid",
+                    "boss_toxic_worm/boss_toxic_worm_minion",
+                }
+            
+            elseif currentLevel == 4 then --Jungle
+            
+                pool = {
+                    "blob_big",
+                    "cat_mocreeps_sorako",
+                    "devourer_ghost",
+                    "devourer_magic",
+                    "fairy_cheap",
+                    "fairy_big",
+                    "forsaken_eye",
+                    "fungus_smoking_creep",
+                    "secret/gazer_greater_cold",
+                    "ghost_bow",
+                    "giant_centipede",
+                    "hideous_mass_red",
+                    "hisii_engineer",
+                    "hisii_giga_bomb",
+                    "hisii_rocketshotgun",
+                    "locust_swarm",
+                    "lukki_fungus",
+                    "lukki_swarmling",
+                    "mimic_explosive_box",
+                    "poring_magic",
+                    "poring_lukki",
+                    "rat_birthday",
+                    "sentry",
+                    "shaman_greater_mocreep",
+                    "tank_flame_mocreep",
+                    "tentacler_big",
+                    "tesla_turret",
+                    "wizard_ambrosia",
+                    "wizard_copeseethmald",
+                    "wizard_duck",
+                    "wizard_jackofalltrades",
+                    "wizard_manaeater",
+                    "wizard_transmutation",
+                    "wizard_watermage_greater",
+                    "bubbles/acid/bubble_liquid",
+                    "bubbles/ambrosia/bubble_liquid",
+                    "bubbles/freezing_liquid/bubble_liquid",
+                }
+            
+            elseif currentLevel == 5 then --Vault
+            
+                pool = {
+                    "blindgazer",
+                    "blob_big",
+                    "blob_huge",
+                    "cat_mocreeps_skateboard",
+                    "devourer_ghost",
+                    "devourer_magic",
+                    "esoteric_being",
+                    "fairy_cheap",
+                    "secret/gazer_greater_cold",
+                    "gazer_greater",
+                    "ghost_bow",
+                    "giant_centipede",
+                    "hideous_mass_red",
+                    "hisii_engineer",
+                    "hisii_giga_bomb",
+                    "hisii_rocketshotgun",
+                    "locust_swarm",
+                    "lukki_fungus",
+                    "lukki_swarmling",
+                    "vault/mimic_explosive_box",
+                    "musical_being_weak",
+                    "poring_magic",
+                    "poring_lukki",
+                    "rat_birthday",
+                    "sentry",
+                    "shaman_greater_mocreep",
+                    "star_child",
+                    "tank_flame_mocreep",
+                    "tentacler_big",
+                    "tesla_turret",
+                    "triangle_gem",
+                    "wizard_ambrosia",
+                    "wizard_copeseethmald",
+                    "wizard_duck",
+                    "wizard_jackofalltrades",
+                    "wizard_manaeater",
+                    "wizard_transmutation",
+                    "wizard_watermage_greater",
+                    "wizard_z_poly_miniboss",
+                    "wraith_weirdo_shield",
+                    "bubbles/acid/bubble_liquid",
+                    "bubbles/ambrosia/bubble_liquid",
+                    "bubbles/freezing_liquid/bubble_liquid",
+                }
+            
+            elseif currentLevel == 6 then --Temple of the Art
+            
+                pool = {
+                    "blindgazer",
+                    "blob_huge",
+                    "c_basebot_speeder_mocreep",
+                    "cat_mocreeps_esoteric",
+                    "devourer_magic",
+                    "esoteric_being",
+                    "fairy_esoteric",
+                    "gazer_greater",
+                    "ghost_bow",
+                    "giant_centipede",
+                    "hideous_mass_red",
+                    "hideous_mass",
+                    "hisii_engineer",
+                    "hisii_giga_bomb",
+                    "lukki_fungus",
+                    "lukki_swarmling",
+                    "vault/mimic_explosive_box",
+                    "musical_being",
+                    "musical_being_weak",
+                    "poring_magic",
+                    "poring_holy",
+                    "rat_birthday",
+                    "sentry",
+                    "fungiforest/shaman_greater_mocreep",
+                    "star_child",
+                    "tank_flame_mocreep",
+                    "vault/tentacler_big",
+                    "triangle_gem",
+                    "wizard_ambrosia",
+                    "wizard_copeseethmald",
+                    "wizard_duck",
+                    "wizard_firemage_greater",
+                    "wizard_jackofalltrades",
+                    "wizard_manaeater",
+                    "wizard_transmutation",
+                    "wizard_watermage_greater",
+                    "wizard_z_poly_miniboss",
+                    "wraith_returner_mocreep",
+                    "wraith_weirdo_shield",
+                    "bubbles/ambrosia/bubble_liquid",
+                    "bubbles/freezing_liquid/bubble_liquid",
+                }
+            
+            elseif currentLevel == 7 then --Heaven, Hell & Beyond
+            
+                pool = {
+                    "the_end/blindgazer",
+                    "c_basebot_speeder_mocreep",
+                    "cat_mocreeps_esoteric",
+                    "the_end/devourer_magic",
+                    "esoteric_being",
+                    "fairy_esoteric",
+                    "the_end/gazer_greater",
+                    "the_end/gazer_greater_cold",
+                    "the_end/gazer_greater_sky",
+                    "the_end/ghost_bow",
+                    "giant_centipede",
+                    "hideous_mass_red",
+                    "hideous_mass",
+                    "lukki_fungus",
+                    "the_end/musical_being",
+                    "poring_devil",
+                    "poring_holy",
+                    "rat_birthday",
+                    "the_end/sentry",
+                    "fungiforest/shaman_greater_mocreep",
+                    "the_end/star_child",
+                    "vault/tentacler_big",
+                    "wizard_ambrosia",
+                    "wizard_copeseethmald",
+                    "the_end/wizard_firemage_greater",
+                    "wizard_jackofalltrades",
+                    "wizard_manaeater",
+                    "wizard_transmutation",
+                    "wizard_watermage_greater",
+                    "the_end/wraith_returner_mocreep",
+                    "wraith_weirdo_shield",
+                    "bubbles/ambrosia/bubble_liquid",
+                    "bubbles/healthium/bubble_liquid",
+                    "bubbles/healthium/bubble_liquid",
+                    "boss_toxic_worm",
+                }
+            
+            end
 
 			local players = get_players()
 			SetRandomSeed( GameGetFrameNum(), GameGetFrameNum() + 353 )
@@ -235,7 +451,8 @@
                 local ex = x + math.cos( angle ) * length
                 local ey = y - math.sin( angle ) * length
 
-                EntityLoad( "data/entities/"..pool[Random(1, #pool)]..".xml", ex, ey )
+                local creep_id = EntityLoad( "data/entities/"..pool[Random(1, #pool)]..".xml", ex, ey )
+                add_text_above_head( creep_id, StreamingGetRandomViewerName() )
                 EntityLoad( "data/scripts/streaming_integration/entities/empty_circle.xml", ex, ey )
 			end
 		end,
@@ -332,7 +549,8 @@
                     local ex = x + math.cos( angle ) * length
                     local ey = y - math.sin( angle ) * length
 
-                    EntityLoad( "mods/mo_creeps/files/scripts/materials/mudman_spawner.xml", ex, ey )
+                    local creep_id = EntityLoad( "mods/mo_creeps/files/scripts/materials/mudman_spawner.xml", ex, ey )
+                    add_text_above_head( creep_id, StreamingGetRandomViewerName() )
 
                     count = count - 1
         
@@ -355,7 +573,7 @@
 			
 			for i,entity_id in ipairs( players ) do
                 local x, y = EntityGetTransform( entity_id )
-                EntityLoad( "mods/mo_creeps/files/scripts/streaming_integration/entities/necromancer_super.xml", x, y - 16 )
+                EntityLoad( "mods/mo_creeps/files/scripts/streaming_integration/entities/portal_skoude.xml", x, y - 16 )
 			end
 		end,
 	})
@@ -365,7 +583,7 @@
 	{
 		id = "MOCREEP_HUNGRY_ORB",
 		ui_name = "$integration_mocreep_HUNGRY_ORB_name",
-		ui_description = "integration_mocreep_HUNGRY_ORB_desc",
+		ui_description = "$integration_mocreep_HUNGRY_ORB_desc",
 		ui_icon = "data/ui_gfx/streaming_event_icons/health_plus.png",
 		ui_author = "Conga Lyne - Mo Creeps",
 		weight = 0.05,
@@ -376,7 +594,7 @@
 			for i,entity_id in ipairs( players ) do
                 local x, y = EntityGetTransform( entity_id )
 
-                EntityLoad( "mods/mo_creeps/files/entities/items/pickups/orb_mattereater.xml", x, y - 32 )
+                EntityLoad( "mods/mo_creeps/files/entities/items/pickups/orb_mattereater.xml", x, y - 16 )
                 GamePlaySound( "data/audio/Desktop/projectiles.snd", "player_projectiles/crumbling_earth/create", x, y)
 			end
 		end,
@@ -399,6 +617,65 @@
                 local x, y = EntityGetTransform( entity_id )
 
                 EntityLoad( "mods/mo_creeps/files/entities/projectiles/orb_psychotic_nodmg.xml", x, y )
+                GamePlaySound( "data/audio/Desktop/projectiles.bank", "player_projectiles/megalaser/launch", x, y )
+			end
+		end,
+	})
+
+
+    table.insert(streaming_events,
+	{
+		id = "MOCREEP_CLOWNS",
+		ui_name = "$integration_mocreep_CLOWNS_name",
+		ui_description = "$integration_mocreep_CLOWNS_desc",
+		ui_icon = "data/ui_gfx/streaming_event_icons/health_plus.png",
+		ui_author = "Conga Lyne - Mo Creeps",
+		weight = 0.4,
+		kind = STREAMING_EVENT_NEUTRAL,
+		action = function(event)
+			local players = get_players()
+			SetRandomSeed( GameGetFrameNum(), GameGetFrameNum() + 353 )
+
+            local catcount = 7
+			
+			for i,entity_id in ipairs( players ) do
+                repeat
+                    local x, y = EntityGetTransform( entity_id )
+                    
+                    local angle = Random( 0, 31415 ) * 0.0001
+                    local length = 50
+                    
+                    local ex = x + math.cos( angle ) * length
+                    local ey = y - math.sin( angle ) * length
+
+                    local creep_id = EntityLoad( "data/entities/animals/seasonal/hisii_hobo.xml", ex, ey )
+                    add_text_above_head( creep_id, StreamingGetRandomViewerName() )
+
+                    catcount = catcount - 1
+        
+                until (catcount < 1)
+			end
+		end,
+	})
+
+
+    table.insert(streaming_events,
+	{
+		id = "MOCREEP_SWAPPER_CURSE",
+		ui_name = "$integration_mocreep_SWAPPER_CURSE_name",
+		ui_description = "$integration_mocreep_SWAPPER_CURSE_desc",
+		ui_icon = "data/ui_gfx/streaming_event_icons/health_plus.png",
+		ui_author = "Conga Lyne - Mo Creeps",
+		weight = 0.9,
+		kind = STREAMING_EVENT_BAD,
+		action = function(event)
+			local players = get_players()
+			
+			for i,entity_id in ipairs( players ) do
+                local x, y = EntityGetTransform( entity_id )
+
+                local cid = EntityLoad( "mods/mo_creeps/files/entities/misc/effect_plagiarize_swapper.xml", x, y )
+                EntityAddChild( entity_id, cid )
                 GamePlaySound( "data/audio/Desktop/projectiles.bank", "player_projectiles/megalaser/launch", x, y )
 			end
 		end,

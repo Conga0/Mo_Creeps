@@ -196,9 +196,9 @@ function spawn_music_trigger( x, y )
 
     --Killing the Aesthete of Heat
     if mocreep_fire_lukki_goldmode then
-        EntityLoad( "mods/mo_creeps/files/entities/props/goldmode/statue_generous.xml", 4288, 2331 )
+        EntityLoad( "mods/mo_creeps/files/entities/props/goldmode/statue_fire_lukki.xml", 4288, 2331 )
     elseif mocreep_fire_lukki then
-        EntityLoad( "mods/mo_creeps/files/entities/props/statue_generous.xml", 4288, 2331 )
+        EntityLoad( "mods/mo_creeps/files/entities/props/statue_fire_lukki.xml", 4288, 2331 )
     else
         EntityLoad( "mods/mo_creeps/files/entities/props/statue_empty.xml", 4288, 2331 )
     end

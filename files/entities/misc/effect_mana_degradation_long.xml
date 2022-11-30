@@ -35,8 +35,7 @@
 		>
 	</LuaComponent>
 
-    <GameEffectComponent 
-		_tags="effect_mana_degradation"
+    <GameEffectComponent
         frames="900"
     >
 	</GameEffectComponent >

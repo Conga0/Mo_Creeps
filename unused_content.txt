@@ -14,7 +14,7 @@ Remember the checklist!!
 1.1.0 Changelog: [The Secret Update]
 Added 4 new environmental hazards
 Added 10 new creeps
-Added 7 new twitch events
+Added 8 new twitch events
 Added 3 new spells
 Added a new seasonal event: April Fools!
 Added new biome variation to the world, explore the same biomes in wildly different ways!
@@ -66,6 +66,7 @@ Fixed enemies spawning in the Trophy room inside purgatory
 Fixed Chaotic Polymorph Crystal trying to polymorph poly-immune enemies
 Fixed Lime Crystal not appearing in the Conjurer Menu
 Fixed all mentions of "Hisii" to be "Hiisi"
+Fixed Creepy Blob having a broken stainmap
 FIXED MAGIC DEVOURERS HAVING 90% DAMAGE REDUCTION FROM ALL SOURCES
 Very slightly reduced blood produced by Angeling & Devilings
 Red Sand now absorbs blood to grow
@@ -132,10 +133,6 @@ Added slightly modified spawn list for alternate biomes Hisii Village
 Added slightly modified spawn list for alternate biomes Worm Tunnels
 Reduced mana cost of Bloody Bite from 100 to 50
 Increased Divine Being's durability
-
-Fixed Creepy Blob having a broken stainmap
-Added a new portal room between Essence of Water & Hell Gold biome, it is planned to be accessed by defeating the Aesthete of Heat
-Added something to the boss arenas
 Mass Materia Conversion now converts Blood to Red Sand
 Added translation keys for some previously missing effects
 Masters of Explosives can only apply one status effect per entity at a time now to save performance
@@ -143,8 +140,19 @@ Implemented Spoopy's Blob Ball attack to the Colossal Blob
 Colossal Blob now has 50% damage resistance to all sources (applies to largest blob only)
 Optimised Esoteric Being's audio
 Added setting to enable Alternate Esoteric Being Sprite
-April fools now has a small chance to have shuffled spawns for main path biomes, with a 100% chance to occur in Temple of the Art
-Improved Hungry Orb's ui sprite
+
+Fixed Tnt Minecart Hisii cocking their dynamite before throwing it
+Fixed Mass Fire not working
+Fixed Star Child not spawning in modded space biomes
+Fixed Hiisi Clowns having unfinished jumping sprites
+Fixed Skoude twitch event spawning skoude too early
+Aesthete of Heat now has immortality particles during his Healing Phase courtesy of Spoopy
+Aesthete of Heat no longer fires meterors or giga death crosses if the player is dead
+Sharply reduced desert poring's damage output
+Random Creeps & Weirdos Twitch Event now scales based off biome progress
+New twitch event: Clowns, spawns a bunch of clowns to spit on the streamer
+Names now appear above creature's heads in some twitch redeems
+Removed some unnecessary tags from lua scripts
 
 
 

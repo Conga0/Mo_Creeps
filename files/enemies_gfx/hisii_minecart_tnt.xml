@@ -73,8 +73,6 @@
   frame_wait="0.15"
   frames_per_row="8"
   loop="0"   >
-  <Event frame="0" name="shotgun_cock" probability="1" check_physics_material="0"/>
-  <Event frame="4" name="shoot_bullet" probability="1" check_physics_material="0"/>
   <Event frame="0" name="throw"/>
  </RectAnimation>
 </Sprite>

@@ -46,7 +46,6 @@ for i,v in ipairs( targets ) do
 		if valid and EntityHasTag(v, "hittable") then
 			local eid = EntityLoad( particlePath, pos_x, pos_y )
 			EntityAddChild( v, eid )
-			end
 		end
 	end
 end

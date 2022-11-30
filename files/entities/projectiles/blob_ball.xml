@@ -117,23 +117,11 @@
     radius="40" >
   </LightComponent>
 
-  <CharacterDataComponent
-      collision_aabb_min_x="-18"
-      collision_aabb_max_x="18"
-      collision_aabb_min_y="-18"
-      collision_aabb_max_y="18"
-      mass="2.6"
-      >
-  </CharacterDataComponent>
-
-  <HitboxComponent
-      _enabled="1"
-      aabb_min_x="-18"
-      aabb_max_x="18"
-      aabb_min_y="-18"
-      aabb_max_y="18"
-      >
-  </HitboxComponent>
+  <GameAreaEffectComponent
+      radius="16"
+      collide_with_tag="hittable"
+      frame_length="1"
+  ></GameAreaEffectComponent>
 
   <AudioComponent
       file="data/audio/Desktop/projectiles.bank"

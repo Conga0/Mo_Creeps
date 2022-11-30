@@ -492,7 +492,7 @@
 	cell_type="liquid"
 	wang_color="ff200074"
 	generates_smoke="0"
-	liquid_gravity="2"
+	liquid_gravity="2.2"
 	liquid_sand="1"
 	on_fire="1"
 	requires_oxygen="0"

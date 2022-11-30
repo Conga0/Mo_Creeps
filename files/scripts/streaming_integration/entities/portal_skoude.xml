@@ -50,7 +50,7 @@
 	<LoadEntitiesComponent
         count.min="1"
         count.max="1"
-        timeout_frames="300"
+        timeout_frames="220"
         kill_entity="1"
         entity_file="data/entities/animals/necromancer_super.xml" >
     </LoadEntitiesComponent>

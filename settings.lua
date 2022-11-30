@@ -178,9 +178,15 @@ end
 if HasFlagPersistent( "mocreep_misc_pandora_chest_rain" ) then
   statue_count = statue_count + 1
 end
+if HasFlagPersistent( "mocreeps_card_unlocked_boss_fire_lukki" ) then
+  statue_count = statue_count + 1
+end
+if HasFlagPersistent( "mocreeps_card_unlocked_secret_knowledge_of_kings" ) then
+  statue_count = statue_count + 1
+end
 
---Todo: add translation keys for these, these aren't finished yet though, not even attainable as of writing, so I'll decide if I want to keep it or not later
---Likely unlock if you have 8 statues, for now it's kept at an unreachable 13 until it's fully functional.
+
+--Forced Seasonal Event Settings, only unlocked after attaining at least 8 statues
 
 if statue_count >= 8 then
   table.insert(mod_settings,

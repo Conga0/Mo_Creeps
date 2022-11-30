@@ -324,6 +324,10 @@ integration_mocreep_HUNGRY_ORB_name,"Hungry Orb",,,,,,,,,,,,,
 integration_mocreep_HUNGRY_ORB_desc,"???",,,,,,,,,,,,,
 integration_mocreep_DELUSIONAL_name,"Delusional Streamer",,,,,,,,,,,,,
 integration_mocreep_DELUSIONAL_desc,"Your senses decieve you.",,,,,,,,,,,,,
+integration_mocreep_CLOWNS_name,"CLOWNS",,,,,,,,,,,,,
+integration_mocreep_CLOWNS_desc,"You're not a clown, you're the entire circus!!",,,,,,,,,,,,,
+integration_mocreep_SWAPPER_CURSE_name,"Curse of Swapping",,,,,,,,,,,,,
+integration_mocreep_SWAPPER_CURSE_desc,"You feel the blood of Swapper Mages runs through you",,,,,,,,,,,,,
 secretmessage_mocreep_herobrine_01,"I see you.",,,,,,,,,,,,,
 secretmessage_mocreep_divineorb_name,"You discovered an orb of divine knowledge",,,,,,,,,,,,,
 secretmessage_mocreep_divineorb_desc,"Secrets of otherworldy royalty have been unlocked to you.",,,,,,,,,,,,,
@@ -344,6 +348,8 @@ book_mocreeps_symbol_pinksand,"Vaaleanpunainen Hiekka",,,,,,,,,,,,,
 book_mocreeps_symbol_pinksand_description,"A triangle. Within this, create a line piercing through it's purpose. \nInside this triangle near it's peak, a circle sits. \nThe circle is pierced by the line, and is ready to change shape. \nWith this symbol, the pinkest sand will be born.",,,,,,,,,,,,,
 book_mocreeps_symbol_fungus,"Sieni",,,,,,,,,,,,,
 book_mocreeps_symbol_fungus_description,"Two circles, these are specks of dust. \nBetween these specks, draw a line moving upwards. \nWhere the line stops draw two more moving towards the circles. \nConnect the ends of those lines together with one final line, and a fungal infection is born.",,,,,,,,,,,,,
+status_mocreep_plagiarize_swapper_name,"Curse of Swapping",,,,,,,,,,,,,
+status_mocreep_plagiarize_swapper_desc,"You feel the blood of Swapper Mages runs through you",,,,,,,,,,,,,
 ]])
 
 --Yggdrasil's Knowledge (The knowledge of life)
@@ -1126,6 +1132,24 @@ if spoopyGFXSetting == true then
   ModTextFileSetContent("mods/mo_creeps/files/scripts/animals/angel_holy_beam_calldown.lua", content)
 
 end
+
+
+
+--Adds Biome tracker script to the player character, it will update their current biome difficulty and save the highest one they've ever achieved, maxing out at 7 in Heaven/Hell
+
+local content = ModTextFileGetContent("data/entities/player_base.xml")
+local xml = nxml.parse(content)
+xml:add_child(nxml.parse([[
+  <LuaComponent
+    script_source_file="mods/mo_creeps/files/scripts/magic/biome_difficulty_tracker.lua"
+    execute_every_n_frame="600"
+    execute_times="-1"
+    remove_after_executed="0"
+    >
+  </LuaComponent>
+]]))
+ModTextFileSetContent("data/entities/player_base.xml", tostring(xml))
+
 
 
   
