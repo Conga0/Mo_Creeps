@@ -9,8 +9,8 @@
 	</LifetimeComponent>
 
 	<UIIconComponent
-		name="Delusional"
-		description="Your senses decieve you."
+		name="$status_mocreep_delusional_name"
+		description="$status_mocreep_delusional_desc"
 		icon_sprite_file="mods/mo_creeps/files/ui_gfx/status_indicators/delusional.png"
 		is_perk="0"
 		display_above_head="0"

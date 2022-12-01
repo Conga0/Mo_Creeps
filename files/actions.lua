@@ -582,21 +582,29 @@ table.insert(actions,
     price             = 200,
     mana              = 20,
     action            = function()
+        -- this always runs, so just leave it up here
         draw_actions( 1, true )
-        local iter = 1
-        local iter = tonumber(GlobalsGetValue("Mocreeps_global_splitseed", "0"))
-        if iter == 0 then
-            SetRandomSeed( GameGetFrameNum(), GameGetFrameNum() - 523 )
-            GlobalsSetValue("Mocreeps_global_splitseed", "1")
-        end
-        local rnd_num = Random( 1, 2 )
-        if ( hand ~= nil ) and ( rnd_num == 1 ) then
-            for i,data in ipairs( hand ) do
-                if ( data.id ~= "MOCREEPS_SPLIT_SPELL" and data.type ~= ACTION_TYPE_OTHER ) then
-                    data.action()
-                end
+        if reflecting then
+            -- force spell tooltip to show stat change without always applying it
+            -- I don't want it to though, because it only does the degree increase if it makes a split
+            --c.spread_degrees = c.spread_degrees + 10.0  
+        else
+            -- this is run *after* reflection
+            local iter = 1
+            local iter = tonumber(GlobalsGetValue("Mocreeps_global_splitseed", "0"))
+            if iter == 0 then
+                SetRandomSeed( GameGetFrameNum(), GameGetFrameNum() - 523 )
+                GlobalsSetValue("Mocreeps_global_splitseed", "1")
             end
-            c.spread_degrees = c.spread_degrees + 10.0  
+            local rnd_num = Random( 1, 2 )
+            if ( hand ~= nil ) and ( rnd_num == 1 ) then
+                for i,data in ipairs( hand ) do
+                    if ( data.id ~= "MOCREEPS_SPLIT_SPELL" and data.type ~= ACTION_TYPE_OTHER ) then
+                        data.action()
+                    end
+                end
+                c.spread_degrees = c.spread_degrees + 10.0  
+            end
         end
     end,
 })

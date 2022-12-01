@@ -1,0 +1,12 @@
+<Entity name="effect_tripping_balls" tags="tripping_extreme">
+
+	<InheritTransformComponent>
+    </InheritTransformComponent>
+
+	<LuaComponent 
+	    script_source_file="mods/mo_creeps/files/scripts/magic/effect_trip_03_divided.lua"
+	    execute_every_n_frame="6"
+		remove_after_executed="1"
+	></LuaComponent>
+
+</Entity>

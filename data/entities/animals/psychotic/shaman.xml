@@ -15,7 +15,7 @@
 			attack_ranged_enabled="1"
 			attack_ranged_min_distance="20"
     		attack_ranged_max_distance="200"
-    		attack_ranged_entity_file="data/entities/projectiles/psychotic/orb_cursed.xml"
+    		attack_ranged_entity_file="mods/mo_creeps/files/entities/projectiles/psychotic/orb_cursed.xml"
 			attack_ranged_entity_count_min="2"
     		attack_ranged_entity_count_max="2"
 			attack_ranged_state_duration_frames="90"

@@ -426,6 +426,41 @@ end
 
 
 
+---Alternate Biomes
+if ModIsEnabled("biome-plus") then
+
+
+--Spin Boss
+local content = ModTextFileGetContent("data/entities/animals/lukki/mod/electrolukki_big.xml")
+local xml = nxml.parse(content)
+xml:add_child(nxml.parse([[
+  <LuaComponent
+    script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier_half.lua"
+    execute_times="1"
+		execute_every_n_frame="3"
+    remove_after_executed="1"
+    >
+  </LuaComponent>
+]]))
+ModTextFileSetContent("data/entities/animals/lukki/mod/electrolukki_big.xml", tostring(xml))
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ---new enemies

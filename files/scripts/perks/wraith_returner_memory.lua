@@ -20,6 +20,7 @@ if ( storages ~= nil ) then
 		local name = ComponentGetValue2( comp, "name" )
 		if ( name == "projectile_file" ) then
 			projectile = ComponentGetValue2( comp, "value_string" )
+			--GamePrint("projectile string memorised is " .. tostring(projectile))
 			break
 		end
 	end
@@ -30,7 +31,7 @@ local DMGstorages = EntityGetComponent( projectile_id, "ProjectileComponent" )
 
 if ( DMGstorages ~= nil ) then
 	for i,comp in ipairs( DMGstorages ) do
-		damageCount = ComponentGetValue2( comp, "damage" )
+		damageCount = (ComponentGetValue2( comp, "damage" ) * 3) -- triples projectile damage before returning
 	end
 end
 
@@ -39,8 +40,12 @@ if ( string.len( projectile ) > 0 ) then
 	
 	if ( storages ~= nil ) then
 		for i,comp in ipairs( storages ) do
-			ComponentSetValue2( comp, "value_string", projectile )
-			ComponentSetValue2( comp, "value_float", damageCount )
+			local name = ComponentGetValue2( comp, "name" )
+			if ( name == "proj_file_mocreep" ) then
+				--GamePrint("Found Variable Component")
+				ComponentSetValue2( comp, "value_string", projectile )
+				ComponentSetValue2( comp, "value_float", damageCount )
+			end
 		end
 	end
 end

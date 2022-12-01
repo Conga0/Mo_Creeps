@@ -4,7 +4,7 @@ local parent_id = EntityGetParent(entity_id)
 if EntityHasTag(parent_id, "player_unit") then
 	
     --wizard_returner is not on the list, keeps causing burning for some reason
-    local illusion_list = { "blindgazer", "ghost_bow", "goo_slug", "poisonmushroom", "poring", "roboguard", "shotgunner", "skullfly", "skullrat", "wizard_manaeater", "wizard_poly", "wizard_transmutation" }
+    local illusion_list = { "blindgazer", "ghost_bow", "goo_slug", "poisonmushroom", "poring", "roboguard", "shotgunner", "shaman", "skullfly", "skullrat", "wizard_manaeater", "wizard_poly", "wizard_transmutation" }
 
     local pos_x, pos_y = EntityGetTransform( entity_id )
     SetRandomSeed( GameGetFrameNum(), pos_x + entity_id )

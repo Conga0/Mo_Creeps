@@ -1,0 +1,5 @@
+mods/mo_creeps/files/ragdolls/hisii_clown/head.png
+mods/mo_creeps/files/ragdolls/hisii_clown/leg_l.png
+mods/mo_creeps/files/ragdolls/hisii_clown/leg_r.png
+mods/mo_creeps/files/ragdolls/hisii_clown/arm.png
+mods/mo_creeps/files/ragdolls/hisii_clown/torso.png

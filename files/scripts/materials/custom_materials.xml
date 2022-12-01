@@ -758,7 +758,7 @@
 
 
 	<Reaction probability="100"
-		input_cell1="alcohol" input_cell2="mocreeps_redstone" input_cell3="mocreeps_blood_worm_centipede"
+		input_cell1="mocreeps_insect_husk" input_cell2="mocreeps_redstone" input_cell3="mocreeps_blood_worm_centipede"
 		output_cell1="mocreeps_liquid_knowledge_of_kings" output_cell2="mocreeps_liquid_knowledge_of_kings" output_cell3="mocreeps_liquid_knowledge_of_kings"
 		>
 	</Reaction>

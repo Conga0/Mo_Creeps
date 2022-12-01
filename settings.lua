@@ -106,14 +106,14 @@ mod_settings =
     value_max = 1000,
     value_display_multiplier = 1,
     value_display_formatting = boss_health_multiplayer_formatting,
-    scope = MOD_SETTING_SCOPE_RUNTIME_RESTART,
+    scope = MOD_SETTING_SCOPE_RUNTIME,
   },
   {
     id = "particle_reduction",
     ui_name = particle_reduction_name,
     ui_description = particle_reduction_desc,
     value_default = false,
-    scope = MOD_SETTING_SCOPE_RUNTIME_RESTART,
+    scope = MOD_SETTING_SCOPE_RUNTIME,
   },
   {
     id = "spoopy_graphics",

@@ -16,6 +16,7 @@ Added 4 new environmental hazards
 Added 10 new creeps
 Added 8 new twitch events
 Added 3 new spells
+Added 1 new perk
 Added a new seasonal event: April Fools!
 Added new biome variation to the world, explore the same biomes in wildly different ways!
 Birthday event now occurs during July, this is when the mod first started being worked on.
@@ -67,6 +68,10 @@ Fixed Chaotic Polymorph Crystal trying to polymorph poly-immune enemies
 Fixed Lime Crystal not appearing in the Conjurer Menu
 Fixed all mentions of "Hisii" to be "Hiisi"
 Fixed Creepy Blob having a broken stainmap
+Fixed Tnt Minecart Hisii cocking their dynamite before throwing it
+Fixed Mass Fire not working
+Fixed Star Child not spawning in modded space biomes
+Fixed Skoude twitch event spawning skoude too early
 FIXED MAGIC DEVOURERS HAVING 90% DAMAGE REDUCTION FROM ALL SOURCES
 Very slightly reduced blood produced by Angeling & Devilings
 Red Sand now absorbs blood to grow
@@ -140,19 +145,21 @@ Implemented Spoopy's Blob Ball attack to the Colossal Blob
 Colossal Blob now has 50% damage resistance to all sources (applies to largest blob only)
 Optimised Esoteric Being's audio
 Added setting to enable Alternate Esoteric Being Sprite
-
-Fixed Tnt Minecart Hisii cocking their dynamite before throwing it
-Fixed Mass Fire not working
-Fixed Star Child not spawning in modded space biomes
-Fixed Hiisi Clowns having unfinished jumping sprites
-Fixed Skoude twitch event spawning skoude too early
-Aesthete of Heat now has immortality particles during his Healing Phase courtesy of Spoopy
-Aesthete of Heat no longer fires meterors or giga death crosses if the player is dead
 Sharply reduced desert poring's damage output
 Random Creeps & Weirdos Twitch Event now scales based off biome progress
 New twitch event: Clowns, spawns a bunch of clowns to spit on the streamer
+New Twitch Event: Swapper Curse, you gain the passive ability of a swapper mage
 Names now appear above creature's heads in some twitch redeems
 Removed some unnecessary tags from lua scripts
+
+Fixed Clown not having any ragdolls
+Fixed Delusional having a typo (Decieve > Deceive)
+Optimised split shot (I think) (Thankyou Copi)
+Some settings which can update immediately during gamepaly now update immediately
+Added mod support for alternate biomes lukki boss health scaling
+Added Swampling to the Esoteric Fairy delusion list
+New perk: Revenge Reflection, it spawns in the default perk pool and lets you create a copy of a projectile you're hit by, boost it's damage, and fire it back at your attacker
+
 
 
 
