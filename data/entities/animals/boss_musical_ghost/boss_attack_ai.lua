@@ -20,7 +20,7 @@ if (state == 1) then
     ComponentSetValue2( comp, "attack_ranged_entity_count_max", 8 )
 elseif (state == 2) then
     ComponentSetValue2( comp, "attack_ranged_entity_file", "mods/mo_creeps/files/entities/projectiles/meteor_npc_superhoming_setup.xml" )
-    ComponentSetValue2( comp, "attack_ranged_frames_between", 400 )
+    ComponentSetValue2( comp, "attack_ranged_frames_between", 266 ) --400 by default, 266 is 1.5x faster, 200 2x faster
     ComponentSetValue2( comp, "attack_ranged_min_distance", 60 )
     ComponentSetValue2( comp, "attack_ranged_max_distance", 400 )
     ComponentSetValue2( comp, "attack_ranged_entity_count_min", 1 )

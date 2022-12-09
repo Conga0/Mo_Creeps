@@ -7,6 +7,8 @@ too tired right now
 Tag Optimise mass status spells to check for a childname rather than tag name
 
 Optional english names for monsters
+This would take so much work it isn't even fun.
+Definitely on the back burner of the back burner
 
 Deck of cards
 25 storage
@@ -30,10 +32,10 @@ Only spawn statues when you get near to guarantee it's loaded first? Unsure
 Put statue room loaders on a spawner attached to a collision trigger, spawn the collision trigger with a pixelscene.
 Should guarantee it appears when needed
 
-Improve Creature Shifting, currently only works if you haven't met/serialised the creature before shifting it away.
-If I'm building a table anyways, may just be better to delete/respawn if the shift victim gets close? But how to detect if someone is a victim or not? hmm...
-
 Some positive effects in April Fools event would be useful, currently it's all negative/neutral
+
+Fix Abandoned Orchestra meteor attack exploding instantly ontop of itself
+Also, make it attack 1.5x to 2x faster while you're at it, it's dreadfully slow as is
 
 
 

@@ -157,7 +157,8 @@
 	</LuaComponent>
 
 	<!-- Maybe it could drop slime to slow you down or something? -->
-	<!-- Acid instead ofsludge in the vault? -->
+	<!-- Acid instead of sludge in the vault? -->
+	<!-- Fungal shifting toxic sludge into something else around these guys would be funny -->
 	
 	<ParticleEmitterComponent
 		_enabled="0"
