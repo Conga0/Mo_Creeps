@@ -5,7 +5,7 @@
   offset_y="4" >
 
   <RectAnimation 
-    frame_count="1" 
+    frame_count="6" 
     frame_height="8" 
     frame_wait="0.09" 
     frame_width="7" 
@@ -14,6 +14,7 @@
     name="explosion" 
     pos_x="0" 
     pos_y="0" 
+    emissive="1"
     >
 
   </RectAnimation>

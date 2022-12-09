@@ -238,6 +238,19 @@ if HasFlagPersistent( "mocreeps_card_unlocked_secret_knowledge_of_kings" ) then
   })
 end
 
+
+
+--[[ This looks.. weird?
+--Inserted to guarantee it always loads at the bottom of the settings list
+table.insert(mod_settings,
+{
+  id = "credits",
+  ui_name = "\n \n \nCredits: \nConga Lyne - Mod Creator, anything not specifically listed here was made by me \n \nSorako Hinoguchi - Voicing Cats \n \nSpoopy (The One The Only Spoopy Boi#7859) - Creating fluffy cat sprites \nCreating Size 3 Blob Sprites, Creating Size 4 Blob static Sprite, Creating Size 5 Blob Idle Animation \n \nSquirrelly#6472 - Created the mana drain effect lua script, your mana wouldn't be stolen without their help \n \nBlueberry#1414 - Translating the mod to Russian\n \nExtol#0629 - Helping getting translation keys working, needed for custom perks to show up correctly \nAlso helped make split shot significantly less game breaking \n \nZathers - creator of nxml.lua, a file required for pixel scenes to work with mod compatability for me. \n \nHorscht#6086 - Helping a ton with getting code working, including the toxic worm nest structure to spawn in the world, \nand all others as a result. \n \nRib#1963 - Help with stain UV map generation, I probably wouldn't be able to have UV maps for enemies without his help \n \nKeithSammut - Provided base scripts needed for ceiling enemies \n \nCopi (Human#6606) - Helping think up some enemy ideas for unused sprites I had lying around. \n \nAnd you, for giving More Creeps a try \nI hope you enjoyed playing it as much as I enjoyed making it <3",
+  not_setting = true,
+})
+]]--
+
+
 function ModSettingsUpdate( init_scope )
 	local old_version = mod_settings_get_version( mod_id )
 	mod_settings_update( mod_id, mod_settings, init_scope )

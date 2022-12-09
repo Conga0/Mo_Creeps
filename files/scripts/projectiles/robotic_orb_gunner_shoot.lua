@@ -9,7 +9,7 @@ local p = EntityGetWithTag( "player_unit" )
 -- velocity
 local speed = 100
 
-proj = "mods/mo_creeps/files/entities/projectiles/robotic_gunner_orb.xml"
+local proj = "mods/mo_creeps/files/entities/projectiles/robotic_gunner_orb.xml"
 
 
 local vel_x,vel_y = GameGetVelocityCompVelocity(entity_id)

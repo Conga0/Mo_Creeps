@@ -1,1 +1,1 @@
-mods/mo_creeps/files/ragdolls/gazer_greater/body.png
+mods/mo_creeps/files/ragdolls/skygazer_greater/body.png

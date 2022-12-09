@@ -77,7 +77,6 @@ local pool = {
     "fungus_big",
     "fungus_giga",
     "necromancer",
-    "necromancer_shop",
     "skullfly",
     "spitmonster",
     "tank_rocket",
@@ -96,7 +95,7 @@ local pool = {
     "basebot_soldier",
 }
 
--- A weighted table would be great here but when I tried to find a tutorial I found some retard making his tutorial using black characters on a black background.. fuck you tutorial maker I can't see any of that.
+-- A weighted table would be great here but when I tried to find a tutorial I found someone making his tutorial using black characters on a black background. I can't see any of that.
 -- If you know how or know a decent tutorial, please let me know.
 local prizePool = {
     "data/entities/items/pickup/potion_secret.xml", --1

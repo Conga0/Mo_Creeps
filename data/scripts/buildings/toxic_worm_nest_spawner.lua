@@ -5,7 +5,7 @@ function collision_trigger()
 	local pos_x, pos_y = EntityGetTransform( entity_id )
 	local year, month, day, hour = GameGetDateAndTimeLocal()
 	EntityLoad( "data/entities/particles/image_emitters/magical_symbol_fast_toxic.xml", pos_x, pos_y )
-	GamePlaySound( "data/audio/Desktop/event_cues.snd", "event_cues/greed_curse/create", spawn_x, spawn_y)
+	GamePlaySound( "data/audio/Desktop/event_cues.snd", "event_cues/greed_curse/create", pos_x, pos_y)
 	
 
 	if ModIsEnabled("nightmare") or ModIsEnabled("purgatory") then

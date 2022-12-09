@@ -6,7 +6,7 @@ local pos_x, pos_y = EntityGetTransform( entity_id )
 SetRandomSeed( GameGetFrameNum(), pos_x + pos_y + entity_id )
 
 
- if (Random( 1, 20) == 20) then
+if (Random( 1, 20) == 20) then
     
     local meowNum = Random( 1, 100)
     if (meowNum >= 81) then
@@ -26,4 +26,5 @@ SetRandomSeed( GameGetFrameNum(), pos_x + pos_y + entity_id )
     else
         GamePlaySound( "mods/mo_creeps/mocreeps_audio.bank", "mocreeps_audio/kittycat/meow_03", pos_x, pos_y );
     end
- end
+end
+

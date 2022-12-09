@@ -123,6 +123,7 @@ function creature_shift( entity, x, y, debug_no_limits )
 
         local content = ModTextFileGetContent("data/entities/animals/" .. target .. ".xml")
         local xml = nxml.parse(content)
+        attrs._tags = attrs._tags .. ",acid"
         xml:add_child(nxml.parse([[
         <ParticleEmitterComponent
             emitted_material_name="fungal_shift_particle_fx"
@@ -261,5 +262,40 @@ function creature_shift( entity, x, y, debug_no_limits )
         GamePrint(target)
         GamePrint(target2)
         ]]--
+
+        --Updates old, already created entities to be shifted to their new form
+        --Makes sure to only apply the lua script once
+        --The lua script may be removed between restarts actually.. hmm
+        --Perhaps a child entity would be better?
+        --
+        --Then again, a half-budgeted approach might be best, update entities until the player needs to restart
+        --Stop consuming resources on this task after the player restarts, and then they probably won't notice or remember the shift later?
+        --I just don't want to be resource intensive, bluntly.
+        --
+        --Updates every 2.5 seconds
+        --
+        --
+        --nxml shifted creatures retain their filepath.. troublesome but a reasonable conclusion I overlooked in pursuit of envisioning how to accomplish other goals
+        --Apply 'acid' tag to all shifted creatures, then only update if taken care of?
+        --
+        --[[
+        ]]--
+        if iter_glob == 1 then
+            local player_list = EntityGetWithTag("player_unit")
+            for i,v in ipairs(player_list) do
+                EntityAddComponent2(
+                    v,
+                    "LuaComponent",
+                    {
+                        execute_on_added = true,
+                        script_source_file = "mods/mo_creeps/files/scripts/magic/creature_shift_new/player_shift_update.lua",
+                        execute_every_n_frame = 150,
+                        remove_after_executed = false,
+                        execute_times=-1
+                    }
+                )
+            end
+        end
+
     end
 end

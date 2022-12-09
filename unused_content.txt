@@ -72,6 +72,8 @@ Fixed Tnt Minecart Hisii cocking their dynamite before throwing it
 Fixed Mass Fire not working
 Fixed Star Child not spawning in modded space biomes
 Fixed Skoude twitch event spawning skoude too early
+Fixed Clown not having any ragdolls
+Fixed Delusional having a typo (Decieve > Deceive)
 FIXED MAGIC DEVOURERS HAVING 90% DAMAGE REDUCTION FROM ALL SOURCES
 Very slightly reduced blood produced by Angeling & Devilings
 Red Sand now absorbs blood to grow
@@ -151,15 +153,21 @@ New twitch event: Clowns, spawns a bunch of clowns to spit on the streamer
 New Twitch Event: Swapper Curse, you gain the passive ability of a swapper mage
 Names now appear above creature's heads in some twitch redeems
 Removed some unnecessary tags from lua scripts
-
-Fixed Clown not having any ragdolls
-Fixed Delusional having a typo (Decieve > Deceive)
 Optimised split shot (I think) (Thankyou Copi)
 Some settings which can update immediately during gamepaly now update immediately
 Added mod support for alternate biomes lukki boss health scaling
 Added Swampling to the Esoteric Fairy delusion list
 New perk: Revenge Reflection, it spawns in the default perk pool and lets you create a copy of a projectile you're hit by, boost it's damage, and fire it back at your attacker
 
+Fixed Divine Being spamming ingame chat
+Fixed Minecraft Hiisi having electrified minecarts
+Fixed Magic Devourer not dropping x3 money
+Fixed Greater Sky Gazer having the wrong ragdoll colour
+Divine Being now has 5 frames of invincibility after taking damage, goal is to counteract musical note abuse, if successful apply to Asthete of Heat too
+Slightly increased delay between Esoteric Fairy's attacks
+Removed Stevari from the Pandora's Chest enemy pool
+Increased animation speed of Angeling & Deviling's wings (0.2s wait time to 0.13s)
+Added a script to update to updated creature shifted entities who have already been spawned in
 
 
 

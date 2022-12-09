@@ -630,7 +630,7 @@
 		ui_description = "$integration_mocreep_CLOWNS_desc",
 		ui_icon = "data/ui_gfx/streaming_event_icons/health_plus.png",
 		ui_author = "Conga Lyne - Mo Creeps",
-		weight = 0.4,
+		weight = 0.7,
 		kind = STREAMING_EVENT_NEUTRAL,
 		action = function(event)
 			local players = get_players()

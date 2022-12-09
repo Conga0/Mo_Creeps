@@ -6,7 +6,7 @@
 			attack_ranged_enabled="1"
 			attack_ranged_entity_file="mods/mo_creeps/files/entities/projectiles/orb_psychotic.xml"
 			attack_ranged_action_frame="1"
-			attack_ranged_frames_between="130" 
+			attack_ranged_frames_between="150" 
 			attack_ranged_max_distance="250"
 			attack_ranged_offset_y="4.5"
 			escape_if_damaged_probability="0"

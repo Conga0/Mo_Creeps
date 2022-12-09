@@ -41,7 +41,7 @@
 			blood_multiplier="0.2"
             blood_spray_create_some_cosmetic="1"
 			ragdoll_fx_forced="NONE"
-			in_liquid_shooting_electrify_prob="30" >
+			>
 		</DamageModelComponent>
 
 		<SpriteComponent 

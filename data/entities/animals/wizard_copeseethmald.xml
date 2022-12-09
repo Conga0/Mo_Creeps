@@ -164,7 +164,7 @@
 
 
 	
-	<ParticleEmitterComponent 
+	<ParticleEmitterComponent
 		emitted_material_name="spark_red"
 		gravity.y="0.0"
 		lifetime_min="0.4"
