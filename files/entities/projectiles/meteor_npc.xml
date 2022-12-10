@@ -19,6 +19,12 @@
 		>
 	</HomingComponent>
 
+  <GameAreaEffectComponent
+      radius="6"
+      collide_with_tag="hittable"
+      frame_length="1"
+  ></GameAreaEffectComponent>
+
   <ProjectileComponent 
     _enabled="1" 
   	lob_min="0.8"

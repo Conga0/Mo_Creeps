@@ -1,54 +1,17 @@
 Big Blob sprite should be updated at some point.. too tired right now, remember discussion with spoopy
 Need to push release first.
 
-Move Blob Cave to bottom right of radiation pits if New Biomes & Secrets is enabled
-too tired right now
-
 Tag Optimise mass status spells to check for a childname rather than tag name
 
-Optional english names for monsters
-This would take so much work it isn't even fun.
-Definitely on the back burner of the back burner
-
-Deck of cards
-25 storage
-AC wand refresh
-
-Secret text with a youtube link to rick ashley's never gonna give you up
-(Put it in the corner of the world or under deep EDR or something stupidly hidden, fittingly stupid for a stupid easteregg
-
-Starting cat amount multiplier
-
-If fungal shift timer mod is enabled, add a status to show the cooldown for Red Shifting
-
 Setting to disable custom pixelscenes for compatibility with mods like noitavania
-
 Disable custom pixelscenes if playing on Noitavania (32 bit limit will be reached otherwise)
 
-Add hint pointing towards Essence of Fungus
-
-Statues in Statue room disappear if you mod restart before visiting them. Serialise then unserialise?
-Only spawn statues when you get near to guarantee it's loaded first? Unsure
-Put statue room loaders on a spawner attached to a collision trigger, spawn the collision trigger with a pixelscene.
-Should guarantee it appears when needed
-
-Some positive effects in April Fools event would be useful, currently it's all negative/neutral
-
-Fix Abandoned Orchestra meteor attack exploding instantly ontop of itself
-Also, make it attack 1.5x to 2x faster while you're at it, it's dreadfully slow as is
-
-
-
-
-Trophys:
-Killing all minibosses
-Killing Aesthete of Heat
 
 
 
 
 
-Translation keys for twitch events
+
 
 Remember to make 1.1.0 pixelscenes available for Purgatory, nightmare & Noitavania
 

@@ -73,7 +73,7 @@
 	>
 	<StatusEffects>
 		<Ingestion>
-			<StatusEffect type="MOCREEPS_PROTECTION_LAVA" amount="2" />
+			<StatusEffect type="MOCREEPS_PROTECTION_LAVA" amount="3" />
 		</Ingestion>
 	</StatusEffects>
   </CellDataChild>

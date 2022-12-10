@@ -1,4 +1,4 @@
-<Entity name="$animal_giantshooter">
+<Entity name="Vuotavajaska">
   
 	<Base file="data/entities/base_enemy_flying.xml" >
 		<ItemChestComponent level="1" > </ItemChestComponent>
@@ -14,7 +14,7 @@
 		</AnimalAIComponent>
 
 		<DamageModelComponent 
-			hp="4.0"
+			hp="5.0"
 			ragdoll_material="meat_slime_green"
 			ragdoll_filenames_file="mods/mo_creeps/files/ragdolls/slime_leaker/filenames.txt" 
 			blood_material="acid"
@@ -152,7 +152,7 @@
 
 	<LuaComponent
 		script_source_file="mods/mo_creeps/files/scripts/animals/slime_leak_weak.lua"
-		execute_every_n_frame="5"
+		execute_every_n_frame="30"
 		>
 	</LuaComponent>
 
@@ -163,7 +163,7 @@
 	<ParticleEmitterComponent
 		_enabled="0"
 		_tags="enabled_by_liquid"
-		emitted_material_name="radioactive_liquid"
+		emitted_material_name="acid"
 		offset.x="0"
 		offset.y="5"
 		x_pos_offset_min="-8"
@@ -174,8 +174,8 @@
 		x_vel_max="4"
 		y_vel_min="-10"
 		y_vel_max="5"
-		count_min="5"
-		count_max="7"
+		count_min="9"
+		count_max="14"
 		lifetime_min="0.3"
 		lifetime_max="1.6"
 		render_on_grid="1"

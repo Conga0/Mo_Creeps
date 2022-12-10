@@ -66,6 +66,14 @@
         entity     = "data/entities/animals/hisii_giga_bomb.xml"
     })
 
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.08,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/slime_leaker_weak.xml"
+    })
+
 
 
     --Small enemies    
@@ -148,6 +156,18 @@
             entity     = "data/entities/animals/fairy_cheap.xml"
         })
     end
+
+
+    --Slime Pit Spawns
+    table.insert(g_unique_enemy,
+    {
+        prob           = 0.1,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/slime_leaker_weak.xml"
+    })
+
+
 
 
 

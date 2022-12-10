@@ -326,6 +326,16 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/animal_icons/shaman_greater_mocreep.png",
 	  },
 	  {
+		name="Leaky Slime",
+		path="data/entities/animals/slime_leaker.xml",
+		image="data/ui_gfx/animal_icons/slime_leaker.png",
+	  },
+	  {
+		name="Weak Leaky Slime",
+		path="data/entities/animals/slime_leaker_weak.xml",
+		image="data/ui_gfx/animal_icons/slime_leaker_weak.png",
+	  },
+	  {
 		name="Star Child",
 		path="data/entities/animals/star_child.xml",
 		image="data/ui_gfx/animal_icons/star_child.png",

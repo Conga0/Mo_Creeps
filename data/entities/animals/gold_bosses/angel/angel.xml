@@ -36,7 +36,9 @@
 			    electricity="0.7"
 			    drill="0"
 			    ice="0.7"
-				fire="0" >
+				fire="0"
+				slice="-0.1"
+				>
 			</damage_multipliers>
 		</DamageModelComponent>
 

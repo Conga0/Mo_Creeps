@@ -164,6 +164,20 @@ Slightly increased delay between Esoteric Fairy's attacks
 Removed Stevari from the Pandora's Chest enemy pool
 Increased animation speed of Angeling & Deviling's wings (0.2s wait time to 0.13s)
 
+Adjusted Toxic Worm Nest's ceiling to look more cave-like and natural
+Fixed Abandoned Orchestra blowing himself up in rage
+Fixed Trophy Room Statues not spawning if you mod restarted before going near them
+Fixed Revenge Reflection not showing it's full description
+Slightly Reduced the health of Glu Slugs, they should die faster now, especially if you start with bouncing burst
+Added a visual timer for Creature Shifting's cooldown if you have the fungal timer mod
+Added a ui icon for killing the Aesthete of Heat (still not currently spawnable, will be done when boss is finished)
+Slightly reduced speed of Aesthete of Heat's revenge fire bolts
+Lava Immunity Buff now lasts 50% longer from eating Infernal Meat
+Divine Being & Aesthete of Heat are now immune to slice damage (homing omega sawblade & forget builds for easy kills felt underwhelmin)
+Divine Being no longer gains immunity frames upon taking damage
+Sharply reduced Aesthete of Heat's revenge firebolt damage, 200 damage per bolt was.. a lot. Yeah.
+New Creep: Leaky Slime, leaks hazardous liquids ontop of you
+
 
 
 

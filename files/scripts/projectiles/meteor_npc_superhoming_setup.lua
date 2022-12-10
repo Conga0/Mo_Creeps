@@ -8,3 +8,5 @@ local vx1, vy1 = vec_rotate(vx, vy, math.rad(90))
 shoot_projectile_from_projectile(entity_id, "mods/mo_creeps/files/entities/projectiles/meteor_npc_superhoming.xml", x, y, vx1, vy1)
 local vx2, vy2 = vec_rotate(vx, vy, -math.rad(90))
 shoot_projectile_from_projectile(entity_id, "mods/mo_creeps/files/entities/projectiles/meteor_npc_superhoming.xml", x, y, vx2, vy2)
+
+EntityKill(entity_id)

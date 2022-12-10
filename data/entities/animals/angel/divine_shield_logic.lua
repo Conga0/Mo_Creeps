@@ -14,7 +14,7 @@ function damage_received( damage, desc, entity_who_caused, is_fatal )
 	edit_component( entity_id, "DamageModelComponent", function(comp,vars)
 		health = tonumber(ComponentGetValue( comp, "hp"))
 		max_health = tonumber(ComponentGetValue( comp, "max_hp"))
-		ComponentSetValue( comp, "invincibility_frames", 5) --This should give 5 frames of invincibility after taking damage
+		--ComponentSetValue( comp, "invincibility_frames", 5) --This should give 5 frames of invincibility after taking damage
 	end)
 	
 	local minion_count = 3

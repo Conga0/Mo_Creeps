@@ -8,7 +8,8 @@ function damage_received( damage, desc, entity_who_caused, is_fatal )
 
 	if( entity_who_caused == entity_id ) then return end
 
-	local herd_id = component_get_value( entity_id, "GenomeDataComponent", "herd_id", 0 )
+	--This does literally nothing, why is this here, Nolla?
+	--local herd_id = component_get_value( entity_id, "GenomeDataComponent", "herd_id", 0 )
 
 	edit_component( entity_id, "ControlsComponent", function(comp,vars)
 		ComponentSetValueVector2( comp, "mJumpVelocity", Random(-70, 70), Random(-150, -300))

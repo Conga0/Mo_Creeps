@@ -1,0 +1,1 @@
+mods/mo_creeps/files/ragdolls/slime_leaker_weak/body.png

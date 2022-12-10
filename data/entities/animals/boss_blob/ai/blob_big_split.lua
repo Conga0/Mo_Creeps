@@ -8,7 +8,8 @@ function damage_received( damage, desc, entity_who_caused, is_fatal )
 
 	if( entity_who_caused == entity_id ) then return end
 
-	local herd_id = component_get_value( entity_id, "GenomeDataComponent", "herd_id", 0 )
+	--This does literally nothing, why is this here, Nolla?
+	--local herd_id = component_get_value( entity_id, "GenomeDataComponent", "herd_id", 0 )
 	
 	local health = 0
 	local max_health = 0

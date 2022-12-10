@@ -6,9 +6,8 @@
 
 --PRANKED, check this code out, hijack it all you want nerds!!!
 
-local previousInit = spawn_music_trigger
-function spawn_music_trigger( x, y )
-	previousInit( x ,y ,w ,h)
+function collision_trigger()
+	local entity_id = GetUpdatedEntityID()
 
     --Normal Mode Unlocks
     local mocreep_angel_dead = HasFlagPersistent( "mocreeps_card_unlocked_divinebeing" )
@@ -219,4 +218,6 @@ function spawn_music_trigger( x, y )
         EntityLoad( "data/entities/buildings/statue_room_noitavania_deleter.xml", 4256, 2095 )
         EntityLoad( "data/entities/buildings/statue_room_noitavania_deleter.xml", 4256, 2255 )
     end
+
+    EntityKill(entity_id)
 end

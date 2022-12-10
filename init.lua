@@ -266,6 +266,7 @@ status_mocreep_transmute_desc,Your being is transmuting nearby matter uncontroll
 item_mocreep_essence_fungus_name,"Essence of Fungus",,,,,,,,,,,,,
 item_mocreep_essence_fungus_desc,"Your very being is infecting the environment around it!",,,,,,,,,,,,,
 sign_mocreep_welcome_hint,"Hello and Welcome to More Creeps & Weirdos! \nAlthough this may seem inconvinent, please take a moment to view the mod settings page in Options > Mod Settings. \nSome mods need compatibility modes enabled, I did I best but some things are outside my control sadly. Other than that, go nuts and have fun <3",,,,,,,,,,,,,
+sign_mocreep_aprilfools_intro,"Happy April Fools <3",,,,,,,,,,,,,
 status_mocreep_trip_red_00_name,"Blazed",,,,,,,,,,,,,
 status_mocreep_trip_red_00_desc,"You feel dizzy",,,,,,,,,,,,,
 status_mocreep_trip_red_01_name,"Somewhat Blazed",,,,,,,,,,,,,
@@ -352,8 +353,10 @@ status_mocreep_plagiarize_swapper_name,"Curse of Swapping",,,,,,,,,,,,,
 status_mocreep_plagiarize_swapper_desc,"You feel the blood of Swapper Mages runs through you",,,,,,,,,,,,,
 status_mocreep_delusional_name,"Delusional",,,,,,,,,,,,,
 status_mocreep_delusional_desc,"Your senses deceive you.",,,,,,,,,,,,,
+status_mocreep_creatureshift_cd_name,"Unshiftable",,,,,,,,,,,,,
+status_mocreep_creatureshift_cd_desc,"The path of evolution is set in stone... For now.",,,,,,,,,,,,,
 perk_mocreeps_revenge_reflective,Revenge Reflection,,,,,,,,,,,,,
-perk_mocreeps_revenge_reflective_description,Reflect copies of enemy projectiles upon taking damage, with a steep damage boost as payback.,,,,,,,,,,,,,
+perk_mocreeps_revenge_reflective_description,"Reflect copies of enemy projectiles upon taking damage, with a steep damage boost as payback".,,,,,,,,,,,,,
 ]])
 
 --Yggdrasil's Knowledge (The knowledge of life)
@@ -533,12 +536,15 @@ end
 
 
 --Spawns statues in the trophy room
+--Deprecated, now down through a spawner w/ pixelscenes
 
+--[[
 if ModIsEnabled("purgatory") then
   ModLuaFileAppend( "data/scripts/biomes/mountain/mountain_hall.lua", "mods/mo_creeps/files/scripts/biomes/boss_spawns/purgatory/statue_room_populator.lua" ) 
 else
   ModLuaFileAppend( "data/scripts/biomes/mountain/mountain_hall.lua", "mods/mo_creeps/files/scripts/biomes/boss_spawns/statue_room_populator.lua" ) 
 end
+]]--
 
 
 
@@ -1346,7 +1352,7 @@ if seasonalSetting == true then
 
     --Happy april fools <3
     function OnPlayerSpawned()
-      GamePrint("Happy April Fools <3")
+      GamePrint("$sign_mocreep_aprilfools_intro")
     end
 
     --Remember to check global spawn files, pandora's chest spawnrate boost is managed there

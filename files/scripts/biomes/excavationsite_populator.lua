@@ -189,6 +189,18 @@
 
 
 
+    --Slime Pit Spawns
+    table.insert(g_unique_enemy,
+    {
+        prob           = 0.1,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/slime_leaker.xml"
+    })
+
+
+
+
 
     --Pandora Spawns
 

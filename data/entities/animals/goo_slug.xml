@@ -38,7 +38,7 @@
         </SpriteComponent>
 
         <DamageModelComponent
-            hp="2.0"
+            hp="1.5"
             air_needed="0"
 			ragdoll_filenames_file="mods/Mo_Creeps/files/ragdolls/goo_slug/filenames.txt"
 			blood_material="slime"
