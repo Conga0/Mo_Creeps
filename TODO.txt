@@ -6,6 +6,10 @@ Tag Optimise mass status spells to check for a childname rather than tag name
 Setting to disable custom pixelscenes for compatibility with mods like noitavania
 Disable custom pixelscenes if playing on Noitavania (32 bit limit will be reached otherwise)
 
+Obfuscate Knowledge of Kings material creation
+
+Creature/Fungal Shift at the start of an april fools run
+
 
 
 

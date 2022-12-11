@@ -75,6 +75,7 @@ Fixed Skoude twitch event spawning skoude too early
 Fixed Clown not having any ragdolls
 Fixed Delusional having a typo (Decieve > Deceive)
 Fixed Greater Sky Gazer having the wrong ragdoll colour
+Fixed Trophy Room Statues not spawning if you mod restarted before going near them
 FIXED MAGIC DEVOURERS HAVING 90% DAMAGE REDUCTION FROM ALL SOURCES
 Very slightly reduced blood produced by Angeling & Devilings
 Red Sand now absorbs blood to grow
@@ -122,7 +123,6 @@ Cold Gazer now has increased resistance against projectile damage, this should h
 Overzealous Polymage miniboss now has increased resistance against projectile damage for the same reasons as Cold Gazer
 Minecart Riders can now very rarely have cool shades
 Added a punishment for disobeying the 31st's MOTD
-Fixed Bubbles not spawning proper amounts of liquid in Nightmare/purgatory
 Reduced Twitch Event Spells to Worms duration to 30 seconds
 Added Mudmen Twitch Event
 Various Modded & Vanilla bosses are now immune to Vulnerability, this is a direct nerf to Holy Orb Barrage but a much needed one, especially when it broke some bosses and made them immortal
@@ -163,20 +163,20 @@ Divine Being now has 5 frames of invincibility after taking damage, goal is to c
 Slightly increased delay between Esoteric Fairy's attacks
 Removed Stevari from the Pandora's Chest enemy pool
 Increased animation speed of Angeling & Deviling's wings (0.2s wait time to 0.13s)
-
 Adjusted Toxic Worm Nest's ceiling to look more cave-like and natural
-Fixed Abandoned Orchestra blowing himself up in rage
-Fixed Trophy Room Statues not spawning if you mod restarted before going near them
-Fixed Revenge Reflection not showing it's full description
 Slightly Reduced the health of Glu Slugs, they should die faster now, especially if you start with bouncing burst
-Added a visual timer for Creature Shifting's cooldown if you have the fungal timer mod
-Added a ui icon for killing the Aesthete of Heat (still not currently spawnable, will be done when boss is finished)
-Slightly reduced speed of Aesthete of Heat's revenge fire bolts
-Lava Immunity Buff now lasts 50% longer from eating Infernal Meat
-Divine Being & Aesthete of Heat are now immune to slice damage (homing omega sawblade & forget builds for easy kills felt underwhelmin)
-Divine Being no longer gains immunity frames upon taking damage
-Sharply reduced Aesthete of Heat's revenge firebolt damage, 200 damage per bolt was.. a lot. Yeah.
-New Creep: Leaky Slime, leaks hazardous liquids ontop of you
+Divine Being is now immune to slice damage (homing omega sawblade & forget builds for easy kills felt underwhelming)
+
+Divine Liquid lasts for a shorter amount of time when drunk
+Disabled most Twitch Events if CTEP is enabled
+Opal Crystal now creates a giga blackhole upon shattering instead of a miniture omega blackhole
+Added 6 new spells, 3 portal markers and 3 portal summons
+New Spell: Red Portal Marker
+New Spell: Summon Red Portal
+New Spell: Green Portal Marker
+New Spell: Summon Green Portal
+New Spell: Blue Portal Marker
+New Spell: Summon Blue Portal
 
 
 

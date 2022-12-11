@@ -290,6 +290,18 @@ spell_mocreep_firecharge_name,"Fire Charge",,,,,,,,,,,,,
 spell_mocreep_firecharge_desc,"Imbues a projectile with a fiery charge, that it will release on impact.",,,,,,,,,,,,,
 spell_mocreep_knowledge_of_kings_name,"The Knowledge of Kings",,,,,,,,,,,,,
 spell_mocreep_knowledge_of_kings_desc,"Casting this spell causes something irreversibly permanent to occur",,,,,,,,,,,,,
+spell_mocreep_portal_lukki_red_marker_name,"Red Portal Marker",,,,,,,,,,,,,
+spell_mocreep_portal_lukki_red_marker_desc,"Marks a location for the Red Portal focus on.",,,,,,,,,,,,,
+spell_mocreep_portal_lukki_red_portal_name,"Summon Red Portal",,,,,,,,,,,,,
+spell_mocreep_portal_lukki_red_portal_desc,"Summons a red tinted portal from the tip of you wand.",,,,,,,,,,,,,
+spell_mocreep_portal_lukki_blue_marker_name,"Blue Portal Marker",,,,,,,,,,,,,
+spell_mocreep_portal_lukki_blue_marker_desc,"Marks a location for the Blue Portal focus on.",,,,,,,,,,,,,
+spell_mocreep_portal_lukki_blue_portal_name,"Summon Blue Portal",,,,,,,,,,,,,
+spell_mocreep_portal_lukki_blue_portal_desc,"Summons a blue tinted portal from the tip of you wand.",,,,,,,,,,,,,
+spell_mocreep_portal_lukki_green_marker_name,"Green Portal Marker",,,,,,,,,,,,,
+spell_mocreep_portal_lukki_green_marker_desc,"Marks a location for the Green Portal focus on.",,,,,,,,,,,,,
+spell_mocreep_portal_lukki_green_portal_name,"Summon Green Portal",,,,,,,,,,,,,
+spell_mocreep_portal_lukki_green_portal_desc,"Summons a green tinted portal from the tip of you wand.",,,,,,,,,,,,,
 misc_mocreep_energy_nova,"Energy Nova",,,,,,,,,,,,,
 log_mocreep_moon_altar_fungus,"AN IRREVERSIBLE CORRUPTION HAS OCCURRED",,,,,,,,,,,,,
 logdesc_mocreep_moon_altar_fungus,"WHAT HAVE YOU DONE!?",,,,,,,,,,,,,
@@ -356,7 +368,7 @@ status_mocreep_delusional_desc,"Your senses deceive you.",,,,,,,,,,,,,
 status_mocreep_creatureshift_cd_name,"Unshiftable",,,,,,,,,,,,,
 status_mocreep_creatureshift_cd_desc,"The path of evolution is set in stone... For now.",,,,,,,,,,,,,
 perk_mocreeps_revenge_reflective,Revenge Reflection,,,,,,,,,,,,,
-perk_mocreeps_revenge_reflective_description,"Reflect copies of enemy projectiles upon taking damage, with a steep damage boost as payback".,,,,,,,,,,,,,
+perk_mocreeps_revenge_reflective_description,"Reflect copies of enemy projectiles upon taking damage, with a steep damage boost as payback.",,,,,,,,,,,,,
 ]])
 
 --Yggdrasil's Knowledge (The knowledge of life)
@@ -1082,6 +1094,7 @@ ModLuaFileAppend( "data/scripts/newgame_plus.lua", "mods/mo_creeps/files/scripts
 --GameRemoveFlagRun( "mocreeps_blob_boss_slain" )
 
 --Adds custom enlightened alchemist types
+--Could instead have a script that has a 2 in 6 chance to occur, and if it does make the alchemist one of the new varients, and append all this as a script on the englightened alch entity that runs after the vanilla init occurs
 local content = ModTextFileGetContent("mods/mo_creeps/files/scripts/mod_compatibility/vanilla_enlightened_alchemist_init_append.lua")
 ModTextFileSetContent( "data/scripts/animals/enlightened_alchemist_init.lua", tostring(content) )
 --ModLuaFileAppend( "data/scripts/animals/enlightened_alchemist_init.lua", "mods/mo_creeps/files/scripts/mod_compatibility/vanilla_enlightened_alchemist_init_append.lua" )

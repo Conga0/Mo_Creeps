@@ -17,7 +17,7 @@
 		
 		<ExplodeOnDamageComponent>
 			<config_explosion
-				load_this_entity="data/entities/particles/particle_explosion/main_swirly_purple_giga.xml,mods/mo_creeps/files/entities/projectiles/orb_micro_blackhole.xml,data/entities/props/crystal_opal_effect.xml" >
+				load_this_entity="data/entities/particles/particle_explosion/main_swirly_purple_giga.xml,data/entities/projectiles/deck/black_hole_big.xml,data/entities/props/crystal_opal_effect.xml" >
 			</config_explosion>
 		</ExplodeOnDamageComponent>
 

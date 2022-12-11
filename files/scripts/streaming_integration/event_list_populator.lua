@@ -1,4 +1,7 @@
+local ModEnabledCTEP = ModIsEnabled("Conga_Twitch_mod")
 
+
+    if ModEnabledCTEP ~= true then
     table.insert(streaming_events,
 	{
 		id = "MOCREEP_RANDOM_CATS",
@@ -32,6 +35,7 @@
 			end
 		end,
 	})
+    end
 
 
     table.insert(streaming_events,
@@ -365,6 +369,7 @@
 	})
 
 
+    if ModEnabledCTEP ~= true then
     table.insert(streaming_events,
 	{
 		id = "MOCREEP_WAND_WONDERS",
@@ -386,8 +391,10 @@
 			end
 		end,
 	})
+    end
 
 
+    if ModEnabledCTEP ~= true then
     table.insert(streaming_events,
 	{
 		id = "MOCREEP_PANDORA_CHEST",
@@ -408,6 +415,7 @@
 			end
 		end,
 	})
+    end
 
 
     table.insert(streaming_events,
@@ -501,6 +509,7 @@
 	})
 
 
+    if ModEnabledCTEP ~= true then
     table.insert(streaming_events,
 	{
 		id = "MOCREEP_TRANSFORM_WORMS",
@@ -523,7 +532,9 @@
 			end
 		end,
 	})
+    end
 
+    if ModEnabledCTEP ~= true then
     table.insert(streaming_events,
 	{
 		id = "MOCREEP_MUD_MEN",
@@ -558,7 +569,9 @@
 			end
 		end,
 	})
+    end
 
+    if ModEnabledCTEP ~= true then
     table.insert(streaming_events,
 	{
 		id = "MOCREEP_SUMMON_SKOUDE",
@@ -577,8 +590,10 @@
 			end
 		end,
 	})
+    end
 
 
+    if ModEnabledCTEP ~= true then
     table.insert(streaming_events,
 	{
 		id = "MOCREEP_HUNGRY_ORB",
@@ -599,8 +614,10 @@
 			end
 		end,
 	})
+    end
 
 
+    if ModEnabledCTEP ~= true then
     table.insert(streaming_events,
 	{
 		id = "MOCREEP_DELUSIONAL",
@@ -621,8 +638,10 @@
 			end
 		end,
 	})
+    end
 
 
+    if ModEnabledCTEP ~= true then
     table.insert(streaming_events,
 	{
 		id = "MOCREEP_CLOWNS",
@@ -657,8 +676,10 @@
 			end
 		end,
 	})
+    end
 
 
+    if ModEnabledCTEP ~= true then
     table.insert(streaming_events,
 	{
 		id = "MOCREEP_SWAPPER_CURSE",
@@ -680,6 +701,7 @@
 			end
 		end,
 	})
+    end
 
 
 if ModIsEnabled("twitch_extended") then
