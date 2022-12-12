@@ -23,6 +23,21 @@ function collision_trigger()
     local mocreep_enrage_unlocked_goldmode = HasFlagPersistent( "mocreeps_card_unlocked_rage_aura_goldmode" )
     local mocreep_cat_secret_unlocked_goldmode = HasFlagPersistent( "mocreeps_card_unlocked_cat_secret_goldmode" )
 
+
+    --1.1.0 unlocks
+
+    --Normal Mode Unlocks
+    local mocreep_essence_fungus = HasFlagPersistent( "mocreeps_essence_fungus" )
+    local mocreep_essence_fungus_moon = HasFlagPersistent( "mocreep_moon_fungus_unlock" )
+    local mocreep_pandora_rain = HasFlagPersistent( "mocreep_misc_pandora_chest_rain" )
+    local mocreep_fire_lukki = HasFlagPersistent( "mocreeps_card_unlocked_boss_fire_lukki" )
+
+    --Nightmare/Purgatory Unlocks
+    local mocreep_essence_fungus_goldmode = HasFlagPersistent( "mocreeps_essence_fungus_goldmode" )
+    local mocreep_essence_fungus_moon_goldmode = HasFlagPersistent( "mocreep_moon_fungus_unlock_goldmode" )
+    local mocreep_pandora_rain_goldmode = HasFlagPersistent( "mocreep_misc_pandora_chest_rain_goldmode" )
+    local mocreep_fire_lukki_goldmode = HasFlagPersistent( "mocreeps_card_unlocked_boss_fire_lukki_goldmode" )
+
     --For reference, the pixel scene spawns at    X 4032    Y 1988
     --Purgatory pixel scene spawns at           X 4555     Y 787
     --Difference                               X 523      Y -1202
@@ -121,6 +136,62 @@ function collision_trigger()
             entity = EntityLoad( "mods/mo_creeps/files/entities/props/statue_empty.xml", 4811, 888 )
             entity = EntityLoad( "data/entities/buildings/trophy_room_trolling_check.xml", 4831, 893 )
         end
+    end
+
+
+
+
+
+
+
+
+
+    -- 1.1.0 Trophys, right side
+    -- x + 284 for reference (OLD WIDE ROOM)
+
+    
+    -- y + 161 for reference
+
+    
+
+    --Harder Challenge Unlocks
+    --Attaining the Essence of Fungus
+    if mocreep_essence_fungus_goldmode then
+        EntityLoad( "mods/mo_creeps/files/entities/props/goldmode/statue_essence_fungus.xml", 4701, 948 )
+    elseif mocreep_essence_fungus then
+        EntityLoad( "mods/mo_creeps/files/entities/props/statue_essence_fungus.xml", 4701, 948 )
+    else
+        EntityLoad( "mods/mo_creeps/files/entities/props/statue_empty.xml", 4701, 948 )
+    end
+
+    --Bringing the Essence of Fungus to either moon
+    if mocreep_essence_fungus_moon_goldmode then
+        EntityLoad( "mods/mo_creeps/files/entities/props/goldmode/statue_essence_fungus_moon.xml", 4811, 948 )
+    elseif mocreep_essence_fungus_moon then
+        EntityLoad( "mods/mo_creeps/files/entities/props/statue_essence_fungus_moon.xml", 4811, 948 )
+    else
+        EntityLoad( "mods/mo_creeps/files/entities/props/statue_empty.xml", 4811, 948 )
+    end
+
+
+
+    --Lower Challenge Unlocks
+    --Causing Pandora's Chest Rain by bringing a Pandora's Chest to the mountain Altar
+    if mocreep_pandora_rain_goldmode then
+        EntityLoad( "mods/mo_creeps/files/entities/props/goldmode/statue_pandora_rain.xml", 4703, 1049 )
+    elseif mocreep_pandora_rain then
+        EntityLoad( "mods/mo_creeps/files/entities/props/statue_pandora_rain.xml", 4703, 1049 )
+    else
+        EntityLoad( "mods/mo_creeps/files/entities/props/statue_empty.xml", 4703, 1049 )
+    end
+
+    --Killing the Aesthete of Heat
+    if mocreep_fire_lukki_goldmode then
+        EntityLoad( "mods/mo_creeps/files/entities/props/goldmode/statue_fire_lukki.xml", 4831, 1049 )
+    elseif mocreep_fire_lukki then
+        EntityLoad( "mods/mo_creeps/files/entities/props/statue_fire_lukki.xml", 4831, 1049 )
+    else
+        EntityLoad( "mods/mo_creeps/files/entities/props/statue_empty.xml", 4831, 1049 )
     end
 
 

@@ -26,7 +26,7 @@
     velocity_sets_scale="1"
     lifetime_randomness="7"
     ragdoll_force_multiplier="0.04"
-    hit_particle_force_multiplier="5.5 "
+    hit_particle_force_multiplier="5.5"
     camera_shake_when_shot="5.0"
 	velocity_sets_rotation="1"
     bounces_left="5"

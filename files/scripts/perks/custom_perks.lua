@@ -1,5 +1,6 @@
 
 local mocreep_enrage_unlocked = HasFlagPersistent( "mocreeps_card_unlocked_rage_aura" )
+local kolmi_dead = HasFlagPersistent( "boss_centipede" )
 
 table.insert(perk_list,
 {
@@ -84,62 +85,124 @@ else
     })
 end
 
-table.insert(perk_list,
-{
-    id = "MOCREEPS_REVENGE_REFLECTIVE",
-    ui_name = "$perk_mocreeps_revenge_reflective",
-    ui_description = "$perk_mocreeps_revenge_reflective_description",
-    ui_icon = "mods/mo_creeps/files/ui_gfx/perk_icons/revenge_reflection_perk_ui.png",
-    perk_icon = "mods/mo_creeps/files/items_gfx/revenge_reflection_perk.png",
-    not_in_default_perk_pool = false,
-    stackable = STACKABLE_NO,
-    usable_by_enemies = true,
-    func = function( entity_perk_item, entity_who_picked, item_name )
-        local x,y = EntityGetTransform( entity_who_picked )
-        EntityAddComponent2(
-            entity_who_picked,
-            "LuaComponent",
-            {
-                execute_on_added = false,
-                execute_every_n_frame=-1,
-                script_damage_received="mods/mo_creeps/files/scripts/perks/wraith_returner_damage.lua",
-                remove_after_executed = false,
-                execute_times=-1
-            }
-        )
-        
-        EntityAddComponent2(
-            entity_who_picked,
-            "LuaComponent",
-            {
-                execute_on_added = false,
-                execute_every_n_frame=3,
-                script_source_file="mods/mo_creeps/files/scripts/perks/wraith_returner_memory.lua",
-                remove_after_executed = false,
-                execute_times=-1
-            }
-        )
-        
-        EntityAddComponent2(
-            entity_who_picked,
-            "VariableStorageComponent",
-            {
-                name="proj_file_mocreep",
-                value_string="data/entities/projectiles/wraith_glowing_laser.xml",
-                value_float=0.5
-            }
-        )
-    end,
-    _remove = function(entity_id)
-        local comp_lua = EntityGetComponentIncludingDisabled( player, "LuaComponent" )
-        if ( comp_lua ~= nil ) then
-            for i,v in ipairs( comp_lua ) do
-                local name = ComponentGetValue2( v, "script_damage_received" )
-                
-                if ( name == "mods/mo_creeps/files/scripts/perks/wraith_returner_damage.lua" ) or ( name == "mods/mo_creeps/files/scripts/perks/wraith_returner_memory.lua" ) then
-                    EntityRemoveComponent(player, v)
+if kolmi_dead then
+    table.insert(perk_list,
+    {
+        id = "MOCREEPS_REVENGE_REFLECTIVE",
+        ui_name = "$perk_mocreeps_revenge_reflective",
+        ui_description = "$perk_mocreeps_revenge_reflective_description",
+        ui_icon = "mods/mo_creeps/files/ui_gfx/perk_icons/revenge_reflection_perk_ui.png",
+        perk_icon = "mods/mo_creeps/files/items_gfx/revenge_reflection_perk.png",
+        not_in_default_perk_pool = false,
+        stackable = STACKABLE_NO,
+        usable_by_enemies = true,
+        func = function( entity_perk_item, entity_who_picked, item_name )
+            local x,y = EntityGetTransform( entity_who_picked )
+            EntityAddComponent2(
+                entity_who_picked,
+                "LuaComponent",
+                {
+                    execute_on_added = false,
+                    execute_every_n_frame=-1,
+                    script_damage_received="mods/mo_creeps/files/scripts/perks/wraith_returner_damage.lua",
+                    remove_after_executed = false,
+                    execute_times=-1
+                }
+            )
+            
+            EntityAddComponent2(
+                entity_who_picked,
+                "LuaComponent",
+                {
+                    execute_on_added = false,
+                    execute_every_n_frame=3,
+                    script_source_file="mods/mo_creeps/files/scripts/perks/wraith_returner_memory.lua",
+                    remove_after_executed = false,
+                    execute_times=-1
+                }
+            )
+            
+            EntityAddComponent2(
+                entity_who_picked,
+                "VariableStorageComponent",
+                {
+                    name="proj_file_mocreep",
+                    value_string="data/entities/projectiles/wraith_glowing_laser.xml",
+                    value_float=0.5
+                }
+            )
+        end,
+        _remove = function(entity_id)
+            local comp_lua = EntityGetComponentIncludingDisabled( player, "LuaComponent" )
+            if ( comp_lua ~= nil ) then
+                for i,v in ipairs( comp_lua ) do
+                    local name = ComponentGetValue2( v, "script_damage_received" )
+                    
+                    if ( name == "mods/mo_creeps/files/scripts/perks/wraith_returner_damage.lua" ) or ( name == "mods/mo_creeps/files/scripts/perks/wraith_returner_memory.lua" ) then
+                        EntityRemoveComponent(player, v)
+                    end
                 end
-            end
-        end        
-    end,
-})
+            end        
+        end,
+    })
+else
+    table.insert(perk_list,
+    {
+        id = "MOCREEPS_REVENGE_REFLECTIVE",
+        ui_name = "$perk_mocreeps_revenge_reflective",
+        ui_description = "$perk_mocreeps_revenge_reflective_description",
+        ui_icon = "mods/mo_creeps/files/ui_gfx/perk_icons/revenge_reflection_perk_ui.png",
+        perk_icon = "mods/mo_creeps/files/items_gfx/revenge_reflection_perk.png",
+        not_in_default_perk_pool = true,
+        stackable = STACKABLE_NO,
+        usable_by_enemies = false,
+        func = function( entity_perk_item, entity_who_picked, item_name )
+            local x,y = EntityGetTransform( entity_who_picked )
+            EntityAddComponent2(
+                entity_who_picked,
+                "LuaComponent",
+                {
+                    execute_on_added = false,
+                    execute_every_n_frame=-1,
+                    script_damage_received="mods/mo_creeps/files/scripts/perks/wraith_returner_damage.lua",
+                    remove_after_executed = false,
+                    execute_times=-1
+                }
+            )
+            
+            EntityAddComponent2(
+                entity_who_picked,
+                "LuaComponent",
+                {
+                    execute_on_added = false,
+                    execute_every_n_frame=3,
+                    script_source_file="mods/mo_creeps/files/scripts/perks/wraith_returner_memory.lua",
+                    remove_after_executed = false,
+                    execute_times=-1
+                }
+            )
+            
+            EntityAddComponent2(
+                entity_who_picked,
+                "VariableStorageComponent",
+                {
+                    name="proj_file_mocreep",
+                    value_string="data/entities/projectiles/wraith_glowing_laser.xml",
+                    value_float=0.5
+                }
+            )
+        end,
+        _remove = function(entity_id)
+            local comp_lua = EntityGetComponentIncludingDisabled( player, "LuaComponent" )
+            if ( comp_lua ~= nil ) then
+                for i,v in ipairs( comp_lua ) do
+                    local name = ComponentGetValue2( v, "script_damage_received" )
+                    
+                    if ( name == "mods/mo_creeps/files/scripts/perks/wraith_returner_damage.lua" ) or ( name == "mods/mo_creeps/files/scripts/perks/wraith_returner_memory.lua" ) then
+                        EntityRemoveComponent(player, v)
+                    end
+                end
+            end        
+        end,
+    })
+end

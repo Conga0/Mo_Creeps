@@ -158,14 +158,69 @@ xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
 ModTextFileSetContent("mods/noitavania/data/biome/_pixel_scenes.xml", tostring(xml))
  
 
+
+--Spawns a book hinting instructing how to make mud men
+--local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
+--local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
+--local xml = nxml.parse(content)
+--xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+--    <PixelScene pos_x="4000" pos_y="3520" just_load_an_entity="mods/mo_creeps/files/entities/items/books/book_mudman.xml" />
+--]]))
+--ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
+ 
+
  
 
 
 ----Sets up the Trophy Room for spawning
 --local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
---local content = ModTextFileGetContent("mods/noitavania/data/biome/_pixel_scenes.xml")
+--local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
 --local xml = nxml.parse(content)
 --xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
 --    <PixelScene pos_x="227" pos_y="-93" just_load_an_entity="data/entities/buildings/pride_statue_room_injector.xml" />
 --]]))
---ModTextFileSetContent("mods/noitavania/data/biome/_pixel_scenes.xml", tostring(xml))
+--ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))
+
+
+--1.1.0 content
+
+--Boss Spawns
+
+
+--Spawns Asthete of Heat if you throw brimstone into the lava lake
+local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
+local content = ModTextFileGetContent("mods/noitavania/data/biome/_pixel_scenes.xml")
+local xml = nxml.parse(content)
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="2631" pos_y="984" just_load_an_entity="mods/mo_creeps/files/entities/buildings/fire_lukki_brimstone_detector.xml" />
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="2841" pos_y="984" just_load_an_entity="mods/mo_creeps/files/entities/buildings/fire_lukki_brimstone_detector.xml" />
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="3046" pos_y="984" just_load_an_entity="mods/mo_creeps/files/entities/buildings/fire_lukki_brimstone_detector.xml" />
+]]))
+ModTextFileSetContent("mods/noitavania/data/biome/_pixel_scenes.xml", tostring(xml))
+
+ 
+--Spawns a book hinting towards bringing a brimstone to the Lava Lake
+local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
+local content = ModTextFileGetContent("mods/noitavania/data/biome/_pixel_scenes.xml")
+local xml = nxml.parse(content)
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="1728" pos_y="5519" just_load_an_entity="mods/mo_creeps/files/entities/buildings/fire_lukki_book_spawner.xml" />
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="-2256" pos_y="5509" just_load_an_entity="mods/mo_creeps/files/entities/buildings/fire_lukki_book_spawner.xml" />
+]]))
+ModTextFileSetContent("mods/noitavania/data/biome/_pixel_scenes.xml", tostring(xml))
+
+ 
+--Spawns Volcanic Chest inside the Asthete of Heat's portal room containing RGB portal spells
+local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
+local content = ModTextFileGetContent("mods/noitavania/data/biome/_pixel_scenes.xml")
+local xml = nxml.parse(content)
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="-8500" pos_y="16752" just_load_an_entity="mods/mo_creeps/files/entities/items/pickups/chest_volcanic.xml" />
+]]))
+ModTextFileSetContent("mods/noitavania/data/biome/_pixel_scenes.xml", tostring(xml))

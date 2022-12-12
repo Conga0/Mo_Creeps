@@ -73,10 +73,40 @@
 	>
 	<StatusEffects>
 		<Ingestion>
-			<StatusEffect type="MOCREEPS_PROTECTION_LAVA" amount="3" />
+			<StatusEffect type="MOCREEPS_PROTECTION_LAVA" amount="4" />
 		</Ingestion>
 	</StatusEffects>
   </CellDataChild>
+
+  <CellData
+	name="mocreeps_meat_fire_lukki_rock"
+	ui_name="$material_mocreep_meat_fire_lukki_rock"
+  	tags="[box2d],[corrodible],[meltable_to_lava],[alchemy],[solid],[earth]"
+	burnable="0"
+	density="3"
+	cell_type="solid"
+	wang_color="ffed4d5f"
+	generates_smoke="0"
+	on_fire="0"
+	requires_oxygen="1"
+	temperature_of_fire="30"
+	autoignition_temperature="99" 
+	platform_type="0"
+	hp="100000" 
+	fire_hp="1200"
+	solid_collide_with_self="0"
+	solid_break_to_type="lava"
+	solid_break_to_type="slime"
+	solid_on_collision_splash_power="1"
+	solid_restitution="0.5"
+	audio_physics_material_event="rock"
+	audio_physics_material_wall="rock"
+	audio_physics_material_solid="rock"
+	audio_is_soft="1"
+	show_in_creative_mode="1"
+	durability="6"
+	>
+  </CellData>
 
   <CellDataChild
   	_parent="meat"

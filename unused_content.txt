@@ -13,9 +13,10 @@ Remember the checklist!!
 
 1.1.0 Changelog: [The Secret Update]
 Added 4 new environmental hazards
-Added 10 new creeps
+Added 12 new creeps
+Added 1 new boss
 Added 8 new twitch events
-Added 3 new spells
+Added 6 new spells
 Added 1 new perk
 Added a new seasonal event: April Fools!
 Added new biome variation to the world, explore the same biomes in wildly different ways!
@@ -166,17 +167,27 @@ Increased animation speed of Angeling & Deviling's wings (0.2s wait time to 0.13
 Adjusted Toxic Worm Nest's ceiling to look more cave-like and natural
 Slightly Reduced the health of Glu Slugs, they should die faster now, especially if you start with bouncing burst
 Divine Being is now immune to slice damage (homing omega sawblade & forget builds for easy kills felt underwhelming)
-
 Divine Liquid lasts for a shorter amount of time when drunk
 Disabled most Twitch Events if CTEP is enabled
-Opal Crystal now creates a giga blackhole upon shattering instead of a miniture omega blackhole
-Added 6 new spells, 3 portal markers and 3 portal summons
-New Spell: Red Portal Marker
-New Spell: Summon Red Portal
-New Spell: Green Portal Marker
-New Spell: Summon Green Portal
-New Spell: Blue Portal Marker
-New Spell: Summon Blue Portal
+
+
+Fixed script error in Toxic & Lava immunity status effects which tried to change material weaknesses of a dead player
+Added Asthete of Heat Phase 2 sprite transition
+Asthete of Heat now heals 33% more from it's healing phase
+Lava Immunity status now lasts 33% longer from eating Asthete of Heat's flesh
+Coloured Portal Spells now only require rightclick to mark a location rather than an entirely seperate spell
+Added book hinting towards how to summon the Asthete of Heat
+Added Death reward for Aesthete of Heat
+Locust Swarm's now produce 50% more insect husk
+Updated Fire Charge to have a unique spell sprite
+Significantly increased amount of Red Sand appearing in the pyramid
+Significantly increased Locust Swarm spawnrate in the desert
+Updated mod compatibility with alt biomes to include new spawns
+Revenge Reflection now only appears after beating Kolmi at least once, if any brand new/fresh save players use the mod, I want to give them an easy unlock, even though they might never notice it
+Removed Spell: Red Portal Marker
+Removed Spell: Green Portal Marker
+Removed Spell: Blue Portal Marker
+New Boss: Aesthete of Heat (Thankyou Spoopy for the spritework!)
 
 
 

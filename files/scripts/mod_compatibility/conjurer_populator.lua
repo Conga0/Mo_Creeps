@@ -46,6 +46,11 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/animal_icons/boss_toxic_worm_minion.png",
 	  },
 	  {
+		name="Asthete of Heat",
+		path="data/entities/animals/boss_fire_lukki/boss_fire_lukki.xml",
+		image="data/ui_gfx/animal_icons/boss_fire_lukki.png",
+	  },
+	  {
 		name="Manager",
 		path="data/entities/animals/c_basebot_speeder_mocreep.xml",
 		image="data/ui_gfx/animal_icons/c_basebot_speeder_mocreep.png",

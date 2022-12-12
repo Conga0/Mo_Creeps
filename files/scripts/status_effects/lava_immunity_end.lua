@@ -4,4 +4,6 @@ local targets = EntityGetWithTag( "player_unit" )
 
 local target = targets[1]
 
-EntitySetDamageFromMaterial( target, "lava", 0.003)
+if target ~= nil then
+    EntitySetDamageFromMaterial( target, "lava", 0.003)
+end

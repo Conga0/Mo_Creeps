@@ -17,15 +17,15 @@
 		state = "1">
 	</LimbBossComponent>
 
-	<PathFindingComponent 
+	<PathFindingComponent
 		can_dive="1" 
 		can_fly="1" 
 		can_jump="0" 
 		can_swim_on_surface="1" 
 		can_walk="1" 
 		cost_of_flying="500" 
-		distance_to_reach_node_x="20" 
-		distance_to_reach_node_y="20" 
+		distance_to_reach_node_x="40"
+		distance_to_reach_node_y="40"
 		frames_between_searches="20" 
 		frames_to_get_stuck="120" 
 		initial_jump_lob="1" 
@@ -105,7 +105,7 @@
 		materials_how_much_damage="0.1" 
 		materials_that_damage="water" 
 		ragdoll_filenames_file=""
-		ragdoll_material="mocreeps_meat_fire_lukki"
+		ragdoll_material="mocreeps_meat_fire_lukki_rock"
 		ragdoll_offset_y="-6"
 		ragdollify_child_entity_sprites="1" 
 		ragdollify_root_angular_damping="2"
@@ -128,8 +128,8 @@
 	</DamageModelComponent>
 
 	<GenomeDataComponent 
-		food_chain_rank="5" 
-		herd_id="spider" 
+		food_chain_rank="2"
+		herd_id="spider"
 		is_predator="1" >
 	</GenomeDataComponent>
 
@@ -168,10 +168,10 @@
 		emitted_material_name="lava"
 		offset.x="-1"
 		offset.y="0"
-		x_pos_offset_min="-8"
-		y_pos_offset_min="-8"
-		x_pos_offset_max="8"
-		y_pos_offset_max="8"
+		x_pos_offset_min="-16"
+		y_pos_offset_min="-16"
+		x_pos_offset_max="16"
+		y_pos_offset_max="16"
 		x_vel_min="-4"
 		x_vel_max="4"
 		y_vel_min="-10"
@@ -183,8 +183,8 @@
 		render_on_grid="1"
 		create_real_particles="0"
 		emit_cosmetic_particles="1"
-		emission_interval_min_frames="7"
-		emission_interval_max_frames="20"
+		emission_interval_min_frames="5"
+		emission_interval_max_frames="15"
 		is_emitting="1" >
 	</ParticleEmitterComponent>
 	
@@ -402,6 +402,30 @@
 	<LuaComponent
 		execute_every_n_frame="-1"
 		script_damage_received="data/entities/animals/boss_fire_lukki/boss_fire_lukki_brain.lua"
+		>
+	</LuaComponent>
+
+	<!-- Death Reward, only applies to phase 2 -->
+	<!--
+	<LuaComponent
+		_tags="death_reward"
+		script_death="data/entities/animals/boss_fire_lukki/boss_fire_lukki_death.lua"
+		>
+	</LuaComponent>
+	-->
+	
+	<!-- Boss Health Multiplier Script -->
+  	<LuaComponent
+		script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
+		execute_times="1"
+		remove_after_executed="1"
+		>
+	</LuaComponent>
+
+	<!-- Loads Phase 2 if you one shot phase 1 mr tentacle abuser -->
+	<LuaComponent
+		_tags="death_reward"
+		script_death="data/entities/animals/boss_fire_lukki/boss_fire_lukki_death_phase1.lua"
 		>
 	</LuaComponent>
 </Entity>

@@ -108,7 +108,7 @@
 		falling_damages="0"
 		fire_probability_of_ignition="0.25" 
 		blood_material="mocreeps_insect_husk"
-		blood_multiplier="0.2"
+		blood_multiplier="0.3"
 		is_on_fire="0" 
 		ragdoll_filenames_file=""
 		ragdoll_offset_y="-6"

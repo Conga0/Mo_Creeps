@@ -277,11 +277,16 @@ status_mocreep_trip_red_03_name,"Blazed as Hell",,,,,,,,,,,,,
 status_mocreep_trip_red_03_desc,"Usual concepts don't apply.",,,,,,,,,,,,,
 item_mocreep_fungus_stone_name,"Sienenkivi",,,,,,,,,,,,,
 item_mocreep_fungus_stone_desc,"You feel the world transforming in the palm of your hand.",,,,,,,,,,,,,
+item_mocreep_orb_mattereater_name,"Hungry Orb",,,,,,,,,,,,,
+item_mocreep_orb_mattereater_desc,"You feel like kicking it...",,,,,,,,,,,,,
+item_mocreeps_chest_portals,"Dimensional Chest",,,,,,,,,,,,,
+item_mocreeps_chest_volcanic,"Volcanic Chest",,,,,,,,,,,,,
 status_mocreep_haste_name,"Haste",,,,,,,,,,,,,
 status_mocreep_haste_desc,"You feel Faster",,,,,,,,,,,,,
 material_mocreep_meat_mana,"Enchanting Meat",,,,,,,,,,,,,
 material_mocreep_smoke_static_slowburn_name,"Dense Smoke",,,,,,,,,,,,,
 material_mocreep_meat_fire_lukki,"Infernal Meat",,,,,,,,,,,,,
+material_mocreep_meat_fire_lukki_rock,"Brimstone",,,,,,,,,,,,,
 material_mocreeps_mudman_mud,"Magical Mud",,,,,,,,,,,,,
 material_mocreep_knowledge_of_kings,"Yggdrasil's Knowledge",,,,,,,,,,,,,
 spell_mocreep_targetter_name,"Targetter",,,,,,,,,,,,,
@@ -290,23 +295,15 @@ spell_mocreep_firecharge_name,"Fire Charge",,,,,,,,,,,,,
 spell_mocreep_firecharge_desc,"Imbues a projectile with a fiery charge, that it will release on impact.",,,,,,,,,,,,,
 spell_mocreep_knowledge_of_kings_name,"The Knowledge of Kings",,,,,,,,,,,,,
 spell_mocreep_knowledge_of_kings_desc,"Casting this spell causes something irreversibly permanent to occur",,,,,,,,,,,,,
-spell_mocreep_portal_lukki_red_marker_name,"Red Portal Marker",,,,,,,,,,,,,
-spell_mocreep_portal_lukki_red_marker_desc,"Marks a location for the Red Portal focus on.",,,,,,,,,,,,,
 spell_mocreep_portal_lukki_red_portal_name,"Summon Red Portal",,,,,,,,,,,,,
-spell_mocreep_portal_lukki_red_portal_desc,"Summons a red tinted portal from the tip of you wand.",,,,,,,,,,,,,
-spell_mocreep_portal_lukki_blue_marker_name,"Blue Portal Marker",,,,,,,,,,,,,
-spell_mocreep_portal_lukki_blue_marker_desc,"Marks a location for the Blue Portal focus on.",,,,,,,,,,,,,
+spell_mocreep_portal_lukki_red_portal_desc,"Summons a red tinted portal, Right Click to mark a location for the portal to focus on.",,,,,,,,,,,,,
 spell_mocreep_portal_lukki_blue_portal_name,"Summon Blue Portal",,,,,,,,,,,,,
-spell_mocreep_portal_lukki_blue_portal_desc,"Summons a blue tinted portal from the tip of you wand.",,,,,,,,,,,,,
-spell_mocreep_portal_lukki_green_marker_name,"Green Portal Marker",,,,,,,,,,,,,
-spell_mocreep_portal_lukki_green_marker_desc,"Marks a location for the Green Portal focus on.",,,,,,,,,,,,,
+spell_mocreep_portal_lukki_blue_portal_desc,"Summons a blue tinted portal, Right Click to mark a location for the portal to focus on.",,,,,,,,,,,,,
 spell_mocreep_portal_lukki_green_portal_name,"Summon Green Portal",,,,,,,,,,,,,
-spell_mocreep_portal_lukki_green_portal_desc,"Summons a green tinted portal from the tip of you wand.",,,,,,,,,,,,,
+spell_mocreep_portal_lukki_green_portal_desc,"Summons a green tinted portal, Right Click to mark a location for the portal to focus on.",,,,,,,,,,,,,
 misc_mocreep_energy_nova,"Energy Nova",,,,,,,,,,,,,
 log_mocreep_moon_altar_fungus,"AN IRREVERSIBLE CORRUPTION HAS OCCURRED",,,,,,,,,,,,,
 logdesc_mocreep_moon_altar_fungus,"WHAT HAVE YOU DONE!?",,,,,,,,,,,,,
-item_mocreep_orb_mattereater_name,"Hungry Orb",,,,,,,,,,,,,
-item_mocreep_orb_mattereater_desc,"You feel like kicking it...",,,,,,,,,,,,,
 log_mocreep_toxicnest_secret_name,"I TOLD YOU NOT TO VISIT THE WORM NEST AT 3AM",,,,,,,,,,,,,
 status_mocreep_protection_lava_name,Lava Immunity,,,,,,,,,,,,,
 status_mocreep_protection_lava_desc,"You take no direct damage from lava or fire.",,,,,,,,,,,,,
@@ -361,6 +358,8 @@ book_mocreeps_symbol_pinksand,"Vaaleanpunainen Hiekka",,,,,,,,,,,,,
 book_mocreeps_symbol_pinksand_description,"A triangle. Within this, create a line piercing through it's purpose. \nInside this triangle near it's peak, a circle sits. \nThe circle is pierced by the line, and is ready to change shape. \nWith this symbol, the pinkest sand will be born.",,,,,,,,,,,,,
 book_mocreeps_symbol_fungus,"Sieni",,,,,,,,,,,,,
 book_mocreeps_symbol_fungus_description,"Two circles, these are specks of dust. \nBetween these specks, draw a line moving upwards. \nWhere the line stops draw two more moving towards the circles. \nConnect the ends of those lines together with one final line, and a fungal infection is born.",,,,,,,,,,,,,
+book_mocreeps_fire_lukki,"Scorched Notes",,,,,,,,,,,,,
+book_mocreeps_fire_lukki_description,"I remember finding a stone, blazing with fire but nothing more than a gentle touch in my hand. \nIt belonged to those fire cretins who hunted me I bet. \n \nWanting to get back at them I threw the stone into the deepest body of lava I could find in those wretched mines.. \nBut that was my fatal mistake. \n \nThe stone seemed to attract... something. \nI dared not look back after hearing the lava stir violently behind me, I feel lucky to be alive. \n \nMy robes were scorched by it's mere presence. \nMy pride reduced to burn marks of what it once was \nI hope I need never return to that place.",,,,,,,,,,,,,
 status_mocreep_plagiarize_swapper_name,"Curse of Swapping",,,,,,,,,,,,,
 status_mocreep_plagiarize_swapper_desc,"You feel the blood of Swapper Mages runs through you",,,,,,,,,,,,,
 status_mocreep_delusional_name,"Delusional",,,,,,,,,,,,,
@@ -557,6 +556,7 @@ else
   ModLuaFileAppend( "data/scripts/biomes/mountain/mountain_hall.lua", "mods/mo_creeps/files/scripts/biomes/boss_spawns/statue_room_populator.lua" ) 
 end
 ]]--
+
 
 
 
@@ -1320,6 +1320,8 @@ if seasonalSetting == true then
       cid = EntityLoad("mods/mo_creeps/files/entities/misc/essence/moon_fungus_curse_slow.xml", x, y)
       EntityAddChild( player_entity, cid )
       cid = EntityLoad("mods/mo_creeps/files/entities/misc/essence/moon_creature_curse_slow.xml", x, y)
+      EntityAddChild( player_entity, cid )
+      cid = EntityLoad("mods/mo_creeps/files/entities/misc/essence/creature_shift_april_fools_bootup.xml", x, y) --20 random creature shifts at the start of the run
       EntityAddChild( player_entity, cid )
     end
     local randomCap = 10

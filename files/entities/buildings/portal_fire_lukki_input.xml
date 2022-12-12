@@ -5,7 +5,7 @@
 	<TeleportComponent
 		target_x_is_absolute_position="1"
 		target_y_is_absolute_position="1"
-		target.x="-8397"
+		target.x="-8497"
 		target.y="16596" 
 	></TeleportComponent>
 

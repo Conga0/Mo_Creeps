@@ -32,9 +32,36 @@ function damage_received( damage, desc, entity_who_caused, is_fatal )
 		local storages = EntityGetComponentIncludingDisabled( entity_id, "VariableStorageComponent" )[1]
 		ComponentSetValue2( storages, "value_int", 2)
 
+		--Updates Sprite to phase 2, rocks break off
+		--local comp = EntityGetComponentIncludingDisabled(entity_id, "SpriteComponent")[1]
+		--ComponentSetValue2( comp, "image_file", "mods/mo_creeps/files/enemies_gfx/fire_lukki/fire_lukki_phase2.xml")
+		--
+		--local cid = EntityLoad( "data/entities/animals/boss_fire_lukki/gore/cell_eater_toggle.xml", pos_x, pos_y )
+		--EntityAddChild( entity_id, cid )
+		--
+		--Unnecessary to change sprite & play gore, since gore is handled by killing the existing lukki so limb positions are maintained for a satisfying crunch effect
+
+		GamePlaySound( "data/audio/Desktop/animals.bank", "animals/boss_centipede/destroy_face", pos_x, pos_y );
+
+		local comp = EntityGetFirstComponent( entity_id, "DamageModelComponent" )
+		if( comp ~= nil ) then
+			ComponentSetValue( comp, "max_hp", 0 )
+			ComponentSetValue( comp, "hp", 0 )
+			ComponentSetValue2(comp, "air_needed", true)
+			ComponentSetValue2(comp, "air_in_lungs", 0)
+		end
+
+		local lukki_new = EntityLoad("data/entities/animals/boss_fire_lukki/boss_fire_lukki_phase2.xml", pos_x, pos_y)
+
+
+		--Triggers the mass Death Cross attack upon transformation
+		local cid = EntityLoad( "data/entities/animals/boss_fire_lukki/projectiles/deathcross_barrage_setup_long.xml", pos_x, pos_y )
+		EntityAddChild( lukki_new, cid )
+
+
 		--Enables the mass Death Cross attack
 		EntityAddComponent2(
-			entity_id,
+			lukki_new,
 			"LuaComponent",
 			{
 				execute_on_added = false,
@@ -45,15 +72,9 @@ function damage_received( damage, desc, entity_who_caused, is_fatal )
 			}
 		)
 
-		--Triggers the mass Death Cross attack upon transformation
-		local cid = EntityLoad( "data/entities/animals/boss_fire_lukki/projectiles/deathcross_barrage_setup_long.xml", pos_x, pos_y )
-		EntityAddChild( entity_id, cid )
-
-
-
 		--Spits out a ton of firebolts when the rocks break
 		EntityAddComponent2(
-			entity_id,
+			lukki_new,
 			"LuaComponent",
 			{
 				execute_on_added = false,
@@ -63,6 +84,12 @@ function damage_received( damage, desc, entity_who_caused, is_fatal )
 				execute_times=16
 			}
 		)
+
+		--50% speed boost in phase 2
+		local comp = EntityGetComponentIncludingDisabled( lukki_new, "PhysicsAIComponent")[1]
+		ComponentSetValue2(comp, "force_coeff", 24)
+		ComponentSetValue2(comp, "force_max", 300)
+		
 
 	end
 	
@@ -102,6 +129,19 @@ function damage_received( damage, desc, entity_who_caused, is_fatal )
 				end
 			end
 		end
+
+		--Sudden rage speed in panic healing
+		local comp = EntityGetComponentIncludingDisabled( entity_id, "PhysicsAIComponent")[1]
+		local comp_pathing = EntityGetComponentIncludingDisabled( entity_id, "PathFindingComponent")[1]
+		ComponentSetValue2(comp, "force_coeff", 70)
+		ComponentSetValue2(comp, "force_balancing_coeff", 0.8)
+		ComponentSetValue2(comp, "force_max", 4000)
+		ComponentSetValue2(comp, "target_vec_max_len", 150)
+
+		ComponentSetValue2(comp_pathing, "distance_to_reach_node_x", 2000)
+		ComponentSetValue2(comp_pathing, "distance_to_reach_node_y", 2000)
+		ComponentSetValue2(comp_pathing, "frames_between_searches", 10)
+		ComponentSetValue2(comp_pathing, "frames_to_get_stuck", 50)
 	end
 
 
@@ -129,6 +169,18 @@ function damage_received( damage, desc, entity_who_caused, is_fatal )
 			
 			count = count + 1
 		end
-	end
 
+		--33% speed boost in phase 4
+		local comp = EntityGetComponentIncludingDisabled( entity_id, "PhysicsAIComponent")[1]
+		local comp_pathing = EntityGetComponentIncludingDisabled( entity_id, "PathFindingComponent")[1]
+		ComponentSetValue2(comp, "force_coeff", 24)
+		ComponentSetValue2(comp, "force_balancing_coeff", 0.9)
+		ComponentSetValue2(comp, "force_max", 400)
+		ComponentSetValue2(comp, "target_vec_max_len", 30)
+
+		ComponentSetValue2(comp_pathing, "distance_to_reach_node_x", 40)
+		ComponentSetValue2(comp_pathing, "distance_to_reach_node_y", 40)
+		ComponentSetValue2(comp_pathing, "frames_between_searches", 20)
+		ComponentSetValue2(comp_pathing, "frames_to_get_stuck", 120)
+	end
 end

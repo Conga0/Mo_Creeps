@@ -790,9 +790,9 @@ table.insert(actions,
     id          = "MOCREEPS_FIRE_CHARGE",
     name 		= "$spell_mocreep_firecharge_name",
     description = "$spell_mocreep_firecharge_desc",
-    sprite 		= "data/ui_gfx/gun_actions/burn_trail.png",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/fire_charge.png",
     sprite_unidentified = "data/ui_gfx/gun_actions/heavy_bullet_unidentified.png",
-    related_projectiles	= {"mods/mo_creeps/files/entities/projectiles/deck/targetter.xml"},
+    spawn_requires_flag = "mocreeps_card_unlocked_fire_lukki_spell",
     type 		= ACTION_TYPE_MODIFIER,
     spawn_level                       = "1,2,4,5", -- ELECTRIC_CHARGE
     spawn_probability                 = "1,1,1,1", -- ELECTRIC_CHARGE
@@ -805,6 +805,84 @@ table.insert(actions,
         c.damage_fire_add = c.damage_fire_add + 0.1
         c.extra_entities = c.extra_entities .. "data/entities/misc/burn.xml,"
         draw_actions( 1, true )
+    end,
+})
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_PORTAL_LUKKI_RED_PORTAL",
+    name 		= "$spell_mocreep_portal_lukki_red_portal_name",
+    description = "$spell_mocreep_portal_lukki_red_portal_desc",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/portal_red_portal.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/spread_reduce_unidentified.png",
+    spawn_requires_flag = "mocreeps_card_unlocked_fire_lukki_spell",
+    spawn_manual_unlock = true,
+    never_unlimited		= false,
+    type 		= ACTION_TYPE_OTHER,
+    recursive	= true,
+    ai_never_uses = true,
+    spawn_level                       = "10", -- MANA_REDUCE
+    spawn_probability                 = "0", -- MANA_REDUCE
+    price = 4300,
+    mana = 300,
+    --max_uses    = 1,
+    custom_xml_file   = "mods/mo_creeps/files/entities/misc/custom_cards/portal_red_marker.xml",
+    action 		= function()
+        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/markerportals/portal_red_portal.xml")
+        c.fire_rate_wait = c.fire_rate_wait + 100
+        current_reload_time = current_reload_time + 100
+    end,
+})
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_PORTAL_LUKKI_BLUE_PORTAL",
+    name 		= "$spell_mocreep_portal_lukki_blue_portal_name",
+    description = "$spell_mocreep_portal_lukki_blue_portal_desc",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/portal_blue_portal.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/spread_reduce_unidentified.png",
+    spawn_requires_flag = "mocreeps_card_unlocked_fire_lukki_spell",
+    spawn_manual_unlock = true,
+    never_unlimited		= false,
+    type 		= ACTION_TYPE_OTHER,
+    recursive	= true,
+    ai_never_uses = true,
+    spawn_level                       = "10", -- MANA_REDUCE
+    spawn_probability                 = "0", -- MANA_REDUCE
+    price = 4300,
+    mana = 300,
+    --max_uses    = 1,
+    custom_xml_file   = "mods/mo_creeps/files/entities/misc/custom_cards/portal_blue_marker.xml",
+    action 		= function()
+        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/markerportals/portal_blue_portal.xml")
+        c.fire_rate_wait = c.fire_rate_wait + 100
+        current_reload_time = current_reload_time + 100
+    end,
+})
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_PORTAL_LUKKI_GREEN_PORTAL",
+    name 		= "$spell_mocreep_portal_lukki_green_portal_name",
+    description = "$spell_mocreep_portal_lukki_green_portal_desc",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/portal_green_portal.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/spread_reduce_unidentified.png",
+    spawn_requires_flag = "mocreeps_card_unlocked_fire_lukki_spell",
+    spawn_manual_unlock = true,
+    never_unlimited		= false,
+    type 		= ACTION_TYPE_OTHER,
+    recursive	= true,
+    ai_never_uses = true,
+    spawn_level                       = "10", -- MANA_REDUCE
+    spawn_probability                 = "0", -- MANA_REDUCE
+    price = 4300,
+    mana = 300,
+    --max_uses    = 1,
+    custom_xml_file   = "mods/mo_creeps/files/entities/misc/custom_cards/portal_green_marker.xml",
+    action 		= function()
+        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/markerportals/portal_green_portal.xml")
+        c.fire_rate_wait = c.fire_rate_wait + 100
+        current_reload_time = current_reload_time + 100
     end,
 })
 
@@ -832,156 +910,6 @@ table.insert(actions,
             local x,y = EntityGetTransform( v )
             local eid = EntityLoad("mods/mo_creeps/files/entities/projectiles/deck/knowledge_of_kings_proj_check.xml", x, y)
         end
-        c.fire_rate_wait = c.fire_rate_wait + 100
-        current_reload_time = current_reload_time + 100
-    end,
-})
-
-table.insert(actions,
-{
-    id          = "MOCREEPS_PORTAL_LUKKI_RED_MARKER",
-    name 		= "$spell_mocreep_portal_lukki_red_marker_name",
-    description = "$spell_mocreep_portal_lukki_red_marker_desc",
-    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/portal_red_marker.png",
-    sprite_unidentified = "data/ui_gfx/gun_actions/spread_reduce_unidentified.png",
-    spawn_requires_flag = "mocreeps_card_unlocked_secret_knowledge_of_kings_spell",
-    spawn_manual_unlock = true,
-    never_unlimited		= false,
-    type 		= ACTION_TYPE_OTHER,
-    recursive	= true,
-    ai_never_uses = true,
-    spawn_level                       = "10", -- MANA_REDUCE
-    spawn_probability                 = "0", -- MANA_REDUCE
-    price = 400,
-    mana = 300,
-    --max_uses    = 1,
-    action 		= function()
-        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/markerportals/portal_red_marker.xml")
-        c.fire_rate_wait = c.fire_rate_wait + 100
-        current_reload_time = current_reload_time + 100
-    end,
-})
-
-table.insert(actions,
-{
-    id          = "MOCREEPS_PORTAL_LUKKI_RED_PORTAL",
-    name 		= "$spell_mocreep_portal_lukki_red_portal_name",
-    description = "$spell_mocreep_portal_lukki_red_portal_desc",
-    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/portal_red_portal.png",
-    sprite_unidentified = "data/ui_gfx/gun_actions/spread_reduce_unidentified.png",
-    spawn_requires_flag = "mocreeps_card_unlocked_secret_knowledge_of_kings_spell",
-    spawn_manual_unlock = true,
-    never_unlimited		= false,
-    type 		= ACTION_TYPE_OTHER,
-    recursive	= true,
-    ai_never_uses = true,
-    spawn_level                       = "10", -- MANA_REDUCE
-    spawn_probability                 = "0", -- MANA_REDUCE
-    price = 4300,
-    mana = 300,
-    --max_uses    = 1,
-    action 		= function()
-        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/markerportals/portal_red_portal.xml")
-        c.fire_rate_wait = c.fire_rate_wait + 100
-        current_reload_time = current_reload_time + 100
-    end,
-})
-
-table.insert(actions,
-{
-    id          = "MOCREEPS_PORTAL_LUKKI_BLUE_MARKER",
-    name 		= "$spell_mocreep_portal_lukki_blue_marker_name",
-    description = "$spell_mocreep_portal_lukki_blue_marker_desc",
-    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/portal_blue_marker.png",
-    sprite_unidentified = "data/ui_gfx/gun_actions/spread_reduce_unidentified.png",
-    spawn_requires_flag = "mocreeps_card_unlocked_secret_knowledge_of_kings_spell",
-    spawn_manual_unlock = true,
-    never_unlimited		= false,
-    type 		= ACTION_TYPE_OTHER,
-    recursive	= true,
-    ai_never_uses = true,
-    spawn_level                       = "10", -- MANA_REDUCE
-    spawn_probability                 = "0", -- MANA_REDUCE
-    price = 400,
-    mana = 300,
-    --max_uses    = 1,
-    action 		= function()
-        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/markerportals/portal_blue_marker.xml")
-        c.fire_rate_wait = c.fire_rate_wait + 100
-        current_reload_time = current_reload_time + 100
-    end,
-})
-
-table.insert(actions,
-{
-    id          = "MOCREEPS_PORTAL_LUKKI_BLUE_PORTAL",
-    name 		= "$spell_mocreep_portal_lukki_blue_portal_name",
-    description = "$spell_mocreep_portal_lukki_blue_portal_desc",
-    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/portal_blue_portal.png",
-    sprite_unidentified = "data/ui_gfx/gun_actions/spread_reduce_unidentified.png",
-    spawn_requires_flag = "mocreeps_card_unlocked_secret_knowledge_of_kings_spell",
-    spawn_manual_unlock = true,
-    never_unlimited		= false,
-    type 		= ACTION_TYPE_OTHER,
-    recursive	= true,
-    ai_never_uses = true,
-    spawn_level                       = "10", -- MANA_REDUCE
-    spawn_probability                 = "0", -- MANA_REDUCE
-    price = 4300,
-    mana = 300,
-    --max_uses    = 1,
-    action 		= function()
-        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/markerportals/portal_blue_portal.xml")
-        c.fire_rate_wait = c.fire_rate_wait + 100
-        current_reload_time = current_reload_time + 100
-    end,
-})
-
-table.insert(actions,
-{
-    id          = "MOCREEPS_PORTAL_LUKKI_GREEN_MARKER",
-    name 		= "$spell_mocreep_portal_lukki_green_marker_name",
-    description = "$spell_mocreep_portal_lukki_green_marker_desc",
-    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/portal_green_marker.png",
-    sprite_unidentified = "data/ui_gfx/gun_actions/spread_reduce_unidentified.png",
-    spawn_requires_flag = "mocreeps_card_unlocked_secret_knowledge_of_kings_spell",
-    spawn_manual_unlock = true,
-    never_unlimited		= false,
-    type 		= ACTION_TYPE_OTHER,
-    recursive	= true,
-    ai_never_uses = true,
-    spawn_level                       = "10", -- MANA_REDUCE
-    spawn_probability                 = "0", -- MANA_REDUCE
-    price = 400,
-    mana = 300,
-    --max_uses    = 1,
-    action 		= function()
-        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/markerportals/portal_green_marker.xml")
-        c.fire_rate_wait = c.fire_rate_wait + 100
-        current_reload_time = current_reload_time + 100
-    end,
-})
-
-table.insert(actions,
-{
-    id          = "MOCREEPS_PORTAL_LUKKI_GREEN_PORTAL",
-    name 		= "$spell_mocreep_portal_lukki_green_portal_name",
-    description = "$spell_mocreep_portal_lukki_green_portal_desc",
-    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/portal_green_portal.png",
-    sprite_unidentified = "data/ui_gfx/gun_actions/spread_reduce_unidentified.png",
-    spawn_requires_flag = "mocreeps_card_unlocked_secret_knowledge_of_kings_spell",
-    spawn_manual_unlock = true,
-    never_unlimited		= false,
-    type 		= ACTION_TYPE_OTHER,
-    recursive	= true,
-    ai_never_uses = true,
-    spawn_level                       = "10", -- MANA_REDUCE
-    spawn_probability                 = "0", -- MANA_REDUCE
-    price = 4300,
-    mana = 300,
-    --max_uses    = 1,
-    action 		= function()
-        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/markerportals/portal_green_portal.xml")
         c.fire_rate_wait = c.fire_rate_wait + 100
         current_reload_time = current_reload_time + 100
     end,

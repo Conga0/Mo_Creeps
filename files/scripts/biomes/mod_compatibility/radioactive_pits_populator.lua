@@ -40,3 +40,11 @@
         max_count    = 2,    
         entity     = "data/entities/animals/gazer_greater_cold.xml"
     })
+
+    table.insert(g_small_enemies,
+    {
+        prob           = 0.2,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/slime_leaker.xml"
+    })

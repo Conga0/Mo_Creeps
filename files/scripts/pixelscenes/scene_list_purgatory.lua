@@ -153,3 +153,117 @@ xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
     <PixelScene pos_x="4555" pos_y="727" just_load_an_entity="mods/mo_creeps/files/scripts/biomes/boss_spawns/purgatory/statue_room_populator_entity.xml" />
 ]]))
 ModTextFileSetContent("mods/purgatory/files/biome/_pixel_scenes.xml", tostring(xml))
+
+
+
+-- 1.1.0 CONTENT BELOW ----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+--Essence of Fungus
+--256 + to x and y = center, where essence spawns
+local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
+local content = ModTextFileGetContent("mods/purgatory/files/biome/_pixel_scenes.xml")
+local xml = nxml.parse(content)
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+  <PixelScene DEBUG_RELOAD_ME="0" clean_area_before="0" pos_x="11788" pos_y="2860" skip_biome_checks="1" skip_edge_textures="0"
+    material_filename="mods/mo_creeps/files/pixel_scenes/essence_diamond/essenceroom_fungus.png"
+    background_filename="data/biome_impl/essenceroom_background_with_diamond.png"
+    colors_filename="data/biome_impl/essenceroom_visual.png"
+  ></PixelScene>
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="12044" pos_y="3116" just_load_an_entity="mods/mo_creeps/files/entities/items/pickups/essence_fungus.xml" />
+]]))
+ModTextFileSetContent("mods/purgatory/files/biome/_pixel_scenes.xml", tostring(xml))
+
+
+--Fire Lukki Portal Room
+local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
+local content = ModTextFileGetContent("mods/purgatory/files/biome/_pixel_scenes.xml")
+local xml = nxml.parse(content)
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+  <PixelScene DEBUG_RELOAD_ME="0" clean_area_before="0" pos_x="-8739" pos_y="16381" skip_biome_checks="1" skip_edge_textures="0"
+    material_filename="mods/mo_creeps/files/pixel_scenes/portal_room_fire_lukki/portal_room_fire_lukki.png"
+    background_filename="mods/mo_creeps/files/pixel_scenes/portal_room_fire_lukki/portal_room_fire_lukki_background.png"
+    colors_filename="mods/mo_creeps/files/pixel_scenes/portal_room_fire_lukki/portal_room_fire_lukki_visual.png"
+  ></PixelScene>
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="-8624" pos_y="16547" just_load_an_entity="mods/mo_creeps/files/entities/buildings/portal_fire_lukki_musicstone.xml" />
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="-8337" pos_y="16554" just_load_an_entity="mods/mo_creeps/files/entities/buildings/portal_fire_lukki_lavalake.xml" />
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="-8648" pos_y="16708" just_load_an_entity="mods/mo_creeps/files/entities/buildings/portal_fire_lukki_tower.xml" />
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="-8344" pos_y="16711" just_load_an_entity="mods/mo_creeps/files/entities/buildings/portal_fire_lukki_dragoncave.xml" />
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="-8480" pos_y="16906" just_load_an_entity="data/entities/buildings/hourglass_music.xml" />
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="-8480" pos_y="16906" just_load_an_entity="mods/mo_creeps/files/entities/buildings/divine_knowledge_particles.xml" />
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="-8483" pos_y="16913" just_load_an_entity="mods/mo_creeps/files/entities/buildings/divine_knowledge_check.xml" />
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="-8539" pos_y="16843" just_load_an_entity="mods/mo_creeps/files/entities/props/alchemy/alchemy_centipede_blood.xml" />
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="-8484" pos_y="16843" just_load_an_entity="mods/mo_creeps/files/entities/props/alchemy/alchemy_redsand.xml" />
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="-8429" pos_y="16843" just_load_an_entity="mods/mo_creeps/files/entities/props/alchemy/alchemy_insecthusk.xml" />
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="-8564" pos_y="16843" just_load_an_entity="mods/mo_creeps/files/entities/props/alchemy/boss_toxic_worm.xml" />
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="-8524" pos_y="16843" just_load_an_entity="mods/mo_creeps/files/entities/props/alchemy/boss_divine_being.xml" />
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="-8484" pos_y="16843" just_load_an_entity="mods/mo_creeps/files/entities/props/alchemy/boss_fire_lukki.xml" />
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="-8444" pos_y="16843" just_load_an_entity="mods/mo_creeps/files/entities/props/alchemy/boss_musical_boss.xml" />
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="-8404" pos_y="16843" just_load_an_entity="mods/mo_creeps/files/entities/props/alchemy/boss_blob_titan.xml" />
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="2239" pos_y="2215" just_load_an_entity="mods/mo_creeps/files/entities/props/alchemy/hidden/alchemy_pinksand.xml" />
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="2343" pos_y="2215" just_load_an_entity="mods/mo_creeps/files/entities/props/alchemy/hidden/alchemy_centipede_blood.xml" />
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="12086" pos_y="7000" just_load_an_entity="mods/mo_creeps/files/entities/props/alchemy/hidden/alchemy_insecthusk.xml" />
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="11984" pos_y="7000" just_load_an_entity="mods/mo_creeps/files/entities/props/alchemy/hidden/alchemy_divineliquid.xml" />
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="3916" pos_y="9110" just_load_an_entity="mods/mo_creeps/files/entities/props/alchemy/hidden/alchemy_redsand.xml" />
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="4022" pos_y="9110" just_load_an_entity="mods/mo_creeps/files/entities/props/alchemy/hidden/alchemy_fungus.xml" />
+]]))
+ModTextFileSetContent("mods/purgatory/files/biome/_pixel_scenes.xml", tostring(xml))
+
+--Portal Offset amounts from pixelscene origin in top left
+--115,166 Music Stone         402,173 Lava lake
+--
+--91,327 Tower                395,330 Dragon Cave
+--
+-- Toxic Worm----Divine Being----Fire Lukki----Abandoned Orchestra----Blob Boss
+--
+--
+--Music Stone
+--Lava Lake
+--Tower
+--Dragon Cave

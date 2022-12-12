@@ -42,6 +42,38 @@
         entity     = "data/entities/animals/hisii_minecart.xml"
     })
 
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.04,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/hisii_minecart_tnt.xml"
+    })
+
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.005,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/secret/hisii_minecart.xml"
+    })
+
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.01,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/hisii_giga_bomb.xml"
+    })
+
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.08,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/slime_leaker_weak.xml"
+    })
+
     
 
     ---Small Enemies
@@ -94,6 +126,54 @@
         max_count    = 12,    
         entity     = "data/entities/animals/fairy_cheap.xml"
     })
+
+
+    --Slime Pit Spawns
+    table.insert(g_unique_enemy,
+    {
+        prob           = 0.1,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/slime_leaker_weak.xml"
+    })
+
+
+
+
+
+    --Pandora Spawns
+
+    table.insert(g_small_enemies,
+    {
+        prob           = 0.03,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/items/pickup/heart.xml",
+		spawn_check = function() 
+			if GameHasFlagRun( "mocreeps_pandora_unleashed" ) then
+				return true
+			else
+				return false 
+			end
+		end,
+    })
+
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.05,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/hisii_giga_bomb.xml",
+		spawn_check = function() 
+			if GameHasFlagRun( "mocreeps_pandora_unleashed" ) then
+				return true
+			else
+				return false 
+			end
+		end,
+    })
+    
+
 
 
 
