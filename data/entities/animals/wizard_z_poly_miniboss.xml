@@ -223,8 +223,8 @@
 	attack_ranged_entity_file="mods/mo_creeps/files/entities/projectiles/orb_poly_chaotic_redirect_start.xml"
 	attack_ranged_offset_y="-6"
 	attack_ranged_offset_x="10"
-	attack_ranged_entity_count_min="1"
-	attack_ranged_entity_count_max="1"
+	attack_ranged_entity_count_min="2"
+	attack_ranged_entity_count_max="2"
 	>
 	</AIAttackComponent>
 

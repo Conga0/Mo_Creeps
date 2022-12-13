@@ -784,6 +784,48 @@ table.insert(actions,
     end,
 })
 
+table.insert(actions,
+{
+    id          = "MOCREEPS_ALT_FIRE_TELEPORT",
+    name 		= "$spell_mocreep_alt_fire_teleport_name",
+    description = "$spell_mocreep_alt_fire_teleport_desc",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/alt_fire_teleport_projectile.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/spread_reduce_unidentified.png",
+    --spawn_requires_flag = "mocreeps_card_unlocked_fire_lukki_spell",
+    type    = ACTION_TYPE_PASSIVE,
+    spawn_level                       = "0,1,2,4,5,6,10", -- TELEPORT_PROJECTILE
+    spawn_probability                 = "0.3,0.3,0.3,0.2,0.2,0.2,0.8", -- TELEPORT_PROJECTILE
+    price = 130,
+    mana = 0,
+    --max_uses    = 1,
+    custom_xml_file   = "mods/mo_creeps/files/entities/misc/custom_cards/alt_fire_teleport.xml",
+    action            = function()
+        -- Go to the next card
+        draw_actions(1, true)
+    end,
+})
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_ALT_FIRE_TELEPORT_SHORT",
+    name 		= "$spell_mocreep_alt_fire_teleport_short_name",
+    description = "$spell_mocreep_alt_fire_teleport_short_desc",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/alt_fire_teleport_projectile_short.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/spread_reduce_unidentified.png",
+    --spawn_requires_flag = "mocreeps_card_unlocked_fire_lukki_spell",
+    type    = ACTION_TYPE_PASSIVE,
+    spawn_level                       = "0,1,2,4,5,6,10", -- TELEPORT_PROJECTILE
+    spawn_probability                 = "0.3,0.3,0.3,0.2,0.2,0.2,0.8", -- TELEPORT_PROJECTILE
+    price = 130,
+    mana = 0,
+    --max_uses    = 1,
+    custom_xml_file   = "mods/mo_creeps/files/entities/misc/custom_cards/alt_fire_teleport_short.xml",
+    action            = function()
+        -- Go to the next card
+        draw_actions(1, true)
+    end,
+})
+
 --Wait.. is burning trail literally just fire charge but not called fire charge..? Keep your naming consistency together Noita please
 table.insert(actions,
 {

@@ -13,6 +13,7 @@ function collision_trigger( player_id )
         GamePrint("You feel the portal lacks focus")
 	else
 	    EntitySetTransform( player_id, pos_x, pos_y )
+        EntityLoad("mods/mo_creeps/files/entities/projectiles/deck/markerportals/portal_red_fx.xml", pos_x, pos_y)
     end
 
 	EntityKill( entity_id )

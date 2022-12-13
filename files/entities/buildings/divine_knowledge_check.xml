@@ -22,7 +22,7 @@
 		to_material="smoke"
 		clean_stains="0"
 		is_circle="1"
-		radius="50"
+		radius="60"
 		>
 	</MagicConvertMaterialComponent>
 
@@ -31,11 +31,24 @@
 		_enabled="0"
 		kill_when_finished="0"
 		steps_per_frame="5"
-		from_material_tag="[sand]"
+		from_material_tag="mocreeps_redstone"
 		to_material="smoke"
 		clean_stains="0"
 		is_circle="1"
-		radius="50"
+		radius="60"
+		>
+	</MagicConvertMaterialComponent>
+
+	<MagicConvertMaterialComponent
+		_tags="enabled_by_liquid"
+		_enabled="0"
+		kill_when_finished="0"
+		steps_per_frame="5"
+		from_material_tag="mocreeps_insect_husk"
+		to_material="smoke"
+		clean_stains="0"
+		is_circle="1"
+		radius="60"
 		>
 	</MagicConvertMaterialComponent>
 

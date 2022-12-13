@@ -1,0 +1,6 @@
+mods/mo_creeps/files/ragdolls/goo_slug_vault/eye.png
+mods/mo_creeps/files/ragdolls/goo_slug_vault/chunk_01.png
+mods/mo_creeps/files/ragdolls/goo_slug_vault/chunk_02.png
+mods/mo_creeps/files/ragdolls/goo_slug_vault/chunk_03.png
+mods/mo_creeps/files/ragdolls/goo_slug_vault/chunk_04.png
+mods/mo_creeps/files/ragdolls/goo_slug_vault/chunk_05.png

@@ -123,6 +123,9 @@ xml:add_child(nxml.parse([[
 ]]))
 ModTextFileSetContent("data/entities/projectiles/deck/kantele/kantele_g.xml", tostring(xml))
 
+--Stuff
+ModMaterialsFileAdd( "mods/mo_creeps/files/scripts/magic/console_test.xml" )
+
 
 local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
 local content = ModTextFileGetContent("data/entities/projectiles/deck/ocarina/ocarina_a.xml")

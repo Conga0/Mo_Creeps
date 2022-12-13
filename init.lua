@@ -55,6 +55,12 @@ else
   RemoveFlagPersistent( "mocreeps_card_unlocked_blob_boss_spell" )
 end
 
+if HasFlagPersistent( "mocreeps_card_unlocked_fire_lukki" ) then
+  AddFlagPersistent( "mocreeps_card_unlocked_fire_lukki_spell" )
+else
+  RemoveFlagPersistent( "mocreeps_card_unlocked_fire_lukki_spell" )
+end
+
 if HasFlagPersistent( "mocreeps_card_unlocked_cat_secret" ) then
   AddFlagPersistent( "mocreeps_card_unlocked_cat_secret_spell" )
 else
@@ -301,6 +307,10 @@ spell_mocreep_portal_lukki_blue_portal_name,"Summon Blue Portal",,,,,,,,,,,,,
 spell_mocreep_portal_lukki_blue_portal_desc,"Summons a blue tinted portal, Right Click to mark a location for the portal to focus on.",,,,,,,,,,,,,
 spell_mocreep_portal_lukki_green_portal_name,"Summon Green Portal",,,,,,,,,,,,,
 spell_mocreep_portal_lukki_green_portal_desc,"Summons a green tinted portal, Right Click to mark a location for the portal to focus on.",,,,,,,,,,,,,
+spell_mocreep_alt_fire_teleport_name,"Alt Fire Teleport Bolt",,,,,,,,,,,,,
+spell_mocreep_alt_fire_teleport_desc,"Right click to fire a teleport bolt.",,,,,,,,,,,,,
+spell_mocreep_alt_fire_teleport_short_name,"Alt Fire Small Teleport Bolt",,,,,,,,,,,,,
+spell_mocreep_alt_fire_teleport_short_desc,"Right click to fire a small teleport bolt.",,,,,,,,,,,,,
 misc_mocreep_energy_nova,"Energy Nova",,,,,,,,,,,,,
 log_mocreep_moon_altar_fungus,"AN IRREVERSIBLE CORRUPTION HAS OCCURRED",,,,,,,,,,,,,
 logdesc_mocreep_moon_altar_fungus,"WHAT HAVE YOU DONE!?",,,,,,,,,,,,,
@@ -425,6 +435,7 @@ end
 
 --Custom Materials
 ModMaterialsFileAdd( "mods/mo_creeps/files/scripts/materials/custom_materials.xml" )
+
 
 
 --Custom Potion Spawns

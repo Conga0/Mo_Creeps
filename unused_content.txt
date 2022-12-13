@@ -28,6 +28,8 @@ Red sand is now considerably more palatable...
 The gods have added something divine to the world...
 
 
+Long Changelog:
+
 Master of None can not longer shoot poly orbs, It's all fun and games until you get Polymorphed
 Fixed Tnt Minecart Riders being a bit too jittery in their cart
 Fixed Worse Enemies Weak Shotgunners not working with minecarts properly
@@ -77,6 +79,7 @@ Fixed Clown not having any ragdolls
 Fixed Delusional having a typo (Decieve > Deceive)
 Fixed Greater Sky Gazer having the wrong ragdoll colour
 Fixed Trophy Room Statues not spawning if you mod restarted before going near them
+Fixed script error in Toxic & Lava immunity status effects which tried to change material weaknesses of a dead player
 FIXED MAGIC DEVOURERS HAVING 90% DAMAGE REDUCTION FROM ALL SOURCES
 Very slightly reduced blood produced by Angeling & Devilings
 Red Sand now absorbs blood to grow
@@ -169,26 +172,18 @@ Slightly Reduced the health of Glu Slugs, they should die faster now, especially
 Divine Being is now immune to slice damage (homing omega sawblade & forget builds for easy kills felt underwhelming)
 Divine Liquid lasts for a shorter amount of time when drunk
 Disabled most Twitch Events if CTEP is enabled
-
-
-Fixed script error in Toxic & Lava immunity status effects which tried to change material weaknesses of a dead player
-Added Asthete of Heat Phase 2 sprite transition
-Asthete of Heat now heals 33% more from it's healing phase
-Lava Immunity status now lasts 33% longer from eating Asthete of Heat's flesh
-Coloured Portal Spells now only require rightclick to mark a location rather than an entirely seperate spell
-Added book hinting towards how to summon the Asthete of Heat
-Added Death reward for Aesthete of Heat
 Locust Swarm's now produce 50% more insect husk
-Updated Fire Charge to have a unique spell sprite
 Significantly increased amount of Red Sand appearing in the pyramid
 Significantly increased Locust Swarm spawnrate in the desert
-Updated mod compatibility with alt biomes to include new spawns
-Revenge Reflection now only appears after beating Kolmi at least once, if any brand new/fresh save players use the mod, I want to give them an easy unlock, even though they might never notice it
-Removed Spell: Red Portal Marker
-Removed Spell: Green Portal Marker
-Removed Spell: Blue Portal Marker
-New Boss: Aesthete of Heat (Thankyou Spoopy for the spritework!)
 
+Fixed Vault varient of the Glue Slug having outdated sprites
+Added a Visual effect for after teleporting through a coloured portal
+3am Toxic Worm nest event now occurs on the 1st of the month as well
+Upgraded Overzealous Polymaster to have a double attack, the idea behind this is to break through permanent shield, previously a shield would nullify this enemy entirely
+Generated Stainmap for Leaking Slime
+Added Fire Lukki Death to the flag check system
+New Spell: Alt fire Teleport Bolt
+New Spell: Alt fire Short Teleport Bolt
 
 
 

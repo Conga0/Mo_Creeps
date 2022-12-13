@@ -4,6 +4,7 @@ Sorako Hinoguchi - Voicing Cats
 
 Spoopy (The One The Only Spoopy Boi#7859) - Creating fluffy cat sprites
 Creating Size 3 Blob Sprites, Creating Size 4 Blob static Sprite, Creating Size 5 Blob Idle Animation
+Creating Aesthete of Heat Sprites
 
 Squirrelly#6472 - Created the mana drain effect lua script, your mana wouldn't be stolen without their help
 

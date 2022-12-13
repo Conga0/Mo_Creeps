@@ -3,6 +3,7 @@
     <DamageModelComponent 
       hp="9"
       max_hp="9"
+      ragdoll_filenames_file="mods/Mo_Creeps/files/ragdolls/goo_slug_vault/filenames.txt"
      ></DamageModelComponent >
         
     <SpriteComponent 

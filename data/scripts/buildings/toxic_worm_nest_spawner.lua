@@ -24,7 +24,7 @@ function collision_trigger()
 		} )
 	end
 
-	if ModSettingGet( "mo_creeps.motd_setting" ) == true and day == 31 and hour == 3 then
+	if ModSettingGet( "mo_creeps.motd_setting" ) == true and (day == 31 or day == 1) and hour == 3 then
 		GamePrintImportant( "$log_mocreep_toxicnest_secret_name", "$logdesc_mocreep_moon_altar_fungus", "mods/mo_creeps/files/ui_gfx/decorations/3piece_creature_shift.png" )
 		local wormcount = 9
 
