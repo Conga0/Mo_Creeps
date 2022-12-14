@@ -168,3 +168,11 @@ table.insert(g_items,
         end
     end,
 })
+
+table.insert(g_items,
+{
+    prob   		= 0.05,
+    min_count	= 1,
+    max_count	= 1,    
+    entity 	= "mods/mo_creeps/files/entities/items/pickups/orb_mattereater.xml",
+})

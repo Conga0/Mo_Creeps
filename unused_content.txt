@@ -12,7 +12,7 @@ Remember the checklist!!
 
 
 1.1.0 Changelog: [The Secret Update]
-Added 4 new environmental hazards
+Added 5 new environmental hazards
 Added 12 new creeps
 Added 1 new boss
 Added 8 new twitch events
@@ -80,6 +80,7 @@ Fixed Delusional having a typo (Decieve > Deceive)
 Fixed Greater Sky Gazer having the wrong ragdoll colour
 Fixed Trophy Room Statues not spawning if you mod restarted before going near them
 Fixed script error in Toxic & Lava immunity status effects which tried to change material weaknesses of a dead player
+Fixed Vault varient of the Glue Slug having outdated sprites
 FIXED MAGIC DEVOURERS HAVING 90% DAMAGE REDUCTION FROM ALL SOURCES
 Very slightly reduced blood produced by Angeling & Devilings
 Red Sand now absorbs blood to grow
@@ -175,16 +176,20 @@ Disabled most Twitch Events if CTEP is enabled
 Locust Swarm's now produce 50% more insect husk
 Significantly increased amount of Red Sand appearing in the pyramid
 Significantly increased Locust Swarm spawnrate in the desert
-
-Fixed Vault varient of the Glue Slug having outdated sprites
-Added a Visual effect for after teleporting through a coloured portal
 3am Toxic Worm nest event now occurs on the 1st of the month as well
 Upgraded Overzealous Polymaster to have a double attack, the idea behind this is to break through permanent shield, previously a shield would nullify this enemy entirely
-Generated Stainmap for Leaking Slime
-Added Fire Lukki Death to the flag check system
-New Spell: Alt fire Teleport Bolt
-New Spell: Alt fire Short Teleport Bolt
 
+Fixed Hungry Orb floating in mid-air when held
+Fixed Big Blobs spawned from Creepy Blobs triggering boss music & preventing the colossal blob boss from dropping loot
+Fixed Big Tentacler's portal orb not being copyable
+Hungry Orb now spawns on item pedestals instead of the floor
+Reworked Desert locust spawns to be rarer above ground but much more frequent underground
+Slightly reduced desert poring spawnrate
+Halloween & Smissmass seasonal events now occur starting on the 15th instead of the 22nd
+Added a new "biome modifier", "Dense Smoke", causes pockets of dense smoke to appear around the biome.
+Currently restricted to coal pits and not an actual biome modifier, but i'll try to find a way to see if it can be made official
+Improved Fire Charge's spell sprite
+Added 2 new pixel scenes, alternate shop scenes for Snowy Depths & Coal pits
 
 
 NOTE: Before releasing make sure to remove worse enemies boss health multipliers & such if they aren't on the workshop yet

@@ -33,7 +33,7 @@ function collision_trigger(brimstone_id)
             end
             
             GameAddFlagRun("mocreeps_fire_lukki_boss_summoned")
-            EntityKill( brimstone_id )
+            --EntityKill( brimstone_id )
         end
         EntityKill( entity_id )
         --GamePrint("Brimstone Eaten")

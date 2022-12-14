@@ -273,8 +273,84 @@
     --[[
     ]]--
     
+    local pixelscene_append_list ={
+    {
+        prob   			= 1.8,
+        material_file 	= "mods/mo_creeps/files/biome_impl/excavationsite/redstone_01.png",
+        visual_file		= "",
+        background_file	= "",
+        is_unique		= 0
+    },
+    {
+        prob   			= 1.8,
+        material_file 	= "mods/mo_creeps/files/biome_impl/excavationsite/redstone_02.png",
+        visual_file		= "",
+        background_file	= "mods/mo_creeps/files/biome_impl/excavationsite/redstone_02_background.png",
+        is_unique		= 0
+    },
+    {
+        prob   			= 3.0,
+        material_file 	= "mods/mo_creeps/files/biome_impl/excavationsite/shop_01.png",
+        visual_file		= "mods/mo_creeps/files/biome_impl/excavationsite/shop_01_visual.png",
+        background_file	= "",
+        is_unique		= 0
+    }, --Everything below this point is the vanilla stuff so shops don't get overinflated -----------------------------------
+	{
+		prob   			= 0.5,
+		material_file 	= "data/biome_impl/excavationsite/machine_1.png",
+		visual_file		= "data/biome_impl/excavationsite/machine_1_visual.png",
+		background_file	= "data/biome_impl/excavationsite/machine_1_background.png",
+		is_unique		= 0
+	},
+	{
+		prob   			= 0.5,
+		material_file 	= "data/biome_impl/excavationsite/machine_2.png",
+		visual_file		= "data/biome_impl/excavationsite/machine_2_visual.png",
+		background_file	= "data/biome_impl/excavationsite/machine_2_background.png",
+		is_unique		= 0
+	},
+	{
+		prob   			= 0.5,
+		material_file 	= "data/biome_impl/excavationsite/machine_3b.png",
+		visual_file		= "data/biome_impl/excavationsite/machine_3b_visual.png",
+		background_file	= "data/biome_impl/excavationsite/machine_3b_background.png",
+		is_unique		= 0
+	},
+	{
+		prob   			= 0.5,
+		material_file 	= "data/biome_impl/excavationsite/machine_4.png",
+		visual_file		= "data/biome_impl/excavationsite/machine_4_visual.png",
+		background_file	= "data/biome_impl/excavationsite/machine_4_background.png",
+		is_unique		= 0
+	},
+	{
+		prob   			= 0.5,
+		material_file 	= "data/biome_impl/excavationsite/machine_5.png",
+		visual_file		= "data/biome_impl/excavationsite/machine_5_visual.png",
+		background_file	= "data/biome_impl/excavationsite/machine_5_background.png",
+		is_unique		= 0
+	},
+	{
+		prob   			= 0.5,
+		material_file 	= "data/biome_impl/excavationsite/machine_6.png",
+		visual_file		= "data/biome_impl/excavationsite/machine_6_visual.png",
+		background_file	= "",
+		is_unique		= 0
+	},
+	{
+		prob   			= 0.3,
+		material_file 	= "data/biome_impl/excavationsite/machine_7.png",
+		visual_file		= "data/biome_impl/excavationsite/machine_5_visual.png",
+		background_file	= "data/biome_impl/excavationsite/machine_5_background.png",
+		is_unique		= 0
+	},
+    }
+
+    for i,v in ipairs(pixelscene_append_list) do
+        table.insert(g_pixel_scene_04,v)
+    end
     
-    
+    --[[
     table.insert(g_pixel_scene_04,
     {
             prob   			= 1.0,
@@ -292,3 +368,13 @@
             background_file	= "mods/mo_creeps/files/biome_impl/excavationsite/redstone_02_background.png",
             is_unique		= 0
     })
+
+    table.insert(g_pixel_scene_04,
+    {
+            prob   			= 3.0,
+            material_file 	= "mods/mo_creeps/files/biome_impl/excavationsite/shop_01.png",
+            visual_file		= "mods/mo_creeps/files/biome_impl/excavationsite/shop_01_visual.png",
+            background_file	= "",
+            is_unique		= 0
+    })
+    ]]--

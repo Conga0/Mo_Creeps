@@ -56,6 +56,7 @@ table.insert(g_robots,
     entity     = "data/entities/animals/drone_status_ailment.xml"
 })
 
+--[[
 table.insert(g_robots,
 {
     prob           = 0.1,
@@ -63,6 +64,7 @@ table.insert(g_robots,
     max_count    = 1,    
     entity     = "mods/mo_creeps/files/entities/items/pickups/orb_mattereater.xml"
 })
+]]--
 
 
 
@@ -138,4 +140,12 @@ table.insert(g_items,
             return false 
         end
     end,
+})
+
+table.insert(g_items,
+{
+    prob   		= 0.11,
+    min_count	= 1,
+    max_count	= 1,    
+    entity 	= "mods/mo_creeps/files/entities/items/pickups/orb_mattereater.xml",
 })

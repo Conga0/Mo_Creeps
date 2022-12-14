@@ -1,4 +1,4 @@
-<Entity  name="Iso Möykky" tags="polymorphable_NOT,touchmagic_immunity,ui_use_raw_name,boss,necrobot_NOT,glue_NOT,teleportable_NOT,miniboss,music_energy_100,curse_NOT,homing_target,mocreep_blob_boss">
+<Entity  name="Iso Möykky" tags="polymorphable_NOT,touchmagic_immunity,ui_use_raw_name,boss,necrobot_NOT,glue_NOT,teleportable_NOT,curse_NOT,homing_target">
   
 	<Base file="data/entities/base_enemy_basic.xml" >
 		<AnimalAIComponent 
@@ -24,7 +24,7 @@
 		</AnimalAIComponent>
 		
 		<DamageModelComponent 
-            hp="4"
+            hp="6"
 			invincibility_frames="10"
             materials_create_messages="1"
 			ragdoll_filenames_file="mods/mo_creeps/files/ragdolls/blob_big/filenames.txt" 
@@ -118,13 +118,6 @@
 		file="data/audio/Desktop/animals.bank"
 		event_root="animals/blob" >
 	</AudioComponent>
-	
-  	<LuaComponent
-		script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
-		execute_times="1"
-		remove_after_executed="1"
-		>
-	</LuaComponent>
   
  	<VariableStorageComponent
 		_tags="no_gold_drop">

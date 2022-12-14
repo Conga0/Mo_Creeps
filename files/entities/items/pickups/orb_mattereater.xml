@@ -79,7 +79,7 @@
     _enabled="0"
     offset_x="4"
     offset_y="4"
-    image_file="mods/mo_creeps/files/items_gfx/orb_mattereater.png"
+    image_file="mods/mo_creeps/files/items_gfx/in_hand/orb_mattereater.png"
   ></SpriteComponent>
   
   <SpriteParticleEmitterComponent

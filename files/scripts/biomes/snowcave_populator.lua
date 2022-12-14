@@ -127,3 +127,31 @@ table.insert(g_big_enemies,
     entity     = "data/entities/animals/fungicave/rat_birthday.xml",
     ngpluslevel = 2
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- Pixel Scenes/Areas
+
+--[[
+]]--
+
+
+
+table.insert(g_pixel_scene_02,
+{
+        prob   			= 1.5,
+        material_file 	= "mods/mo_creeps/files/biome_impl/snowcave/shop_alt.png",
+        visual_file		= "mods/mo_creeps/files/biome_impl/snowcave/shop_alt_visual.png",
+        background_file	= "",
+        is_unique		= 0
+})

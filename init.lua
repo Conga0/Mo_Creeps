@@ -378,6 +378,7 @@ status_mocreep_creatureshift_cd_name,"Unshiftable",,,,,,,,,,,,,
 status_mocreep_creatureshift_cd_desc,"The path of evolution is set in stone... For now.",,,,,,,,,,,,,
 perk_mocreeps_revenge_reflective,Revenge Reflection,,,,,,,,,,,,,
 perk_mocreeps_revenge_reflective_description,"Reflect copies of enemy projectiles upon taking damage, with a steep damage boost as payback.",,,,,,,,,,,,,
+biomemod_mocreeps_smoke_dense,"The air feels unusually dense",,,,,,,,,,,,,
 ]])
 
 --Yggdrasil's Knowledge (The knowledge of life)
@@ -1216,7 +1217,7 @@ local year, month, day, hour, minute = GameGetDateAndTimeLocal()
 if seasonalSetting == true then
 
   -- Halloween Event
-  if (( month == 10 ) and ( day >= 22 )) or seasonalForced_Halloween then
+  if (( month == 10 ) and ( day >= 15 )) or seasonalForced_Halloween then
     ModLuaFileAppend( "data/scripts/biomes/coalmine.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/halloween.lua" ) --Coal Mine, first area, goodluck on your run
     ModLuaFileAppend( "data/scripts/biomes/coalmine_alt.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/halloween.lua" ) --Coalmine but to the west side near damp cave
     ModLuaFileAppend( "data/scripts/biomes/excavationsite.lua", "mods/mo_creeps/files/scripts/biomes/seasonal/halloween.lua" ) --Coal Pits, area 2
@@ -1246,7 +1247,7 @@ if seasonalSetting == true then
 
 
   -- Smissmass Event
-  if (( month == 12 ) and ( day >= 22 )) or seasonalForced_Smissmass then
+  if (( month == 12 ) and ( day >= 15 )) or seasonalForced_Smissmass then
 
     local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
     local content = ModTextFileGetContent("data/entities/animals/hisii_minecart_tnt.xml")
@@ -1441,4 +1442,26 @@ if HasFlagPersistent( "mocreeps_card_unlocked_secret_knowledge_of_kings" ) and c
   ]]))
   ModTextFileSetContent("data/entities/player_base.xml", tostring(xml))
 
+end
+
+
+
+--10% chance for Coal Pits to have dense smoke in a run, 100% if first run with More Creeps reaching the coal pits
+SetRandomSeed( hour + minute, hour + day )
+if (HasFlagPersistent( "mocreeps_card_unlocked_coalpits_dense_smoke" ) ~= true) or (Random(1,10) == 1) then
+  
+  local filepc = "data/biome/_pixel_scenes.xml"
+  if ModIsEnabled("purgatory") then
+    filepc = "mods/purgatory/files/biome/_pixel_scenes.xml"
+  elseif ModIsEnabled("noitavania") then
+    filepc = "mods/noitavania/data/biome/_pixel_scenes.xml"
+  end
+
+  local content = ModTextFileGetContent(filepc)
+  local xml = nxml.parse(content)
+  xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+      <PixelScene pos_x="192" pos_y="1595" just_load_an_entity="data/entities/buildings/smoke_dense_creator_mocreep_message.xml" />
+  ]]))
+  ModTextFileSetContent(filepc, tostring(xml))
+  ModLuaFileAppend( "data/scripts/biomes/excavationsite.lua", "mods/mo_creeps/files/scripts/biomes/excavationsite_populator_densesmoke.lua" )
 end
