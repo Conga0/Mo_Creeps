@@ -1,14 +1,3 @@
 Angel
 Giant centipede
-Leaky Slime
 
-
-
-
-
-
-
-
-
-
-Remember to port pixelscenes to different files before release

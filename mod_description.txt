@@ -41,7 +41,7 @@ Also fixes the missing Icemage spawn in the frozen vault.
 [img]https://i.imgur.com/32H75yO.png[/img]
 
 Full Enemy, Spell & Perk Documentation here: (Big Spoilers)
-https://docs.google.com/document/d/1-7GilR082unPHkreG5eIm8WFde2kGcc9tTXRp5YH0LQ/edit?usp=sharing
+https://docs.google.com/document/d/1IBhkBI9ZPdZP4Sxx59ilYKo4DXgsQ2fxBfcbWveaIyo/edit?usp=sharing
 
 This mod doesn't override any existing files, it is safe to put at the bottom of your load order for maximum compatibility.
 

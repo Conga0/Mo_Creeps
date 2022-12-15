@@ -123,7 +123,9 @@ function creature_shift( entity, x, y, debug_no_limits )
 
         local content = ModTextFileGetContent("data/entities/animals/" .. target .. ".xml")
         local xml = nxml.parse(content)
-        xml.attr.tags = xml.attr.tags .. ",acid" --Prevents the player updater script from needlessly updating creatures
+        if xml.attr.tags ~= nil then
+            xml.attr.tags = xml.attr.tags .. ",acid" --Prevents the player updater script from needlessly updating creatures
+        end
         xml:add_child(nxml.parse([[
         <ParticleEmitterComponent
             emitted_material_name="fungal_shift_particle_fx"

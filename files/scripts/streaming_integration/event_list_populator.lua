@@ -437,6 +437,7 @@ local ModEnabledCTEP = ModIsEnabled("Conga_Twitch_mod")
                     "animals/gold_bosses/boss_blob/blob_titan",
                     "buildings/toxic_worm_nest_populator_big_detector",
                     "buildings/boss_musical_ghost_sandcave_populator_big_detector",
+                    "animals/gold_bosses/boss_fire_lukki/boss_fire_lukki",
                 }
             else
                 pool = {
@@ -444,6 +445,7 @@ local ModEnabledCTEP = ModIsEnabled("Conga_Twitch_mod")
                     "animals/boss_blob/blob_titan",
                     "buildings/toxic_worm_nest_populator_big_detector",
                     "buildings/boss_musical_ghost_sandcave_populator_big_detector",
+                    "animals/boss_fire_lukki/boss_fire_lukki",
                 }
             end
 
@@ -551,8 +553,8 @@ local ModEnabledCTEP = ModIsEnabled("Conga_Twitch_mod")
             local count = 10
 			
 			for i,entity_id in ipairs( players ) do
+                local x, y = EntityGetTransform( entity_id )
                 repeat
-                    local x, y = EntityGetTransform( entity_id )
                     
                     local angle = Random( 0, 31415 ) * 0.0001
                     local length = 45
@@ -566,6 +568,9 @@ local ModEnabledCTEP = ModIsEnabled("Conga_Twitch_mod")
                     count = count - 1
         
                 until (count < 1)
+				local effect_id = EntityLoad( "mods/mo_creeps/files/scripts/streaming_integration/entities/effect_protection_all_mud.xml", x, y )
+				--set_lifetime( effect_id, 0.75 )
+				EntityAddChild( entity_id, effect_id )
 			end
 		end,
 	})

@@ -84,6 +84,7 @@ Fixed Vault varient of the Glue Slug having outdated sprites
 Fixed Big Blobs spawned from Creepy Blobs triggering boss music & preventing the colossal blob boss from dropping loot
 Fixed Big Tentacler's portal orb not being copyable
 Fixed Greater Cold Gazer miniboss in the snowy depths getting stuck in it's own ice
+Fixed typo in mana degradation, "loosing" to "losing"
 FIXED MAGIC DEVOURERS HAVING 90% DAMAGE REDUCTION FROM ALL SOURCES
 Very slightly reduced blood produced by Angeling & Devilings
 Red Sand now absorbs blood to grow
@@ -185,12 +186,7 @@ Reworked Desert locust spawns to be rarer above ground but much more frequent un
 Slightly reduced desert poring spawnrate
 Halloween & Smissmass seasonal events now occur starting on the 15th instead of the 22nd
 Greater Coldgazer miniboss is now vulnerable to touch magic
-
-Fixed typo in mana degradation, "loosing" to "losing"
-Added a check to the welcome message for already playing users
-Revenge Reflection no longer copies teleport bolts
-Increased frequency of projectiles being turned into ducks
-Sacrificing Pandora's Chest to the mountain altar now displays more ominous text
+Increased frequency of projectiles being turned into ducks from eating feathery meat
 
 
 
