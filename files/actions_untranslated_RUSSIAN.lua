@@ -752,3 +752,197 @@ table.insert(actions,
         current_reload_time = current_reload_time + 100
     end,
 })
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_TARGETTER",
+    name 		= "Targetter",
+    description = "Fire a projectile which causes irresistable hatred towards anything it hits.",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/targetter.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/heavy_bullet_unidentified.png",
+    related_projectiles	= {"mods/mo_creeps/files/entities/projectiles/deck/targetter.xml"},
+    type 		= ACTION_TYPE_PROJECTILE,
+    spawn_level                       = "1,2,3,4,5,6", -- HEAVY_BULLET
+    spawn_probability                 = "0.5,1,1,1,1,1", -- HEAVY_BULLET
+    price = 200,
+    mana = 40,
+    max_uses = 8,
+    action 		= function()
+        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/targetter.xml")
+        c.fire_rate_wait = c.fire_rate_wait + 30
+        --current_reload_time = current_reload_time + 15
+    end,
+})
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_ALT_FIRE_TELEPORT",
+    name 		= "Alt Fire Teleport Bolt",
+    description = "Right click to fire a teleport bolt.",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/alt_fire_teleport_projectile.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/spread_reduce_unidentified.png",
+    --spawn_requires_flag = "mocreeps_card_unlocked_fire_lukki_spell",
+    type    = ACTION_TYPE_PASSIVE,
+    spawn_level                       = "0,1,2,4,5,6,10", -- TELEPORT_PROJECTILE
+    spawn_probability                 = "0.45,0.45,0.45,0.3,0.3,0.3,0.8", -- TELEPORT_PROJECTILE
+    price = 130,
+    mana = 0,
+    --max_uses    = 1,
+    custom_xml_file   = "mods/mo_creeps/files/entities/misc/custom_cards/alt_fire_teleport.xml",
+    action            = function()
+        -- Go to the next card
+        draw_actions(1, true)
+    end,
+})
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_ALT_FIRE_TELEPORT_SHORT",
+    name 		= "Alt Fire Small Teleport Bolt",
+    description = "Right click to fire a small teleport bolt.",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/alt_fire_teleport_projectile_short.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/spread_reduce_unidentified.png",
+    --spawn_requires_flag = "mocreeps_card_unlocked_fire_lukki_spell",
+    type    = ACTION_TYPE_PASSIVE,
+    spawn_level                       = "0,1,2,4,5,6,10", -- TELEPORT_PROJECTILE
+    spawn_probability                 = "0.45,0.45,0.45,0.3,0.3,0.3,0.8", -- TELEPORT_PROJECTILE
+    price = 130,
+    mana = 0,
+    --max_uses    = 1,
+    custom_xml_file   = "mods/mo_creeps/files/entities/misc/custom_cards/alt_fire_teleport_short.xml",
+    action            = function()
+        -- Go to the next card
+        draw_actions(1, true)
+    end,
+})
+
+--Wait.. is burning trail literally just fire charge but not called fire charge..? Keep your naming consistency together Noita please
+table.insert(actions,
+{
+    id          = "MOCREEPS_FIRE_CHARGE",
+    name 		= "Fire Charge",
+    description = "Imbues a projectile with a fiery charge, that it will release on impact.",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/fire_charge.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/heavy_bullet_unidentified.png",
+    spawn_requires_flag = "mocreeps_card_unlocked_fire_lukki_spell",
+    type 		= ACTION_TYPE_MODIFIER,
+    spawn_level                       = "1,2,4,5", -- ELECTRIC_CHARGE
+    spawn_probability                 = "1,1,1,1", -- ELECTRIC_CHARGE
+    price = 150,
+    mana = 8,
+    --max_uses = 8,
+    custom_xml_file = "data/entities/misc/custom_cards/torch.xml",
+    action 		= function()
+        c.game_effect_entities = c.game_effect_entities .. "data/entities/misc/effect_apply_on_fire.xml,"
+        c.damage_fire_add = c.damage_fire_add + 0.1
+        c.extra_entities = c.extra_entities .. "data/entities/misc/burn.xml,"
+        draw_actions( 1, true )
+    end,
+})
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_PORTAL_LUKKI_RED_PORTAL",
+    name 		= "Summon Red Portal",
+    description = "Summons a red tinted portal, Right Click to mark a location for the portal to focus on.",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/portal_red_portal.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/spread_reduce_unidentified.png",
+    spawn_requires_flag = "mocreeps_card_unlocked_fire_lukki_spell",
+    spawn_manual_unlock = true,
+    never_unlimited		= false,
+    type 		= ACTION_TYPE_OTHER,
+    recursive	= true,
+    ai_never_uses = true,
+    spawn_level                       = "10", -- MANA_REDUCE
+    spawn_probability                 = "0", -- MANA_REDUCE
+    price = 4300,
+    mana = 300,
+    --max_uses    = 1,
+    custom_xml_file   = "mods/mo_creeps/files/entities/misc/custom_cards/portal_red_marker.xml",
+    action 		= function()
+        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/markerportals/portal_red_portal.xml")
+        c.fire_rate_wait = c.fire_rate_wait + 100
+        current_reload_time = current_reload_time + 100
+    end,
+})
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_PORTAL_LUKKI_BLUE_PORTAL",
+    name 		= "Summon Blue Portal",
+    description = "Summons a blue tinted portal, Right Click to mark a location for the portal to focus on.",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/portal_blue_portal.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/spread_reduce_unidentified.png",
+    spawn_requires_flag = "mocreeps_card_unlocked_fire_lukki_spell",
+    spawn_manual_unlock = true,
+    never_unlimited		= false,
+    type 		= ACTION_TYPE_OTHER,
+    recursive	= true,
+    ai_never_uses = true,
+    spawn_level                       = "10", -- MANA_REDUCE
+    spawn_probability                 = "0", -- MANA_REDUCE
+    price = 4300,
+    mana = 300,
+    --max_uses    = 1,
+    custom_xml_file   = "mods/mo_creeps/files/entities/misc/custom_cards/portal_blue_marker.xml",
+    action 		= function()
+        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/markerportals/portal_blue_portal.xml")
+        c.fire_rate_wait = c.fire_rate_wait + 100
+        current_reload_time = current_reload_time + 100
+    end,
+})
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_PORTAL_LUKKI_GREEN_PORTAL",
+    name 		= "Summon Green Portal",
+    description = "Summons a green tinted portal, Right Click to mark a location for the portal to focus on.",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/portal_green_portal.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/spread_reduce_unidentified.png",
+    spawn_requires_flag = "mocreeps_card_unlocked_fire_lukki_spell",
+    spawn_manual_unlock = true,
+    never_unlimited		= false,
+    type 		= ACTION_TYPE_OTHER,
+    recursive	= true,
+    ai_never_uses = true,
+    spawn_level                       = "10", -- MANA_REDUCE
+    spawn_probability                 = "0", -- MANA_REDUCE
+    price = 4300,
+    mana = 300,
+    --max_uses    = 1,
+    custom_xml_file   = "mods/mo_creeps/files/entities/misc/custom_cards/portal_green_marker.xml",
+    action 		= function()
+        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/markerportals/portal_green_portal.xml")
+        c.fire_rate_wait = c.fire_rate_wait + 100
+        current_reload_time = current_reload_time + 100
+    end,
+})
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_KNOWLEDGE_OF_KINGS",
+    name 		= "The Knowledge of Kings",
+    description = "Casting this spell causes something irreversibly permanent to occur",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/knowledge_of_kings.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/spread_reduce_unidentified.png",
+    spawn_requires_flag = "mocreeps_card_unlocked_secret_knowledge_of_kings_spell",
+    spawn_manual_unlock = true,
+    never_unlimited		= true,
+    type 		= ACTION_TYPE_OTHER,
+    recursive	= true,
+    ai_never_uses = true,
+    spawn_level                       = "10", -- MANA_REDUCE
+    spawn_probability                 = "0.0001", -- MANA_REDUCE
+    price = 2000,
+    mana = 600,
+    max_uses    = 1,
+    action 		= function()
+        local players = EntityGetWithTag( "player_unit" )
+        for i,v in ipairs( players ) do
+            local x,y = EntityGetTransform( v )
+            local eid = EntityLoad("mods/mo_creeps/files/entities/projectiles/deck/knowledge_of_kings_proj_check.xml", x, y)
+        end
+        c.fire_rate_wait = c.fire_rate_wait + 100
+        current_reload_time = current_reload_time + 100
+    end,
+})

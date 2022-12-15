@@ -18,7 +18,7 @@
 
 	<LuaComponent 
 		_tags="enabled_in_hand"
-		script_source_file="mods/mo_creeps/files/scripts/spells/alt_fire_teleport_short.lua"
+		script_source_file="mods/mo_creeps/files/scripts/spells/alt_fire_teleport.lua"
 		execute_every_n_frame="1" >
 	</LuaComponent>
 

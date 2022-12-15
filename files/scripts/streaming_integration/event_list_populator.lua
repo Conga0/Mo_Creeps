@@ -571,6 +571,8 @@ local ModEnabledCTEP = ModIsEnabled("Conga_Twitch_mod")
 	})
     end
 
+    --I don't wanna add events for vanilla stuff, I'll keep that to CTEP
+    --[[
     if ModEnabledCTEP ~= true then
     table.insert(streaming_events,
 	{
@@ -591,6 +593,7 @@ local ModEnabledCTEP = ModIsEnabled("Conga_Twitch_mod")
 		end,
 	})
     end
+    ]]--
 
 
     if ModEnabledCTEP ~= true then

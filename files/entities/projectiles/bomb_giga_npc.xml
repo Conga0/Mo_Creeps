@@ -139,7 +139,7 @@
   
   <VariableStorageComponent
 		name="projectile_file"
-		value_string="data/entities/projectiles/bomb_giga_npc.xml"
+		value_string="mods/mo_creeps/files/entities/projectiles/bomb_giga_npc.xml"
 		>
 	</VariableStorageComponent>
 

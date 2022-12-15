@@ -265,7 +265,7 @@ setting_mocreep_compatmode_spell_evolution_desc,"Turn this setting on if you're 
 status_mocreep_duckcurse_name,Duck Curse,Утиное проклятие,,,,,,,,,,,,
 status_mocreep_duckcurse_desc,Their Quacky visions haunt you,Их утиные взгляды преследуют вас,,,,,,,,,,,,
 status_mocreep_manadrain_name,Mana Degradation,Разложение маны,,,,,,,,,,,,
-status_mocreep_manadrain_desc,You are loosing Mana Rapidly!!,Вы стремительно теряете ману!!!,,,,,,,,,,,,
+status_mocreep_manadrain_desc,You are losing Mana Rapidly!!,Вы стремительно теряете ману!!!,,,,,,,,,,,,
 status_mocreep_transmute_name,Unstable Transmutation,Нестабильная трансмутация,,,,,,,,,,,,
 status_mocreep_transmute_desc,Your being is transmuting nearby matter uncontrollably!,Ваша сущность бесконтрольно превращается близлежащую материю!,,,,,,,,,,,,
 1.1.0 content below,"=====================================================================================================================================================================================================================================================Below here are 1.1.0 translation keys",,,,,,,,,,,,,
@@ -320,34 +320,32 @@ status_mocreep_protection_lava_desc,"You take no direct damage from lava or fire
 status_mocreep_explosive_orb_name,"Explosive",,,,,,,,,,,,,
 status_mocreep_explosive_orb_desc,"You're transmuting magic into explosives!",,,,,,,,,,,,,
 creep_mocreep_boss_fire_lukki_name,"Lämmön Esteetikko",,,,,,,,,,,,,
-integration_mocreep_RANDOM_CATS_name,"Kitty Cats!!",,,,,,,,,,,,,
-integration_mocreep_RANDOM_CATS_desc,"Cat! I'm a kitty cat! And I dance dance dance! And I dance dance dance!!",,,,,,,,,,,,,
+integration_mocreep_RANDOM_CATS_name,Kitty Cats!!,Кошечки!!!,,,,,,,,,,,,
+integration_mocreep_RANDOM_CATS_desc,Cat! I'm a kitty cat! And I dance dance dance! And I dance dance dance!!,Кошка!! Я кошечка!! И я танцую туц-туц!! И я танцую танцую танцую танцую!!!,,,,,,,,,,,,
 integration_mocreep_RANDOM_CREEPS_name,"Random Creeps & Weirdos",,,,,,,,,,,,,
 integration_mocreep_RANDOM_CREEPS_desc,"Random Creeps & Weirdos will appear in 5 seconds.",,,,,,,,,,,,,
-integration_mocreep_WAND_WONDERS_name,"Spawn Wand of Wonders",,,,,,,,,,,,,
-integration_mocreep_WAND_WONDERS_desc,"A wonderful wand capable of anything. Cast It!",,,,,,,,,,,,,
-integration_mocreep_PANDORA_CHEST_name,"Pandora's Chest",,,,,,,,,,,,,
-integration_mocreep_PANDORA_CHEST_desc,"Do you dare open?",,,,,,,,,,,,,
+integration_mocreep_WAND_WONDERS_name,Spawn Wand of Wonders,Создать Жезл чудес,,,,,,,,,,,,
+integration_mocreep_WAND_WONDERS_desc,A wonderful wand capable of anything. Cast It!,"Чудесный жезл, способный на всё. Колдуйте!!",,,,,,,,,,,,
+integration_mocreep_PANDORA_CHEST_name,Pandora's Chest,Сундук Пандоры,,,,,,,,,,,,
+integration_mocreep_PANDORA_CHEST_desc,Do you dare open?,Осмелитесь ли вы открыть?,,,,,,,,,,,,
 integration_mocreep_RANDOM_CREEPS_BOSS_name,"Random Weirdo Boss",,,,,,,,,,,,,
 integration_mocreep_RANDOM_CREEPS_BOSS_desc,"A random More Creeps boss will appear after 10 seconds.",,,,,,,,,,,,,
 integration_mocreep_STONE_FUNGUS_name,"Sienenkivi",,,,,,,,,,,,,
 integration_mocreep_STONE_FUNGUS_desc,"Fungus Stone",,,,,,,,,,,,,
 integration_mocreep_CREATURE_SHIFT_name,"Creature Shift",,,,,,,,,,,,,
 integration_mocreep_CREATURE_SHIFT_desc,"Causes a creature to randomly be shifted with another.",,,,,,,,,,,,,
-integration_mocreep_TRANSFORM_WORMS_name,"Spells to Worms",,,,,,,,,,,,,
-integration_mocreep_TRANSFORM_WORMS_desc,"All projectiles currently in the air turn into worms!",,,,,,,,,,,,,
-integration_mocreep_MUD_MEN_name,"Summon Mud Men",,,,,,,,,,,,,
-integration_mocreep_MUD_MEN_desc,"MUD MEN are here to save the day!!",,,,,,,,,,,,,
-integration_mocreep_SUMMON_SKOUDE_name,"Summon Skoude",,,,,,,,,,,,,
-integration_mocreep_SUMMON_SKOUDE_desc,"Skoude will arrive shortly.",,,,,,,,,,,,,
-integration_mocreep_HUNGRY_ORB_name,"Hungry Orb",,,,,,,,,,,,,
-integration_mocreep_HUNGRY_ORB_desc,"???",,,,,,,,,,,,,
-integration_mocreep_DELUSIONAL_name,"Delusional Streamer",,,,,,,,,,,,,
-integration_mocreep_DELUSIONAL_desc,"Your senses deceive you.",,,,,,,,,,,,,
-integration_mocreep_CLOWNS_name,"CLOWNS",,,,,,,,,,,,,
-integration_mocreep_CLOWNS_desc,"You're not a clown, you're the entire circus!!",,,,,,,,,,,,,
-integration_mocreep_SWAPPER_CURSE_name,"Curse of Swapping",,,,,,,,,,,,,
-integration_mocreep_SWAPPER_CURSE_desc,"You feel the blood of Swapper Mages runs through you",,,,,,,,,,,,,
+integration_mocreep_TRANSFORM_WORMS_name,Spells to Worms,Превращение в червяков,,,,,,,,,,,,
+integration_mocreep_TRANSFORM_WORMS_desc,All projectiles currently in the air turn into worms!,"Все снаряды, находящиеся в воздухе, превращаются в червей!!",,,,,,,,,,,,
+integration_mocreep_MUD_MEN_name,Summon Mud Men,Призыв грязевика,,,,,,,,,,,,
+integration_mocreep_MUD_MEN_desc,MUD MEN are here to save the day!!,"ГРЯЗЕВИК пришёл, чтобы помочь вам!!!",,,,,,,,,,,,
+integration_mocreep_HUNGRY_ORB_name,Hungry Orb,Голодный шар,,,,,,,,,,,,
+integration_mocreep_HUNGRY_ORB_desc,???,???,,,,,,,,,,,,
+integration_mocreep_DELUSIONAL_name,Delusional Streamer,Стример-шизик,,,,,,,,,,,,
+integration_mocreep_DELUSIONAL_desc,Your senses deceive you.,Ваши чувства обманывают вас.,,,,,,,,,,,,
+integration_mocreep_CLOWNS_name,CLOWNS,КЛОУНЫ,,,,,,,,,,,,
+integration_mocreep_CLOWNS_desc,"You're not a clown, you're the entire circus!!","Вы не клоун, вы целый цирк!!!",,,,,,,,,,,,
+integration_mocreep_SWAPPER_CURSE_name,Curse of Swapping,Проклятие подмены,,,,,,,,,,,,
+integration_mocreep_SWAPPER_CURSE_desc,You feel the blood of Swapper Mages runs through you,"Вы чувствуете, как в вас течёт кровь магов-подменщиков.",,,,,,,,,,,,
 secretmessage_mocreep_herobrine_01,"I see you.",,,,,,,,,,,,,
 secretmessage_mocreep_divineorb_name,"You discovered an orb of divine knowledge",,,,,,,,,,,,,
 secretmessage_mocreep_divineorb_desc,"Secrets of otherworldy royalty have been unlocked to you.",,,,,,,,,,,,,
@@ -866,6 +864,10 @@ ModLuaFileAppend( "data/scripts/streaming_integration/event_list.lua", "mods/mo_
 
 --Musicstone tag addition
 dofile_once( "mods/mo_creeps/files/scripts/magic/music_magic_tag_nxml.lua" )
+
+if HasFlagPersistent( "action_mocreeps_aqua_mine" ) or HasFlagPersistent( "action_mocreeps_bomb_giga" ) then
+  AddFlagPersistent( "mocreeps_card_unlocked_welcome_hint" )
+end
 
 --MOTD & Welcome Hint
 if ModIsEnabled("raksa") == false then
@@ -1447,21 +1449,37 @@ end
 
 
 --10% chance for Coal Pits to have dense smoke in a run, 100% if first run with More Creeps reaching the coal pits
-SetRandomSeed( hour + minute, hour + day )
-if (HasFlagPersistent( "mocreeps_card_unlocked_coalpits_dense_smoke" ) ~= true) or (Random(1,10) == 1) then
-  
-  local filepc = "data/biome/_pixel_scenes.xml"
-  if ModIsEnabled("purgatory") then
-    filepc = "mods/purgatory/files/biome/_pixel_scenes.xml"
-  elseif ModIsEnabled("noitavania") then
-    filepc = "mods/noitavania/data/biome/_pixel_scenes.xml"
-  end
+if ModIsEnabled("raksa") == false then
+  SetRandomSeed( hour + minute, hour + day )
+  if (HasFlagPersistent( "mocreeps_card_unlocked_coalpits_dense_smoke" ) ~= true) or (Random(1,10) == 1) then
+    
+    local filepc = "data/biome/_pixel_scenes.xml"
+    if ModIsEnabled("purgatory") then
+      filepc = "mods/purgatory/files/biome/_pixel_scenes.xml"
+      local content = ModTextFileGetContent(filepc)
+      local xml = nxml.parse(content)
+      xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+          <PixelScene pos_x="1003" pos_y="71" just_load_an_entity="data/entities/buildings/smoke_dense_creator_mocreep_message.xml" />
+      ]]))
+      ModTextFileSetContent(filepc, tostring(xml))
+    elseif ModIsEnabled("noitavania") then
+      filepc = "mods/noitavania/data/biome/_pixel_scenes.xml"
+      local content = ModTextFileGetContent(filepc)
+      local xml = nxml.parse(content)
+      xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+          <PixelScene pos_x="192" pos_y="1595" just_load_an_entity="data/entities/buildings/smoke_dense_creator_mocreep_message.xml" />
+      ]]))
+      ModTextFileSetContent(filepc, tostring(xml))
+    else
+      local content = ModTextFileGetContent(filepc)
+      local xml = nxml.parse(content)
+      xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+          <PixelScene pos_x="192" pos_y="1595" just_load_an_entity="data/entities/buildings/smoke_dense_creator_mocreep_message.xml" />
+      ]]))
+      ModTextFileSetContent(filepc, tostring(xml))
+    end
 
-  local content = ModTextFileGetContent(filepc)
-  local xml = nxml.parse(content)
-  xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-      <PixelScene pos_x="192" pos_y="1595" just_load_an_entity="data/entities/buildings/smoke_dense_creator_mocreep_message.xml" />
-  ]]))
-  ModTextFileSetContent(filepc, tostring(xml))
-  ModLuaFileAppend( "data/scripts/biomes/excavationsite.lua", "mods/mo_creeps/files/scripts/biomes/excavationsite_populator_densesmoke.lua" )
+
+    ModLuaFileAppend( "data/scripts/biomes/excavationsite.lua", "mods/mo_creeps/files/scripts/biomes/excavationsite_populator_densesmoke.lua" )
+  end
 end

@@ -794,7 +794,7 @@ table.insert(actions,
     --spawn_requires_flag = "mocreeps_card_unlocked_fire_lukki_spell",
     type    = ACTION_TYPE_PASSIVE,
     spawn_level                       = "0,1,2,4,5,6,10", -- TELEPORT_PROJECTILE
-    spawn_probability                 = "0.3,0.3,0.3,0.2,0.2,0.2,0.8", -- TELEPORT_PROJECTILE
+    spawn_probability                 = "0.45,0.45,0.45,0.3,0.3,0.3,0.8", -- TELEPORT_PROJECTILE
     price = 130,
     mana = 0,
     --max_uses    = 1,
@@ -815,7 +815,7 @@ table.insert(actions,
     --spawn_requires_flag = "mocreeps_card_unlocked_fire_lukki_spell",
     type    = ACTION_TYPE_PASSIVE,
     spawn_level                       = "0,1,2,4,5,6,10", -- TELEPORT_PROJECTILE
-    spawn_probability                 = "0.3,0.3,0.3,0.2,0.2,0.2,0.8", -- TELEPORT_PROJECTILE
+    spawn_probability                 = "0.45,0.45,0.45,0.3,0.3,0.3,0.8", -- TELEPORT_PROJECTILE
     price = 130,
     mana = 0,
     --max_uses    = 1,

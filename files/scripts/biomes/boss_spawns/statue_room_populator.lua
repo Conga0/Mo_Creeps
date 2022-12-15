@@ -37,13 +37,13 @@ function collision_trigger()
     local mocreep_essence_fungus = HasFlagPersistent( "mocreeps_essence_fungus" )
     local mocreep_essence_fungus_moon = HasFlagPersistent( "mocreep_moon_fungus_unlock" )
     local mocreep_pandora_rain = HasFlagPersistent( "mocreep_misc_pandora_chest_rain" )
-    local mocreep_fire_lukki = HasFlagPersistent( "mocreeps_card_unlocked_boss_fire_lukki" )
+    local mocreep_fire_lukki = HasFlagPersistent( "mocreeps_card_unlocked_fire_lukki" )
 
     --Nightmare/Purgatory Unlocks
     local mocreep_essence_fungus_goldmode = HasFlagPersistent( "mocreeps_essence_fungus_goldmode" )
     local mocreep_essence_fungus_moon_goldmode = HasFlagPersistent( "mocreep_moon_fungus_unlock_goldmode" )
     local mocreep_pandora_rain_goldmode = HasFlagPersistent( "mocreep_misc_pandora_chest_rain_goldmode" )
-    local mocreep_fire_lukki_goldmode = HasFlagPersistent( "mocreeps_card_unlocked_boss_fire_lukki_goldmode" )
+    local mocreep_fire_lukki_goldmode = HasFlagPersistent( "mocreeps_card_unlocked_fire_lukki_goldmode" )
 
 
 
