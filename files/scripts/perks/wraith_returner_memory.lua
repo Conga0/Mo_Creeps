@@ -45,8 +45,8 @@ if ( string.len( projectile ) > 0 ) then
 				--GamePrint("Found Variable Component")
 				if projectile ~= "data/entities/projectiles/deck/teleport_projectile.xml" and projectile ~= "data/entities/projectiles/deck/teleport_projectile_short.xml" then
 					ComponentSetValue2( comp, "value_string", projectile )
+					ComponentSetValue2( comp, "value_float", damageCount )
 				end
-				ComponentSetValue2( comp, "value_float", damageCount )
 			end
 		end
 	end

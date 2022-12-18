@@ -689,4 +689,12 @@
 		>
 	</Reaction>
 
+	<!--
+	<Reaction probability="15"
+		input_cell1="mocreep_smoke_static_slowburn_gas" 		input_cell2="fire"
+		output_cell1="mocreep_smoke_static_slowburn_gas"	output_cell2="mocreep_smoke_static_slowburn_gas"
+		>
+	</Reaction>
+	-->
+
 </Materials>

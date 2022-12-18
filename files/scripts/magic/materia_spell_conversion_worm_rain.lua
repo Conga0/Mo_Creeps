@@ -15,8 +15,7 @@ for i,v in ipairs( targets ) do
             local perk_x,perk_y = EntityGetTransform( v )
         
             EntityKill(v)
-            EntityLoad("data/entities/particles/image_emitters/magical_symbol_materia_blue.xml", perk_x, perk_y)
-            EntityLoad("data/entities/animals/worm_big.xml", perk_x, perk_y)
+            EntityLoad("data/entities/particles/image_emitters/magical_symbol_hobo_money.xml", perk_x, perk_y)
             GamePlaySound( "data/audio/Desktop/projectiles.snd", "player_projectiles/crumbling_earth/create", x, y)
             CreateItemActionEntity( "MOCREEPS_SUMMON_WORM_BIG", perk_x, perk_y )
         end

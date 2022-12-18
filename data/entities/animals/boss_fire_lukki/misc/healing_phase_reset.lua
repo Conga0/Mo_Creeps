@@ -16,6 +16,13 @@ if ( comp ~= nil ) then
 	ComponentObjectSetValue2( comp, "damage_multipliers", "drill", 0.3 )
 end
 
+local sprite_comps = EntityGetComponent(root_id, "SpriteComponent") or {}
+for i, comp in ipairs(sprite_comps) do
+
+	ComponentSetValue2(comp, "rect_animation", "healing_exit")
+
+end
+
 
 --Gets the current Boss phase
 local storages = EntityGetComponent( root_id, "VariableStorageComponent" )

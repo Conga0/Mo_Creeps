@@ -149,9 +149,9 @@
 		<Base file="data/entities/misc/animal_energy_shield.xml">
 			<EnergyShieldComponent 
 				recharge_speed="0.0" 
-				max_energy="20.0"
+				max_energy="30.0"
 				energy_required_to_shield="0.1"
-				energy="20"
+				energy="30"
 				radius="64.0" >
 			</EnergyShieldComponent>
 

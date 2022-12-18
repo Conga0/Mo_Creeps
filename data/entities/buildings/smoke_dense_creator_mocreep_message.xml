@@ -3,7 +3,7 @@
   <CollisionTriggerComponent
     width="250"
     height="50" 
-    radius="200"
+    radius="100"
     required_tag="player_unit"
     destroy_this_entity_when_triggered="0" >
   </CollisionTriggerComponent>

@@ -524,6 +524,11 @@ table.insert(ALL_ENTITIES, {
 		name="Nightmare Giant Toxic Worm",
 		path="data/entities/animals/gold_bosses/toxic_worm/boss_toxic_worm.xml",
 		image="data/ui_gfx/gold_boss/boss_toxic_worm.png",
+	  },
+	  {
+		name="Nightmare Asthete of Heat",
+		path="data/entities/animals/gold_bosses/boss_fire_lukki/boss_fire_lukki.xml",
+		image="data/ui_gfx/gold_boss/boss_fire_lukki.png",
 	  }
   },
 })

@@ -274,3 +274,12 @@ ModTextFileSetContent("mods/noitavania/data/biome/_pixel_scenes.xml", tostring(x
 --Lava Lake
 --Tower
 --Dragon Cave
+
+--Red Sand Hint
+local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
+local content = ModTextFileGetContent("mods/noitavania/data/biome/_pixel_scenes.xml")
+local xml = nxml.parse(content)
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+  <PixelScene pos_x="3390" pos_y="8957" just_load_an_entity="mods/mo_creeps/files/entities/props/hiddenmessage_redsand.xml" />
+]]))
+ModTextFileSetContent("mods/noitavania/data/biome/_pixel_scenes.xml", tostring(xml))

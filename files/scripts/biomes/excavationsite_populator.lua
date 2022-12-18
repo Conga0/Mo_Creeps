@@ -297,49 +297,49 @@
     }, --Everything below this point is the vanilla stuff so shops don't get overinflated -----------------------------------
 	{
 		prob   			= 0.5,
-		material_file 	= "data/biome_impl/excavationsite/machine_1.png",
+		material_file 	= "mods/mo_creeps/files/biome_impl/excavationsite/redstone_machine_1.png",
 		visual_file		= "data/biome_impl/excavationsite/machine_1_visual.png",
 		background_file	= "data/biome_impl/excavationsite/machine_1_background.png",
 		is_unique		= 0
 	},
 	{
 		prob   			= 0.5,
-		material_file 	= "data/biome_impl/excavationsite/machine_2.png",
+		material_file 	= "mods/mo_creeps/files/biome_impl/excavationsite/redstone_machine_2.png",
 		visual_file		= "data/biome_impl/excavationsite/machine_2_visual.png",
 		background_file	= "data/biome_impl/excavationsite/machine_2_background.png",
 		is_unique		= 0
 	},
 	{
 		prob   			= 0.5,
-		material_file 	= "data/biome_impl/excavationsite/machine_3b.png",
+		material_file 	= "mods/mo_creeps/files/biome_impl/excavationsite/redstone_machine_3b.png",
 		visual_file		= "data/biome_impl/excavationsite/machine_3b_visual.png",
 		background_file	= "data/biome_impl/excavationsite/machine_3b_background.png",
 		is_unique		= 0
 	},
 	{
 		prob   			= 0.5,
-		material_file 	= "data/biome_impl/excavationsite/machine_4.png",
+		material_file 	= "mods/mo_creeps/files/biome_impl/excavationsite/redstone_machine_4.png",
 		visual_file		= "data/biome_impl/excavationsite/machine_4_visual.png",
 		background_file	= "data/biome_impl/excavationsite/machine_4_background.png",
 		is_unique		= 0
 	},
 	{
 		prob   			= 0.5,
-		material_file 	= "data/biome_impl/excavationsite/machine_5.png",
+		material_file 	= "mods/mo_creeps/files/biome_impl/excavationsite/redstone_machine_5.png",
 		visual_file		= "data/biome_impl/excavationsite/machine_5_visual.png",
 		background_file	= "data/biome_impl/excavationsite/machine_5_background.png",
 		is_unique		= 0
 	},
 	{
 		prob   			= 0.5,
-		material_file 	= "data/biome_impl/excavationsite/machine_6.png",
+		material_file 	= "mods/mo_creeps/files/biome_impl/excavationsite/redstone_machine_6.png",
 		visual_file		= "data/biome_impl/excavationsite/machine_6_visual.png",
 		background_file	= "",
 		is_unique		= 0
 	},
 	{
 		prob   			= 0.3,
-		material_file 	= "data/biome_impl/excavationsite/machine_7.png",
+		material_file 	= "mods/mo_creeps/files/biome_impl/excavationsite/redstone_machine_7.png",
 		visual_file		= "data/biome_impl/excavationsite/machine_5_visual.png",
 		background_file	= "data/biome_impl/excavationsite/machine_5_background.png",
 		is_unique		= 0

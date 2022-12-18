@@ -188,6 +188,14 @@
         entity     = "data/entities/animals/vault/drone_status_ailment.xml"
     })
 
+    table.insert(g_small_enemies,
+    {
+        prob           = 0.03,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/slime_leaker.xml"
+    })
+
 
 
     --Pandora Spawns
@@ -250,14 +258,6 @@
 				return false 
 			end
 		end,
-    })
-
-    table.insert(g_small_enemies,
-    {
-        prob           = 0.04,
-        min_count    = 1,
-        max_count    = 1,    
-        entity     = "data/entities/animals/slime_leaker.xml"
     })
 
 

@@ -3,13 +3,20 @@
 	<InheritTransformComponent />
 
 	<LifetimeComponent
-		lifetime="440"
+		lifetime="470"
 		>
 	</LifetimeComponent>
 
 	<LuaComponent
 		script_source_file="data/entities/animals/boss_fire_lukki/misc/healing_phase_prepare.lua"
 		execute_every_n_frame="2"
+		execute_times="1"
+		>
+	</LuaComponent>
+
+	<LuaComponent
+		script_source_file="data/entities/animals/boss_fire_lukki/misc/healing_phase_animation_start.lua"
+		execute_every_n_frame="80"
 		execute_times="1"
 		>
 	</LuaComponent>
@@ -22,8 +29,22 @@
 	</LuaComponent>
 
 	<LuaComponent
+		script_source_file="data/entities/animals/boss_fire_lukki/misc/healing_phase_animation_idle.lua"
+		execute_every_n_frame="123"
+		execute_times="1"
+		>
+	</LuaComponent>
+
+	<LuaComponent
 		script_source_file="data/entities/animals/boss_fire_lukki/misc/healing_phase_reset.lua"
 		execute_every_n_frame="420"
+		execute_times="1"
+		>
+	</LuaComponent>
+
+	<LuaComponent
+		script_source_file="data/entities/animals/boss_fire_lukki/misc/healing_phase_animation_end.lua"
+		execute_every_n_frame="463"
 		execute_times="1"
 		>
 	</LuaComponent>

@@ -182,5 +182,7 @@ function damage_received( damage, desc, entity_who_caused, is_fatal )
 		ComponentSetValue2(comp_pathing, "distance_to_reach_node_y", 40)
 		ComponentSetValue2(comp_pathing, "frames_between_searches", 20)
 		ComponentSetValue2(comp_pathing, "frames_to_get_stuck", 120)
+
+		GamePlaySound( "data/audio/Desktop/animals.bank", "animals/boss_centipede/destroy_face", pos_x, pos_y );
 	end
 end

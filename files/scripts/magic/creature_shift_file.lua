@@ -98,7 +98,7 @@ function creature_shift( entity, x, y, debug_no_limits )
 
         --Debugging shift, forces all psychic bats to be turned into Shotgunners
         --target = "shotgunner"
-        --target2 = "ccc_bat_psychic"
+        --target2 = "slime_leaker"
 
         --target2 = "esoteric_being"
         --Debugging helper

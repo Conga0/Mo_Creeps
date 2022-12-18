@@ -51,6 +51,11 @@ function damage_received( damage, desc, entity_who_caused, is_fatal )
 			end
 		end
 
+		-- don't shoot revenge projectiles on heal, with the exception of healing bolts
+		if (proj ~= "data/entities/projectiles/healshot.xml" and proj ~= "data/entities/projectiles/deck/heal_bullet.xml" and proj ~= "data/entities/projectiles/deck/heal_bullet_weak.xml") and (damage < 0) then
+			return
+		end
+
 		local projectile = shoot_projectile( entity_id, proj, x, y, vel_x, vel_y )
 		local projComp = EntityGetFirstComponent( projectile, "ProjectileComponent" )
 		ComponentSetValue2( projComp, "damage", projDMG )

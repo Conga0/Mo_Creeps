@@ -210,3 +210,23 @@ xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
     <PixelScene pos_x="-8500" pos_y="16752" just_load_an_entity="mods/mo_creeps/files/entities/items/pickups/chest_volcanic.xml" />
 ]]))
 ModTextFileSetContent("mods/purgatory/files/biome/_pixel_scenes.xml", tostring(xml))
+
+ 
+--Spawns A guaranteed locust swarm in the desert, weaker than usual but makes bonus insect husk
+local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
+local content = ModTextFileGetContent("mods/purgatory/files/biome/_pixel_scenes.xml")
+local xml = nxml.parse(content)
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="9697" pos_y="-141" just_load_an_entity="data/entities/animals/secret/locust_swarm.xml" />
+]]))
+ModTextFileSetContent("mods/purgatory/files/biome/_pixel_scenes.xml", tostring(xml))
+
+ 
+--Spawns A guaranteed juvenile centipede in the east PW jungle
+local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
+local content = ModTextFileGetContent("mods/purgatory/files/biome/_pixel_scenes.xml")
+local xml = nxml.parse(content)
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="35529" pos_y="6603" just_load_an_entity="data/entities/animals/giant_centipede.xml" />
+]]))
+ModTextFileSetContent("mods/purgatory/files/biome/_pixel_scenes.xml", tostring(xml))

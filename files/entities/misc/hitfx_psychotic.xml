@@ -9,9 +9,9 @@
 	</LifetimeComponent>
 
 	<UIIconComponent
-		name="$status_congatwitch_delusional_name"
-		description="$status_congatwitch_delusional_desc"
-		icon_sprite_file="mods/conga_twitch_mod/files/ui_gfx/status_indicators/delusional.png"
+		name="$status_mocreep_delusional_name"
+		description="$status_mocreep_delusional_desc"
+		icon_sprite_file="mods/mo_creeps/files/ui_gfx/status_indicators/delusional.png"
 		is_perk="0"
 		display_above_head="0"
 		display_in_hud="1"
@@ -19,7 +19,7 @@
 	</UIIconComponent>
 
 	<LuaComponent
-		script_source_file="mods/conga_twitch_mod/files/scripts/misc/psychotic_illusion_populator.lua"
+		script_source_file="mods/mo_creeps/files/scripts/misc/psychotic_illusion_populator.lua"
 		execute_every_n_frame="120"
 		_enabled="1"
 		>

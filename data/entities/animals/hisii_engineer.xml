@@ -133,8 +133,16 @@
     attack_ranged_entity_file="mods/mo_creeps/files/entities/projectiles/summon_tank_rocket.xml"
     attack_ranged_offset_y="0"
     attack_ranged_offset_x="0"
+    attack_ranged_entity_count_min="1"
+    attack_ranged_entity_count_max="1"
     >
 	</AIAttackComponent>
+
+	<LuaComponent
+        script_source_file="mods/mo_creeps/files/scripts/animals/hisii_engineer_limiter.lua"
+        execute_every_n_frame="86"
+        >
+    </LuaComponent>
 
 </Entity>
 

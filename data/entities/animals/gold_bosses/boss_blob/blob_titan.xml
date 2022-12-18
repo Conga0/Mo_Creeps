@@ -220,6 +220,14 @@
 		remove_after_executed="1"
 		>
 	</LuaComponent>
+	
+  	<LuaComponent
+		script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier_newgameplus.lua"
+		execute_every_n_frame="6"
+		execute_times="1"
+		remove_after_executed="1"
+		>
+	</LuaComponent>
   
  	<VariableStorageComponent
 		_tags="no_gold_drop">

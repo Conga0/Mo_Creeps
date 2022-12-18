@@ -446,8 +446,8 @@ table.insert(actions,
     related_projectiles	= {"mods/mo_creeps/files/entities/projectiles/deck/field_reverberation.xml"},
     spawn_requires_flag = "mocreeps_card_unlocked_musical_boss_spell",
     type 		= ACTION_TYPE_STATIC_PROJECTILE,
-    spawn_level                       = "0,1,2,4,5,6", -- FREEZE_FIELD
-    spawn_probability                 = "0.3,0.5,0.7,0.7,0.3,0.2", -- FREEZE_FIELD
+    spawn_level                       = "0,1,2,3,4,5,6", -- FREEZE_FIELD
+    spawn_probability                 = "0.3,0.6,0.6,0.7,0.7,0.3,0.2", -- FREEZE_FIELD
     price = 200,
     mana = 50, 
     max_uses = 20,
@@ -470,7 +470,7 @@ table.insert(actions,
     spawn_level                       = "0,1,2", -- LUMINOUS_DRILL
     spawn_probability                 = "0.5,0.5,0.25", -- LUMINOUS_DRILL
     price = 150,
-    mana = 10,
+    mana = 20,
     --max_uses = 1000,
     action 		= function()
         add_projectile("mods/mo_creeps/files/entities/projectiles/deck/rat_bite.xml")
@@ -536,7 +536,7 @@ table.insert(actions,
     spawn_level                       = "10", -- Conversion spell
     spawn_probability                 = "0.01", -- Conversion spell
     price = 250,
-    mana = 100,
+    mana = 80,
     --max_uses = 1000,
     action 		= function()
         add_projectile("mods/mo_creeps/files/entities/projectiles/deck/rat_bite_crit.xml")
@@ -778,7 +778,7 @@ table.insert(actions,
 {
     id          = "MOCREEPS_ALT_FIRE_TELEPORT",
     name 		= "Alt Fire Teleport Bolt",
-    description = "Right click to fire a teleport bolt.",
+    description = "Right click to fire a teleport bolt for 40 mana.",
     sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/alt_fire_teleport_projectile.png",
     sprite_unidentified = "data/ui_gfx/gun_actions/spread_reduce_unidentified.png",
     --spawn_requires_flag = "mocreeps_card_unlocked_fire_lukki_spell",
@@ -799,7 +799,7 @@ table.insert(actions,
 {
     id          = "MOCREEPS_ALT_FIRE_TELEPORT_SHORT",
     name 		= "Alt Fire Small Teleport Bolt",
-    description = "Right click to fire a small teleport bolt.",
+    description = "Right click to fire a small teleport bolt for 20 mana.",
     sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/alt_fire_teleport_projectile_short.png",
     sprite_unidentified = "data/ui_gfx/gun_actions/spread_reduce_unidentified.png",
     --spawn_requires_flag = "mocreeps_card_unlocked_fire_lukki_spell",

@@ -118,7 +118,7 @@ book_mocreeps_divine_liquid_description,"Long have been the days since the unive
 book_mocreeps_materia_conversion,Alchemist's Notes,Записи алхимика,,,,,,,,,,,,
 book_mocreeps_materia_conversion_description,"Transmutation.. Materia Conversion. \nFor years I've dedicated my life to this art, only to foolishly trick myself. \nFor years I thought Materia Conversion could only be used on solid matter, \nBut only now in my last few days I've come to learn it can be harnessed on magic as well. \nI can only hope the fruits of my labour will not forgotten.","Трансмутация. Превращение материи. \nГодами я посвящал свою жизнь этому искусству, но только для того, чтобы обмануть самого себя. \nДолгие годы я думал, что преобразование материи можно использовать только в твёрдой материи, \nНо только теперь, в последние дни, я узнал, что его можно использовать и в магии. \nОстаётся надеяться, что плоды моего труда не будут забыты.",,,,,,,,,,,,
 book_mocreeps_materia_conversion_spell,Alchemist's Notes,Записи алхимика,,,,,,,,,,,,
-book_mocreeps_materia_conversion_spell_description,Conversion.. \nRemember these words.... \nFungus \nWorm \nRat,Превращение... \nЗапомните эти слова.... \nГрибок \nЧервь \nКрыса,,,,,,,,,,,,
+book_mocreeps_materia_conversion_spell_description,Conversion.. \nRemember these words.... \nFungus \nWorm \nRat \nSpark,Превращение... \nЗапомните эти слова.... \nГрибок \nЧервь \nКрыса \nИскровая,,,,,,,,,,,,
 book_mocreeps_trophy_room,Alchemist's Notes,Записи алхимика,,,,,,,,,,,,
 book_mocreeps_trophy_room_description,"I have come to learn this Tree was deemed unfitting of.. certain.. accomplishments by the gods. \nCross the lava, descend where you would not normal. \nThere they will humour you.","Я узнал, что боги сочли это Дерево непригодным для... определённых... свершений. \nПересеките лаву, спуститесь туда, куда обычно не спускаются. \nТам они будут над вами насмехаться.",,,,,,,,,,,,
 book_mocreeps_trophy_room_description_purgatory,"I have come to learn this Tree was deemed unfitting of.. certain.. accomplishments by the gods. \nSpelunk east before you visit their place of worship, cross the fungus, holding the ceiling dear. \nThere they will humour you.","Я узнал, что боги сочли это Дерево непригодным для... определённых... свершений. \nСпешите на Восток, прежде чем посетить место их поклонения, перейдите по грибку, держась за потолок. \nТам они будут над вами насмехаться.",,,,,,,,,,,,
@@ -130,6 +130,7 @@ book_mocreeps_motd_description,Message of the Day \nYou shouldn't be reading thi
 book_mocreeps_motd_description_birthday,Message of the Day \nHappy Birthday More Creeps & Weirdos!,"Сообщение дня \nПоздравлем с днём рождения, More Creeps & Weirdos!",,,,,,,,,,,,
 book_mocreeps_motd_description_halloween,Message of the Day \nHappy Halloween!,Сообщение дня \nСчастливого Хэллоуина!,,,,,,,,,,,,
 book_mocreeps_motd_description_smissmass,Message of the Day \nHappy Noitmass!,Сообщение дня \nСчастливого Нойтждества!,,,,,,,,,,,,
+book_mocreeps_motd_description_new_year,"Happy new year! \nThankyou for playing, although you'll only read this once a year, I mean it everytime you play. \nI'm happy seeing people enjoy my projects, and I'm happy making them myself, so sincerely, thankyou. - Conga Lyne.",,,,,,,,,,,,,
 book_mocreeps_motd_description_001,Message of the Day \nAlso try Worse Enemies!,Сообщение дня \nТакже попробуйте мод Worse Enemies!,,,,,,,,,,,,
 book_mocreeps_motd_description_002,Message of the Day \nHobos love Material Donations,Сообщение дня \nБродяги любят пожертвования в виде денег,,,,,,,,,,,,
 book_mocreeps_motd_description_003,Message of the Day \nBlood is Fuel.,Сообщение дня \nКровь - это топливо.,,,,,,,,,,,,
@@ -308,9 +309,9 @@ spell_mocreep_portal_lukki_blue_portal_desc,"Summons a blue tinted portal, Right
 spell_mocreep_portal_lukki_green_portal_name,Summon Green Portal,Призыв зелёного портала,,,,,,,,,,,,
 spell_mocreep_portal_lukki_green_portal_desc,"Summons a green tinted portal, Right Click to mark a location for the portal to focus on.","Призыв портала с зелёным оттенком. Щёлкните правой кнопкой мыши, чтобы отметить место, на котором будет сфокусирован портал.",,,,,,,,,,,,
 spell_mocreep_alt_fire_teleport_name,Alt Fire Teleport Bolt,Телепортирующая молния (ПКМ),,,,,,,,,,,,
-spell_mocreep_alt_fire_teleport_desc,Right click to fire a teleport bolt.,"Щёлкните правой кнопкой мыши, чтобы запустить телепортационную молнию.",,,,,,,,,,,,
+spell_mocreep_alt_fire_teleport_desc,Right click to fire a teleport bolt for 40 mana.,"Щёлкните правой кнопкой мыши, чтобы запустить телепортационную молнию.",,,,,,,,,,,,
 spell_mocreep_alt_fire_teleport_short_name,Alt Fire Small Teleport Bolt,Малая телепортирующая молния (ПКМ),,,,,,,,,,,,
-spell_mocreep_alt_fire_teleport_short_desc,Right click to fire a small teleport bolt.,"Щёлкните правой кнопкой мыши, чтобы запустить малую телепортационную молнию.",,,,,,,,,,,,
+spell_mocreep_alt_fire_teleport_short_desc,Right click to fire a small teleport bolt for 20 mana.,"Щёлкните правой кнопкой мыши, чтобы запустить малую телепортационную молнию.",,,,,,,,,,,,
 misc_mocreep_energy_nova,Energy Nova,Энергия Новы,,,,,,,,,,,,
 log_mocreep_moon_altar_fungus,AN IRREVERSIBLE CORRUPTION HAS OCCURRED,ПРОИЗОШЛА НЕОБРАТИМАЯ ПОРЧА,,,,,,,,,,,,
 logdesc_mocreep_moon_altar_fungus,WHAT HAVE YOU DONE!?,ЧТО ВЫ НАДЕЛАЛИ!?,,,,,,,,,,,,
@@ -319,7 +320,7 @@ status_mocreep_protection_lava_name,Lava Immunity,Стойкость к лаве
 status_mocreep_protection_lava_desc,You take no direct damage from lava or fire.,Вы не получаете прямого урона от лавы или огня.,,,,,,,,,,,,
 status_mocreep_explosive_orb_name,Explosive,Взрывчатка,,,,,,,,,,,,
 status_mocreep_explosive_orb_desc,You're transmuting magic into explosives!,Вы превращаете магию во взрывчатку!,,,,,,,,,,,,
-creep_mocreep_boss_fire_lukki_name,Lämmön Esteetikko,Ламмон Эстетикко,,,,,,,,,,,,
+creep_mocreep_boss_fire_lukki_name,Lämmön Esteetikko,,,,,,,,,,,,,
 integration_mocreep_RANDOM_CATS_name,Kitty Cats!!,Кошечки!!!,,,,,,,,,,,,
 integration_mocreep_RANDOM_CATS_desc,Cat! I'm a kitty cat! And I dance dance dance! And I dance dance dance!!,Кошка!! Я кошечка!! И я танцую туц-туц!! И я танцую танцую танцую танцую!!!,,,,,,,,,,,,
 integration_mocreep_RANDOM_CREEPS_name,Random Creeps & Weirdos,Случайные твари и чудики,,,,,,,,,,,,
@@ -367,7 +368,7 @@ book_mocreeps_symbol_pinksand_description,"A triangle. Within this, create a lin
 book_mocreeps_symbol_fungus,Sieni,Сиени,,,,,,,,,,,,
 book_mocreeps_symbol_fungus_description,"Two circles, these are specks of dust. \nBetween these specks, draw a line moving upwards. \nWhere the line stops draw two more moving towards the circles. \nConnect the ends of those lines together with one final line, and a fungal infection is born.","Два круга - это пылинки. \nМежду ними проведите линию, двигающуюся вверх. \nВ месте остановки линии нарисуйте ещё две, двигаясь по направлению к кругам. \nСоедините концы этих линий вместе последней линией, и таким образом родится грибковая инфекция.",,,,,,,,,,,,
 book_mocreeps_fire_lukki,Scorched Notes,Опалённые записки,,,,,,,,,,,,
-book_mocreeps_fire_lukki_description,"I remember finding a stone, blazing with fire but nothing more than a gentle touch in my hand. \nIt belonged to those fire cretins who hunted me I bet. \n \nWanting to get back at them I threw the stone into the deepest body of lava I could find in those wretched mines.. \nBut that was my fatal mistake. \n \nThe stone seemed to attract... something. \nI dared not look back after hearing the lava stir violently behind me, I feel lucky to be alive. \n \nMy robes were scorched by it's mere presence. \nMy pride reduced to burn marks of what it once was \nI hope I need never return to that place.","Я помню, как нашёл камень, пылающий огнём, но не более чем легкое прикосновение моей руки. \nНаверняка он принадлежал тем огненным кретинам, которые охотились на меня. \nЖелая отомстить им, я бросил камень в самую глубокую лаву, которую смог найти в этих жалких шахтах. \nНо это была моя роковая ошибка. \n \n Камень, казалось, притягивал... что-то. \nЯ не смел оглянуться, когда услышал, как за спиной яростно зашипела лава. Мне повезло, что я остался жив. \nМоя одежда опалилась от одного его присутствия. \nМоя гордость превратилась в ожоги от того, чем она когда-то была. Надеюсь, я никогда не вернусь в это место.",,,,,,,,,,,,
+book_mocreeps_fire_lukki_description,"I remember finding a stone, blazing with fire but nothing more than a gentle touch in my hand. \nIt belonged to those fire cretins who hunted me I bet. \n \nWanting to get back at them I threw the stone into the deepest body of lava I could find in those wretched mines.. \nBut that was my fatal mistake. \n \nThe stone seemed to attract... something. \nI dared not look back after hearing the lava stir violently behind me, I feel lucky to be alive. \n \nMy robes were scorched by it's mere presence. \nMy pride reduced to burn marks of what it once was. \nI hope I need never return to that place.","Я помню, как нашёл камень, пылающий огнём, но не более чем легкое прикосновение моей руки. \nНаверняка он принадлежал тем огненным кретинам, которые охотились на меня. \nЖелая отомстить им, я бросил камень в самую глубокую лаву, которую смог найти в этих жалких шахтах. \nНо это была моя роковая ошибка. \n \n Камень, казалось, притягивал... что-то. \nЯ не смел оглянуться, когда услышал, как за спиной яростно зашипела лава. Мне повезло, что я остался жив. \nМоя одежда опалилась от одного его присутствия. \nМоя гордость превратилась в ожоги от того, чем она когда-то была. Надеюсь, я никогда не вернусь в это место.",,,,,,,,,,,,
 status_mocreep_plagiarize_swapper_name,Curse of Swapping,Проклятие подмены,,,,,,,,,,,,
 status_mocreep_plagiarize_swapper_desc,You feel the blood of Swapper Mages runs through you,"Вы чувствуете, как в вас течёт кровь магов-подменщиков.",,,,,,,,,,,,
 status_mocreep_delusional_name,Delusional,Галлюцинации,,,,,,,,,,,,
@@ -873,13 +874,7 @@ end
 if ModIsEnabled("raksa") == false then
   local flag_status = HasFlagPersistent( "mocreeps_card_unlocked_welcome_hint" )
   if motdSetting == true then
-    if ModIsEnabled("purgatory") then
-      dofile_once( "mods/mo_creeps/files/scripts/misc/motd_list_purgatory.lua" )
-    elseif ModIsEnabled("noitavania") then
-      dofile_once( "mods/mo_creeps/files/scripts/misc/motd_list_noitavania.lua" )
-    else
-      dofile_once( "mods/mo_creeps/files/scripts/misc/motd_list.lua" )
-    end
+    dofile_once( "mods/mo_creeps/files/scripts/misc/motd_list.lua" )
   elseif flag_status == false then
     if ModIsEnabled("purgatory") then
       dofile_once( "mods/mo_creeps/files/scripts/misc/welcome_hint_purgatory.lua" )
@@ -1125,6 +1120,44 @@ local xml = nxml.parse(content)
 local attrs = xml:first_of("CellEaterComponent").attr
 attrs.materials = attrs.materials .. ",mocreeps_insect_husk,mocreeps_sand_pink,templebrick_static_broken_mocreepsoft"
 ModTextFileSetContent("data/entities/misc/perks/dissolve_powders.xml", tostring(xml))
+
+-- Adds various liquids to freeze charge modifier
+local content = ModTextFileGetContent("data/entities/particles/freeze_charge.xml")
+local xml = nxml.parse(content)
+local attrs = xml:all_of("MagicConvertMaterialComponent")
+attrs[2].attr.from_material_array = attrs[2].attr.from_material_array .. ",mocreeps_water_fading_fast,water_fading"
+attrs[2].attr.to_material_array = attrs[2].attr.to_material_array .. ",ice_static,ice_static"
+ModTextFileSetContent("data/entities/particles/freeze_charge.xml", tostring(xml))
+
+-- Adds various liquids to circle of stillness
+local content = ModTextFileGetContent("data/entities/projectiles/deck/freeze_field.xml")
+local xml = nxml.parse(content)
+xml:add_child(nxml.parse([[
+	<MagicConvertMaterialComponent
+      kill_when_finished="0"
+      from_material="water_fading"
+      steps_per_frame="5"
+      to_material="ice_static"
+      is_circle="1"
+      radius="72" >
+    </MagicConvertMaterialComponent>
+]]))
+ModTextFileSetContent("data/entities/projectiles/deck/freeze_field.xml", tostring(xml))
+
+-- Adds various liquids to freeze field perk
+local content = ModTextFileGetContent("data/entities/misc/perks/freeze_field.xml")
+local xml = nxml.parse(content)
+xml:add_child(nxml.parse([[
+	<MagicConvertMaterialComponent
+      kill_when_finished="0"
+      from_material="mocreeps_water_fading_fast"
+      steps_per_frame="5"
+      to_material="ice_static"
+      is_circle="1"
+      radius="72" >
+    </MagicConvertMaterialComponent>
+]]))
+ModTextFileSetContent("data/entities/misc/perks/freeze_field.xml", tostring(xml))
 
 --Adds Vulnerability immunity check to Master of Vulnerability's attack
 local content = ModTextFileGetContent("data/entities/misc/effect_weaken.xml")
@@ -1459,7 +1492,7 @@ if ModIsEnabled("raksa") == false then
       local content = ModTextFileGetContent(filepc)
       local xml = nxml.parse(content)
       xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-          <PixelScene pos_x="1003" pos_y="91" just_load_an_entity="data/entities/buildings/smoke_dense_creator_mocreep_message.xml" />
+          <PixelScene pos_x="1003" pos_y="111" just_load_an_entity="data/entities/buildings/smoke_dense_creator_mocreep_message.xml" />
       ]]))
       ModTextFileSetContent(filepc, tostring(xml))
     elseif ModIsEnabled("noitavania") then
@@ -1467,14 +1500,14 @@ if ModIsEnabled("raksa") == false then
       local content = ModTextFileGetContent(filepc)
       local xml = nxml.parse(content)
       xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-          <PixelScene pos_x="192" pos_y="1615" just_load_an_entity="data/entities/buildings/smoke_dense_creator_mocreep_message.xml" />
+          <PixelScene pos_x="192" pos_y="1635" just_load_an_entity="data/entities/buildings/smoke_dense_creator_mocreep_message.xml" />
       ]]))
       ModTextFileSetContent(filepc, tostring(xml))
     else
       local content = ModTextFileGetContent(filepc)
       local xml = nxml.parse(content)
       xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-          <PixelScene pos_x="192" pos_y="1615" just_load_an_entity="data/entities/buildings/smoke_dense_creator_mocreep_message.xml" />
+          <PixelScene pos_x="192" pos_y="1635" just_load_an_entity="data/entities/buildings/smoke_dense_creator_mocreep_message.xml" />
       ]]))
       ModTextFileSetContent(filepc, tostring(xml))
     end
