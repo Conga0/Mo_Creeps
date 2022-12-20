@@ -8,3 +8,4 @@ comp = EntityGetComponentIncludingDisabled( root_id, "DamageModelComponent" )[1]
 if( comp ~= nil ) then
     ComponentSetValue( comp, "kill_now", "1" )
 end
+--StatsLogPlayerKill( root_id ) -- this is needed because otherwise the boss kill doesn't get registered as a kill for the player

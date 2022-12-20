@@ -102,7 +102,7 @@ function check_death()
 				ComponentSetValue( comp, "blood_multiplier", "0" )
             end
 
-			StatsLogPlayerKill( entity_id ) -- this is needed because otherwise the boss kill doesn't get registered as a kill for the player
+			--StatsLogPlayerKill( GetUpdatedEntityID() ) -- this is needed because otherwise the boss kill doesn't get registered as a kill for the player
 			is_dead = true
 
 			return

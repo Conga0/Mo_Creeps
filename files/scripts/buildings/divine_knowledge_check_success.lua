@@ -7,6 +7,7 @@ function material_area_checker_success( pos_x, pos_y )
     
 	EntityLoad("data/entities/particles/image_emitters/magical_symbol.xml", pos_x, pos_y)
 	EntityLoad("mods/mo_creeps/files/entities/particle_generators/smoke_cloud_generator_nolua.xml", pos_x, pos_y)
+	EntityLoad("mods/mo_creeps/files/entities/buildings/enable_wand_tinkering.xml", pos_x, pos_y)
     GameTriggerMusicFadeOutAndDequeueAll( 3.0 )
     GameTriggerMusicEvent( "music/oneshot/heaven_03", true, pos_x, pos_y )
 	GamePlaySound( "data/audio/Desktop/projectiles.snd", "player_projectiles/crumbling_earth/create", pos_x, pos_y)

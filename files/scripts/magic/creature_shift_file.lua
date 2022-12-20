@@ -1,4 +1,10 @@
 dofile("data/scripts/lib/utilities.lua")
+
+--If you're looking through these files trying to figure out how Creature Shifting works, you've come to the right place.
+--Much like the folder name implies, this is where the magic happens.
+--I don't think I documented everything, but you should be able to fill in the gaps, it's a pretty simple system.
+--Just replace creature's xml data with the one you want and add a lua script to the player so any already-spawned cretins get transformed too
+
 local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
 local enemy_list
 local enemy_list_from

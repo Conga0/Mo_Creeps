@@ -48,7 +48,7 @@ table.insert(ALL_ENTITIES, {
 	  {
 		name="Asthete of Heat",
 		path="data/entities/animals/boss_fire_lukki/boss_fire_lukki.xml",
-		image="data/ui_gfx/animal_icons/boss_fire_lukki.png",
+		image="data/ui_gfx/animal_icons/boss_fire_lukki_phase2.png",
 	  },
 	  {
 		name="Manager",

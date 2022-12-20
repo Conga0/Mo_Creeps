@@ -12,5 +12,6 @@ function item_pickup( entity_item, entity_who_picked, item_name )
 	
 	shoot_projectile( entity_who_picked, "data/entities/particles/image_emitters/orb_effect.xml", pos_x, pos_y, 0, 0 )
 	CreateItemActionEntity( "MOCREEPS_KNOWLEDGE_OF_KINGS", pos_x, pos_y )
+
 	EntityKill( entity_item )
 end
