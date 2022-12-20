@@ -6,7 +6,7 @@
 
 	<SpriteComponent 
 		z_index="1"
-		image_file="mods/mo_creeps/files/props_gfx/statue_essence_fungus_moon_gold.png" 
+		image_file="mods/mo_creeps/files/props_gfx/goldmode/statue_essence_fungus_moon.png" 
 		offset_x="0"
 		offset_y="47" >
 	</SpriteComponent>

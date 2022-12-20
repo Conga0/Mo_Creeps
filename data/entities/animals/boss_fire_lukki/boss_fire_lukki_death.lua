@@ -4,7 +4,7 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 	-- kill self
 	local entity_id    = GetUpdatedEntityID()
 	local pos_x, pos_y = EntityGetTransform( entity_id )
-	local flag_status = HasFlagPersistent( "mocreeps_card_unlocked_boss_fire_lukki" )
+	local flag_status = HasFlagPersistent( "mocreeps_card_unlocked_fire_lukki" )
 
 	-- do some kind of an effect? throw some particles into the air?
 

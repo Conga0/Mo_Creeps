@@ -22,7 +22,7 @@
     on_death_gfx_leave_sprite="0" 
     on_lifetime_out_explode="1"
 	explosion_dont_damage_shooter="1"
-    damage="2.00"
+    damage="1.4"
     on_collision_die="1"
 	die_on_liquid_collision="1"
     lifetime="200"
@@ -36,13 +36,13 @@
 	collide_with_tag="player_unit"
 	>
 	<damage_by_type
-		fire="1.25"
+		fire="1.7"
 		>
 	</damage_by_type>
     <config_explosion
       never_cache="1" 
       camera_shake="20.5" 
-      explosion_radius="45" 
+      explosion_radius="35" 
       damage="4.5"
       explosion_sprite="data/particles/explosion_040_poof.xml" 
       explosion_sprite_lifetime="0" 

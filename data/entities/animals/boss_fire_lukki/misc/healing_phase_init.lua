@@ -12,7 +12,7 @@ if ( comp ~= nil ) then
 	ComponentObjectSetValue2( comp, "damage_multipliers", "projectile", -0.4 )
 	ComponentObjectSetValue2( comp, "damage_multipliers", "explosion", -0.4 )
 	ComponentObjectSetValue2( comp, "damage_multipliers", "electricity", -0.4 )
-	ComponentObjectSetValue2( comp, "damage_multipliers", "slice", -0.4 )
+	ComponentObjectSetValue2( comp, "damage_multipliers", "slice", -0.1 )
 	ComponentObjectSetValue2( comp, "damage_multipliers", "ice", -0.4 )
 	ComponentObjectSetValue2( comp, "damage_multipliers", "curse", -0.4 )
 	ComponentObjectSetValue2( comp, "damage_multipliers", "drill", -0.4 )

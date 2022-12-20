@@ -91,11 +91,13 @@
 	<!-- damage  -->
 
 	<DamageModelComponent
-		hp="192" 
+		hp="192"
 		max_hp="480"
-		air_needed="0" 
-		falling_damages="0" 
-		fire_damage_amount="0.2" 
+		wait_for_kill_flag_on_death="1"
+		air_needed="0"
+		falling_damages="0"
+		fire_damage_amount="0.2"
+		invincibility_frames="40"
 		 
 		fire_probability_of_ignition="0" 
 		blood_material="lava"
@@ -120,7 +122,7 @@
 			explosion="0.3"
 			electricity="0.3"
 			fire="-1.0" 
-			slice="0.0"
+			slice="0.03"
 			ice="0.8"
 			curse="0.7"
 			drill="0.3"
@@ -427,6 +429,14 @@
 		execute_every_n_frame="6"
 		execute_times="1"
 		remove_after_executed="1"
+		>
+	</LuaComponent>
+
+	<!-- Fancy Death Script -->
+	<LuaComponent
+		execute_every_n_frame="-1"
+		script_damage_received="data/entities/animals/boss_fire_lukki/boss_fire_lukki_death_check.lua"
+		enable_coroutines="1"
 		>
 	</LuaComponent>
 </Entity>

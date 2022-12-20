@@ -27,7 +27,8 @@
 	damage_game_effect_entities="mods/mo_creeps/files/entities/misc/effect_weaken_short_player.xml,"
     velocity_sets_scale="1"
     on_collision_die="1"
-    lifetime="150" >
+    lifetime="150"
+    damage_every_x_frames="10" >
     <config_explosion
       never_cache="1" 
       camera_shake="0.5" 
