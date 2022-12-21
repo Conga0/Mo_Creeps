@@ -234,6 +234,25 @@
 		end,
     })
 
+    table.insert(g_big_enemies,
+    {
+        prob           = 0.001,
+        min_count    = 1,
+        max_count    = 1,    
+        entity     = "data/entities/animals/illusions/dark_alchemist.xml",
+		spawn_check = function() 
+			if GameHasFlagRun( "mocreeps_pandora_unleashed" ) then
+				return true
+			else
+				return false 
+			end
+		end,
+    })
+
+
+
+    --Props
+
     table.insert(g_hanging_props,
     {
 		prob   		= 0.3,

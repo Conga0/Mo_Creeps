@@ -1,5 +1,8 @@
 dofile_once("data/scripts/lib/utilities.lua")
 
-EntityLoad("mods/mo_creeps/files/entities/the_end/credits_horscht.xml")
+local player_id = EntityGetWithTag("player_unit")[1]
+local x,y = EntityGetTransform(player_id)
+local credits = EntityLoad("mods/mo_creeps/files/entities/the_end/credits_horscht.xml",x,y)
+EntityAddChild(player_id,credits)
 
 EntityKill(GetUpdatedEntityID())

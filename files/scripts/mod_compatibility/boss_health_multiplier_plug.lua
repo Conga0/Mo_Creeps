@@ -358,61 +358,68 @@ if ModIsEnabled("worse_enemies") then
 
 --Spin Boss
 local content = ModTextFileGetContent("data/entities/animals/boss_spin/boss_spin.xml")
-local xml = nxml.parse(content)
-xml:add_child(nxml.parse([[
-  <LuaComponent
-    script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
-    execute_times="1"
-		execute_every_n_frame="3"
-    remove_after_executed="1"
-    >
-  </LuaComponent>
-]]))
-ModTextFileSetContent("data/entities/animals/boss_spin/boss_spin.xml", tostring(xml))
+if content ~= nil then 
+  local xml = nxml.parse(content)
+  xml:add_child(nxml.parse([[
+    <LuaComponent
+      script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
+      execute_times="1"
+      execute_every_n_frame="3"
+      remove_after_executed="1"
+      >
+    </LuaComponent>
+  ]]))
+  ModTextFileSetContent("data/entities/animals/boss_spin/boss_spin.xml", tostring(xml))
+end
 
 
 --Nest Spider/Hive Wasp
 local content = ModTextFileGetContent("data/entities/animals/nest_spider.xml")
-local xml = nxml.parse(content)
-xml:add_child(nxml.parse([[
-  <LuaComponent
-    script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
-    execute_times="1"
-		execute_every_n_frame="3"
-    remove_after_executed="1"
-    >
-  </LuaComponent>
-]]))
-ModTextFileSetContent("data/entities/animals/nest_spider.xml", tostring(xml))
+if content ~= nil then 
+  local xml = nxml.parse(content)
+  xml:add_child(nxml.parse([[
+    <LuaComponent
+      script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
+      execute_times="1"
+      execute_every_n_frame="3"
+      remove_after_executed="1"
+      >
+    </LuaComponent>
+  ]]))
+  ModTextFileSetContent("data/entities/animals/nest_spider.xml", tostring(xml))
+end
 
 local content = ModTextFileGetContent("data/entities/animals/bossfirebug.xml")
-local xml = nxml.parse(content)
-xml:add_child(nxml.parse([[
-  <LuaComponent
-    script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
-    execute_times="1"
-		execute_every_n_frame="3"
-    remove_after_executed="1"
-    >
-  </LuaComponent>
-]]))
-ModTextFileSetContent("data/entities/animals/bossfirebug.xml", tostring(xml))
+if content ~= nil then 
+  local xml = nxml.parse(content)
+  xml:add_child(nxml.parse([[
+    <LuaComponent
+      script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
+      execute_times="1"
+      execute_every_n_frame="3"
+      remove_after_executed="1"
+      >
+    </LuaComponent>
+  ]]))
+  ModTextFileSetContent("data/entities/animals/bossfirebug.xml", tostring(xml))
+end
 
 
 --Hive Wasp, I think this is a boss??
 local content = ModTextFileGetContent("data/entities/animals/hive_wasp.xml")
-local xml = nxml.parse(content)
-xml:add_child(nxml.parse([[
-  <LuaComponent
-    script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
-    execute_times="1"
-		execute_every_n_frame="3"
-    remove_after_executed="1"
-    >
-  </LuaComponent>
-]]))
-ModTextFileSetContent("data/entities/animals/hive_wasp.xml", tostring(xml))
-
+if content ~= nil then 
+  local xml = nxml.parse(content)
+  xml:add_child(nxml.parse([[
+    <LuaComponent
+      script_source_file="mods/mo_creeps/files/scripts/animals/boss_health_multiplier.lua"
+      execute_times="1"
+      execute_every_n_frame="3"
+      remove_after_executed="1"
+      >
+    </LuaComponent>
+  ]]))
+  ModTextFileSetContent("data/entities/animals/hive_wasp.xml", tostring(xml))
+end
 end
 
 

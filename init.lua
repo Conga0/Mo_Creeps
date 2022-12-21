@@ -378,6 +378,20 @@ status_mocreep_creatureshift_cd_desc,The path of evolution is set in stone... Fo
 perk_mocreeps_revenge_reflective,Revenge Reflection,Отражение мести,,,,,,,,,,,,
 perk_mocreeps_revenge_reflective_description,"Reflect copies of enemy projectiles upon taking damage, with a steep damage boost as payback.",Отражение копий вражеских снарядов при получении урона с резким увеличением урона в качестве расплаты.,,,,,,,,,,,,
 biomemod_mocreeps_smoke_dense,The air feels unusually dense,Воздух кажется необычайно плотным,,,,,,,,,,,,
+credits_mocreeps_line_01,"a mod made by",,,,,,,,,,,,,
+credits_mocreeps_line_04,"Main Developer of More Creeps & Weirdos",,,,,,,,,,,,,
+credits_mocreeps_line_07,"Voice Actor of the Cats",,,,,,,,,,,,,
+credits_mocreeps_line_10,"Creating sprites for the Blobs, Fluffy Cats & Aesthete of Heat boss",,,,,,,,,,,,,
+credits_mocreeps_line_11,"Creating the Colossal Blob's Vomit Ball attack",,,,,,,,,,,,,
+credits_mocreeps_line_14,"Creator of the Mana Drain Script",,,,,,,,,,,,,
+credits_mocreeps_line_17,"Russian Translator",,,,,,,,,,,,,
+credits_mocreeps_line_20,"Helped with some creature design & mod direction, also helped with alt-fire spells.",,,,,,,,,,,,,
+credits_mocreeps_line_22,"Special Thanks to",,,,,,,,,,,,,
+credits_mocreeps_line_39,"And many modders of the Noita Discord",,,,,,,,,,,,,
+credits_mocreeps_line_43,"And finally.. you, for giving More Creeps a try and making it this far into the mod!",,,,,,,,,,,,,
+credits_mocreeps_line_44,"I hope you enjoyed playing it as much as I enjoyed making it <3",,,,,,,,,,,,,
+credits_mocreeps_line_45,"Best of luck in your future adventures - Conga Lyne",,,,,,,,,,,,,
+credits_mocreeps_line_horscht,"Provided a ton of help in the mod support channel during development and let me use his credits script.",,,,,,,,,,,,,
 ]])
 
 --Yggdrasil's Knowledge (The knowledge of life)
@@ -888,11 +902,13 @@ end
 
 --Allows hisii to jump into minecarts
 local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
-local content = ModTextFileGetContent("data/entities/props/physics_minecart.xml")
-local xml = nxml.parse(content)
-xml.attr.name = "minecart_hisii_hopin"
-ModTextFileSetContent("data/entities/props/physics_minecart.xml", tostring(xml))
-ModTextFileSetContent("data/entities/props/physics/minecart.xml", tostring(xml))
+if ModIsEnabled("Ride Minecart") == false then
+  local content = ModTextFileGetContent("data/entities/props/physics_minecart.xml")
+  local xml = nxml.parse(content)
+  xml.attr.name = "minecart_hisii_hopin"
+  ModTextFileSetContent("data/entities/props/physics_minecart.xml", tostring(xml))
+  ModTextFileSetContent("data/entities/props/physics/minecart.xml", tostring(xml))
+end
 
 --local content = ModTextFileGetContent("data/entities/props/physics/minecart.xml")
 --local xml = nxml.parse(content)
@@ -976,6 +992,12 @@ ModTextFileSetContent("data/entities/animals/spitmonster.xml", tostring(xml))
 function OnPlayerSpawned( player_entity )
 	local x, y = EntityGetTransform( player_entity ) --This was just "player" by default but I feel like something broke.. I hope not
 	EntityLoad("mods/mo_creeps/files/entities/special/entity_shift_refresh_fixer.xml", x, y)
+
+  --[[
+    if ModIsEnabled("Ride Minecart") == true then
+    GamePrint("Error, could not initialise hopping into minecarts because of [Ride Minecarts], Mo Creeps should function as normal otherwise though.")
+  end
+  ]]--
 end
 
 --Allows for essence of fungus to be turned into a stone

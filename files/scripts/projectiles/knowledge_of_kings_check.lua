@@ -35,8 +35,10 @@ else
 	local message_title = "$secretmessage_mocreep_capeget_name"
 	local message_desc = "$secretmessage_mocreep_capeget_desc"
 
-    local x, y = EntityGetTransform(EntityGetWithTag("player_unit")[1])
-	EntityLoad("mods/mo_creeps/files/entities/the_end/credits_horscht_wait.xml", x, y)
+    local player_id = EntityGetWithTag("player_unit")[1]
+    local x,y = EntityGetTransform(player_id)
+	local credits = EntityLoad("mods/mo_creeps/files/entities/the_end/credits_horscht_wait.xml", x, y)
+    EntityAddChild(player_id,credits)
 	
 	GamePrintImportant( message_title, message_desc )
 
