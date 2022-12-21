@@ -11,7 +11,7 @@ local lines = {
   "Voice Actor of the Cats",
   " ",
   "Spoopy",
-  "Creating sprites for the Blobs, Fluffy Cats & Aesthete of Heat boss",
+  "Creating sprites for the Blobs, Fluffy Cats & Aesthete of Heat boss. Also made the Colossal Blob's Vomit Ball attack",
   " ",
   "Squirrelly",
   "Creator of the Mana Drain Script",
@@ -42,13 +42,16 @@ local lines = {
   "Elleedy",
   "Zolkarn",
   "Vexilus_",
-  "Many Modders of the Noita Discord",
+  "Xytio",
+  "And many Modders of the Noita Discord",
   " ",
   " ",
   " ",
   "And finally.. you, for giving More Creeps a try and making it this far into the mod!",
   "I hope you enjoyed playing it as much as I enjoyed making it <3",
   "Best of luck in your future adventures - Conga Lyne",
+  " ",
+  " ",
   " ",
 }
 
@@ -76,7 +79,7 @@ end
 
 GuiLayoutBeginVertical(gui, 50, 100)
 GuiOptionsAddForNextWidget(gui, GUI_OPTION.Align_HorizontalCenter)
-GuiImage(gui, 2, 0, roll_credits_progress, "mods/Mo_Creeps/files/entities/the_end/credits_title.png", 1, 1, 1)
+GuiImage(gui, 2, 0, roll_credits_progress, "mods/Mo_Creeps/files/entities/the_end/credits_title_new.png", 1, 1, 1)
 for i, line in ipairs(lines) do
   -- Draw black shadow first
   GuiOptionsAddForNextWidget(gui, GUI_OPTION.Align_HorizontalCenter)
