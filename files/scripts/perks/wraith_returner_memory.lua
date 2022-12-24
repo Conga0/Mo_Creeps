@@ -43,7 +43,7 @@ if ( string.len( projectile ) > 0 ) then
 			local name = ComponentGetValue2( comp, "name" )
 			if ( name == "proj_file_mocreep" ) then
 				--GamePrint("Found Variable Component")
-				if projectile ~= "data/entities/projectiles/deck/teleport_projectile.xml" and projectile ~= "data/entities/projectiles/deck/teleport_projectile_short.xml" then
+				if projectile ~= "data/entities/projectiles/deck/teleport_projectile.xml" and projectile ~= "data/entities/projectiles/deck/teleport_projectile_short.xml" and projectile ~= "mods/mo_creeps/files/projectiles/teleport_projectile_npc.xml" then
 					ComponentSetValue2( comp, "value_string", projectile )
 					ComponentSetValue2( comp, "value_float", damageCount )
 				end

@@ -39,6 +39,13 @@ end
         max_count    = 1,    
         entity     = "data/entities/animals/the_end/gazer_greater_cold.xml"
     })
+    table.insert(g_small_enemies_sky,
+	{
+		prob   		= 0.1,
+		min_count	= 1,
+		max_count	= 1,    
+		entity 	= "data/entities/animals/the_end/gazer_cold_mocreep.xml"
+	})
 
     if mocreep_HardmodeCheck then 
         table.insert(g_big_enemies_sky,

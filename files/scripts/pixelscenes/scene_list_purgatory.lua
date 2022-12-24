@@ -276,3 +276,12 @@ xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
   <PixelScene pos_x="3390" pos_y="8957" just_load_an_entity="mods/mo_creeps/files/entities/props/hiddenmessage_redsand.xml" />
 ]]))
 ModTextFileSetContent("mods/purgatory/files/biome/_pixel_scenes.xml", tostring(xml))
+
+--Hiisi Beggar Hint Glyph
+local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
+local content = ModTextFileGetContent("mods/purgatory/files/biome/_pixel_scenes.xml")
+local xml = nxml.parse(content)
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+  <PixelScene pos_x="13086" pos_y="10970" just_load_an_entity="mods/mo_creeps/files/entities/props/hiddenmessage_hobo_glyph.xml" />
+]]))
+ModTextFileSetContent("mods/purgatory/files/biome/_pixel_scenes.xml", tostring(xml))

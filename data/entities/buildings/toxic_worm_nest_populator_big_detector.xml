@@ -1,9 +1,9 @@
 
 <Entity>
     <CollisionTriggerComponent
-      width="512"
-      height="512" 
-      radius="512"
+      width="700"
+      height="700" 
+      radius="700"
       required_tag="player_unit"
       destroy_this_entity_when_triggered="0" >
   	</CollisionTriggerComponent>

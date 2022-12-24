@@ -61,6 +61,23 @@ local xml = nxml.parse(content)
 xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
     <PixelScene pos_x="191" pos_y="10699" just_load_an_entity="data/entities/buildings/polymorphcrystal_deleter.xml" />
 ]]))
+
+--Same as above but other biomes
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="191" pos_y="1440" just_load_an_entity="data/entities/buildings/polymorphcrystal_deleter.xml" />
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="191" pos_y="2698" just_load_an_entity="data/entities/buildings/polymorphcrystal_deleter.xml" />
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="191" pos_y="5037" just_load_an_entity="data/entities/buildings/polymorphcrystal_deleter.xml" />
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="191" pos_y="6582" just_load_an_entity="data/entities/buildings/polymorphcrystal_deleter.xml" />
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="191" pos_y="8664" just_load_an_entity="data/entities/buildings/polymorphcrystal_deleter.xml" />
+]]))
 ModTextFileSetContent("mods/purgatory/files/biome/_pixel_scenes.xml", tostring(xml))
 
 
@@ -178,13 +195,13 @@ local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
 local content = ModTextFileGetContent("mods/purgatory/files/biome/_pixel_scenes.xml")
 local xml = nxml.parse(content)
 xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-    <PixelScene pos_x="8610" pos_y="5555" just_load_an_entity="mods/mo_creeps/files/entities/buildings/fire_lukki_brimstone_detector.xml" />
+    <PixelScene pos_x="8610" pos_y="5500" just_load_an_entity="mods/mo_creeps/files/entities/buildings/fire_lukki_brimstone_detector.xml" />
 ]]))
 xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-    <PixelScene pos_x="8419" pos_y="555" just_load_an_entity="mods/mo_creeps/files/entities/buildings/fire_lukki_brimstone_detector.xml" />
+    <PixelScene pos_x="8419" pos_y="5500" just_load_an_entity="mods/mo_creeps/files/entities/buildings/fire_lukki_brimstone_detector.xml" />
 ]]))
 xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-    <PixelScene pos_x="8610" pos_y="5555" just_load_an_entity="mods/mo_creeps/files/entities/buildings/fire_lukki_brimstone_detector.xml" />
+    <PixelScene pos_x="8610" pos_y="5500" just_load_an_entity="mods/mo_creeps/files/entities/buildings/fire_lukki_brimstone_detector.xml" />
 ]]))
 ModTextFileSetContent("mods/purgatory/files/biome/_pixel_scenes.xml", tostring(xml))
 
@@ -193,11 +210,16 @@ ModTextFileSetContent("mods/purgatory/files/biome/_pixel_scenes.xml", tostring(x
 local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
 local content = ModTextFileGetContent("mods/purgatory/files/biome/_pixel_scenes.xml")
 local xml = nxml.parse(content)
+--This Locations for it to spawn inside Hiisi secret shop
 xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-    <PixelScene pos_x="1728" pos_y="5519" just_load_an_entity="mods/mo_creeps/files/entities/buildings/fire_lukki_book_spawner.xml" />
+    <PixelScene pos_x="1728" pos_y="5522" just_load_an_entity="mods/mo_creeps/files/entities/buildings/fire_lukki_book_spawner_stoneonly.xml" />
 ]]))
 xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-    <PixelScene pos_x="-2256" pos_y="5509" just_load_an_entity="mods/mo_creeps/files/entities/buildings/fire_lukki_book_spawner.xml" />
+    <PixelScene pos_x="-2256" pos_y="5512" just_load_an_entity="mods/mo_creeps/files/entities/buildings/fire_lukki_book_spawner_stoneonly.xml" />
+]]))
+--This location is inside the Lake bunker
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="-12530" pos_y="394" just_load_an_entity="mods/mo_creeps/files/entities/buildings/fire_lukki_book_spawner.xml" />
 ]]))
 ModTextFileSetContent("mods/purgatory/files/biome/_pixel_scenes.xml", tostring(xml))
 

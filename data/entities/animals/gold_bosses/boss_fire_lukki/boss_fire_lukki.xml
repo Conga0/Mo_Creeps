@@ -142,7 +142,7 @@
 		aabb_max_x="20" 
 		aabb_min_y="-20" 
 		aabb_max_y="20"
-		damage_multiplier="0.3"
+		damage_multiplier="0.4"
 		>
 	</HitboxComponent>
 

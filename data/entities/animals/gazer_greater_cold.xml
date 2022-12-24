@@ -30,11 +30,11 @@
 			>
 			<damage_multipliers
 				melee="1.0"
-				projectile="1.0"
+				projectile="0.75"
 				explosion="0.8"
 				electricity="0.8"
-				ice="1.2"
-				fire="0" >
+				ice="0.0"
+				fire="1.5" >
 			</damage_multipliers>
 		</DamageModelComponent>
 

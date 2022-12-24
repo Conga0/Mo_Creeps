@@ -99,7 +99,7 @@
 
     table.insert(g_small_enemies,
     {
-        prob           = 0.2,
+        prob           = 0.18,
         min_count    = 2,
         max_count    = 4,    
         entity     = "data/entities/animals/ccc_bat_psychic.xml"

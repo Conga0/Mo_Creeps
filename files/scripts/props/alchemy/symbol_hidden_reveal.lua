@@ -4,7 +4,7 @@ local entity_id    = GetUpdatedEntityID()
 local x, y = EntityGetTransform( entity_id )
 local radius = 125
 
-local eyes = EntityGetInRadiusWithTag( x, y, radius, "evil_eye" )
+local eyes = EntityGetInRadiusWithTag( x, y, radius, "musical_stone" )
 local found = false
 
 local musicinitiated = tonumber( GlobalsGetValue( "mocreep_king_secret_music", "0" ) )

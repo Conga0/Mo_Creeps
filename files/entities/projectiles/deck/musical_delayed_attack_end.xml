@@ -38,6 +38,7 @@
     shoot_light_flash_g="70"
     shoot_light_flash_b="155" 
 	knockback_force="1.5"
+  damage_every_x_frames="1"
 	>
     <config_explosion
       never_cache="1" 

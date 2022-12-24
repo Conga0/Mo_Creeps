@@ -176,6 +176,11 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/animal_icons/forsaken_eye.png",
 	  },
 	  {
+		name="Cold Gazer",
+		path="data/entities/animals/gazer_cold_mocreep.xml",
+		image="data/ui_gfx/animal_icons/hidden/gazer_cold_mocreep.png",
+	  },
+	  {
 		name="Greater Hell Gazer",
 		path="data/entities/animals/gazer_greater.xml",
 		image="data/ui_gfx/animal_icons/gazer_greater.png",
@@ -214,6 +219,11 @@ table.insert(ALL_ENTITIES, {
 		name="Hideous Mass",
 		path="data/entities/animals/hideous_mass.xml",
 		image="data/ui_gfx/animal_icons/hideous_mass.png",
+	  },
+	  {
+		name="Hideous Flesh",
+		path="data/entities/animals/hideous_mass_red.xml",
+		image="data/ui_gfx/animal_icons/hidden/hideous_mass_red.png",
 	  },
 	  {
 		name="Hisii Engineer",
@@ -366,6 +376,11 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/animal_icons/triangle_gem.png",
 	  },
 	  {
+		name="Tall Tree",
+		path="data/entities/animals/tree_tall.xml",
+		image="data/ui_gfx/animal_icons/hidden/tree_tall.png",
+	  },
+	  {
 		name="Will O' the Whisp",
 		path="data/entities/animals/whisp.xml",
 		image="data/ui_gfx/animal_icons/whisp.png",
@@ -456,6 +471,21 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/building_icons/portal_stand.png",
 	  },
 	  {
+		name="Portal Trap",
+		path="mods/mo_creeps/files/entities/props/traps/trap_portal.xml",
+		image="data/ui_gfx/building_icons/trap_portal.png",
+	  },
+	  {
+		name="Suspended Fire Tank",
+		path="mods/mo_creeps/files/entities/props/suspended_tank_fire.xml",
+		image="data/ui_gfx/building_icons/suspended_tank_fire.png",
+	  },
+	  {
+		name="Suspended Lava Tank",
+		path="mods/mo_creeps/files/entities/props/suspended_tank_lava.xml",
+		image="data/ui_gfx/building_icons/suspended_tank_lava.png",
+	  },
+	  {
 		name="Lime Crystal",
 		path="data/entities/props/crystal_lime.xml",
 		image="data/ui_gfx/building_icons/crystal_lime.png",
@@ -466,9 +496,19 @@ table.insert(ALL_ENTITIES, {
 		image="data/ui_gfx/building_icons/crystal_opal.png",
 	  },
 	  {
+		name="Dimensional Chest",
+		path="mods/mo_creeps/files/entities/items/pickups/chest_portals.xml",
+		image="data/ui_gfx/building_icons/chest_portals.png",
+	  },
+	  {
 		name="Pandora's Chest",
 		path="mods/mo_creeps/files/entities/items/pickups/chest_random_cursed.xml",
 		image="data/ui_gfx/building_icons/chest_random_cursed.png",
+	  },
+	  {
+		name="Volcanic Chest",
+		path="mods/mo_creeps/files/entities/items/pickups/chest_volcanic.xml",
+		image="data/ui_gfx/building_icons/chest_volcanic.png",
 	  },
 	  {
 		name="Sienenkivi",

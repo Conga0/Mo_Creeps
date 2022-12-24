@@ -378,20 +378,20 @@ status_mocreep_creatureshift_cd_desc,The path of evolution is set in stone... Fo
 perk_mocreeps_revenge_reflective,Revenge Reflection,Отражение мести,,,,,,,,,,,,
 perk_mocreeps_revenge_reflective_description,"Reflect copies of enemy projectiles upon taking damage, with a steep damage boost as payback.",Отражение копий вражеских снарядов при получении урона с резким увеличением урона в качестве расплаты.,,,,,,,,,,,,
 biomemod_mocreeps_smoke_dense,The air feels unusually dense,Воздух кажется необычайно плотным,,,,,,,,,,,,
-credits_mocreeps_line_01,"a mod made by",,,,,,,,,,,,,
-credits_mocreeps_line_04,"Main Developer of More Creeps & Weirdos",,,,,,,,,,,,,
-credits_mocreeps_line_07,"Voice Actor of the Cats",,,,,,,,,,,,,
-credits_mocreeps_line_10,"Creating sprites for the Blobs, Fluffy Cats & Aesthete of Heat boss",,,,,,,,,,,,,
-credits_mocreeps_line_11,"Creating the Colossal Blob's Vomit Ball attack",,,,,,,,,,,,,
-credits_mocreeps_line_14,"Creator of the Mana Drain Script",,,,,,,,,,,,,
-credits_mocreeps_line_17,"Russian Translator",,,,,,,,,,,,,
-credits_mocreeps_line_20,"Helped with some creature design & mod direction, also helped with alt-fire spells.",,,,,,,,,,,,,
-credits_mocreeps_line_22,"Special Thanks to",,,,,,,,,,,,,
-credits_mocreeps_line_39,"And many modders of the Noita Discord",,,,,,,,,,,,,
-credits_mocreeps_line_43,"And finally.. you, for giving More Creeps a try and making it this far into the mod!",,,,,,,,,,,,,
-credits_mocreeps_line_44,"I hope you enjoyed playing it as much as I enjoyed making it <3",,,,,,,,,,,,,
-credits_mocreeps_line_45,"Best of luck in your future adventures - Conga Lyne",,,,,,,,,,,,,
-credits_mocreeps_line_horscht,"Provided a ton of help in the mod support channel during development and let me use his credits script.",,,,,,,,,,,,,
+credits_mocreeps_line_01,a mod made by,"мод, созданный",,,,,,,,,,,,
+credits_mocreeps_line_04,Main Developer of More Creeps & Weirdos,Главный разработчик More Creeps & Weirdos,,,,,,,,,,,,
+credits_mocreeps_line_07,Voice Actor of the Cats,Актёр озвучивания кошек,,,,,,,,,,,,
+credits_mocreeps_line_10,"Creating sprites for the Blobs, Fluffy Cats & Aesthete of Heat boss","Создание спрайтов для сгустка, пушистых кошек и босса эстета тепла",,,,,,,,,,,,
+credits_mocreeps_line_11,Creating the Colossal Blob's Vomit Ball attack,Создание атаки «РВОТНЫЙ ШАР» для колоссального сгустка,,,,,,,,,,,,
+credits_mocreeps_line_14,Creator of the Mana Drain Script,Создатель скрипта расхода маны,,,,,,,,,,,,
+credits_mocreeps_line_17,Russian Translator,Перевод на русский,,,,,,,,,,,,
+credits_mocreeps_line_20,"Helped with some creature design & mod direction, also helped with alt-fire spells.","Помогал с дизайном существ и направлением мода, также помогал с заклинаниями на ПКМ.",,,,,,,,,,,,
+credits_mocreeps_line_22,Special Thanks to,Особая благодарность,,,,,,,,,,,,
+credits_mocreeps_line_39,And many modders of the Noita Discord,И многим создателям модов из Discord-сервера Noita,,,,,,,,,,,,
+credits_mocreeps_line_43,"And finally.. you, for giving More Creeps a try and making it this far into the mod!","И наконец.. вам, за то, что попробовали More Creeps и зашли так далеко в этом моде!",,,,,,,,,,,,
+credits_mocreeps_line_44,I hope you enjoyed playing it as much as I enjoyed making it <3,"Надеюсь, вам понравилось играть в него так же, как мне понравилось его создавать <3",,,,,,,,,,,,
+credits_mocreeps_line_45,Best of luck in your future adventures - Conga Lyne,Желаю удачи в ваших будущих приключениях - Conga Lyne,,,,,,,,,,,,
+credits_mocreeps_line_horscht,Provided a ton of help in the mod support channel during development and let me use his credits script.,Оказал тонну помощи в канале поддержки мода во время разработки и позволил мне использовать его скрипт для этого меню.,,,,,,,,,,,,
 ]])
 
 --Yggdrasil's Knowledge (The knowledge of life)
@@ -1311,6 +1311,14 @@ if seasonalSetting == true then
     local xml = nxml.parse(content)
     xml:first_of("Base"):first_of("SpriteComponent").attr.image_file = "mods/Mo_Creeps/files/enemies_gfx/hisii_minecart_tnt_santa.xml"
     xml:first_of("Base"):first_of("AnimalAIComponent").attr.attack_ranged_entity_file = "data/entities/projectiles/present.xml"
+    xml:add_child(nxml.parse([[
+      <LuaComponent
+          script_source_file="mods/mo_creeps/files/scripts/animals/esoteric_being_shifted_smoke.lua"
+          execute_every_n_frame="1"
+          remove_after_executed="1"
+          >
+      </LuaComponent>
+      ]]))
     ModTextFileSetContent("data/entities/animals/hisii_minecart_tnt.xml", tostring(xml))
 
     if ModIsEnabled("worse_enemies") then

@@ -15,6 +15,7 @@ local pool = {
     "fairy_big",
     "fairy_big_discord",
     "fairy_esoteric",
+    "gazer_cold_mocreep",
     "gazer_greater",
     "secret/gazer_greater_cold",
     "gazer_greater_sky",

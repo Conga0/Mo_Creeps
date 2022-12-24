@@ -8,7 +8,7 @@ function collision_trigger()
   
     if not did_hit then
         EntityLoad("mods/mo_creeps/files/entities/items/books/book_fire_lukki.xml", pos_x, pos_y)
-        EntityLoad("data/entities/items/pickup/brimstone.xml", pos_x + 15, pos_y)
+        --EntityLoad("data/entities/items/pickup/brimstone.xml", pos_x + 15, pos_y)
     end
     EntityKill(entity_id)
 end

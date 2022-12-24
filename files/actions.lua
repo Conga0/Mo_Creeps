@@ -827,6 +827,7 @@ table.insert(actions,
 })
 
 --Wait.. is burning trail literally just fire charge but not called fire charge..? Keep your naming consistency together Noita please
+--I do want a spell which lets me do fire damage though.. so...
 table.insert(actions,
 {
     id          = "MOCREEPS_FIRE_CHARGE",
@@ -844,7 +845,7 @@ table.insert(actions,
     custom_xml_file = "data/entities/misc/custom_cards/torch.xml",
     action 		= function()
         c.game_effect_entities = c.game_effect_entities .. "data/entities/misc/effect_apply_on_fire.xml,"
-        c.damage_fire_add = c.damage_fire_add + 0.1
+        c.damage_fire_add = c.damage_fire_add + 0.12
         c.extra_entities = c.extra_entities .. "data/entities/misc/burn.xml,"
         draw_actions( 1, true )
     end,

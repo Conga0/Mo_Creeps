@@ -6,7 +6,7 @@
   default_animation="stand" >
 
   <RectAnimation 
-    frame_count="5" 
+    frame_count="4" 
     frame_height="34" 
     frame_wait="0.16" 
     frame_width="32" 
@@ -18,7 +18,7 @@
   </RectAnimation>
 
   <RectAnimation 
-    frame_count="5" 
+    frame_count="4" 
     frame_height="34" 
     frame_wait="0.16" 
     frame_width="32" 
@@ -30,7 +30,7 @@
   </RectAnimation>
 
   <RectAnimation 
-    frame_count="5" 
+    frame_count="4" 
     frame_height="34" 
     frame_wait="0.16" 
     frame_width="32" 

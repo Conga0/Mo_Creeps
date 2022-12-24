@@ -91,6 +91,25 @@
 		}
     })
 
+    table.insert(g_scavenger_party,
+    {
+        prob           = 0.007,
+        min_count    = 1,
+        max_count    = 1,
+        entities     =  {
+			{
+				min_count	= 5,
+				max_count 	= 7,
+				entity = "data/entities/animals/gazer_cold_mocreep.xml",
+			},
+			{
+				min_count	= 1,
+				max_count 	= 1,
+				entity = "data/entities/animals/secret/gazer_cold_mocreep.xml",
+			},
+		}
+    })
+
 
 
     
@@ -112,6 +131,15 @@ table.insert(g_small_enemies,
     min_count    = 1,
     max_count    = 1,    
     entity     = "data/entities/animals/coldgazer_greater.xml",
+    ngpluslevel = 1
+})
+
+table.insert(g_small_enemies,
+{
+    prob           = 0.1,
+    min_count    = 1,
+    max_count    = 1,    
+    entity     = "data/entities/animals/the_end/gazer_cold_mocreep.xml",
     ngpluslevel = 1
 })
 
