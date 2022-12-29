@@ -1,4 +1,4 @@
-<Entity name="$animal_skullfly" >
+<Entity name="$animal_skullfly" tags="polymorphable_NOT,touchmagic_immunity,necrobot_NOT,glue_NOT">
   
 	<Base file="data/entities/base_enemy_flying.xml" >
 		<ItemChestComponent level="5" enemy_drop="1" > </ItemChestComponent>

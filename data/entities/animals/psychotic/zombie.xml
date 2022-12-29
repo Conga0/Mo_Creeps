@@ -1,4 +1,4 @@
-<Entity tags="zombie" name="$animal_zombie">
+<Entity name="$animal_zombie" tags="polymorphable_NOT,touchmagic_immunity,necrobot_NOT,glue_NOT,zombie">
   
 	<Base file="data/entities/base_enemy_basic.xml" >
 		<ItemChestComponent level="1" > </ItemChestComponent>

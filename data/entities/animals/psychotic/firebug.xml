@@ -1,4 +1,4 @@
-<Entity name="$animal_firebug">
+<Entity name="$animal_firebug" tags="polymorphable_NOT,touchmagic_immunity,necrobot_NOT,glue_NOT">
   
 	<Base file="data/entities/base_enemy_flying.xml" >
 		<ItemChestComponent level="1" > </ItemChestComponent>

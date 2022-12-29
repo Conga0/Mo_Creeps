@@ -502,8 +502,9 @@ local ModEnabledCTEP = ModIsEnabled("Conga_Twitch_mod")
 		weight = 1.0,
 		kind = STREAMING_EVENT_AWFUL,
 		action = function(event)
+			local players = get_players()
 			dofile("mods/mo_creeps/files/scripts/magic/creature_shift_file.lua")
-			for i,entity_id in pairs( get_players() ) do
+			for i,entity_id in pairs( players ) do
 				local x, y = EntityGetTransform( entity_id )
 				creature_shift( entity_id, x, y, true )
 			end

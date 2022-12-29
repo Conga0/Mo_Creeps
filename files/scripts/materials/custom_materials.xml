@@ -267,7 +267,7 @@
 	on_fire="0"
 	requires_oxygen="0"
 	liquid_stains="1"
-	liquid_sprite_stain_shaken_drop_chance="2.5"
+	liquid_sprite_stain_shaken_drop_chance="5.0"
 	audio_materialaudio_type="MAGICAL" 
 	show_in_creative_mode="1"
 	>
@@ -289,8 +289,8 @@
 			<StatusEffect type="PROTECTION_ALL" />
 		</Stains>
 		<Ingestion>
-			<StatusEffect type="HP_REGENERATION" amount="0.04" />
-			<StatusEffect type="PROTECTION_ALL" amount="0.04" />
+			<StatusEffect type="HP_REGENERATION" amount="0.05" />
+			<StatusEffect type="PROTECTION_ALL" amount="0.05" />
 		</Ingestion>
 	</StatusEffects>
   </CellData>

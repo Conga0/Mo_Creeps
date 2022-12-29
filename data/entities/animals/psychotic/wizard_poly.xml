@@ -1,4 +1,4 @@
-<Entity name="$animal_wizard_poly" tags="polymorphable_NOT" >
+<Entity name="$animal_wizard_poly" tags="polymorphable_NOT,touchmagic_immunity,necrobot_NOT,glue_NOT" >
   
 	<Base file="data/entities/base_enemy_basic.xml" >
 		<ItemChestComponent level="2" > </ItemChestComponent>
