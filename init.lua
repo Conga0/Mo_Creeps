@@ -460,45 +460,61 @@ function OnMagicNumbersAndWorldSeedInitialized()
 end
 
 
-
-
-
-
-
---Global Spawns
---DO NOT INCLUDE ANYTHING TOWER RELATED HERE, they're... "special" and need to be done in their own unique way
-ModLuaFileAppend( "data/scripts/biomes/wizardcave.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" ) --Wizard's Den, aside from the darkness it's pretty habitable. Polymorph liquid is scarier, I can't shield that.
-ModLuaFileAppend( "data/scripts/biomes/coalmine.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" ) --Coal Mine, first area, goodluck on your run
-ModLuaFileAppend( "data/scripts/biomes/the_end.lua", "mods/mo_creeps/files/scripts/biomes/global_populator_no_magic.lua" ) --Heaven, or Hell, your choice. Either are The Work.
-ModLuaFileAppend( "data/scripts/biomes/desert.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" ) --Desert above ground, careful not to die to any Stendari
-
-ModLuaFileAppend( "data/scripts/biomes/crypt.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" ) --Temple of the Arts.. who died here?
-ModLuaFileAppend( "data/scripts/biomes/pyramid.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" ) --Presumably everything below the entrance to the pyramid
-ModLuaFileAppend( "data/scripts/biomes/fungicave.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" ) --BUNGUS!! cave, west side of area 2 for example
-ModLuaFileAppend( "data/scripts/biomes/coalmine_alt.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" ) --Coalmine but to the west side near damp cave
-ModLuaFileAppend( "data/scripts/biomes/pyramid_hallway.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" ) --Pyramid entrance, presumably
-
-
-ModLuaFileAppend( "data/scripts/biomes/excavationsite.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" ) --Coal Pits, area 2
-ModLuaFileAppend( "data/scripts/biomes/fungiforest.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" ) --Overgrowth
-ModLuaFileAppend( "data/scripts/biomes/snowcave.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" ) --Snowy Depths
-ModLuaFileAppend( "data/scripts/biomes/wandcave.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" ) --Magical temple.. huh
-ModLuaFileAppend( "data/scripts/biomes/sandcave.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" ) --Desert sand cave, I don't think it includes desert chasm
-ModLuaFileAppend( "data/scripts/biomes/vault.lua", "mods/mo_creeps/files/scripts/biomes/global_populator_no_magic.lua" ) --The Vault
-
---For Clarity, anything below this line has not yet been used to spawn in an enemy by normal methods, but is still wanted to be included in Global Spawning.
-
-ModLuaFileAppend( "data/scripts/biomes/clouds.lua", "mods/mo_creeps/files/scripts/biomes/global_populator_smallonly.lua" ) --Cloudscapes
-ModLuaFileAppend( "data/scripts/biomes/hills.lua", "mods/mo_creeps/files/scripts/biomes/global_populator_smallonly.lua" ) --Hills, aka forest.
-ModLuaFileAppend( "data/scripts/biomes/robot_egg.lua", "mods/mo_creeps/files/scripts/biomes/global_populator_no_magic.lua" ) --I'm sure you can guess
-ModLuaFileAppend( "data/scripts/biomes/winter.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" ) --Winter appears to be the snow chasm... terrifying. Also line 69!
-ModLuaFileAppend( "data/scripts/biomes/rainforest.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" ) --Jungle
-ModLuaFileAppend( "data/scripts/biomes/rainforest_dark.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" ) --Lukki Lair.. creepy
-ModLuaFileAppend( "data/scripts/biomes/vault_frozen.lua", "mods/mo_creeps/files/scripts/biomes/global_populator_no_magic.lua" ) --Like the vault, but way colder, worse, more hisii and with a really rude welcoming
-ModLuaFileAppend( "data/scripts/biomes/snowcastle.lua", "mods/mo_creeps/files/scripts/biomes/global_populator_no_magic.lua" ) --Hisii Base... Interesting name.. I won't judge.. too much, I've used some really weird inengine names myself in the past
-ModLuaFileAppend( "data/scripts/biomes/robobase.lua", "mods/mo_creeps/files/scripts/biomes/global_populator_no_magic.lua" ) --Power Plant
-ModLuaFileAppend( "data/scripts/biomes/liquidcave.lua", "mods/mo_creeps/files/scripts/biomes/global_populator.lua" ) --Abandoned Alchemy Lab
-
+do  -- Global Spawns
+  --DO NOT INCLUDE ANYTHING TOWER RELATED HERE, they're... "special" and need to be done in their own unique way
+  for _, append in ipairs({
+    { -- General
+      script = "global_populator",
+      biomes = {
+        "wizardcave",       --Wizard's Den, aside from the darkness it's pretty habitable. Polymorph liquid is scarier, I can't shield that.
+        "coalmine",         --Coal Mine, first area, goodluck on your run
+        "desert",           --Desert above ground, careful not to die to any Stendari
+        "crypt",            --Temple of the Arts.. who died here?
+        "pyramid",          --Presumably everything below the entrance to the pyramid
+        "fungicave",        --BUNGUS!! cave, west side of area 2 for example
+        "coalmine_alt",     --Coalmine but to the west side near damp cave
+        "pyramid_hallway",  --Pyramid entrance, presumably
+        "excavationsite",   --Coal Pits, area 2
+        "fungiforest",      --Overgrowth
+        "snowcave",         --Snowy Depths
+        "wandcave",         --Magical temple.. huh
+        "sandcave",         --Desert sand cave, I don't think it includes desert chasm
+        "winter",           --Winter appears to be the snow chasm... terrifying. Also line 69!
+        "rainforest",       --Jungle
+        "rainforest_dark",  --Lukki Lair.. creepy
+        "liquidcave",       --Abandoned Alchemy Lab
+      }
+    },
+    { -- No Magic
+      script = "global_populator_no_magic",
+      biomes = {
+        "the_end",          --Heaven, or Hell, your choice. Either are The Work.
+        "vault",            --The Vault
+        "robot_egg",        --I'm sure you can guess
+        "vault_frozen",     --Like the vault, but way colder, worse, more hisii and with a really rude welcoming
+        "snowcastle",       --Hisii Base... Interesting name.. I won't judge.. too much, I've used some really weird inengine names myself in the past
+        "robobase",         --Power Plant
+      }
+    },
+    { -- Small Only
+      script = "global_populator_smallonly",
+      biomes = {
+        "clouds",           --Cloudscapes
+        "hills",            --Hills, aka forest.
+      }
+    },
+  }) do
+    -- Generate append script file path
+    local appendpath = table.concat({"mods/mo_creeps/files/scripts/biomes/", append.script, ".lua"})
+    -- Iterate over all biomes for the path
+    for _, biome in ipairs(append.biomes) do
+      -- Generate biome file path
+      local biomepath = table.concat({"data/scripts/biomes/", biome, ".lua"})
+      -- Add the stuff
+      ModLuaFileAppend(biomepath, appendpath)
+    end
+  end
+end
 
 
 --- Boss Spawns
