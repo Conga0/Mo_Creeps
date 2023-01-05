@@ -31,46 +31,23 @@ local capeSetting = ModSettingGet( "mo_creeps.secret_golden_cape" )
 -- They'll still get the spell, it just won't be added to their permanent record
 -- Rat bite isn't "verified" because it's a funny spell
 
-if HasFlagPersistent( "mocreeps_card_unlocked_divinebeing" ) then
-  AddFlagPersistent( "mocreeps_card_unlocked_divinebeing_spell" )
-else
-  RemoveFlagPersistent( "mocreeps_card_unlocked_divinebeing_spell" )
+do  -- Protect spell progress in case of accidental unlocks
+  for _, entry in ipairs({
+    "divinebeing",
+    "boss_toxic_worm",
+    "musical_boss",
+    "blob_boss",
+    "fire_lukki",
+    "cat_secret",
+  }) do
+    local progressflag = "mocreeps_card_unlocked_" .. entry
+    if HasFlagPersistent( progressflag ) then
+      AddFlagPersistent( progressflag .. "_spell" )
+    else
+      RemoveFlagPersistent( progressflag .. "_spell" )
+    end
+  end
 end
-
-if HasFlagPersistent( "mocreeps_card_unlocked_boss_toxic_worm" ) then
-  AddFlagPersistent( "mocreeps_card_unlocked_boss_toxic_worm_spell" )
-else
-  RemoveFlagPersistent( "mocreeps_card_unlocked_boss_toxic_worm_spell" )
-end
-
-if HasFlagPersistent( "mocreeps_card_unlocked_musical_boss" ) then
-  AddFlagPersistent( "mocreeps_card_unlocked_musical_boss_spell" )
-else
-  RemoveFlagPersistent( "mocreeps_card_unlocked_musical_boss_spell" )
-end
-
-if HasFlagPersistent( "mocreeps_card_unlocked_blob_boss" ) then
-  AddFlagPersistent( "mocreeps_card_unlocked_blob_boss_spell" )
-else
-  RemoveFlagPersistent( "mocreeps_card_unlocked_blob_boss_spell" )
-end
-
-if HasFlagPersistent( "mocreeps_card_unlocked_fire_lukki" ) then
-  AddFlagPersistent( "mocreeps_card_unlocked_fire_lukki_spell" )
-else
-  RemoveFlagPersistent( "mocreeps_card_unlocked_fire_lukki_spell" )
-end
-
-if HasFlagPersistent( "mocreeps_card_unlocked_cat_secret" ) then
-  AddFlagPersistent( "mocreeps_card_unlocked_cat_secret_spell" )
-else
-  RemoveFlagPersistent( "mocreeps_card_unlocked_cat_secret_spell" )
-end
-
-
-
-
-
 
 -- If Conjurer is enabled, disable this for a fix.
 if modCompatibilityConjurer == true then
