@@ -1220,20 +1220,6 @@ end
 
 
 
---Adds Biome tracker script to the player character, it will update their current biome difficulty and save the highest one they've ever achieved, maxing out at 7 in Heaven/Hell
-
-local content = ModTextFileGetContent("data/entities/player_base.xml")
-local xml = nxml.parse(content)
-xml:add_child(nxml.parse([[
-  <LuaComponent
-    script_source_file="mods/mo_creeps/files/scripts/magic/biome_difficulty_tracker.lua"
-    execute_every_n_frame="600"
-    execute_times="-1"
-    remove_after_executed="0"
-    >
-  </LuaComponent>
-]]))
-ModTextFileSetContent("data/entities/player_base.xml", tostring(xml))
 
 
 
@@ -1371,18 +1357,18 @@ if seasonalSetting == true then
 
   -- April Fools Event
   if (( month == 4 ) and (( day >= 1 ) and ( day <= 3 ))) or seasonalForced_AprilFools then
-
-    --Replace all hisii hobos with clowns.
-    local content = ModTextFileGetContent("data/entities/animals/seasonal/hisii_hobo.xml")
-    ModTextFileSetContent("data/entities/animals/hisii_hobo.xml", content)
-
-    --Replace small fairies with lethal versions.
-    local content = ModTextFileGetContent("data/entities/animals/seasonal/fairy_cheap.xml")
-    ModTextFileSetContent("data/entities/animals/fairy_cheap.xml", content)
-
-    --Replace big fairies with non-lethal versions.
-    local content = ModTextFileGetContent("data/entities/animals/seasonal/fairy_big.xml")
-    ModTextFileSetContent("data/entities/animals/fairy_big.xml", content)
+    do  --Replace all hisii hobos with clowns.
+        local content = ModTextFileGetContent("data/entities/animals/seasonal/hisii_hobo.xml")
+        ModTextFileSetContent("data/entities/animals/hisii_hobo.xml", content)
+    end
+    do  --Replace small fairies with lethal versions.
+        local content = ModTextFileGetContent("data/entities/animals/seasonal/fairy_cheap.xml")
+        ModTextFileSetContent("data/entities/animals/fairy_cheap.xml", content)
+    end
+    do  --Replace big fairies with non-lethal versions.
+      local content = ModTextFileGetContent("data/entities/animals/seasonal/fairy_big.xml")
+      ModTextFileSetContent("data/entities/animals/fairy_big.xml", content)
+    end
 
     --Randomly cause a fungal shift/creature shift at any time, at random.
     function OnPlayerSpawned( player_entity )
@@ -1483,24 +1469,36 @@ ModLuaFileAppend( "data/scripts/biomes/the_end.lua", "mods/mo_creeps/files/scrip
 
 --Secret
 
---Adds Golden Cape if check is successful
 
-if HasFlagPersistent( "mocreeps_card_unlocked_secret_knowledge_of_kings" ) and capeSetting then
 
-  local content = ModTextFileGetContent("data/entities/player_base.xml")
-  local xml = nxml.parse(content)
+do  -- Player Editor
+  local path = "data/entities/player_base.xml"
+  local xml = nxml.parse(ModTextFileGetContent(path))
+  --Adds Biome tracker script to the player character, it will update their current biome difficulty and save the highest one they've ever achieved, maxing out at 7 in Heaven/Hell
   xml:add_child(nxml.parse([[
     <LuaComponent
-      script_source_file="data/mocreeps_gfx/player_cape_colour_append.lua"
-      execute_every_n_frame="1"
-      execute_times="1"
-      remove_after_executed="1"
+      script_source_file="mods/mo_creeps/files/scripts/magic/biome_difficulty_tracker.lua"
+      execute_every_n_frame="600"
+      execute_times="-1"
+      remove_after_executed="0"
       >
     </LuaComponent>
   ]]))
+  if HasFlagPersistent( "mocreeps_card_unlocked_secret_knowledge_of_kings" ) and capeSetting then
+    --Adds Golden Cape if check is successful
+    xml:add_child(nxml.parse([[
+      <LuaComponent
+        script_source_file="data/mocreeps_gfx/player_cape_colour_append.lua"
+        execute_every_n_frame="1"
+        execute_times="1"
+        remove_after_executed="1"
+        >
+      </LuaComponent>
+    ]]))
+  end
   ModTextFileSetContent("data/entities/player_base.xml", tostring(xml))
-
 end
+
 
 
 
