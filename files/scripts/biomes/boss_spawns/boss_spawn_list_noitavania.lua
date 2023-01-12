@@ -266,3 +266,13 @@ xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
     <PixelScene pos_x="35529" pos_y="6603" just_load_an_entity="data/entities/animals/giant_centipede.xml" />
 ]]))
 ModTextFileSetContent("mods/noitavania/data/biome/_pixel_scenes.xml", tostring(xml))
+
+ 
+--Spawns A hint for luring a Master of Trolling to it's red outline
+local nxml = dofile_once("mods/mo_creeps/lib/nxml.lua")
+local content = ModTextFileGetContent("data/biome/_pixel_scenes.xml")
+local xml = nxml.parse(content)
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="-1329" pos_y="-188" just_load_an_entity="mods/mo_creeps/files/entities/props/hiddenmessage_masteroftrolling.xml" />
+]]))
+ModTextFileSetContent("data/biome/_pixel_scenes.xml", tostring(xml))

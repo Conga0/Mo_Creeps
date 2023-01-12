@@ -213,10 +213,10 @@
 	<!-- Status Clearing AI -->
 	
 	<!-- Extinguish nearby creatures only if they're on fire -->
-	<!-- Originally every 180 frames but reduce to 130 since they get a chance to shine less often than I'd like...-->
+	<!-- Originally every 180 frames but reduce to 90 since they get a chance to shine less often than I'd like...-->
 	<LuaComponent
 		script_source_file="mods/mo_creeps/files/scripts/animals/ailment_extinguish_ai.lua"
-		execute_every_n_frame="130"
+		execute_every_n_frame="90"
 		execute_times="-1"
 		>
 	</LuaComponent>

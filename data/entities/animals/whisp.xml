@@ -24,6 +24,9 @@
 			materials_how_much_damage="0.004,0.001,0.0008,0.0007,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005,0.005"
 			wet_status_effect_damage="0.3"
 			>
+			<damage_multipliers
+				fire="0.0" >
+			</damage_multipliers>
 		</DamageModelComponent>
 
 		<PathFindingComponent

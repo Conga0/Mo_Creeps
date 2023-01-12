@@ -78,6 +78,45 @@ if currentLang == "русский" then
 
 end
 
+
+--Japanese Translations
+if currentLang == "日本語" then
+
+  congacat_cat_immortal_name = "ネコの当たり判定無効化"
+  congacat_cat_immortal_desc = "オンにすると、ネコが無敵になります。"
+  fairy_immortality_name = "妖精の当たり判定無効化"
+  fairy_immortality_desc = "オンにすると、妖精が無敵になります。"
+  motd_setting_name = "今日のひとこと"
+  motd_setting_desc = "オンにすると、ゲーム開始時にヒントが表示されるようになります。"
+  seasonal_events_name = "季節イベント"
+  seasonal_events_desc = "オンにすると、季節ごとのイベントが発生するようになります。"
+  boss_health_multiplayer_name = "ボスHP強化"
+  boss_health_multiplayer_formatting = " $0% HP"
+  boss_health_multiplayer_desc = "ボスのHPに倍率補正をかける、上級者向けの設定です。\nコルミシルマには効果がありません。\nまた、ピットボスなどの中ボスにも一定程度効果が適用されます。\nプレイ中に設定を変更することも可能ですが、変更時はゲームを再起動してください。\nなお、ワークショップの対応MOD欄に記載されていないMODに登場するボスには効果が適用されません。\n適用させるためには専用のスクリプトが必要です。\n詳しくはDiscordでConga Lyne#2452にDMしてください。"
+  particle_reduction_name = "パーティクル削減"
+  particle_reduction_desc = "一部スペルで発生するパーティクルを削減します。\nラグが発生する場合はオンにしてください。"
+  spoopy_graphics_name = "テクスチャ修正"
+  spoopy_graphics_desc = "一部の敵のテクスチャを修正する設定です。"
+  mod_compat_mode_conjurer_name = "Conjurer連携"
+  mod_compat_mode_conjurer_desc = "Conjurerと同時導入時に発生する不具合が報告されています。\n不具合が発生する場合は、この設定をオンにした上でConjurerを再読み込みしてください。\n \nこの設定は初期状態でオンになっていますが、\nピクセルシーン、ボスなどの要素をConjurer環境でも楽しみたい場合はオフにしてください。\n \nこの設定をオンにしても不具合が直らない場合は、別の原因が考えられます。\nその場合は、MOD一覧から原因となっているMODを無効にしてください。\n \nそれでも回復しない場合は、こちらまで連絡してください。→https://discord.gg/gtyGnv8Pxk"
+  mod_compat_mode_spell_evolution_name = "Spell Evolution連携"
+  mod_compat_mode_spell_evolution_desc = "このMODはSpell Evolutionのスペル強化機能に対応しています。\n \nただし、Spell Evolutionには翻訳キーを用いる魔法を強化した際に\n呪文の名前、説明文がおかしくなる不具合が存在します。\n \nこれに関しては作者の側では対応できませんでした。\nかといって、せっかく作って頂いた翻訳キーを消してしまう訳にもいきません。\n \nこの設定は、翻訳キーを用いないようにすることで、\nSpell Evolution側の不具合を回避するためのものです。"
+  
+  seasonal_forced_name = "季節イベント選択"
+  seasonal_forced_desc = "選択した季節イベントが常時発生するようになります。"
+  seasonal_forced_april_fools_name = "エイプリルフール"
+  seasonal_forced_april_fools_desc = "オンにすると、エイプリルフールイベントが発生します。"
+  seasonal_forced_birthday_name = "リリース記念日"
+  seasonal_forced_birthday_desc = "オンにすると、リリース記念日イベントが発生します。"
+  seasonal_forced_halloween_name = "ハロウィン"
+  seasonal_forced_halloween_desc = "オンにすると、ハロウィンイベントが発生します。"
+  seasonal_forced_smissmass_name = "クリスマス"
+  seasonal_forced_smissmass_desc = "オンにすると、クリスマスイベントが発生します。"
+  secret_golden_cape_name = "ゴールデンNoita"
+  secret_golden_cape_desc = "Noitaくんを金色にする設定です。\nスキンMODを導入している場合は使用しないことを推奨します。"
+
+end
+
 local mod_id = "mo_creeps"
 mod_settings_version = 1
 mod_settings = 

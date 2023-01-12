@@ -54,7 +54,7 @@
 		</PathFindingGridMarkerComponent>
 		
 		<GenomeDataComponent 
-			herd_id="healer"
+			herd_id="curse"
 			food_chain_rank="1"
 			is_predator="1" >
 		</GenomeDataComponent>

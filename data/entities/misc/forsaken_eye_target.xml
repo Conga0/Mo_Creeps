@@ -36,4 +36,24 @@
 		lifetime="1200"
 		>
 	</LifetimeComponent>
+	
+	<VariableStorageComponent
+		name="herd_tracker"
+		value_int="0"
+		>
+	</VariableStorageComponent>
+	
+	<LuaComponent
+		script_source_file="mods/mo_creeps/files/scripts/projectiles/targetter_herd_changer.lua"
+		execute_every_n_frame="2"
+		execute_times="1"
+		>
+	</LuaComponent>
+	
+	<LuaComponent
+		script_source_file="mods/mo_creeps/files/scripts/projectiles/targetter_herd_changer_revert.lua"
+		execute_every_n_frame="1190"
+		execute_times="1"
+		>
+	</LuaComponent>
 </Entity>

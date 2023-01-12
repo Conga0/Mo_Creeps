@@ -308,6 +308,7 @@ table.insert(actions,   --This spell is kinda weird
     price = 300,
     mana = 50, 
     max_uses    = 3, 
+    custom_xml_file = "mods/mo_creeps/files/entities/misc/custom_cards/bomb_giga.xml",
     action 		= function()
         add_projectile("mods/mo_creeps/files/entities/projectiles/deck/bomb_giga.xml")
         c.fire_rate_wait = c.fire_rate_wait + 140
@@ -947,6 +948,7 @@ table.insert(actions,
     price = 2000,
     mana = 600,
     max_uses    = 1,
+    hide_from_conjurer  = true,
     action 		= function()
         local players = EntityGetWithTag( "player_unit" )
         for i,v in ipairs( players ) do

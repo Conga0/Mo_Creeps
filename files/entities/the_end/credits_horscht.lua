@@ -17,6 +17,9 @@ local lines = {
   "Squirrelly",
   "$credits_mocreeps_line_14",
   " ",
+  "Slack",
+  "$credits_mocreeps_line_discordline",
+  " ",
   "Blueberry",
   "$credits_mocreeps_line_17",
   " ",
@@ -36,7 +39,7 @@ local lines = {
   "DunkOrSlam's Community",
   "DunkOrSlam",
   "FuryForged",
-  "Machebelli",
+  "Ismoh",
   "Graham",
   "DayleonFefe",
   "Pneumoania",
@@ -54,6 +57,8 @@ local lines = {
   " ",
   " ",
   " ",
+  " ",
+  " ",
 }
 
 local entity_id = GetUpdatedEntityID()
@@ -61,7 +66,7 @@ local player = EntityGetWithTag("player_unit")[1]
 
 gui = gui or GuiCreate()
 GuiStartFrame(gui)
-roll_credits_progress = (roll_credits_progress or -1) - 0.295 * (accelerate and 15 or 1)
+roll_credits_progress = (roll_credits_progress or -1) - 0.265 * (accelerate and 15 or 1)
 
 if not do_once and roll_credits_progress <= 0 then
   do_once = true
