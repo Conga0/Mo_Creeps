@@ -1,4 +1,4 @@
-<Entity tags="enemy,human,hittable,homing_target,polymorphable_NOT,glue_NOT,destruction_target" name="Nälkäinen aave">
+<Entity tags="mortal,enemy,human,hittable,homing_target,polymorphable_NOT,glue_NOT,destruction_target" name="Nälkäinen aave">
 	
 
 
@@ -25,11 +25,6 @@
 		emissive="1"
 		>
 	</SpriteComponent>
-
-	<LimbBossComponent
-		state="1"
-		>
-	</LimbBossComponent>
 
 	<PathFindingComponent 
 		can_dive="1" 

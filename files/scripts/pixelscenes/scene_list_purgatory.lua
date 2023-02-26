@@ -176,6 +176,26 @@ xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
 xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
     <PixelScene pos_x="12044" pos_y="3116" just_load_an_entity="mods/mo_creeps/files/entities/items/pickups/essence_fungus.xml" />
 ]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+  <PixelScene DEBUG_RELOAD_ME="0" clean_area_before="0" pos_x="47628" pos_y="2860" skip_biome_checks="1" skip_edge_textures="0"
+    material_filename="mods/mo_creeps/files/pixel_scenes/essence_diamond/essenceroom_fungus.png"
+    background_filename="data/biome_impl/essenceroom_background_with_diamond.png"
+    colors_filename="data/biome_impl/essenceroom_visual.png"
+  ></PixelScene>
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="47884" pos_y="3116" just_load_an_entity="mods/mo_creeps/files/entities/items/pickups/essence_fungus.xml" />
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+  <PixelScene DEBUG_RELOAD_ME="0" clean_area_before="0" pos_x="-24052" pos_y="2860" skip_biome_checks="1" skip_edge_textures="0"
+    material_filename="mods/mo_creeps/files/pixel_scenes/essence_diamond/essenceroom_fungus.png"
+    background_filename="data/biome_impl/essenceroom_background_with_diamond.png"
+    colors_filename="data/biome_impl/essenceroom_visual.png"
+  ></PixelScene>
+]]))
+xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
+    <PixelScene pos_x="-23796" pos_y="3116" just_load_an_entity="mods/mo_creeps/files/entities/items/pickups/essence_fungus.xml" />
+]]))
 ModTextFileSetContent("mods/purgatory/files/biome/_pixel_scenes.xml", tostring(xml))
 
 

@@ -26,6 +26,14 @@ table.insert(perk_list,
             end
         end
     end,
+    func_remove = function(entity_id)
+        local mocreep_targets = EntityGetAllChildren(entity_id)
+        for i,v in ipairs( mocreep_targets ) do
+            if ( v ~= entity_id ) and ( EntityGetName( v ) == "mocreep_perk_ghostly_vision" ) then
+                EntityKill ( v )
+            end
+        end
+    end,
 })
 
 
@@ -56,6 +64,15 @@ if mocreep_enrage_unlocked then
                 end
             end
         end,
+        func_remove = function(entity_id)
+            local mocreep_targets = EntityGetAllChildren(entity_id)
+            for i,v in ipairs( mocreep_targets ) do
+                if ( v ~= entity_id ) and ( EntityGetName( v ) == "mocreep_perk_rage_aura" ) then
+                    EntityKill ( v )
+                    add_halo_level(entity_id, 1)
+                end
+            end
+        end,
     })
 else
     table.insert(perk_list,
@@ -75,6 +92,14 @@ else
             EntityAddChild( entity_who_picked, child_id )
         end,
         _remove = function(entity_id)
+            local mocreep_targets = EntityGetAllChildren(entity_id)
+            for i,v in ipairs( mocreep_targets ) do
+                if ( v ~= entity_id ) and ( EntityGetName( v ) == "mocreep_perk_rage_aura" ) then
+                    EntityKill ( v )
+                end
+            end
+        end,
+        func_remove = function(entity_id)
             local mocreep_targets = EntityGetAllChildren(entity_id)
             for i,v in ipairs( mocreep_targets ) do
                 if ( v ~= entity_id ) and ( EntityGetName( v ) == "mocreep_perk_rage_aura" ) then
@@ -144,6 +169,18 @@ if kolmi_dead then
                 end
             end        
         end,
+        func_remove = function(entity_id)
+            local comp_lua = EntityGetComponentIncludingDisabled( player, "LuaComponent" )
+            if ( comp_lua ~= nil ) then
+                for i,v in ipairs( comp_lua ) do
+                    local name = ComponentGetValue2( v, "script_damage_received" )
+                    
+                    if ( name == "mods/mo_creeps/files/scripts/perks/wraith_returner_damage.lua" ) or ( name == "mods/mo_creeps/files/scripts/perks/wraith_returner_memory.lua" ) then
+                        EntityRemoveComponent(player, v)
+                    end
+                end
+            end     
+        end,
     })
 else
     table.insert(perk_list,
@@ -203,6 +240,18 @@ else
                     end
                 end
             end        
+        end,
+        func_remove = function(entity_id)
+            local comp_lua = EntityGetComponentIncludingDisabled( player, "LuaComponent" )
+            if ( comp_lua ~= nil ) then
+                for i,v in ipairs( comp_lua ) do
+                    local name = ComponentGetValue2( v, "script_damage_received" )
+                    
+                    if ( name == "mods/mo_creeps/files/scripts/perks/wraith_returner_damage.lua" ) or ( name == "mods/mo_creeps/files/scripts/perks/wraith_returner_memory.lua" ) then
+                        EntityRemoveComponent(player, v)
+                    end
+                end
+            end       
         end,
     })
 end

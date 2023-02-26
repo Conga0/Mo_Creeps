@@ -228,7 +228,7 @@ table.insert(actions,
     spawn_level                       = "2,3,4,5,6", -- FIREBALL_RAY_LINE
     spawn_probability                 = "0.6,0.4,0.4,0.4,1", -- FIREBALL_RAY_LINE
     price = 100,
-    mana = 90,
+    mana = 250,
     max_uses = 20,
     action 		= function()
         c.extra_entities = c.extra_entities .. "mods/mo_creeps/files/entities/misc/hitfx_nuke_ray_enemy.xml,"
@@ -503,6 +503,7 @@ table.insert(actions,
     end,
 })
 
+--[[
 table.insert(actions,
 {
     id          = "MOCREEPS_SUMMON_WORM_BIG",
@@ -525,6 +526,7 @@ table.insert(actions,
         current_reload_time = current_reload_time + 60
     end,
 })
+]]--
 
 table.insert(actions,
 {
@@ -544,6 +546,74 @@ table.insert(actions,
     action 		= function()
         add_projectile("mods/mo_creeps/files/entities/projectiles/deck/rat_bite_crit.xml")
         c.damage_critical_chance = c.damage_critical_chance + 50
+    end,
+})
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_MASS_BURROW",
+    name 		= "$spell_mocreeps_mass_burrow_name",
+    description = "$spell_mocreeps_mass_burrow_desc",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/mass_burrow.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/chainsaw_unidentified.png",
+    related_projectiles	= {"data/entities/projectiles/remove_ground.xml"},
+    spawn_requires_flag = "mocreeps_card_unlocked_boss_toxic_worm_spell",
+    never_unlimited		= true,
+    type 		= ACTION_TYPE_STATIC_PROJECTILE,
+    spawn_level                       = "10", -- Conversion spell
+    spawn_probability                 = "0.01", -- Conversion spell
+    price = 300,
+    max_uses    = 2, 
+    mana = 225, 
+    action 		= function()
+        add_projectile("data/entities/projectiles/remove_ground.xml")
+        c.fire_rate_wait = c.fire_rate_wait + 100
+        current_reload_time = current_reload_time + 60
+    end,
+})
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_MASS_DRY",
+    name 		= "$spell_mocreeps_status_dry_name",
+    description = "$spell_mocreeps_status_dry_desc",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/mass_status_dry.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/chainsaw_unidentified.png",
+    related_projectiles	= {"mods/mo_creeps/files/entities/projectiles/deck/mass_status_dry.xml"},
+    spawn_requires_flag = "mocreeps_card_unlocked_blob_boss_spell",
+    never_unlimited		= true,
+    type 		= ACTION_TYPE_UTILITY,
+    spawn_level                       = "10", -- Conversion spell
+    spawn_probability                 = "0.01", -- Conversion spell
+    price = 180,
+    max_uses    = 20,
+    mana = 100,
+    action 		= function()
+        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/mass_status_dry.xml")
+        c.fire_rate_wait = c.fire_rate_wait + 100
+        current_reload_time = current_reload_time + 1800
+    end,
+})
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_MASS_STATUS_POLYMORPH_INTENSE",
+    name 		= "$spell_mocreeps_status_polymorph_intense_name",
+    description = "$spell_mocreeps_status_polymorph_intense_desc",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/mass_status_intense_polymorph.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/chainsaw_unidentified.png",
+    related_projectiles	= {"mods/mo_creeps/files/entities/projectiles/deck/mass_status_polymorph_intense.xml"},
+    spawn_requires_flag = "mocreeps_card_unlocked_blob_boss_spell",
+    type 		= ACTION_TYPE_UTILITY,
+    spawn_level                       = "10", -- Conversion spell
+    spawn_probability                 = "0.01", -- Conversion spell
+    price = 240,
+    max_uses    = 20,
+    mana = 120,
+    action 		= function()
+        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/mass_status_polymorph_intense.xml")
+        c.fire_rate_wait = c.fire_rate_wait + 100
+        current_reload_time = current_reload_time + 60
     end,
 })
 
@@ -600,7 +670,7 @@ table.insert(actions,
             local rnd_num = Random( 1, 2 )
             if ( hand ~= nil ) and ( rnd_num == 1 ) then
                 for i,data in ipairs( hand ) do
-                    if ( data.id ~= "MOCREEPS_SPLIT_SPELL" and data.type ~= ACTION_TYPE_OTHER ) then
+                    if ( data.type ~= ACTION_TYPE_OTHER and data.type ~= ACTION_TYPE_MODIFIER ) then
                         data.action()
                     end
                 end
@@ -672,7 +742,7 @@ table.insert(actions,
     action 		= function()
         add_projectile("mods/mo_creeps/files/entities/projectiles/deck/mass_status_drunk.xml")
         c.fire_rate_wait = c.fire_rate_wait + 100
-        current_reload_time = current_reload_time + 100
+        current_reload_time = current_reload_time + 60
     end,
 })
 
@@ -694,7 +764,7 @@ table.insert(actions,
     action 		= function()
         add_projectile("mods/mo_creeps/files/entities/projectiles/deck/mass_status_wet.xml")
         c.fire_rate_wait = c.fire_rate_wait + 100
-        current_reload_time = current_reload_time + 100
+        current_reload_time = current_reload_time + 60
     end,
 })
 
@@ -716,7 +786,7 @@ table.insert(actions,
     action 		= function()
         add_projectile("mods/mo_creeps/files/entities/projectiles/deck/mass_status_fire.xml")
         c.fire_rate_wait = c.fire_rate_wait + 100
-        current_reload_time = current_reload_time + 100
+        current_reload_time = current_reload_time + 60
     end,
 })
 
@@ -738,7 +808,7 @@ table.insert(actions,
     action 		= function()
         add_projectile("mods/mo_creeps/files/entities/projectiles/deck/mass_status_urine.xml")
         c.fire_rate_wait = c.fire_rate_wait + 100
-        current_reload_time = current_reload_time + 100
+        current_reload_time = current_reload_time + 60
     end,
 })
 
@@ -760,7 +830,7 @@ table.insert(actions,
     action 		= function()
         add_projectile("mods/mo_creeps/files/entities/projectiles/deck/mass_status_polymorph.xml")
         c.fire_rate_wait = c.fire_rate_wait + 100
-        current_reload_time = current_reload_time + 100
+        current_reload_time = current_reload_time + 60
     end,
 })
 

@@ -217,9 +217,9 @@ xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
 xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
     <PixelScene pos_x="-2256" pos_y="5512" just_load_an_entity="mods/mo_creeps/files/entities/buildings/fire_lukki_book_spawner_stoneonly.xml" />
 ]]))
---This location is inside the Lake bunker
+--This location is inside the blob cave top right hidey hole
 xml:first_of("mBufferedPixelScenes"):add_child(nxml.parse([[
-    <PixelScene pos_x="-12530" pos_y="394" just_load_an_entity="mods/mo_creeps/files/entities/buildings/fire_lukki_book_spawner.xml" />
+    <PixelScene pos_x="3475" pos_y="8940" just_load_an_entity="mods/mo_creeps/files/entities/buildings/fire_lukki_book_spawner.xml" />
 ]]))
 ModTextFileSetContent("mods/purgatory/files/biome/_pixel_scenes.xml", tostring(xml))
 

@@ -185,6 +185,7 @@ mod_settings =
     value_default = true,
     scope = MOD_SETTING_SCOPE_NEW_GAME,
   },
+  --[[
   {
     id = "mod_compat_mode_spell_evolution",
     ui_name = mod_compat_mode_spell_evolution_name,
@@ -192,6 +193,7 @@ mod_settings =
     value_default = false,
     scope = MOD_SETTING_SCOPE_NEW_GAME,
   },
+  ]]--
 
 }
 

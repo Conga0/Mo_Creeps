@@ -17,31 +17,35 @@ for i=1,how_many do
 	local vel_y = math.sin( theta ) * length
 	theta = theta + angle_inc
 
-	shoot_projectile( entity_id, "mods/mo_creeps/files/entities/projectiles/deck/mass_status_wet_effect.xml", pos_x, pos_y, vel_x, vel_y )
+	shoot_projectile( entity_id, "mods/mo_creeps/files/entities/projectiles/deck/mass_status_dry_effect.xml", pos_x, pos_y, vel_x, vel_y )
 end
 
 local targets = EntityGetInRadiusWithTag( pos_x, pos_y, r, "mortal" )
 
-for i,v in ipairs( targets ) do
+for k=1, #targets
+do local v = targets[k];
 	if ( v ~= entity_id ) then
-		local c = EntityGetAllChildren( v )
+		local children = EntityGetAllChildren( v )
 		local valid = true
 		
-		if ( c ~= nil ) then
-			for a,b in ipairs( c ) do
-				local comps = EntityGetComponent( b, "GameEffectComponent", "effect_wet_magic" )
-				
-				if ( comps ~= nil ) then
+		if children ~= nil then
+			for z=1, #children
+			do local p = children[z];
+				if EntityHasTag(p,"effect_wet_magic") then
 					valid = false
-					break
 				end
 			end
-		end
-		
-		if valid and EntityHasTag(v, "hittable") then
-			local eid = EntityLoad( "mods/mo_creeps/files/entities/misc/effect_status_wet.xml", pos_x, pos_y )
-			EntityAddRandomStains( v, CellFactory_GetType("water"), 400 )
-			EntityAddChild( v, eid )
+
+
+			if valid == true then
+				local comp = EntityGetFirstComponentIncludingDisabled(v,"SpriteStainsComponent")
+				if comp ~= nil then
+					EntitySetComponentIsEnabled(v,comp,false)
+
+					local c = EntityLoad("mods/mo_creeps/files/entities/misc/effect_status_dry.xml", pos_x, pos_y)
+					EntityAddChild(v,c)
+				end
+			end
 		end
 	end
 end

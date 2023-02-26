@@ -141,6 +141,11 @@
     >
   </SpriteParticleEmitterComponent>
 
+	<HitEffectComponent 
+        effect_hit="LOAD_UNIQUE_CHILD_ENTITY"
+        value_string="mods/Mo_Creeps/files/entities/misc/effect_protection_electricity_veryshort.xml" >
+	</HitEffectComponent >
+
   <AudioComponent
     file="data/audio/Desktop/projectiles.bank"
     event_root="player_projectiles/bullet_lightning">

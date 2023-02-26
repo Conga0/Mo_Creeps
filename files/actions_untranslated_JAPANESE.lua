@@ -547,6 +547,74 @@ table.insert(actions,
 
 table.insert(actions,
 {
+    id          = "MOCREEPS_MASS_BURROW",
+    name 		= "エクスカベーション・フィールド",
+    description = "広範囲の地形を一気に破壊する",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/mass_burrow.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/chainsaw_unidentified.png",
+    related_projectiles	= {"data/entities/projectiles/remove_ground.xml"},
+    spawn_requires_flag = "mocreeps_card_unlocked_boss_toxic_worm_spell",
+    never_unlimited		= true,
+    type 		= ACTION_TYPE_STATIC_PROJECTILE,
+    spawn_level                       = "10", -- Conversion spell
+    spawn_probability                 = "0.01", -- Conversion spell
+    price = 300,
+    max_uses    = 2, 
+    mana = 225, 
+    action 		= function()
+        add_projectile("data/entities/projectiles/remove_ground.xml")
+        c.fire_rate_wait = c.fire_rate_wait + 100
+        current_reload_time = current_reload_time + 60
+    end,
+})
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_MASS_DRY",
+    name 		= "スタビリゼーション",
+    description = "周囲にいる生物の濡れ状態を固定化する",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/mass_status_dry.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/chainsaw_unidentified.png",
+    related_projectiles	= {"mods/mo_creeps/files/entities/projectiles/deck/mass_status_dry.xml"},
+    spawn_requires_flag = "mocreeps_card_unlocked_blob_boss_spell",
+    never_unlimited		= true,
+    type 		= ACTION_TYPE_UTILITY,
+    spawn_level                       = "10", -- Conversion spell
+    spawn_probability                 = "0.01", -- Conversion spell
+    price = 180,
+    max_uses    = 20,
+    mana = 100,
+    action 		= function()
+        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/mass_status_dry.xml")
+        c.fire_rate_wait = c.fire_rate_wait + 100
+        current_reload_time = current_reload_time + 1800
+    end,
+})
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_MASS_STATUS_POLYMORPH_INTENSE",
+    name 		= "カオス・トランスフォーム・フィールド",
+    description = "周囲にいるすべての生物に、カオス多形液を浴びせかける",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/mass_status_intense_polymorph.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/chainsaw_unidentified.png",
+    related_projectiles	= {"mods/mo_creeps/files/entities/projectiles/deck/mass_status_polymorph_intense.xml"},
+    spawn_requires_flag = "mocreeps_card_unlocked_blob_boss_spell",
+    type 		= ACTION_TYPE_UTILITY,
+    spawn_level                       = "10", -- Conversion spell
+    spawn_probability                 = "0.01", -- Conversion spell
+    price = 240,
+    max_uses    = 20,
+    mana = 120,
+    action 		= function()
+        add_projectile("mods/mo_creeps/files/entities/projectiles/deck/mass_status_polymorph_intense.xml")
+        c.fire_rate_wait = c.fire_rate_wait + 100
+        current_reload_time = current_reload_time + 60
+    end,
+})
+
+table.insert(actions,
+{
     id          = "MOCREEPS_SPELLS_TO_CATS",
     name 		= "呪文からネコへ",
     description = "周囲の放射物をネコにする。かわいい！",

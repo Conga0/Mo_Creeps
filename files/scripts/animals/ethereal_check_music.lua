@@ -10,7 +10,8 @@ local melody = EntityGetInRadiusWithTag( x, y, radius, "musical_stone" )
 local found = false
 
 if ( #melody > 0 ) then
-	for i,v in ipairs( melody ) do
+	for k=1, #melody
+	do local v = melody[k];
 		local t = EntityGetFirstComponent( v, "LightComponent", "musical_stone" )
 		
 		if ( t ~= nil ) then

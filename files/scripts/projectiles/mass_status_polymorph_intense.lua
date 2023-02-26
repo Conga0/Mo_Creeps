@@ -22,8 +22,9 @@ end
 
 local targets = EntityGetInRadiusWithTag( pos_x, pos_y, r, "mortal" )
 
-for i,v in ipairs( targets ) do
+for k=1, #targets
+do local v = targets[k];
 	if ( v ~= entity_id ) then
-		EntityAddRandomStains( v, CellFactory_GetType("magic_liquid_polymorph"), 400 )
+		EntityAddRandomStains( v, CellFactory_GetType("magic_liquid_random_polymorph"), 400 )
 	end
 end
