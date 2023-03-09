@@ -121,7 +121,7 @@ table.insert(g_small_enemies,
 
 table.insert(g_items,
 {
-    prob   		= 0.05,
+    prob   		= 0.02,
     min_count	= 1,
     max_count	= 1,    
     entity 	= "mods/mo_creeps/files/entities/items/wands/custom/wand_of_wonders.xml"
@@ -129,7 +129,7 @@ table.insert(g_items,
 
 table.insert(g_items,
 {
-    prob   		= 0.05,
+    prob   		= 0.02,
     min_count	= 1,
     max_count	= 1,    
     entity 	= "mods/mo_creeps/files/entities/items/wands/custom/wand_of_wonders.xml",

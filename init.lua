@@ -379,7 +379,12 @@ spell_mocreeps_status_dry_name,"Mass Infiltration",Массовое проник
 spell_mocreeps_status_dry_desc,"Freezes the stains on every creature in a large radius with a magical spell.",Замораживает пятна всех существ в большом радиусе с помощью магического заклинания.,,,,,,,,周囲にいる生物の濡れ状態を固定化する,,,,
 spell_mocreeps_dry_spell_name,"Infiltrated",Проникновение,,,,,,,,固定化,,,,
 spell_mocreeps_dry_spell_desc,"Your stains are set in stone, nothing can be removed and nothing can be added.","Ваши пятна застыли на месте, ничего нельзя убрать и ничего нельзя добавить.",,,,,,,,体に付いた液体が固着している。この状態では、新たに液体で濡れることも、液体を剥がすこともできない。,,,,
+spell_mocreeps_alt_fire_cov_name,"Alt Fire Circle of Vigour","Круг жизненной силы (ПКМ)",,,,,,,,,,,,
+spell_mocreeps_alt_fire_cov_desc,"Right click to cast a Circle of Vigour for 80 mana","Щелкните правой кнопкой мыши, чтобы наложить заклинание Круг бодрости за 80 маны",,,,,,,,,,,,
+spell_mocreeps_critical_drunk_name,"Critical on Drunk","Критика по пьяни",,,,,,,,,,,,
+spell_mocreeps_critical_drunk_desc,"Make a projectile always do a critical hit on drunk enemies","Сделайте так, чтобы снаряд всегда наносил критический удар по пьяным врагам",,,,,,,,,,,,
 ]])
+
 
 --Yggdrasil's Knowledge (The knowledge of life)
 
@@ -1550,4 +1555,34 @@ if ModIsEnabled("raksa") == false then
 
     ModLuaFileAppend( "data/scripts/biomes/excavationsite.lua", "mods/mo_creeps/files/scripts/biomes/excavationsite_populator_densesmoke.lua" )
   end
+end
+
+do -- gsub new wizards into Master of Master's spawn table
+  local path = "data/entities/animals/boss_wizard/spawn_wizard.lua"
+  local content = ModTextFileGetContent(path)
+  content = content:gsub([[local opts = { "wizard_tele", "wizard_dark", "wizard_poly", "wizard_homing", "wizard_weaken", "wizard_twitchy", "wizard_neutral", "wizard_hearty", "wizard_returner" }]], [[local opts = { "wizard_ambrosia", "wizard_duck", "wizard_jackofalltrades", "wizard_manaeater", "wizard_transmutation", "wizard_tele", "wizard_dark", "wizard_poly", "wizard_homing", "wizard_weaken", "wizard_twitchy", "wizard_neutral", "wizard_hearty", "wizard_returner" }
+
+  if ModIsEnabled("new_enemies") then
+    opts = { "wizard_random", "wizard_time", "wizard_toxic", "wizard_trip", "wizard_earthquake", "wizard_water", "wizard_ambrosia", "wizard_duck", "wizard_jackofalltrades", "wizard_manaeater", "wizard_transmutation", "wizard_tele", "wizard_dark", "wizard_poly", "wizard_homing", "wizard_weaken", "wizard_twitchy", "wizard_neutral", "wizard_hearty", "wizard_returner" }
+  else
+    opts = { "wizard_ambrosia", "wizard_duck", "wizard_jackofalltrades", "wizard_manaeater", "wizard_transmutation", "wizard_tele", "wizard_dark", "wizard_poly", "wizard_homing", "wizard_weaken", "wizard_twitchy", "wizard_neutral", "wizard_hearty", "wizard_returner" }
+  end]])
+  ModTextFileSetContent(path, content)
+end
+
+
+do -- Kill all projectiles on screen if there's too many wands & the game is at risk of crashing
+  local content = ModTextFileGetContent("data/entities/animals/boss_pit/boss_pit.xml")
+  local xml = nxml.parse(content)
+  xml:add_child(nxml.parse([[
+      <LuaComponent
+      script_damage_received="data/entities/animals/boss_pit/boss_pit_apotheosis_proj_failsafe.lua"
+      script_death="data/entities/animals/boss_pit/boss_pit_apotheosis_proj_failsafe.lua"
+      execute_times="-1"
+      execute_every_n_frame="-1"
+      remove_after_executed="0"
+      >
+      </LuaComponent>
+  ]]))
+  ModTextFileSetContent("data/entities/animals/boss_pit/boss_pit.xml", tostring(xml))
 end

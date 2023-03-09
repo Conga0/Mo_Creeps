@@ -897,6 +897,50 @@ table.insert(actions,
     end,
 })
 
+table.insert(actions,
+{
+    id          = "MOCREEPS_HITFX_CRITICAL_DRUNK",
+    name 		= "$spell_mocreeps_critical_drunk_name",
+    description = "$spell_mocreeps_critical_drunk_desc",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/critical_drunk.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/electric_charge_unidentified.png",
+    related_extra_entities = { "mods/mo_creeps/files/entities/misc/hitfx_critical_drunk.xml" },
+    spawn_requires_flag = "mocreeps_card_unlocked_blob_boss_spell",
+    type 		= ACTION_TYPE_MODIFIER,
+    spawn_level                       = "1,3,4,5", -- HITFX_CRITICAL_WATER
+    spawn_probability                 = "0.2,0.2,0.2,0.2", -- HITFX_CRITICAL_WATER
+    price = 70,
+    mana = 10,
+    --max_uses = 16,
+    action 		= function()
+        c.extra_entities = c.extra_entities .. "mods/mo_creeps/files/entities/misc/hitfx_critical_drunk.xml,"
+        draw_actions( 1, true )
+    end,
+})
+
+table.insert(actions,
+{
+    id          = "MOCREEPS_ALT_FIRE_COV",
+    name 		= "$spell_mocreeps_alt_fire_cov_name",
+    description = "$spell_mocreeps_alt_fire_cov_desc",
+    sprite 		= "mods/mo_creeps/files/ui_gfx/gun_actions/alt_fire_cov_projectile.png",
+    sprite_unidentified = "data/ui_gfx/gun_actions/spread_reduce_unidentified.png",
+    --spawn_requires_flag = "apotheosis_card_unlocked_fire_lukki_spell",
+    type    = ACTION_TYPE_PASSIVE,
+    spawn_level                       = "1,2,3,4", -- REGENERATION_FIELD
+    spawn_probability                 = "0.2,0.2,0.2,0.2", -- REGENERATION_FIELD
+    price = 250,
+    mana = 0,
+    max_uses = 2,
+    never_unlimited = true,
+    custom_uses_logic = true,
+    custom_xml_file   = "mods/mo_creeps/files/entities/misc/custom_cards/alt_fire_cov.xml",
+    action            = function()
+        -- Go to the next card
+        draw_actions(1, true)
+    end,
+})
+
 --Wait.. is burning trail literally just fire charge but not called fire charge..? Keep your naming consistency together Noita please
 --I do want a spell which lets me do fire damage though.. so...
 table.insert(actions,
