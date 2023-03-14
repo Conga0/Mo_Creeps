@@ -1560,13 +1560,7 @@ end
 do -- gsub new wizards into Master of Master's spawn table
   local path = "data/entities/animals/boss_wizard/spawn_wizard.lua"
   local content = ModTextFileGetContent(path)
-  content = content:gsub([[local opts = { "wizard_tele", "wizard_dark", "wizard_poly", "wizard_homing", "wizard_weaken", "wizard_twitchy", "wizard_neutral", "wizard_hearty", "wizard_returner" }]], [[local opts = { "wizard_ambrosia", "wizard_duck", "wizard_jackofalltrades", "wizard_manaeater", "wizard_transmutation", "wizard_tele", "wizard_dark", "wizard_poly", "wizard_homing", "wizard_weaken", "wizard_twitchy", "wizard_neutral", "wizard_hearty", "wizard_returner" }
-
-  if ModIsEnabled("new_enemies") then
-    opts = { "wizard_random", "wizard_time", "wizard_toxic", "wizard_trip", "wizard_earthquake", "wizard_water", "wizard_ambrosia", "wizard_duck", "wizard_jackofalltrades", "wizard_manaeater", "wizard_transmutation", "wizard_tele", "wizard_dark", "wizard_poly", "wizard_homing", "wizard_weaken", "wizard_twitchy", "wizard_neutral", "wizard_hearty", "wizard_returner" }
-  else
-    opts = { "wizard_ambrosia", "wizard_duck", "wizard_jackofalltrades", "wizard_manaeater", "wizard_transmutation", "wizard_tele", "wizard_dark", "wizard_poly", "wizard_homing", "wizard_weaken", "wizard_twitchy", "wizard_neutral", "wizard_hearty", "wizard_returner" }
-  end]])
+  content = content:gsub([[local opts = { "wizard_tele"]], [[local opts = { "wizard_ambrosia", "wizard_duck", "wizard_jackofalltrades", "wizard_manaeater", "wizard_transmutation", "wizard_tele"]])
   ModTextFileSetContent(path, content)
 end
 
@@ -1586,3 +1580,13 @@ do -- Kill all projectiles on screen if there's too many wands & the game is at 
   ]]))
   ModTextFileSetContent("data/entities/animals/boss_pit/boss_pit.xml", tostring(xml))
 end
+
+do -- gsub new Creeps into Summon Egg's spawn table
+  local path = "data/scripts/items/egg_hatch.lua"
+  local content = ModTextFileGetContent(path)
+  content = content:gsub([[fire = { {"firebug", 3}, {"bigfirebug"} },]], [[fire = { {"firebug", 3}, {"bigfirebug"}, {"whisp", 10} },]])
+  content = content:gsub([[chilly = { {"tentacler_small"}, {"tentacler"} },]], [[chilly = { {"tentacler_small"}, {"tentacler"}, {"tentacler_big"} },]])
+  content = content:gsub([[red = { {"bat", 3}, {"tentacler_small"}, {"tentacler"} },]], [[red = { {"bat", 3}, {"fairy_big", 2}, {"tentacler_small"}, {"tentacler"} },]])
+  ModTextFileSetContent(path, content)
+end
+
