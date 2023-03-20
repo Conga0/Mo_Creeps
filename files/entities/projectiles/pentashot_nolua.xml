@@ -142,7 +142,7 @@
 	
 	<VariableStorageComponent
 		name="projectile_file"
-		value_string="mods/mo_creeps/files/projectiles/pentashot.xml"
+		value_string="mods/mo_creeps/files/entities/projectiles/pentashot.xml"
 		>
 	</VariableStorageComponent>
 </Entity>

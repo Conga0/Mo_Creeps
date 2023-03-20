@@ -141,7 +141,7 @@
 	
 	<VariableStorageComponent
 		name="projectile_file"
-		value_string="mods/mo_creeps/files/projectiles/railgunner_homing.xml"
+		value_string="mods/mo_creeps/files/entities/projectiles/railgunner_homing.xml"
 		>
 	</VariableStorageComponent>
 </Entity>
