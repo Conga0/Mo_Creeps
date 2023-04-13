@@ -77,3 +77,11 @@ table.insert(status_effects,
     effect_entity="mods/mo_creeps/files/entities/misc/effect_trip_red_03.xml",
     min_threshold_normalized="3.0",
 })
+table.insert(status_effects,
+{
+    id="MOCREEPS_HOMING",
+    ui_name="$status_mocreep_homing_name",
+    ui_description="$status_mocreep_homing_desc",
+    ui_icon="mods/mo_creeps/files/ui_gfx/status_indicators/homing.png",
+    effect_entity="mods/mo_creeps/files/entities/misc/effect_homing.xml",
+})

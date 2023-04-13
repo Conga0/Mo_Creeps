@@ -2,7 +2,11 @@ local mm_insert = {
     {
     material="mocreeps_mudman_mud",
     cost=1600,
-},
+    },
+    {
+    material="mocreep_magic_liquid_attunium",
+    cost=1600,
+    },
 }
 
 --[[

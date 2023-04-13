@@ -25,6 +25,8 @@ local mod_compat_mode_conjurer_name = "Conjurer extra Compatibility Mode"
 local mod_compat_mode_conjurer_desc = "Some people may have issues with this mod not loading into Conjurer properly. \nIf this happens, try enabling this option and loading conjurer again. \n \nThis option is on by default but can be turned off if you wish to \nhave the pixel scenes & bosses appear in conjurer worlds. \n \nIf Conjurer still fails to load despite having this turned on, although unlikely, \nit may be a mod compatibility issue with something else, \nperhaps try disabling mods to find the troublesome one. \n \nIf nothing else works please let me know to by filing a bug report to me. \nIt would be easiest for me to reach & investigate your report at the discord link below: \nhttps://discord.gg/gtyGnv8Pxk"
 local mod_compat_mode_spell_evolution_name = "Spell Evolution Compatibility Mode"
 local mod_compat_mode_spell_evolution_desc = "Turn this setting on if youre playing with the Spell Evolution mod to fix it.\n \nAs far as I can tell, a bug in Spell Evolutions causes it to break if a modded spell \nUses translation keys for their name and/or description. \n \nUnfortunately there's nothing I can do about this as it's not my mod, \nand I have no intention to remove the translation keys \nas I hope to use them one day in the event \nIm offered a translation for the mod to another language. \nHowever, I can put a setting in to optionally let you use the spells without \ntranslation keys to get around the issue."
+local organised_icons_name = "Organise Spell Icons"
+local organised_icons_desc = "Will Spells be organised with the vanilla spell list? \n \nFor example, if this is enabled, an thrower related spell will appear next to other \nthrower spells in the progress log rather than at the bottom of the spell list."
 
 local seasonal_forced_name = "Forced Seasonal Events"
 local seasonal_forced_desc = "A list of Seasonal Events which can be forced"
@@ -182,6 +184,13 @@ mod_settings =
     id = "mod_compat_mode_conjurer",
     ui_name = mod_compat_mode_conjurer_name,
     ui_description = mod_compat_mode_conjurer_desc,
+    value_default = true,
+    scope = MOD_SETTING_SCOPE_NEW_GAME,
+  },
+  {
+    id = "organised_icons",
+    ui_name = organised_icons_name,
+    ui_description = organised_icons_desc,
     value_default = true,
     scope = MOD_SETTING_SCOPE_NEW_GAME,
   },

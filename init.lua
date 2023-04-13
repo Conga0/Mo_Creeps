@@ -273,6 +273,8 @@ material_mocreep_meat_fire_lukki,Infernal Meat,Адское мясо,,,,,,,,煉�
 material_mocreep_meat_fire_lukki_rock,Brimstone,Сера,,,,,,,,業火,,,,
 material_mocreeps_mudman_mud,Magical Mud,Волшебный ил,,,,,,,,魔法の泥,,,,
 material_mocreep_knowledge_of_kings,Yggdrasil's Knowledge,Знания Иггдрасиля,,,,,,,,ユグドラシルの智慧,,,,
+material_mocreep_magic_liquid_attunium,Attunium,,,,,,,,,,,,,
+material_mocreep_magic_liquid_attunium_cloud,Attunium Mist,,,,,,,,,,,,,
 spell_mocreep_targetter_name,Targetter,Целеуказатель,,,,,,,,ロックオン,,,,
 spell_mocreep_targetter_desc,Fire a projectile which causes irresistable hatred towards anything it hits.,"Выпускает снаряд, который вызывает непреодолимую ненависть ко всему, во что попадает.",,,,,,,,当たった生物が周囲から激しく憎悪されるようになる,,,,
 spell_mocreep_firecharge_name,Fire Charge,Огненный заряд,,,,,,,,炎チャージ,,,,
@@ -339,7 +341,7 @@ book_mocreeps_symbol_redsand_description,"Three lines. One Horizonal, two more s
 book_mocreeps_symbol_insecthusk,Hyönteisten Kuori,Хьонтейстен Куори,,,,,,,,Hyönteisten Kuori,,,,
 book_mocreeps_symbol_insecthusk_description,"One triangle, and another below facing the other way. \nDraw a line to connect these two formations. \nStart from the center of the first, and draw down until it pierces through the second triangle. \nFrom this new symbol, the husk of insects is born.","Один треугольник, а другой внизу обращён в другую сторону. \nНарисуйте линию, соединяющую эти два образования. \nНачните с центра первого треугольника и проведите линию вниз, пока она не пронзит второй треугольник. \nИз этого нового символа рождается шелуха насекомых.",,,,,,,,"Sankaku ga futatsu, tate sen ga hitotsu\nSore ga Kouchuu no Nukegara no shirushi.",,,,
 book_mocreeps_symbol_divineliquid,Jumalallinen Neste,Джумалаллинен Несте,,,,,,,,Jumalallinen Neste,,,,
-book_mocreeps_symbol_divineliquid_description,"Place down your brush, and draw nothing less than a perfect circle. \n \nWithin this circle, draw the four elements. \nOne line for fire \nOne for Water \nOne for Earth \nand One for Air. \n \nWhere the elements converge, make another perfect circle, fill it in with purpose. \nWith this, a divine drink is born.","Положите кисть и нарисуйте не менее чем идеальный круг. \n \nВ этом круге нарисуйте четыре элемента. \nОдна линия для огня \nОдна для воды \nОдна для земли \nи одна для воздуха. \nТам, где элементы сходятся, сделайте ещё один идеальный круг, заполните его. \nПосле этого рождается божественный напиток.",,,,,,,,"Ookina maru, juuji no sen, sono chushin ni chiisana maru.\nSore ga Seinaru Ekitai no shirushi.",,,,
+book_mocreeps_symbol_divineliquid_description,"Place down your brush, and draw nothing less than a perfect circle. \n \nWithin this circle, draw the four elements. \nOne line for Fire \nOne for Water \nOne for Earth \nand One for Air. \n \nWhere the elements converge, make another perfect circle, fill it in with purpose. \nWith this, a divine drink is born.","Положите кисть и нарисуйте не менее чем идеальный круг. \n \nВ этом круге нарисуйте четыре элемента. \nОдна линия для огня \nОдна для воды \nОдна для земли \nи одна для воздуха. \nТам, где элементы сходятся, сделайте ещё один идеальный круг, заполните его. \nПосле этого рождается божественный напиток.",,,,,,,,"Ookina maru, juuji no sen, sono chushin ni chiisana maru.\nSore ga Seinaru Ekitai no shirushi.",,,,
 book_mocreeps_symbol_pinksand,Vaaleanpunainen Hiekka,Ваалеанпунайнен Хиекка,,,,,,,,Vaaleanpunainen Hiekka,,,,
 book_mocreeps_symbol_pinksand_description,"A triangle. Within this, create a line piercing through it's purpose. \nInside this triangle near it's peak, a circle sits. \nThe circle is pierced by the line, and is ready to change shape. \nWith this symbol, the pinkest sand will be born.","Треугольник. Внутри него проведите линию, пронизывающую его насквозь. \nВнутри этого треугольника, около его вершины, сидит круг. \nКруг пронзён линией и готов изменить форму. \nС этим символом родится самый розовый песок.",,,,,,,,"Sankaku no naka ni maru ga hitotsu, chuushin wo tooru tate no sen.\nSore ga Momoiro no Suna no shirushi.",,,,
 book_mocreeps_symbol_fungus,Sieni,Сиени,,,,,,,,Sieni,,,,
@@ -352,6 +354,8 @@ status_mocreep_delusional_name,Delusional,Галлюцинации,,,,,,,,幻覚
 status_mocreep_delusional_desc,Your senses deceive you.,Ваши чувства обманывают вас.,,,,,,,,自分の感覚がアテにならない,,,,
 status_mocreep_creatureshift_cd_name,Unshiftable,Несдвигаемый,,,,,,,,定着,,,,
 status_mocreep_creatureshift_cd_desc,The path of evolution is set in stone... For now.,Путь эволюции предначертан... Пока что.,,,,,,,,物質の進化が足を止めた。,,,,
+status_mocreep_homing_name,"Projectile Attunement",,,,,,,,,,,,,
+status_mocreep_homing_desc,"Your spells seek targets automatically.",,,,,,,,,,,,,
 perk_mocreeps_revenge_reflective,Revenge Reflection,Отражение мести,,,,,,,,リフレクション,,,,
 perk_mocreeps_revenge_reflective_description,"Reflect copies of enemy projectiles upon taking damage, with a steep damage boost as payback.",Отражение копий вражеских снарядов при получении урона с резким увеличением урона в качестве расплаты.,,,,,,,,ダメージを受けた時に敵の放射物をコピーし、さらに威力を強化して撃ち返す。,,,,
 biomemod_mocreeps_smoke_dense,The air feels unusually dense,Воздух кажется необычайно плотным,,,,,,,,重苦しい空気が漂っている,,,,
@@ -1392,7 +1396,7 @@ if seasonalSetting == true then
     --Randomly cause a fungal shift/creature shift at any time, at random.
     function OnPlayerSpawned( player_entity )
       local x, y = EntityGetTransform( player_entity )
-      cid = EntityLoad("mods/mo_creeps/files/entities/misc/essence/moon_fungus_curse_slow.xml", x, y)
+      local cid = EntityLoad("mods/mo_creeps/files/entities/misc/essence/moon_fungus_curse_slow.xml", x, y)
       EntityAddChild( player_entity, cid )
       cid = EntityLoad("mods/mo_creeps/files/entities/misc/essence/moon_creature_curse_slow.xml", x, y)
       EntityAddChild( player_entity, cid )
@@ -1590,3 +1594,9 @@ do -- gsub new Creeps into Summon Egg's spawn table
   ModTextFileSetContent(path, content)
 end
 
+do -- Add some new magical liquids to the Ancient Laboratory
+  local path = "data/biome/liquidcave.xml"
+  local content = ModTextFileGetContent(path)
+  content = content:gsub("FFF86868,FF7FCEEA,FFA3569F,FFC23055,FF0BFFE5", "FFF86868,FF7FCEEA,FFA3569F,FFC23055,FF0BFFE5,FFF6CBAE")
+  ModTextFileSetContent(path, content)
+end
