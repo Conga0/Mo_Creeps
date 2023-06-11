@@ -1,4 +1,4 @@
-<Entity name="Keiju" tags="mortal,human,hittable,teleportable_NOT,flying,sleezebag" >
+<Entity name="Keiju" tags="mortal,human,hittable,teleportable_NOT,flying,sleezebag,polymorphable_NOT" >
 	
 	<ItemChestComponent
 		_enabled="0"
@@ -206,6 +206,13 @@
 			>
 		</SpriteComponent>
 
-	</Entity>
+		<!--Fire Protection-->
+		<GameEffectComponent
+			effect="WET"
+			frames="-1"
+			>
+		</GameEffectComponent >
+		
+	<Entity>
 
 </Entity>

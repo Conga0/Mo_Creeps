@@ -13,8 +13,6 @@ Blueberry#1414 - Translating the mod to Russian
 
 Slack#2746 - Translating the mod to Japanese
 
-Gramlawin - Translating the mod to German
-
 Extol#0629 - Helping getting translation keys working, needed for custom perks to show up correctly
 Also helped make split shot significantly less game breaking
 

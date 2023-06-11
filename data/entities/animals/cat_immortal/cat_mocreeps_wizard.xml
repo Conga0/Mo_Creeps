@@ -1,4 +1,4 @@
-<Entity tags="mortal,prey,ui_use_raw_name,acid" name="Kissa">
+<Entity tags="mortal,prey,ui_use_raw_name,acid,polymorphable_NOT" name="Kissa">
   
 	<Base file="data/entities/base_helpless_animal.xml" >
 
@@ -96,6 +96,19 @@
 		remove_after_executed="1"
 		>
 	</LuaComponent>
+
+	<!--Fire Protection-->
+	<Entity>
+		
+		<InheritTransformComponent />
+		
+		<GameEffectComponent
+			effect="WET"
+			frames="-1"
+			>
+		</GameEffectComponent >
+
+	</Entity>
 
 </Entity>
 

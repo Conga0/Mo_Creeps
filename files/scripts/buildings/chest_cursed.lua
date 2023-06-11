@@ -155,6 +155,9 @@ function item_pickup( entity_item, entity_who_picked, name )
     local rnd = Random(1, #pool)
 
     local enemyCount = 25
+    if pool[rnd] == "giant_centipede" then
+        enemyCount = 8
+    end
     local calcVar = 77
 
     repeat

@@ -1,4 +1,4 @@
-<Entity tags="mortal,prey,ui_use_raw_name,acid" name="Golden Spoopy">
+<Entity tags="mortal,prey,ui_use_raw_name,acid,polymorphable_NOT" name="Golden Spoopy">
   
 	<Base file="data/entities/base_helpless_animal.xml" >
 
@@ -103,5 +103,19 @@
 		>
 	</LuaComponent>
 
+	<!--Fire Protection-->
+	<Entity>
+		
+		<InheritTransformComponent />
+		
+		<GameEffectComponent
+			effect="WET"
+			frames="-1"
+			>
+		</GameEffectComponent >
+
+	</Entity>
+
 </Entity>
+
 

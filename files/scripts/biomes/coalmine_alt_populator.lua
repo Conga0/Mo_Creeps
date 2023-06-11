@@ -129,14 +129,6 @@
         entity     = "data/entities/animals/mimic_explosive_box.xml"
     })
 
-    table.insert(g_lamp,
-    {
-        prob           = 0.2,
-        min_count    = 6,
-        max_count    = 12,    
-        entity     = "data/entities/animals/fairy_cheap.xml"
-    })
-
 	local ambrosiaFairies = ModSettingGet( "mo_creeps.fairy_immortality" )
 
     if ambrosiaFairies == true then
